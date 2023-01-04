@@ -171,12 +171,13 @@ This is the length of the month used in all major lunar calendars on Earth.
 
 ## 3. Rotational Periods (Days)
 <img align="left" src="https://user-images.githubusercontent.com/23460281/210592012-1df497ea-6397-48bd-9c4f-0e2be55966fc.png" alt="alt text" width="450" height="712"/>
+
 The difference between the sidereal day and the synodic day can be visualized quite easily with this diagram from Wikipedia.
 
-A sidereal day is the time needed for the Earth (or any planet) to rotate 360 degrees around its axis, relative to a reference axis.  
+A sidereal day is the time needed for the Earth (or any planet) to rotate 360 degrees around its axis, relative to a reference axis. (In the diagram this reference axis is marked with an arrow pointing upwards.)  
 On Earth this takes 23 hours and 56 minutes.
 
-However, because the Earth also orbited around the Sun during this period, for the Earth to face the sun again, it must rotate through an additional small angle.
+However, because the Earth also orbited around the Sun during this period, for the Earth to face the sun again, it must rotate through an additional small angle (marked in orange).
 
 This results in a synodic, or solar day to be about 4 minutes longer than the sidereal rotational period, resulting in the familiar 24 hour long days.
 
