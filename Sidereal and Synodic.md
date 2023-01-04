@@ -204,9 +204,9 @@ The formulas for calculating the synodic periods from the sidereal periods, or v
 I hope this document helped you understand the difference between sidereal and synodic.
 
 ### Further Reading
-[Orbital period](https://en.wikipedia.org/wiki/Orbital_period)
-[Synodic rotational period](https://en.wikipedia.org/wiki/Synodic_day)
-[Sidereal rotational period](https://en.wikipedia.org/wiki/Sidereal_time)
+[Orbital period](https://en.wikipedia.org/wiki/Orbital_period)  
+[Synodic rotational period](https://en.wikipedia.org/wiki/Synodic_day)  
+[Sidereal rotational period](https://en.wikipedia.org/wiki/Sidereal_time)  
 
 [^1]: I will be ignoring [the precession of the equinoxes](https://en.wikipedia.org/wiki/Axial_precession), because this has a minor effect (of only about 1.5 degrees per century) and adds complications.
 [^2]: Elongation may be taken from any other celestial object, but in our case I will always be referring to elongation from the Sun.
