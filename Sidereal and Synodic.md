@@ -2,7 +2,7 @@
 Here I will explain the difference between sidereal cycles and synodic cycles in astronomy. 
 If you want the conclusion first, here it is:  
 - Sidereal: Absolute
-- Synodic: Relative to a viewer (or Earth)
+- Synodic: Relative to a viewer
 
 ## 1. Introduction
 What do I mean by the terms "Absolute" and "Relative"?  
