@@ -4,6 +4,13 @@ If you want the conclusion first, here it is:
 - Sidereal: Absolute
 - Synodic: Relative to a viewer
 
+### Contents
+[1. Introduction](https://github.com/CitruzSquared/essays/edit/main/Sidereal%20and%20Synodic.md#1-introduction)  
+[2. Orbital Period of Planets](https://github.com/CitruzSquared/essays/edit/main/Sidereal%20and%20Synodic.md#2-orbital-period-of-planets)  
+[3. Orbital Period of the Moon (Months)](https://github.com/CitruzSquared/essays/edit/main/Sidereal%20and%20Synodic.md#2-orbital-period-of-the-moon-months)  
+[4. Rotational Periods (Days)](https://github.com/CitruzSquared/essays/edit/main/Sidereal%20and%20Synodic.md#3-rotational-periods-days)  
+[5. Conclusion](https://github.com/CitruzSquared/essays/edit/main/Sidereal%20and%20Synodic.md#5-conclusion)  
+
 ## 1. Introduction
 What do I mean by the terms "Absolute" and "Relative"?  
 Well, "Absolute" here means the locations of celestial objects relative to the distant fixed stars[^1].  "Relative" on the other hand, refers to the location of said celestial objects from our point of view, on Earth (or any other celestial body.)
@@ -105,8 +112,8 @@ However, because it is so slow, it almost doesn't move, and therefore from Earth
 <br />
 <br />
 
-## 2. Orbital Period of the Moon (Months)
-### 2.1 Sidereal Months
+## 3. Orbital Period of the Moon (Months)
+### 3.1 Sidereal Months
 
 <img align="left" src="https://user-images.githubusercontent.com/23460281/210584601-6005c952-a7c3-4576-a271-e5d6347ff8cb.gif" alt="alt text" width="450" height="450"/>
 
@@ -128,7 +135,7 @@ For our Moon, this is equal to 27.3 days.
 <br />
 <br />
 
-### 2.2 Synodic Months
+### 3.2 Synodic Months
 
 <img align="left" src="https://user-images.githubusercontent.com/23460281/210587152-00dca732-7b80-4436-b924-ae54531753be.gif" alt="alt text" width="450" height="450"/>
 
@@ -170,7 +177,7 @@ This is the length of the month used in all major lunar calendars on Earth.
 <br />
 <br />
 
-## 3. Rotational Periods (Days)
+## 4. Rotational Periods (Days)
 <img align="left" src="https://user-images.githubusercontent.com/23460281/210592012-1df497ea-6397-48bd-9c4f-0e2be55966fc.png" alt="alt text" width="450" height="712"/>
 
 The difference between the sidereal day and the synodic day can be visualized quite easily with this diagram from Wikipedia.
@@ -201,7 +208,7 @@ This results in a synodic, or solar day to be about 4 minutes longer than the si
 <br />
 <br />
 
-## 4. Conclusion
+## 5. Conclusion
 The formulas for calculating the synodic periods from the sidereal periods, or vice versa, can be found from Wikipedia.  
 I hope this document helped you understand the difference between sidereal and synodic.
 
