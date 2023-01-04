@@ -87,6 +87,7 @@ The synodic orbital period of Venus from Earth is about 584 days.
 <br />
 
 <img align="left" src="https://user-images.githubusercontent.com/23460281/210579831-93633333-d0be-4538-b140-0b06d920660f.gif" alt="alt text" width="450" height="450"/>
+
 Here I have animated the orbits of the Earth (in light blue) and Neptune (in dark blue) over one synodic period.
 
 Neptune, being so far from the sun, has a sidereal orbital period of 60,195 days.
