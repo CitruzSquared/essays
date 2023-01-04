@@ -194,6 +194,8 @@ This results in a synodic, or solar day to be about 4 minutes longer than the si
 <br />
 <br />
 <br />
+<br />
+<br />
 
 ## 4. Conclusion
 The formulas for calculating the synodic periods from the sidereal periods, or vice versa, can be found from Wikipedia.  
