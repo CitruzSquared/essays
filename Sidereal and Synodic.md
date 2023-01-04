@@ -54,7 +54,7 @@ Venus's sidereal orbital period is roughly 224.7 Earth days, while Earth's is ro
 It will be useful to define more terms:
 - "Conjunction" refers to when the *elongation* of a planet from the Sun[^2] equals zero. This means that from Earth's point of view, the planet and the Sun are at the same point in the sky. For inferior planets, this may occur in two cases: Interior conjunction, and Superior conjunction. For superior planets, there is only 1 kind of conjunction.  
 
-- "Opposition" refers to when the *elongation* of a planet equals 180˚. This means the Sun[^2] and the planet are at exactly opposite sides in the Sky. Inferior planets cannot oppose the Sun. 
+- "Opposition" refers to when the *elongation* of a planet equals 180˚. This means the Sun[^2] and the planet are at exactly opposite sides in the sky from Earth's point of view. Inferior planets cannot oppose the Sun. 
  
 - "Maximum elongation" refers to the maximum angle an inferior planet can appear in the sky away from the Sun.  
 
