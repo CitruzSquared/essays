@@ -63,7 +63,7 @@ It will be useful to define more terms:
 
 - "Opposition" refers to when the *elongation* of a planet equals 180˚. This means the Sun[^2] and the planet are at exactly opposite sides in the sky from Earth's point of view. Inferior planets cannot oppose the Sun. 
  
-- "Maximum elongation" refers to the maximum angle an inferior planet can appear in the sky away from the Sun.  
+- "Maximum (or Greatest) elongation" refers to the maximum angle an inferior planet can appear in the sky away from the Sun.  
 
 - "Quadrature" refers to when the elongation of a superior planet is 90˚.  
 
