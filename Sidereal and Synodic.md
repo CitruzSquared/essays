@@ -29,7 +29,7 @@ The green angle, which is the angular distance of venus from the Sun, *from the 
 This is called the **elongation**[^2] of Venus (from Earth).  
 It is evident that Earth cannot, and does not, have an elongation from Earth.
 
-As one could imagine, "Sidereal" deals with the true anomaly, based on the absolute reference axis, and "Synodic" deals with the elongation, based on the viewpoint of Earth.
+Thus, "Sidereal" deals with the true anomaly, based on the absolute reference axis, and "Synodic" deals with the elongation, based on the viewpoint of Earth.
   
 
 
