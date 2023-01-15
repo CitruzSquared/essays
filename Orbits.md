@@ -75,10 +75,8 @@ The line that connects the two apsides is called the Line of Apsides.
 <br />
 <br />
 <br />
-<br />
-<br />
 
-### III. Eccentricity
+### II. Eccentricity
 How do we define how elliptical an orbit is?  
 Well, this is done with the eccentricity of an orbit.  
 If we call the distance from the center to the foci $c$, and the length of the semi-major axis $a$, eccentricity $e$, is defined by $c/a$.  
