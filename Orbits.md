@@ -44,7 +44,7 @@ See [Conservation of Angular Momentum](https://en.wikipedia.org/wiki/Angular_mom
 
 Kepler's third law states that **the orbital period is linked to the orbital semi-major axis by a power of 3/2.**  
 This means that $T$, the orbital period, is proportional to $R^{3/2}$, where $R$ is the orbital semi-major axis.  
-This can be written as $T = k R^{3/2}$, where $k$ is called Kepler's constant, and is dependend on the units used.
+This can be written as $T = k R^{3/2}$, where $k$ is called Kepler's constant, and is dependent on the units used.
 
 An illustration:
 Earth has an orbital period of $1$ year, and the semi-major axis of its orbit around the Sun is $1$ AU.  
