@@ -32,13 +32,13 @@ Kepler's second law states that when a body orbits another one, **the line conne
 
 In the gif, the blue area is the area the planet is currently sweeping out in some fixed time interval, and Kepler's 2nd law states that the area of the blue region stays constant.
 
-This defines the speed at which the body travels around the elliptical orbit.
+This defines the speed at which the body travels around the elliptical orbit.  
+
+When the body is far away, it travels slowly. When it comes close, it travels quickly.
+
 <br />
 <br />
-<br />
-<br />
-<br />
-<br />
+
 ### 3. The square of the orbital period is proportional to the cube of the orbital semi-major axis.
 
 Kepler's third law states that **the orbital period is linked to the orbital semi-major axis by a power of 3/2.**  
