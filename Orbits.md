@@ -36,7 +36,8 @@ This defines the speed at which the body travels around the elliptical orbit.
 
 When the body is far away, it travels slowly. When it comes close, it travels quickly.
 
-<br />
+See [Conservation of Angular Momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum)
+
 <br />
 
 ### 3. The square of the orbital period is proportional to the cube of the orbital semi-major axis.
