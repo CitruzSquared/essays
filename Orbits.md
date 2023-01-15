@@ -48,7 +48,7 @@ This can be written as $T = k R^{3/2}$, where $k$ is called Kepler's constant, a
 
 An illustration:
 Earth has an orbital period of $1$ year, and the semi-major axis of its orbit around the Sun is $1$ AU.  
-Since $T = k R^{3/2}$, if we input our values, $1 = k \cdot 1^{3/2}$ gives $k = 1 \text{year}^2/\text{AU}^3$.  
+Since $T = k R^{3/2}$, if we input our values, $1 = k \cdot 1^{3/2}$ gives $k = 1 \text{ year}^2/\text{AU}^3$.  
 Venus orbits at $0.723$ AU from the Sun.  
 $T = k R^{3/2}, k = 1$.   
 Therefore, $T = 0.723^{3/2}$, giving $T = 0.615$ years.  
