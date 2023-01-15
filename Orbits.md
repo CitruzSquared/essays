@@ -40,7 +40,7 @@ See [Conservation of Angular Momentum](https://en.wikipedia.org/wiki/Angular_mom
 
 <br />
 
-### 3. The square of the orbital period is proportional to the cube of the orbital semi-major axis.
+### III. The square of the orbital period is proportional to the cube of the orbital semi-major axis.
 
 Kepler's third law states that **the orbital period is linked to the orbital semi-major axis by a power of 3/2.**  
 This means that $T$, the orbital period, is proportional to $R^{3/2}$, where $R$ is the orbital semi-major axis.  
