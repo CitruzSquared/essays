@@ -91,7 +91,7 @@ This diagram shows ellipses of increasing eccentricity, with $e = 0$ being the f
 <br />
 
 Given the eccentricity $e$ and the semi-major axis $a$, one can find the distances to periapsis and apoapsis.  
-If we call the distance from the primary to the orbiter at periapsis $P$, and the distance from the primary to the orbiter at apoapsis $A$, because the primary is at distnace $c$ from the center of the ellipse,   
+If we call the distance from the primary to the orbiter at periapsis $P$, and the distance from the primary to the orbiter at apoapsis $A$, because the primary is at distance $c$ from the center of the ellipse,   
 $P = a - c$ and $A = a + c$.  
 Since $e = c/a$, $P = a - ae$ and $A = a + ae$.  
 Which can be simplified to $P = a(1 - e)$ and $A = a(1 + e)$.
