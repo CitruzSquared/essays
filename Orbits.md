@@ -197,6 +197,11 @@ $r = a(1 - \cos E)$
 or  
 $r = (1 - e^2)/(1 + e \cos \theta)$.
 
+And so the perifocal coordinates of our body can also be given as:  
+$(r \cos \theta, r \sin \theta)$  
+or, in 3D space:
+$(r \cos \theta, r \sin \theta, 0)$.  
+
 ### II. In a fixed reference frame
 
 The orbit can be tilted in numerous ways.  
@@ -228,7 +233,7 @@ The formulas for calculating the coordinates in these reference frames are as fo
  $\Omega$ is the Longitude of Ascending Node,  
  $i$ is the Inclination,  
  and $\omega$ is the Argument of Periapsis.  
- $(x_\text{perifocal}, y_\text{perifocal}, z_\text{perifocal})$ are the $(a \cos E - ae, b \sin E, 0)$ as derived earlier.
+ $(x_\text{perifocal}, y_\text{perifocal}, z_\text{perifocal})$ are the $(a \cos E - ae, b \sin E, 0)$ or $(r \cos \theta, r \sin \theta, 0)$ as derived earlier.
  
  ## 5. Conclusion
  This concludes this document.
