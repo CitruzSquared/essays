@@ -185,7 +185,7 @@ or, in 3D space:
 $(a \cos E - ae, b \sin E, 0)$.  
 Thus our problem is solved.
 
-However, there is one way of describing our orbit. That is, with the angle the object has travelled since periapsis, and the distance from the focus to the object.  
+However, there is another way of describing our orbit. That is, with the angle the object has travelled since periapsis, and the distance from the focus to the object.  
 This angle ( $\angle BFP$, denoted $\theta$ ) is called the **true anomaly**.  
 It is described by the formula:  
 $\cos \theta = (\cos E - e)/(1 - e\cos E)$.  
