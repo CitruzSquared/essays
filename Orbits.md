@@ -134,7 +134,7 @@ The orbit must have a periapsis. Say it is at point P in the diagram.
 The angle from the ascending node to the point of periapsis, **along the plane of the orbit**, is called the **Argument of Periapsis**, and is denoted $\omega$ (Dark blue in the diagram).
 
 
-## 4. The Position of the Orbiting Body
+## 4. The Position of the Orbiting Body at Time = t
 
 ### I. Along the orbit
 
