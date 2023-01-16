@@ -197,9 +197,38 @@ $r = a(1 - \cos E)$
 or  
 $r = (1 - e^2)/(1 + e \cos \theta)$.
 
-### II. About a reference frame.
+### II. In a fixed reference frame
+
 The orbit can be tilted in numerous ways.  
 Therefore, knowing the position of the orbiting body in the perifocal coordinate system is not enough.  
 If we wish to compare two different orbits, or determine the relative position of a body from another orbiting body, we must know their coordinates in absolute terms.  
 
-Referring back to [3.III](), 
+Referring back to [3.III](https://github.com/CitruzSquared/essays/blob/main/Orbits.md#iii-inclination-the-nodes-and-the-argument-of-periapsis), we have an absolute frame of reference. The ecliptic plane for Heliocentric orbits, and the ecliptic or equatorial plane for Geocentric orbits.  
+The formulas for calculating the coordinates in these reference frams are as follows:  
+
+```math
+\begin{bmatrix}
+  x_\text{reference} \\
+  y_\text{reference} \\
+  z_\text{reference}
+ \end{bmatrix}
+ =
+ \begin{bmatrix}
+  \cos\Omega\cos\omega - \sin\Omega\cos i\sin\omega & -\cos\Omega\sin\omega - \sin\Omega\cos i\cos \omega & \sin\Omega \sin i \\
+  \sin\Omega\cos\omega + \cos\Omega\cos i\sin\omega & -\sin\Omega\sin\omega + \cos\Omega\cos i\cos\omega & -\cos \Omega \sin i \\
+  \sin i \sin\omega & \sin i \cos\omega &  \cos i
+ \end{bmatrix}
+ \begin{bmatrix}
+  x_\text{perifocal} \\
+  y_\text{perifocal} \\
+  z_\text{perifocal}
+ \end{bmatrix}
+ ```
+ Where:  
+ $\Omega$ is the Longitude of Ascending Node,  
+ $i$ is the Inclination,  
+ and $\omega$ is the Argument of Periapsis.  
+ $(x_\text{perifocal}, y_\text{perifocal}, z_\text{perifocal})$ are the $(a \cos E - ae, b \sin E, 0)$ as derived earlier.
+ 
+ ## 5. Conclusion
+ This concludes this document.
