@@ -193,7 +193,7 @@ Which can also be written:
 $\theta = 2 \cdot \arctan \left(\sqrt{\frac{1+e}{1-e} \tan \frac{E}{2}}\right)$.
 
 The distance from the focus to the orbiting body $r$ can be given as follows:  
-$r = a(1 - \cos E)$  
+$r = a(1 - e \cos E)$  
 or  
 $r = (1 - e^2)/(1 + e \cos \theta)$.
 
@@ -241,7 +241,7 @@ The formula for calculating the coordinates in these reference frames are as fol
  $y = r \sin \phi \sin \lambda$  
  $z = r \cos \phi$  
  Where:  
- $r$ is the distance from the center of the primary to the orbiting body $a(1 - \cos E)$ or $(1 - e^2)/(1 + e \cos \theta)$,  
+ $r$ is the distance from the center of the primary to the orbiting body $a(1 - e \cos E)$ or $(1 - e^2)/(1 + e \cos \theta)$,  
  $\phi$ is the Latitude (in case of Ecliptic coordinates) or Declination (in case of Equatorial coordinates),  
  and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
  
