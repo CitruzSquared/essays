@@ -239,8 +239,7 @@ The formula for calculating the coordinates in these reference frames are as fol
  $x = r \sin \phi \cos \lambda$  
  $y = r \sin \phi \sin \lambda$  
  $z = r \cos \phi$  
- 
- Where:
+ Where:  
  $r$ is the distance from the center to the orbiting body,  
  $\phi$ is the Latitude (in case of Ecliptic coordinates) or Declination (in case of Equatorial coordinates),  
  and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
