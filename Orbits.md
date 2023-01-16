@@ -209,7 +209,7 @@ Therefore, knowing the position of the orbiting body in the perifocal coordinate
 If we wish to compare two different orbits, or determine the relative position of a body from another orbiting body, we must know their coordinates in absolute terms.  
 
 Referring back to [3.III](https://github.com/CitruzSquared/essays/blob/main/Orbits.md#iii-inclination-the-nodes-and-the-argument-of-periapsis), we have an absolute frame of reference. The ecliptic plane for Heliocentric orbits, and the ecliptic or equatorial plane for Geocentric orbits.  
-The formulas for calculating the coordinates in these reference frames are as follows:  
+The formula for calculating the coordinates in these reference frames are as follows:  
 
 ```math
 \begin{bmatrix}
@@ -234,6 +234,16 @@ The formulas for calculating the coordinates in these reference frames are as fo
  $i$ is the Inclination,  
  and $\omega$ is the Argument of Periapsis.  
  $(x_\text{perifocal}, y_\text{perifocal}, z_\text{perifocal})$ are the $(a \cos E - ae, b \sin E, 0)$ or $(r \cos \theta, r \sin \theta, 0)$ as derived earlier.
+ 
+ The result may be turned to spherical coordinates using these formulae:  
+ $x = r \sin \phi \cos \lambda$  
+ $y = r \sin \phi \sin \lambda$  
+ $z = r \cos \phi$  
+ 
+ Where:
+ $r$ is the distance from the center to the orbiting body,  
+ $\phi$ is the Latitude (in case of Ecliptic coordinates) or Declination (in case of Equatorial coordinates),  
+ and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
  
  ## 5. Conclusion
  This concludes this document.
