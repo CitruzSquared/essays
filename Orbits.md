@@ -179,7 +179,7 @@ Thus the coordinates of the body around the center is given by $(a \cos E, b \si
 To move the origin to the focus, recall that $e = c/a$, and therefore $c = ea$.  
 Also, only the $x$ coordinate will be changed, as the focus lies on the $x$ axis.  
 Thus we subtract $c$ from the $x$ coordinate.  
-**Therefore the coordinate around the focus is:**  
+**Therefore the perifocal coordinates of the orbiting body is:**  
 $(a \cos E - ae, b \sin E)$.  
 or, in 3D space:  
 $(a \cos E - ae, b \sin E, 0)$.  
