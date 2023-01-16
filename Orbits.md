@@ -199,7 +199,7 @@ $r = (1 - e^2)/(1 + e \cos \theta)$.
 
 And so the perifocal coordinates of our body can also be given as:  
 $(r \cos \theta, r \sin \theta)$  
-or, in 3D space:
+or, in 3D space:  
 $(r \cos \theta, r \sin \theta, 0)$.  
 
 ### II. In a fixed reference frame
