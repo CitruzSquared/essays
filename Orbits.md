@@ -1,4 +1,4 @@
-# Orbits
+# Beginner's guide to Orbits
 
 This document will be discussing elliptical orbits.
 
