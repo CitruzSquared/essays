@@ -244,5 +244,10 @@ The formula for calculating the coordinates in these reference frames are as fol
  $\phi$ is the Latitude (in case of Ecliptic coordinates) or Declination (in case of Equatorial coordinates),  
  and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
  
- ## 5. Conclusion
- This concludes this document.
+ ## 5. Further Reading
+ [Orbit](https://en.wikipedia.org/wiki/Orbit)
+ [Orbital Mechanics](https://en.wikipedia.org/wiki/Orbital_mechanics)
+ [Kepler's Laws](https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion)
+ [Kepler's Equation](https://en.wikipedia.org/wiki/Kepler%27s_equation)
+ [Equatorial Coordinates](https://en.wikipedia.org/wiki/Equatorial_coordinate_system)
+ [Ecliptic Coordinates](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system)
