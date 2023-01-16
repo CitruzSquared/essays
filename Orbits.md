@@ -152,7 +152,7 @@ This is called the **mean anomaly** ( $M$ ).
 
 <img align="left" src="https://user-images.githubusercontent.com/23460281/212613418-99c63c77-38f4-4f36-a7ef-6b33045bfe92.png" alt="alt text" width="450" height="450"/>
 
-To get one step closer to calculating the coordinates, we imagine a circle around the orbit with radius equal to the semi major axis.  
+To get one step closer to calculating the coordinates and to take Kepler's second law into account, we imagine a circle around the orbit with radius equal to the semi major axis.  
 The position of the body can be projected vertically onto the circle, and the angle between the projected position, the center, and periapsis ( $\angle B'CP$ ) is called the **eccentric anomaly** ( $E$ ).
 
 Eccentric anomaly can be described by Kepler's equation:  
