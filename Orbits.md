@@ -166,7 +166,7 @@ $E_{n+1} = (E_n - e \sin E_n - M)/(1 - e \cos E_n)$.
 We first assume $E_1 = M$. Then we plug this into the formula for $E_n$.  
 We now have $E_2$, a better approximation for $E$.  
 We now plug this new value back into $E_n$, and calculate $E_3$.  
-Repeating this until $E_4$ or $E_5$ is sufficient.
+Repeating this until $E_5$ is sufficient.
 
 If we call the position of the orbiting body $(x, y)$ and the center of the circle $(0, 0)$,   
 We can see that $\cos E = x/a$. (Because the radius of the circle is $a$, and $B$ and $B'$ have the same $x$ coordinate.)  
