@@ -233,7 +233,8 @@ The formula for calculating the coordinates in these reference frames are as fol
  $\Omega$ is the Longitude of Ascending Node,  
  $i$ is the Inclination,  
  and $\omega$ is the Argument of Periapsis.  
- $(x_\text{perifocal}, y_\text{perifocal}, z_\text{perifocal})$ are the $(a \cos E - ae, b \sin E, 0)$ or $(r \cos \theta, r \sin \theta, 0)$ as derived earlier.
+ $(x_\text{perifocal}, y_\text{perifocal}, z_\text{perifocal})$ are the $(a \cos E - ae, b \sin E, 0)$ or $(r \cos \theta, r \sin \theta, 0)$ as derived earlier.  
+ $(0, 0, 0)$ are the coordinates of the primary body in the absolute frame.
  
  The result may be turned to spherical coordinates using these formulae:  
  $x = r \sin \phi \cos \lambda$  
