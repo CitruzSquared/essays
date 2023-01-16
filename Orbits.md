@@ -119,7 +119,7 @@ $e = \sqrt{1 - b^2/a^2}/1 = \sqrt{1 - b^2/a^2}$.
 
 Orbital inclination $i$ is the angle the orbit makes from a reference plane (Green in the diagram).  
 
-The reference plane for the Solar System is most commonly the plane of the Earth's orbit, called the Ecliptic plane.  
+The reference plane for the Solar System is most commonly the plane of the Earth's orbit, called the Ecliptic plane. (And therefore the Earth has no inclination with respect to the Ecliptic plane).   
 For orbits around the Earth, the reference plane can either be the Ecliptic plane or the plane of the Equator of the Earth, called the Equatorial plane.
 
 There are two points where the orbit meets the reference plane, called the **nodes**. If the orbit is going upward (Northward) at a node, it's called the **ascending node** (Marked A in the diagram). If it is going downward (Southward), it's called the **descending node** (Marked D in the diagram).
