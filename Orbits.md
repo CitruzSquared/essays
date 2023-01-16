@@ -204,7 +204,7 @@ Therefore, knowing the position of the orbiting body in the perifocal coordinate
 If we wish to compare two different orbits, or determine the relative position of a body from another orbiting body, we must know their coordinates in absolute terms.  
 
 Referring back to [3.III](https://github.com/CitruzSquared/essays/blob/main/Orbits.md#iii-inclination-the-nodes-and-the-argument-of-periapsis), we have an absolute frame of reference. The ecliptic plane for Heliocentric orbits, and the ecliptic or equatorial plane for Geocentric orbits.  
-The formulas for calculating the coordinates in these reference frams are as follows:  
+The formulas for calculating the coordinates in these reference frames are as follows:  
 
 ```math
 \begin{bmatrix}
