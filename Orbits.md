@@ -16,10 +16,14 @@ The laws are as follows:
 ### I. All orbits are elliptical, with the primary object at one of the ellipse's foci.
 <img align="left" src="https://user-images.githubusercontent.com/23460281/212556101-5fc11bc9-2e65-4ea2-8aae-c8d8874aac32.png" alt="alt text" width="450" height="348"/>
 
-Pictured here is an ellipse. It is like a squished circle. There are two things you should know about the ellipse:  
-- The semi-major axis is the long "radius" of the ellipse. The distance from the center to the vertex.  
-- The foci are the points at which the distance from the co-vertex to the foci equal the length of the semi-major axis.
-The focus has many properties, but I will not get into them here. 
+Pictured here is an ellipse. It is like a squished circle. There are four things you should know about the ellipse:  
+- The semi-major axis is the long "radius" of the ellipse. The distance from the center to the vertex.   
+- The semi-minor axis is the short "radius" of the ellipse. The distance from the center to the co-vertex.  
+- The foci are the points at which the distance from the co-vertex to the foci equal the length of the semi-major axis.  
+The focus has many properties, but I will not get into them here.  
+- The ellipse can be described by the equation $x^2/a^2 + y^2/b^2 = 1$, where $a$ is the semi-major axis, $b$ is the semi-minor axis, and $(0, 0)$ is the center of the ellipse.  
+
+</br>
 
 Kepler's first law states **that the primary body of the orbit (The body the orbit is centered around) is at one of the foci.**   
 
@@ -128,3 +132,74 @@ If a reference direction (Marked X in the diagram) is given, (usually the toward
 
 The orbit must have a periapsis. Say it is at point P in the diagram.  
 The angle from the ascending node to the point of periapsis, **along the plane of the orbit**, is called the **Argument of Periapsis**, and is denoted $\omega$ (Dark blue in the diagram).
+
+
+## 4. The Position of the Orbiting Body
+
+### I. Along the orbit
+
+<img align="left" src="https://user-images.githubusercontent.com/23460281/212620383-b2971cfc-003a-4fbd-ad00-883590d31f7c.png" alt="alt text" width="450" height="346"/>
+
+The position of the orbiting body can be given as $x, y$ coordinates with the origin $(0, 0)$ being placed at the focus, and the $x$ axis pointing towards periapsis.  This coordinate system is called the **periforcal coordinate system**.
+The calculation of the $x, y$ coordinates is as follows:  
+
+First it would be a great start to get a rough approximation of the position of the object.  
+Disregarding Kepler's second law, we can assume the body moves in the orbit at a uniform rate.  
+If we say that the orbital period is $T$, then the rate at which the body orbits is given by $360\degree/T$. This is called the mean motion.  
+
+Then, at a time $t$, where $t = 0$ means the body is at periapsis, the angle the body has moved through is $360\degree/T \cdot t$.  
+This is called the **mean anomaly** ( $M$ ).
+
+<img align="left" src="https://user-images.githubusercontent.com/23460281/212613418-99c63c77-38f4-4f36-a7ef-6b33045bfe92.png" alt="alt text" width="450" height="450"/>
+
+To get one step closer to calculating the coordinates, we imagine a circle around the orbit with radius equal to the semi major axis.  
+The position of the body can be projected vertically onto the circle, and the angle between the projected position, the center, and periapsis ( $\angle B'CP$ ) is called the **eccentric anomaly** ( $E$ ).
+
+Eccentric anomaly can be described by Kepler's equation:  
+$M = E - e\sin E$, where $e$ is the eccentricity.  
+The derivation of this equation can be seen [here](http://www.csun.edu/~hcmth017/master/node15.html).
+
+Solving this equation for $E$ analytically is impossible due to $\sin x$ being a transcendental function, and we must approximate it.  
+Luckily, [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method) allows us to approximate it with arbitrary precision extremely quickly.  
+Newton's method gives:  
+$E_{n+1} = (E_n - e \sin E_n - M)/(1 - e \cos E_n)$.  
+We first assume $E_1 = M$. Then we plug this into the formula for $E_n$.  
+We now have $E_2$, a better approximation for $E$.  
+We now plug this new value back into $E_n$, and calculate $E_3$.
+Repeating this until $E_4$ or $E_5$ is sufficient.
+
+If we call the position of the orbiting body $(x, y)$ and the center of the circle $(0, 0)$,   
+We can see that $\cos E = x/a$. (Because the radius of the circle is $a$, and $B$ and $B'$ have the same $x$ coordinate.)  
+Because the ellipse can be described as $x^2/a^2 + y^2/b^2 = 1$,  
+$\cos^2 E + y^2/b^2 = 1$,   
+Therefore, by the Pythagorean identity $\cos^2 x + \sin^2 x = 1$,  
+$\sin E = y/b$.  
+Thus the coordinates of the body around the center is given by $(a \cos E, b \sin E)$.
+
+To move the origin to the focus, recall that $e = c/a$, and therefore $c = ea$.  
+Also, only the $x$ coordinate will be changed, as the focus lies on the $x$ axis.  
+Thus we subtract $c$ from the $x$ coordinate.  
+**Therefore the coordinate around the focus is:**  
+$(a \cos E - ae, b \sin E)$.  
+or, in 3D space:  
+$(a \cos E - ae, b \sin E, 0)$.  
+Thus our problem is solved.
+
+However, there is one way of describing our orbit. That is, with the angle the object has travelled since periapsis, and the distance from the focus to the object.  
+This angle ( $\angle BFP$, denoted $\theta$ ) is called the **true anomaly**.  
+It is described by the formula:  
+$\cos \theta = (\cos E - e)/(1 - e\cos E)$.  
+Which can also be written:  
+$\theta = 2 \cdot \arctan \left(\sqrt{\frac{1+e}{1-e} \tan \frac{E}{2}}\right)$.
+
+The distance from the focus to the orbiting body $r$ can be given as follows:  
+$r = a(1 - \cos E)$  
+or  
+$r = (1 - e^2)/(1 + e \cos \theta)$.
+
+### II. About a reference frame.
+The orbit can be tilted in numerous ways.  
+Therefore, knowing the position of the orbiting body in the perifocal coordinate system is not enough.  
+If we wish to compare two different orbits, or determine the relative position of a body from another orbiting body, we must know their coordinates in absolute terms.  
+
+Referring back to [3.III](), 
