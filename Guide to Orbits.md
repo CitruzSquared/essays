@@ -246,7 +246,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
  
  ## 5. Solved Example
- Question: Find the **geocentric ecliptic coordinates** of Mars on January 19th, 2023.  
+ ### Question: Find the *geocentric ecliptic coordinates* of Mars on January 19th, 2023.  
  
  Because we are working in geocentric coordinates, we must calculate the relative position of Mars from Earth, which requires calculation of both Mars and Earth's positions.
  
