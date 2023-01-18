@@ -145,9 +145,9 @@ The calculation of the $x, y$ coordinates is as follows:
 
 First it would be a great start to get a rough approximation of the position of the object.  
 Disregarding Kepler's second law, we can assume the body moves in the orbit at a uniform rate.  
-If we say that the orbital period is $T$, then the rate at which the body orbits is given by $360\degree/T$. This is called the mean motion.  
+If we say that the orbital period is $T$, then the rate at which the body orbits is given by $2\pi/T$. This is called the mean motion.  
 
-Then, at a time $t$, where $t = 0$ means the body is at periapsis, the angle the body has moved through is $360\degree/T \cdot t$.  
+Then, at a time $t$, where $t = 0$ means the body is at periapsis, the angle the body has moved through is $2\pi/T \cdot t$.  
 This is called the **mean anomaly** ( $M$ ).
 
 <img align="left" src="https://user-images.githubusercontent.com/23460281/212613418-99c63c77-38f4-4f36-a7ef-6b33045bfe92.png" alt="alt text" width="450" height="450"/>
@@ -237,15 +237,127 @@ The formula for calculating the coordinates in these reference frames is as foll
  $(0, 0, 0)$ are the coordinates of the primary body in the absolute frame.
  
  The result may be turned to spherical coordinates using these formulae:  
- $x = r \sin \phi \cos \lambda$  
- $y = r \sin \phi \sin \lambda$  
- $z = r \cos \phi$  
+ $x = r \cos \phi \cos \lambda$  
+ $y = r \cos \phi \sin \lambda$  
+ $z = r \sin \phi$  
  Where:  
  $r$ is the distance from the center of the primary to the orbiting body $a(1 - e \cos E)$ or $a \cdot (1 - e^2)/(1 + e \cos \theta)$,  
  $\phi$ is the Latitude (in case of Ecliptic coordinates) or Declination (in case of Equatorial coordinates),  
  and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
  
- ## 5. Further Reading
+ ## 5. Solved Example
+ Let us calculate the **geocentric ecliptic coordinates** of Mars on January 19th, 2023.  
+ Because we are working in geocentric coordinates, we must calculate the relative position of Mars from Earth, which requires calculation of both Mars and Earth's positions.
+ 
+ First, need to know the orbital elements of Earth and Mars.  
+ Because we are working in Ecliptic coordinates, the inclination of the Earth should be zero, but because orbits are not static, as of 2023, compared to the Earth's orbit at year 2000, Earth's orbit has these elements:
+ 
+ Semi-major axis $a = 1$ AU  
+ Semi-minor axis $b = 0.999860401599$ AU  
+ Eccentricity $e = 0.0167086$  
+ Orbital Period $T = 365.25636$ days  
+ Inclination $i = 0.00005\degree = 8.72665 \cdot 10^{-7} \text{rad}$ (Ignorable)  
+ Longitude of Ascending Node $\Omega = −11.26064\degree = -0.1965352 \text{rad}$  
+ Argument of Periapsis $\omega = 114.20783\degree = 1.9933027 \text{rad}$  
+ 
+ For Mars:  
+ Semi-major axis $a = 1.52368055$ AU  
+ Semi-minor axis $b = 1.51702003298$ AU  
+ Eccentricity $e = 0.0934$  
+ Orbital Period $T = 686.980$ days  
+ Inclination $i = 1.850\degree = 0.0322886 \text{rad}$   
+ Longitude of Ascending Node $\Omega = 49.57854\degree = 0.8653088 \text{rad}$  
+ Argument of Periapsis $\omega = 286.5\degree = 5.00037 \text{rad}$  
+ 
+ We also need the time elapsed since periapsis.  
+ Earth reached its last periapsis on January 4th of 2023.  
+ Mars reached its last periapsis on June 21st of 2022.  
+ 
+ This means that it has been 15 days since Earth's last periapsis, and 212 days since Mars's last periapsis.
+ 
+ *Data from Wikipedia.*
+ 
+ ### I. Earth Calculations
+ 
+ Now let's calculate the position of the Earth on January 19th, 2023.  
+ Earth's mean motion is $2\pi/365.25636 = 0.017202124303 \text{rad}/\text{day}.$  
+ At $t = 15$, the Mean Anomaly $M = 0.017202124303 * 15 = 0.258031864545 \text{rad}$.  
+ Carrying out the Newton Iteration  
+ $E_{n+1} = (E_n - e \sin E_n - M)/(1 - e \cos E_n)$  
+ 4 times gives:  
+ $E = 0.262365504457$.  
+ Thus the perifocal coordinates of the Earth are:   
+ $(a \cos E - ae, b \sin E, 0)$  
+ $= (0.94907054974, 0.259329623245, 0)$.
+ 
+ Let's now find the rotation matrix for calculating the Earth's heliocentric ecliptic coordinates.  
+ ```math
+ \begin{bmatrix}
+  \cos\Omega\cos\omega - \sin\Omega\cos i\sin\omega & -\cos\Omega\sin\omega - \sin\Omega\cos i\cos \omega & \sin\Omega \sin i \\
+  \sin\Omega\cos\omega + \cos\Omega\cos i\sin\omega & -\sin\Omega\sin\omega + \cos\Omega\cos i\cos\omega & -\cos \Omega \sin i \\
+  \sin i \sin\omega & \sin i \cos\omega &  \cos i
+ \end{bmatrix}
+ ```
+ We can say $i = 0$ for convenience.  
+ Also, since $z_{\text{perifocal}} = 0$, we can ignore the 3rd column of the matrix. (set to 0).  
+ Doing the calculations, it gives:  
+  ```math
+ \begin{bmatrix}
+ −0.224052950686 & −0.97457697248 & 0 \\
+ 0.97457697248 & −0.224052950686 & 0 \\
+ 0 & 0 & 0
+ \end{bmatrix}
+ ```
+ 
+ Carrying out the matrix multiplication gives the heliocentric ecliptic coordinates of the Earth as:  
+ $\oplus(-0.46537873617, 0.8668387357, 0)$.
+ 
+ ### II. Mars Calculations 
+ 
+ Doing the math for Mars is much the same.  
+ $t = 212$, so $M = 1.93897243751$.  
+ Doing the Newton Iteration,  
+ $E = 2.02298507585$.  
+ Therefore the perifocal coordinates are:  
+ $(−0.808061647728, 1.36454877288, 0)$.  
+ 
+ The matrix for Mars is:  
+ ```math
+ \begin{bmatrix}
+ 0.913722378184 & 0.405595108205 & 0 \\
+ −0.40515835572 & 0.914006859473 & 0 \\
+ −0.0309535522544 & 0.00916891689845 & 0
+ \end{bmatrix}
+ ```  
+ Notice how the last row isnt all $0$ since $i \neq 0$.  
+ Carrying out the matrix multiplication gives the heliocentric ecliptic coordinates of Mars as:  
+ $M(-0.18488970329, 1.57459986701, 0.0375238127401)$. 
+ 
+ ### III. Calculation of Geocentric Coordinates
+ 
+ Now let's subtract the coordinates of the Earth from the coordinates of Mars to get relative position of Mars from Earth.  
+ $M - \oplus = (0.28048903288, 0.707761, 0.0375238127401)$.  
+ 
+ Now let's convert this to spherical coordinates.  
+ $x = r \cos \phi \cos \lambda$  
+ $y = r \cos \phi \sin \lambda$  
+ $z = r \sin \phi$    
+ 
+ Since $x, y, z$ are all multiplied by $r$, we can normalize the vector and cancel all the $r$'s.  
+ $(M - \oplus)\_{\text{norm}} = (0.367981, 0.928529, 0.0492284)$.  
+ Now:  
+ $z = \sin \phi \implies \phi = 2\degree 49'$  
+ Since $y/x = \tan \lambda$,  
+ $lambda = \arctan(y/x) = 68\degree 23'$.  
+ 
+ Therefore our calculations show that on January 19, 2023, Mars will be found at:  
+ Longitude: $68\degree 23'$  
+ Latitude: $2\degree 49'$  
+ In the constellation of Taurus.  
+ 
+ Consulting an ephemeris shows our calculations as exact to within $0.07%$.
+ 
+ ## 6. Further Reading
  [Orbit](https://en.wikipedia.org/wiki/Orbit)  
  [Orbital Mechanics](https://en.wikipedia.org/wiki/Orbital_mechanics)  
  [Kepler's Laws](https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion)  
