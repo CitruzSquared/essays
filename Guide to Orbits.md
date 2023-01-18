@@ -252,22 +252,22 @@ The formula for calculating the coordinates in these reference frames is as foll
  First, need to know the orbital elements of Earth and Mars.  
  Because we are working in Ecliptic coordinates, the inclination of the Earth should be zero, but because orbits are not static, as of 2023, compared to the Earth's orbit at year 2000, Earth's orbit has these elements:
  
- Semi-major axis $a = 1$ AU  
- Semi-minor axis $b = 0.999860401599$ AU  
- Eccentricity $e = 0.0167086$  
- Orbital Period $T = 365.25636$ days  
- Inclination $i = 0.00005\degree = 8.72665 \cdot 10^{-7} \text{rad}$ (Ignorable)  
- Longitude of Ascending Node $\Omega = −11.26064\degree = -0.1965352 \text{rad}$  
- Argument of Periapsis $\omega = 114.20783\degree = 1.9933027 \text{rad}$  
+ - Semi-major axis $a = 1$ AU  
+ - Semi-minor axis $b = 0.999860401599$ AU  
+ - Eccentricity $e = 0.0167086$  
+ - Orbital Period $T = 365.25636$ days  
+ - Inclination $i = 0.00005\degree = 8.72665 \cdot 10^{-7} \text{rad}$ (Ignorable)  
+ - Longitude of Ascending Node $\Omega = −11.26064\degree = -0.1965352 \text{rad}$  
+ - Argument of Periapsis $\omega = 114.20783\degree = 1.9933027 \text{rad}$  
  
  For Mars:  
- Semi-major axis $a = 1.52368055$ AU  
- Semi-minor axis $b = 1.51702003298$ AU  
- Eccentricity $e = 0.0934$  
- Orbital Period $T = 686.980$ days  
- Inclination $i = 1.850\degree = 0.0322886 \text{rad}$   
- Longitude of Ascending Node $\Omega = 49.57854\degree = 0.8653088 \text{rad}$  
- Argument of Periapsis $\omega = 286.5\degree = 5.00037 \text{rad}$  
+ - Semi-major axis $a = 1.52368055$ AU  
+ - Semi-minor axis $b = 1.51702003298$ AU  
+ - Eccentricity $e = 0.0934$  
+ - Orbital Period $T = 686.980$ days  
+ - Inclination $i = 1.850\degree = 0.0322886 \text{rad}$   
+ - Longitude of Ascending Node $\Omega = 49.57854\degree = 0.8653088 \text{rad}$  
+ - Argument of Periapsis $\omega = 286.5\degree = 5.00037 \text{rad}$  
  
  We also need the time elapsed since periapsis.  
  Earth reached its last periapsis on January 4th of 2023.  
