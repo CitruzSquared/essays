@@ -355,7 +355,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  Latitude: $2\degree 49'$  
  In the constellation of Taurus.  
  
- Consulting an ephemeris shows our calculations as exact to within $0.07%$.
+ Consulting an ephemeris shows our calculations as exact to within $0.07\percent$.
  
  ## 6. Further Reading
  [Orbit](https://en.wikipedia.org/wiki/Orbit)  
