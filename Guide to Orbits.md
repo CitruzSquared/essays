@@ -343,7 +343,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  $y = r \cos \phi \sin \lambda$  
  $z = r \sin \phi$    
  
- Since $x, y, z$ are all multiplied by $r$, we can normalize the vector and cancel all the $r$'s.  
+ Since $x, y, z$ are all multiplied by $r$, we can normalize the vector to cancel all the $r$'s.  
  $(M - \oplus)\_{\text{norm}} = (0.367981, 0.928529, 0.0492284)$.  
  Now:  
  $z = \sin \phi \implies \phi = 2\degree 49^{'}$.  
