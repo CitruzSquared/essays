@@ -348,7 +348,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  Now:  
  $z = \sin \phi \implies \phi = 2\degree 49^{'}$  
  Since $y/x = \tan \lambda$,  
- $lambda = \arctan(y/x) = 68\degree 23^{'}$.  
+ $\lambda = \arctan(y/x) = 68\degree 23^{'}$.  
  
  Therefore our calculations show that on January 19, 2023, Mars will be found at:  
  Longitude: $68\degree 23^{'}$  
