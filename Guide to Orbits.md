@@ -109,9 +109,9 @@ $c^2 + b^2 = a^2$.
 Thus $c = \sqrt{a^2 - b^2}$,  
 And $e = \sqrt{a^2 - b^2}/a$.  
 Dividing the numerator and denominator by $a$,  
-$e = \sqrt{1 - b^2/a^2}/1 = \sqrt{1 - b^2/a^2}$.
+$e = \sqrt{1 - b^2/a^2}/1 = \sqrt{1 - b^2/a^2}$.  
 
-<br />
+Hence $b = \sqrt{a^2(1 - e)}$.
 
 ### III. Inclination, the Nodes, and the Argument of Periapsis
 
