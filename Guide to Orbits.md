@@ -245,7 +245,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  $\phi$ is the Latitude (in case of Ecliptic coordinates) or Declination (in case of Equatorial coordinates),  
  and $\lambda$ is the Longitude (in case of Ecliptic coordinates) or Right Ascension (in case of Equatorial coordinates).
  
- ## 5. Solved Example
+ ## 4.1. Solved Example
  ### Question: Find the *geocentric ecliptic coordinates* of Mars on January 19th, 2023.  
  
  Because we are working in geocentric coordinates, we must calculate the relative position of Mars from Earth, which requires calculation of both Mars and Earth's positions.
@@ -359,7 +359,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  Consulting an ephemeris shows our calculations as exact to within $3^{'}$ in Longitude, and $30^{"}$ in Latitude.  
  This error results from not knowing the exact times of periapsis of the two bodies.
  
- ## 6. Further Reading
+ ## 5. Further Reading
  [Orbit](https://en.wikipedia.org/wiki/Orbit)  
  [Orbital Mechanics](https://en.wikipedia.org/wiki/Orbital_mechanics)  
  [Kepler's Laws](https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion)  
