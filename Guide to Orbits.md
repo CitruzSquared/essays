@@ -352,8 +352,10 @@ The formula for calculating the coordinates in these reference frames is as foll
  $\lambda = \arctan(y/x) = 68\degree 23^{'}$.  
  
  Therefore our calculations show that **on January 19, 2023, Mars will be found at:**  
- **Longitude: $68\degree 23^{'}$**  
- **Latitude: $2\degree 49^{'}$**  
+ ```math
+ **$\text{Longitude: } 68\degree 23^{'}$**  
+ **$\text{Latitude: } 2\degree 49^{'}$**  
+ ```
  In the constellation of Taurus.  
  
  Consulting an ephemeris shows our calculations as exact to within $3^{'}$ in Longitude, and $30^{"}$ in Latitude.  
