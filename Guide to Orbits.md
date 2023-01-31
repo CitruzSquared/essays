@@ -56,7 +56,17 @@ Since $T = k R^{3/2}$, if we input our values, $1 = k \cdot 1^{3/2}$ gives $k = 
 Venus orbits at $0.723$ AU from the Sun.  
 $T = k R^{3/2}, k = 1$.   
 Therefore, $T = 0.723^{3/2}$, giving $T = 0.615$ years.  
-This is Venus's orbital period.
+
+Orbital period can also be found by the formula:  
+$T = 2 \pi \sqrt{\frac{a^3}{GM}}$  
+Where:  
+$T$ is the period in seconds,  
+$a$ is the semi-major axis in meters,  
+$G$ is $6.67 \cdot 10^{-11}$,  
+and $M$ is the mass of the primary body in kg. (In this case the mass of the Sun).  
+This formula comes from Newton's law of gravitation.
+
+Doing the calculation confirms Venus's orbital period to be $0.615$ years.
 
 ## 3. Orbital Elements
 There are a few key elements that describe an orbit.  
