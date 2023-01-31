@@ -58,7 +58,7 @@ $T = k R^{3/2}, k = 1$.
 Therefore, $T = 0.723^{3/2}$, giving $T = 0.615$ years.  
 
 Orbital period can also be found by the formula:  
-$T = 2 \pi \sqrt{\frac{a^3}{GM}}$  
+$T = 2 \pi \sqrt{a^3/GM}$  
 Where:  
 $T$ is the period in seconds,  
 $a$ is the semi-major axis in meters,  
