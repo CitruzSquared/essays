@@ -172,7 +172,7 @@ The derivation of this equation can be seen [here](http://www.csun.edu/~hcmth017
 Solving this equation for $E$ analytically is impossible due to $\sin x$ being a transcendental function, and we must approximate it.  
 Luckily, [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method) allows us to approximate it with arbitrary precision extremely quickly.  
 Newton's method gives:  
-$E_{n+1} = (E_n - e \sin E_n - M)/(1 - e \cos E_n)$.  
+$E_{n+1} = E_n - (E_n - e \sin E_n - M)/(1 - e \cos E_n)$.  
 We first assume $E_1 = M$. Then we plug this into the formula for $E_n$.  
 We now have $E_2$, a better approximation for $E$.  
 We now plug this new value back into $E_n$, and calculate $E_3$.  
@@ -294,7 +294,7 @@ The formula for calculating the coordinates in these reference frames is as foll
  Earth's mean motion is $2\pi/365.25636 = 0.017202124303 \text{rad}/\text{day}.$  
  At $t = 15$, the Mean Anomaly $M = 0.017202124303 * 15 = 0.258031864545 \text{rad}$.  
  Carrying out the Newton Iteration  
- $E_{n+1} = (E_n - e \sin E_n - M)/(1 - e \cos E_n)$  
+ $E_{n+1} = E_n - (E_n - e \sin E_n - M)/(1 - e \cos E_n)$  
  4 times gives:  
  $E = 0.262365504457$.  
  Thus the perifocal coordinates of the Earth are:   
