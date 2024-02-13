@@ -12,13 +12,9 @@ The most important thing in spherical astronomy is the location of celestial obj
   * This is the circle the Sun appears to make in the sky over the course of a year. In other words, it is the plane of the orbit of the Earth. Due to the axial tilt ($\varepsilon$) of $23.44\degree$ of the Earth, the ecliptic and the celestial equator make an angle of $23.44\degree$ in the sky. Because the Solar System is more or less flat, all the planets, including the Moon, more or less lie on this ecliptic line.
  <br />
  
-<img style="float: left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to.
+<img style="float: left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to. This point is called the *Equinox point* because, if the Sun is located at it, the sun is passing directly over the equator, and the length of daytime will be exacly $1/2$ of a day ($12$ hours) all across the globe. The *Vernal* comes from the fact that, because the Sun is travelling towards the Northern direction, it is Spring time in the Northern Hemisphere when this event occurs (Vernal means Spring in Latin).
 
-<br />
-<br />
-<br />
-<br />
-<br />
+<br/>
 
 ## II. Coordinates
 Evidently the best way to locate a point on the Celestial *Sphere* is with [*spherical* coordinates](https://en.wikipedia.org/wiki/Spherical_coordinate_system). This is a coordinate system based on three values:
@@ -176,7 +172,7 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 \beta &= \arcsin(0.0482118/1) &&= \enspace\enspace2\degree\enspace45'\enspace48.24''
 \end{alignat}
 ```
-And the problem is solved.
+$\blacksquare$
 
 ## III. Time
 When measuring time, two types of time must be distinguished:
@@ -185,6 +181,7 @@ When measuring time, two types of time must be distinguished:
  - The [Sidereal Time](https://en.wikipedia.org/wiki/Sidereal_time)
    * <ins>This is the time that bases itself off the rotation of the Earth</ins>. Contrary to popular belief, the rotation period of the Earth is not equal to one solar day. It is instead equal to one sidereal day. These two times are different due to the orbit of the Earth around the Sun. One sidereal day after some point in time, the distant stars will return to the same position in the sky, but because the Earth has orbited the sun and has moved in that time period (or, from the Earth's perspective, the Sun has moved), the Sun will have not retuend to the same position. Therefore there is a discrepancy between the two times.
    * Some thought will reveal that during the course of one orbit of the Earth, there is *exactly* one more sidereal day on Earth than there are solar days. If the Earth had a retrograde rotation, There would be one less sidereal day than there are solar days.
+   * Sidereal time is often measured in degrees of Earth's rotation.
 ### Example
 <div align="center">
 <table>
@@ -203,7 +200,7 @@ Calculate the length of the sidereal day on Earth and Venus, keeping in mind Ven
 
 Since Earth has a prograde orbit,
 ```math
-\text{Sidereal Day Length} = \frac{\text{Year Length}}{\text{Year Length} + 1} \cdot \text{Solar Day Length} \tag{6}
+\text{Sidereal Day} = \frac{\text{Year Length}}{\text{Year Length} + 1} \cdot \text{Solar Day} \tag{6}
 ```
 Substituting the numbers,
 ```math
@@ -212,13 +209,55 @@ Substituting the numbers,
 
 Since Venus has a retrograde orbit,
 ```math
-\text{Sidereal Day Length} = \frac{\text{Year Length}}{\text{Year Length} - 1} \cdot \text{Solar Day Length} \tag{7}
+\text{Sidereal Day} = \frac{\text{Year Length}}{\text{Year Length} - 1} \cdot \text{Solar Day} \tag{7}
 ```
 Substituting the numbers,
 ```math
 \text{Venus Sidereal Day} = \frac{1.92}{1.92 - 1} \cdot 116.75\enspace dy = 243\enspace dy
 ```
+Comparing these values to Wikipedia, we can see we are correct.\
+$\blacksquare$
 
-Comparing these values to Wikipedia, we can see we are correct.
+<br/>
 
-Due to random fluctuations in the rotation rate of the Earth, the length of the sidereal day fluctuates by a second or two. *We will ignore this for the purposes of worldbuilding.*
+* Due to random fluctuations in the rotation rate of the Earth, the length of the sidereal day fluctuates by a second or two. *We will ignore this for the purposes of worldbuilding.*
+
+### Time Conversions
+
+The prime meridian is the reference longitude on the Earth. This is where longitude is measured from, and it is also where the standard time is measured. All other solar times can be converted to standard time via this formula:
+```math
+\text{Standard Time} = \text{Local Time} - \frac{l / 360\degree}{\text{Solar Day Length}}\tag{8}
+```
+Where $l$ is the local longitude (East is positive).
+
+<ins>The benefit to worldbuilding is that we can decide when time $0$ and when day $0$ is.</ins> **Here, we define time $0$ to be the time of Spring Equnox on the prime meridian, and we shall also, for the sake of convenience, also say that the Spring Equinox happened at exactly midnight.**
+
+Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, where $Y$ is the length of a year in solar days, we just multiply the time elapsed, in days, from $\text{time} = 0$ by $(Y\pm1)/Y$ to get the sidereal time.
+
+### Example
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+An observation was made on planet $P$ on solar day $175$ at solar time $05:16:35$ at $l=165\degree E$. <br/>
+Calculate the standard sidereal time at the time of the observation. <br/>
+(Assume a year length of $289.42$ solar days, a solar day length of $24$ hours, and prograde rotation.)
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+First, using equation $8$, we determine the standard time of observation.
+```math
+\text{Standard Time} = 05:16:35 - \frac{165\degree/360}{24h} = -06:00:00 + 00:16:35
+```
+This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $t = 174.7615$ days.\
+Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograde rotation, we can determine the standard sidereal time.
+```math
+\text{Sidereal Time (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
+```
+Thus the standard sidereal time at the time of measurement was sidereal day $175,\enspace130\degree\enspace30'\enspace28.8''$. \
+This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $130\degree\enspace30'\enspace28.8''$ from midnight.\
+$\blacksquare$
