@@ -482,8 +482,8 @@ Equation $12$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sun
 Carrying on, we clearly need $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
-\delta &&=-15&&\degree\enspace15&&'\enspace21.30&&''\\
-\alpha &&= 214&&\degree\enspace52&&'\enspace37.04&&''
+\delta &=-15&&\degree\enspace15&&'\enspace21.30&&''\\
+\alpha &= 214&&\degree\enspace52&&'\enspace37.04&&''
 \end{alignat}
 ```
 Substituting $\phi$ and $\delta$:
