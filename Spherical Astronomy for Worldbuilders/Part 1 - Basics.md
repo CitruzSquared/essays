@@ -497,22 +497,18 @@ Taking the negative arccosine value for h (negative because sunrise), we get:
 ```math
 h = -54\degree\enspace38'\enspace28.3''
 ```
-From here, we can use equation $11$.
+From here we just need to find the mean time from the hour angle, so we follow Example $5$.
 ```math
 \displaylines{
 h_L = \Theta_L - \alpha\\
 \begin{align}
 \therefore \Theta = \Theta_L &= -54\degree\enspace38'\enspace28.3'' + 214\degree\enspace52'\enspace37.04''\\
-&=160\degree\enspace14'\enspace56.58''
-\end{align}
-}
-```
-From here, we follow Example $4$.
-```math
-\begin{align}
+&=160\degree\enspace14'\enspace56.58''\\
+
 T &= (175\enspace sdy \enspace 160\degree\enspace14'\enspace56.58'' + 180\degree) \cdot \frac{289.42}{290.42}\\
 & = 175\enspace dy \enspace 08:08:32.9
 \end{align}
+}
 ```
 Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.\
 $\blacksquare$
