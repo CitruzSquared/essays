@@ -539,4 +539,4 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \end{bmatrix}
 ```
 
-## Parallax
+## IV. Parallax
