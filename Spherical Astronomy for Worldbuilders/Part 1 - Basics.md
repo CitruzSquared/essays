@@ -403,7 +403,7 @@ Thus, this time only works as a preliminary approximation, and we will have to r
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Using the fact that at $T = 175.4922$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
+Using the fact that at $T = 175\enspace dy \enspace 11:46:21.6$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
 Improve the approximation of the time of apparent noon.
 <img width="2000" height="0">
 </td>
