@@ -364,7 +364,7 @@ When $h_L = 0$, the star is coincident with the meridian, and the star is at the
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
-What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree$? <br/>
+What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
 (The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
 <img width="2000" height="0">
 </td>
@@ -439,7 +439,7 @@ etc.
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
-What was the mean Solar time of sunrise Solar day $175$ at $\phi = 45\degree N$ and $l = 0\degree$? <br/>
+What was the mean Solar time of sunrise Solar day $175$ at $\phi = 45\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
 </tbody>
