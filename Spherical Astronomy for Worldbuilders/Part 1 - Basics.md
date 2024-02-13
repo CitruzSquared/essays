@@ -262,7 +262,7 @@ Under this presumption, the conversion from Solar time to sidereal time is very 
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-An observation was made on planet $P$ on solar day $175$ at solar time $05:16:35$ at $l=165\degree E$. <br/>
+An observation was made on planet $P$ on solar day $175$ at solar time $05:16:34$ at $l=165\degree E$. <br/>
 Calculate the standard sidereal time at the time of the observation. <br/>
 (Assume a year length of $289.42$ solar days, a solar day length of $24$ hours, and prograde rotation.)
 <img width="2000" height="0">
@@ -274,12 +274,12 @@ Calculate the standard sidereal time at the time of the observation. <br/>
 First, using equation $7$, we determine the standard time of observation.
 ```math
 \begin{align}
-\text{Standard Time } (T) &= 05:16:35 - \frac{165\degree/360\degree}{24h} \\
-&= 05:16:35 - 11h \\
-&= -1\enspace dy \enspace 18:16:35
+\text{Standard Time } (T) &= 05:16:34 - \frac{165\degree/360\degree}{24h} \\
+&= 05:16:34 - 11h \\
+&= -1\enspace dy \enspace 18:16:34
 \end{align}
 ```
-This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $T = 174.7615$ days.\
+This means the standard time at the time of observation was solar day $174$ at $18:16:34$, or at $T = 174.7615$ days.\
 Then, using equation $9$:
 ```math
 \Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 - 0.5 = 174.8653$
@@ -327,7 +327,7 @@ Using equation $9$ with $0.5$ sidereal days $= 180\degree$,
 \begin{align}
 T &= (174\enspace sdy\enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
 &= 174.7615\enspace dy\\
-&= 174\enspace dy \enspace 18:16:35
+&= 174\enspace dy \enspace 18:16:34
 \end{align}
 ```
 If we add $l$ to $T$, we can see we get local solar day $175$, matching with the local observation date. \
