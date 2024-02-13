@@ -380,10 +380,7 @@ Because $l = 0\degree$, $h_L = h$.
 ```math
 h = \Theta - \alpha
 ```
-Apparent noon is when $h_L$ of the Sun $= 0\degree$, therefore
-```math
-\Theta = \alpha.
-```
+Apparent noon is when $h_L$ of the Sun $= 0\degree$, therefore at apparent noon, $\Theta = \alpha$.\
 Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the definition of the Ecliptic, we find:
 ```math
 \Theta = \alpha = 215\degree\enspace25'\enspace50.5''.
