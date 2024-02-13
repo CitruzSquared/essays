@@ -76,7 +76,7 @@ There are three coordinate systems in wide use. The [Equatorial Coordinate Syste
 ### Coordinate Transformations
 Coordinate transformations between the three coordinate systems are given via rotation matrix multiplications.
 
-**Ecliptic to Equatorial:**
+- **Ecliptic to Equatorial:**
 ```math
 \begin{bmatrix}
 x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
@@ -91,7 +91,9 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
 \end{bmatrix}
 ```
-**Equatorial to Ecliptic:**
+The $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the direction of Vernal Equinox.
+
+- **Equatorial to Ecliptic:**
 ```math
 \begin{bmatrix}
 x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
@@ -106,7 +108,9 @@ x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
 x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \end{bmatrix}
 ```
-**Equatorial to Horizontal:**
+Again, the $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the direction of Vernal Equinox.
+
+- **Equatorial to Horizontal:**
 ```math
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
@@ -165,7 +169,6 @@ y_{\text{ecliptic}} &= 0 \cdot x + \cos{\varepsilon} \cdot y &&+ \sin{\varepsilo
 z_{\text{ecliptic}} &= 0 \cdot x - \sin{\varepsilon} \cdot y &&+ \cos{\varepsilon} \cdot z &&= 0.0482118
 \end{alignat}
 ```
-The $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the Vernal Equinox.\
 We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 ```math
 \begin{alignat}{2}
