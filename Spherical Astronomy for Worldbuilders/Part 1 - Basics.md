@@ -439,7 +439,7 @@ etc.
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
-What was the mean Solar time of sunrise Solar day $175$ at $\phi = 45\degree N$ and $l = 0\degree E$? <br/>
+What was the mean Solar time of sunrise Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -470,7 +470,7 @@ Because $z_{\text{horizontal}} = \sin(a)$, when $a = 0\degree$, $z_{\text{horizo
 So, let's set $z_{\text{horizontal}} = 0$ and solve for $h$.\
 Carrying out the matrix multiplication only for $z$:
 ```math
-z_{\text{horizontal}} = 0 = \cos(45\degree)\cos(\delta) \cos(h) + 0\cdot\cos(\delta) \sin(h) + \sin(45\degree)\sin(\delta)
+z_{\text{horizontal}} = 0 = \cos(50\degree)\cos(\delta) \cos(h) + 0\cdot\cos(\delta) \sin(h) + \sin(50\degree)\sin(\delta)
 ```
 Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
@@ -482,34 +482,31 @@ Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calc
 Substituting and simplifying:
 ```math
 \displaylines{
-\begin{align}
-z_{\text{horizontal}} = 0 &= \cos(45\degree)\left(\cos(-15\degree\enspace15'\enspace21.3'') \cos(h) + \sin(-15\degree\enspace15'\enspace21.3'')\right)\\
-&=\cos(-15\degree\enspace15'\enspace21.3'') \cos(h) + \sin(-15\degree\enspace15'\enspace21.3'')
-\end{align}\\
+z_{\text{horizontal}} = 0 = \cos(50\degree)\cos(-15\degree\enspace15'\enspace21.3'') \cos(h) + \sin(50\degree) \sin(-15\degree\enspace15'\enspace21.3'')\\
 
-\therefore \cos(h) = -\tan(-15\degree\enspace15'\enspace21.3'')\\
-\therefore h = \arccos(0.27274222)
+\therefore \cos(h) = -\tan(50\degree)\tan(-15\degree\enspace15'\enspace21.3'')\\
+\therefore h = \arccos(0.578694953)
 }
 ```
 Taking the negative arccosine value for h (negative because sunrise), we get:
 ```math
-h = -74\degree\enspace10'\enspace20.96.''
+h = -54\degree\enspace38'\enspace28.3''
 ```
 From here, we can use equation $11$.
 ```math
 \displaylines{
 h_L = \Theta_L - \alpha\\
 \begin{align}
-\therefore \Theta = \Theta_L &= -74\degree\enspace10'\enspace20.96'' + 214\degree\enspace52'\enspace37.04''\\
-&=140\degree\enspace42'\enspace16.08''
+\therefore \Theta = \Theta_L &= -54\degree\enspace38'\enspace28.3'' + 214\degree\enspace52'\enspace37.04''\\
+&=160\degree\enspace14'\enspace56.58''
 \end{align}
 }
 ```
 From here, we follow Example $4$.
 ```math
 \begin{align}
-T &= (175\enspace sdy \enspace 140\degree\enspace42'\enspace16.08'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-& = 175\enspace dy \enspace 06:50:41.5
+T &= (175\enspace sdy \enspace 160\degree\enspace14'\enspace56.58'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+& = 175\enspace dy \enspace 08:08:32.9
 \end{align}
 ```
 Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.\
