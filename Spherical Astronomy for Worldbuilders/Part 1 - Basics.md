@@ -439,7 +439,7 @@ etc.
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
-What was the mean Solar time of sunrise Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
+What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -470,7 +470,13 @@ Because $z_{\text{horizontal}} = \sin(a)$, when $a = 0\degree$, $z_{\text{horizo
 So, let's set $z_{\text{horizontal}} = 0$ and solve for $h$.\
 Carrying out the matrix multiplication only for $z$:
 ```math
-z_{\text{horizontal}} = 0 = \cos(50\degree)\cos(\delta) \cos(h) + 0\cdot\cos(\delta) \sin(h) + \sin(50\degree)\sin(\delta)
+\begin{align}
+z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta) \sin(h) + \sin(\phi)\sin(\delta)\\
+&=\cos(\phi)\cos(\delta) \cos(h)+\sin(\phi)\sin(\delta)\\
+
+\therefore \cos(h) &= -\frac{\sin(\phi)\sin(\delta)}{\cos(\phi)\cos(\delta)}\\
+&=-\tan(\phi)\tan(\delta)
+\end{align}
 ```
 Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
@@ -479,12 +485,10 @@ Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calc
 \alpha &&= 214&&\degree\enspace52&&'\enspace37.04&&''
 \end{alignat}
 ```
-Substituting and simplifying:
+Substituting:
 ```math
 \displaylines{
-z_{\text{horizontal}} = 0 = \cos(50\degree)\cos(-15\degree\enspace15'\enspace21.3'') \cos(h) + \sin(50\degree) \sin(-15\degree\enspace15'\enspace21.3'')\\
-
-\therefore \cos(h) = -\tan(50\degree)\tan(-15\degree\enspace15'\enspace21.3'')\\
+\cos(h) = -\tan(50\degree)\tan(-15\degree\enspace15'\enspace21.3'')\\
 \therefore h = \arccos(0.578694953)
 }
 ```
