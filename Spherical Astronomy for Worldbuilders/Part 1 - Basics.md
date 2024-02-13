@@ -509,7 +509,7 @@ T &= (175\enspace sdy \enspace 140\degree\enspace42'\enspace16.08'' + 180\degree
 & = 175\enspace dy \enspace 06:50:41.5
 \end{align}
 ```
-Just as with Example $5$, this is just a preliminary approximation, and further repetitions must be done for a more accurate time.\
+Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.\
 $\blacksquare$
 
 <br/>
