@@ -312,7 +312,7 @@ Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\
 $0.5$ sidereal days $= 180\degree$, so:
 ```math
 \begin{align}
-T &= (175\enspace sdy -1\enspace sdy \enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
+T &= (174\enspace sdy\enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
 &= 174.7615\enspace dy\\
 &= 174\enspace dy \enspace 18:16:35
 \end{align}
