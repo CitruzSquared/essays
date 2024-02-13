@@ -388,7 +388,7 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 ```math
 \Theta = \alpha = 215\degree\enspace25'\enspace50.5''.
 ```
-Then, using the method of Example $5$, we try $\Theta = 175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5''$.
+Then, using the method of Example $4$, we try $\Theta = 175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5''$.
 ```math
 \begin{align}
 T &= (175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -400,7 +400,7 @@ $\blacksquare$
 
 However, in this example, $T = 175\enspace dy \enspace 11:48:46 \neq 175.00$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace48m\enspace46s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
-### Example 6
+### Example 5-II
 <div align="center">
 <table>
 <tbody>
@@ -418,7 +418,7 @@ Again, using equations $1$, $2,$ and $3$, we find:
 ```math
 \Theta = \alpha = 215\degree\enspace28'\enspace16.55''.
 ```
-Repeating the method of Example 5,
+Repeating the method of Example 4,
 ```math
 \begin{align}
 T &= (175\enspace sdy\enspace 215\degree\enspace28'\enspace16.55'' + 180\degree) \cdot \frac{289.42}{290.42}\\
