@@ -475,9 +475,10 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 &=\cos(\phi)\cos(\delta) \cos(h)+\sin(\phi)\sin(\delta)\\
 
 \therefore \cos(h) &= -\frac{\sin(\phi)\sin(\delta)}{\cos(\phi)\cos(\delta)}\\
-&=-\tan(\phi)\tan(\delta)
+&=-\tan(\phi)\tan(\delta)\tag{13}
 \end{align}
 ```
+Equation $13$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation).\
 Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
@@ -527,7 +528,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 =
 \begin{bmatrix}
 \sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{13}
+0 & 1 & 0 \\ \tag{14}
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
