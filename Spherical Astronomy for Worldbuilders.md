@@ -166,7 +166,7 @@ z_{\text{ecliptic}} &= 0 \cdot x - \sin{\varepsilon} \cdot y &&+ \cos{\varepsilo
 \end{alignat}
 ```
 The $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the Vernal Equinox.\
-We then convert to spherical coordinates with $\rho = 1$ using equation $2$
+We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 ```math
 \begin{alignat}{2}
 \lambda &= \arctan(0.210923,-0.976313) &&=  167\degree\enspace48'\enspace32.97''\\
