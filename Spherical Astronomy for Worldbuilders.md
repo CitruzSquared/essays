@@ -179,7 +179,7 @@ $\blacksquare$
 When measuring time, two types of time must be distinguished:
  - The [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time)
    * This is the time that bases itself off the Sun. This is the time that all of us are used to. The **average** time of noon (when the Sun is at its highest point in the sky) is $12:00$, or $.5$ (solar) days, and the **average** time of midnight (when the Sun is at its lowest point in the sky) is $00:00$, or $.0$ (solar) days. The Solar day is also called the *synodic day*
- - The [Sidereal Time](https://en.wikipedia.org/wiki/Sidereal_time)
+ - The [Sidereal Time](https://en.wikipedia.org/wiki/Sidereal_time) (denoted $\Theta$)
    * <ins>This is the time that bases itself off the rotation of the Earth</ins>. Contrary to popular belief, the rotation period of the Earth is not equal to one solar day. It is instead equal to one sidereal day. These two times are different due to the orbit of the Earth around the Sun. One sidereal day after some point in time, the distant stars will return to the same position in the sky, but because the Earth has orbited the sun and has moved in that time period (or, from the Earth's perspective, the Sun has moved), the Sun will have not retuend to the same position. Therefore there is a discrepancy between the two times.
    * Some thought will reveal that during the course of one orbit of the Earth, there is *exactly* one more sidereal day on Earth than there are solar days. If the Earth had a retrograde rotation, There would be one less sidereal day than there are solar days.
    * Sidereal time is often measured in degrees of Earth's rotation.
@@ -257,7 +257,7 @@ First, using equation $8$, we determine the standard time of observation.
 This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $t = 174.7615$ days.\
 Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograde rotation, we can determine the standard sidereal time.
 ```math
-\text{Sidereal Time (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
+\Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
 ```
 Thus the standard sidereal time at the time of measurement was sidereal day $175,\enspace130\degree\enspace30'\enspace28.8''$. \
 This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $130\degree\enspace30'\enspace28.8''$ from midnight.\
