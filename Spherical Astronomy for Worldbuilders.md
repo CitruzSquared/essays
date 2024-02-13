@@ -306,7 +306,7 @@ We then find the sidereal day corresponding to solar day $175$:
 ```
 Which we truncate to:
 ```math
-\Theta_{T=175.00} = $175\enspace sdy \tag{ii}
+\Theta_{T=175.00} = 175\enspace sdy \tag{ii}
 ```
 Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace sdy\enspace -1\enspace sdy \enspace131\degree\enspace31'\enspace12.25''$.\
 $0.5$ sidereal days $= 180\degree$, so:
