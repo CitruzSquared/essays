@@ -308,8 +308,8 @@ Which we truncate to:
 ```math
 \Theta_{T=175.00} = 175\enspace sdy \tag{ii}
 ```
-Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace sdy -1\enspace sdy \enspace131\degree\enspace31'\enspace12.25''$.\
-$0.5$ sidereal days $= 180\degree$, so:
+Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace sdy -1\enspace sdy \enspace311\degree\enspace31'\enspace12.25''$.\
+Using equation $10$ with $0.5$ sidereal days $= 180\degree$,
 ```math
 \begin{align}
 T &= (174\enspace sdy\enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
