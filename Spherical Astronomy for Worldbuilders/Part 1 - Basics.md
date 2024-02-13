@@ -335,7 +335,7 @@ If we had gotten for this value local solar day $174$, we would try again but wi
 $\blacksquare$
 
 ### The Hour Angle
-The [hour angle](https://en.wikipedia.org/wiki/Hour_angle), as defined earlier, is the angle between the meridian plane and the hour plane. This value is measured with West as positive.
+The [hour angle](https://en.wikipedia.org/wiki/Hour_angle), as defined earlier, is the angle between the meridian plane and the hour plane. **This value is measured with West as positive.**
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In the diagram, the Eastern angle between Aries and the Prime Meridian (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Eastern angle between Aries and the Local Meridian is the local standard time ($\Theta_L$). The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
 
@@ -424,3 +424,5 @@ T &= (175\enspace sdy\enspace 215\degree\enspace28'\enspace16.55'' + 180\degree)
 ```
 More repetition will improve our estimations even further.\
 $\blacksquare$
+
+## Parallax
