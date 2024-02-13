@@ -302,10 +302,12 @@ We convert to standard sidereal time by subtracting the longitude:
 ```
 We then find the sidereal day corresponding to solar day $175$:
 ```math
-\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace sdy\enspace37\degree\enspace40'\enspace36.24''\tag{ii}
+\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace sdy\enspace37\degree\enspace40'\enspace36.24''
 ```
-Which we truncate to $175\enspace sdy$.
-
+Which we truncate to:
+```math
+\Theta_{T=175.00} = $175\enspace sdy \tag{ii}
+```
 Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace sdy\enspace -1\enspace sdy \enspace131\degree\enspace31'\enspace12.25''$.\
 $0.5$ sidereal days $= 180\degree$, so:
 ```math
