@@ -516,7 +516,7 @@ $\blacksquare$
 <br/>
 <br/>
 
-Using the relation between the hour angle and the sidereal time, equation $5$ can be rewritten:
+Also, using the relation between the hour angle and the sidereal time, equation $5$ can be rewritten:
 ```math
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
