@@ -192,8 +192,10 @@ So how long is a solar day in comparison to a sidereal day? Well, think about it
 - Thus, there is exactly $1$ more sidereal day in $1$ year than there are Solar days.
 
 - The same argument applies for retrograde rotation, but there is $1$ fewer sidereal days than Solar days.
+
+Thus, since there are $Y\pm1$ sidereal days per $Y$ synodic days, where $Y$ is the length of the year in **solar days**,
 ```math
-\text{Sidereal Day} = \frac{\text{Year Length}}{\text{Year Length} \pm 1} \cdot \text{Solar Day}\tag{6}
+\text{Sidereal Day} = \frac{Y}{Y \pm 1} \cdot \text{Solar Day}\tag{6}
 ```
 ### Example
 <div align="center">
@@ -213,7 +215,7 @@ Calculate the length of the sidereal day on Earth and Venus, keeping in mind Ven
 We use equation $6$.\
 Since Earth has a prograde orbit,
 ```math
-\text{Sidereal Day} = \frac{\text{Year Length}}{\text{Year Length} + 1} \cdot \text{Solar Day}
+\text{Sidereal Day} = \frac{Y}{Y + 1} \cdot \text{Solar Day}
 ```
 Substituting the numbers,
 ```math
@@ -222,7 +224,7 @@ Substituting the numbers,
 
 Since Venus has a retrograde orbit,
 ```math
-\text{Sidereal Day} = \frac{\text{Year Length}}{\text{Year Length} - 1} \cdot \text{Solar Day}
+\text{Sidereal Day} = \frac{Y}{Y - 1} \cdot \text{Solar Day}
 ```
 Substituting the numbers,
 ```math
@@ -249,7 +251,7 @@ If the time is given as an angle, the following formula is perfectly viable:
 
 <ins>The benefit to worldbuilding is that we can decide when time $0$ and when day $0$ is.</ins> **Here, we define time $0$ to be the time of Spring Equnox on the prime meridian, and we shall also, for the sake of convenience, also say that the Spring Equinox happened at exactly midnight.** This means, that at solar time (T) $= 0$, the sidereal time was exactly $-0.5$ sidereal days, as Aries (coincident with the Sun) was at midnight.
 
-Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, where $Y$ is the length of a year **in solar days**, we just multiply the time elapsed, in days, from $T = 0$ by $(Y\pm1)/Y$ to get the sidereal time, then subtract by $0.5$ sidereal days to account for the fact that Aries was at midnight at $T = 0$.
+Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, we just multiply the time elapsed, in days, from $T = 0$ by $(Y\pm1)/Y$ to get the sidereal time, then subtract by $0.5$ sidereal days to account for the fact that Aries was at midnight at $T = 0$.
 ```math
 \Theta = \frac{Y \pm 1}{Y} \cdot T - 0.5 \tag{9}
 ```
