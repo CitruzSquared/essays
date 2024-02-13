@@ -1,17 +1,25 @@
 # Introduction
 **Astrology**, which is a method of divination by observing the stars, can be a very important part of worldbuilding. The basis of astrology is *Spherical Astronomy*, the science of observing the sky. This post will serve as a guide to spherical astronomy for the worldbuilder.
 
-# I. The Celestial Sphere
+# Part 1. The Basics
+Before we can start calculating the locations of stars and planets, we must get ourselves familiar with the bases of all our calculations.
+## I. The Celestial Sphere
 The most important thing in spherical astronomy is the location of celestial objects as seen from Earth. From the Earth, the sky appears to be a great dome all around us, and this is called the [Celestial Sphere](https://en.wikipedia.org/wiki/Celestial_sphere). This is a large sphere of arbitrary radius (commonly just put to 1) that surrounds the Earth that all the stars and planets are projected onto. There are two lines (circles in actuality) of great importance on the Celestial Sphere.
 
 - **The [Celestial Equator](https://en.wikipedia.org/wiki/Celestial_equator)**
-  * This is the circle on the celestial sphere obtained by projecting the Earth's equator onto the celestial sphere. If one were standing on the equator of the Earth, the celestial equator would appear to be a great circle passing right above the observer, going from East to West. 
+  * This is the circle on the celestial sphere obtained by projecting the Earth's equator onto the celestial sphere. If one were standing on the equator of the Earth, the celestial equator would appear to be a great circle passing right above the observer, going from East to West.
 - **The [Ecliptic](https://en.wikipedia.org/wiki/Ecliptic)**
   * This is the circle the Sun appears to make in the sky over the course of a year. In other words, it is the plane of the orbit of the Earth. Due to the axial tilt ($\varepsilon$) of $23.44\degree$ of the Earth, the ecliptic and the celestial equator make an angle of $23.44\degree$ in the sky. Because the Solar System is more or less flat, all the planets, including the Moon, more or less lie on this ecliptic line.
+    
+<img style="float: left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to.
 
-Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries (also known as the Vernal Equinox or the First Point of Aries)](https://en.wikipedia.org/wiki/First_point_of_Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the Purposes of Worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to.
+<br />
+<br />
+<br />
+<br />
+<br />
 
-# II. Coordinates
+## II. Coordinates
 Evidently the best way to locate a point on the Celestial *Sphere* is with [*spherical* coordinates](https://en.wikipedia.org/wiki/Spherical_coordinate_system). This is a coordinate system based on three values:
 ```math
 \begin{align}
@@ -64,7 +72,7 @@ There are three coordinate systems in wide use. The [Equatorial Coordinate Syste
      * The [Hour Plane (Circle)](https://en.wikipedia.org/wiki/Hour_circle): The plane (or circle) that stretches from Celestal North to Celestial South while passing through an object of note.
      * The angle between the Meridian plane and the Hour plane is called the [Hour angle](https://en.wikipedia.org/wiki/Hour_angle), denoted by $h$.
 
-## Coordinate Transformations:
+### Coordinate Transformations
 Coordinate transformations between the three coordinate systems are given via rotation matrix multiplications.
 
 **Ecliptic to Equatorial:**
@@ -75,8 +83,8 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 =
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos{\varepsilon} & \sin{\varepsilon} \\
-0 & -\sin{\varepsilon} & \cos{\varepsilon}  \tag{3}
+0 & \cos{\varepsilon} & -\sin{\varepsilon} \\
+0 & \sin{\varepsilon} & \cos{\varepsilon}  \tag{3}
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
@@ -124,7 +132,7 @@ These cartesian coordinates can be transformed to spherical coordinates by equat
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On January 2, 2024, the Moon's right ascension was $11^{h}\enspace 19^{m}\enspace 30.12^{s}$ and its declination was $+07\degree\enspace 21'\enspace 42.9''.$ <br/>
+On $\text{January }2,\:2024$, the Moon's right ascension was $11^{h}\enspace 19^{m}\enspace 30.12^{s}$ and its declination was $+07\degree\enspace 21'\enspace 42.9''.$ <br/>
  Calculate its ecliptic coordinates. (Use $\varepsilon = 23.44\degree$)<br>
 <img width="2000" height="0">
 </td>
@@ -134,25 +142,34 @@ On January 2, 2024, the Moon's right ascension was $11^{h}\enspace 19^{m}\enspac
 
 We first convert the sexagesimal notation to degrees:
 ```math
-\begin{alignat}{2}
-\alpha &= 11^{h}\enspace 19^{m}\enspace 30.12^{s} &&= 169.8755\degree \\
-\delta &= 07\degree\enspace 21'\enspace 42.9'' &&= 7.3619\degree
+\begin{alignat}{3}
+\alpha &= 11^{h}\enspace 19^{m}\enspace &&30.12^{s} &&= 169.8755\degree \\
+\delta &= 07\degree\enspace 21'\enspace &&42.9'' &&= 7.3619\degree
 \end{alignat}
 ```
 Keeping in mind that $1^{h}$ is $360\degree/24 = 15\degree$.\
-We then convert the equatorial coordinates given to equatorial cartesian coordinates:
+We then convert the equatorial coordinates given to equatorial cartesian coordinates using $\rho = 1$ (Celestial sphere is of arbitrary radius):
 ```math
 \begin{alignat}{2}
 x &= \cos(\delta)\cos(\alpha) &&= -0.976313\\
-y &= \cos(\delta)\sin(\alpha) &&= +0.174339\\
-z &= \sin(\delta) &&= +0.128136
+y &= \cos(\delta)\sin(\alpha) &&= 0.174339\\
+z &= \sin(\delta) &&= 0.128136
 \end{alignat}
 ```
-Then carry out the matrix multiplication:
+Next, we carry out the matrix multiplication:
+```math
+\begin{alignat}{3}
+x_{\text{ecliptic}} &= 1 \cdot x + 0 \cdot y &&+ 0 \cdot z && = -0.976313 \\
+y_{\text{ecliptic}} &= 0 \cdot x + \cos{\varepsilon} \cdot y &&+ \sin{\varepsilon} \cdot z &&= 0.210923 \\
+z_{\text{ecliptic}} &= 0 \cdot x - \sin{\varepsilon} \cdot y &&+ \cos{\varepsilon} \cdot z &&= 0.0482118
+\end{alignat}
+```
+The $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the Vernal Equinox.\
+We then convert to spherical coordinates ($\rho = 1$)
 ```math
 \begin{alignat}{2}
-x_{\text{ecliptic}} &= 1 \cdot x + 0 \cdot y + 0 \cdot z && = -0.976313
-y_{\text{ecliptic}}
-z_{\text{ecliptic}}
+\lambda &= \arctan(0.210923,-0.976313) &&=  167\degree\enspace48'\enspace32.97''\\
+\beta &= \arcsin(0.0482118/1) &&= \enspace\enspace2\degree\enspace45'\enspace48.24''
 \end{alignat}
 ```
+And the problem is solved.
