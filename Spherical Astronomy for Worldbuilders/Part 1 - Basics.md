@@ -427,7 +427,10 @@ $\blacksquare$
 
 ### Horizontal Coordinates using Sidereal Time
 
-Using our knowledge, we can calculate the times of certain astronomical events involving the horizon, more specifically the rising and setting times of celestial objects.
+Using our knowledge, we can calculate the times of certain astronomical events involving certain altitudes or azimuths, questions such as:
+- When does the Sun rise?
+- When is the Moon's location due East?\
+etc.
 
 ### Example 6
 <div align="center">
