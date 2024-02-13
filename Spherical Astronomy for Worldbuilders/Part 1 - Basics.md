@@ -128,7 +128,7 @@ Where $\phi =$ Latitude of Observer.
 
 These cartesian coordinates can be transformed to spherical coordinates by equation $2$.
 
-### Example
+### Example 1
 <div align="center">
 <table>
 <tbody>
@@ -197,7 +197,7 @@ Thus, since there are $Y\pm1$ sidereal days per $Y$ synodic days, where $Y$ is t
 ```math
 \text{Sidereal Day} = \frac{Y}{Y \pm 1} \cdot \text{Solar Day}\tag{6}
 ```
-### Example
+### Example 2
 <div align="center">
 <table>
 <tbody>
@@ -256,7 +256,7 @@ Under this presumption, the conversion from Solar time to sidereal time is very 
 \Theta = \frac{Y \pm 1}{Y} \cdot T - 0.5 \tag{9}
 ```
 
-### Example
+### Example 3
 <div align="center">
 <table>
 <tbody>
@@ -295,7 +295,7 @@ Where $sdy$ means sidereal days.\
 $\blacksquare$
 
 To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $9$ still holds.
-### Example
+### Example 4
 <div align="center">
 <table>
 <tbody>
@@ -356,3 +356,74 @@ h_L = \Theta + l - \alpha\tag{12}
 ```
 
 When $h_L = 0$, the star is coincident with the meridian, and the star is at the highest point in the sky. If $h_L = 180\degree$, the star is coincident with the lower meridian, and it is at the lowest point in the sky. If the star in question is the Sun, then the times at which $h_L = 0$ and $h_L = 180\degree$ are called *apparent noon* and *apparent midnight* respectively. These are not the same as the *mean noon* and *mean midnight*, the mean values are simply the average of the apparent values over the year. (Yes, this means noon and midnight aren't always at $12:00$ and $00:00$!)
+
+### Example 5
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
+What was the mean time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree$? <br/>
+(The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Recall equation $12$:
+```math
+h_L = \Theta + l - \alpha
+```
+Because $l = 0\degree$, $h_L = h$.
+```math
+h = \Theta - \alpha
+```
+Apparent noon is when $h_L$ of the Sun $= 0\degree$, therefore
+```math
+\Theta = \alpha.
+```
+Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the definition of the Ecliptic, we find:
+```math
+\Theta = \alpha = 215\degree\enspace25'\enspace50.5''.
+```
+Then, using the method of Example $5$, we try $\Theta = 175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5''$.
+```math
+\begin{align}
+T &= (175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175.4922\enspace dy \\
+&= 175\enspace dy \enspace 11:48:46
+\end{align}
+```
+$\blacksquare$
+
+However, in this example, $T = 175\enspace dy \enspace 11:48:46 \neq 175.00$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace48m\enspace46s$.
+Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
+### Example 6
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Using the fact that at $T = 175.4922$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace20.27''$, <br/>
+Improve the approximation of the time of apparent noon.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Again, using equations $1$, $2,$ and $3$, we find:
+```math
+\Theta = \alpha = 215\degree\enspace28'\enspace16.55''.
+```
+Repeating the method of Example 5,
+```math
+\begin{align}
+T &= (175\enspace sdy\enspace 215\degree\enspace28'\enspace16.55'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175\enspace dy\enspace 11:48:44
+\end{align}
+```
+More repetition will improve our estimations even further.\
+$\blacksquare$
