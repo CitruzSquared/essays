@@ -258,7 +258,7 @@ First, using equation $8$, we determine the standard time of observation.
 ```math
 \text{Standard Time } (T) = 05:16:35 - \frac{165\degree/360}{24h} = -06:00:00 + 00:16:35
 ```
-This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $t = 174.7615$ days.\
+This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $T = 174.7615$ days.\
 Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograde rotation, we can determine the standard sidereal time.
 ```math
 \Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
