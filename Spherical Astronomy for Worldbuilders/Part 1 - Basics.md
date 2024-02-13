@@ -491,11 +491,11 @@ z_{\text{horizontal}} = 0 &= \cos(45\degree)\left(\cos(-15\degree\enspace15'\ens
 \therefore h = \arccos(0.27274222)
 }
 ```
-Taking the negative value for h (negative because sunrise), we get:
+Taking the negative arccosine value for h (negative because sunrise), we get:
 ```math
-h = -74\degree\enspace10'\enspace20.96''
+h = -74\degree\enspace10'\enspace20.96.''
 ```
-From here, we can use equation $11$ 
+From here, we can use equation $11$.
 ```math
 \displaylines{
 h_L = \Theta_L - \alpha\\
