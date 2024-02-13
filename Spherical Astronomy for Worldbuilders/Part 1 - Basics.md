@@ -347,12 +347,12 @@ The Western angle between the Prime Meridian and the Star is known as the Standa
 
 It is therefore evident that 
 ```math
-h_L = \Theta_L - \alpha\tag{11}
+h_L = \Theta_L - \alpha\tag{10}
 ```
 and because $\Theta_L = \Theta + l$ (equations $7$ and $8$):
 
 ```math
-h_L = \Theta + l - \alpha\tag{12}
+h_L = \Theta + l - \alpha\tag{11}
 ```
 
 When $h_L = 0$, the star is coincident with the meridian, and the star is at the highest point in the sky. If $h_L = 180\degree$, the star is coincident with the lower meridian, and it is at the lowest point in the sky. If the star in question is the Sun, then the times at which $h_L = 0$ and $h_L = 180\degree$ are called *apparent noon* and *apparent midnight* respectively. These are not the same as the *mean noon* and *mean midnight*, the mean values are simply the average of the apparent values over the year. (Yes, this means noon and midnight aren't always at $12:00$ and $00:00$!)
@@ -372,7 +372,7 @@ What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 
 </table>
 </div>
 
-Recall equation $12$:
+Recall equation $11$:
 ```math
 h_L = \Theta + l - \alpha
 ```
@@ -475,10 +475,10 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 &=\cos(\phi)\cos(\delta) \cos(h)+\sin(\phi)\sin(\delta)\\
 
 \therefore \cos(h) &= -\frac{\sin(\phi)\sin(\delta)}{\cos(\phi)\cos(\delta)}\\
-&=-\tan(\phi)\tan(\delta)\tag{13}
+&=-\tan(\phi)\tan(\delta)\tag{12}
 \end{align}
 ```
-Equation $13$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
+Equation $12$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
 Carrying on, we clearly need $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
@@ -524,7 +524,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 =
 \begin{bmatrix}
 \sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{14}
+0 & 1 & 0 \\ \tag{13}
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
