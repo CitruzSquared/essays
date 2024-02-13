@@ -71,7 +71,7 @@ There are three coordinate systems in wide use. The [Equatorial Coordinate Syste
      * The angle between the Meridian plane and the Hour plane is called the [Hour angle](https://en.wikipedia.org/wiki/Hour_angle), denoted by $h$.
 
 ### Coordinate Transformations
-Coordinate transformations between the three coordinate systems are given via rotation matrix multiplications.
+[Coordinate transformations](https://en.wikipedia.org/wiki/Astronomical_coordinate_systems#Converting_coordinates) between the three coordinate systems are given via rotation matrix multiplications.
 
 - **Ecliptic to Equatorial:**
 ```math
