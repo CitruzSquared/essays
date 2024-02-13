@@ -322,4 +322,16 @@ The [hour angle](https://en.wikipedia.org/wiki/Hour_angle), as defined earlier, 
 
 The Western angle between the Prime Meridian and the Star is known as the Standard Hour Angle of the star ($h$), and the Western angle between the Local Meridian and the Star is known as the Local Hour Angle of the star ($h_L$).
 
-It is therefore evident that $h_L = \Theta_L - \alpha$, and $h = \Theta - \alpha$. Because $\Theta = \Theta_L - l$, $h_L = \Theta + l - \alpha$.
+<br/>
+<br/>
+<br/>
+
+It is therefore evident that 
+```math
+h_L = \Theta_L - \alpha\tag{11}
+```
+and because $\Theta_L = \Theta + l$ (equations $8$ and $9$):
+
+```math
+h_L = \Theta + l - \alpha\tag{12}
+```
