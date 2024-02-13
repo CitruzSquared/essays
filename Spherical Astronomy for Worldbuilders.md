@@ -298,13 +298,15 @@ Calculate the standard mean solar time.
 
 We convert to standard sidereal time by subtracting the longitude:
 ```math
-\text{Standard } \Theta = 116\degree\enspace31'\enspace12.25'' - 165\degree = -1\enspace sdy \enspace311\degree\enspace31'\enspace 12.25''
+\text{Standard } \Theta = 116\degree\enspace31'\enspace12.25'' - 165\degree = -1\enspace sdy \enspace311\degree\enspace31'\enspace 12.25''\tag{i}
 ```
 We then find the sidereal day corresponding to solar day $175$:
 ```math
-\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace sdy\enspace37\degree\enspace40'\enspace36.24''\text{,  truncate  to  } 175\enspace sdy
+\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace sdy\enspace37\degree\enspace40'\enspace36.24''\tag{ii}
 ```
-Thus we try $\Theta = 175\enspace sdy\enspace -1\enspace sdy \enspace131\degree\enspace31'\enspace12.25''$.\
+Which we truncate to $175\enspace sdy$.
+
+Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace sdy\enspace -1\enspace sdy \enspace131\degree\enspace31'\enspace12.25''$.\
 $0.5$ sidereal days $= 180\degree$, so:
 ```math
 \begin{align}
