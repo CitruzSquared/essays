@@ -12,7 +12,7 @@ The most important thing in spherical astronomy is the location of celestial obj
   * This is the circle the Sun appears to make in the sky over the course of a year. In other words, it is the plane of the orbit of the Earth. Due to the axial tilt ($\varepsilon$) of $23.44\degree$ of the Earth, the ecliptic and the celestial equator make an angle of $23.44\degree$ in the sky. Because the Solar System is more or less flat, all the planets, including the Moon, more or less lie on this ecliptic line.
  <br />
  
-<img style="float: left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to. This point is called the *Equinox point* because, if the Sun is located at it, the sun is passing directly over the equator, and the length of daytime will be exacly $1/2$ of a day ($12$ hours) all across the globe. The *Vernal* comes from the fact that, because the Sun is travelling towards the Northern direction, it is Spring time in the Northern Hemisphere when this event occurs (Vernal means Spring in Latin).
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to. This point is called the *Equinox point* because, if the Sun is located at it, the sun is passing directly over the equator, and the length of daytime will be exacly $1/2$ of a day ($12$ hours) all across the globe. The *Vernal* comes from the fact that, because the Sun is travelling towards the Northern direction, it is Spring time in the Northern Hemisphere when this event occurs (Vernal means Spring in Latin).
 
 <br/>
 
@@ -29,7 +29,7 @@ $\rho$ is the distance from the origin to the point in question, $\theta$ is the
 
 This coordinate system can be thought of as the longitude-latitude system of Earth, where $\theta$ is the longitude, and $\varphi$ is the latitude.
 Using trigonometry, one can find the radius of the latitude circle of a sphere with radius $\rho$ is $\rho \cos(\varphi)$ (View figure), so:
-<img style="float: left" src="https://github.com/CitruzSquared/essays/assets/23460281/6d9a1a2f-885a-4f94-98df-4e0814da6e90" width="250"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6d9a1a2f-885a-4f94-98df-4e0814da6e90" width="250"/>
 
 ```math
 \begin{align}
@@ -181,6 +181,7 @@ When measuring time, two types of time must be distinguished:
    * This is the time that bases itself off the Sun. This is the time that all of us are used to. The **average** time of noon (when the Sun is at its highest point in the sky) is $12:00$, or $.5$ (solar) days, and the **average** time of midnight (when the Sun is at its lowest point in the sky) is $00:00$, or $.0$ (solar) days. The Solar day is also called the *synodic day*
  - The [Sidereal Time](https://en.wikipedia.org/wiki/Sidereal_time) (denoted $\Theta$)
    * <ins>This is the time that bases itself off the rotation of the Earth</ins>. Contrary to popular belief, the rotation period of the Earth is not equal to one solar day. It is instead equal to one sidereal day. These two times are different due to the orbit of the Earth around the Sun. One sidereal day after some point in time, the distant stars will return to the same position in the sky, but because the Earth has orbited the sun and has moved in that time period (or, from the Earth's perspective, the Sun has moved), the Sun will have not retuend to the same position. Therefore there is a discrepancy between the two times.
+   * It is defined as the angle between the local meridian (the North-South-Zenith-Nadir plane) and the hour plane of Aries (the Celestial North-Celestial South-Aries plane). Thus, $0$ **sidereal time is not when Aries is lowest in the sky, but it is when Aries is at the highest point in the sky.**
    * Some thought will reveal that during the course of one orbit of the Earth, there is *exactly* one more sidereal day on Earth than there are solar days. If the Earth had a retrograde rotation, There would be one less sidereal day than there are solar days.
    * Sidereal time is often measured in degrees of Earth's rotation.
 ### Example
@@ -227,17 +228,20 @@ $\blacksquare$
 
 The prime meridian is the reference longitude on the Earth. This is where longitude is measured from, and it is also where the standard time is measured. All other solar times can be converted to standard time via this formula:
 ```math
-\text{Standard Time} = \text{Local Time} - \frac{l / 360\degree}{\text{Solar Day Length}}\tag{8}
+\text{Standard Time } (T) = \text{Local Time} - \frac{l / 360\degree}{\text{Solar Day Length}}\tag{8}
 ```
 Where $l$ is the local longitude (East is positive).\
 If the time is given as an angle, the following formula is perfectly viable:
 ```math
-\text{Standard Time} = \text{Local Time} - l\tag{9}
+\text{Standard Time } (T) = \text{Local Time} - l \tag{9}
 ```
 
-<ins>The benefit to worldbuilding is that we can decide when time $0$ and when day $0$ is.</ins> **Here, we define time $0$ to be the time of Spring Equnox on the prime meridian, and we shall also, for the sake of convenience, also say that the Spring Equinox happened at exactly midnight.**
+<ins>The benefit to worldbuilding is that we can decide when time $0$ and when day $0$ is.</ins> **Here, we define time $0$ to be the time of Spring Equnox on the prime meridian, and we shall also, for the sake of convenience, also say that the Spring Equinox happened at exactly midnight.** This means, that at solar time (T) $= 0$, the sidereal time was exactly $-0.5$ sidereal days, as Aries (coincident with the Sun) was at midnight.
 
-Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, where $Y$ is the length of a year in solar days, we just multiply the time elapsed, in days, from $\text{time} = 0$ by $(Y\pm1)/Y$ to get the sidereal time.
+Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, where $Y$ is the length of a year **in solar days**, we just multiply the time elapsed, in days, from $T = 0$ by $(Y\pm1)/Y$ to get the sidereal time, then subtract by $0.5$ sidereal days to account for the fact that Aries was at midnight at $T = 0$.
+```math
+\Theta = \frac{Y \pm 1}{Y} \cdot T - 0.5 \tag{10}
+```
 
 ### Example
 <div align="center">
@@ -259,28 +263,28 @@ First, using equation $8$, we determine the standard time of observation.
 \text{Standard Time } (T) = 05:16:35 - \frac{165\degree/360}{24h} = -06:00:00 + 00:16:35
 ```
 This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $T = 174.7615$ days.\
-Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograde rotation, we can determine the standard sidereal time.
+Then, using equation $10$:
 ```math
-\Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
+\Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 - 0.5 = 174.8653$
 ```
-Thus the standard sidereal time at the time of measurement was sidereal day $175,\enspace131\degree\enspace31'\enspace7.68''$. \
-This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $131\degree\enspace31'\enspace7.68''$ from midnight, or in other words: ***the right ascension of the prime meridian was*** $131\degree\enspace31'\enspace7.68'' = 8^h\enspace46^m\enspace4.51^s$.
+Thus the standard sidereal time at the time of measurement was sidereal day $174,\enspace311\degree\enspace31'\enspace12.25''$. \
+This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $311\degree\enspace31'\enspace12.25''$ from midnight, or in other words: ***the right ascension of the prime meridian was*** $'' = 20^h\enspace46^m\enspace4.82^s$.
 
 Furthermore, the local sidereal time can be calculated by equation $9$:
 ```math
-\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\enspace sdy\enspace296\degree\enspace31'\enspace7.68''
+\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\enspace sdy\enspace116\degree\enspace31'\enspace12.25''
 ```
 Where $sdy$ means sidereal days.\
 $\blacksquare$
 
-To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, the formula $\Theta = Y/(Y\pm1)\cdot T$ (Where $T =$ the solar time) still holds.
+To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $10$ still holds.
 ### Example
 <div align="center">
 <table>
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ on local solar day $175$, an observation was made at $l = 165\degree E$ at local sidereal time $296\degree\enspace31'\enspace7.68''.$ <br/>
+On planet $P$ on local solar day $175$, an observation was made at $l = 165\degree E$ at local sidereal time $116\degree\enspace31'\enspace12.25''.$ <br/>
 Calculate the standard mean solar time.
 <img width="2000" height="0">
 </td>
@@ -290,22 +294,32 @@ Calculate the standard mean solar time.
 
 We convert to standard sidereal time by subtracting the longitude:
 ```math
-\text{Standard } \Theta = 296\degree\enspace31'\enspace7.68'' - 165\degree = 131\degree\enspace31'\enspace7.68''
+\text{Standard } \Theta = 116\degree\enspace31'\enspace12.25'' - 165\degree = -1\enspace sdy \enspace311\degree\enspace31'\enspace 12.25''
 ```
 We then find the sidereal day corresponding to solar day $175$:
 ```math
-\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 = 175\enspace sdy\enspace217\degree\enspace40'\enspace36.24''\text{,  truncate  to  } 175\enspace sdy
+\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace sdy\enspace37\degree\enspace40'\enspace36.24''\text{,  truncate  to  } 175\enspace sdy
 ```
-Thus we try $\Theta = 175\enspace sdy \enspace131\degree\enspace31'\enspace7.68''$.
+Thus we try $\Theta = 175\enspace sdy\enspace -1\enspace sdy \enspace131\degree\enspace31'\enspace12.25''$.\
+$0.5$ sidereal days $= 180\degree$, so:
 ```math
 \begin{align}
-T &= 175\enspace sdy\enspace 131\degree\enspace31'\enspace7.68'' \cdot \frac{289.42}{290.42} \\
+T &= (175\enspace sdy\enspace -1\enspace sdy \enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
 &= 174.7615\enspace dy\\
-&= 174\enspace dy \enspace 18:16:33
+&= 174\enspace dy \enspace 18:16:34
 \end{align}
 ```
-If we add $l$ to $T$, we can see we get local solar day $175$, matching with the observation date. \
+If we add $l$ to $T$, we can see we get local solar day $175$, matching with the local observation date. \
 If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{T=175.00} = 176\enspace sdy$.)
 
-The discrepancy of 2 seconds from the previous example is due to rounding error.\
+The discrepancy of 1 second from the previous example is due to rounding error.\
 $\blacksquare$
+
+### The Hour Angle
+The [hour angle](https://en.wikipedia.org/wiki/Hour_angle), as defined earlier, is the angle between the meridian plane and the hour plane. This value is measured with West as positive.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In the diagram, the Eastern angle between Aries and the Prime Meridian (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Eastern angle between Aries and the Local Meridian is the local standard time ($\Theta_L$). The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
+
+The Western angle between the Prime Meridian and the Star is known as the Standard Hour Angle of the star ($h$), and the Western angle between the Local Meridian and the Star is known as the Local Hour Angle of the star ($h_L$).
+
+It is therefore evident that $h_L = \Theta_L - \alpha$, and $h = \Theta - \alpha$. Because $\Theta = \Theta_L - l$, $h_L = \Theta + l - \alpha$.
