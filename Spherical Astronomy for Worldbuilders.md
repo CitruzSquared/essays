@@ -256,7 +256,7 @@ Calculate the standard sidereal time at the time of the observation. <br/>
 
 First, using equation $8$, we determine the standard time of observation.
 ```math
-\text{Standard Time} = 05:16:35 - \frac{165\degree/360}{24h} = -06:00:00 + 00:16:35
+\text{Standard Time } (T) = 05:16:35 - \frac{165\degree/360}{24h} = -06:00:00 + 00:16:35
 ```
 This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $t = 174.7615$ days.\
 Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograde rotation, we can determine the standard sidereal time.
@@ -301,9 +301,11 @@ Thus we try $\Theta = 175\enspace sdy \enspace131\degree\enspace31'\enspace7.68'
 \begin{align}
 T &= 175\enspace sdy\enspace 131\degree\enspace31'\enspace7.68'' \cdot \frac{289.42}{290.42} \\
 &= 174.7615\enspace dy\\
-&= 174\enspace dy \enspace 18:16:35
+&= 174\enspace dy \enspace 18:16:33
 \end{align}
 ```
 If we add $l$ to $T$, we can see we get local solar day $175$, matching with the observation date. \
-If we had gotten for this value local solar day $174$, we would guess $\Theta_{175.00}$ to be $1$ higher. (In our case, $\Theta_{175.00} = 176\enspace sdy$.)\
+If we had gotten for this value local solar day $174$, we would guess $\Theta_{175.00}$ to be $1$ higher. (In our case, $\Theta_{175.00} = 176\enspace sdy$.)
+
+The discrepancy of 2 seconds from the previous example is due to rounding error.\
 $\blacksquare$
