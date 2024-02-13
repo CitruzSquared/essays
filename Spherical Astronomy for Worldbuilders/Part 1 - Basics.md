@@ -502,7 +502,7 @@ From here we just need to find the mean time from the hour angle, so we follow E
 \displaylines{
 h_L = \Theta_L - \alpha\\
 \begin{align}
-\therefore \Theta = \Theta_L &= h_L + \alpha\\
+\therefore \Theta = \Theta_L &= h_L + \alpha \\
 &=-54\degree\enspace38'\enspace28.3'' + 214\degree\enspace52'\enspace37.04''\\
 &=160\degree\enspace14'\enspace56.58''\\
 
