@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 **Astrology**, which is a method of divination by observing the stars, can be a very important part of worldbuilding. The basis of astrology is *Spherical Astronomy*, the science of observing the sky. This post will serve as a guide to spherical astronomy for the worldbuilder.
 
 # Part 1. The Basics
@@ -10,7 +10,8 @@ The most important thing in spherical astronomy is the location of celestial obj
   * This is the circle on the celestial sphere obtained by projecting the Earth's equator onto the celestial sphere. If one were standing on the equator of the Earth, the celestial equator would appear to be a great circle passing right above the observer, going from East to West.
 - **The [Ecliptic](https://en.wikipedia.org/wiki/Ecliptic)**
   * This is the circle the Sun appears to make in the sky over the course of a year. In other words, it is the plane of the orbit of the Earth. Due to the axial tilt ($\varepsilon$) of $23.44\degree$ of the Earth, the ecliptic and the celestial equator make an angle of $23.44\degree$ in the sky. Because the Solar System is more or less flat, all the planets, including the Moon, more or less lie on this ecliptic line.
-    
+ <br />
+ 
 <img style="float: left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to.
 
 <br />
@@ -114,7 +115,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \begin{bmatrix}
 \sin(\phi) & 0 & -\cos(\phi) \\
 0 & 1 & 0 \\ \tag{5}
-\cos(\phi) & 0 & sin(\phi)
+\cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
 \cos(\delta) \cos(h) \\
@@ -124,7 +125,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 ```
 Where $\phi =$ Latitude of Observer.
 
-These cartesian coordinates can be transformed to spherical coordinates by equation $(2)$.
+These cartesian coordinates can be transformed to spherical coordinates by equation $2$.
 
 ### Example
 <div align="center">
@@ -148,7 +149,7 @@ We first convert the sexagesimal notation to degrees:
 \end{alignat}
 ```
 Keeping in mind that $1^{h}$ is $360\degree/24 = 15\degree$.\
-We then convert the equatorial coordinates given to equatorial cartesian coordinates using $\rho = 1$ (Celestial sphere is of arbitrary radius):
+We then convert the equatorial coordinates given to equatorial cartesian coordinates ($\rho = 1$ because the celestial sphere is of arbitrary radius) using equation $1$:
 ```math
 \begin{alignat}{2}
 x &= \cos(\delta)\cos(\alpha) &&= -0.976313\\
@@ -156,7 +157,7 @@ y &= \cos(\delta)\sin(\alpha) &&= 0.174339\\
 z &= \sin(\delta) &&= 0.128136
 \end{alignat}
 ```
-Next, we carry out the matrix multiplication:
+Next, we carry out the matrix multiplication (equation $4$):
 ```math
 \begin{alignat}{3}
 x_{\text{ecliptic}} &= 1 \cdot x + 0 \cdot y &&+ 0 \cdot z && = -0.976313 \\
@@ -165,7 +166,7 @@ z_{\text{ecliptic}} &= 0 \cdot x - \sin{\varepsilon} \cdot y &&+ \cos{\varepsilo
 \end{alignat}
 ```
 The $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the Vernal Equinox.\
-We then convert to spherical coordinates ($\rho = 1$)
+We then convert to spherical coordinates with $\rho = 1$ using equation $2$
 ```math
 \begin{alignat}{2}
 \lambda &= \arctan(0.210923,-0.976313) &&=  167\degree\enspace48'\enspace32.97''\\
