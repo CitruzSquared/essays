@@ -174,3 +174,48 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$
 \end{alignat}
 ```
 And the problem is solved.
+
+## III. Time
+When measuring time, two types of time must be distinguished:
+ - The [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time)
+   * This is the time that bases itself off the Sun. This is the time that all of us are used to. The **average** time of noon (when the Sun is at its highest point in the sky) is $12:00$, or $.5$ (solar) days, and the **average** time of midnight (when the Sun is at its lowest point in the sky) is $00:00$, or $.0$ (solar) days. The Solar day is also called the *synodic day*
+ - The [Sidereal Time](https://en.wikipedia.org/wiki/Sidereal_time)
+   * <ins>This is the time that bases itself off the rotation of the Earth</ins>. Contrary to popular belief, the rotation period of the Earth is not equal to one solar day. It is instead equal to one sidereal day. These two times are different due to the orbit of the Earth around the Sun. One sidereal day after some point in time, the distant stars will return to the same position in the sky, but because the Earth has orbited the sun and has moved in that time period (or, from the Earth's perspective, the Sun has moved), the Sun will have not retuend to the same position. Therefore there is a discrepancy between the two times.
+   * Some thought will reveal that during the course of one orbit of the Earth, there is *exactly* one more sidereal day on Earth than there are solar days. If the Earth had a retrograde rotation, There would be one less sidereal day than there are solar days.
+### Example
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Earth has an orbital period of $365.2422$ Earth Solar days while Venus has an orbital period of $1.92$ Venusian Solar days. <br/>
+Calculate the length of the sidereal day on Earth and Venus, keeping in mind Venus has a retrograde rotation. <br>
+(The length of an Earth Solar day is $24$ hours while the length of a Venusian Solar day is $116.75$ Earth Solar days.)
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+
+Since Earth has a prograde orbit,
+```math
+\text{Sidereal Day Length} = \frac{\text{Year Length}}{\text{Year Length} + 1} \cdot \text{Solar Day Length} \tag{6}
+```
+Substituting the numbers,
+```math
+\text{Earth Sidereal Day} = \frac{365.2422}{365.2422 + 1} \cdot 24 h = 23h\enspace 56m\enspace 4s
+```
+
+Since Venus has a retrograde orbit,
+```math
+\text{Sidereal Day Length} = \frac{\text{Year Length}}{\text{Year Length} - 1} \cdot \text{Solar Day Length} \tag{7}
+```
+Substituting the numbers,
+```math
+\text{Venus Sidereal Day} = \frac{1.92}{1.92 - 1} \cdot 116.75\enspace dy = 243\enspace dy
+```
+
+Comparing these values to Wikipedia, we can see we are correct.
+
+Due to random fluctuations in the rotation rate of the Earth, the length of the sidereal day fluctuates by a second or two. *We will ignore this for the purposes of worldbuilding.*
