@@ -1,5 +1,5 @@
 ## Introduction
-**Astrology**, which is a method of divination by observing the stars, can be a very important part of worldbuilding. The basis of astrology is *Spherical Astronomy*, the science of observing the sky. This post will serve as a guide to spherical astronomy for the worldbuilder.
+**Astrology**, which is a method of divination by observing the stars, can be a very important part of worldbuilding. The basis of astrology is *Spherical Astronomy*, the science of observing the sky. This post will serve as a guide to spherical astronomy for the worldbuilder, and will start from the basics and build up to a complete ephemeris.
 
 # Part 1. The Basics
 Before we can start calculating the locations of stars and planets, we must get ourselves familiar with the bases of all our calculations.
