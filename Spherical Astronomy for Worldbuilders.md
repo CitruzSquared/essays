@@ -264,7 +264,7 @@ Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograd
 \Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
 ```
 Thus the standard sidereal time at the time of measurement was sidereal day $175,\enspace131\degree\enspace31'\enspace7.68''$. \
-This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $131\degree\enspace31'\enspace7.68''$ from midnight, or in other words: the right ascension of the prime meridian was $131\degree\enspace31'\enspace7.68'' = 8^h\enspace46^m\enspace4.51^s$.
+This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $131\degree\enspace31'\enspace7.68''$ from midnight, or in other words: ***the right ascension of the prime meridian was*** $131\degree\enspace31'\enspace7.68'' = 8^h\enspace46^m\enspace4.51^s$.
 
 Furthermore, the local sidereal time can be calculated by equation $9$:
 ```math
