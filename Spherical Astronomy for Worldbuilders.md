@@ -229,7 +229,11 @@ The prime meridian is the reference longitude on the Earth. This is where longit
 ```math
 \text{Standard Time} = \text{Local Time} - \frac{l / 360\degree}{\text{Solar Day Length}}\tag{8}
 ```
-Where $l$ is the local longitude (East is positive).
+Where $l$ is the local longitude (East is positive).\
+If the time is given as an angle, the following formula is perfectly viable:
+```math
+\text{Standard Time} = \text{Local Time} - l\tag{9}
+```
 
 <ins>The benefit to worldbuilding is that we can decide when time $0$ and when day $0$ is.</ins> **Here, we define time $0$ to be the time of Spring Equnox on the prime meridian, and we shall also, for the sake of convenience, also say that the Spring Equinox happened at exactly midnight.**
 
@@ -259,6 +263,47 @@ Then, using the fact that a sidereal day is $Y/(Y+1)$ of a solar day for prograd
 ```math
 \Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 = 175.3653$
 ```
-Thus the standard sidereal time at the time of measurement was sidereal day $175,\enspace130\degree\enspace30'\enspace28.8''$. \
-This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $130\degree\enspace30'\enspace28.8''$ from midnight.\
+Thus the standard sidereal time at the time of measurement was sidereal day $175,\enspace131\degree\enspace31'\enspace7.68''$. \
+This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $131\degree\enspace31'\enspace7.68''$ from midnight, or in other words: the right ascension of the prime meridian was $131\degree\enspace31'\enspace7.68'' = 8^h\enspace46^m\enspace4.51^s$.
+
+Furthermore, the local sidereal time can be calculated by equation $9$:
+```math
+\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\enspace sdy\enspace296\degree\enspace31'\enspace7.68''
+```
+Where $sdy$ means sidereal days.\
+$\blacksquare$
+
+To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, the formula $\Theta = Y/(Y\pm1)\cdot T$ (Where $T =$ the solar time) still holds.
+### Example
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+On planet $P$ on local solar day $175$, an observation was made at $l = 165\degree E$ at local sidereal time $296\degree\enspace31'\enspace7.68''.$ <br/>
+Calculate the standard mean solar time.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We convert to standard sidereal time by subtracting the longitude:
+```math
+\text{Standard } \Theta = 296\degree\enspace31'\enspace7.68'' - 165\degree = 131\degree\enspace31'\enspace7.68''
+```
+We then find the sidereal day corresponding to solar day $175$:
+```math
+\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 = 175\enspace sdy\enspace217\degree\enspace40'\enspace36.24''\text{,  truncate  to  } 175\enspace sdy
+```
+Thus we try $\Theta = 175\enspace sdy \enspace131\degree\enspace31'\enspace7.68''$.
+```math
+\begin{align}
+T &= 175\enspace sdy\enspace 131\degree\enspace31'\enspace7.68'' \cdot \frac{289.42}{290.42} \\
+&= 174.7615\enspace dy\\
+&= 174\enspace dy \enspace 18:16:35
+\end{align}
+```
+If we add $l$ to $T$, we can see we get local solar day $175$, matching with the observation date. \
+If we had gotten for this value local solar day $174$, we would guess $\Theta_{175.00}$ to be $1$ higher. (In our case, $\Theta_{175.00} = 176\enspace sdy$.)\
 $\blacksquare$
