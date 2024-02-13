@@ -305,7 +305,7 @@ T &= 175\enspace sdy\enspace 131\degree\enspace31'\enspace7.68'' \cdot \frac{289
 \end{align}
 ```
 If we add $l$ to $T$, we can see we get local solar day $175$, matching with the observation date. \
-If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{175.00} = 176\enspace sdy$.)
+If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{T=175.00} = 176\enspace sdy$.)
 
 The discrepancy of 2 seconds from the previous example is due to rounding error.\
 $\blacksquare$
