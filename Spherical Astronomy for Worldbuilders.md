@@ -272,7 +272,7 @@ Then, using equation $10$:
 \Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 - 0.5 = 174.8653$
 ```
 Thus the standard sidereal time at the time of measurement was sidereal day $174,\enspace311\degree\enspace31'\enspace12.25''$. \
-This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $311\degree\enspace31'\enspace12.25''$ from midnight, or in other words: ***the right ascension of the prime meridian was*** $'' = 20^h\enspace46^m\enspace4.82^s$.
+This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $311\degree\enspace31'\enspace12.25''$ from midnight, or in other words: ***the right ascension of the prime meridian was*** $311\degree\enspace31'\enspace12.25'' = 20^h\enspace46^m\enspace4.82^s$.
 
 Furthermore, the local sidereal time can be calculated by equation $9$:
 ```math
