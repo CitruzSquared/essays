@@ -306,13 +306,11 @@ $0.5$ sidereal days $= 180\degree$, so:
 \begin{align}
 T &= (175\enspace sdy\enspace -1\enspace sdy \enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
 &= 174.7615\enspace dy\\
-&= 174\enspace dy \enspace 18:16:34
+&= 174\enspace dy \enspace 18:16:35
 \end{align}
 ```
 If we add $l$ to $T$, we can see we get local solar day $175$, matching with the local observation date. \
-If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{T=175.00} = 176\enspace sdy$.)
-
-The discrepancy of 1 second from the previous example is due to rounding error.\
+If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{T=175.00} = 176\enspace sdy$.)\
 $\blacksquare$
 
 ### The Hour Angle
