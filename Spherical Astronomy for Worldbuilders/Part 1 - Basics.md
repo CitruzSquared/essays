@@ -538,4 +538,4 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \end{bmatrix}
 ```
 
-## IV. Parallax
+## IV. Reduction to the Center of the Earth
