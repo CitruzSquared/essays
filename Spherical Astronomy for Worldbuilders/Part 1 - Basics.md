@@ -478,15 +478,15 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 &=-\tan(\phi)\tan(\delta)\tag{13}
 \end{align}
 ```
-Equation $13$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation).\
-Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
+Equation $13$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
+Carrying on, we clearly need $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
 \delta &&=-15&&\degree\enspace15&&'\enspace21.30&&''\\
 \alpha &&= 214&&\degree\enspace52&&'\enspace37.04&&''
 \end{alignat}
 ```
-Substituting:
+Substituting $\phi$ and $\delta$:
 ```math
 \displaylines{
 \cos(h) = -\tan(50\degree)\tan(-15\degree\enspace15'\enspace21.3'')\\
