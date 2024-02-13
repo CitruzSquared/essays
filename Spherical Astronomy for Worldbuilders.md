@@ -260,7 +260,7 @@ Calculate the standard sidereal time at the time of the observation. <br/>
 
 First, using equation $8$, we determine the standard time of observation.
 ```math
-\text{Standard Time } (T) = 05:16:35 - \frac{165\degree/360}{24h} = -06:00:00 + 00:16:35
+\text{Standard Time } (T) = 05:16:35 - \frac{165\degree/360\degree}{24h} = -06:00:00 + 00:16:35
 ```
 This means the standard time at the time of observation was solar day $174$ at $18:16:35$, or at $T = 174.7615$ days.\
 Then, using equation $10$:
