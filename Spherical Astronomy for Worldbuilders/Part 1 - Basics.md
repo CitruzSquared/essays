@@ -383,19 +383,19 @@ h = \Theta - \alpha
 Apparent noon is when $h_L$ of the Sun $= 0\degree$, therefore at apparent noon, $\Theta = \alpha$.\
 Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the definition of the Ecliptic, we find:
 ```math
-\Theta = \alpha = 215\degree\enspace25'\enspace50.5''.
+\Theta = \alpha = 214\degree\enspace52'\enspace37.04''.
 ```
 Then, using the method of Example $4$, we try $\Theta = 175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5''$.
 ```math
 \begin{align}
-T &= (175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175.4922\enspace dy \\
-&= 175\enspace dy \enspace 11:48:46
+T &= (175\enspace sdy\enspace 214\degree\enspace52'\enspace37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175.4905\enspace dy \\
+&= 175\enspace dy \enspace 11:46:21.6
 \end{align}
 ```
 $\blacksquare$
 
-However, in this example, $T = 175\enspace dy \enspace 11:48:46 \neq 175.00$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace48m\enspace46s$.
+However, in this example, $T = 175\enspace dy \enspace 11:46:21.6 \neq 175.00$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace21.6s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 ### Example 5-II
 <div align="center">
@@ -403,7 +403,7 @@ Thus, this time only works as a preliminary approximation, and we will have to r
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Using the fact that at $T = 175.4922$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace20.27''$, <br/>
+Using the fact that at $T = 175.4922$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
 Improve the approximation of the time of apparent noon.
 <img width="2000" height="0">
 </td>
@@ -413,16 +413,127 @@ Improve the approximation of the time of apparent noon.
 
 Again, using equations $1$, $2,$ and $3$, we find:
 ```math
-\Theta = \alpha = 215\degree\enspace28'\enspace16.55''.
+\Theta = \alpha = 215\degree\enspace28'\enspace9.28''.
 ```
 Repeating the method of Example 4,
 ```math
 \begin{align}
-T &= (175\enspace sdy\enspace 215\degree\enspace28'\enspace16.55'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175\enspace dy\enspace 11:48:44
+T &= (175\enspace sdy\enspace 215\degree\enspace28'\enspace9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175\enspace dy\enspace 11:48:43.3
 \end{align}
 ```
 More repetition will improve our estimations even further.\
 $\blacksquare$
+
+### Horizontal Coordinates using Sidereal Time
+
+Using our knowledge, we can calculate the times of certain astronomical events involving the horizon, more specifically the rising and setting times of celestial objects.
+
+### Example 6
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
+What was the mean Solar time of sunrise Solar day $175$ at $\phi = 45\degree N$ and $l = 0\degree$? <br/>
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+"Sunrise" means that the Sun is at the horizon, or more specifically, the eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
+
+Recall equation $5$.
+```math
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(\phi) & 0 & -\cos(\phi) \\
+0 & 1 & 0 \\
+\cos(\phi) & 0 & \sin(\phi)
+\end{bmatrix}
+\begin{bmatrix}
+\cos(\delta) \cos(h) \\
+\cos(\delta) \sin(h) \\
+\sin(\delta)
+\end{bmatrix}
+```
+
+Because $z_{\text{horizontal}} = \sin(a)$, when $a = 0\degree$, $z_{\text{horizontal}} = 0$.\
+So, let's set $z_{\text{horizontal}} = 0$ and solve for $h$.\
+Carrying out the matrix multiplication only for $z$:
+```math
+z_{\text{horizontal}} = 0 = \cos(45\degree)\cos(\delta) \cos(h) + 0\cdot\cos(\delta) \sin(h) + \sin(45\degree)\sin(\delta)
+```
+Clearly we need to find $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
+```math
+\begin{alignat}{4}
+\delta &&=-15&&\degree\enspace15&&'\enspace21.30&&''\\
+\alpha &&= 214&&\degree\enspace52&&'\enspace37.04&&''
+\end{alignat}
+```
+Substituting and simplifying:
+```math
+\displaylines{
+\begin{align}
+z_{\text{horizontal}} = 0 &= \cos(45\degree)\left(\cos(-15\degree\enspace15'\enspace21.3'') \cos(h) + \sin(-15\degree\enspace15'\enspace21.3'')\right)\\
+&=\cos(-15\degree\enspace15'\enspace21.3'') \cos(h) + \sin(-15\degree\enspace15'\enspace21.3'')
+\end{align}\\
+
+\therefore \cos(h) = -\tan(-15\degree\enspace15'\enspace21.3'')\\
+\therefore h = \arccos(0.27274222)
+}
+```
+Taking the negative value for h (negative because sunrise), we get:
+```math
+h = -74\degree\enspace10'\enspace20.96''
+```
+From here, we can use equation $11$ 
+```math
+\displaylines{
+h_L = \Theta_L - \alpha\\
+\begin{align}
+\therefore \Theta = \Theta_L &= -74\degree\enspace10'\enspace20.96'' + 214\degree\enspace52'\enspace37.04''\\
+&=140\degree\enspace42'\enspace16.08''
+\end{align}
+}
+```
+From here, we follow Example $4$.
+```math
+\begin{align}
+T &= (175\enspace sdy \enspace 140\degree\enspace42'\enspace16.08'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+& = 175\enspace dy \enspace 06:50:41.5
+\end{align}
+```
+Just as with Example $5$, this is just a preliminary approximation, and further repetitions must be done for a more accurate time.\
+$\blacksquare$
+
+<br/>
+<br/>
+
+Using the relation between the hour angle and the sidereal time, equation $5$ can be rewritten:
+```math
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(\phi) & 0 & -\cos(\phi) \\
+0 & 1 & 0 \\ \tag{13}
+\cos(\phi) & 0 & \sin(\phi)
+\end{bmatrix}
+\begin{bmatrix}
+\cos(\Theta_L) & \sin(\Theta_L) & 0 \\
+\sin(\Theta_L) & -\cos(\Theta_L) & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
+\end{bmatrix}
+```
 
 ## Parallax
