@@ -223,20 +223,20 @@ Calculate the length of the sidereal day on Earth and Venus, keeping in mind Ven
 We use equation $6$.\
 Since Earth has a prograde orbit,
 ```math
-\text{Sidereal Day} = \frac{Y}{Y + 1} \cdot \text{Solar Day}
+\text{Sidereal Day Length} = \frac{Y}{Y + 1} \cdot \text{Solar Day Length}
 ```
 Substituting the numbers,
 ```math
-\text{Earth Sidereal Day} = \frac{365.2422}{365.2422 + 1} \cdot 24 h = 23h\enspace 56m\enspace 4s
+\text{Earth Sidereal Day Length} = \frac{365.2422}{365.2422 + 1} \cdot 24 h = 23h\enspace 56m\enspace 4s
 ```
 
 Since Venus has a retrograde orbit,
 ```math
-\text{Sidereal Day} = \frac{Y}{Y - 1} \cdot \text{Solar Day}
+\text{Sidereal Day Length} = \frac{Y}{Y - 1} \cdot \text{Solar Day Length}
 ```
 Substituting the numbers,
 ```math
-\text{Venus Sidereal Day} = \frac{1.92}{1.92 - 1} \cdot 116.75\enspace \text{dy} = 243\enspace \text{dy}
+\text{Venus Sidereal Day Length} = \frac{1.92}{1.92 - 1} \cdot 116.75\enspace \text{dy} = 243\enspace \text{dy}
 ```
 Comparing these values to Wikipedia, we can see we are correct.\
 $\blacksquare$
