@@ -245,7 +245,7 @@ $\blacksquare$
 
 * Due to random fluctuations in the rotation rate of the Earth, the length of the sidereal day fluctuates by a second or two. *We will ignore this for the purposes of worldbuilding.*
 
-### Converting between Sidereal and Solar time
+### Converting between Times
 
 The prime meridian is the reference longitude on the Earth. This is where longitude is measured from, and it is also where the standard time is measured. All other solar times can be converted to standard time via this formula:
 ```math
