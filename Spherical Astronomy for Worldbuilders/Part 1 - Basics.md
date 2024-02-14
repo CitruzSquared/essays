@@ -51,16 +51,16 @@ Where $\arctan(y, x)$ is the [two argument arctangent](https://en.wikipedia.org/
 
 There are three coordinate systems in wide use. The [Equatorial Coordinate System](https://en.wikipedia.org/wiki/Equatorial_coordinate_system), the [Ecliptic Coordinate System](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system). and the [Horizontal Coordinate System](https://en.wikipedia.org/wiki/Horizontal_coordinate_system).
 
-- **The Equatorial Coordinate System**
+- [**The Equatorial Coordinate System**](https://en.wikipedia.org/wiki/Equatorial_coordinate_system)
    * In the Equatorial Coordinate System, the angles $\theta$ and $\varphi$ are called the *Right Ascension* and *Declination* and are denoted $\alpha$ and $\delta$ respectively.
    * The Right Ascension is measured in the plane of the Celestial Equator from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Celestial Equator such that positive is North.
    * The Right Ascension has a peculiar unit, the angle is measured by *hours*, *minutes*, and *seconds*, where $24$ hours is one revolution, $60$ minutes is one hour, and $60$ seconds is one minute.
    * The points of $+90\degree$ and $-90\degree$ Declination are called the *North* and *South* [*Celestial Poles*](https://en.wikipedia.org/wiki/Celestial_pole) respectively. These points can be thought of as the points in the sky right above True North and True South of Earth. From the view of an observer on the Earth, the celestial poles are always in the direction of North and South. Indeed, the reason the North Star always points North is because it is located so close to the North Celestial Pole (Declension $+89\degree 16'$).
-- **The Ecliptic Coordinate System**
+- [**The Ecliptic Coordinate System**](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system)
    * In the Equatorial Coordinate System, the angles $\theta$ and $\varphi$ are called the *Ecliptic Longitude* and *Ecliptic Latitude* and are denoted $\lambda$ and $\beta$ respectively.
    * The Ecliptic Longitude is measured in the plane of the Ecliptic from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Ecliptic such that positive is North.
    * By definition of the Ecliptic, the Ecliptic Latitude of the Sun is always $0\degree$.
-- **The Horizontal Coordinate System**
+- [**The Horizontal Coordinate System**](https://en.wikipedia.org/wiki/Horizontal_coordinate_system)
    * This system is unique in that it measures the points as viewed from an actual observer on the Earth, and instead of the reference plane (*xy*-plane) being fixed circles on the Celestial Sphere, it is the horizon of the observer.
    * In the Horizontal Coordinate System, the angles $\theta$ and $\varphi$ are called the *Azimuth* and *Altitude* and are denoted $A$ and $a$ respectively.
    * The Azimuth is measured in the plane of the horizon from North with East as the positive direction. Altitude is measured perpendicular from the horizon such that it is positive when objects are above the horizon.
@@ -185,7 +185,7 @@ When measuring time, two types of time must be distinguished:
    * Sidereal time is often measured in degrees of Earth's rotation.
 
 A further investigation into the difference between the two times: as mentioned earlier, after one sidereal day, the Earth is facing the same point in the sky, and thus the stars will have returned to the same point in the sky. However, because the Earth has orbited an amount around the Sun in that time period, the Sun will not have returned to the same position in the sky. \
-So how long is a solar day in comparison to a sidereal day? Well, think about it this way:\
+So how long is a solar day in comparison to a sidereal day? Well, think about it this way:
 - Say at time $0$, the Prime Meridian of the Earth is facing away from the Sun, and the Sun is exactly at Aries.
 - Say $n$ sidereal days after some date, the Earth is at the opposite end of its orbit.
 - Then, the Prime Meridian will still be pointing towards Aries, but now it is facing the Sun instead of away. This means that there was $0.5$ more sidereal days in that time period than there were Solar days.
