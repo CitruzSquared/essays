@@ -363,7 +363,7 @@ When $h_L = 0$, the star is coincident with the meridian, and the star is at the
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
+On planet $P$ at standard time $T = 175.00\enspace dy$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
 What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
 (The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
 <img width="2000" height="0">
@@ -395,7 +395,7 @@ T &= (175\enspace sdy\enspace 214\degree\enspace52'\enspace37.04'' + 180\degree)
 ```
 $\blacksquare$
 
-However, in this example, $T = 175\enspace dy \enspace 11:46:21.6 \neq 175.00$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace21.6s$.
+However, in this example, $T = 175\enspace dy \enspace 11:46:21.6 \neq 175.00\enspace dy$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace21.6s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 #### Example 5-II
 <div align="center">
@@ -438,7 +438,7 @@ etc.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at standard time $T = 175.00$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
+On planet $P$ at standard time $T = 175.00\enspace dy$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
 What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
