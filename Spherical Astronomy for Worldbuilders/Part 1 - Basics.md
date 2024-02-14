@@ -634,12 +634,12 @@ With the addition of an auxiliary $\psi$, these equations can be simplified:
 We can deduce from equation $18$ by using the angle addition formulae
 ```math
 \begin{align}
-\rho \cos(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)\\
-\rho \sin(\phi - \phi') &= a \cos(\psi)
+\rho \cos(\phi - \phi') &= a \cos(\psi)\\
+\rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
 \tag{19}
 \end{align}
 ```
-By multiplying the 3rd line of equation $18$ with the 2nd line of equation $19$, we obtain:
+By multiplying the 2nd line of equation $18$ with the 1st line of equation $19$, we obtain:
 ```math
 \rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{20}
 ```
