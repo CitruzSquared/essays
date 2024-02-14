@@ -181,6 +181,9 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 $\blacksquare$
 
 ## II. Time
+Let us talk about how time and date are measured in astronomy.
+
+### Sidereal and Solar time
 When measuring time, two types of time must be distinguished:
  - The [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time)
    * This is the time that bases itself off the Sun. This is the time that all of us are used to. The **average** time of noon (when the Sun is at its highest point in the sky) is $12:00$, or $.5$ (solar) days, and the **average** time of midnight (when the Sun is at its lowest point in the sky) is $00:00$, or $.0$ (solar) days. The Solar day is also called the *synodic day*
@@ -242,7 +245,7 @@ $\blacksquare$
 
 * Due to random fluctuations in the rotation rate of the Earth, the length of the sidereal day fluctuates by a second or two. *We will ignore this for the purposes of worldbuilding.*
 
-### Sidereal and Solar time
+### Converting between Sidereal and Solar time
 
 The prime meridian is the reference longitude on the Earth. This is where longitude is measured from, and it is also where the standard time is measured. All other solar times can be converted to standard time via this formula:
 ```math
