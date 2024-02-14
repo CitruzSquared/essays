@@ -601,7 +601,7 @@ Therefore:
 ```math
 \tan(\phi') = \frac{b^2}{a^2} \cdot \tan(\phi).\tag{17}
 ```
-It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, $phi - phi'$, called the *reduction in latitude*, is equal to the angle CPO in the diagram.
+It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, $\phi - \phi'$, called the *reduction in latitude*, is equal to the angle CPO in the diagram.
 
 Let us now also calculate the specific radius at latitude $\phi$, i.e. the length $PC$, labeled $\rho$ in the diagram.\
 From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
