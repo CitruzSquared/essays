@@ -548,10 +548,10 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 
 ## III. Earthly Parallax
 
-Our formulae for the location of planets in the sky, and hence the values in our ephemeris, are calculated for a hypothetical observer at the center of the Earth. These values are called the *true* values. On the surface, there is a measurable difference in the values of angles compared to their true values. The actual observed angles are called the *apparent* values.
+Our formulae for the location of planets in the sky, and hence the values in our ephemeris, are calculated for a hypothetical observer at the center of the Earth. These values are called the *true* values. On the surface, there is a measurable difference in the values of angles compared to their true values. The actual observed angles are called the *apparent* values. Let us see how these two values differ and how they can be calculated from each other.
 
 ### The Shape of the Earth
-The Earth is roughly a squished sphere, meaning it is a spheroid. Due to the Earth's rotation, its polar radius its smaller than its equatorial radius. The amount of flattening of the Earth, called the *compression* ($c$), is calculated with the following formula:
+In order to observe from the surface of the Earth, we must know the shape of the Earth. The Earth is roughly a squished sphere, meaning it is a spheroid. Due to the Earth's rotation, its polar radius its smaller than its equatorial radius. The amount of flattening of the Earth, called the *compression* ($c$), is calculated with the following formula:
 ```math
 c = 1 - \frac{b}{a}\tag{14}
 ```
