@@ -628,7 +628,7 @@ We can deduce from equation $18$ by using the angle addition formulae
 \begin{align}
 \rho \cos(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)\\
 \rho \sin(\phi - \phi') &= a \cos(\psi)
-\tag{19}\\
+\tag{19}
 \end{align}
 ```
 By multiplying the 3rd line of equation $18$ with the 2nd line of equation $19$, we obtain:
