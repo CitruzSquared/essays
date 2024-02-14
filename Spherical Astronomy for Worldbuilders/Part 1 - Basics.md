@@ -618,7 +618,7 @@ But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
 With the addition of an auxiliary $\psi$, these equations can be simplified:
 ```math
 \begin{align}
-\sin(\psi) = &= e\sin(\phi)\\
+\sin(\psi) &= e\sin(\phi)\\
 \rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{18}\\
 \rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
 \end{align}
