@@ -3,7 +3,11 @@
 
 # Part 1. The Basics
 Before we can start calculating the locations of stars and planets, we must get ourselves familiar with the bases of all our calculations.
-## I. The Celestial Sphere
+
+## I. Coordinates
+Let us begin by talking about how objects are even located in space.
+
+### The Celestial Sphere
 The most important thing in spherical astronomy is the location of celestial objects as seen from Earth. From the Earth, the sky appears to be a great dome all around us, and this is called the [Celestial Sphere](https://en.wikipedia.org/wiki/Celestial_sphere). This is a large sphere of arbitrary radius (commonly just put to 1) that surrounds the Earth that all the stars and planets are projected onto. There are two lines (circles in actuality) of great importance on the Celestial Sphere.
 
 - **The [Celestial Equator](https://en.wikipedia.org/wiki/Celestial_equator)**
@@ -16,7 +20,6 @@ The most important thing in spherical astronomy is the location of celestial obj
 
 <br/>
 
-## II. Coordinates
 Evidently the best way to locate a point on the Celestial *Sphere* is with [*spherical* coordinates](https://en.wikipedia.org/wiki/Spherical_coordinate_system). This is a coordinate system based on three values:
 ```math
 \begin{align}
@@ -175,7 +178,7 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 ```
 $\blacksquare$
 
-## III. Time
+## II. Time
 When measuring time, two types of time must be distinguished:
  - The [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time)
    * This is the time that bases itself off the Sun. This is the time that all of us are used to. The **average** time of noon (when the Sun is at its highest point in the sky) is $12:00$, or $.5$ (solar) days, and the **average** time of midnight (when the Sun is at its lowest point in the sky) is $00:00$, or $.0$ (solar) days. The Solar day is also called the *synodic day*
@@ -538,7 +541,7 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \end{bmatrix}
 ```
 
-## IV. Earthly Parallax
+## III. Earthly Parallax
 
 Our formulae for the location of planets in the sky, and hence the values in our ephemeris, are calculated for a hypothetical observer at the center of the Earth. These values are called the *true* values. On the surface, there is a measurable difference in the values of angles compared to their true values. The actual observed angles are called the *apparent* values.
 
