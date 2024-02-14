@@ -557,7 +557,7 @@ c = 1 - \frac{b}{a}\tag{14}
 ```
 Where $b =$ the polar radius, and $a =$ the equatorial radius.
 
-Since the eccentricity $e$ is defined by
+Since the eccentricity $e$ of an ellipse is defined by
 ```math
 e^2 = 1 - \frac{b^2}{a^2}
 ```
