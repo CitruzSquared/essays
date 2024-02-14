@@ -403,7 +403,7 @@ T &= (175\enspace \text{sdy}\enspace 214\degree\enspace52'\enspace37.04'' + 180\
 ```
 $\blacksquare$
 
-However, in this example, $T = 175\enspace \text{dy} \enspace 11:46:21.6 \neq 175.00\enspace \text{dy}$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace21.6s$.
+However, in this example, $T = 175\enspace \text{dy} \enspace 11:46:22 \neq 175.00\enspace \text{dy}$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 #### Example 5-II
 <div align="center">
@@ -411,7 +411,7 @@ Thus, this time only works as a preliminary approximation, and we will have to r
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Using the fact that at $T = 175\enspace \text{dy} \enspace 11:46:21.6$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
+Using the fact that at $T = 175\enspace \text{dy} \enspace 11:46:22$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
 Improve the approximation of the time of apparent noon.
 <img width="2000" height="0">
 </td>
