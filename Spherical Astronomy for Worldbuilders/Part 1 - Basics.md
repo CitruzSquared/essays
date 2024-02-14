@@ -504,9 +504,9 @@ h_L = \Theta_L - \alpha\\
 \begin{align}
 \therefore \Theta = \Theta_L &= h_L + \alpha  = h + \alpha\\
 &=-54\degree\enspace38'\enspace28.3'' + 214\degree\enspace52'\enspace37.04''\\
-&=160\degree\enspace14'\enspace56.58''\\
+&=160\degree\enspace14'\enspace8.74''\\
 
-T &= (175\enspace sdy \enspace 160\degree\enspace14'\enspace56.58'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+T &= (175\enspace sdy \enspace 160\degree\enspace14'\enspace8.74'' + 180\degree) \cdot \frac{289.42}{290.42}\\
 & = 175\enspace dy \enspace 08:08:32.9
 \end{align}
 }
