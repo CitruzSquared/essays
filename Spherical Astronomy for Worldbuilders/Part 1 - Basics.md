@@ -228,7 +228,7 @@ Since Venus has a retrograde orbit,
 ```
 Substituting the numbers,
 ```math
-\text{Venus Sidereal Day} = \frac{1.92}{1.92 - 1} \cdot 116.75\enspace dy = 243\enspace dy
+\text{Venus Sidereal Day} = \frac{1.92}{1.92 - 1} \cdot 116.75\enspace \text{dy} = 243\enspace \text{dy}
 ```
 Comparing these values to Wikipedia, we can see we are correct.\
 $\blacksquare$
@@ -276,7 +276,7 @@ First, using equation $7$, we determine the standard time of observation.
 \begin{align}
 \text{Standard Time } (T) &= 05:16:34 - \frac{165\degree/360\degree}{24h} \\
 &= 05:16:34 - 11h \\
-&= -1\enspace dy \enspace 18:16:34
+&= -1\enspace \text{dy} \enspace 18:16:34
 \end{align}
 ```
 This means the standard time at the time of observation was solar day $174$ at $18:16:34$, or at $T = 174.7615$ days.\
@@ -289,9 +289,9 @@ This can be interpreted as the fact that at the time of measurement, at the prim
 
 Furthermore, the local sidereal time can be calculated by equation $8$:
 ```math
-\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\enspace sdy\enspace116\degree\enspace31'\enspace12.25''
+\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\enspace \text{sdy}\enspace116\degree\enspace31'\enspace12.25''
 ```
-Where $sdy$ means sidereal days.\
+Where $\text{sdy}$ means sidereal days.\
 $\blacksquare$
 
 To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $9$ still holds.
@@ -311,27 +311,27 @@ Calculate the standard mean solar time.
 
 We convert to standard sidereal time by subtracting the longitude:
 ```math
-\text{Standard } \Theta = 116\degree\enspace31'\enspace12.25'' - 165\degree = -1\enspace sdy \enspace311\degree\enspace31'\enspace 12.25''\tag{i}
+\text{Standard } \Theta = 116\degree\enspace31'\enspace12.25'' - 165\degree = -1\enspace \text{sdy} \enspace311\degree\enspace31'\enspace 12.25''\tag{i}
 ```
 We then find the sidereal day corresponding to solar day $175$:
 ```math
-\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace sdy\enspace37\degree\enspace40'\enspace36.24''
+\Theta_{T=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\enspace \text{sdy}\enspace37\degree\enspace40'\enspace36.24''
 ```
 Which we truncate to:
 ```math
-\Theta_{T=175.00} = 175\enspace sdy \tag{ii}
+\Theta_{T=175.00} = 175\enspace \text{sdy} \tag{ii}
 ```
-Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace sdy -1\enspace sdy \enspace311\degree\enspace31'\enspace12.25''$.\
+Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175\enspace \text{sdy} -1\enspace \text{sdy} \enspace311\degree\enspace31'\enspace12.25''$.\
 Using equation $9$ with $0.5$ sidereal days $= 180\degree$,
 ```math
 \begin{align}
-T &= (174\enspace sdy\enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
-&= 174.7615\enspace dy\\
-&= 174\enspace dy \enspace 18:16:34
+T &= (174\enspace \text{sdy}\enspace 311\degree\enspace31'\enspace12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
+&= 174.7615\enspace \text{dy}\\
+&= 174\enspace \text{dy} \enspace 18:16:34
 \end{align}
 ```
 If we add $l$ to $T$, we can see we get local solar day $175$, matching with the local observation date. \
-If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{T=175.00} = 176\enspace sdy$.)\
+If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{T=175.00}$ to be $1$ higher. (In our case, $\Theta_{T=175.00} = 176\enspace \text{sdy}$.)\
 $\blacksquare$
 
 ### The Hour Angle
@@ -363,7 +363,7 @@ When $h_L = 0$, the star is coincident with the meridian, and the star is at the
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at standard time $T = 175.00\enspace dy$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
+On planet $P$ at standard time $T = 175.00\enspace \text{dy}$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
 What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
 (The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
 <img width="2000" height="0">
@@ -385,17 +385,17 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 ```math
 \Theta = \alpha = 214\degree\enspace52'\enspace37.04''.
 ```
-Then, using the method of Example $4$, we try $\Theta = 175\enspace sdy\enspace 215\degree\enspace25'\enspace50.5''$.
+Then, using the method of Example $4$, we try $\Theta = 175\enspace \text{sdy}\enspace 215\degree\enspace25'\enspace50.5''$.
 ```math
 \begin{align}
-T &= (175\enspace sdy\enspace 214\degree\enspace52'\enspace37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175.4905\enspace dy \\
-&= 175\enspace dy \enspace 11:46:21.6
+T &= (175\enspace \text{sdy}\enspace 214\degree\enspace52'\enspace37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175.4905\enspace \text{dy} \\
+&= 175\enspace \text{dy} \enspace 11:46:21.6
 \end{align}
 ```
 $\blacksquare$
 
-However, in this example, $T = 175\enspace dy \enspace 11:46:21.6 \neq 175.00\enspace dy$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace21.6s$.
+However, in this example, $T = 175\enspace \text{dy} \enspace 11:46:21.6 \neq 175.00\enspace \text{dy}$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h\enspace46m\enspace21.6s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 #### Example 5-II
 <div align="center">
@@ -403,7 +403,7 @@ Thus, this time only works as a preliminary approximation, and we will have to r
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Using the fact that at $T = 175\enspace dy \enspace 11:46:21.6$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
+Using the fact that at $T = 175\enspace \text{dy} \enspace 11:46:21.6$, $\lambda_{\text{Sun}}$ was $218\degree\enspace17'\enspace12.78''$, <br/>
 Improve the approximation of the time of apparent noon.
 <img width="2000" height="0">
 </td>
@@ -418,8 +418,8 @@ Again, using equations $1$, $2,$ and $3$, we find:
 Repeating the method of Example 4,
 ```math
 \begin{align}
-T &= (175\enspace sdy\enspace 215\degree\enspace28'\enspace9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175\enspace dy\enspace 11:48:43.3
+T &= (175\enspace \text{sdy}\enspace 215\degree\enspace28'\enspace9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175\enspace \text{dy}\enspace 11:48:43.3
 \end{align}
 ```
 More repetition will improve our estimations even further.\
@@ -438,7 +438,7 @@ etc.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at standard time $T = 175.00\enspace dy$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
+On planet $P$ at standard time $T = 175.00\enspace \text{dy}$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\enspace40'\enspace36.24''$. <br/>
 What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
@@ -506,8 +506,8 @@ h_L = \Theta_L - \alpha\\
 &=-54\degree\enspace38'\enspace28.3'' + 214\degree\enspace52'\enspace37.04''\\
 &=160\degree\enspace14'\enspace8.74''\\
 
-T &= (175\enspace sdy \enspace 160\degree\enspace14'\enspace8.74'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-& = 175\enspace dy \enspace 08:08:32.9
+T &= (175\enspace \text{sdy} \enspace 160\degree\enspace14'\enspace8.74'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+& = 175\enspace \text{dy} \enspace 08:08:32.9
 \end{align}
 }
 ```
@@ -538,4 +538,131 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \end{bmatrix}
 ```
 
-## IV. Reduction to the Center of the Earth
+## IV. Earthly Parallax
+
+Our formulae for the location of planets in the sky, and hence the values in our ephemeris, are calculated for a hypothetical observer at the center of the Earth. These values are called the *true* values. On the surface, there is a measurable difference in the values of angles compared to their true values. The actual observed angles are called the *apparent* values.
+
+### The Shape of the Earth
+The Earth is roughly a squished sphere, meaning it is a spheroid. Due to the Earth's rotation, its polar radius its smaller than its equatorial radius. The amount of flattening of the Earth, called the *compression* ($c$), is calculated with the following formula:
+```math
+c = 1 - \frac{b}{a}\tag{14}
+```
+Where $b =$ the polar radius, and $a =$ the equatorial radius.
+
+Since the eccentricity $e$ is defined by
+```math
+e^2 = 1 - \frac{b^2}{a^2}
+```
+it follows that
+```math
+e^2 = 1 - (1 - c)^2
+```
+```math
+\therefore e = \sqrt{2c - c^2}.\tag{15}
+```
+
+### Latitude
+How do we define latitude on a spheroid?
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/1b3d589b-28e2-4723-8f49-4938366bd700" width="350"/> In the diagram, where the Earth is depicted as an ellipse, we can see two ways to define the latitude of the point $P$. The *geocentric* latitude is given by the angle $PCE$, and the *geodetic* or *geographical* latitude given by the angle $POH$, where the line $OP$ is perpendicular to the tangent at $P$, $PT$.
+
+When one refers to latitude, usually one is referring to the *geodetic* (*geographical*) latitude ($\phi$). For geographical reasons, when mapping the Earth, this definition of latitude is more convenient.
+
+However, with astronomy, often the geocentric latitude ($\phi'$) is more convenient.\
+So, given a geodetic latitude, how do we find the geocentric latitude?
+
+<br/>
+
+Well, consider the equation of the ellipse with semi-major axis $a$ and semi-minor axis $b$:
+```math
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\tag{16}
+```
+Because $PO$ is perpendicular to the tangent $PT$, the slope of $PO$ must be $-1/m_{PT}$. In other words:
+```math
+\tan(\phi) = -\frac{d x}{d y}
+```
+And from the triangle $PCQ$,
+```math
+\tan(\phi') = \frac{y}{x}
+```
+Implicitly differentiating equation $16$:
+```math
+\frac{y}{x} = -\frac{b^2}{a^2} \frac{d x}{d y}
+```
+Therefore:
+```math
+\tan(\phi') = \frac{b^2}{a^2} \cdot \tan(\phi).\tag{17}
+```
+
+Let us now also calculate the specific radius at latitude $\phi$, i.e. the length $PC$, labeled $\rho$ in the diagram.\
+From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
+```math
+\displaylines{
+{x^2} + \frac{y^2}{1 - e^2} = a^2\\
+\frac{y}{x} = (1 - e^2) \tan(\phi)
+}
+```
+we find:
+```math
+x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\enspace\enspace\enspace\text{and}\enspace\enspace\enspace
+y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+```
+But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
+```math
+\begin{align}
+\rho \cos(\phi') &= \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\\
+\rho \sin(\phi') &= \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\end{align}
+```
+With the addition of an auxiliary $\psi$, these equations can be simplified:
+```math
+\begin{align}
+\sin(\psi) = &= e\sin(\phi)\\
+\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{18}\\
+\rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
+\end{align}
+```
+We can deduce from equation $18$ by using the angle addition formulae
+```math
+\begin{align}
+\rho \cos(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)\\
+\rho \sin(\phi - \phi') &= a \cos(\psi)
+\tag{19}\\
+\end{align}
+```
+By multiplying the 3rd line of equation $18$ with the 2nd line of equation $19$, we obtain:
+```math
+\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{20}
+```
+
+#### Example 7
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+The Earth's equatorial radius and polar radius are given as $6378.137\enspace\text{km}$ and $6356.752\enspace\text{km}$ respectively. <br/>
+Find the radius of the Earth at $35\degree N$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By equation $17$:
+```math
+\displaylines{
+\tan(\phi') = \frac{6356.752^2}{6378.137^2} \cdot \tan(35\degree)\\
+\therefore\phi' = 34\degree\enspace49'\enspace9.79''.
+}
+```
+By equation $20$:
+```math
+\begin{aligned}
+\rho &= a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\\
+&= 6378.137 \sqrt{\frac{\cos(35\degree)}{\cos(34\degree\enspace49'\enspace9.79'')\cos(35\degree-34\degree\enspace49'\enspace9.79'')}}\\
+&= 6371.141\enspace\text{km}.
+\end{aligned}
+```
+$\blacksquare$
