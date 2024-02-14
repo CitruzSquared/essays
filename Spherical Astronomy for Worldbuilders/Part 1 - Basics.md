@@ -643,7 +643,7 @@ By multiplying the 3rd line of equation $18$ with the 2nd line of equation $19$,
 <td align="center">
 <img width="2000" height="0"><br>
 The Earth's equatorial radius and polar radius are given as $6378.137\enspace\text{km}$ and $6356.752\enspace\text{km}$ respectively. <br/>
-Find the radius of the Earth at $35\degree N$.
+Find the radius of the Earth at geographic latitude $35\degree N$.
 <img width="2000" height="0">
 </td>
 </tbody>
