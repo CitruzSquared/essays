@@ -398,7 +398,7 @@ Then, using the method of Example $4$, we try $\Theta = 175\enspace \text{sdy}\e
 \begin{align}
 T &= (175\enspace \text{sdy}\enspace 214\degree\enspace52'\enspace37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
 &= 175.4905\enspace \text{dy} \\
-&= 175\enspace \text{dy} \enspace 11:46:21.6
+&= 175\enspace \text{dy} \enspace 11:46:22
 \end{align}
 ```
 $\blacksquare$
@@ -427,7 +427,7 @@ Repeating the method of Example 4,
 ```math
 \begin{align}
 T &= (175\enspace \text{sdy}\enspace 215\degree\enspace28'\enspace9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175\enspace \text{dy}\enspace 11:48:43.3
+&= 175\enspace \text{dy}\enspace 11:48:43
 \end{align}
 ```
 More repetition will improve our estimations even further.\
@@ -515,7 +515,7 @@ h_L = \Theta_L - \alpha\\
 &=160\degree\enspace14'\enspace8.74''\\
 
 T &= (175\enspace \text{sdy} \enspace 160\degree\enspace14'\enspace8.74'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-& = 175\enspace \text{dy} \enspace 08:08:32.9
+& = 175\enspace \text{dy} \enspace 08:08:33
 \end{align}
 }
 ```
