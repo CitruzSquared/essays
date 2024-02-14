@@ -287,6 +287,7 @@ First, using equation $7$, we determine the standard time of observation.
 &= -1\enspace \text{dy} \enspace 18:16:34
 \end{align}
 ```
+Where $\text{dy}$ means Solar days.\
 This means the standard time at the time of observation was solar day $174$ at $18:16:34$, or at $T = 174.7615$ days.\
 Then, using equation $9$:
 ```math
