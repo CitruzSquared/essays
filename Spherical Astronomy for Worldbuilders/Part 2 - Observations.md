@@ -638,9 +638,9 @@ From the equation of the ellipse:
 we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
 ```math
 \begin{align}
-\frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2} &= 1\\
-\rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) &= a^2 b^2\\
-\therefore \rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{18}\\
+1 &= \frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2}\\
+a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
+\therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{18}\\
 \end{align}
 ```
 We can substitute $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
