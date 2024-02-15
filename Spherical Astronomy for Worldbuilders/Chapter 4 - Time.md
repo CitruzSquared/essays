@@ -180,7 +180,7 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 ```
 $\blacksquare$
 
-## III. Time
+## I. Time
 Let us talk about how time and date are measured in astronomy.
 
 ### Sidereal and Solar time
