@@ -54,7 +54,7 @@ The reverse transformation, also derived by simple geometry, is given below:
 ```
 Where $\arctan(y, x)$ is the [two argument arctangent](https://en.wikipedia.org/wiki/Atan2), used to avoid tangent ambiguity.
 
-There are two coordinate systems in wide use. The [Equatorial Coordinate System](https://en.wikipedia.org/wiki/Equatorial_coordinate_system), the [Ecliptic Coordinate System](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system). 
+There are two coordinate systems in wide use. The [Equatorial Coordinate System](https://en.wikipedia.org/wiki/Equatorial_coordinate_system) and the [Ecliptic Coordinate System](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system). 
 
 - [**The Equatorial Coordinate System**](https://en.wikipedia.org/wiki/Equatorial_coordinate_system)
    * In the Equatorial Coordinate System, the angles $\theta$ and $\varphi$ are called the *Right Ascension* and *Declination* and are denoted $\alpha$ and $\delta$ respectively.
@@ -152,6 +152,60 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 ```
 $\blacksquare$
 
-The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. 
+The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. Thus:
+```math
+\displaylines{
+\begin{align}
+\lambda_{\text{Geocentric}} \text{ of the Sun } &= \lambda_{\text{Heliocentric}} \text{ of the Earth } + 180\degree\\
+\beta_{\text{Geocentric}} \text{ of the Sun } &= -\beta_{\text{Heliocentric}} \text{ of the Earth}
+\end{align}
+}\tag{5}
+```
 
-## II. The Two Body Problem
+## II. The Planets
+Let us calculate the motion of the planets.
+### The Two Body Problem
+The problem of the planets in motion around the Sun, or the Moon in orbit around the Earth, can be modeled as an ideal Newtonian [two body problem](https://en.wikipedia.org/wiki/Two-body_problem). Thus they obey [Kepler's laws of planetary motion](https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion):
+- 1. Planets orbit in an ellipse with the Sun at a focus of an ellipse.
+  * Thus there is a point in the orbit where it is closest to the Sun (the *periapsis*), and a point where it is furthest away (the *apoapsis*). These two points are diametrically opposite each other.
+- 2. Planets in orbit "sweep out" the same area per unit time.
+  * This tells us that the object travels faster when it is in the part of its orbit that is closer to the primary, and slower when it is further away.
+- 3. The square of the orbital period ($T$) of the planet is proportional to the cube of the semi-major-axis ($a$) of the orbit of the planet.
+  
+#### The proof of the first law is as follows: 
+Warning: the proof is mathematically dense and there is no need to know it. It is advised for the average reader to skip it.
+
+[Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation) tells us:
+```math
+\textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}
+```
+where $\textbf{F}$ is the gravitational force on the planet, $G$ is a constant called the [*gravitational constant*](https://en.wikipedia.org/wiki/Gravitational_constant), $M$ and $m$ are the masses of the Sun and the planet respectively, and $\textbf{r}$ and $r$ are the position vector of the planet and its magnitude (the distance between the Sun and the planet) respectively.\
+This can be rewritten:
+```math
+\textbf{F} = -\frac{G M m}{r^2} \cdot \textbf{u}
+```
+where $\textbf{u}$ is the [unit vector](https://en.wikipedia.org/wiki/Unit_vector) in the direction of $\textbf{r}$.\
+[Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Second_law) tells us:
+```math
+\textbf{F} = m \textbf{a}
+```
+where $\textbf{F}$ is the force on an object, $m$ is the mass of the object, and $\textbf{a}$ is its acceleration, defined by $\textbf{a} = d\textbf{v}/dt = d^2\textbf{r}/dt^2$, where $\textbf{v}$ is the velocity of the object.
+
+By equating the two laws we obtain:
+```math
+\textbf{a} = -\frac{G M}{r^3} \cdot \textbf{r}
+```
+which shows that $\textbf{a}$ and $\textbf{r}$ are a scalar multiple of each other, which means that $\textbf{a} \times \textbf{r} = \textbf{0}$.\
+In addition,
+```math
+\begin{align}
+\frac{d}{dt}(\textbf{r}\times\textbf{v}) &= \textbf{r}'\times\textbf{v}+\textbf{r}\times\textbf{v}'\\
+&=\textbf{v}\times\textbf{v}+\textbf{r}\times\textbf{a}\\
+&=\textbf{0}\times\textbf{0}=\textbf{0}.
+\end{align}
+```
+Therefore the derivative of $\textbf{r}\times\textbf{v}$ is $\textbf{0}$, or in other words:
+```math
+\textbf{r}\times\textbf{v} = \textbf{h}
+```
+where $\textbf{h}$ is a constant.
