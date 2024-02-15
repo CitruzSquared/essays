@@ -639,16 +639,16 @@ we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
 ```math
 \begin{align}
 \frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2} &= 1\\
-\rho^2 (b^2 \cos^2(\phi') + a^2 \sin(\phi')^2) &= a^2 b^2\\
-\rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}\tag{18}\\
+\rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) &= a^2 b^2\\
+\rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{18}\\
 \end{align}
 ```
 We can substitute $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
 ```math
 \begin{align}
-\rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin(\phi')^2}}\\
-&= \frac{b}{\sqrt{(1 - e^2) \cos^2(\phi') + \sin(\phi')^2}}\\
-&= \frac{b}{\sqrt{\cos^2(\phi') + \sin(\phi')^2 - e^2 \cos^2(\phi')}}\\
+\rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin^2(\phi')}}\\
+&= \frac{b}{\sqrt{(1 - e^2) \cos^2(\phi') + \sin^2(\phi')}}\\
+&= \frac{b}{\sqrt{\cos^2(\phi') + \sin^2(\phi') - e^2 \cos^2(\phi')}}\\
 &= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{19}
 \end{align}
 ```
