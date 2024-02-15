@@ -717,7 +717,7 @@ By equation $17$:
 \therefore\phi' = 34\degree\enspace49'\enspace9.79''.
 }
 ```
-By equation $18$:
+Then by equation $18$:
 ```math
 \begin{align}
 \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}\\
