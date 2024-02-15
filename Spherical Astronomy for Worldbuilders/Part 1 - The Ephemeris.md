@@ -261,7 +261,7 @@ This form of the equation for an ellipse will not be used much in this post.
 <td align="center">
 <img width="2000" height="0"><br>
 Prove that all planets orbit the Sun in an ellipse. <br/>
-Disclaimer: the proof is mathematically dense and there is no need to know it. It is advised for the average reader to skip this example.
+Disclaimer: the proof is mathematically dense and there is no need to know it. It is advised for the average reader to skip this investigation.
 <img width="2000" height="0">
 </td>
 </tbody>
