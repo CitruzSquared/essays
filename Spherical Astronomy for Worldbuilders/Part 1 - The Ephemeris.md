@@ -383,6 +383,9 @@ r=\frac{ep}{1+e\cos(\theta)}
 which is precisely equation $12$.\
 $\blacksquare$
 
+<br/>
+<br/>
+
 Let us now calculate the [orbital period](https://en.wikipedia.org/wiki/Orbital_period) $T$ of a planet, given the orbital radius $r$.\
 Newton's law of gravitation (equation $6$) tells us:
 ```math
