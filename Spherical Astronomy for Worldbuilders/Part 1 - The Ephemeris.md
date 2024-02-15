@@ -383,7 +383,7 @@ Newton's law of gravitation (equation $6$) tells us:
 ```math
 \textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}
 ```
-For objects to rotate, there must be a force pointing inwards, and this force is given as:
+For objects to rotate, there must be a force pointing inwards (called the [centripetal force](https://en.wikipedia.org/wiki/Centripetal_force)), and this force is given as:
 ```math
 \textbf{F} = -\frac{mv^2}{r^2} \cdot \textbf{r}
 ```
