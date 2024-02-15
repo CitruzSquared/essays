@@ -13,11 +13,11 @@ Turns out this equation has already been solved for the most part, and the probl
   * Thus there is a point in the orbit where it is closest to the Sun and a point where it is furthest away. These two points are diametrically opposite each other.
 - 2. Planets in orbit "sweep out" the same area per unit time.
   * This tells us that the object travels faster when it is in the part of its orbit that is closer to the primary, and slower when it is further away.
-- 3. The square of the orbital period ($T$) of the planet is proportional to the cube of the *semi-major-axis* of the orbit of the planet.
+- 3. The square of the orbital period ($T$) of the planet is proportional to the cube of the *semi-major axis* of the orbit of the planet.
 
 Since all orbits are ellipses, let us quickly investigate the ellipse.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major-axis and is denoted $a$. The distance $OB$ is known as the semi-minor-axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major axis and is denoted $a$. The distance $OB$ is known as the semi-minor axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
 ```math
 \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.\tag{7}
 ```
@@ -49,7 +49,7 @@ FA &= a + c = a + ae\\
 &= a(1 + e)\tag{10}
 \end{align}
 ```
-Finding the semi-major-axis length given the periapsis and apoapsis distances is trivial:
+Finding the semi-major axis length given the periapsis and apoapsis distances is trivial:
 ```math
 a = \frac{1}{2} (FA + FP) \tag{11}
 ```
@@ -60,8 +60,8 @@ a = \frac{1}{2} (FA + FP) \tag{11}
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that the semi-major-axis of the orbit of the Earth is $149\:598\:023 \text{ km}$, and its eccentricity is $0.0167$, <br/>
-Find the semi-minor-axis, the perihelion distance, and the apohelion distance.
+Given that the semi-major axis of the orbit of the Earth is $149\:598\:023 \text{ km}$, and its eccentricity is $0.0167$, <br/>
+Find the semi-minor axis, the perihelion distance, and the apohelion distance.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -263,7 +263,7 @@ Where $a$ is the sum of the two semi-major-axes.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the mass of the Sun $M_S = 1.989\cdot 10^{30} \text{ kg}$, the semi-major-axis of the orbit of the Earth $a = 1.496\cdot10^{11}\text{ m}$, and that $1\text{ dy} = 86\:000\text{ s}$, calculate the orbital period of the Earth in days.
+Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the mass of the Sun $M_S = 1.989\cdot 10^{30} \text{ kg}$, the semi-major axis of the orbit of the Earth $a = 1.496\cdot10^{11}\text{ m}$, and that $1\text{ dy} = 86\:000\text{ s}$, calculate the orbital period of the Earth in days.
 <img width="2000" height="0">
 </td>
 </tbody>
