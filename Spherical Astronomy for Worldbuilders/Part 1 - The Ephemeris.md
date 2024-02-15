@@ -213,6 +213,8 @@ FP &= a + c = a + ae\\
 &= a(1 + e)\tag{10}
 \end{align}
 ```
+It is also evident that $1/2 \cdot (FA + FP) = a$.
+
 #### Example 2
 <div align="center">
 <table>
