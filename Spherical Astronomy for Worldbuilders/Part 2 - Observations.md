@@ -631,6 +631,29 @@ Therefore:
 It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, i.e. $\phi - \phi'$, called the *reduction in latitude*, is equal to the angle $CPO$ in the diagram.
 
 Let us now also calculate the specific radius at latitude $\phi$, i.e. the length $PC$, labeled $\rho$ in the diagram.\
+From the equation of the ellipse:
+```math
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+```
+we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
+```math
+\begin{align}
+\frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2} &= 1\\
+\rho^2 (b^2 \cos^2(\phi') + a^2 \sin(\phi')^2) &= a^2 b^2
+\rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}
+\end{align}
+```
+Substituting $b^2 = a^2(1 - e^2)$ where $e =$ eccentricity of the Earth:
+```math
+\begin{align}
+\rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin(\phi')^2}}
+&= \frac{b}{\sqrt{(1 - e^2) \cos^2(\phi') + \sin(\phi')^2}}
+&= \frac{b}{\sqrt{\cos^2(\phi') + \sin(\phi')^2 - e^2 \cos^2(\phi')}}
+&= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{18}
+\end{align}
+```
+
+A form not involving eccentricity is given as follows:\
 From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
 ```math
 \displaylines{
@@ -655,7 +678,7 @@ With the addition of an auxiliary $\psi$, these equations can be simplified:
 ```math
 \begin{align}
 \sin(\psi) &= e\sin(\phi)\\
-\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{18}\\
+\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{19}\\
 \rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
 \end{align}
 ```
@@ -666,11 +689,11 @@ We can deduce from equation $18$ by using the angle addition formulae
 \rho \cos(\phi - \phi') &= a \cos(\psi)\\
 \rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
 \end{align}
-}\tag{19}
+}\tag{20}
 ```
-By multiplying the 2nd line of equation $18$ with the 1st line of equation $19$, we obtain:
+By multiplying the 2nd line of equation $19$ with the 1st line of equation $20$, we obtain:
 ```math
-\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{20}
+\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{21}
 ```
 
 #### Example 7
