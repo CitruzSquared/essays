@@ -86,7 +86,7 @@ And the apoapsis distance is given by equation $10$:
 ```
 $\blacksquare$
 
-Furthermore, the ellipse can also be written in polar form:
+Furthermore, the ellipse can also be written in polar form (with the origin at the focus):
 ```math
 r = \frac{ep}{1 + e\cos(\theta)}\tag{12}
 ```
