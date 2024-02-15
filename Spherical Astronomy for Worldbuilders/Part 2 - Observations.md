@@ -640,20 +640,20 @@ we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
 \begin{align}
 \frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2} &= 1\\
 \rho^2 (b^2 \cos^2(\phi') + a^2 \sin(\phi')^2) &= a^2 b^2\\
-\rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}\\
+\rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}\tag{18}\\
 \end{align}
 ```
-Substituting $b^2 = a^2(1 - e^2)$ where $e =$ eccentricity of the Earth:
+We can $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
 ```math
 \begin{align}
 \rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin(\phi')^2}}\\
 &= \frac{b}{\sqrt{(1 - e^2) \cos^2(\phi') + \sin(\phi')^2}}\\
 &= \frac{b}{\sqrt{\cos^2(\phi') + \sin(\phi')^2 - e^2 \cos^2(\phi')}}\\
-&= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{18}
+&= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{19}
 \end{align}
 ```
 
-A form not involving eccentricity is given as follows:\
+An alternate formula is given as follows:\
 From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
 ```math
 \displaylines{
@@ -678,22 +678,22 @@ With the addition of an auxiliary $\psi$, these equations can be simplified:
 ```math
 \begin{align}
 \sin(\psi) &= e\sin(\phi)\\
-\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{19}\\
+\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{20}\\
 \rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
 \end{align}
 ```
-We can deduce from equation $18$ by using the angle addition formulae
+We can deduce from equation $20$ by using the angle addition formulae
 ```math
 \displaylines{
 \begin{align}
 \rho \cos(\phi - \phi') &= a \cos(\psi)\\
 \rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
 \end{align}
-}\tag{20}
+}\tag{21}
 ```
-By multiplying the 2nd line of equation $19$ with the 1st line of equation $20$, we obtain:
+By multiplying the 2nd line of equation $20$ with the 1st line of equation $21$, we obtain:
 ```math
-\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{21}
+\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{22}
 ```
 
 #### Example 7
@@ -717,12 +717,20 @@ By equation $17$:
 \therefore\phi' = 34\degree\enspace49'\enspace9.79''.
 }
 ```
-By equation $21$:
+By equation $18$:
 ```math
-\begin{aligned}
+\begin{align}
+\rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}\\
+&= \frac{6378.137\cdot6356.752}{6356.752^2 \cos^2(34\degree\enspace49'\enspace9.79'') + 6378.137^2 \sin(4\degree\enspace49'\enspace9.79'')^2}\\
+&= 6371.141\enspace\text{km}.
+\end{align}
+```
+Or by equation $22$:
+```math
+\begin{align}
 \rho &= a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\\
 &= 6378.137 \sqrt{\frac{\cos(35\degree)}{\cos(34\degree\enspace49'\enspace9.79'')\cos(35\degree-34\degree\enspace49'\enspace9.79'')}}\\
 &= 6371.141\enspace\text{km}.
-\end{aligned}
+\end{align}
 ```
 $\blacksquare$
