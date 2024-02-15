@@ -298,7 +298,7 @@ In addition,
 &=\textbf{0}.
 \end{align}
 ```
-Therefore the derivative of $\textbf{r}\times\textbf{v}$ is $\textbf{0}$, or in other words:
+Integrating both sides we obtain:
 ```math
 \textbf{r}\times\textbf{v} = \textbf{h}
 ```
@@ -332,7 +332,7 @@ But since $\textbf{u}$ is a unit vector ($|\textbf{u}| = 1$), $\textbf{u}\cdot\t
 Therefore
 ```math
 \begin{align}
-(\textbf{v}\times\textbf{h})'&=\textbf{v}'\times\textbf{h}+\textbf{v}\times\textbf{h}'=\textbf{v}'\times\textbf{h}\\
+\frac{d}{dt}(\textbf{v}\times\textbf{h})&=\textbf{v}'\times\textbf{h}+\textbf{v}\times\textbf{h}'=\textbf{v}'\times\textbf{h}\\
 &=\textbf{a}\times\textbf{h}=GM\textbf{u}'
 \end{align}
 ```
