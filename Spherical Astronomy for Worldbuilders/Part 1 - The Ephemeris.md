@@ -165,12 +165,12 @@ The above coordinate systems are *geocentric* in nature, and these are the coord
 ## II. Celestial Mechanics of the Planets
 Let us calculate the motion of the planets.
 ### Kepler's laws
-All objects in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
+All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
 It tells us:
 ```math
 \textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}\tag{6}
 ```
-where $\textbf{F}$ is the gravitational force on the planet, $G$ is a constant called the [*gravitational constant*](https://en.wikipedia.org/wiki/Gravitational_constant), $M$ and $m$ are the masses of the Sun and the planet respectively, and $\textbf{r}$ and $r$ are the position vector of the planet and its magnitude (the distance between the Sun and the planet) respectively.
+where $\textbf{F}$ is the gravitational force on the planet, $G$ is the [*gravitational constant*](https://en.wikipedia.org/wiki/Gravitational_constant), which is $6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$ in SI units, $M$ and $m$ are the masses of the Sun and the planet respectively, and $\textbf{r}$ and $r$ are the position vector of the planet and its magnitude (the distance between the Sun and the planet) respectively.
 
 Turns out this equation has already been solved for the most part, and the problem of the planets in motion around the Sun, or the Moon in orbit around the Earth, can be modeled as an ideal Newtonian [two body problem](https://en.wikipedia.org/wiki/Two-body_problem). Thus they obey [Kepler's laws of planetary motion](https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion):
 - 1. Planets orbit in an [ellipse](https://en.wikipedia.org/wiki/Ellipse) with the Sun at a [*focus*](https://en.wikipedia.org/wiki/Focus_(geometry)).
@@ -231,17 +231,17 @@ By rearranging equation $8$:
 ```math
 \begin{align}
 b &= \sqrt{a^2(1 - e^2)}\\
-&= \sqrt{149\:598\:023^2 (1 - 0.0167^2)}\\
+&= \sqrt{149\:598\:023^2\text{ km}^2 (1 - 0.0167^2)}\\
 &= 149\:577\:161 \text{ km}
 \end{align}
 ```
 The periapsis distance is given by equation $9$:
 ```math
-149\:598\:023(1 - 0.0167) = 147\:099\:736\text{ km}
+149\:598\:023\text{ km }(1 - 0.0167) = 147\:099\:736\text{ km}
 ```
 And the apoapsis distance is given by equation $10$:
 ```math
-149\:598\:023(1 + 0.0167) = 152\:096\:309\text{ km}
+149\:598\:023\text{ km }(1 + 0.0167) = 152\:096\:309\text{ km}
 ```
 $\blacksquare$
 
@@ -250,7 +250,7 @@ Furthermore, the ellipse can also be written in polar form:
 r = \frac{ep}{1 + e\cos(\theta)}\tag{11}
 ```
 where $p$ is the distance to the [*directrix*](https://en.wikipedia.org/wiki/Conic_section#Eccentricity,_focus_and_directrix) of the ellipse.\
-This form of the equation for an ellipse will not be used much in this post.
+This form of the equation for an ellipse will not be used much.
 
 <br/>
 
@@ -302,7 +302,7 @@ Therefore the derivative of $\textbf{r}\times\textbf{v}$ is $\textbf{0}$, or in 
 ```math
 \textbf{r}\times\textbf{v} = \textbf{h}
 ```
-where $\textbf{h}$ is a constant vector. We may reasonably assume $\textbf{r}$ and $\textbf{v}$ are not parallel (that is, the planet does not move in a straight line), and thus $\textbf{h} \neq \textbf{0}$. Thus all possible $\textbf{r}$ is perpendicular to $\textbf{h}$, and since $\textbf{h}$ is constant, all $\textbf{r}$ must lie flat on a plane with $\textbf{h}$ as its normal vector.
+where $\textbf{h}$ is a constant vector. We can reasonably assume $\textbf{r}$ and $\textbf{v}$ are not parallel (that is, the planet does not move in a straight line), and thus $\textbf{h} \neq \textbf{0}$. Thus all possible $\textbf{r}$ is perpendicular to $\textbf{h}$, and since $\textbf{h}$ is constant, all $\textbf{r}$ must lie flat on a plane with $\textbf{h}$ as its normal vector.
 
 Let us now rewrite $\textbf{h}$.
 ```math
@@ -343,7 +343,7 @@ Integrating both sides of this equation gives us
 where $\textbf{C}$ is a constant vector.
 
 Let us now choose coordinate axes such that positive $z$-axis lies in the direction of $\textbf{h}$. Thus the planet moves in the $xy$-plane.\
-Now, because $\textbf{v}\times\textbf{h}$ and $\textbf{u}$ are perpendicular to $\textbf{h}$ (i.e. in the $xy$-plane, $\textbf{C}$ must be in the $xy$-plane as well. Since $\textbf{C}$ is a constant vector, we choose the positive $x$-axis to be in the direction of it, and now $r$ and the angle between $\textbf{C}$ and $\textbf{r}$ (which we call $\theta$) now define $\textbf{r}$ in polar coordinates.
+Now, because $\textbf{v}\times\textbf{h}$ and $\textbf{u}$ are perpendicular to $\textbf{h}$ (i.e. in the $xy$-plane), $\textbf{C}$ must be in the $xy$-plane as well. Since $\textbf{C}$ is a constant vector, we choose the positive $x$-axis to be in the direction of it, and now $r$ and the angle between $\textbf{C}$ and $\textbf{r}$ (which we call $\theta$) define $\textbf{r}$ in polar coordinates.
 
 From equation $12$ we now have:
 ```math
@@ -367,9 +367,75 @@ But,
 \textbf{r}\cdot(\textbf{v}\times\textbf{h})=(\textbf{r}\times\textbf{v})\cdot\textbf{h}=\textbf{h}\cdot\textbf{h}=h^2
 ```
 where $h = |\textbf{h}|$.\
-If we set $p=h^2/c$, we obtain for $r$:
+Thus:
+```math
+r=\frac{h^2/(GM)}{1+e\cos(\theta)} = \frac{eh^2/c}{1+e\cos(\theta)}
+```
+If we now set $p=h^2/c$, we obtain for $r$:
 ```math
 r=\frac{ep}{1+e\cos(\theta)}
 ```
 which is precisely equation $11$.\
+$\blacksquare$
+
+Let us now calculate the [orbital period](https://en.wikipedia.org/wiki/Orbital_period) $T$ of a planet, given the orbital radius $r$.\
+Newton's law of gravitation (equation $6$) tells us:
+```math
+\textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}
+```
+For objects to rotate, there must be a force pointing inwards, and this force is given as:
+```math
+\textbf{F} = -\frac{mv^2}{r^2} \cdot \textbf{r}
+```
+Where $m$ is the mass of the rotating body, and $v$ is its speed.\
+Equating the two equations,
+```math
+\begin{align}
+-\frac{mv^2}{r^2} \cdot \textbf{r} &= -\frac{G M m}{r^3} \cdot \textbf{r}\\
+v^2 &= \frac{GM}{r}\\
+v &= \sqrt{\frac{GM}{r}}
+\end{align}
+```
+Using the fact that time $=$ distance $/$ speed and that the circumference of the orbit is $2\pi r$,
+```math
+\begin{align}
+T &= \frac{2\pi r}{v} = \frac{2\pi r}{\sqrt{GM/r}}\\
+&=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{13}
+\end{align}
+```
+We can see that equation $13$ obeys Kepler's third law, $T^2 \propto r^3$.\
+We can expand this formula to elliptical orbits without issue.
+```math
+T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{14}
+```
+If we have two objects comparable in mass, they will orbit each other about their center of mass, and the period will be:
+```math
+ T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{15}
+```
+#### Example 4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the mass of the sun $M_S = 1.989\cdot 10^{30} \text{ kg}$, the semi-major-axis of the orbit of the Earth $a = 1.496\cdot10^{11}\text{ m}$, and that $1\text{ dy} = 86\:000\text{ s}$, calculate the orbital period of the Earth in days.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By equation 14:
+```math
+\begin{align}
+T &= \sqrt{\frac{4 \pi^2 a^3}{GM}}\\
+&=\sqrt{\frac{4 \pi^2 (1.496\cdot10^{11}\text{ m})^3}{(6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2})(1.989\cdot 10^{30} \text{ kg})}}\\
+&= 3.1554897 \cdot 10^7 \text{ s}
+\end{align}
+```
+Converting to days:
+```math
+T = 365.219 \text{ dy}
+```
+Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The difference comes from the fact that there are gravitational perturbations from other Solar System objects on the Earth, and therefore the motion of the Earth is not *exactly* a true two-body problem. The precise math is too difficult for worldbuilding purposes and therefore the perturbation effects of planets on planets will be ignored.\
 $\blacksquare$
