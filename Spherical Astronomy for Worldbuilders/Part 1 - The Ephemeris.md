@@ -195,7 +195,7 @@ By equating the two laws we obtain:
 ```math
 \textbf{a} = -\frac{G M}{r^3} \cdot \textbf{r}
 ```
-which shows that $\textbf{a}$ and $\textbf{r}$ are a scalar multiple of each other, which means that $\textbf{a} \times \textbf{r} = \textbf{0}$.\
+which shows that $\textbf{a}$ and $\textbf{r}$ are a scalar multiple of each other (they are parallel), which means that $\textbf{a} \times \textbf{r} = \textbf{0}$.\
 In addition,
 ```math
 \begin{align}
@@ -208,4 +208,4 @@ Therefore the derivative of $\textbf{r}\times\textbf{v}$ is $\textbf{0}$, or in 
 ```math
 \textbf{r}\times\textbf{v} = \textbf{h}
 ```
-where $\textbf{h}$ is a constant.
+where $\textbf{h}$ is a constant. We may reasonably assume $\textbf{r}$ and $\textbf{v}$ are not parallel (that is, the planet does not move in a straight line), and thus $\textbf{h} \neq \textbf{0}$.
