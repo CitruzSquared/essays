@@ -1,4 +1,4 @@
-## II. Celestial Mechanics of the Planets
+## II. The Planets
 Let us calculate the motion of the planets.
 ### Kepler's laws
 All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
