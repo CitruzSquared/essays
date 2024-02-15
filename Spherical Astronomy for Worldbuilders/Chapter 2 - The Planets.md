@@ -256,6 +256,7 @@ If we have two objects comparable in mass, they will orbit each other about thei
 ```math
  T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{16}
 ```
+Where $a$ is the sum of the two semi-major-axes.
 #### Example 4
 <div align="center">
 <table>
