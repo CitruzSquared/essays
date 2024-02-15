@@ -717,7 +717,7 @@ By equation $17$:
 \therefore\phi' = 34\degree\enspace49'\enspace9.79''.
 }
 ```
-By equation $20$:
+By equation $21$:
 ```math
 \begin{aligned}
 \rho &= a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\\
