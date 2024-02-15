@@ -263,7 +263,7 @@ Where $a$ is the sum of the two semi-major axes.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the mass of the Sun $M_S = 1.989\cdot 10^{30} \text{ kg}$, the semi-major axis of the orbit of the Earth $a = 1.496\cdot10^{11}\text{ m}$, and that $1\text{ dy} = 86\:000\text{ s}$, calculate the orbital period of the Earth in days.
+Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the mass of the Sun $M_S = 1.989\cdot 10^{30} \text{ kg}$, and the semi-major axis of the orbit of the Earth $a = 1.496\cdot10^{11}\text{ m}$, calculate the orbital period of the Earth.
 <img width="2000" height="0">
 </td>
 </tbody>
