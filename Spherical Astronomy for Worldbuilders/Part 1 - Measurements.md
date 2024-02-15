@@ -502,12 +502,12 @@ Substituting $\phi$ and $\delta$:
 ```math
 \displaylines{
 \cos(h) = -\tan(50\degree)\tan(-15\degree\enspace15'\enspace21.3'')\\
-\therefore h = \arccos(0.578694953)
+\therefore h = \arccos(0.3250415)
 }
 ```
 Taking the negative arccosine value for h (negative because sunrise), we get:
 ```math
-h = -54\degree\enspace38'\enspace28.3''
+h = -71\degree\enspace1'\enspace54.87''
 ```
 From here we just need to find the mean time from the hour angle, so we follow Example $5$.
 ```math
@@ -515,17 +515,40 @@ From here we just need to find the mean time from the hour angle, so we follow E
 h_L = \Theta_L - \alpha\\
 \begin{align}
 \therefore \Theta = \Theta_L &= h_L + \alpha  = h + \alpha\\
-&=-54\degree\enspace38'\enspace28.3'' + 214\degree\enspace52'\enspace37.04''\\
-&=160\degree\enspace14'\enspace8.74''\\
+&=-71\degree\enspace1'\enspace54.87'' + 214\degree\enspace52'\enspace37.04''\\
+&=143\degree\enspace50'\enspace42.17''\\
 
-T &= (175\enspace \text{sdy} \enspace 160\degree\enspace14'\enspace8.74'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-& = 175\enspace \text{dy} \enspace 08:08:33
+T &= (175\enspace \text{sdy} \enspace 143\degree\enspace50'\enspace42.17'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+& = 175\enspace \text{dy} \enspace 07:03:13
 \end{align}
 }
 ```
-Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.\
-$\blacksquare$
+Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
+At $T = 175\enspace \text{dy} \enspace 07:03:13$, $\lambda_\text{Sun} = 218\degree\enspace2'\enspace32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
+
+Converting to equatorial coordinates:
+```math
+\begin{alignat}{4}
+\delta &=-15&&\degree\enspace23&&'\enspace5.06&&''\\
+\alpha &= 215&&\degree\enspace13&&'\enspace54.03&&''
+\end{alignat}
+```
+Thus the sunrise equation gives (again, taking the negative arccosine):
+```math
+h = -70\degree\enspace51'\enspace26.21''
+```
+Now we follow example $5$.
+```math
+\displaylines{
+\begin{align}
+\Theta &=144\degree\enspace22'\enspace27.82''\\
+\therefore T &= 175\enspace \text{dy} \enspace 07:05:19
+\end{align}
+}
+```
+Further repetition will better our approximations.\
+$\blacksquare$
 <br/>
 <br/>
 
