@@ -213,7 +213,10 @@ FP &= a + c = a + ae\\
 &= a(1 + e)\tag{10}
 \end{align}
 ```
-It is also evident that $1/2 \cdot (FA + FP) = a$.
+Finding the semi-major-axis length given the periapsis and apoapsis distances is trivial:
+```math
+a = \frac{1}{2} (FA + FP) \tag{11}
+```
 
 #### Example 2
 <div align="center">
@@ -249,7 +252,7 @@ $\blacksquare$
 
 Furthermore, the ellipse can also be written in polar form:
 ```math
-r = \frac{ep}{1 + e\cos(\theta)}\tag{11}
+r = \frac{ep}{1 + e\cos(\theta)}\tag{12}
 ```
 where $p$ is the distance to the [*directrix*](https://en.wikipedia.org/wiki/Conic_section#Eccentricity,_focus_and_directrix) of the ellipse.\
 This form of the equation for an ellipse will not be used much.
@@ -340,14 +343,14 @@ Therefore
 ```
 Integrating both sides of this equation gives us
 ```math
-\textbf{v}\times\textbf{h}=GM\textbf{u}+\textbf{C}\tag{12}
+\textbf{v}\times\textbf{h}=GM\textbf{u}+\textbf{C}\tag{13}
 ```
 where $\textbf{C}$ is a constant vector.
 
 Let us now choose coordinate axes such that positive $z$-axis lies in the direction of $\textbf{h}$. Thus the planet moves in the $xy$-plane.\
 Now, because $\textbf{v}\times\textbf{h}$ and $\textbf{u}$ are perpendicular to $\textbf{h}$ (i.e. in the $xy$-plane), $\textbf{C}$ must be in the $xy$-plane as well. Since $\textbf{C}$ is a constant vector, we choose the positive $x$-axis to be in the direction of it, and now $r$ and the angle between $\textbf{C}$ and $\textbf{r}$ (which we call $\theta$) define $\textbf{r}$ in polar coordinates.
 
-From equation $12$ we now have:
+From equation $13$ we now have:
 ```math
 \begin{align}
 \textbf{r}\cdot(\textbf{v}\times\textbf{h})&=\textbf{r}\cdot(GM\textbf{u}+\textbf{C})\\
@@ -402,17 +405,17 @@ Using the fact that time $=$ distance $/$ speed and that the circumference of th
 ```math
 \begin{align}
 T &= \frac{2\pi r}{v} = \frac{2\pi r}{\sqrt{GM/r}}\\
-&=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{13}
+&=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{14}
 \end{align}
 ```
 We can see that equation $13$ obeys Kepler's third law, $T^2 \propto r^3$.\
 We can generalize this formula to elliptical orbits without issue.
 ```math
-T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{14}
+T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{15}
 ```
 If we have two objects comparable in mass, they will orbit each other about their center of mass, and the period will be:
 ```math
- T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{15}
+ T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{16}
 ```
 #### Example 4
 <div align="center">
@@ -427,7 +430,7 @@ Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the
 </table>
 </div>
 
-By equation 14:
+By equation 15:
 ```math
 \begin{align}
 T &= \sqrt{\frac{4 \pi^2 a^3}{GM}}\\
