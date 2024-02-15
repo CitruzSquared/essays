@@ -298,7 +298,7 @@ In addition,
 &=\textbf{0}.
 \end{align}
 ```
-Integrating both sides we obtain:
+By integrating both sides of this equation we obtain:
 ```math
 \textbf{r}\times\textbf{v} = \textbf{h}
 ```
