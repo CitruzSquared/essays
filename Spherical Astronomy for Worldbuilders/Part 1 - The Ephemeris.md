@@ -2,7 +2,7 @@
 **Astrology**, which is a method of divination based on the location of the stars and planets in the sky, can be a very important part of worldbuilding. The basis of astrology is *Spherical Astronomy*, the science of observing the sky. This post will serve as a guide to spherical astronomy for the worldbuilder, and will start from the basics and build up to calculating the location of stars in the sky and finally a complete ephemeris, from which the worldbuilder can create their own astrological system.
 
 # Part 1. The Ephemeris
-An ephemeris (plural *ephemerides*) is a table listing the locations of celestial objects at specific times.
+An [ephemeris](https://en.wikipedia.org/wiki/Ephemeris) (plural *ephemerides*) is a table listing the locations of celestial objects at specific times. Let us see how to calculate the ephemeris.
 
 ## I. Coordinates
 Let us begin by talking about how objects are even located in space.
@@ -13,7 +13,7 @@ The most important thing in spherical astronomy is the location of celestial obj
 - **The [Celestial Equator](https://en.wikipedia.org/wiki/Celestial_equator)**
   * This is the circle on the celestial sphere obtained by projecting the Earth's equator onto the celestial sphere. If one were standing on the equator of the Earth, the celestial equator would appear to be a great circle passing right above the observer, going from East to West.
 - **The [Ecliptic](https://en.wikipedia.org/wiki/Ecliptic)**
-  * This is the circle the Sun appears to make in the sky over the course of a year. In other words, it is the plane of the orbit of the Earth. Due to the axial tilt ($\varepsilon$) of $23.44\degree$ of the Earth, the ecliptic and the celestial equator make an angle of $23.44\degree$ in the sky. Because the Solar System is more or less flat, all the planets, including the Moon, more or less lie on this ecliptic line.
+  * This is the circle the Sun appears to make in the sky over the course of a year. In other words, it is the *plane of the orbit of the Earth*. Due to the axial tilt ($\varepsilon$) of $23.44\degree$ of the Earth, the ecliptic and the celestial equator make an angle of $23.44\degree$ in the sky. Because the Solar System is more or less flat, all the planets, including the Moon, more or less lie on this ecliptic line.
  <br />
  
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/3f19e0a6-0121-40a5-bd6d-9ccf522d8804" width="250"/> Because the ecliptic is tilted with respect to the equator, there are two points at which these two great circles meet. The point at which the ecliptic goes from being below the equator to above the equator is known as the [Cusp of Aries](https://en.wikipedia.org/wiki/First_point_of_Aries) (also known as the Vernal Equinox or the First Point of Aries), which, ironically, now lies in Pisces due to the slow (a period of about $26000$ years) precession of the axial tilt of the Earth. (*For the purposes of worldbuilding, this "axial precession" will be ignored.*) This point is of special importance as it is the place at which almost all angular measurements are made with respect to. This point is called the *Equinox point* because, if the Sun is located at it, the sun is passing directly over the equator, and the length of daytime will be exacly $1/2$ of a day ($12$ hours) all across the globe. The *Vernal* comes from the fact that, because the Sun is travelling towards the Northern direction, it is Spring time in the Northern Hemisphere when this event occurs (Vernal means Spring in Latin).
@@ -151,3 +151,7 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 \end{alignat}
 ```
 $\blacksquare$
+
+The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. 
+
+## II. The Two Body Problem
