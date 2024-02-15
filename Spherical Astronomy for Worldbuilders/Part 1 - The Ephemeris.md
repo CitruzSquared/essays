@@ -334,7 +334,7 @@ But since $\textbf{u}$ is a unit vector ($|\textbf{u}| = 1$), $\textbf{u}\cdot\t
 \therefore \textbf{a}\times\textbf{h}&=GM\textbf{u}'
 \end{align}
 ```
-Therefore
+Therefore we can write
 ```math
 \begin{align}
 \frac{d}{dt}(\textbf{v}\times\textbf{h})&=\textbf{v}'\times\textbf{h}+\textbf{v}\times\textbf{h}'=\textbf{v}'\times\textbf{h}\\
