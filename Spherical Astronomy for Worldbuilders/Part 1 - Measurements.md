@@ -538,7 +538,7 @@ Thus the sunrise equation gives (again, taking the negative arccosine):
 ```math
 h = -70\degree\enspace51'\enspace26.21''
 ```
-Now we follow example $5$.
+Now we follow Example $5$.
 ```math
 \displaylines{
 \begin{align}
