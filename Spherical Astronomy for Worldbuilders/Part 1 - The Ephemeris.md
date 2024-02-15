@@ -162,30 +162,122 @@ The above coordinate systems are *geocentric* in nature, and these are the coord
 }\tag{5}
 ```
 
-## II. The Planets
+## II. Celestial Mechanics of the Planets
 Let us calculate the motion of the planets.
-### The Two Body Problem
-The problem of the planets in motion around the Sun, or the Moon in orbit around the Earth, can be modeled as an ideal Newtonian [two body problem](https://en.wikipedia.org/wiki/Two-body_problem). Thus they obey [Kepler's laws of planetary motion](https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion):
-- 1. Planets orbit in an ellipse with the Sun at a focus of an ellipse.
-  * Thus there is a point in the orbit where it is closest to the Sun (the *periapsis*), and a point where it is furthest away (the *apoapsis*). These two points are diametrically opposite each other.
+### Kepler's laws
+All objects in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
+It tells us:
+```math
+\textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}\tag{6}
+```
+where $\textbf{F}$ is the gravitational force on the planet, $G$ is a constant called the [*gravitational constant*](https://en.wikipedia.org/wiki/Gravitational_constant), $M$ and $m$ are the masses of the Sun and the planet respectively, and $\textbf{r}$ and $r$ are the position vector of the planet and its magnitude (the distance between the Sun and the planet) respectively.
+
+Turns out this equation has already been solved for the most part, and the problem of the planets in motion around the Sun, or the Moon in orbit around the Earth, can be modeled as an ideal Newtonian [two body problem](https://en.wikipedia.org/wiki/Two-body_problem). Thus they obey [Kepler's laws of planetary motion](https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion):
+- 1. Planets orbit in an [ellipse](https://en.wikipedia.org/wiki/Ellipse) with the Sun at a [*focus*](https://en.wikipedia.org/wiki/Focus_(geometry)).
+  * Thus there is a point in the orbit where it is closest to the Sun and a point where it is furthest away. These two points are diametrically opposite each other.
 - 2. Planets in orbit "sweep out" the same area per unit time.
   * This tells us that the object travels faster when it is in the part of its orbit that is closer to the primary, and slower when it is further away.
-- 3. The square of the orbital period ($T$) of the planet is proportional to the cube of the semi-major-axis ($a$) of the orbit of the planet.
-  
-#### The proof of the first law is as follows: 
-Warning: the proof is mathematically dense and there is no need to know it. It is advised for the average reader to skip it.
+- 3. The square of the orbital period ($T$) of the planet is proportional to the cube of the *semi-major-axis* of the orbit of the planet.
 
-[Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation) tells us:
+Since all orbits are ellipses, let us quickly investigate the ellipse.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2afaf9f1-adfe-44ef-a5ea-08f363d126db" width="350"/> In the diagram is an ellipse with center $O$. The distance $OA$ is known as the semi-major-axis and is denoted $a$. The distance $OB$ is known as the semi-minor-axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
+```math
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.\tag{7}
+```
+
+Point $F$ is located at the point where the length $BF = a$. This point $F$ is known as the [focus](https://en.wikipedia.org/wiki/Focus_(geometry)) of an ellipse and this is where the Sun lies in a planetary orbit. 
+
+<br/>
+
+The points $A$ and $P$ then are the points closest to and furthest away from the focus, and are known as the *periapsis* and *apoapsis* respectively, and [*apses*](https://en.wikipedia.org/wiki/Apsis) (singular *apsis*) collectively. When the primary object (the object at the focus) is the Sun, these points can be called the *perihelion* and *apohelion*, and when the primary object is the Earth, they can be called the *perigee* and *apogee*.
+
+The amount of "squishing" of an ellipse is given by the quantity $c/a$ where $c$ is the distance $OF$. This quantity is known as the [*eccentricity*](https://en.wikipedia.org/wiki/Eccentricity_(mathematics)) and is denoted $e$. When the eccentricity is $0$, the ellipse becomes a perfect circle, and when the eccentricity is greater than $1$, the ellipse breaks and becomes a [parabola](https://en.wikipedia.org/wiki/Parabola) or [hyperbola](https://en.wikipedia.org/wiki/Hyperbola). 
+
+Because $BF = a$, $c^2 = a^2 - b^2$, and $e$ can also be written:
+```math
+e^2 = \frac{a^2-b^2}{a^2} = 1 - \frac{b^2}{a^2}.\tag{8}
+```
+
+The periapsis distance is then
+```math
+\begin{align}
+FA &= a - c = a - ae\\
+&= a(1 - e)\tag{9}
+\end{align}
+```
+and the apoapsis distance is
+```math
+\begin{align}
+FP &= a + c = a + ae\\
+&= a(1 + e)\tag{10}
+\end{align}
+```
+#### Example 2
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that the semi-major-axis of the orbit of the Earth is $149\:598\:023 \text{ km}$, and its eccentricity is $0.0167$, <br/>
+Find the semi-minor-axis, the perihelion distance, and the apohelion distance.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By rearranging equation $8$:
+```math
+\begin{align}
+b &= \sqrt{a^2(1 - e^2)}\\
+&= \sqrt{149\:598\:023^2 (1 - 0.0167^2)}\\
+&= 149\:577\:161 \text{ km}
+\end{align}
+```
+The periapsis distance is given by equation $9$:
+```math
+149\:598\:023(1 - 0.0167) = 147\:099\:736\text{ km}
+```
+And the apoapsis distance is given by equation $10$:
+```math
+149\:598\:023(1 + 0.0167) = 152\:096\:309\text{ km}
+```
+$\blacksquare$
+
+Furthermore, the ellipse can also be written in polar form:
+```math
+r = \frac{ep}{1 + e\cos(\theta)}\tag{11}
+```
+where $p$ is the distance to the [*directrix*](https://en.wikipedia.org/wiki/Conic_section#Eccentricity,_focus_and_directrix) of the ellipse.\
+This form of the equation for an ellipse will not be used much in this post.
+
+<br/>
+
+#### Example 3
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Prove that all planets orbit the Sun in an ellipse. <br/>
+Disclaimer: the proof is mathematically dense and there is no need to know it. It is advised for the average reader to skip this example.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+[Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation) (equation $6$) tells us:
 ```math
 \textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}
 ```
-where $\textbf{F}$ is the gravitational force on the planet, $G$ is a constant called the [*gravitational constant*](https://en.wikipedia.org/wiki/Gravitational_constant), $M$ and $m$ are the masses of the Sun and the planet respectively, and $\textbf{r}$ and $r$ are the position vector of the planet and its magnitude (the distance between the Sun and the planet) respectively.\
 This can be rewritten:
 ```math
 \textbf{F} = -\frac{G M m}{r^2} \cdot \textbf{u}
 ```
 where $\textbf{u}$ is the [unit vector](https://en.wikipedia.org/wiki/Unit_vector) in the direction of $\textbf{r}$.\
-[Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Second_law) tells us:
+Furthermore, [Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Second_law) tells us:
 ```math
 \textbf{F} = m \textbf{a}
 ```
@@ -201,11 +293,82 @@ In addition,
 \begin{align}
 \frac{d}{dt}(\textbf{r}\times\textbf{v}) &= \textbf{r}'\times\textbf{v}+\textbf{r}\times\textbf{v}'\\
 &=\textbf{v}\times\textbf{v}+\textbf{r}\times\textbf{a}\\
-&=\textbf{0}\times\textbf{0}=\textbf{0}.
+&=\textbf{0}\times\textbf{0}\\
+&=\textbf{0}.
 \end{align}
 ```
 Therefore the derivative of $\textbf{r}\times\textbf{v}$ is $\textbf{0}$, or in other words:
 ```math
 \textbf{r}\times\textbf{v} = \textbf{h}
 ```
-where $\textbf{h}$ is a constant. We may reasonably assume $\textbf{r}$ and $\textbf{v}$ are not parallel (that is, the planet does not move in a straight line), and thus $\textbf{h} \neq \textbf{0}$.
+where $\textbf{h}$ is a constant vector. We may reasonably assume $\textbf{r}$ and $\textbf{v}$ are not parallel (that is, the planet does not move in a straight line), and thus $\textbf{h} \neq \textbf{0}$. Thus all possible $\textbf{r}$ is perpendicular to $\textbf{h}$, and since $\textbf{h}$ is constant, all $\textbf{r}$ must lie flat on a plane with $\textbf{h}$ as its normal vector.
+
+Let us now rewrite $\textbf{h}$.
+```math
+\begin{align}
+\textbf{h} &= \textbf{r}\times\textbf{v} = \textbf{r}\times\textbf{r}' =r\textbf{u}\times(r\textbf{u})'\\
+&=r\textbf{u}\times(r'\textbf{u}+r\textbf{u}') =r^2(\textbf{u}\times\textbf{u}')+rr'(\textbf{u}\times\textbf{u})\\
+&=r^2(\textbf{u}\times\textbf{u}').
+\end{align}
+```
+Then
+```math
+\begin{align}
+\textbf{a}\times\textbf{h} &= -\frac{GM}{r^2}\textbf{u}\times r^2(\textbf{u}\times\textbf{u}')\\
+&= -GM\textbf{u}\times(\textbf{u}\times\textbf{u}')\\
+&= -GM[(\textbf{u}\cdot\textbf{u}')\textbf{u}-(\textbf{u}\cdot\textbf{u})\textbf{u}')]
+\end{align}
+```
+But since $\textbf{u}$ is a unit vector ($|\textbf{u}| = 1$), $\textbf{u}\cdot\textbf{u} = 1$ (a constant) and so:
+```math
+\begin{align}
+\frac{d}{dt}(\textbf{u}\cdot\textbf{u}) &= \textbf{u}'\cdot\textbf{u}+\textbf{u}\cdot\textbf{u}'\\
+&=2\textbf{u}\cdot\textbf{u}'= 0.\\
+\therefore \textbf{u}\cdot\textbf{u}'&=0\\
+\therefore \textbf{a}\times\textbf{h}&=GM\textbf{u}'
+\end{align}
+```
+Therefore
+```math
+\begin{align}
+(\textbf{v}\times\textbf{h})'&=\textbf{v}'\times\textbf{h}+\textbf{v}\times\textbf{h}'=\textbf{v}'\times\textbf{h}\\
+&=\textbf{a}\times\textbf{h}=GM\textbf{u}'
+\end{align}
+```
+Integrating both sides of this equation gives us
+```math
+\textbf{v}\times\textbf{h}=GM\textbf{u}+\textbf{C}\tag{12}
+```
+where $\textbf{C}$ is a constant vector.
+
+Let us now choose coordinate axes such that positive $z$-axis lies in the direction of $\textbf{h}$. Thus the planet moves in the $xy$-plane.\
+Now, because $\textbf{v}\times\textbf{h}$ and $\textbf{u}$ are perpendicular to $\textbf{h}$ (i.e. in the $xy$-plane, $\textbf{C}$ must be in the $xy$-plane as well. Since $\textbf{C}$ is a constant vector, we choose the positive $x$-axis to be in the direction of it, and now $r$ and the angle between $\textbf{C}$ and $\textbf{r}$ ($\theta$) now define $\textbf{r}$ in polar coordinates.
+
+From equation $12$ we now have:
+```math
+\begin{align}
+\textbf{r}\cdot(\textbf{v}\times\textbf{h})&=\textbf{r}\cdot(GM\textbf{u}+\textbf{C})\\
+&=GM\textbf{r}\cdot\textbf{u}+\textbf{r}\cdot\textbf{C}\\
+&=GMr\textbf{u}\cdot\textbf{u}+|\textbf{r}||\textbf{C}|\cos(\theta)\\
+&=GMr + rc\cos(\theta)
+\end{align}
+```
+where $c = |\textbf{C}|$. Now, solving for $r$,
+```math
+r=\frac{\textbf{r}\cdot(\textbf{b}\times\textbf{h})}{GM+c\cos(\theta)}
+```
+If we put $c/(GM)$ = $e$,
+```math
+r=\frac{1}{GM}\cdot\frac{\textbf{r}\cdot(\textbf{v}\times\textbf{h})}{1+e\cos(\theta)}
+```
+But,
+```math
+\textbf{r}\cdot(\textbf{v}\times\textbf{h})=(\textbf{r}\times\textbf{v})\cdot\textbf{h}=\textbf{h}\cdot\textbf{h}=h^2
+```
+where $h = |\textbf{h}|$.\
+If we set $p=h^2/c$, we obtain for $r$:
+```math
+r=\frac{ep}{1+e\cos(\theta)}
+```
+which is precisely equation $11$.\
+$\blacksquare$
