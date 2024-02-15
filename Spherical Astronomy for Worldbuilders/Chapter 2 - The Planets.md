@@ -95,7 +95,7 @@ This form of the equation for an ellipse will not be used much.
 
 <br/>
 
-#### Example 3
+#### Proof of Kepler's 1st law
 <div align="center">
 <table>
 <tbody>
@@ -257,7 +257,7 @@ If we have two objects comparable in mass, they will orbit each other about thei
  T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{16}
 ```
 Where $a$ is the sum of the two semi-major axes.
-#### Example 4
+#### Example 3
 <div align="center">
 <table>
 <tbody>
