@@ -380,7 +380,7 @@ If we now set $p=h^2/c$, we obtain for $r$:
 ```math
 r=\frac{ep}{1+e\cos(\theta)}
 ```
-which is precisely equation $11$.\
+which is precisely equation $12$.\
 $\blacksquare$
 
 Let us now calculate the [orbital period](https://en.wikipedia.org/wiki/Orbital_period) $T$ of a planet, given the orbital radius $r$.\
@@ -408,7 +408,7 @@ T &= \frac{2\pi r}{v} = \frac{2\pi r}{\sqrt{GM/r}}\\
 &=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{14}
 \end{align}
 ```
-We can see that equation $13$ obeys Kepler's third law, $T^2 \propto r^3$.\
+We can see that equation $14$ obeys Kepler's third law, $T^2 \propto r^3$.\
 We can generalize this formula to elliptical orbits without issue.
 ```math
 T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{15}
