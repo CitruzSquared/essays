@@ -158,4 +158,5 @@ Or by equation $22$:
 &= 6371.141\enspace\text{km}.
 \end{align}
 ```
+A solution by equation $19$ is also valid of course.\
 $\blacksquare$
