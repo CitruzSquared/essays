@@ -358,9 +358,9 @@ where $c = |\textbf{C}|$. Now, solving for $r$,
 ```math
 r=\frac{\textbf{r}\cdot(\textbf{b}\times\textbf{h})}{GM+c\cos(\theta)}
 ```
-If we put $c/(GM)$ = $e$,
+If we put $c/(GM)$ = $e$ (and thus $GM = c/e$),
 ```math
-r=\frac{1}{GM}\cdot\frac{\textbf{r}\cdot(\textbf{v}\times\textbf{h})}{1+e\cos(\theta)}
+r=\frac{1}{GM}\cdot\frac{\textbf{r}\cdot(\textbf{v}\times\textbf{h})}{1+e\cos(\theta)}=\frac{e}{c}\cdot\frac{\textbf{r}\cdot(\textbf{v}\times\textbf{h})}{1+e\cos(\theta)}
 ```
 But,
 ```math
@@ -369,7 +369,7 @@ But,
 where $h = |\textbf{h}|$.\
 Thus:
 ```math
-r=\frac{h^2/(GM)}{1+e\cos(\theta)} = \frac{eh^2/c}{1+e\cos(\theta)}
+r= \frac{h^2e/c}{1+e\cos(\theta)}
 ```
 If we now set $p=h^2/c$, we obtain for $r$:
 ```math
