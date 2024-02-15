@@ -643,7 +643,7 @@ we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
 \rho = \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin(\phi')^2}}\tag{18}\\
 \end{align}
 ```
-We can $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
+We can substitute $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
 ```math
 \begin{align}
 \rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin(\phi')^2}}\\
