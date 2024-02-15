@@ -161,3 +161,4 @@ The above coordinate systems are *geocentric* in nature, and these are the coord
 \end{align}
 }\tag{5}
 ```
+Thus the Heliocentric Ecliptic latitude of the Earth is also always $0\degree$.
