@@ -721,7 +721,7 @@ Then by equation $18$:
 ```math
 \begin{align}
 \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\\
-&= \frac{6378.137\cdot6356.752}{6356.752^2 \cos^2(34\degree\enspace49'\enspace9.79'') + 6378.137^2 \sin^2(4\degree\enspace49'\enspace9.79'')}\\
+&= \frac{6378.137\cdot6356.752}{\sqrt{6356.752^2 \cos^2(34\degree\enspace49'\enspace9.79'') + 6378.137^2 \sin^2(4\degree\enspace49'\enspace9.79'')}}\\
 &= 6371.141\enspace\text{km}.
 \end{align}
 ```
