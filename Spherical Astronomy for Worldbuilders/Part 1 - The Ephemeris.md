@@ -338,7 +338,8 @@ Therefore
 ```math
 \begin{align}
 \frac{d}{dt}(\textbf{v}\times\textbf{h})&=\textbf{v}'\times\textbf{h}+\textbf{v}\times\textbf{h}'=\textbf{v}'\times\textbf{h}\\
-&=\textbf{a}\times\textbf{h}=GM\textbf{u}'
+&=\textbf{a}\times\textbf{h}\\
+&=GM\textbf{u}'
 \end{align}
 ```
 Integrating both sides of this equation gives us
