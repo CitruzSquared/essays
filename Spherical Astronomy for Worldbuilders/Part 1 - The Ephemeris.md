@@ -181,7 +181,7 @@ Turns out this equation has already been solved for the most part, and the probl
 
 Since all orbits are ellipses, let us quickly investigate the ellipse.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2afaf9f1-adfe-44ef-a5ea-08f363d126db" width="350"/> In the diagram is an ellipse with center $O$. The distance $OA$ is known as the semi-major-axis and is denoted $a$. The distance $OB$ is known as the semi-minor-axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major-axis and is denoted $a$. The distance $OB$ is known as the semi-minor-axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
 ```math
 \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.\tag{7}
 ```
@@ -190,7 +190,7 @@ Point $F$ is located at the point where the length $BF = a$. This point $F$ is k
 
 <br/>
 
-The points $A$ and $P$ then are the points closest to and furthest away from the focus, and are known as the *periapsis* and *apoapsis* respectively, and [*apses*](https://en.wikipedia.org/wiki/Apsis) (singular *apsis*) collectively. When the primary object (the object at the focus) is the Sun, these points can be called the *perihelion* and *apohelion*, and when the primary object is the Earth, they can be called the *perigee* and *apogee*.
+The points $P$ and $A$ then are the points closest to and furthest away from the focus, and are known as the *periapsis* and *apoapsis* respectively, and [*apses*](https://en.wikipedia.org/wiki/Apsis) (singular *apsis*) collectively. When the primary object (the object at the focus) is the Sun, these points can be called the *perihelion* and *apohelion*, and when the primary object is the Earth, they can be called the *perigee* and *apogee*.
 
 The amount of "squishing" of an ellipse is given by the quantity $c/a$ where $c$ is the distance $OF$. This quantity is known as the [*eccentricity*](https://en.wikipedia.org/wiki/Eccentricity_(mathematics)) and is denoted $e$. When the eccentricity is $0$, the ellipse becomes a perfect circle, and when the eccentricity is greater than or equal to $1$, the ellipse breaks and becomes a [parabola](https://en.wikipedia.org/wiki/Parabola) or [hyperbola](https://en.wikipedia.org/wiki/Hyperbola). 
 
@@ -202,14 +202,14 @@ e^2 = \frac{a^2-b^2}{a^2} = 1 - \frac{b^2}{a^2}.\tag{8}
 The periapsis distance is then
 ```math
 \begin{align}
-FA &= a - c = a - ae\\
+FP &= a - c = a - ae\\
 &= a(1 - e)\tag{9}
 \end{align}
 ```
 and the apoapsis distance is
 ```math
 \begin{align}
-FP &= a + c = a + ae\\
+FA &= a + c = a + ae\\
 &= a(1 + e)\tag{10}
 \end{align}
 ```
