@@ -17,9 +17,9 @@ We use the [Newton–Raphson method](https://en.wikipedia.org/wiki/Newton%27s_me
 ```math
 x_{n + 1} = x_n - \frac{f(x)}{f'(x)}. \tag{24}
 ```
-Clearly, we need to find $df/dE$.
+Clearly, we need to find $f'(E)$.
 ```math
-\frac{d}{dE} f(E) =  1 - e \cos (E)
+\frac{df}{dE} =  1 - e \cos (E)
 ```
 By plugging all the values into equation $24$, we obtain:
 ```math
