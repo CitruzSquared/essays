@@ -567,5 +567,5 @@ $\blacksquare$
 
 #### Proof of Kepler's Equation
 
-### Orientation of the Orbit in Space
+
 
