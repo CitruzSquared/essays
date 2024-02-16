@@ -468,7 +468,7 @@ E' &= \frac{n\sin(\nu)}{r\sin(\nu)/a}\\
 \therefore rE' &= na
 \end{align}
 ```
-Now, using equation $20$ again:
+Now, substituting equation $20$ for $r$:
 ```math
 (1 - e\cos (E)) E' = n
 ```
