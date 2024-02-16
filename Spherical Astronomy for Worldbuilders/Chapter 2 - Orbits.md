@@ -395,7 +395,7 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 ```
 
 ### Kepler's second law
-Let's now determine how to find the eccentric or true anomaly at any point in time. Kepler's second law will come in handy here.
+Let us now determine how to find the eccentric or true anomaly at any point in time, thus finally allowing us to determine the position of the planets. Kepler's second law will come in handy here.
 
 Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. That is, the true anomaly increases faster when the object is near the periapsis. We can intuitively see why an object would move faster when it is near the periapsis: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
 ```math
