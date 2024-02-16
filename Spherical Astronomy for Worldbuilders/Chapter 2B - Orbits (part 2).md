@@ -93,5 +93,5 @@ Which, when added with the ecliptic longitude of the periapsis $102\degree\enspa
 ```math
 \lambda_{\text{Heliocentric}} \text{ of the Earth} = 180\degree\enspace(+ 0.17'')
 ```
-Which agrees with example $4$ (The $0.17''$ is due to stray rounding error).\
+Which agrees with example $4$. (The $0.17''$ is due to stray rounding error.)\
 $\blacksquare$
