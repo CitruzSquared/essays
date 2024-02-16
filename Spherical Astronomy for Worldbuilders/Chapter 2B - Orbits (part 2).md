@@ -15,7 +15,7 @@ E - e \sin (E) - M = 0
 We then define $f$ as a function of $E$ to be $f(E) = E - e \sin (E) - M$. Then we juse need to find the root of $f(E) = 0$.\
 We use the [Newton–Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method), given by the iterative equation
 ```math
-x_{n + 1} = x_n - \frac{f(x)}{f'(x)}. \tag{24}
+x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{24}
 ```
 Clearly, we need to find $f'(E)$.
 ```math
