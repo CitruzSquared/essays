@@ -5,5 +5,5 @@ Unfortunately, Kepler's equation
 ```math
 M = E - e\sin (E)
 ```
-is trancendental, which means $E$ cannot be solved for $M$ analytically.\
+is [transcendental](https://en.wikipedia.org/wiki/Transcendental_function), which means $E$ cannot be solved for $M$ analytically.\
 However, there is hope! We can solve for $E$ [*numerically*](https://en.wikipedia.org/wiki/Numerical_analysis).
