@@ -248,8 +248,8 @@ T &= \frac{2\pi r}{v} = \frac{2\pi r}{\sqrt{GM/r}}\\
 &=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{14}
 \end{align}
 ```
-We can see that equation $14$ obeys Kepler's third law, $T^2 \propto r^3$.\
-Turns out, we can generalize this formula to elliptical orbits without issue!
+We can see that equation $14$ is essentially Kepler's third law, which states that $T^2 \propto r^3$.\
+Turns out, we can generalize equation $14$ to elliptical orbits without issue!
 ```math
 T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{15}
 ```
