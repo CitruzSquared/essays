@@ -340,14 +340,14 @@ However, putting the right origin at the focus is cumbersome. What if we approxi
 
 Defined as such, the coordinates of $A$ are much easier to determine. Putting $C$ as the origin,
 ```math
-\sin E = \frac{x}{a}
+\sin (E) = \frac{x}{a}
 ```
 and because $x^2/a^2 + y^2/b^2 = 1$,
 ```math
 \begin{align}
 \left(\frac{y}{b}\right)^2 &= 1 - \left(\frac{x}{a}\right)^2\\
-&= 1 - \sin^2 E\\
-\therefore \frac{y}{b} &= \cos E
+&= 1 - \sin^2 (E)\\
+\therefore \frac{y}{b} &= \cos (E)
 \end{align}
 ```
 <br/>
@@ -357,8 +357,8 @@ Therefore,
 ```math
 \displaylines{
 \begin{align}
-x &= a\sin E\\
-y &= b\cos E\\
+x &= a\sin (E)\\
+y &= b\cos (E)\\
 \end{align}
 } 
 ```
@@ -366,8 +366,9 @@ Now, translating the origin to the focus $O$,
 ```math
 \displaylines{
 \begin{align}
-x &= a\sin E - ae\\
-y &= b\cos E\\
+x &= a\sin (E) - ae\\
+y &= b\cos (E)\\
+&= a\sqrt{1 - e^2}\sin (E)
 \end{align}
 \tag{19}
 } 
@@ -375,20 +376,20 @@ y &= b\cos E\\
 Additionally, by the Pythagorean theorem then,
 ```math
 \begin{align}
-r^2 &= (a\cos E - ae)^2 + (b\sin E)^2\\
-&= a^2 \cos^2 E - 2a^2e\cos E + a^2e^2 + b^2 \sin^2 E\\
-&= a^2 \cos^2 E - 2a^2e\cos E + a^2e^2 + (a^2 - a^2e^2)(1 - \cos^2 E) \\
-&= a^2 \cos^2 E - 2a^2e\cos E + a^2e^2 + a^2 - a^2\cos^2 E - a^2e^2 + a^2e^2\cos^2 E \\
-&= a^2 - 2a^2e\cos E + a^2e^2\cos^2 E\\
-&= (a - ae\cos E)^2\\
-\therefore r &= a(1 - e\cos E) \tag{20}
+r^2 &= (a\cos (E) - ae)^2 + (a\sqrt{1 - e^2}\sin (E))^2\\
+&= a^2 \cos^2 (E) - 2a^2e\cos (E) + a^2e^2 + a^2(1 - e^2) \sin^2 (E)\\
+&= a^2 \cos^2 (E) - 2a^2e\cos (E) + a^2e^2 + (a^2 - a^2e^2)(1 - \cos^2 (E)) \\
+&= a^2 \cos^2 (E) - 2a^2e\cos (E) + a^2e^2 + a^2 - a^2\cos^2 (E) - a^2e^2 + a^2e^2\cos^2 (E) \\
+&= a^2 - 2a^2e\cos (E) + a^2e^2\cos^2 (E)\\
+&= (a - ae\cos (E))^2\\
+\therefore r &= a(1 - e\cos (E)) \tag{20}
 \end{align}
 ```
 Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 ```math
 \begin{align}
-\cos E &= \frac{x}{a} = \frac{ae + r \cos (\nu)}{a} = e(1 - e\cos E)\cos(\nu)\\
-\therefore \cos E &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
+\cos E &= \frac{x}{a} = \frac{ae + r \cos (\nu)}{a} = e(1 - e\cos (E))\cos(\nu)\\
+\therefore \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
 \end{align}
 ```
 
@@ -438,7 +439,7 @@ Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Geocentr
 Now, by equation $21$:
 ```math
 \begin{align}
-\cos E &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
+\cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
 &= \frac{0.0167 + \cos(77\degree\enspace3'\enspace50.1'')}{1 + 0.0167\cos(77\degree\enspace3'\enspace50.1'')}\\
 &= 0.239855411\\
 \therefore E &= 76\degree\enspace7'\enspace19.18''
