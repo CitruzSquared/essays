@@ -367,6 +367,7 @@ Now, translating the origin to the focus $O$,
 \displaylines{
 \begin{align}
 x &= a\sin (E) - ae\\
+\\
 y &= b\cos (E)\\
 &= a\sqrt{1 - e^2}\sin (E)
 \end{align}
