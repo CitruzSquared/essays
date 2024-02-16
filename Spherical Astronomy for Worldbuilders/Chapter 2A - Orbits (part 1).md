@@ -554,7 +554,7 @@ y_{\text{perifocal}} &= b \sin (E)\\
 &= 145.213 \text{ Gm}
 \end{align}
 ```
-Thus, the Earth's longitude with respect to its periapsis is:
+Thus, the Earth's longitude with respect to its periapsis (i.e. true anomaly) is:
 ```math
 \arctan(145.213, 33.384) = 77\degree\enspace3'\enspace10.27''
 ```
