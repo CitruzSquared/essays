@@ -153,7 +153,7 @@ Let us now rewrite $\textbf{h}$.
 &=r^2(\textbf{u}\times\textbf{u}').
 \end{align}
 ```
-Then
+Then,
 ```math
 \begin{align}
 \textbf{a}\times\textbf{h} &= -\frac{GM}{r^2}\textbf{u}\times r^2(\textbf{u}\times\textbf{u}')\\
