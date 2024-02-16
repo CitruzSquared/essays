@@ -388,7 +388,7 @@ r^2 &= (a\cos (E) - ae)^2 + (a\sqrt{1 - e^2}\sin (E))^2\\
 Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 ```math
 \begin{align}
-\cos E &= \frac{x}{a} = \frac{ae + r \cos (\nu)}{a} = e(1 - e\cos (E))\cos(\nu)\\
+\cos (E) &= \frac{x}{a} = \frac{ae + r \cos (\nu)}{a} = e(1 - e\cos (E))\cos(\nu)\\
 \therefore \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
 \end{align}
 ```
