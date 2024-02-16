@@ -399,21 +399,89 @@ The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text
 ### Kepler's second law
 Let us now determine how to find the eccentric or true anomaly at any point in time, thus finally allowing us to determine the position of the planets. Kepler's second law will come in handy here.
 
-Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. That is, the true anomaly increases faster when the object is near the periapsis. We can intuitively see why an object would move faster when it is near the periapsis: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
+First, recall equation $20$:
 ```math
-\textbf{r}\times\textbf{v} = \textbf{h}
+r = a(1 - e\cos (E))
 ```
+Differentiating both sides with respect to time gives us:
+```math
+r' = ae\sin(E)E' \tag{26}
+```
+Now recall equation $18$:
+```math
+\begin{align}
+r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
+\therefore\frac{1}{r} &= \frac{1 + e\cos(\nu)}{a(1 - e^2)}
+\end{align}
+```
+Differentiating both sides of this equation we obtain:
+```math
+\frac{r'}{r^2} = \frac{e \sin (\nu) \nu'}{a(1 - e^2)} \tag{22}
+```
+Now we factor in Kepler's second law, which states that the area sweeped out by a planet per unit time must stay constant. The area of a sector with radius $r$ and central angle $\theta$ is given by:
+```math
+S = \frac{1}{2}r^2 \theta
+```
+And therefore the area sweeped out by a planet over a small increment $d\nu$ of true anomaly is:
+```math
+dS = \frac{1}{2} r^2 d\nu
+```
+And therefore the "areal velocity" is
+```math
+\frac{dS}{dt} = \frac{r^2}{2}\frac{d\nu}{dt}
+```
+And this must stay constant.\
+Because the area of an ellipse is $\pi a b$,
+```math
+T \frac{dS}{dt} = T\frac{r^2}{2}\frac{d\nu}{dt} = \pi a b
+```
+where $T$ is the orbital period.\
+Therefore:
+```math
+r^2 \frac{d\nu}{dt} = \frac{2\pi a b}{T} 
+```
+now, denoting $2\pi/T$ as $n$ (this quantity is called the [mean motion](https://en.wikipedia.org/wiki/Mean_motion)), we obtain:
+```math
+r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{23}
+```
+Now substituting equation $23$ into equation $22$:
+```math
+r' = \frac{na\sin(\nu)}{\sqrt{1 - e^2}}
+```
+Equating this with equation $26$:
+```math
+\begin{align}
+ae\sin(E)E' &= \frac{na\sin(\nu)}{\sqrt{1 - e^2}}\\
+E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}
+\end{align}
+```
+But $\sqrt{1 - e^2}\sin(E)$ is just $y_{\text{perifocal}}/a$ by equation $19$, and $y_{\text{perifocal}} = r\sin(\nu)$ by equation $17$, so:
+```math
+\begin{align}
+E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}\\
+E' &= \frac{n\sin(\nu)}{r\sin(\nu)/a}\\
+\therefore rE' &= na
+\end{align}
+```
+Now, using equation $20$ again:
+```math
+(1 - e\cos (E)) E' = n
+```
+Integrating over time on both sides yields:
+```math
+E - e\sin(E) = nt + c.
+```
+If we measure $t$ from the time of periapsis, then when $t = 0$, $E - e\sin(E) = 0$ since $E = 0$ at periapsis. Therefore $c. = 0$.\
+Let's now denote $nt$ as $M$. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Thus:
+```math
+M = nt = \frac{2\pi}{T}\cdot t\tag{24}
+```
+Now the equation becomes:
+```math
+M = E - e\sin (E) \tag{25}
+```
+Which is known as [Kepler's Equation](https://en.m.wikipedia.org/wiki/Kepler%27s_equation).
 
-where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position with the primary at the origin, and $\textbf{v}$ is its velocity. This means that if the magnitude of $\textbf{r}$ decreases, i.e. the distance between the primary and the object decreases, then the magnitude of $\textbf{v}$, i.e. the object's speed, must increase (because $\textbf{h}$ must be constant). The property $\textbf{r}\times\textbf{v} = \textbf{h}$ is known as the [conservation of angular momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum).
-
-But dealing with differential vector equations is hardly appealing. So let us approach this problem from another perspective. Let's first flout all of Kepler's laws and assume that the planet moves along a circular orbit at a uniform speed. Then, the true anomaly equals the eccentric anomaly and also equals:
-```math
-\frac{360\degree}{T}\cdot t \tag{22}
-```
-Where $t$ is the time elapsed since periapsis. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Now let's account for Kepler's second law. Fortunately, there is a very easy relation between the mean and eccentric anomalies: they can be related to each other by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation):
-```math
-M = E - e\sin (E) \tag{23}
-```
 #### Example 4
 <div align="center">
 <table>
@@ -448,7 +516,7 @@ Now, by equation $21$:
 \therefore E &= 76\degree\enspace7'\enspace19.18''
 \end{align}
 ```
-Now, by Kepler's equation (equation $23$):
+Now, by Kepler's equation (equation $25$):
 ```math
 \begin{align}
 M &= E - e\sin (E)\\
@@ -456,7 +524,7 @@ M &= E - e\sin (E)\\
 &= 76\degree\enspace6'\enspace20.81''
 \end{align}
 ```
-Therefore, by the definition of $M$ (equation $22$):
+Therefore, by the definition of $M$ (equation $24$):
 ```math
 \begin{align}
 M &= \frac{360\degree}{T}\cdot t\\
@@ -484,15 +552,15 @@ E - e \sin (E) - M = 0
 We then define $f$ as a function of $E$ to be $f(E) = E - e \sin (E) - M$. Then we juse need to find the root of $f(E) = 0$.\
 We use the [Newton–Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method), given by the iterative equation
 ```math
-x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{24}
+x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{26}
 ```
 Clearly, we need to find $f'(E)$.
 ```math
 \frac{df}{dE} =  1 - e \cos (E)
 ```
-By plugging all the values into equation $24$, we obtain:
+By plugging all the values into equation $26$, we obtain:
 ```math
-E_{n + 1} = E_n - \frac{E_n - e\sin(E_n) - M}{1 - e\cos(E_n)} \tag{25}
+E_{n + 1} = E_n - \frac{E_n - e\sin(E_n) - M}{1 - e\cos(E_n)} \tag{27}
 ```
 which we can use to iteratively obtain better and better approximations of $E$, which we can then use to find the coordinates of the planet.
 #### Example 5
@@ -511,14 +579,14 @@ given that when the Earth at periapsis, its heliocentric ecliptic longitude is $
 </div>
 
 Due to the definition of the ecliptic coordinate frame, we can use our perifocal equations in it without much trouble. (See example $4$.)\
-We first calculate M by equation $22$:
+We first calculate M by equation $24$:
 ```math
 \begin{align}
 M &= \frac{360\degree}{365.2422\text{ dy}} \cdot77 \text{ dy}\enspace5h\enspace8m \\
 &= 76\degree\enspace6'\enspace20.811''
 \end{align}
 ```
-We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $25$.
+We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $27$.
 ```math
 \begin{align}
 E_2 &= M - \frac{M - e\sin(M) - M}{1 - e\cos(M)}\\
@@ -569,102 +637,3 @@ $\blacksquare$
 
 (continued...)
 
-<br/>
-<br/>
-
-Extra for the curious:
-#### Derivation of Kepler's Equation
-<div align="center">
-<table>
-<tbody>
-<td align="center">
-<img width="2000" height="0"><br>
-Prove that $M = E - e\sin(E)$.
-<img width="2000" height="0">
-</td>
-</tbody>
-</table>
-</div>
-
-Recall equation $20$:
-```math
-r = a(1 - e\cos (E))
-```
-Differentiating both sides with respect to time gives us:
-```math
-r' = ae\sin(E)E' \tag{26}
-```
-Now recall equation $18$:
-```math
-\begin{align}
-r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
-\therefore\frac{1}{r} &= \frac{1 + e\cos(\nu)}{a(1 - e^2)}
-\end{align}
-```
-Differentiating both sides of this equation we obtain:
-```math
-\frac{r'}{r^2} = \frac{e \sin (\nu) \nu'}{a(1 - e^2)} \tag{27}
-```
-Now we factor in Kepler's second law, which states that the area sweeped out by a planet per unit time must stay constant. The area of a sector with radius $r$ and central angle $\theta$ is given by:
-```math
-S = \frac{1}{2}r^2 \theta
-```
-And therefore the area sweeped out by a planet over a small increment $d\nu$ of true anomaly is:
-```math
-dS = \frac{1}{2} r^2 d\nu
-```
-And therefore the "areal velocity" is
-```math
-\frac{dS}{dt} = \frac{r^2}{2}\frac{d\nu}{dt}
-```
-And this must stay constant.\
-Because the area of an ellipse is $\pi a b$,
-```math
-T \frac{dS}{dt} = T\frac{r^2}{2}\frac{d\nu}{dt} = \pi a b
-```
-where $T$ is the orbital period.\
-Therefore:
-```math
-r^2 \frac{d\nu}{dt} = \frac{2\pi a b}{T} 
-```
-now, denoting $2\pi/T$ as $n$ (this quantity is called the [mean motion](https://en.wikipedia.org/wiki/Mean_motion)), we obtain:
-```math
-r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{28}
-```
-Now substituting equation $28$ into equation $27$:
-```math
-r' = \frac{na\sin(\nu)}{\sqrt{1 - e^2}}
-```
-Equating this with equation $26$:
-```math
-\begin{align}
-ae\sin(E)E' &= \frac{na\sin(\nu)}{\sqrt{1 - e^2}}\\
-E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}
-\end{align}
-```
-But $\sqrt{1 - e^2}\sin(E)$ is just $y_{\text{perifocal}}/a$ by equation $19$, and $y_{\text{perifocal}} = r\sin(\nu)$ by equation $17$, so:
-```math
-\begin{align}
-E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}\\
-E' &= \frac{n\sin(\nu)}{r\sin(\nu)/a}\\
-\therefore rE' &= na
-\end{align}
-```
-Now, using equation $20$ again:
-```math
-(1 - e\cos (E)) E' = n
-```
-Integrating over time on both sides yields:
-```math
-E - e\sin(E) = nt + c.
-```
-$nt = M$ by equation $22$ and therefore:
-```math
-E - e\sin(E) = M + c.
-```
-We know that when $E = 0$ the object is at periapsis and tehrefore $M = 0$, and therefore:
-```math
-E - e\sin(E) = M
-```
-Which is Kepler's equation.\
-$\blacksquare$
