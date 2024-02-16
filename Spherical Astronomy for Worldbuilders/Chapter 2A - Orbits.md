@@ -106,7 +106,7 @@ x^2 + 2aex + a^2e^2  + \frac{y^2}{1 - e^2} &= a^2
 ```
 Now we substitute $r\cos(\theta)$ and $r\sin(\theta)$ for $x$ and $y$:
 ```math
-(r\cos(\nu))^2 + 2ae(r\cos(\theta)) + a^2e^2  + \frac{(r\sin(\theta))^2}{1 - e^2} = a^2
+(r\cos(\theta))^2 + 2ae(r\cos(\theta)) + a^2e^2  + \frac{(r\sin(\theta))^2}{1 - e^2} = a^2
 ```
 Which gives the following quadratic equation in $r$:
 ```math
