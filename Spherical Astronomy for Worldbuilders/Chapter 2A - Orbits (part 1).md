@@ -295,7 +295,8 @@ Using the true anomaly, the position $(x, y)$ of the planet can be fully describ
 \displaylines{
 \begin{align}
 x_{\text{perifocal}} &= r\cos(\nu)\\
-y_{\text{perifocal}} &= r\sin(\nu)
+y_{\text{perifocal}} &= r\sin(\nu)\\
+\therefore \nu = \arctan(y, x)
 \end{align}
 \tag{17}
 }
@@ -393,7 +394,7 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 \therefore \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
 \end{align}
 ```
-The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y, x)$. (This can be derived from equation $17$.)
+The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y, x)$ (equation $17$).
 
 ### Kepler's second law
 Let us now determine how to find the eccentric or true anomaly at any point in time, thus finally allowing us to determine the position of the planets. Kepler's second law will come in handy here.
