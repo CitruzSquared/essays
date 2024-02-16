@@ -667,4 +667,5 @@ We know that when $E = 0$ the object is at periapsis and tehrefore $M = 0$, and 
 ```math
 E - e\sin(E) = M
 ```
+Which is Kepler's equation.\
 $\blacksquare$
