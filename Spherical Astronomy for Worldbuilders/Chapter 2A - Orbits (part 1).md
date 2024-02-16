@@ -463,7 +463,7 @@ M &= \frac{360\degree}{T}\cdot t\\
 \end{align}
 ```
 $77\text{ dy}\enspace5h\enspace8m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 20, }2024\enspace05:46$.\
-Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. Again, the discrepancy results from the fact that the Earth does not operate under a *true* two-body problem.\
+Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
 $\blacksquare$
 
 However what we really want is the reverse operation of example $4$: going from a specific time to a location. (Continued..)
