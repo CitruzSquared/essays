@@ -448,11 +448,11 @@ Differentiating both sides of this equation we obtain:
 \therefore r' = \frac{e\sin(\nu)r^2\nu'}{a(1 - e^2)} \tag{24}
 \end{align}
 ```
-Now we use equation $22$:
+Now we substitute equation $22$ in equation $24$:
 ```math
 r' = \frac{na\sin(\nu)}{\sqrt{1 - e^2}}
 ```
-Equating this with equation $26$:
+Equating this with equation $23$:
 ```math
 \begin{align}
 ae\sin(E)E' &= \frac{na\sin(\nu)}{\sqrt{1 - e^2}}\\
