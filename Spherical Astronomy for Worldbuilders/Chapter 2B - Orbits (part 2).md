@@ -1,3 +1,3 @@
 (continued..)
 
-### Orientation of the Orbit in Space
+### Orientation of Orbits in 3D Space
