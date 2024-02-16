@@ -87,14 +87,35 @@ And the apoapsis distance is given by equation $10$:
 ```
 $\blacksquare$
 
-Furthermore, the ellipse can also be written in polar form (with the origin at the focus):
+Furthermore, the ellipse can also be written in polar form with the focus at the origin:
+By equation $7$:
 ```math
-r = \frac{ep}{1 + e\cos(\theta)}\tag{12}
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
 ```
-where $p$ is the distance to the [*directrix*](https://en.wikipedia.org/wiki/Conic_section#Eccentricity,_focus_and_directrix) of the ellipse.\
-This form of the equation for an ellipse will not be used much.
-
-<br/>
+But remember we have put the (right) focus as the origin and therefore $x$ becomes $x + ae$:
+```math
+\frac{(x + ae)^2}{a^2} + \frac{y^2}{b^2} = 1
+```
+Substituting $b^2 = a^2(1 - e^2)$:
+```math
+\begin{align}
+\frac{(x + ae)^2}{a^2} + \frac{y^2}{a^2(1 - e^2)} &= 1\\
+(x + ae)^2 + \frac{y^2}{1 - e^2} &= a^2\\
+x^2 + 2aex + a^2e^2  + \frac{y^2}{1 - e^2} &= a^2
+\end{align}
+```
+Now we substitute $r\cos(\theta)$ and $r\sin(\theta)$ for $x$ and $y$:
+```math
+(r\cos(\nu))^2 + 2ae(r\cos(\theta)) + a^2e^2  + \frac{(r\sin(\theta))^2}{1 - e^2} = a^2
+```
+Which gives the following quadratic equation in $r$:
+```math
+\frac{1 - e^2 \cos^2(\theta)}{1 - e^2} r^2 + 2ae\cos(\theta) r - a^2(1 - e^2) = 0.
+```
+Finally, solving for $r$ gives us
+```math
+r = \frac{a(1 - e^2)}{1 + e\cos(\theta)}.\tag{12}
+```
 
 #### Proof of Kepler's First Law
 <div align="center">
@@ -217,7 +238,11 @@ If we now set $p=h^2/c$, we obtain for $r$:
 ```math
 r=\frac{ep}{1+e\cos(\theta)}
 ```
-which is precisely equation $12$.\
+Here, $p$ is the distance to the [*directrix*](https://en.wikipedia.org/wiki/Conic_section#Eccentricity,_focus_and_directrix) of the ellipse, which can be written as $p = ae + a/e$. Thus:
+```math
+r=\frac{ae + e^2}{1+e\cos(\theta)}
+```
+Which is precisely equation $12$.\
 $\blacksquare$
 
 <br/>
@@ -290,7 +315,7 @@ $\blacksquare$
 ### Perifocal Coordinates
 Before we move on, let's come up with a system of describing the position of a planet. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane. These coordinates, defined with the positive $x$ axis towards the periapsis, are called the [**perifocal coordinates**](https://en.wikipedia.org/wiki/Perifocal_coordinate_system).
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. This makes it such that the true anomaly is essentially $\theta$ in the polar equation for the ellipse.
 
 Using the true anomaly, the position $(x, y)$ of the planet can be fully described as:
 ```math
@@ -303,39 +328,12 @@ y_{\text{perifocal}} &= r\sin(\nu) \\
 \tag{17}
 }
 ```
-Now let's calculate $r$ to calculate $x$ and $y$.
-
-By equation $7$:
-```math
-\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
-```
-
-But remember we have put the (right) focus as the origin and therefore $x$ becomes $x + ae$:
-```math
-\frac{(x + ae)^2}{a^2} + \frac{y^2}{b^2} = 1
-```
-Substituting $b^2 = a^2(1 - e^2)$:
-```math
-\begin{align}
-\frac{(x + ae)^2}{a^2} + \frac{y^2}{a^2(1 - e^2)} &= 1\\
-(x + ae)^2 + \frac{y^2}{1 - e^2} &= a^2\\
-x^2 + 2aex + a^2e^2  + \frac{y^2}{1 - e^2} &= a^2
-\end{align}
-```
-Now we substitute equation $17$:
-```math
-(r\cos(\nu))^2 + 2ae(r\cos(\nu)) + a^2e^2  + \frac{(r\sin(\nu))^2}{1 - e^2} = a^2
-```
-Which gives the following quadratic equation in $r$:
-```math
-\frac{1 - e^2 \cos^2(\nu)}{1 - e^2} r^2 + 2ae\cos(\nu) r - a^2(1 - e^2) = 0.
-```
-Finally, solving for $r$ gives us
+Just like in polar coordinates.\
+Therefore, $r$ here is given by equation $12$:
 ```math
 r = \frac{a(1 - e^2)}{1 + e\cos(\nu)}.\tag{18}
 ```
 Which we can now use to give exact coordinates for $x$ and $y$.\
-(Equation $18$ also works as an alternative for equation $12$.)
 
 However, while the true anomaly represents the most intuitive and most physically grounded angle, there is another way to think of things, that will prove to be easier to deal with.
 
