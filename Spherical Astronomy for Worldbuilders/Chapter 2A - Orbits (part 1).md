@@ -550,7 +550,7 @@ x_{\text{perifocal}} &= a \cos (E) - ae\\
 \\
 y_{\text{perifocal}} &= b \sin (E)\\
 &= a\sqrt{1 - e^2} \sin (E)\\
-&= 149.6 \sqrt(1 - 0.0167^2) \sin(76\degree\enspace7'\enspace19.18'')\\
+&= 149.6 \sqrt{(1 - 0.0167^2)} \sin(76\degree\enspace7'\enspace19.18'')\\
 &= 145.213 \text{ Gm}
 \end{align}
 ```
