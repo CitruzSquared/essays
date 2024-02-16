@@ -397,9 +397,18 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 ### Kepler's second law
 Let's now determine how to find the eccentric or true anomaly at any point in time. Kepler's second law will come in handy here.
 
-Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. We can intuitively see why an object would move faster when it is closer to the primary: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
+Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. That is, the true anomaly increases faster when the object is near the periapsis. We can intuitively see why an object would move faster when it is near the periapsis: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
 ```math
 \textbf{r}\times\textbf{v} = \textbf{h}
 ```
 
 where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position with the primary at the origin, and $\textbf{v}$ is its velocity. This means that if the magnitude of $\textbf{r}$ decreases, i.e. the distance between the primary and the object decreases, then the magnitude of $\textbf{v}$, i.e. the object's speed, must increase (because $\textbf{h}$ must be constant). The property $\textbf{r}\times\textbf{v} = \textbf{h}$ is known as the [conservation of angular momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum).
+
+But dealing with differential vector equations is hardly appealing. So let us approach this problem from another perspective. Let's first flaunt all of Kepler's laws and assume that the planet moves along a circular orbit at a uniform speed. Then, the true anomaly equals the eccentric anomaly and also equals:
+```math
+\frac{360\degree}{T}\cdot t \tag{22}
+```
+Where $t$ is the time elapsed since periapsis. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly). Now let's account for Kepler's second law. The eccentric anomaly can be related to the mean anomaly by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation):
+```math
+M = E - e\sin E \tag{23}
+```
