@@ -32,7 +32,7 @@ which we can use to iteratively obtain better and better approximations of $E$, 
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-The Earth has orbital period $T = 365\text{ dy}\enspace5h\enspace48m\enspace46s$, its orbit has semi-major axis $a = 149.6 \text{ Gm}$, and its eccentricity $e = 0.0167$. <br/>
+The Earth has orbital period $T = 365.2422\text{ dy}$, its orbit has semi-major axis $a = 149.6 \text{ Gm}$, and its eccentricity $e = 0.0167$. <br/>
 Find the heliocentric ecliptic longitude of the Earth at $t = 77 \text{ dy}\enspace5h\enspace8m$ past periapsis, <br/>
 given that when the Earth at periapsis, its heliocentric ecliptic longitude is $102\degree\enspace56'\enspace49.9''$
 <img width="2000" height="0">
@@ -44,7 +44,7 @@ given that when the Earth at periapsis, its heliocentric ecliptic longitude is $
 We first calculate M by equation $22$:
 ```math
 \begin{align}
-M &= \frac{360\degree}{365\text{ dy}\enspace5h\enspace48m\enspace46s} \cdot77 \text{ dy}\enspace5h\enspace8m \\
+M &= \frac{360\degree}{365.2422\text{ dy}} \cdot77 \text{ dy}\enspace5h\enspace8m \\
 &= 76\degree\enspace6'\enspace20.811''
 \end{align}
 ```
