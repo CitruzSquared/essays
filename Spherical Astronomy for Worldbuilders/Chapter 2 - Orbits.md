@@ -393,7 +393,6 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 \therefore \cos E &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
 \end{align}
 ```
-<br/>
 
 ### Kepler's second law
 Let's now determine how to find the eccentric or true anomaly at any point in time. Kepler's second law will come in handy here.
