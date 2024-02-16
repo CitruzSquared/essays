@@ -222,6 +222,8 @@ $\blacksquare$
 <br/>
 <br/>
 
+### Kepler's Third Law
+
 Let us now calculate the [orbital period](https://en.wikipedia.org/wiki/Orbital_period) $T$ of a planet in a circular orbit, given the orbital radius $r$.\
 Newton's law of gravitation (equation $6$) tells us:
 ```math
