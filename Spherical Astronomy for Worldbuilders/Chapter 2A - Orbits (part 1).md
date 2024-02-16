@@ -286,7 +286,7 @@ Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The 
 $\blacksquare$
 
 ### Perifocal Coordinates
-Before we move on to calculating the location of the planets, we need to come up with a system of describing the position of a planet. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane. These coordinates, defined with the positive $x$ axis towards the periapsis, are called the [**perifocal coordinates**](https://en.wikipedia.org/wiki/Perifocal_coordinate_system).
+Before we move on, let's come up with a system of describing the position of a planet. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane. These coordinates, defined with the positive $x$ axis towards the periapsis, are called the [**perifocal coordinates**](https://en.wikipedia.org/wiki/Perifocal_coordinate_system).
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. 
 
@@ -397,7 +397,7 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y_{\text{perifocal}}, x_{\text{perifocal})}$ (equation $17$).
 
 ### Kepler's second law
-Let us now determine how to find the eccentric or true anomaly at any point in time, thus finally allowing us to determine the position of the planets. Kepler's second law will come in handy here, which states that the area sweeped out by a planet over a unit time must stay constant.
+We have discussed the first and third laws. Now let us tackle the second law, which states that the area sweeped out by a planet over a unit time must stay constant.
 
 The area of a sector with radius $r$ and central angle $\theta$ is given by:
 ```math
@@ -483,7 +483,7 @@ Now the equation becomes:
 ```math
 M = E - e\sin (E) \tag{26}
 ```
-Which is known as [Kepler's Equation](https://en.wikipedia.org/wiki/Kepler%27s_equation).
+Which is known as [**Kepler's Equation**](https://en.wikipedia.org/wiki/Kepler%27s_equation). This equation allows us to relate $E$ and $M$, thus relating $E$ and $t$, which allows us to finally calculate the motion of the planets.
 
 #### Example 4
 <div align="center">
