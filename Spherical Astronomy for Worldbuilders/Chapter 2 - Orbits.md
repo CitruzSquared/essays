@@ -286,7 +286,7 @@ Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The 
 $\blacksquare$
 
 ### Perifocal Coordinates
-Before we move on to calculating the location of the planets, we need to come up with a system of describing the position of a planet. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane.
+Before we move on to calculating the location of the planets, we need to come up with a system of describing the position of a planet. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane. These coordinates, defined with the positive $x$ axis towards the periapsis, are called the [**perifocal coordinates**](https://en.wikipedia.org/wiki/Perifocal_coordinate_system).
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. 
 
@@ -300,8 +300,6 @@ y &= r\sin(\nu)
 \tag{17}
 }
 ```
-These coordinates, because they are defined along the plane of the orbit, with the focus at the orgigin, and the positive $x$ axis towards the periapsis, are called the [**perifocal coordinates**](https://en.wikipedia.org/wiki/Perifocal_coordinate_system).
-
 Now let's calculate $r$ to calculate $x$ and $y$.
 
 By equation $7$:
@@ -410,5 +408,57 @@ But dealing with differential vector equations is hardly appealing. So let us ap
 ```
 Where $t$ is the time elapsed since periapsis. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Now let's account for Kepler's second law. The eccentric anomaly can be related to the mean anomaly by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation):
 ```math
-M = E - e\sin E \tag{23}
+M = E - e\sin (E) \tag{23}
 ```
+#### Example 4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+The orbital period of the Earth $T = 365.2422$ days, and the eccentricity of its orbit is $0.0167$. <br/>
+Additionally, when it is at periapsis, its heliocentric ecliptic longitude is $102\degree\enspace56'\enspace49.9''$. <br/>
+Given that the time of perihelion in $2024$ was $\text{January 3, }2024\enspace 00:38$, calculate the time of Spring Equinox in the Northern Hemisphere in $2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Geocentric}}\text{ of the Sun } = 0\degree$, therefore (by equation $5$) it occurs when $\lambda_{\text{Heliocentric}}\text{ of the Earth } = 180\degree$.
+
+Because ecliptic coordinates are based on the Earth's orbital plane, it effectively is equal to the Earth's perifocal coordinate frame, except that the $x$-axis is rotated from the location of perihelion to Aries. Thus, the true anomaly at the point of Spring Equinox is:
+```math
+\begin{align}
+\nu &= 180\degree - 102\degree\enspace56'\enspace49.9''\\
+&= 77\degree\enspace3'\enspace50.1''
+\end{align}
+```
+Now, by equation $21$:
+```math
+\begin{align}
+\cos E &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
+&= \frac{0.0167 + \cos(77\degree\enspace3'\enspace50.1'')}{1 + 0.0167\cos(77\degree\enspace3'\enspace50.1'')}\\
+&= 0.239855411\\
+\therefore E &= 76\degree\enspace7'\enspace19.18''
+\end{align}
+```
+Now, by Kepler's equation (equation $23$):
+```math
+\begin{align}
+M &= E - e\sin (E)\\
+&= 76\degree\enspace7'\enspace19.18'' - 0.0167 \sin (76\degree\enspace7'\enspace19.18'')\\
+&= 76\degree\enspace6'\enspace20.81''
+\end{align}
+```
+Therefore, by the definition of $M$ (equation $22$):
+```math
+\begin{align}
+M &= \frac{360\degree}{T}\cdot t\\
+\therefore t &= \frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
+&= 77text{ dy}\enspace5h\enspace8m\enspace10s.
+\end{align}
+```
+$77text{ dy}\enspace5h\enspace8m\enspace10s.$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 20, }2024\enspace05:46$.\
+Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. Again, the discrepancy results from the fact that the Earth does not operate under a *true* two-body problem.\
+$\blacksquare$
