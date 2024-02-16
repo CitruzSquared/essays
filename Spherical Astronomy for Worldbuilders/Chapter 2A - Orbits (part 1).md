@@ -398,7 +398,7 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y_{\text{perifocal}}, x_{\text{perifocal})}$ (equation $17$).
 
 ### Kepler's second law
-We have discussed the first and third laws. Now let us tackle the second law, which states that the area sweeped out by a planet over a unit time must stay constant.
+We have discussed Kepler's first and third laws. Now let us tackle his second law, which states that the area sweeped out by a planet over a unit time must stay constant.
 
 The area of a sector with radius $r$ and central angle $\theta$ is given by:
 ```math
