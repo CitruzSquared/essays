@@ -220,7 +220,6 @@ which is precisely equation $12$.\
 $\blacksquare$
 
 <br/>
-<br/>
 
 ### Kepler's Third Law
 
@@ -337,7 +336,7 @@ r = \frac{a(1 - e^2)}{1 + e\cos(\nu)}.\tag{18}
 Which we can now use to give exact coordinates for $x$ and $y$.\
 (Equation $18$ also works as an alternative for equation $12$.)
 
-However, putting the origin at the focus is cumbersome. What if we approximated the orbit as a circle?
+However, while the true anomaly represents the most intuitive and most physically grounded angle, there is another way to think of things, that will prove to be easier to deal with.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/8f9a0758-fcdf-4de7-a4fc-80249d57a4fc" width="350"/> In this diagram, we have drawn a circle with radius $a$ over the ellipse. We then projected the position of the planet $A$ onto this circle and called it $A'$. Thus a new angle is defined: $PCA'$ defines the [*eccentric anomaly*](https://en.wikipedia.org/wiki/Eccentric_anomaly), and is denoted $E$.
 
