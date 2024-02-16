@@ -286,4 +286,66 @@ Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The 
 $\blacksquare$
 
 ### The Three Anomalies
-We have now investigated the first and third of Kepler's laws, let us now tackle the second. Kepler's second law is arguably the most important of the three, since it is the one that will truly help us 
+We have now investigated the first and third of Kepler's laws, let us now tackle the second. Kepler's second law is arguably the most important of the three, since it is the one that will truly help us calculate the location of the planets. 
+
+Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. We can intuitively see why an object would move faster when it is closer to the primary: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
+```math
+\textbf{r}\times\textbf{v} = \textbf{h}
+```
+
+where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position with the primary at the origin, and $\textbf{v}$ is its velocity. This means that if the magnitude of $\textbf{r}$ decreases, i.e. the distance between the primary and the object decreases, then the magnitude of $\textbf{v}$, i.e. the object's speed, must increase (because $\textbf{h}$ must be constant). The property $\textbf{r}\times\textbf{v} = \textbf{h}$ is known as the [conservation of angular momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum).
+
+However, dealing with positions and velocities is difficult as it involves solving differential vector equations. There is a much easier way of describing the motion of the planets, and that is by three quantities known as *anomalies*.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\theta$. 
+
+Using the true anomaly, the position $(x, y)$ of the planet can be fully described as:
+```math
+\displaylines{
+\begin{align}
+x &= r\cos(\theta)\\
+y &= r\sin(\theta)
+\end{align}
+\tag{17}
+}
+```
+Clearly we need $r$ to calculate $x$ and $y$.
+
+<br/>
+<br/>
+
+By equation $7$:
+```math
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+```
+
+But remember we have put the (right) focus as the origin and therefore $x$ becomes $x + ae$:
+```math
+\frac{(x + ae)^2}{a^2} + \frac{y^2}{b^2} = 1
+```
+Substituting $b^2 = a^2(1 - e^2)$:
+```math
+\begin{align}
+\frac{(x + ae)^2}{a^2} + \frac{y^2}{a^2(1 - e^2)} &= 1\\
+(x + ae)^2 + \frac{y^2}{1 - e^2} &= a^2\\
+x^2 + 2aex + a^2e^2  + \frac{y^2}{1 - e^2} &= a^2
+\end{align}
+```
+Now we substitute equation $17$:
+```math
+(r\cos(\theta))^2 + 2ae(r\cos(\theta)) + a^2e^2  + \frac{(r\sin(\theta))^2}{1 - e^2} = a^2
+```
+Which gives the following quadratic equation in $r$:
+```math
+\frac{1 - e^2 \cos^2(\theta)}{1 - e^2} r^2 + 2ae\cos(\theta) r - a^2(1 - e^2) = 0.
+```
+Finally, solving for $r$ gives us
+```math
+r = \frac{a(1 - e^2)}{1 + e\cos(\theta)}.\tag{18}
+```
+Which we can now use to give exact coordinates for $x$ and $y$.\
+(Equation $18$ also works as an alternative for equation $12$.)
+
+However, putting the right origin at the focus is cumbersome. What if we approximated the orbit as a circle?
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/5c4ddc9c-f850-4f60-9b30-8d8405c45076" width="350"/> In this diagram, we have drawn a circle with radius $a$ over the ellipse. We then projected the position of the planet $A$ onto this circle and called it $E$. Thus a new angle is defined: $PCE$ defines the [*eccentric anomaly*](https://en.wikipedia.org/wiki/Eccentric_anomaly).
