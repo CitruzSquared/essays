@@ -484,7 +484,7 @@ Now the equation becomes:
 ```math
 M = E - e\sin (E) \tag{26}
 ```
-Which is known as [Kepler's Equation](https://en.m.wikipedia.org/wiki/Kepler%27s_equation).
+Which is known as [Kepler's Equation](https://en.wikipedia.org/wiki/Kepler%27s_equation).
 
 #### Example 4
 <div align="center">
