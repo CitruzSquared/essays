@@ -641,4 +641,4 @@ Which agrees with example $4$. (The $0.17''$ is due to stray rounding error.)\
 $\blacksquare$
 
 ### Orientation of Orbits in 3D Space
-(continued...)
+(continued in part B...)
