@@ -397,28 +397,9 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y_{\text{perifocal}}, x_{\text{perifocal})}$ (equation $17$).
 
 ### Kepler's second law
-Let us now determine how to find the eccentric or true anomaly at any point in time, thus finally allowing us to determine the position of the planets. Kepler's second law will come in handy here.
+Let us now determine how to find the eccentric or true anomaly at any point in time, thus finally allowing us to determine the position of the planets. Kepler's second law will come in handy here, which states that the area sweeped out by a planet over a unit time must stay constant.
 
-First, recall equation $20$:
-```math
-r = a(1 - e\cos (E))
-```
-Differentiating both sides with respect to time gives us:
-```math
-r' = ae\sin(E)E' \tag{26}
-```
-Now recall equation $18$:
-```math
-\begin{align}
-r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
-\therefore\frac{1}{r} &= \frac{1 + e\cos(\nu)}{a(1 - e^2)}
-\end{align}
-```
-Differentiating both sides of this equation we obtain:
-```math
-\frac{r'}{r^2} = \frac{e \sin (\nu) \nu'}{a(1 - e^2)} \tag{22}
-```
-Now we factor in Kepler's second law, which states that the area sweeped out by a planet per unit time must stay constant. The area of a sector with radius $r$ and central angle $\theta$ is given by:
+The area of a sector with radius $r$ and central angle $\theta$ is given by:
 ```math
 S = \frac{1}{2}r^2 \theta
 ```
@@ -426,7 +407,7 @@ And therefore the area sweeped out by a planet over a small increment $d\nu$ of 
 ```math
 dS = \frac{1}{2} r^2 d\nu
 ```
-And therefore the "areal velocity" is
+And therefore the area sweeped out per unit time is
 ```math
 \frac{dS}{dt} = \frac{r^2}{2}\frac{d\nu}{dt}
 ```
@@ -442,9 +423,32 @@ r^2 \frac{d\nu}{dt} = \frac{2\pi a b}{T}
 ```
 now, denoting $2\pi/T$ as $n$ (this quantity is called the [mean motion](https://en.wikipedia.org/wiki/Mean_motion)), we obtain:
 ```math
-r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{23}
+r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{22}
 ```
-Now substituting equation $23$ into equation $22$:
+
+Now, recall equation $20$:
+```math
+r = a(1 - e\cos (E))
+```
+Differentiating both sides with respect to time gives us:
+```math
+r' = ae\sin(E)E' \tag{23}
+```
+Now recall equation $18$:
+```math
+\begin{align}
+r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
+\therefore\frac{1}{r} &= \frac{1 + e\cos(\nu)}{a(1 - e^2)}
+\end{align}
+```
+Differentiating both sides of this equation we obtain:
+```math
+\begin{align}
+\frac{r'}{r^2} = \frac{e \sin (\nu) \nu'}{a(1 - e^2)} 
+\therefore r' = \frac{e\sin(\nu)r^2\nu'}{a(1 - e^2)} \tag{24}
+\end{align}
+```
+Now we use equation $22$:
 ```math
 r' = \frac{na\sin(\nu)}{\sqrt{1 - e^2}}
 ```
@@ -474,11 +478,11 @@ E - e\sin(E) = nt + c.
 If we measure $t$ from the time of periapsis, then when $t = 0$, $E - e\sin(E) = 0$ since $E = 0$ at periapsis. Therefore $c. = 0$.\
 Let's now denote $nt$ as $M$. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Thus:
 ```math
-M = nt = \frac{2\pi}{T}\cdot t\tag{24}
+M = nt = \frac{2\pi}{T}\cdot t\tag{25}
 ```
 Now the equation becomes:
 ```math
-M = E - e\sin (E) \tag{25}
+M = E - e\sin (E) \tag{26}
 ```
 Which is known as [Kepler's Equation](https://en.m.wikipedia.org/wiki/Kepler%27s_equation).
 
@@ -516,7 +520,7 @@ Now, by equation $21$:
 \therefore E &= 76\degree\enspace7'\enspace19.18''
 \end{align}
 ```
-Now, by Kepler's equation (equation $25$):
+Now, by Kepler's equation (equation $26$):
 ```math
 \begin{align}
 M &= E - e\sin (E)\\
@@ -524,7 +528,7 @@ M &= E - e\sin (E)\\
 &= 76\degree\enspace6'\enspace20.81''
 \end{align}
 ```
-Therefore, by the definition of $M$ (equation $24$):
+Therefore, by the definition of $M$ (equation $25$):
 ```math
 \begin{align}
 M &= \frac{360\degree}{T}\cdot t\\
@@ -552,15 +556,15 @@ E - e \sin (E) - M = 0
 We then define $f$ as a function of $E$ to be $f(E) = E - e \sin (E) - M$. Then we juse need to find the root of $f(E) = 0$.\
 We use the [Newton–Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method), given by the iterative equation
 ```math
-x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{26}
+x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{27}
 ```
 Clearly, we need to find $f'(E)$.
 ```math
 \frac{df}{dE} =  1 - e \cos (E)
 ```
-By plugging all the values into equation $26$, we obtain:
+By plugging all the values into equation $27$, we obtain:
 ```math
-E_{n + 1} = E_n - \frac{E_n - e\sin(E_n) - M}{1 - e\cos(E_n)} \tag{27}
+E_{n + 1} = E_n - \frac{E_n - e\sin(E_n) - M}{1 - e\cos(E_n)} \tag{28}
 ```
 which we can use to iteratively obtain better and better approximations of $E$, which we can then use to find the coordinates of the planet.
 #### Example 5
@@ -579,14 +583,14 @@ given that when the Earth at periapsis, its heliocentric ecliptic longitude is $
 </div>
 
 Due to the definition of the ecliptic coordinate frame, we can use our perifocal equations in it without much trouble. (See example $4$.)\
-We first calculate M by equation $24$:
+We first calculate M by equation $25$:
 ```math
 \begin{align}
 M &= \frac{360\degree}{365.2422\text{ dy}} \cdot77 \text{ dy}\enspace5h\enspace8m \\
 &= 76\degree\enspace6'\enspace20.811''
 \end{align}
 ```
-We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $27$.
+We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $28$.
 ```math
 \begin{align}
 E_2 &= M - \frac{M - e\sin(M) - M}{1 - e\cos(M)}\\
