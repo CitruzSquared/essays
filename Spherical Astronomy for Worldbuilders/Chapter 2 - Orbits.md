@@ -455,7 +455,8 @@ Therefore, by the definition of $M$ (equation $22$):
 ```math
 \begin{align}
 M &= \frac{360\degree}{T}\cdot t\\
-\therefore t &= \frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
+\therefore t &= \frac{TM}{t}
+&=\frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
 &= 77\text{ dy}\enspace5h\enspace8m\enspace10s.
 \end{align}
 ```
