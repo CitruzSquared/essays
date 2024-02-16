@@ -72,7 +72,8 @@ Here is the table of repetitions:
 5 & & 76\degree\enspace7'\enspace19.176'' \\ \hline
 \end{array}
 ```
-As we can see, $E$ has quickly converged onto $76\degree\enspace7'\enspace19.176''$. We can now calculate $(x, y)$ with equation $19$:
+As we can see, $E$ has quickly converged onto $76\degree\enspace7'\enspace19.176''$. In general it can be assumed that 4 or 5 repetitions will be enough.\
+We can now calculate $(x, y)$ with equation $19$:
 ```math
 \begin{align}
 x &= a \cos (E) - ae\\
