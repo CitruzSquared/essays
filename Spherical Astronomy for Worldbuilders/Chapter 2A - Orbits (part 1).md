@@ -531,7 +531,7 @@ Therefore, by the definition of $M$ (equation $25$):
 ```math
 \begin{align}
 M &= \frac{360\degree}{T}\cdot t\\
-\therefore t &= \frac{TM}{t}\\
+\therefore t &= \frac{TM}{360\degree}\\
 &=\frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
 &= 77\text{ dy}\enspace5h\enspace8m.
 \end{align}
