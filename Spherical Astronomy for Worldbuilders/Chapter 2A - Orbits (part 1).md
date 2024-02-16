@@ -1,6 +1,6 @@
 ## II. Orbits
-Let us calculate the motion and position of the planets.
-### Kepler's laws
+Let us study the motion and position of the planets.
+
 All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
 It tells us:
 ```math
@@ -15,7 +15,8 @@ Turns out this equation has already been solved for the most part, and the probl
   * This tells us that the object travels faster when it is in the part of its orbit that is closer to the primary, and slower when it is further away.
 - 3. The square of the orbital period ($T$) of the planet is proportional to the cube of the *semi-major axis* of the orbit of the planet.
 
-Since all orbits are ellipses, let us quickly investigate the ellipse.
+### Kepler's First Law
+Since Kepler's first law states that all orbits are ellipses, let us quickly investigate the ellipse.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major axis and is denoted $a$. The distance $OB$ is known as the semi-minor axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
 ```math
