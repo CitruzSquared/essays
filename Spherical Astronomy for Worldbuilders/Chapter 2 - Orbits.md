@@ -348,4 +348,51 @@ Which we can now use to give exact coordinates for $x$ and $y$.\
 
 However, putting the right origin at the focus is cumbersome. What if we approximated the orbit as a circle?
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/5c4ddc9c-f850-4f60-9b30-8d8405c45076" width="350"/> In this diagram, we have drawn a circle with radius $a$ over the ellipse. We then projected the position of the planet $A$ onto this circle and called it $E$. Thus a new angle is defined: $PCE$ defines the [*eccentric anomaly*](https://en.wikipedia.org/wiki/Eccentric_anomaly).
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/8f9a0758-fcdf-4de7-a4fc-80249d57a4fc" width="350"/> In this diagram, we have drawn a circle with radius $a$ over the ellipse. We then projected the position of the planet $A$ onto this circle and called it $A'$. Thus a new angle is defined: $PCA'$ defines the [*eccentric anomaly*](https://en.wikipedia.org/wiki/Eccentric_anomaly), and is denoted $E$.
+
+Defined as such, the coordinates of $A$ are much easier to determine. Putting $C$ as the origin,
+```math
+\sin E = \frac{x}{a}
+```
+and because $x^2/a^2 + y^2/b^2 = 1$,
+```math
+\begin{align}
+\left(\frac{y}{b}\right)^2 &= 1 - \left(\frac{x}{a}\right)^2\\
+&= 1 - \sin^2 E\\
+\therefore \frac{y}{b} &= \cos E
+\end{align}
+```
+<br/>
+<br/>
+
+Therefore,
+```math
+\displaylines{
+\begin{align}
+x &= a\sin E\\
+y &= b\cos E\\
+\end{align}
+} 
+```
+Now, translating the origin to the focus $O$,
+```math
+\displaylines{
+\begin{align}
+x &= a\sin E - ae\\
+y &= b\cos E\\
+\end{align}
+\tag{19}
+} 
+```
+By the Pythagorean theorem then,
+```math
+\begin{align}
+r^2 &= (a\cos E - ae)^2 + (b\sin E)^2\\
+&= a^2 \cos^2 E - 2a^2e\cos E + a^2e^2 + b^2 \sin^2 E\\
+&= a^2 \cos^2 E - 2a^2e\cos E + a^2e^2 + (a^2 - a^2e^2)(1 - \cos^2 E) \\
+&= a^2 \cos^2 E - 2a^2e\cos E + a^2e^2 + a^2 - a^2\cos^2 E - a^2e^2 + a^2e^2\cos^2 E \\
+&= a^2 - 2a^2e\cos E + a^2e^2\cos^2 E\\
+&= (a - ae\cos E)^2\\
+\therefore r &= a(1 - e\cos E) \tag{20}
+\end{align}
+```
