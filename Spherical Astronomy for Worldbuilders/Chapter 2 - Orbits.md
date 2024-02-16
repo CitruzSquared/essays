@@ -456,9 +456,9 @@ Therefore, by the definition of $M$ (equation $22$):
 \begin{align}
 M &= \frac{360\degree}{T}\cdot t\\
 \therefore t &= \frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
-&= 77text{ dy}\enspace5h\enspace8m\enspace10s.
+&= 77\text{ dy}\enspace5h\enspace8m\enspace10s.
 \end{align}
 ```
-$77text{ dy}\enspace5h\enspace8m\enspace10s.$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 20, }2024\enspace05:46$.\
+$77\text{ dy}\enspace5h\enspace8m\enspace10s.$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 20, }2024\enspace05:46$.\
 Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. Again, the discrepancy results from the fact that the Earth does not operate under a *true* two-body problem.\
 $\blacksquare$
