@@ -285,7 +285,7 @@ T = 365.219 \text{ dy}
 Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The difference comes from the fact that there are gravitational perturbations from other Solar System objects on the Earth, and therefore the motion of the Earth is not *exactly* a true two-body problem. The precise math is too difficult for worldbuilding purposes and therefore the perturbation effects of planets on planets will be ignored.\
 $\blacksquare$
 
-### The Three Anomalies
+### Perifocal Coordinates
 We have now investigated the first and third of Kepler's laws, let us now tackle the second. Kepler's second law is arguably the most important of the three, since it is the one that will truly help us calculate the location of the planets. 
 
 Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. We can intuitively see why an object would move faster when it is closer to the primary: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
@@ -297,22 +297,21 @@ where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position w
 
 However, dealing with positions and velocities is difficult as it involves solving differential vector equations. There is a much easier way of describing the motion of the planets, and that is by three quantities known as *anomalies*.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\theta$. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. 
 
 Using the true anomaly, the position $(x, y)$ of the planet can be fully described as:
 ```math
 \displaylines{
 \begin{align}
-x &= r\cos(\theta)\\
-y &= r\sin(\theta)
+x &= r\cos(\nu)\\
+y &= r\sin(\nu)
 \end{align}
 \tag{17}
 }
 ```
-Clearly we need $r$ to calculate $x$ and $y$.
+These coordinates, because they are defined along the plane of the orbit, with the focus at the orgigin, and the positive $x$ axis towards the periapsis, are called the [**perifocal coordinates**](https://en.wikipedia.org/wiki/Perifocal_coordinate_system).
 
-<br/>
-<br/>
+Now let's calculate $r$ to calculate $x$ and $y$.
 
 By equation $7$:
 ```math
@@ -333,15 +332,15 @@ x^2 + 2aex + a^2e^2  + \frac{y^2}{1 - e^2} &= a^2
 ```
 Now we substitute equation $17$:
 ```math
-(r\cos(\theta))^2 + 2ae(r\cos(\theta)) + a^2e^2  + \frac{(r\sin(\theta))^2}{1 - e^2} = a^2
+(r\cos(\nu))^2 + 2ae(r\cos(\nu)) + a^2e^2  + \frac{(r\sin(\nu))^2}{1 - e^2} = a^2
 ```
 Which gives the following quadratic equation in $r$:
 ```math
-\frac{1 - e^2 \cos^2(\theta)}{1 - e^2} r^2 + 2ae\cos(\theta) r - a^2(1 - e^2) = 0.
+\frac{1 - e^2 \cos^2(\nu)}{1 - e^2} r^2 + 2ae\cos(\nu) r - a^2(1 - e^2) = 0.
 ```
 Finally, solving for $r$ gives us
 ```math
-r = \frac{a(1 - e^2)}{1 + e\cos(\theta)}.\tag{18}
+r = \frac{a(1 - e^2)}{1 + e\cos(\nu)}.\tag{18}
 ```
 Which we can now use to give exact coordinates for $x$ and $y$.\
 (Equation $18$ also works as an alternative for equation $12$.)
@@ -384,7 +383,7 @@ y &= b\cos E\\
 \tag{19}
 } 
 ```
-By the Pythagorean theorem then,
+Additionally, by the Pythagorean theorem then,
 ```math
 \begin{align}
 r^2 &= (a\cos E - ae)^2 + (b\sin E)^2\\
@@ -396,3 +395,12 @@ r^2 &= (a\cos E - ae)^2 + (b\sin E)^2\\
 \therefore r &= a(1 - e\cos E) \tag{20}
 \end{align}
 ```
+Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
+```math
+\begin{align}
+\cos E &= \frac{x}{a} = \frac{ae + r \cos (\nu)}{a} = e(1 - e\cos E)\cos(\nu)\\
+\therefore \cos E &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
+\end{align}
+```
+
+Now we have two measures to calculate the perifocal coordinates of a planet but no way to calculate the anomalies themselves.
