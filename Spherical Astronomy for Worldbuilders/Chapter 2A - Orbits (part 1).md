@@ -452,12 +452,12 @@ Differentiating both sides of this equation we obtain:
 ```
 Now we substitute equation $22$ in equation $24$:
 ```math
-r' = \frac{na\sin(\nu)}{\sqrt{1 - e^2}}
+r' = \frac{nae\sin(\nu)}{\sqrt{1 - e^2}}
 ```
 Equating this with equation $23$:
 ```math
 \begin{align}
-ae\sin(E)E' &= \frac{na\sin(\nu)}{\sqrt{1 - e^2}}\\
+ae\sin(E)E' &= \frac{nae\sin(\nu)}{\sqrt{1 - e^2}}\\
 E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}
 \end{align}
 ```
