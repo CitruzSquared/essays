@@ -329,12 +329,13 @@ y_{\text{perifocal}} &= r\sin(\nu) \\
 \tag{17}
 }
 ```
-Just like in polar coordinates.\
+Just like in polar coordinates.
+
 Therefore, $r$ here is given by equation $12$:
 ```math
 r = \frac{a(1 - e^2)}{1 + e\cos(\nu)}.\tag{18}
 ```
-Which we can now use to give exact coordinates for $x$ and $y$.\
+Which we can now use to give exact coordinates for $x$ and $y$.
 
 However, while the true anomaly represents the most intuitive and most physically grounded angle, there is another way to think of things, that will prove to be easier to deal with.
 
