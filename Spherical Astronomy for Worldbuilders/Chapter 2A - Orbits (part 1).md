@@ -406,7 +406,7 @@ But dealing with differential vector equations is hardly appealing. So let us ap
 ```math
 \frac{360\degree}{T}\cdot t \tag{22}
 ```
-Where $t$ is the time elapsed since periapsis. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Now let's account for Kepler's second law. The eccentric anomaly can be related to the mean anomaly by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation):
+Where $t$ is the time elapsed since periapsis. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Now let's account for Kepler's second law. Fortunately, there is a very easy relation between the mean and eccentric anomalies: they can be related to the mean anomaly by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation):
 ```math
 M = E - e\sin (E) \tag{23}
 ```
