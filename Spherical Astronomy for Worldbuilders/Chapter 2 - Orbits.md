@@ -1,4 +1,4 @@
-## II. The Planets
+## II. Orbits
 Let us calculate the motion and position of the planets.
 ### Kepler's laws
 All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
@@ -95,7 +95,7 @@ This form of the equation for an ellipse will not be used much.
 
 <br/>
 
-#### Proof of Kepler's 1st law
+#### Proof of Kepler's First Law
 <div align="center">
 <table>
 <tbody>
@@ -284,3 +284,6 @@ T = 365.219 \text{ dy}
 ```
 Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The difference comes from the fact that there are gravitational perturbations from other Solar System objects on the Earth, and therefore the motion of the Earth is not *exactly* a true two-body problem. The precise math is too difficult for worldbuilding purposes and therefore the perturbation effects of planets on planets will be ignored.\
 $\blacksquare$
+
+### The Three Anomalies
+We have now investigated the first and third of Kepler's laws, let us now tackle the second. Kepler's second law is arguably the most important of the three, since it is the one that will truly help us 
