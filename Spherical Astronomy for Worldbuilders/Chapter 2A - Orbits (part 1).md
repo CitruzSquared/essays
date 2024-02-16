@@ -427,7 +427,7 @@ calculate the time of Spring Equinox in the Northern Hemisphere in $2024$.
 </table>
 </div>
 
-Because ecliptic coordinates are based on the Earth's orbital plane, it effectively is equal to the Earth's perifocal coordinate frame, except that the $x$-axis is rotated from the location of perihelion to Aries. Therefore, we can use our equations.
+Because ecliptic coordinates are based on the Earth's orbital plane, it effectively is equal to the Earth's perifocal coordinate frame, except that the $x$-axis is rotated from the direction of perihelion to the direction of Aries. Therefore, we can use our perifocal equations in the ecliptic frame without much trouble.
 
 Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Geocentric}}\text{ of the Sun } = 0\degree$, therefore (by equation $5$) it occurs when $\lambda_{\text{Heliocentric}}\text{ of the Earth } = 180\degree$. Thus, the true anomaly of the Earth at the time of Northern Spring Equinox is:
 ```math
