@@ -286,7 +286,7 @@ Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The 
 $\blacksquare$
 
 ### Perifocal Coordinates
-Before we move on, we need to come up with a system of describing the position of a planet within its orbit. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane.
+Before we move on to calculating the location of the planets, we need to come up with a system of describing the position of a planet. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. 
 
