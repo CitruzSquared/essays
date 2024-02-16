@@ -286,16 +286,7 @@ Which is close enough to the true value of the year, $365.2422 \text{ dy}$. The 
 $\blacksquare$
 
 ### Perifocal Coordinates
-We have now investigated the first and third of Kepler's laws, let us now tackle the second. Kepler's second law is arguably the most important of the three, since it is the one that will truly help us calculate the location of the planets. 
-
-Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. We can intuitively see why an object would move faster when it is closer to the primary: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
-```math
-\textbf{r}\times\textbf{v} = \textbf{h}
-```
-
-where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position with the primary at the origin, and $\textbf{v}$ is its velocity. This means that if the magnitude of $\textbf{r}$ decreases, i.e. the distance between the primary and the object decreases, then the magnitude of $\textbf{v}$, i.e. the object's speed, must increase (because $\textbf{h}$ must be constant). The property $\textbf{r}\times\textbf{v} = \textbf{h}$ is known as the [conservation of angular momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum).
-
-However, dealing with positions and velocities is difficult as it involves solving differential vector equations. There is a much easier way of describing the motion of the planets, and that is by three quantities known as *anomalies*.
+Before we move on, we need to come up with a system of describing the position of a planet within its orbit. A natural way of describing that would be to put the Sun at the origin, and describe its coordinates with the $xy$-plane as the orbital plane.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/84b9f828-3fc9-4dd8-a3a8-dda6d9f7c572" width="350"/> In the diagram, the orbit of a planet $A$ is shown, where $O$, the origin, is the focus, and therefore the location of the Sun, and $P$ is the perihelion. The angle $PSA$ is known as the [*true anomaly*](https://en.wikipedia.org/wiki/True_anomaly), and is denoted $\nu$. 
 
@@ -402,5 +393,14 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 \therefore \cos E &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
 \end{align}
 ```
+<br/>
 
-Now we have two measures to calculate the perifocal coordinates of a planet but no way to calculate the anomalies themselves.
+### Kepler's second law
+Let's now determine how to find the eccentric or true anomaly at any point in time. Kepler's second law will come in handy here.
+
+Kepler's second law states that an object moves faster when it is closer to the primary, in a way that the area sweeped out by the object per unit time is constant. We can intuitively see why an object would move faster when it is closer to the primary: an object moving closer to the primary under the influence of gravity means that it is, in a sense, falling towards the primary, and therefore would obviously gain speed. Indeed, iin the proof of Kepler's first law we showed that:
+```math
+\textbf{r}\times\textbf{v} = \textbf{h}
+```
+
+where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position with the primary at the origin, and $\textbf{v}$ is its velocity. This means that if the magnitude of $\textbf{r}$ decreases, i.e. the distance between the primary and the object decreases, then the magnitude of $\textbf{v}$, i.e. the object's speed, must increase (because $\textbf{h}$ must be constant). The property $\textbf{r}\times\textbf{v} = \textbf{h}$ is known as the [conservation of angular momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum).
