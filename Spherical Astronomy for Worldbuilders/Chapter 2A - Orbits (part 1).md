@@ -567,7 +567,104 @@ Which, when added with the ecliptic longitude of the periapsis $102\degree\enspa
 Which agrees with example $4$. (The $0.17''$ is due to stray rounding error.)\
 $\blacksquare$
 
+(continued...)
+
+<br/>
+<br/>
+
+Extra for the curious:
 #### Derivation of Kepler's Equation
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Prove that $M = E - e\sin(E)$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
 
-
-
+Recall equation $20$:
+```math
+r = a(1 - e\cos (E))
+```
+Differentiating both sides with respect to time gives us:
+```math
+r' = ae\sin(E)E' \tag{26}
+```
+Now recall equation $18$:
+```math
+\begin{align}
+r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
+\therefore\frac{1}{r} &= \frac{1 + e\cos(\nu)}{a(1 - e^2)}
+\end{align}
+```
+Differentiating both sides of this equation we obtain:
+```math
+\frac{r'}{r^2} = \frac{e \sin (\nu) \nu'}{a(1 - e^2)} \tag{27}
+```
+Now we factor in Kepler's second law, which states that the area sweeped out by a planet per unit time must stay constant. The area of a sector with radius $r$ and central angle $\theta$ is given by:
+```math
+S = \frac{1}{2}r^2 \theta
+```
+And therefore the area sweeped out by a planet over a small increment $d\nu$ of true anomaly is:
+```math
+dS = \frac{1}{2} r^2 d\nu
+```
+And therefore the "areal velocity" is
+```math
+\frac{dS}{dt} = \frac{r^2}{2}\frac{d\nu}{dt}
+```
+And this must stay constant.\
+Because the area of an ellipse is $\pi a b$,
+```math
+T \frac{dS}{dt} = T\frac{r^2}{2}\frac{d\nu}{dt} = \pi a b
+```
+where $T$ is the orbital period.\
+Therefore:
+```math
+r^2 \frac{d\nu}{dt} = \frac{2\pi a b}{T} 
+```
+now, denoting $2\pi/T$ as $n$ (this quantity is called the [mean motion](https://en.wikipedia.org/wiki/Mean_motion)), we obtain:
+```math
+r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{28}
+```
+Now substituting equation $28$ into equation $27$:
+```math
+r' = \frac{na\sin(\nu)}{\sqrt{1 - e^2}}
+```
+Equating this with equation $26$:
+```math
+\begin{align}
+ae\sin(E)E' &= \frac{na\sin(\nu)}{\sqrt{1 - e^2}}\\
+E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}
+\end{align}
+```
+But $\sqrt{1 - e^2}\sin(E)$ is just $y_{\text{perifocal}}/a$ by equation $19$, and $y_{\text{perifocal}} = r\sin(\nu)$ by equation $17$, so:
+```math
+\begin{align}
+E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}\\
+E' &= \frac{n\sin(\nu)}{r\sin(\nu)/a}\\
+E' &= \frac{na}{r}
+rE' &= na
+\end{align}
+```
+Now, using equation $20$ again:
+```math
+(1 - e\cos (E)) E' = n
+```
+Integrating over time on both sides yields:
+```math
+E - e\sin(E) = nt + c.
+```
+$nt = M$ by equation $22$ and therefore:
+```math
+E - e\sin(E) = M + c.
+```
+We know that when $E = 0$ the object is at periapsis and tehrefore $M = 0$, and therefore:
+```math
+E - e\sin(E) = M
+```
+$\blacksquare$
