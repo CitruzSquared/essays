@@ -64,12 +64,12 @@ E_3 &= E_2 - \frac{E_2 - e\sin(E_2) - M}{1 - e\cos(E_2)}\\
 ```
 Here is the table of repetitions:
 ```math
-\begin{array}{ccc}\hline n & & E_n \\ \hline
-1 & & 76\degree\enspace6'\enspace20.811'' \\
-2 & & 76\degree\enspace7'\enspace19.397'' \\
-3 & & 76\degree\enspace7'\enspace19.175'' \\
-4 & & 76\degree\enspace7'\enspace19.176'' \\
-5 & & 76\degree\enspace7'\enspace19.176'' \\ \hline
+\begin{array}{cccc}\hline n & & & E_n \\ \hline
+1 & & & 76\degree\enspace6'\enspace20.811'' \\
+2 & & & 76\degree\enspace7'\enspace19.397'' \\
+3 & & & 76\degree\enspace7'\enspace19.175'' \\
+4 & & & 76\degree\enspace7'\enspace19.176'' \\
+5 & & & 76\degree\enspace7'\enspace19.176'' \\ \hline
 \end{array}
 ```
 As we can see, $E$ has quickly converged onto $76\degree\enspace7'\enspace19.176''$. In general it can be assumed that $E_5$ will be enough.\
