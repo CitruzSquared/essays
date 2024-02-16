@@ -647,7 +647,6 @@ But $\sqrt{1 - e^2}\sin(E)$ is just $y_{\text{perifocal}}/a$ by equation $19$, a
 \begin{align}
 E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}\\
 E' &= \frac{n\sin(\nu)}{r\sin(\nu)/a}\\
-E' &= \frac{na}{r}\\
 \therefore rE' &= na
 \end{align}
 ```
