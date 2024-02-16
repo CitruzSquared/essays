@@ -6,4 +6,4 @@ Unfortunately, Kepler's equation
 M = E - e\sin (E)
 ```
 is [transcendental](https://en.wikipedia.org/wiki/Transcendental_function), which means $E$ cannot be solved for $M$ analytically.\
-However, there is hope! We can solve for $E$ [*numerically*](https://en.wikipedia.org/wiki/Numerical_analysis).
+However, there is hope! We can solve for $E$ [*numerically*](https://en.wikipedia.org/wiki/Numerical_analysis). By using the [Newton–Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method), we can approximate a solution for $E$.
