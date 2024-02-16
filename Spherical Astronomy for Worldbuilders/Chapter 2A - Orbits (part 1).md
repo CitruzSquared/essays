@@ -465,4 +465,4 @@ $77\text{ dy}\enspace5h\enspace8m$ after $\text{January 3, }2024\enspace00:38$ i
 Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. Again, the discrepancy results from the fact that the Earth does not operate under a *true* two-body problem.\
 $\blacksquare$
 
-What is more important though, is the reverse operation of example $4$: going from a specific time to a location. (Continued..)
+However what we really want is the reverse operation of example $4$: going from a specific time to a location. (Continued..)
