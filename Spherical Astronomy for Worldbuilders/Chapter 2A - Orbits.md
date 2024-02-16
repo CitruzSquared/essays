@@ -239,7 +239,7 @@ If we now set $p=h^2/c$, we obtain for $r$:
 r=\frac{ep}{1+e\cos(\theta)}
 ```
 This is a perfectly good polar equation for an ellipse, using $p$, which is the distance to the [*directrix*](https://en.wikipedia.org/wiki/Conic_section#Eccentricity,_focus_and_directrix) of the ellipse.\
-However, $p$ can be written as $p = ae + a/e$, thus:
+However, $p$ can be written as $p = a/e + ae$, thus:
 ```math
 r=\frac{a + ae^2}{1+e\cos(\theta)}
 ```
