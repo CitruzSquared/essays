@@ -457,7 +457,7 @@ Therefore, by the definition of $M$ (equation $22$):
 M &= \frac{360\degree}{T}\cdot t\\
 \therefore t &= \frac{TM}{t}\\
 &=\frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
-&= 77\text{ dy}\enspace5h\enspace8m\enspace10s.
+&= 77\text{ dy}\enspace5h\enspace8m.
 \end{align}
 ```
 $77\text{ dy}\enspace5h\enspace8m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 20, }2024\enspace05:46$.\
