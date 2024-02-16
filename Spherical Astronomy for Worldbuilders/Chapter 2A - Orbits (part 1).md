@@ -477,7 +477,7 @@ Integrating over time on both sides yields:
 E - e\sin(E) = nt + c.
 ```
 If we measure $t$ from the time of periapsis, then when $t = 0$, $E - e\sin(E) = 0$ since $E = 0$ at periapsis. Therefore $c. = 0$.\
-Let's now denote $nt$ as $M$. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly) and is denoted $M$. Thus:
+Let's now denote $nt$ as $M$. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly). Thus:
 ```math
 M = nt = \frac{2\pi}{T}\cdot t\tag{25}
 ```
