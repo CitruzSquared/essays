@@ -294,8 +294,8 @@ Using the true anomaly, the position $(x, y)$ of the planet can be fully describ
 ```math
 \displaylines{
 \begin{align}
-x &= r\cos(\nu)\\
-y &= r\sin(\nu)
+x_{\text{perifocal}} &= r\cos(\nu)\\
+y_{\text{perifocal}} &= r\sin(\nu)
 \end{align}
 \tag{17}
 }
@@ -366,9 +366,9 @@ Now, translating the origin to the focus $O$,
 ```math
 \displaylines{
 \begin{align}
-x &= a\sin (E) - ae\\
+x_{\text{perifocal}} &= a\sin (E) - ae\\
 \\
-y &= b\cos (E)\\
+y_{\text{perifocal}} &= b\cos (E)\\
 &= a\sqrt{1 - e^2}\sin (E)
 \end{align}
 \tag{19}
@@ -544,11 +544,11 @@ As we can see, $E$ has quickly converged onto $76\degree\enspace7'\enspace19.176
 We can now calculate $(x, y)$ with equation $19$:
 ```math
 \begin{align}
-x &= a \cos (E) - ae\\
+x_{\text{perifocal}} &= a \cos (E) - ae\\
 &= 149.6 \cos(76\degree\enspace7'\enspace19.18'') - 149.6 \cdot 0.0167 \\
 &= 33.384 \text{ Gm}\\
 \\
-y &= b \sin (E)\\
+y_{\text{perifocal}} &= b \sin (E)\\
 &= a\sqrt{1 - e^2} \sin (E)\\
 &= 149.6 \sqrt(1 - 0.0167^2) \sin(76\degree\enspace7'\enspace19.18'')\\
 &= 145.213 \text{ Gm}
