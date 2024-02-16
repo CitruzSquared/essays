@@ -294,8 +294,8 @@ Using the true anomaly, the position $(x, y)$ of the planet can be fully describ
 ```math
 \displaylines{
 \begin{align}
-x_{\text{perifocal}} &= r\cos(\nu)\\
-y_{\text{perifocal}} &= r\sin(\nu)\\
+x_{\text{perifocal}} &= r\cos(\nu) \\
+y_{\text{perifocal}} &= r\sin(\nu) \\
 \therefore \nu &= \arctan(y_{\text{perifocal}, x_{\text{perifocal})
 \end{align}
 \tag{17}
