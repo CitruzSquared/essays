@@ -403,7 +403,7 @@ Kepler's second law states that an object moves faster when it is closer to the 
 
 where $\textbf{h}$ is a constant vector, $\textbf{r}$ is the object's position with the primary at the origin, and $\textbf{v}$ is its velocity. This means that if the magnitude of $\textbf{r}$ decreases, i.e. the distance between the primary and the object decreases, then the magnitude of $\textbf{v}$, i.e. the object's speed, must increase (because $\textbf{h}$ must be constant). The property $\textbf{r}\times\textbf{v} = \textbf{h}$ is known as the [conservation of angular momentum](https://en.wikipedia.org/wiki/Angular_momentum#Conservation_of_angular_momentum).
 
-But dealing with differential vector equations is hardly appealing. So let us approach this problem from another perspective. Let's first flaunt all of Kepler's laws and assume that the planet moves along a circular orbit at a uniform speed. Then, the true anomaly equals the eccentric anomaly and also equals:
+But dealing with differential vector equations is hardly appealing. So let us approach this problem from another perspective. Let's first flout all of Kepler's laws and assume that the planet moves along a circular orbit at a uniform speed. Then, the true anomaly equals the eccentric anomaly and also equals:
 ```math
 \frac{360\degree}{T}\cdot t \tag{22}
 ```
