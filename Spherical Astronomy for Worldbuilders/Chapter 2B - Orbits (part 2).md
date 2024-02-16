@@ -91,7 +91,7 @@ Thus, the Earth's longitude with respect to its periapsis is:
 ```
 Which, when added with the ecliptic longitude of the periapsis $102\degree\enspace56'\enspace49.9''$ gives:
 ```math
-\lambda_{\text{Heliocentric}} \text{ of the Earth} = 180\deg\enspace(+ 0.17'')
+\lambda_{\text{Heliocentric}} \text{ of the Earth} = 180\degree\enspace(+ 0.17'')
 ```
 Which agrees with example $4$.\
 $\blacksquare$
