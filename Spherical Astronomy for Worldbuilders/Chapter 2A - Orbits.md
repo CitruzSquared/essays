@@ -341,7 +341,7 @@ However, while the true anomaly represents the most intuitive and most physicall
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/8f9a0758-fcdf-4de7-a4fc-80249d57a4fc" width="350"/> In this diagram, we have drawn a circle with radius $a$ over the ellipse. We then projected the position of the planet $A$ onto this circle and called it $A'$. Thus a new angle is defined: $PCA'$ defines the [*eccentric anomaly*](https://en.wikipedia.org/wiki/Eccentric_anomaly), and is denoted $E$.
 
-Defined as such, the coordinates of $A$ are much easier to determine. Putting $C$ as the origin,
+Using $E$, the coordinates of $A$ will be much easier to determine later. Putting $C$ as the origin,
 ```math
 \sin (E) = \frac{x}{a}
 ```
