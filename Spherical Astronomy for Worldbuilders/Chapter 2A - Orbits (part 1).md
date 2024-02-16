@@ -416,7 +416,7 @@ M = E - e\sin (E) \tag{23}
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-The orbital period of the Earth $T = 365.2422$ days, and the eccentricity of its orbit is $0.0167$. <br/>
+The orbital period of the Earth $T = 365\text{ dy}\enspace5h\enspace48m\enspace46s$, and the eccentricity of its orbit is $0.0167$. <br/>
 Additionally, when it is at periapsis, its heliocentric ecliptic longitude is $102\degree\enspace56'\enspace49.9''$. <br/>
 Given that the time of perihelion in $2024$ was $\text{January 3, }2024\enspace 00:38$, <br/>
 calculate the time of Spring Equinox in the Northern Hemisphere in $2024$.
@@ -457,7 +457,7 @@ Therefore, by the definition of $M$ (equation $22$):
 \begin{align}
 M &= \frac{360\degree}{T}\cdot t\\
 \therefore t &= \frac{TM}{t}\\
-&=\frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
+&=\frac{365\text{ dy}\enspace5h\enspace48m\enspace46s \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
 &= 77\text{ dy}\enspace5h\enspace8m.
 \end{align}
 ```
