@@ -640,5 +640,51 @@ Which, when added with the ecliptic longitude of the periapsis $102\degree\enspa
 Which agrees with example $4$. (The $0.17''$ is due to stray rounding error.)\
 $\blacksquare$
 
+#### Proof of Kepler's Second Law
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Prove that the area of an orbit sweeped out by a planet per unit time is constant. <br/>
+Disclaimer: the proof is mathematically dense and there is no need to know it. <br/>
+It is advised for the average reader to skip this investigation.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/9bc1d922-bfd0-4609-9013-0a1171e846c5" width="200"/> In this diagram, the motion of a planet $P$ has been depicted. $\textbf{r}$ is its position vector, and $d\textbf{r}$ is the small change in position over a small unit time $dt$. The angle between $\textbf{r}$ and $d\textbf{r}$ has been called $s$.
+
+The area of this triangle $dA$ well represents the small area that is sweeped out by the planet over a small time $dt$. This area is given by:
+```math
+dA = \frac{1}{2}rdr\sin(s)
+```
+where $r$ is the magnitude of $r$. This can be written in vector form as:
+```math
+d\textbf{A} = \frac{1}{2}\textbf{r}\times d\textbf{r}
+```
+dividing by $dt$ to get the area swept out per unit time,
+```math
+\frac{d\textbf{A}}{dt} &= \frac{1}{2}\textbf{r}\times \frac{d\textbf{r}}{dt}
+```
+Kepler's second law states that this quantity $d\textbf{A}/dt$ must be constant, which means that $d^2\textbf{A}/dt^2 = 0$.\
+Calculating $d^2\textbf{A}/dt^2 = 0$:
+```math
+\begin{align}
+\frac{d^2\textbf{A}}{dt^2} &= \frac{1}{2}(\frac{d\textbf{r}}{dt}\times\frac{d\textbf{r}}{dt} + \textbf{r}\times \frac{d^2\textbf{r}}{dt^2})\\
+&= \frac{1}{2}(\textbf{v}\times\textbf{v} + \textbf{r}\times\textbf{a}\\
+&= \textbf{r}\times\textbf{a}
+\end{align}
+```
+where $\textbf{v}$ and $\textbf{a}$ are the velocity and acceleration of $P$ respectively.\
+However, it has been shown previously (in the proof of Kepler's first law) that $\textbf{r}$ is parallel to $\textbf{a}$ and therefore
+```math
+\frac{d^2\textbf{A}}{dt^2} = textbf{r}\times\textbf{a} = \textbf{0}.
+```
+Which proves Kepler's second law.\
+$\blacksquare$
+
 ### Orientation of Orbits in 3D Space
 (continued in part B...)
