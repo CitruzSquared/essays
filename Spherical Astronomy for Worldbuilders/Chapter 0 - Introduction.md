@@ -19,7 +19,8 @@
    - Part C
      * Equations $29$ to
      * Examples $6$ to
-3. The Moon
-4. Horizontal Coordinates
-5. Time
-6. Earthly Parallax
+3. Orbital Precession
+4. Geocentrism
+5. Horizontal Coordinates
+6. Time
+7. Earthly Parallax
