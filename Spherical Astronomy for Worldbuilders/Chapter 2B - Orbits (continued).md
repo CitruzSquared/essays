@@ -101,4 +101,4 @@ p \\ q \\ s
 \end{bmatrix}
 \tag{30}
 ```
-Thus the full position of $Q$ can be described in ecliptic coordinates by the values $a, e, i, \Omega, \omega$ and $\nu$, and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
+Thus the full position of $Q$ can be described in ecliptic coordinates by the values $a, e, i, \Omega, \omega,$ and $\nu$, and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
