@@ -8,5 +8,5 @@
 ## Table of Contents
 - Chapter $1$ - Coordinates
   * Equations $1$ to $5$
-- Chapter $2A$ - Orbits
+- Chapter $2$A - Orbits
   * Equations $6$ to $28$
