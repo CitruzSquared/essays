@@ -669,7 +669,7 @@ dividing by $dt$ to get the area swept out per unit time,
 ```math
 \frac{d\textbf{A}}{dt} = \frac{1}{2}\textbf{r}\times \frac{d\textbf{r}}{dt}
 ```
-Kepler's second law states that this quantity $d\textbf{A}/dt$ must be constant, which means that $d^2\textbf{A}/dt^2 = 0$.\
+Kepler's second law states that this quantity $d\textbf{A}/dt$ must be constant, which means that $d^2\textbf{A}/dt^2 = \textbf{0}$.\
 Calculating $d^2\textbf{A}/dt^2 = 0$:
 ```math
 \begin{align}
