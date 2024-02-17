@@ -3,7 +3,7 @@
 
 **NOTE!** Please use dark mode for the diagrams to show properly.
 
-**NOTE!** Some of the derivations of formulae in this guide assumes the reader is familiar with trigonometry, vectors, basic differentiation and integration, and basic operations with matrices.
+**NOTE!** Some of the derivations of formulae in this guide assumes the reader is familiar with algebra, trigonometry, vectors, basic differentiation and integration, and basic operations with matrices.
 
 ## Table of Contents
 1. Coordinates
