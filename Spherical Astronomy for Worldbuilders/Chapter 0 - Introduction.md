@@ -8,9 +8,11 @@
 ## Table of Contents
 1. Coordinates
    - Equations $1$ to $5$
+   - Example $1$
 2. Orbits
    - 2A
      * Equations $6$ to $28$
+     * Examples $2$ to $5$
    - 2B
 3. The Moon
 4. Horizontal Coordinates
