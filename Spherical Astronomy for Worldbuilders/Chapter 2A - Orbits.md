@@ -674,7 +674,7 @@ Calculating $d^2\textbf{A}/dt^2 = 0$:
 ```math
 \begin{align}
 \frac{d^2\textbf{A}}{dt^2} &= \frac{1}{2}(\frac{d\textbf{r}}{dt}\times\frac{d\textbf{r}}{dt} + \textbf{r}\times \frac{d^2\textbf{r}}{dt^2})\\
-&= \frac{1}{2}(\textbf{v}\times\textbf{v} + \textbf{r}\times\textbf{a}\\
+&= \frac{1}{2}(\textbf{v}\times\textbf{v} + \textbf{r}\times\textbf{a})\\
 &= \textbf{r}\times\textbf{a}
 \end{align}
 ```
