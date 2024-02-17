@@ -1,4 +1,4 @@
-## V. Time
+## VI. Time
 Let us talk about how time and date are measured in astronomy.
 
 ### Sidereal and Solar time
