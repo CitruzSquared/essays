@@ -6,7 +6,7 @@
 **NOTE!** Some of the derivations of formulae in this guide assumes the reader is familiar with trigonometry, vectors, basic differentiation and integration, and basic operations with matrices.
 
 ## Table of Contents
-- Chapter $1$ - Coordinates
+- Chapter 1 - Coordinates
   * Equations $1$ to $5$
-- Chapter $2$A - Orbits
+- Chapter 2A - Orbits
   * Equations $6$ to $28$
