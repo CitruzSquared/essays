@@ -661,7 +661,7 @@ The area of this triangle $dA$ well represents the small area that is sweeped ou
 ```math
 dA = \frac{1}{2}rdr\sin(s)
 ```
-where $r$ is the magnitude of $r$. This can be written in vector form as:
+where $r$ and $dr$ are the magnitudes of $\textbf{r}$ and $d\textbf{r}$ respectively.This can be written in vector form as:
 ```math
 d\textbf{A} = \frac{1}{2}\textbf{r}\times d\textbf{r}
 ```
