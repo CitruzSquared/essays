@@ -1,6 +1,7 @@
 ## II. Orbits
 Let us study the motion and position of the planets.
 
+### Newton and Kepler
 All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
 It tells us:
 ```math
