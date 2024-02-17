@@ -103,4 +103,21 @@ p \\ q \\ s
 ```
 Thus the exact position of $Q$ can be calculated in ecliptic coordinates from the values $a, e, i, \Omega, \omega,$ and $\nu$, and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
 
+However, if we recognize the fact that $s$ is almost always going to be $0$ in our case (because planets move in the plane of their orbit, there will be almost no cases where we *do* have a $s$ component), we can safely say that, when going from perifocal coordinates to ecliptic coordinates:
+```math
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}
+=
+ \begin{bmatrix}
+  \cos\Omega\cos\omega - \sin\Omega\cos i\sin\omega & -\cos\Omega\sin\omega - \sin\Omega\cos i\cos \omega & 0 \\
+  \sin\Omega\cos\omega + \cos\Omega\cos i\sin\omega & -\sin\Omega\sin\omega + \cos\Omega\cos i\cos\omega & 0 \\
+  \sin i \sin\omega & \sin i \cos\omega & 0
+ \end{bmatrix}
+\begin{bmatrix}
+p \\ q \\ 0
+\end{bmatrix}
+\tag{30}
+```
+
 Note that, for Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $29$ and $30$ will not change.
