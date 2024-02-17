@@ -667,7 +667,7 @@ d\textbf{A} = \frac{1}{2}\textbf{r}\times d\textbf{r}
 ```
 dividing by $dt$ to get the area swept out per unit time,
 ```math
-\frac{d\textbf{A}}{dt} &= \frac{1}{2}\textbf{r}\times \frac{d\textbf{r}}{dt}
+\frac{d\textbf{A}}{dt} = \frac{1}{2}\textbf{r}\times \frac{d\textbf{r}}{dt}
 ```
 Kepler's second law states that this quantity $d\textbf{A}/dt$ must be constant, which means that $d^2\textbf{A}/dt^2 = 0$.\
 Calculating $d^2\textbf{A}/dt^2 = 0$:
@@ -681,7 +681,7 @@ Calculating $d^2\textbf{A}/dt^2 = 0$:
 where $\textbf{v}$ and $\textbf{a}$ are the velocity and acceleration of $P$ respectively.\
 However, it has been shown previously (in the proof of Kepler's first law) that $\textbf{r}$ is parallel to $\textbf{a}$ and therefore
 ```math
-\frac{d^2\textbf{A}}{dt^2} = textbf{r}\times\textbf{a} = \textbf{0}.
+\frac{d^2\textbf{A}}{dt^2} = \textbf{r}\times\textbf{a} = \textbf{0}.
 ```
 Which proves Kepler's second law.\
 $\blacksquare$
