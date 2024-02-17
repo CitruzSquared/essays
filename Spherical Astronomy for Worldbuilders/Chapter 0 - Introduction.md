@@ -17,8 +17,8 @@
      * Equations $22$ to $28$
      * Examples $4$ to $5$
    - Part C
-     * Equations $29$ to $ $
-     * Examples $6$ to $ $
+     * Equations $29$ to
+     * Examples $6$ to
 3. The Moon
 4. Horizontal Coordinates
 5. Time
