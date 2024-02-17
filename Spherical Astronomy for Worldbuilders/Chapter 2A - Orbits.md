@@ -447,7 +447,7 @@ r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
 Differentiating both sides of this equation we obtain:
 ```math
 \begin{align}
-\frac{r'}{r^2} = \frac{e \sin (\nu) \nu'}{a(1 - e^2)} \\
+-\frac{r'}{r^2} = -\frac{e \sin (\nu) \nu'}{a(1 - e^2)} \\
 \therefore r' = \frac{e\sin(\nu)r^2\nu'}{a(1 - e^2)} \tag{24}
 \end{align}
 ```
