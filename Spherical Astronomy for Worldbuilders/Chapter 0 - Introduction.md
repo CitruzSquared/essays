@@ -10,7 +10,7 @@
   * Equations $1$ to $5$
 - Chapter 2 - Orbits
   * Chapter 2A
-   * Equations $6$ to $28$
+   - Equations $6$ to $28$
  * Chapter 2B
 - Chapter 3 - The Moon
 - Chapter 4 - Horizontal Coordinates
