@@ -85,7 +85,7 @@ x \\ y \\ z
 \end{bmatrix}
 \tag{29}
 ```
-The reverse transformation, going from the perifocal frame to the ecliptic frame, is given by the transpose of equation $29$:
+The reverse transformation, going from the perifocal frame to the ecliptic frame, is given by the transpose of $CBA$:
 ```math
 \begin{bmatrix}
 x \\ y \\ z
