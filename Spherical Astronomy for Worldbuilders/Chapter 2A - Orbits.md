@@ -675,13 +675,13 @@ Calculating $d^2\textbf{A}/dt^2 = 0$:
 \begin{align}
 \frac{d^2\textbf{A}}{dt^2} &= \frac{1}{2}(\frac{d\textbf{r}}{dt}\times\frac{d\textbf{r}}{dt} + \textbf{r}\times \frac{d^2\textbf{r}}{dt^2})\\
 &= \frac{1}{2}(\textbf{v}\times\textbf{v} + \textbf{r}\times\textbf{a})\\
-&= \textbf{r}\times\textbf{a}
+&= \frac{1}{2}\textbf{r}\times\textbf{a}
 \end{align}
 ```
 where $\textbf{v}$ and $\textbf{a}$ are the velocity and acceleration of $P$ respectively.\
 However, it has been shown previously (in the proof of Kepler's first law) that $\textbf{r}$ is parallel to $\textbf{a}$ and therefore
 ```math
-\frac{d^2\textbf{A}}{dt^2} = \textbf{r}\times\textbf{a} = \textbf{0}.
+\frac{d^2\textbf{A}}{dt^2} = \frac{1}{2}\textbf{r}\times\textbf{a} = \textbf{0}.
 ```
 Which proves Kepler's second law.\
 $\blacksquare$
