@@ -1,4 +1,4 @@
-(continued from part A...)
+(Continued from Part A...)
 
 ### Kepler's Second Law
 We have discussed Kepler's first and third laws. Now let us tackle his second law, which states that the area sweeped out by a planet over a unit time must stay constant.
