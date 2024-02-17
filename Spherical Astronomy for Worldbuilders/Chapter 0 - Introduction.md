@@ -14,7 +14,7 @@
      * Equations $6$ to $21$
      * Examples $2$ to $3$
    - Part B
-     * Equations $22$ to $31$
+     * Equations $22$ to $28$
      * Examples $4$ to $5$
    - Part C
 3. The Moon
