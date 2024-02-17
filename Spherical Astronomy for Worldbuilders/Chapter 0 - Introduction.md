@@ -11,8 +11,8 @@
    - Example $1$
 2. Orbits
    - Part A
-     * Equations $6$ to $28$
-     * Examples $2$ to $5$
+     * Equations $6$ to $21$
+     * Examples $2$ to $3$
    - Part B
 3. The Moon
 4. Horizontal Coordinates
