@@ -1,4 +1,4 @@
-# Part 2. Terrestrial Observations
+
 Before we can start calculating the locations of stars and planets, we must get ourselves familiar with the bases of all our calculations and coordinate systems.
 
 ## I. Coordinates
