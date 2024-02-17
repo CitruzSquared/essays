@@ -77,8 +77,8 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 =
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos{\varepsilon} & -\sin{\varepsilon} \\
-0 & \sin{\varepsilon} & \cos{\varepsilon}  \tag{3}
+0 & \cos{(\varepsilon)} & -\sin{(\varepsilon)} \\
+0 & \sin{(\varepsilon)} & \cos{(\varepsilon)}  \tag{3}
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
@@ -94,8 +94,8 @@ x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
 =
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos{\varepsilon} & \sin{\varepsilon} \\
-0 & -\sin{\varepsilon} & \cos{\varepsilon}  \tag{4}
+0 & \cos{(\varepsilon)} & \sin{(\varepsilon)} \\
+0 & -\sin{(\varepsilon)} & \cos{(\varepsilon)}  \tag{4}
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
@@ -139,8 +139,8 @@ Next, we carry out the matrix multiplication (equation $4$):
 ```math
 \begin{alignat}{3}
 x_{\text{ecliptic}} &= 1 \cdot x + 0 \cdot y &&+ 0 \cdot z && = -0.976313 \\
-y_{\text{ecliptic}} &= 0 \cdot x + \cos{\varepsilon} \cdot y &&+ \sin{\varepsilon} \cdot z &&= 0.210923 \\
-z_{\text{ecliptic}} &= 0 \cdot x - \sin{\varepsilon} \cdot y &&+ \cos{\varepsilon} \cdot z &&= 0.0482118
+y_{\text{ecliptic}} &= 0 \cdot x + \cos{(\varepsilon)} \cdot y &&+ \sin{(\varepsilon)} \cdot z &&= 0.210923 \\
+z_{\text{ecliptic}} &= 0 \cdot x - \sin{(\varepsilon)} \cdot y &&+ \cos{(\varepsilon)} \cdot z &&= 0.0482118
 \end{alignat}
 ```
 We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
