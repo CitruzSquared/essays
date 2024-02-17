@@ -6,13 +6,13 @@
 **NOTE!** Some of the derivations of formulae in this guide assumes the reader is familiar with trigonometry, vectors, basic differentiation and integration, and basic operations with matrices.
 
 ## Table of Contents
-- Chapter 1 - Coordinates
-  * Equations $1$ to $5$
-- Chapter 2 - Orbits
-  * Chapter 2A
-   - Equations $6$ to $28$
- * Chapter 2B
-- Chapter 3 - The Moon
-- Chapter 4 - Horizontal Coordinates
-- Chapter 5 - Time
-- Chapter 6 - Earthly Parallax
+1. Coordinates
+   - Equations $1$ to $5$
+2. Orbits
+   - 2A
+     * Equations $6$ to $28$
+   - 2B
+3. The Moon
+4. Horizontal Coordinates
+5. Time
+6. Earthly Parallax
