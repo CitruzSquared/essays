@@ -5,7 +5,7 @@ In examples $4$ and $5$, we have calculated the position of the Earth in eclipti
 ```math
 \displaylines{
 \begin{align}
-&(p, q, s) \text{ denote the perifocal cartesian coordinates of an object}\\
+&(p, q, s) \text{ denote the perifocal cartesian coordinates of an object, and}\\
 &(x, y, z) \text{ denote the heliocentric ecliptic cartesian coordinates of the object}
 \end{align}
 }
