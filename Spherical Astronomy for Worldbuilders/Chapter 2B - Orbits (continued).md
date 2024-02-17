@@ -102,3 +102,5 @@ p \\ q \\ s
 \tag{30}
 ```
 Thus the exact position of $Q$ can be calculated in ecliptic coordinates from the values $a, e, i, \Omega, \omega,$ and $\nu$, and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
+
+Note that, for Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $29$ and $30$ will not change.
