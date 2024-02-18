@@ -183,11 +183,14 @@ s &= 0 \text{ Gm}
 Since Mars's orbit is not on the ecliptic plane, we must use equation $31$.\
 We first fill out the matrix:
 ```math
- \begin{bmatrix}
-0.913721676036 & 0.405596690451 & 0 \\
-−0.405159938675 & 0.914006157892 & 0 \\
-−0.0309535593079 & 0.00916886198411 & 0
- \end{bmatrix}
+\begin{align}
+\cos\Omega\cos\omega - \sin\Omega\cos i\sin\omega &= 0.913721676036\\
+-\cos\Omega\sin\omega - \sin\Omega\cos i\cos \omega &= 0.405596690451\\
+\sin\Omega\cos\omega + \cos\Omega\cos i\sin\omega &= −0.405159938675\\
+-\sin\Omega\sin\omega + \cos\Omega\cos i\cos\omega &= 0.914006157892\\
+\sin i \sin\omega &= −0.0309535593079\\
+\sin i \cos\omega &= 0.00916886198411
+\end{align}
 ```
 Thus, by equation $31$:
 ```math
