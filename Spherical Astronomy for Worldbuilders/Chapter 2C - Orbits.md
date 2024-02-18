@@ -245,7 +245,7 @@ i &= 0\degree
 we get for $(x_{\text{Earth}}, y_{\text{Earth}}, z_{\text{Earth}})$:
 ```math
 \begin{bmatrix}
-x \\ y \\ z
+x_{\text{Earth}} \\ y_{\text{Earth}} \\ z_{\text{Earth}}
 \end{bmatrix}
 =
  \begin{bmatrix}
