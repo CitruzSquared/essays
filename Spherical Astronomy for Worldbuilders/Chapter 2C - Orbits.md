@@ -234,14 +234,15 @@ Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$,
 ### Calculating the Ephemeris for a Planet
 We've come a long way. Let's put it all together.
 
-**Algorithm to calculate the ephemeris:**
-1. Choose a time $t$.
-2. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
-3. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
-4. Repeat step $2$ and $3$ for the Earth.
-5. Calculate the geocentric ecliptic cartesian coordinates of the planet by equation $32$.
-6. Use equations $2$ and $3$ to convert to spherical coordinates, either ecliptic or equatorial.
-7. Increment $t$ by some amount $\Delta t$ and repeat steps $1$ to $7$.
+**Algorithm to calculate the ephemeris of a planet:**
+1. Assign orbital elements to the Earth and the target planet.
+2. Choose a time $t$.
+3. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
+4. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
+5. Repeat step $3$ and $4$ for the Earth.
+6. Calculate the geocentric ecliptic cartesian coordinates of the planet by equation $32$.
+7. Use equations $2$ and $3$ to convert to spherical coordinates, either ecliptic or equatorial.
+8. Increment $t$ by some amount $\Delta t$ and repeat steps $2$ to $7$.
 
 #### Example 7
 <div align="center">
