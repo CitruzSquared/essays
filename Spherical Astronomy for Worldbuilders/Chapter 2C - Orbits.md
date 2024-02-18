@@ -330,7 +330,7 @@ Then, by equation $2$:
 \begin{align}
 \rho &= \sqrt{267.788^2 + (-155.372)^2 + (-74.478)^2}\\
 &= 318.430 \text{ Gm} \\
-&= 2.13 \text{ AU}\\
+&= 2.128 \text{ AU}\\
 \alpha &= \arctan(-155.372, 267.788) \\
 &= 21^h\enspace59^m\enspace30.59^s\\
 \delta &= \arcsin \left(\frac{-74.478}{\rho}\right) \\
@@ -340,7 +340,7 @@ Then, by equation $2$:
 Comparing this to the true value of
 ```math
 \begin{align}
-\rho &= 2.14\text{ AU}\\
+\rho &= 2.136\text{ AU}\\
 \alpha &= 21^h\enspace59^m\enspace47^s\\
 \delta &= -13\degree\enspace29'\enspace50''\\
 \end{align}
