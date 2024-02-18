@@ -39,7 +39,7 @@ R_1 =
 0 & 0 & 1
 \end{bmatrix}
 ```
-- Step 2 - we rotate by $i$ about the $x$-axis (which now points in the direction of $N$).
+- Step 2 - we rotate by $i$ about the $x$-axis (which now points in the direction of the ascending node).
 ```math
 R_2 =
 \begin{bmatrix}
