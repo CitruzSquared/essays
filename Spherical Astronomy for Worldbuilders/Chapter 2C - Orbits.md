@@ -225,7 +225,7 @@ Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$,
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
- Let's put it all together. <br/>
+We've come a long way. Let's put it all together. <br/>
 Calculate Mars' geocentric equatorial coordinates on $\text{March 19, }2024$. <br/>
  Use $\varepsilon = 23.44\degree$ for Earth.
 <img width="2000" height="0">
@@ -318,5 +318,5 @@ Comparing this to the true value of
 \end{align}
 ```
 We can see we were very close.\
-Using this method, we can compute an ephemeris for any planet we want in our solar system.\
+Using this method, we can compute an ephemeris for any planet we want in our Solar System.\
 $\blacksquare$
