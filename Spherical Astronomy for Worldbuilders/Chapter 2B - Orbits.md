@@ -140,7 +140,7 @@ M &= \frac{2\pi}{T}\cdot t\\
 &= 76 \text{ dy}\enspace6h\enspace55m
 \end{align}
 ```
-$76\text{ dy}\enspace6h\enspace53m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 19, }2024\enspace07:33$.\
+$76\text{ dy}\enspace6h\enspace55m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 19, }2024\enspace07:33$.\
 Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
 $\blacksquare$
 
