@@ -202,7 +202,7 @@ x \\ y \\ z
 ```
 $\blacksquare$.
 
-In order to get, geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
+In order to get geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
 ```math
  \begin{bmatrix}
 \xi_{\text{Planet}} \\ \psi_{\text{Planet}} \\ \zeta_{\text{Planet}}
