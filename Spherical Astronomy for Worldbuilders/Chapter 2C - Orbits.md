@@ -128,7 +128,7 @@ Note that, for the Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that Mars was last at perihelion on $\text{June 21, } 2022$ and the orbital elements of Mars, <br/> 
+Given the orbital elements of Mars and that Mars was last at perihelion on $\text{June 21, } 2022$, <br/> 
 calculate its heliocentric ecliptic coordinates on $\text{March 19, }2024$.
 <img width="2000" height="0">
 </td>
