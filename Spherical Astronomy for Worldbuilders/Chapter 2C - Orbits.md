@@ -219,7 +219,7 @@ x_{\text{Earth}}\\ y_{\text{Earth}}\\ z_{\text{Earth}}
 ```
 Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$, equation $32$ proves equation $5$.
 
-### Algorithm to Calculate the Ephemeris of a Planet
+### Calculating the Ephemeris for a Planet
 1. Choose a time $t$.
 2. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
 3. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
