@@ -191,14 +191,21 @@ We first fill out the matrix:
 ```
 Thus, by equation $31$:
 ```math
-(x, y, z) = (118.787, −172.177, −6.527)\enspace[\text{Gm}]
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}
+=
+\begin{bmatrix}
+118.787 \\ −172.177 \\ −6.527
+\end{bmatrix}
+\enspace[\text{Gm}]
 ```
 $\blacksquare$.
 
 In order to get, geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
 ```math
  \begin{bmatrix}
-\xi \\ \psi \\ \zeta
+\xi_{\text{Planet}} \\ \psi_{\text{Planet}} \\ \zeta_{\text{Planet}}
  \end{bmatrix}
 =
  \begin{bmatrix}
@@ -218,7 +225,9 @@ Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$,
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Calculate Mars' geocentric ecliptic coordinates on $\text{March 19, }2024$.
+ Let's put it all together. <br/>
+Calculate Mars' geocentric equatorial coordinates on $\text{March 19, }2024$. <br/>
+ Use $\varepsilon = 23.44\degree$ for Earth.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -230,20 +239,84 @@ Recall example $5$ where we calculated Earth's perifocal coordinates on this dat
 \begin{align}
 \Omega &= 0\degree\\
 \omega &= 102\degree\enspace56'\enspace49.9''\\
-\i &= 0\degree
+i &= 0\degree
+\end{align}
 ```
-We get for $(x_{\text{Earth}}, y_{\text{Earth}}, z_{\text{Earth}})$:
+we get for $(x_{\text{Earth}}, y_{\text{Earth}}, z_{\text{Earth}})$:
 ```math
 \begin{bmatrix}
 x \\ y \\ z
 \end{bmatrix}
 =
  \begin{bmatrix}
-  \cos\Omega\cos\omega - \sin\Omega\cos i\sin\omega & -\cos\Omega\sin\omega - \sin\Omega\cos i\cos \omega & 0 \\
-  \sin\Omega\cos\omega + \cos\Omega\cos i\sin\omega & -\sin\Omega\sin\omega + \cos\Omega\cos i\cos\omega & 0 \\
-  \sin i \sin\omega & \sin i \cos\omega & 0
+-0.224052873866 & -0.974576990141 & 0 \\
+0.974576990141 & −0.224052873866 & 0 \\
+0 & 0 & 0
  \end{bmatrix}
 \begin{bmatrix}
 33.384 \\ 145.213 \\ 0
 \end{bmatrix}
+=
+\begin{bmatrix}
+-149.001 \\ 0 \\ 0
+\end{bmatrix}
+\enspace[\text{Gm}]
 ```
+Thus, by equation $32$:
+```math
+ \begin{bmatrix}
+\xi_{\text{Mars}} \\ \psi_{\text{Mars}} \\ \zeta_{\text{Mars}}
+ \end{bmatrix}
+=
+\begin{bmatrix}
+118.787 \\ −172.177 \\ −6.527
+\end{bmatrix}
+-
+\begin{bmatrix}
+-149.001 \\ 0 \\ 0
+\end{bmatrix}
+=
+\begin{bmatrix}
+267.788 \\ -172.177 \\ -6.527
+\end{bmatrix}
+\enspace[\text{Gm}]
+```
+Then, converting to equatorial coordinates via equation $3$:
+```math
+\begin{bmatrix}
+\xi_{\text{equatorial}} \\ \psi_{\text{equatorial}} \\ \zeta_{\text{equatorial}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos{(23.44\degree)} & -\sin{(23.44\degree)} \\
+0 & \sin{(23.44\degree)} & \cos{(23.44\degree)}
+\end{bmatrix}
+\begin{bmatrix}
+267.788 \\ -172.177 \\ -6.527
+\end{bmatrix}
+=
+\begin{bmatrix}
+267.788 \\ -155.372 \\-74.478
+\end{bmatrix}
+\enspace[\text{Gm}]
+```
+Then, by equation $2$:
+```math
+\begin{align}
+\alpha &= \arctan(-155.372, 267.788) \\
+&= 21^h\enspace59^m\enspace30.59^s\\
+\delta &= \arcsin(-74.478 / \sqrt{267.788^2 + (-155.372)^2 + (-74.478)^2}) \\
+&= -13\degree\enspace31'\enspace34.55''\\
+\end{align}
+```
+Comparing this to the true value of
+```math
+\begin{align}
+\alpha &= 21^h\enspace59^m\enspace47^s\\
+\delta &= -13\degree\enspace29'\enspace50''\\
+\end{align}
+```
+We can see we were very close.\
+Using this method, we can compute an ephemeris for any planet we want in our solar system.\
+$\blacksquare$
