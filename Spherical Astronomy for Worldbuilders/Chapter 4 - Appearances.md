@@ -1,2 +1,2 @@
 # Part 2. Terrestrial Observations
-## IV. Observation
+## IV. Appearances
