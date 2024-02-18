@@ -306,7 +306,7 @@ Then, by equation $2$:
 \begin{align}
 \alpha &= \arctan(-155.372, 267.788) \\
 &= 21^h\enspace59^m\enspace30.59^s\\
-\delta &= \arcsin(-74.478 / \sqrt{267.788^2 + (-155.372)^2 + (-74.478)^2}) \\
+\delta &= \arcsin(\frac{-74.478}{\sqrt{267.788^2 + (-155.372)^2 + (-74.478)^2}}) \\
 &= -13\degree\enspace31'\enspace34.55''\\
 \end{align}
 ```
