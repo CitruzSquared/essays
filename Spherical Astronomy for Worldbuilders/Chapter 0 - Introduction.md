@@ -6,6 +6,7 @@
 **NOTE!** Some of the derivations of formulae in this guide assumes the reader is familiar with algebra, trigonometry, vectors, basic differentiation and integration, and basic operations with matrices. (Essentially, high school math)
 
 ## Table of Contents
+**Part 1**
 1. Coordinates
    - Equations $1$ to $5$
    - Example $1$
@@ -20,6 +21,7 @@
      * Equations $29$ to $32$
      * Examples $6$ to $7$
 3. Orbital Precession
+**Part 2**
 4. Appearance
 5. Horizontal Coordinates
 6. Time
