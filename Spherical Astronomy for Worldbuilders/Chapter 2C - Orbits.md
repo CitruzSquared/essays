@@ -220,6 +220,8 @@ x_{\text{Earth}}\\ y_{\text{Earth}}\\ z_{\text{Earth}}
 Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$, equation $32$ proves equation $5$.
 
 ### Calculating the Ephemeris for a Planet
+We've come a long way. Let's put it all together.
+
 1. Choose a time $t$.
 2. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
 3. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
@@ -234,7 +236,6 @@ Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$,
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-We've come a long way. Let's put it all together. <br/>
 Calculate Mars' geocentric equatorial coordinates on $\text{March 19, }2024$. <br/>
  Use $\varepsilon = 23.44\degree$ for Earth.
 <img width="2000" height="0">
