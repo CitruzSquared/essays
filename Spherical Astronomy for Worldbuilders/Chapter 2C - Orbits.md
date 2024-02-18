@@ -195,6 +195,15 @@ Thus, by equation $31$:
 x \\ y \\ z
 \end{bmatrix}
 =
+ \begin{bmatrix}
+0.913721676036 & 0.405596690451 & 0 \\
+−0.405159938675 & 0.914006157892 & 0 \\
+−0.0309535593079 & 0.00916886198411 & 0
+ \end{bmatrix}
+\begin{bmatrix}
+178.499 \\ -109.251 \\ 0
+\end{bmatrix}
+=
 \begin{bmatrix}
 118.787 \\ −172.177 \\ −6.527
 \end{bmatrix}
