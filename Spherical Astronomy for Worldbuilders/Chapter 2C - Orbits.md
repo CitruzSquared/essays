@@ -305,7 +305,7 @@ Thus, by equation $32$:
 \end{bmatrix}
 \enspace[\text{Gm}]
 ```
-We need equatorial coordinates, so by $3$:
+We need equatorial coordinates, so by equation $3$:
 ```math
 \begin{bmatrix}
 \xi_{\text{Mars; equatorial}} \\ \psi_{\text{Mars; equatorial}} \\ \zeta_{\text{Mars; equatorial}}
