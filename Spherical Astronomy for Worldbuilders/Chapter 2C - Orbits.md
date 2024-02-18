@@ -345,6 +345,6 @@ Comparing this to the true value of
 \delta &= -13\degree\enspace29'\enspace50''\\
 \end{align}
 ```
-We can see we were very close.\
+We can see we were very close considering we ignored all perturbation.\
 Using this method, we can compute an ephemeris for any planet we want in our Solar System.\
 $\blacksquare$
