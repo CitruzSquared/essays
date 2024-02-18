@@ -242,7 +242,7 @@ We've come a long way. Let's put it all together.
 5. Repeat step $3$ and $4$ for the Earth.
 6. Calculate the geocentric ecliptic cartesian coordinates of the planet by equation $32$.
 7. Use equations $2$ and $3$ to convert to spherical coordinates, either ecliptic or equatorial.
-8. Increment $t$ by some amount $\Delta t$ and repeat steps $2$ to $7$.
+8. Increment $t$ by some amount $\Delta t$ and repeat steps $3$ to $7$.
 
 #### Example 7
 <div align="center">
