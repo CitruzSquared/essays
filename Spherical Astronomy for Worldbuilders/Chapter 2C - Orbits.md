@@ -231,6 +231,8 @@ x_{\text{Earth}}\\ y_{\text{Earth}}\\ z_{\text{Earth}}
 ```
 Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$, equation $32$ proves equation $5$.
 
+For the Moon, because it orbits the Earth and not the Sun, the perifocal frame is around the Earth, and equation $31$ would give the geocentric coordinates already, therefore equation $32$ is not needed.
+
 ### Calculating the Ephemeris for a Planet
 We've come a long way. Let's put it all together.
 
