@@ -186,7 +186,7 @@ given that when the Earth at periapsis, its heliocentric ecliptic longitude is $
 </div>
 
 Due to the definition of the ecliptic coordinate frame, we can use our perifocal equations in it without much trouble. (See example $4$.)\
-We first calculate M by equation $25$:
+We first calculate $M$ by equation $25$:
 ```math
 \begin{align}
 M &= \frac{360\degree}{365.2422\text{ dy}} \cdot77 \text{ dy}\enspace5h\enspace8m \\
