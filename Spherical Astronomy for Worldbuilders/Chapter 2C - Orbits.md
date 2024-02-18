@@ -120,7 +120,7 @@ p \\ q \\ 0
 \tag{31}
 ```
 
-Note that, for Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $29$ to $31$ will not change.
+Note that, for the Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $29$ to $31$ will not change.
 
 #### Example 6
 <div align="center">
@@ -226,7 +226,7 @@ We've come a long way. Let's put it all together.
 1. Choose a time $t$.
 2. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
 3. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
-4. Repeat step $2$ and $3$ for Earth.
+4. Repeat step $2$ and $3$ for the Earth.
 5. Calculate the geocentric ecliptic cartesian coordinates of the planet by equation $32$.
 6. Use equations $2$ and $3$ to convert to spherical coordinates, either ecliptic or equatorial.
 7. Increment $t$ by some amount $\Delta t$ and repeat steps $1$ to $7$.
@@ -238,7 +238,7 @@ We've come a long way. Let's put it all together.
 <td align="center">
 <img width="2000" height="0"><br>
 Calculate Mars' geocentric equatorial coordinates on $\text{March 19, }2024$. <br/>
- Use $\varepsilon = 23.44\degree$ for Earth.
+ Use $\varepsilon = 23.44\degree$ for the Earth.
 <img width="2000" height="0">
 </td>
 </tbody>
