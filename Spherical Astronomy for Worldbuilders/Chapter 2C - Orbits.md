@@ -27,8 +27,6 @@ The angle $AON$ is known as the [*longitude of the ascending node*](https://en.w
 \end{align}
 }
 ```
-This results in the $x$-axis now pointing in the $p$ direction.
-
 This can be done with rotation matrices:
 - Step 1 - we rotate by $\Omega$ about the $z$-axis.
 ```math
@@ -57,7 +55,9 @@ R_3 =
 0 & 0 & 1
 \end{bmatrix}
 ```
-Now, the full rotation matrix is given by multiplying all these steps together:
+Now the $x$-axis points towards the periapsis.
+
+The full rotation matrix is given by multiplying all these steps together:
 ```math
 \begin{bmatrix}
 p \\ q \\ s
