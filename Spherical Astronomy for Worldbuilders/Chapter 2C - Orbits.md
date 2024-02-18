@@ -170,7 +170,7 @@ Now we iterate equation $28$:
 4 & & & 5.7809308 \\ \hline
 \end{array}
 ```
-Thus the perifocal coordinates are:
+Thus, by equation $19$, the perifocal coordinates are:
 ```math
 \begin{align}
 p &= 227.939 \cos(5.7809308) - 227.939 \cdot 0.0934\\
