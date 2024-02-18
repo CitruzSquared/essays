@@ -193,3 +193,19 @@ Thus, by equation $31$:
 ```math
 (x, y, z) = (118.787, −172.177, −6.527)\enspace[\text{Gm}]
 ```
+$blacksquare$.
+
+In order to get, geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
+
+#### Example 7
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Calculate Mars' geocentric ecliptic coordinates on $\text{March 19, }2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
