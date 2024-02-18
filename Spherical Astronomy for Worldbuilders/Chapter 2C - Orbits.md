@@ -284,7 +284,7 @@ Thus, by equation $32$:
 Then, converting to equatorial coordinates via equation $3$:
 ```math
 \begin{bmatrix}
-\xi_{\text{equatorial}} \\ \psi_{\text{equatorial}} \\ \zeta_{\text{equatorial}}
+\xi_{\text{Mars; equatorial}} \\ \psi_{\text{Mars; equatorial}} \\ \zeta_{\text{Mars; equatorial}}
 \end{bmatrix}
 =
 \begin{bmatrix}
