@@ -20,7 +20,7 @@
      * Equations $29$ to $32$
      * Examples $6$ to $7$
 3. Orbital Precession
-4. Observation
+4. Appearance
 5. Horizontal Coordinates
 6. Time
 7. Earthly Parallax
