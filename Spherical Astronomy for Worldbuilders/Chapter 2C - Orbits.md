@@ -193,9 +193,24 @@ Thus, by equation $31$:
 ```math
 (x, y, z) = (118.787, −172.177, −6.527)\enspace[\text{Gm}]
 ```
-$blacksquare$.
+$\blacksquare$.
 
 In order to get, geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
+```math
+ \begin{bmatrix}
+\xi \\ \psi \\ \zeta
+ \end{bmatrix}
+=
+ \begin{bmatrix}
+x_{\text{Planet}}\\ y_{\text{Planet}}\\ z_{\text{Planet}}
+ \end{bmatrix}
+-
+ \begin{bmatrix}
+x_{\text{Earth}}\\ y_{\text{Earth}}\\ z_{\text{Earth}}
+ \end{bmatrix}
+\tag{32}
+```
+Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$, equation $32$ proves equation $5$.
 
 #### Example 7
 <div align="center">
@@ -209,3 +224,26 @@ Calculate Mars' geocentric ecliptic coordinates on $\text{March 19, }2024$.
 </tbody>
 </table>
 </div>
+
+Recall example $5$ where we calculated Earth's perifocal coordinates on this date. Using equation $31$ with
+```math
+\begin{align}
+\Omega &= 0\degree\\
+\omega &= 102\degree\enspace56'\enspace49.9''\\
+\i &= 0\degree
+```
+We get for $(x_{\text{Earth}}, y_{\text{Earth}}, z_{\text{Earth}})$:
+```math
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}
+=
+ \begin{bmatrix}
+  \cos\Omega\cos\omega - \sin\Omega\cos i\sin\omega & -\cos\Omega\sin\omega - \sin\Omega\cos i\cos \omega & 0 \\
+  \sin\Omega\cos\omega + \cos\Omega\cos i\sin\omega & -\sin\Omega\sin\omega + \cos\Omega\cos i\cos\omega & 0 \\
+  \sin i \sin\omega & \sin i \cos\omega & 0
+ \end{bmatrix}
+\begin{bmatrix}
+33.384 \\ 145.213 \\ 0
+\end{bmatrix}
+```
