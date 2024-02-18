@@ -249,7 +249,7 @@ We've come a long way. Let's put it all together.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Calculate Mars' geocentric equatorial coordinates on $\text{March 19, }2024$. <br/>
+Calculate Mars' geocentric <i>equatorial</i> coordinates on $\text{March 19, }2024$. <br/>
  Use $\varepsilon = 23.44\degree$ for the Earth.
 <img width="2000" height="0">
 </td>
