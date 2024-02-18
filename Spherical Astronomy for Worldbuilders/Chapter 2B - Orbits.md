@@ -87,7 +87,7 @@ Now the equation becomes:
 ```math
 M = E - e\sin (E) \tag{26}
 ```
-Which is known as [**Kepler's Equation**](https://en.wikipedia.org/wiki/Kepler%27s_equation). This equation allows us to relate $E$ and $M$, thus relating $E$ and $t$, which allows us to finally calculate the motion of the planets.
+Which is known as [**Kepler's Equation**](https://en.wikipedia.org/wiki/Kepler%27s_equation). This equation allows us to relate $E$ and $M$, thus relating $E$ and $t$, which allows us to finally calculate the motion of the planets. Keep in mind that we **must** use radians for $M$ and $E$.
 
 #### Example 4
 <div align="center">
@@ -120,27 +120,27 @@ Now, by equation $21$:
 \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
 &= \frac{0.0167 + \cos(77\degree\enspace3'\enspace50.1'')}{1 + 0.0167\cos(77\degree\enspace3'\enspace50.1'')}\\
 &= 0.239855411\\
-\therefore E &= 76\degree\enspace7'\enspace19.18''
+\therefore E &= 1.32856 \text{ rad}
 \end{align}
 ```
 Now, by Kepler's equation (equation $26$):
 ```math
 \begin{align}
 M &= E - e\sin (E)\\
-&= 76\degree\enspace7'\enspace19.18'' - 0.0167 \sin (76\degree\enspace7'\enspace19.18'')\\
-&= 76\degree\enspace6'\enspace20.81''
+&= 1.32856 - 0.0167 \sin (1.32856)\\
+&= 1.31235 \text{ rad}
 \end{align}
 ```
 Therefore, by the definition of $M$ (equation $25$):
 ```math
 \begin{align}
-M &= \frac{360\degree}{T}\cdot t\\
-\therefore t &= \frac{TM}{360\degree}\\
-&=\frac{365.2422\text{ dy} \cdot 6\degree\enspace6'\enspace20.81''}{360\degree}\\
-&= 77\text{ dy}\enspace5h\enspace8m.
+M &= \frac{2\pi}{T}\cdot t\\
+\therefore t &= \frac{TM}{2\pi}\\
+&=\frac{365.2422\text{ dy} \cdot 1.31235}{2\pi}\\
+&= 76 \text{ dy}\enspace6h\enspace53m
 \end{align}
 ```
-$77\text{ dy}\enspace5h\enspace8m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 20, }2024\enspace05:46$.\
+$76\text{ dy}\enspace6h\enspace53m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 19, }2024\enspace07:31$.\
 Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are very close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
 $\blacksquare$
 
@@ -177,7 +177,7 @@ which we can use to iteratively obtain better and better approximations of $E$, 
 <td align="center">
 <img width="2000" height="0"><br>
 The Earth has orbital period $T = 365.2422\text{ dy}$, its orbit has semi-major axis $a = 149.6 \text{ Gm}$, and its eccentricity $e = 0.0167$. <br/>
-Find the heliocentric ecliptic longitude of the Earth at $t = 77 \text{ dy}\enspace5h\enspace8m$ past periapsis, <br/>
+Find the heliocentric ecliptic longitude of the Earth at $t = 76 \text{ dy}\enspace6h\enspace53m$ past periapsis, <br/>
 given that when the Earth at periapsis, its heliocentric ecliptic longitude is $102\degree\enspace56'\enspace49.9''$
 <img width="2000" height="0">
 </td>
@@ -189,57 +189,56 @@ Due to the definition of the ecliptic coordinate frame, we can use our perifocal
 We first calculate $M$ by equation $25$:
 ```math
 \begin{align}
-M &= \frac{360\degree}{365.2422\text{ dy}} \cdot77 \text{ dy}\enspace5h\enspace8m \\
-&= 76\degree\enspace6'\enspace20.811''
+M &= \frac{2\pi}{365.2422\text{ dy}} \cdot 76 \text{ dy}\enspace6h\enspace53m \\
+&= 1.31235\text{ rad}
 \end{align}
 ```
 We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $28$.
 ```math
 \begin{align}
 E_2 &= M - \frac{M - e\sin(M) - M}{1 - e\cos(M)}\\
-&= 76\degree\enspace7'\enspace19.397''
+&= 1.32856 \text{ rad}
 \end{align}
 ```
 We perform it again, now using $E_2$ for $E_n$.
 ```math
 \begin{align}
 E_3 &= E_2 - \frac{E_2 - e\sin(E_2) - M}{1 - e\cos(E_2)}\\
-&= 76\degree\enspace7'\enspace19.175''
+&= 1.32856 \text{ rad}
 \end{align}
 ```
 Here is the table of repetitions:
 ```math
-\begin{array}{cccc}\hline n & & & E_n \\ \hline
-1 & & & 76\degree\enspace6'\enspace20.811'' \\
-2 & & & 76\degree\enspace7'\enspace19.397'' \\
-3 & & & 76\degree\enspace7'\enspace19.175'' \\
-4 & & & 76\degree\enspace7'\enspace19.176'' \\
-5 & & & 76\degree\enspace7'\enspace19.176'' \\ \hline
+\begin{array}{ccc}\hline n & & E_n \\ \hline
+1 & & 1.31235 \\
+2 & & 1.32856 \\
+3 & & 1.32856 \\
+4 & & 1.32856 \\ \hline
 \end{array}
 ```
-As we can see, $E$ has quickly converged onto $76\degree\enspace7'\enspace19.176''$. In general it can be assumed that $E_5$ or $E_6$ will be enough.\
+As we can see, $E$ has quickly converged onto $1.32856\text{ rad}$. In general it can be assumed that $E_4$ or $E_5$ will be enough.\
 We can now calculate $(x, y)$ with equation $19$:
 ```math
 \begin{align}
 x_{\text{perifocal}} &= a \cos (E) - ae\\
-&= 149.6 \cos(76\degree\enspace7'\enspace19.18'') - 149.6 \cdot 0.0167 \\
-&= 33.384 \text{ Gm}\\
+&= 149.6 \cos(1.32856) - 149.6 \cdot 0.0167 \\
+&= 33.387 \text{ Gm}\\
 \\
 y_{\text{perifocal}} &= b \sin (E)\\
 &= a\sqrt{1 - e^2} \sin (E)\\
-&= 149.6 \sqrt{1 - 0.0167^2} \sin(76\degree\enspace7'\enspace19.18'')\\
-&= 145.213 \text{ Gm}
+&= 149.6 \sqrt{1 - 0.0167^2} \sin(1.32856)\\
+&= 145.212 \text{ Gm}
 \end{align}
 ```
 Then, by equation $17$, the true anomaly is:
 ```math
-\arctan(145.213, 33.384) = 77\degree\enspace3'\enspace10.27''
+\arctan(145.212, 33.387) = 77\degree\enspace3'\enspace6''
 ```
 Which, when added with the ecliptic longitude of the periapsis $102\degree\enspace56'\enspace49.9''$ gives:
 ```math
-\lambda_{\text{Earth, Heliocentric}} = 180\degree\enspace(+ 0.17'')
+\lambda_{\text{Earth, Heliocentric}} = 179\degree\enspace59'\enspace57''
 ```
-Which agrees with example $4$. (The $0.17''$ is due to stray rounding error.)\
+Which agrees with example $4$. (The $-3''$ is due to stray rounding error.)\
 $\blacksquare$
 
 #### Proof of Kepler's Second Law
