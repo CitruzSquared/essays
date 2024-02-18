@@ -153,7 +153,7 @@ We first need the mean anomaly of Mars, which involves finding the oribital peri
 &= 687 \text{ dy}
 \end{align}
 ```
-Now we follow example $4$.\
+Now we follow example $5$.\
 Since $\text{March 20, }2024$ is $637\text{ dy}$ after $\text{June 21, } 2022$, by equation $25$:
 ```math
 \begin{align}
