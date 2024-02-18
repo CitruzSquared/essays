@@ -32,7 +32,7 @@ This results in the $x$-axis now pointing in the $p$ direction.
 This can be done with rotation matrices:
 - Step 1 - we rotate by $\Omega$ about the $z$-axis.
 ```math
-A =
+R_1 =
 \begin{bmatrix}
 \cos{(\Omega)} & \sin{(\Omega)}  & 0\\
 -\sin{(\Omega)} & \cos{(\Omega)} & 0\\
@@ -41,7 +41,7 @@ A =
 ```
 - Step 2 - we rotate by $i$ about the $x$-axis (which now points in the direction of $N$).
 ```math
-B =
+R_2 =
 \begin{bmatrix}
 1 & 0 & 0\\
 0 & \cos{(i)} & \sin{(i)}\\
@@ -50,7 +50,7 @@ B =
 ```
 - Step 3 - we rotate by $\omega$ about the $z$-axis (which now points perpendicular to the orbital plane).
 ```math
-C =
+R_3 =
 \begin{bmatrix}
 \cos{(\omega)} & \sin{(\omega)}  & 0\\
 -\sin{(\omega)} & \cos{(\omega)} & 0\\
@@ -63,7 +63,7 @@ Now, the full rotation matrix is given by multiplying all these steps together:
 p \\ q \\ s
 \end{bmatrix}
 =
-CBA
+R_3 R_2 R_1
 \begin{bmatrix}
 x \\ y \\ z
 \end{bmatrix}
@@ -85,7 +85,7 @@ x \\ y \\ z
 \end{bmatrix}
 \tag{29}
 ```
-The reverse transformation, going from the perifocal frame to the ecliptic frame, is given by the transpose of $CBA$:
+The reverse transformation, going from the perifocal frame to the ecliptic frame, is given by the transpose of $R_3 R_2 R_1$:
 ```math
 \begin{bmatrix}
 x \\ y \\ z
