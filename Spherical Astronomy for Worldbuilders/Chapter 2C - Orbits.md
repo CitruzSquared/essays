@@ -101,7 +101,7 @@ p \\ q \\ s
 \end{bmatrix}
 \tag{30}
 ```
-Thus the exact position of $Q$ can be calculated in ecliptic coordinates from the values $a, e, i, \Omega, \omega,$ and $\nu$, and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
+Thus the exact position of $Q$ can be calculated in ecliptic coordinates from the values $a, e, i, \Omega$, and $\omega$ and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
 
 However, if we recognize the fact that $s$ is almost always going to be $0$ in our case (because planets move in the plane of their orbit, there will be almost no cases where we *do* have a $s$ component), we can safely say that, when going from perifocal coordinates to ecliptic coordinates:
 ```math
@@ -123,4 +123,73 @@ p \\ q \\ 0
 Note that, for Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $29$ to $31$ will not change.
 
 #### Example 6
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that Mars was last at perihelion on $\text{June 21, } 2022$ and the orbital elements of Mars, <br/> 
+calculate its heliocentric ecliptic coordinates on $\text{March 19, }2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
 
+Mars' orbital elements are given as:
+```math
+\begin{align}
+a &= 227.939 \text{ Gm}\\
+e &= 0.0934\\
+i &= 1\degree\enspace51'\\
+\Omega &= 47\degree\enspace34'\enspace42.7''\\
+\omega &= 286\degree\enspace30'\\
+\end{align}
+```
+We first need the mean anomaly of Mars, which involves finding the oribital period $T$. By equation $15$:
+```math
+\begin{align}
+ T &= \sqrt{\frac{4\pi^2 (227.939 \cdot 10^9)^3}{6.67\cdot10^-11 \cdot 1.989\cdot10^30}}\\
+&= 687 \text{ dy}
+\end{align}
+```
+Now we follow example $4$.\
+Since $\text{March 20, }2024$ is $637\text{ dy}$ after $\text{June 21, } 2022$, by equation $25$:
+```math
+\begin{align}
+M &= \frac{2\pi}{687}\cdot 637\\
+&= 5.8258938 \text{ rad}
+\end{align}
+```
+Now we iterate equation $28$:
+```math
+\begin{array}{cccc}\hline n & & & E_n \\ \hline
+1 & & & 5.8258938 \\
+2 & & & 5.7808839 \\
+3 & & & 5.7809308 \\
+4 & & & 5.7809308 \\ \hline
+\end{array}
+```
+Thus the perifocal coordinates are:
+```math
+\begin{align}
+p &= 227.939 \cos(5.7809308) - 227.939 \cdot 0.0934\\
+&= 178.499 \text{ Gm}\\
+q &= 227.939\sqrt{1 - 0.0934^2} \sin(5.7809308)\\
+&= -109.251 \text{ Gm}\\
+s &= 0 \text{ Gm}
+\end{align}
+```
+Since Mars's orbit is not on the ecliptic plane, we must use equation $31$.\
+We first fill out the matrix:
+```math
+ \begin{bmatrix}
+0.913721676036 & 0.405596690451 & 0 \\
+−0.405159938675 & 0.914006157892 & 0 \\
+−0.0309535593079 & 0.00916886198411 & 0
+ \end{bmatrix}
+```
+Thus, by equation $31$:
+```math
+(x, y, z) = (118.787, −172.177, −6.527)\enspace[\text{Gm}]
+```
