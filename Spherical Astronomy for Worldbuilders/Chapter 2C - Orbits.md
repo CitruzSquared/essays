@@ -222,7 +222,7 @@ Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$,
 ### Calculating the Ephemeris for a Planet
 We've come a long way. Let's put it all together.
 
-- Algorithm to calculate the ephemeris:
+**Algorithm to calculate the ephemeris:**
 1. Choose a time $t$.
 2. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
 3. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
