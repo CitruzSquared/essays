@@ -2,12 +2,12 @@
 In the previous chapter, we studied the motion of the planets, which was modeled fairly well by Keplerian motion. Moons behave mostly in the same way, but we need to account for a few extra things due to their small size and relatively small semi-major axis lengths. In particular, [**orbital precession**](https://en.wikipedia.org/wiki/Orbital_precession), the change in the orbital elements over time caused by gravitational perturbation, cannot be ignored for moons in the same way we have ignored them for the planets. 
 
 The two precessions we must account for are:
-1. Nodal Precession
+1. [Nodal Precession](https://en.wikipedia.org/wiki/Nodal_precession)
    - The change in the longitude of the ascending node $\Omega$ over time.
-2. Apsidal Precession
+2. [Apsidal Precession](https://en.wikipedia.org/wiki/Apsidal_precession)
    - The change in the argument of periapsis $\omega$ over time.
-     
-Let us now learn how to calculate these precession rates.
+
+While the orbits of the planets also precess, the rate of precession is so slow (in the order of a few arcminutes of change per century) that they can be ignored. For moons, these rates are much faster. Let us now learn how to calculate these precession rates.
 
 ### The Two Types of Moons
 This table lists some of the Solar System's most prominent moons:
