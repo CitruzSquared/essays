@@ -35,4 +35,4 @@ As is apparent, our Moon is vastly different from the other moons of our solar s
   * Have orbits aligned to the **orbit** of the primary planet. (That is, the inclination to the planetary ecliptic is fixed.)
   * Have most of their precession resulting from the perturbation from the Sun.
     
-Thus it would be more appropriate to call these moons "equator-aligned moons" and "ecliptic-aligned moons" instead.
+Thus it would be more appropriate to call these moons "Equator-aligned moons" and "Ecliptic-aligned moons" instead.
