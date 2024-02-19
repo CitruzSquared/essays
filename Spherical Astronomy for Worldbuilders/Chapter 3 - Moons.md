@@ -36,3 +36,5 @@ As is apparent, our Moon is vastly different from the other moons of our solar s
   * Have most of their precession resulting from the **perturbation from the Sun**.
     
 Thus it would be more appropriate to call these moons "Equator-aligned moons" and "Ecliptic-aligned moons" instead.
+
+### Equator-Aligned Moons
