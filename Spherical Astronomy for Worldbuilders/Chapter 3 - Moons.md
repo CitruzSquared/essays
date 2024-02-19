@@ -29,10 +29,10 @@ As is apparent, our Moon is vastly different from the other moons of our solar s
 - "Io-type" Moons:
   * Have small $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios.
   * Have orbits aligned to the **equator** of the primary planet. (That is, the inclination to the planetary equator is fixed.)
-  * Have most of their precession resulting from the oblateness of the primary. (That is, the equatorial bulge of the primary planet.)
+  * Have most of their precession resulting from the **oblateness of the primary**. (That is, the equatorial bulge of the primary planet.)
 - "Luna-type" Moons:
   * Have large $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios.
   * Have orbits aligned to the **orbit** of the primary planet. (That is, the inclination to the planetary ecliptic is fixed.)
-  * Have most of their precession resulting from the perturbation from the Sun.
+  * Have most of their precession resulting from the **perturbation from the Sun**.
     
 Thus it would be more appropriate to call these moons "Equator-aligned moons" and "Ecliptic-aligned moons" instead.
