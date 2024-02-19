@@ -3,9 +3,9 @@ In the previous chapter, we studied the motion of the planets, which was modeled
 
 The two precessions we must account for are:
 1. Nodal Precession
-   - The change in $\Omega$ over time.
+   - The change in the longitude of the ascending node $\Omega$ over time.
 2. Apsidal Precession
-   - The change in $\omega$ over time.
+   - The change in the argument of periapsis $\omega$ over time.
      
 Let us now learn how to calculate these precession rates.
 
