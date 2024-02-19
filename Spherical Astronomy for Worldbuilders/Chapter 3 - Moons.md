@@ -13,13 +13,13 @@ Let us now learn how to calculate these precession rates.
 This table lists some of the Solar System's most prominent moons:
 ```math
 \begin{array}{ccccc}\hline \text{Name} & \text{Primary} & a/R & M_M/M_P & T_M/T_P \\ \hline
+\text{Moon} & \text{Earth} & 60.3 & 0.01229 & 0.07480 \\
 \text{Io} & \text{Jupiter} & 6.03 & 0.00005 & 0.00041 \\
 \text{Europa} & \text{Jupiter} & 9.60 & 0.00003 & 0.00082 \\
 \text{Ganymede} & \text{Jupiter} & 15.3 & 0.00008 & 0.00165 \\
 \text{Callisto} & \text{Jupiter} & 26.9 & 0.00006 & 0.00385 \\
 \text{Titan} & \text{Saturn} & 21.0 & 0.00024 & 0.00148 \\
-\text{Triton} & \text{Neptune} & 14.4 & 0.00021 & 0.00010 \\
-\text{Moon} & \text{Earth} & 60.3 & 0.01229 & 0.07480 \\ \hline
+\text{Triton} & \text{Neptune} & 14.4 & 0.00021 & 0.00010 \\ \hline
 \end{array}
 ```
 where $a$ is the semi-major axis of the moon, $R$ is the primary planet's radius, $M_M$ and $M_P$ are the masses of the moon and planet respectively, and $T_M$ and $T_P$ are the orbital periods of the moon and planet respectively.
