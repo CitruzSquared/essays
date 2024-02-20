@@ -204,18 +204,20 @@ This table lists some of the Solar System's most prominent moons:
 ```
 where $a$ is the semi-major axis of the moon's orbit, $R$ is the primary planet's radius, $M_M$ and $M_P$ are the masses of the moon and planet respectively, and $T_M$ and $T_P$ are the orbital periods of the moon and planet respectively.
 
-As is apparent, our Moon is vastly different from the other moons of our solar system: our moon has a much larger $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios than other moons. Thus a distinction must be made between the two kinds of moons: "Io-type" moons, and "Luna-type" moons. (Note: this is not technical terminology.)
+As is apparent, our Moon is vastly different from the other moons of our solar system: our moon has a much larger $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios than other moons. Thus a distinction must be made between the two kinds of moons: "Luna-type" moons, and "Io-type" moons. (Note: this is not technical terminology.)
 
-- "Io-type" Moons:
-  * Have small $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios.
-  * Have orbits aligned to the **equator** of the primary planet. (That is, the inclination to the planetary equator is fixed.)
-  * Have most of their precession resulting from the **oblateness of the primary**. (That is, the equatorial bulge of the primary planet.)
 - "Luna-type" Moons:
   * Have large $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios.
   * Have orbits aligned to the **orbit** of the primary planet. (That is, the inclination to the planetary ecliptic is fixed.)
   * Have most of their precession resulting from the **perturbation from the Sun**.
+- "Io-type" Moons:
+  * Have small $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios.
+  * Have orbits aligned to the **equator** of the primary planet. (That is, the inclination to the planetary equator is fixed.)
+  * Have most of their precession resulting from the **oblateness of the primary**. (That is, the equatorial bulge of the primary planet.)
     
-Thus it would be more appropriate to call these moons "Equator-aligned moons" and "Orbit-aligned moons" instead.
+Thus it would be more appropriate to call these moons "Orbit-aligned moons" and "Equator-aligned moons" instead.
+
+### Orbit-Aligned Moons
 
 ### Equator-Aligned Moons
 
