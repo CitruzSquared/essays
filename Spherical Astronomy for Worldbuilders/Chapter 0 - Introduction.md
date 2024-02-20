@@ -72,6 +72,7 @@ A + B + C &= 180\degree \\
 \sin^2(\alpha) + \cos^2(\alpha) &= 1 \\
 \end{align}
 ```
+Two Argument Arctangent:
 ```math
 \begin{alignat}{2}
 \arctan(y, x) &= \arctan(y/x)&&\text{ if } x > 0 \\
