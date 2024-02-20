@@ -109,8 +109,8 @@ Two Argument Arctangent:
 v_1 \\ v_2 \\ v_3
 \end{bmatrix} = v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} \\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
-c\textbf{v} + d\textbf{u} &= \begin{bmatrix}
-cv_1 + du_1 \\ cv_1 + du_2 \\ cv_3 + du_3
+a\textbf{v} + b\textbf{u} &= \begin{bmatrix}
+av_1 + bu_1 \\ av_1 + bu_2 \\ av_3 + bu_3
 \end{bmatrix}\\
 \textbf{v}\cdot\textbf{u} &= v_1u_1 + v_2u_2 + v_3u_3 \\
 &= \textbf{u}\cdot\textbf{v}\\
