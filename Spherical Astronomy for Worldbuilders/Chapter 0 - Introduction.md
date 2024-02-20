@@ -88,6 +88,7 @@ Two Argument Arctangent:
 ### Calculus
 ```math
 \begin{align}
+\frac{d}{dx} f(x) &= f'(x) = \dot f\\
 \frac{d}{dx} a &= 0 \\
 \frac{d}{dx} x^a &= ax^{a-1} \\
 \frac{d}{dx} \sin(x) &= \cos(x) \\
