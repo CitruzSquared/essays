@@ -375,7 +375,7 @@ First we find $K$ by equation $46$.
 \begin{align}
 K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
 &= \frac{3\cdot(1.96045\cdot10^{-3})\cdot(2\pi/27553.84)\cdot(3389500)^2}{2\cdot(9376000)^2\cdot(1-0.0151^2)^2}\\
-&= 8.76756338 \cdot10^{-8} \text{ rad}/s
+&= 8.76756338 \cdot10^{-8} \text{ rad}/s\\
 &= 0.43402554 \degree/\text{dy}
 \end{align}
 ```
