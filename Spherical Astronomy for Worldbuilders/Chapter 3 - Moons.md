@@ -17,7 +17,7 @@ These precession rates are not constant in reality but they can be approximated 
 ```math
 \begin{align}
 \Omega &= \Omega_0 + \int_{t_0}^{t} \dot\Omega dt\\
-&=(t - t_0)\dot\Omega \tag{33}
+&=\Omega_0 + (t - t_0)\dot\Omega \tag{33}
 \end{align}
 ```
 Where $\Omega_0$ is the longitude of the ascending node at time $t = 0$.\
@@ -25,7 +25,7 @@ If the apses precess at a rate $\dot\varpi$, the longitude of periapsis at time 
 ```math
 \begin{align}
 \varpi &= \varpi_0 + \int_{t_0}^{t} \dot\varpi dt\\
-&=(t - t_0)\dot\varpi \tag{34}
+&=\omega_0 + (t - t_0)\dot\varpi \tag{34}
 \end{align}
 ```
 Where $\varpi_0$ is the longitude of the periapsis at time $t = 0$.\
@@ -186,9 +186,9 @@ But since $\Lambda = \varpi - \Omega$,
 ```math
 \dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{37}
 ```
-Now, if one wanted, they could calculate the new $\omega$ by:
+Thus, if one wanted, they could now calculate the new $\omega$ by:
 ```math
-\omega = \int_{t_0}^{t} \dot\omega dt \tag{38}
+\omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{38}
 ```
 Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
