@@ -129,7 +129,7 @@ We now use equations $33$ and $34$, where $(t - t_0) = 1461\text{ dy}$:
 ```math
 \begin{align}
 \Omega &= \Omega_0 + (t - t_0)\dot\Omega \\
-&= 98\degree\enspace8'\enspace24'' - 1461\cdot\frac{360\degree}{6793}\\
+&= 98\degree\enspace8'\enspace24'' + 1461\cdot\frac{-360\degree}{6793}\\
 &= 20\degree\enspace42'\enspace47.65''\\
 \varpi &= \varpi_0 + (t - t_0)\dot\varpi\\
 &= 179\degree\enspace45'\enspace24.35'' + 1461\cdot\frac{360\degree}{3233}\\
