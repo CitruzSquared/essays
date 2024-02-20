@@ -363,6 +363,7 @@ Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \le
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
+Mars' largest moon Phobos is an equator aligned moon. <br/>
 Given that for Mars: 
 $J_2 = 1.96045\cdot10^{-3}$, $R_\text{avg} = 3389.5 \text{ km}$, and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
 And for Phobos: 
