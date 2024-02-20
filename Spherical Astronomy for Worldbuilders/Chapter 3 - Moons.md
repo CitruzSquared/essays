@@ -195,7 +195,7 @@ If $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\omega &\approx \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
-&\approx \dot\varpi-\dot\Omega. \tag{39}
+&= \dot\varpi-\dot\Omega. \tag{39}
 \end{align}
 ```
 And now $\dot\omega$ is a constant and equation $38$ may be used.\
@@ -214,7 +214,7 @@ Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\varpi &\approx \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
-&\approx \dot\omega + \dot\Omega. \tag{41}
+&= \dot\omega + \dot\Omega. \tag{41}
 \end{align}
 ```
 Which is consistent with equation $39$.
