@@ -256,7 +256,7 @@ Solving extremely complex equations of motion (that can be found [here](https://
 \dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{43}
 \end{align}
 ```
-These formulae are not exact as they ignore small terms such as $e^2$, $e'^2$, $i^2$, and $a/a'$ (where the $x'$ denotes the parameter $x$ of the primary planet). Thus, for the formula to work best, $e$ and $i$ for the Moon **must be relatively small**.
+These formulae are not exact as they ignore small terms such as $e_M^2$, $e_P^2$, $i^2$, and $a_M/a_P$. Thus, for the formula to work best, these parameters for the Moon - Planet system **must be relatively small**.
 
 Equations $42$ and $43$ give results in units of $\text{rev}/T_P$.
 
@@ -282,6 +282,16 @@ Calculate the periods of node regression and perigee advance for the Moon in $\t
 </table>
 </div>
 
+For the Moon and Earth:
+```math
+\begin{align}
+e_M^2 &= 0.0030\\
+e_P^2 &= 0.0003\\
+i^2 &= 0.0081 \text{ rad}^2\\
+a_M/a_P &= 0.0026\\
+\end{align}
+```
+Which are all small, so equations $42 and 43$ will work.\
 We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $42$ and $43$:
 ```math
 \begin{align}
