@@ -280,11 +280,11 @@ Unfortunately, the derivation of the precession rate of satellites is too comple
 
 Well, we can make a *very* crude approximation that the Earth is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
-J_2 \approx \frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\tag{33}
+J_2 \approx \frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\tag{41}
 ```
 where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated by the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
 ```math
-f = \frac{R_E - R_P}{R_E}\tag{34}
+f = \frac{R_E - R_P}{R_E}\tag{42}
 ```
 $w$ is the rotational speed of the planet in $\text{rad}$,\
 $G$ is the gravitational constant, and\
@@ -292,7 +292,7 @@ $M$ is the mass of the planet.
 
 The table of $J_2$ values by planet in the Solar System is given here:
 ```math
-\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }33 \\ \hline
+\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }41 \\ \hline
 \text{Mercury} & 60\cdot10^{-6} & 0.000900 & 600\cdot 10^{-6}\\
 \text{Venus} & 4.458\cdot10^{-6} & 0.000000 & 0.02\cdot 10^{-6}\\
 \text{Earth} & 1.08263\cdot10^{-3} & 0.003353 & 1.08136\cdot10^{-3} \\
@@ -306,19 +306,19 @@ The table of $J_2$ values by planet in the Solar System is given here:
 Evidently, the approximation is very crude; however it's the best we've got. Now that we have $J_2$, we can calculate the precession rates.\
 The precession depends on this value which we will call $K$ for simplicity:
 ```math
-K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{41}
+K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{43}
 ```
 Where $n$ and $R_{\text{avg}}$ are the mean motion and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
-\dot\Omega = K\cos(i)\tag{42}
+\dot\Omega = -K\cos(i)\tag{44}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit.
 
-The apsidal recession rate is given as:
+The apsidal precession rate is given as:
 ```math
-\dot\omega = K\left(\frac{5}{2}\sin^2(i)-2\right)\tag{43}
+\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{45}
 ```
 Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
