@@ -267,7 +267,7 @@ Nodal Precession = -3/4*m + 9/32*m^2 + 273/128*m^3 + 9797/2048*m^4 + 199273/2457
 Apsidal Precession = 3/4*m + 225/32*m^2 + 4071/128*m^3 + 265493/2048*m^4 + 12822631/24576*m^5 + 1273925965/589824*m^6 + 66702631253/077888*m^7 + 29726828924189/679477248*m^8
 ```
 
-#### Example 8
+#### Example 9
 <div align="center">
 <table>
 <tbody>
@@ -353,7 +353,7 @@ Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $
 \omega = \omega_0 + (t - t_0)\dot\omega\tag{49}
 ```
 Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
-#### Example 9
+#### Example 10
 <div align="center">
 <table>
 <tbody>
