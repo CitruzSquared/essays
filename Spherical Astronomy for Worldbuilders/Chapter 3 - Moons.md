@@ -291,7 +291,7 @@ i^2 &= 0.0081 \text{ rad}^2\\
 a_M/a_P &= 0.0026\\
 \end{align}
 ```
-Which are all small, so equations $42 and 43$ will work.\
+Which are all small, so equations $42$ and $43$ will work.\
 We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $42$ and $43$:
 ```math
 \begin{align}
