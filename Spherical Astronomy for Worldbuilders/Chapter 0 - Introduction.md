@@ -157,8 +157,8 @@ AB &\neq BA
 \textbf{v} &= v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} = \begin{bmatrix}
 v_1 \\ v_2 \\ v_3
 \end{bmatrix}\\
-c\textbf{v} &= \begin{bmatrix}
-cv_1 \\ cv_2 \\ cv_3
+c\textbf{v} + d\textbf{u} &= \begin{bmatrix}
+cv_1 + du_1 \\ cv_1 + du_2 \\ cv_3 + du_3
 \end{bmatrix}\\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
 \textbf{v}\cdot\textbf{u} &= v_1u_1 + v_2u_2 + v_3u_3 \\
