@@ -374,7 +374,7 @@ Find the precession rates of Phobos in units of $\degree/\text{dy}$.
 </table>
 </div>
 
-To find the precession rates, we need $K$, an so $T$ because we need to find $n = 360\degree/T$ (equation $25$) for $K$.\
+To find the precession rates, we need $K$, and so we need $T$ because we need to find $n = 360\degree/T$ (equation $25$) for $K$.\
 By equation $15$:
 ```math
 \begin{align}
