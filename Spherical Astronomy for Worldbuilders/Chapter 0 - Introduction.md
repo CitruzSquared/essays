@@ -42,9 +42,8 @@ ax^2 + bx + c &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \begin{align}
 \frac{\sin(a)}{A} &= \frac{\sin(b)}{B} = \frac{\sin(c)}{C}\\
 c^2 &= a^2 + b^2 - 2ac\cos(C)\\
-S &= \frac{1}{2}ab\sin(C)\\
-&= \frac{1}{2}cb\sin(A)\\
-&= \frac{1}{2}ac\sin(B)\\
+S &= \frac{1}{2}ab\sin(C) = \frac{1}{2}cb\sin(A) = \frac{1}{2}ac\sin(B)\\
+A + B + C &= 180\degree
 \pi\text{ rad} &= 180\degree\\
 1\deg &= 60' = 3600''
 \end{align}
