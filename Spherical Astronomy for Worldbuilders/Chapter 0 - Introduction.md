@@ -74,9 +74,8 @@ A + B + C &= 180\degree \\
 ```
 Two Argument Arctangent:
 ```math
-\arctan(y, x) =
-\begin{cases}
-\arctan(y/x)&\text{ if } x > 0 \\
+\arctan(y, x) = \begin{cases}
+\arctan(y/x) &\text{ if } x > 0 \\
 \arctan(y/x) + 180\degree&\text{ if } x < 0 \text{ and } y \geq 0\\
 \arctan(y/x) - 180\degree&\text{ if } x < 0 \text{ and } y < 0\\
 90\degree&\text{ if } x = 0 \text{ and } y > 0 \\
