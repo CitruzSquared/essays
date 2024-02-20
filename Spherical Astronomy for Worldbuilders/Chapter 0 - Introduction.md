@@ -58,6 +58,7 @@ A + B + C &= 180\degree \\
 ### Trigonometry
 ```math
 \begin{align}
+\text{trig}(\alpha + 360\degree) &= \text{trig}(\alpha)
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
 \cos(\alpha) &= \cos(-\alpha) = -\cos(\alpha + 180\degree) = -\cos(180\degree - \alpha)\\
@@ -76,8 +77,8 @@ A + B + C &= 180\degree \\
 \arctan(y, x) &= \arctan(y/x)&&\text{ if } x > 0 \\
 &= \arctan(y/x) + 180\degree&&\text{ if } x < 0 \text{ and } y \geq 0\\
 &= \arctan(y/x) - 180\degree&&\text{ if } x < 0 \text{ and } y < 0\\
-&= \pi/2\text{ if } x = 0 &&\text{ and } y > 0 \\
-&= 3\pi/2\text{ if } x = 0 &&\text{ and } y < 0 \\
+&= 90\degree\text{ if } x = 0 &&\text{ and } y > 0 \\
+&= -90\degree\text{ if } x = 0 &&\text{ and } y < 0 \\
 \end{alignat}
 ```
 ### Calculus
