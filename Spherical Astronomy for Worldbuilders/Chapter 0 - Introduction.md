@@ -45,7 +45,7 @@ c^2 &= a^2 + b^2 - 2ac\cos(C)\\
 S &= \frac{1}{2}ab\sin(C)\\
 A + B + C &= 180\degree \\
 \pi\text{ rad} &= 180\degree\\
-1\deg &= 60' = 3600''
+1\degree &= 60' = 3600''
 \end{align}
 ```
 
