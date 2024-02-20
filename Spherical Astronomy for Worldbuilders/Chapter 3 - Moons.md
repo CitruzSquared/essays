@@ -295,7 +295,7 @@ Unfortunately, the derivation of the precession rate of satellites is too comple
 
 Well, we can make a *very* crude approximation that the Earth is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
-J_2 \approx \frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\tag{43}
+J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{43}
 ```
 where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated by the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
 ```math
