@@ -13,14 +13,20 @@ While the orbits of the planets also precess, the rate of precession is so slow 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/252eaf18-8ac0-4aba-84df-65d6bb087387" width="350"/> This image depicts the orbit of a moon $Q$ around a planet $O$. We have projected the periapsis of the orbit of the object $Q$ (the point $P$) down to the reference plane, and thus have created a new point $P'$. As we have discussed previously, the angle $NOP$ is known as the argument of periapsis and is denoted $\omega$. The angle $AOP'$ (measured in the direction of the orbit) is known as the [*longitude of periapsis*](https://en.wikipedia.org/wiki/Longitude_of_the_periapsis) and is denoted $\varpi$ (a variant of the letter $\pi$).
 
 When discussing apsidal precession, it is usually the precession of the **longitude** of periapsis in question, not the *argument* of periapsis. However, the nodal precession simply refers to the longitude of the ascending node. \
-These precession rates are not uniform in reality but they can be modeled as being more or less uniform. Thus, if the nodes precess at a rate $\dot\Omega$, the longitude of the ascending node at time $t$ is given as:
+These precession rates are not constant in reality but they can be approximated as being more or less constant. Thus, if the nodes precess at a rate $\dot\Omega$, the longitude of the ascending node at time $t$ is given as:
 ```math
-\Omega = \Omega_0 + (t - t_0)\dot\Omega \tag{33}
+\begin{align}
+\Omega = \Omega_0 + \int_{t_0}{t} \dot\Omega dt
+&=(t - t_0)\dot\Omega \tag{33}
+\end{align}
 ```
 Where $\Omega_0$ is the longitude of the ascending node at time $t = 0$.\
 If the apses precess at a rate $\dot\varpi$, the longitude of periapsis at time $t$ is given as:
 ```math
-\varpi = \varpi_0 + (t - t_0)\dot\varpi \tag{34}
+\begin{align}
+\varpi = \varpi_0 + \int_{t_0}{t} \dot\varpi dt
+&=(t - t_0)\dot\varpi \tag{34}
+\end{align}
 ```
 Where $\varpi_0$ is the longitude of the periapsis at time $t = 0$.\
 These make sense. However, in our ephemeris calculations, we have $\omega$ and not $\varpi$. Thus we need a way of calculating $\varpi$ from $\omega$ and back. The algorithm below shows how to correctly account for the apsidal precession.
@@ -180,11 +186,15 @@ But since $\Lambda = \varpi - \Omega$,
 ```math
 \dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{37}
 ```
+Now, if one wanted, they could calculate the new $\omega$ by:
+```math
+\omega = \int_{t_0}{t} \dot\omega dt \tag{38}
+```
 Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\omega &= \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
-&= \dot\varpi-\dot\Omega. \tag{38}
+&= \dot\varpi-\dot\Omega. \tag{39}
 \end{align}
 ```
 Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
@@ -196,16 +206,16 @@ Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```
 But since $\varpi = \Lambda + \Omega$,
 ```math
-\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{39}
+\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{40}
 ```
 Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\varpi &= \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
-&= \dot\omega + \dot\Omega. \tag{40}
+&= \dot\omega + \dot\Omega. \tag{41}
 \end{align}
 ```
-Which is consistent with equation $38$.
+Which is consistent with equation $39$.
 ### The Two Types of Moons
 This table lists some of the Solar System's most prominent moons:
 ```math
@@ -239,14 +249,14 @@ Orbit aligned moons have precessions resulting from the gravitational perturbati
 Solving very complex equations of motion (that can be found [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html)) leads to these two formulae (derivation too complex to write here):
 ```math
 \begin{align}
-\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{41}\\ 
+\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{42}\\ 
 \\
-\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{42}
+\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{43}
 \end{align}
 ```
 These formulae are not exact as they ignore small terms such as $e^2$, $e'^2$, $i^2$, and $a/a'$ (where the $x'$ denotes the parameter $x$ of the primary planet). Thus, for the formula to work best, $e$ and $i$ for the Moon must be small.
 
-Equations $41$ and $42$ give results in units of $\text{rev}/T_P$.
+Equations $42$ and $43$ give results in units of $\text{rev}/T_P$.
 
 Copyable version:
 ```
@@ -270,7 +280,7 @@ Calculate the periods of node regression and perigee advance for the Moon in $\t
 </table>
 </div>
 
-We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $41$ and $42$:
+We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $42$ and $43$:
 ```math
 \begin{align}
 \dot\Omega &= -0.0534631 \text{ rev}/\text{yr}\\
@@ -295,11 +305,11 @@ Unfortunately, the derivation of the precession rate of satellites is too comple
 
 Well, we can make a *very* crude approximation that the Earth is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
-J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{43}
+J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{44}
 ```
 where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated by the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
 ```math
-f = \frac{R_E - R_P}{R_E}\tag{44}
+f = \frac{R_E - R_P}{R_E}\tag{45}
 ```
 $w$ is the rotational speed of the planet in $\text{rad}$,\
 $G$ is the gravitational constant, and\
@@ -307,7 +317,7 @@ $M$ is the mass of the planet.
 
 The table of $J_2$ values by planet in the Solar System is given here:
 ```math
-\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }43 \\ \hline
+\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }44 \\ \hline
 \text{Mercury} & 60\cdot10^{-6} & 0.000900 & 600\cdot 10^{-6}\\
 \text{Venus} & 4.458\cdot10^{-6} & 0.000000 & 0.02\cdot 10^{-6}\\
 \text{Earth} & 1.08263\cdot10^{-3} & 0.003353 & 1.08136\cdot10^{-3} \\
@@ -321,23 +331,23 @@ The table of $J_2$ values by planet in the Solar System is given here:
 Evidently, the approximation is very crude; however it's the best we've got. Now that we have $J_2$, we can calculate the precession rates.\
 The precession depends on this value which we will call $K$ for simplicity:
 ```math
-K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{45}
+K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{46}
 ```
 Where $n$ and $R_{\text{avg}}$ are the mean motion and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
-\dot\Omega = -K\cos(i)\tag{46}
+\dot\Omega = -K\cos(i)\tag{47}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit.
 
 The apsidal precession rate is given as:
 ```math
-\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{47}
+\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{48}
 ```
-Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, thus for equator aligned moons:
+Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $38$ gives:
 ```math
-\omega = \omega_0 + (t - t_0)\dot\omega\tag{48}
+\omega = \omega_0 + (t - t_0)\dot\omega\tag{49}
 ```
 Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
