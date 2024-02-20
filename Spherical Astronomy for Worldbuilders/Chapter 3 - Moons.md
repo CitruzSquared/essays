@@ -3,12 +3,129 @@ In the previous chapter, we studied the motion of the planets, which was modeled
 
 The two precessions we must account for are:
 1. [Nodal Precession](https://en.wikipedia.org/wiki/Nodal_precession)
-   - The change in the longitude of the ascending node $\Omega$ over time.
+   - The change in the location of the node line over time, which is in the opposite direction of the orbit. Hence it is also called the *node regression*.
 2. [Apsidal Precession](https://en.wikipedia.org/wiki/Apsidal_precession)
-   - The change in the argument of periapsis $\omega$ over time.
+   - The change in the location of the periapsis over time, which is usually in the direction of the orbit. Hence it is also called the *periapsis advance*.
 
 While the orbits of the planets also precess, the rate of precession is so slow (in the order of a few arcminutes of change per century) that they can be ignored. For moons, these rates are much faster. Let us now learn how to calculate these precession rates.
 
+### Precession
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/252eaf18-8ac0-4aba-84df-65d6bb087387" width="350"/> This image depicts the orbit of a moon $Q$ around a planet $O$. We have projected the periapsis of the orbit of the object $Q$ (the point $P$) down to the reference plane, and thus have created a new point $P'$. As we have discussed previously, the angle $NOP$ is known as the argument of periapsis and is denoted $\omega$. The angle $AOP'$ (measured in the direction of the orbit) is known as the [*longitude of periapsis*](https://en.wikipedia.org/wiki/Longitude_of_the_periapsis) and is denoted $\varpi$ (a variant of the letter $\pi$).
+
+When discussing apsidal precession, it is usually the precession of the **longitude** of periapsis in question, not the *argument* of periapsis. However, the nodal precession simply refers to the longitude of the ascending node. Thus, if the nodes precess at a rate $\dot\Omega$, the longitude of the ascending node at time $t$ is given as:
+```math
+\Omega = \Omega_0 + (t - t_0)\dot\Omega \tag{33}
+```
+Where $\Omega_0$ is the longitude of the ascending node at time $t = 0$.\
+If the apses precess at a rate $\dot\varpi$, the argument of periapsis at time $t$ is given as:
+```math
+\varpi = \varpi_0 + (t - t_0)\dot\varpi \tag{34}
+```
+Where $\varpi_0$ is the longitude of the periapsis at time $t = 0$.\
+These make sense. However, in our ephemeris calculations, we have $\omega$ and not $\varpi$. Thus we need a way of calculating $\varpi$ from $\omega$ and back. The algorithm below shows how to correctly account for the apsidal precession.
+
+**1. Calculate $\varpi_0$ from $\Omega_0$ and $\omega_0$.**
+
+Notice that $\varpi_0 = \Omega_0 + \Lambda_0$, where $\Lambda_0 = NOP'$. $\Lambda$ then is calculated as follows:
+
+Notice that the periapsis point $P$ is on the orbit and is an angular distance of $\omega$ away from the ascending node $N$. If we define a coordinate frame where $O$ is the origin, the $xy$-plane is the orbital plane, and the $x$-axis points towards $N$, then the spherical coordinates of $P$ are given by $(\omega_0, 0)$.
+
+In a similar coordinate frame, where $O$ is the origin, the $x$-axis point towards $N$, but the $xy$-plane is the reference plane, the coordinates of $P$ are given by $(\Lambda_0, p_0)$ where $p_0$ is the angular distance $PP'$ at time $t = 0$.
+
+To transform from the first set of coordinates to the second set of coordinates, we use a transformation matrix, and thus:
+```math
+\begin{bmatrix}
+\cos(p_0)\cos(\Lambda_0) \\
+\cos(p_0)\sin(\Lambda_0) \\
+\sin(p_0)
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos(i) & -\sin(i) \\
+0 & \sin(i) & cos(i)
+\end{bmatrix}
+\begin{bmatrix}
+\cos(0)\cos(\omega_0) \\
+\cos(0)\sin(\omega_0) \\
+\sin(0)
+\end{bmatrix}
+```
+We only care about $\Lambda$, so expanding out the terms for $\Lambda$:
+```math
+\begin{align}
+\cos(p_0)\cos(\Lambda_0) &= \cos(0)\cos(\omega_0) = \cos(\omega_0) \\
+\cos(p_0)\sin(\Lambda_0) &= \cos(0)\sin(\omega_0)\cos(i) - \sin(0)\sin(i) = \sin(\omega_0) \cos(i)
+\end{align}
+```
+Thus:
+```math
+\Lambda_0 = \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0))
+```
+And so finally:
+```math
+\varpi_0 = \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0)) \tag{35}
+```
+**2. Add the precessions separately**
+
+We use equations $33$ and $34$:
+```math
+\begin{align}
+\Omega &= \Omega_0 + (t - t_0)\dot\Omega \\
+\varpi &= \varpi_0 + (t - t_0)\dot\varpi
+\end{align}
+```
+**3. Calculate the new $\omega$.**
+
+We reverse Step 1.\
+First we find the new $\Lambda$:
+```math
+\Lambda = \varpi - \Omega
+```
+In step 1, $\Lambda$ was given by
+```math
+\begin{align}
+\Lambda &= \arctan(\sin(\omega) \cos(i), \cos(\omega)) \\
+\therefore \tan(\Lambda) &= \frac{\sin(\omega)\cos(i)}{\cos(\omega)} \\
+\therefore \frac{\tan(\Lambda)}{\cos(i)} &= \frac{\sin(\omega)}{\cos(\omega)}
+\end{align}
+```
+This can be expressed as:
+```math
+\begin{align}
+\frac{\sin(\Lambda)}{\cos(i)} &= \sin(\omega)\\
+\cos(\Lambda) &= \cos(\omega)
+\end{align}
+```
+Thus
+```math
+\omega = \arctan\left(\frac{\sin(\Lambda)}{\cos(i)}, \cos(\Lambda)\right).\tag{36}
+```
+
+Furthermore, we can calculate the rate of change of $\omega$ $(\dot\omega)$ from $\dot\Omega$ and $\dot\varpi$:\
+We can introduce some ambiguity by saying:
+```math
+\omega = \arctan\left(\frac{\tan(\Lambda)}{\cos(i)}\right)
+```
+Then,
+```math
+\dot\omega = \frac{\cos^2(i)}{\cos^2(i) + \tan^2(\Lambda)}\cdot\frac{\sec^2(\Lambda)}{\cos(i)}\cdot\dot\Lambda
+```
+But since $\Lambda = \varpi - \Omega$,
+```math
+\dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{37}
+```
+Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
+```math
+\begin{align}
+\Lambda &= \arctan(\tan(\omega) \cos(i))\\
+\therefore\dot\Lambda &= \frac{1}{1 + \tan^2(\omega)\cos^2(i)}\cdot\cos(i)\sec^2(\omega)\cdot\dot\omega
+\end{align}
+```
+But since $\varpi = \Lambda + \Omega$,
+```math
+\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{38}
+```
 ### The Two Types of Moons
 This table lists some of the Solar System's most prominent moons:
 ```math
@@ -78,10 +195,10 @@ Then, the nodal precession rate is given as:
 \dot\Omega = K\cos(i)\tag{36}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
-Note that nodal precession is always in the direction opposite to the orbit, and therefore also called the *node regression*.
+Note that nodal precession is always in the direction opposite to the orbit.
 
 The apsidal recession rate is given as:
 ```math
 \dot\omega = K\left(\frac{5}{2}\sin^2(i)-2\right)\tag{37}
 ```
-Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit, and therefore apsidal precession is also called the *periapsis advance*.
+Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
