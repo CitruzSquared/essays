@@ -82,7 +82,7 @@ First we find the new $\Lambda$:
 ```math
 \Lambda = \varpi - \Omega
 ```
-In step 1, $\Lambda$ was given by
+In step 1, we found out that $\Lambda$ was given by
 ```math
 \begin{align}
 \Lambda &= \arctan(\sin(\omega) \cos(i), \cos(\omega)) \\
