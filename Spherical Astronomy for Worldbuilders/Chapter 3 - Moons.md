@@ -319,7 +319,7 @@ Well, we can make a *very* crude approximation that the planet is a perfect sphe
 ```math
 J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{44}
 ```
-where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated by the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
+where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated from the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
 ```math
 f = \frac{R_E - R_P}{R_E}\tag{45}
 ```
