@@ -12,7 +12,8 @@ While the orbits of the planets also precess, the rate of precession is so slow 
 ### Change in Ω and ω
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/252eaf18-8ac0-4aba-84df-65d6bb087387" width="350"/> This image depicts the orbit of a moon $Q$ around a planet $O$. We have projected the periapsis of the orbit of the object $Q$ (the point $P$) down to the reference plane, and thus have created a new point $P'$. As we have discussed previously, the angle $NOP$ is known as the argument of periapsis and is denoted $\omega$. The angle $AOP'$ (measured in the direction of the orbit) is known as the [*longitude of periapsis*](https://en.wikipedia.org/wiki/Longitude_of_the_periapsis) and is denoted $\varpi$ (a variant of the letter $\pi$).
 
-When discussing apsidal precession, it is usually the precession of the **longitude** of periapsis in question, not the *argument* of periapsis. However, the nodal precession simply refers to the longitude of the ascending node. Thus, if the nodes precess at a rate $\dot\Omega$, the longitude of the ascending node at time $t$ is given as:
+When discussing apsidal precession, it is usually the precession of the **longitude** of periapsis in question, not the *argument* of periapsis. However, the nodal precession simply refers to the longitude of the ascending node. \
+These precession rates are not uniform in reality but they can be modeled as being more or less uniform. Thus, if the nodes precess at a rate $\dot\Omega$, the longitude of the ascending node at time $t$ is given as:
 ```math
 \Omega = \Omega_0 + (t - t_0)\dot\Omega \tag{33}
 ```
@@ -162,7 +163,7 @@ Compared to the true values:
 \omega &= 322\degree\enspace46'\enspace12''
 \end{align}
 ```
-We came close considering we are only taking into account only one perturbation effect (simple precession) out of almost infinitely many.\
+We came close considering we assume precession is uniform.\
 $\blacksquare$
 
 Furthermore, we can calculate the rate of change of $\omega$ $(\dot\omega)$ from $\dot\Omega$ and $\dot\varpi$:\
