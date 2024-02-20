@@ -58,7 +58,7 @@ A + B + C &= 180\degree \\
 ### Trigonometry
 ```math
 \begin{align}
-\text{trig}(\alpha + 360\degree) &= \text{trig}(\alpha)
+\text{trig}(\alpha + 360\degree) &= \text{trig}(\alpha)\\
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
 \cos(\alpha) &= \cos(-\alpha) = -\cos(\alpha + 180\degree) = -\cos(180\degree - \alpha)\\
