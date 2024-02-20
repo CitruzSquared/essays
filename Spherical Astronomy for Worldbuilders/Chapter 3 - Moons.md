@@ -113,8 +113,8 @@ We can now use the new $\Omega$ and $\omega$ in equation $31$ to calculate the c
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that the Moon has an inclination value of $5.14\degree$, and that the Moon's precession values are: <br/>
-$\dot\Omega = -1\text{ rev}/6793 \text{ dy}$ and $\dot\varpi = 1\text{ rev}/3233 \text{ dy}$ <br/>  
+The Moon has an inclination value of $5.14\degree$, and that the Moon's precession values are: <br/>
+$\dot\Omega = -1\text{ rev}/6793 \text{ dy}$ and $\dot\varpi = 1\text{ rev}/3233 \text{ dy}$. <br/>  
 Given that on $\text{January 1, } 2020$, $\Omega = 98\degree\enspace8'\enspace24''$ and $\omega = 81\degree\enspace39'$, calcaulate $\Omega$ and $\omega$ on $\text{January 1, } 2024$.
 <img width="2000" height="0">
 </td>
