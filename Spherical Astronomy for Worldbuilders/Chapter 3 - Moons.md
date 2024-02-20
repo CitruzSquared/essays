@@ -360,7 +360,7 @@ Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \le
 <td align="center">
 <img width="2000" height="0"><br>
 Given that for Mars: <br/>
-$R_\text{avg} = 3\:389\:500 \text{ m}$ and $M = 6.4171\cdot10^23\text{ kg}$, <br/>
+$R_\text{avg} = 3\:389\:500 \text{ m}$ and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
 And for Phobos: <br/>
 $a = 9\:376\:000\text{ m}$, $e = 0.0151$, $T = 0.31891\text{ dy}$, and $i = 1.85\degree$, <br/>
 Find the precession rates of Phobos in units of $\degree/\text{dy}$.
