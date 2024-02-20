@@ -221,7 +221,7 @@ Thus it would be more appropriate to call these moons "Orbit-aligned moons" and 
 
 ### Orbit-Aligned Moons
 Orbit aligned moons have precessions resulting from the gravitational perturbation from the Sun. It can be shown that this perturbation mostly depends on the $T_M/T_P$ ratio, which we denote by $m$.\
-Solving very complex equations of motion [that can be found here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html) leads to these two formulae (derivation too complex to write here):
+Solving very complex equations of motion (that can be found [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html)) leads to these two formulae (derivation too complex to write here):
 ```math
 \begin{align}
 \dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{39}\\ 
