@@ -49,6 +49,8 @@ A + B + C &= 180\degree \\
 \end{align}
 ```
 
+<br/>
+
 ### Trigonometry
 ```math
 \begin{align}
