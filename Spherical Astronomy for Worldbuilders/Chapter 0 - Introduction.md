@@ -103,7 +103,7 @@ Two Argument Arctangent:
 \end{align}
 ```
 ### Vectors
-Most of this is nonessential to this post.
+Most of these vector properties are nonessential to this post.
 ```math
 \begin{align}
 \textbf{v} &= \begin{bmatrix}
