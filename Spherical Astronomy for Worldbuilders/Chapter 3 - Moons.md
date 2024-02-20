@@ -244,7 +244,7 @@ Solving very complex equations of motion (that can be found [here](https://farsi
 \dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{42}
 \end{align}
 ```
-These formulae are not exact as they ignore small terms such as $e^2$, $e'^2$, $i^2$, and $a/a'$ (where the $x'$ denotes the parameter $x$ of the primary planet), but they are good enough.
+These formulae are not exact as they ignore small terms such as $e^2$, $e'^2$, $i^2$, and $a/a'$ (where the $x'$ denotes the parameter $x$ of the primary planet). Thus, for the formula to work best, $e$ and $i$ for the Moon must be small.
 
 Equations $41$ and $42$ give results in units of $\text{rev}/T_P$.
 
