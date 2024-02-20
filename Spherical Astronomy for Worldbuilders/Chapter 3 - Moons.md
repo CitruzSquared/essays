@@ -66,15 +66,20 @@ The table of $J_2$ values by planet in the Solar System is given here:
 \text{Neptune} & 3.411\cdot10^{-3} & 0.017080 & 2.69509\cdot10^{-3}\\ \hline
 \end{array}
 ```
-Evidently, the approximation is very crude; however it's the best we got. Now that we have $J_2$, we can calculate the precession rates:
+Evidently, the approximation is very crude; however it's the best we got. Now that we have $J_2$, we can calculate the precession rates.\
+The precession depends on this value which we will call $Q$:
+```math
+Q = -\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\tag{35}
+```
+Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
 - Nodal Precession Rate
 ```math
-\dot\Omega = -\left[\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\right]\cos(i)\tag{35}
+\dot\Omega = Q\cos(i)\tag{36}
 ```
-Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$, $e$, and $i$ are the semi-major axis, eccentricity, and inclination (with respect to the equator) of the orbit of the satellite respectively.\
+where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit, and therefore also called the *node regression*.
 - Apsidal Precession Rate
 ```math
-\dot\omega = -\left[\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\right]\left(\frac{5}{2}\sin^2(i)-2\right)\tag{36}
+\dot\omega = Q\left(\frac{5}{2}\sin^2(i)-2\right)\tag{37}
 ```
 Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit, and therefore apsidal precession is also called the *periapsis advance*.
