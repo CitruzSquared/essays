@@ -140,7 +140,10 @@ v_1 \\ v_2 \\ v_3
 \end{bmatrix}\\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
 \textbf{v}\cdot\textbf{u} &= v_1u_1 + v_2u_2 + v_3u_3 \\
+\textbf{v}\cdot\textbf{u} &= |\textbf{v}||\textbf{u}|\cos(\theta)\\
+\textbf{v}\cdot\textbf{v} &= |\textbf{v}|^2\\
 \textbf{v}\times\textbf{u} &= (v_2u_3-v_3u_2)\textbf{i} + (v_3u_1-v_1u_3)\textbf{j} + (v_1u_2-v_2u_1)\textbf{k}\\
+|\textbf{v}\times\textbf{u}| &= |\textbf{v}||\textbf{u}|\sin(\theta)\\
 \textbf{v}\times\textbf{u} &= -\textbf{u}\times\textbf{v}\\
 \textbf{v}\times\textbf{v} &= \textbf{0}\\
 (\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{v}\cdot\textbf{u})\textbf{w}\\
