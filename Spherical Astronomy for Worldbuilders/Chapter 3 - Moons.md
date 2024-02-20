@@ -428,7 +428,7 @@ Let's check our answers. A data sheet gives values of
 ```
 Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $39$ with the data sheet values ($i = 1.09\degree$ is very small):
 ```math
-\dot\omega = 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
+\dot\omega \approx 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
 ```
 We can see we came pretty close.\
 $\blacksquare$
