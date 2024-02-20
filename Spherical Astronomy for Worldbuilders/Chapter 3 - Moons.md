@@ -256,7 +256,7 @@ Solving extremely complex equations of motion (that can be found [here](https://
 \dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{43}
 \end{align}
 ```
-These formulae are not exact as they ignore small terms such as $e_M^2$, $e_P^2$, $i^2$, and $a_M/a_P$. Thus, for the formula to work best, these parameters for the Moon - Planet system **must be relatively small**.
+These formulae are not exact as they ignore small terms involving $e_M^2$, $e_P^2$, $i^2$, and $a_M/a_P$ (not ignoring these would make the formulae even more complicated). Thus, for the formula to work best, these parameters for the Moon - Planet system **must be relatively small**.
 
 Equations $42$ and $43$ give results in units of $\text{rev}/T_P$.
 
@@ -306,7 +306,7 @@ Thus,
 \dot\varpi &= \frac{365.242\text{ dy}/\text{yr}}{0.114575\text{ rev}/\text{yr}} = 3187.8\text{ dy}/\text{rev}
 \end{align}
 ```
-These periods of $-6831.7 \text{ dy}$ and $3187.8\text{ dy}$ do not differ much from their true values of $-6793 \text{ dy}$ and $3233\text{ dy}$, and they are called the *nodal precession period* and *apsidal precession period* respectively.\
+These periods of $-6831.7 \text{ dy}$ and $3187.8\text{ dy}$ do not differ much from their true values of $-6793 \text{ dy}$ and $3233\text{ dy}$ (the discrepancy comes from ignoring terms involving $e_M^2$, $e_P^2$, $i^2$, and $a_M/a_P$), and they are called the *nodal precession period* and *apsidal precession period* respectively.\
 $\blacksquare$
 
 There are also more minor perturbations in the lunar orbit by the Sun, called the evection, variation, and the annual equation. Those can be read about [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html) in detail.
