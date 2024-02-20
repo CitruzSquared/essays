@@ -71,7 +71,7 @@ Evidently, the approximation is very crude; however it's the best we got. Now th
 ```math
 \dot\Omega = -\left[\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\right]\cos(i)\tag{35}
 ```
-Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$, $e$, and $i$ are the semi-major axis, eccentricity, and inclination of the orbit of the satellite respectively.\
+Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$, $e$, and $i$ are the semi-major axis, eccentricity, and inclination (with respect to the equator) of the orbit of the satellite respectively.\
 Note that nodal precession is always in the direction opposite to the orbit, and therefore also called the *node regression*.
 - Apsidal Precession Rate
 ```math
