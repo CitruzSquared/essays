@@ -191,7 +191,7 @@ Thus, if one wanted, they could now calculate the new $\omega$ by:
 \omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{38}
 ```
 But this is not recommended because $\dot\omega$ is a very complex function, unless in cases such as:\
-If $i$ is extremely small, then $\cos(i) \approx 1$, and:
+If $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\omega &= \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
@@ -210,7 +210,7 @@ But since $\varpi = \Lambda + \Omega$,
 ```math
 \dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{40}
 ```
-Note that if $i$ is extremely small, then $\cos(i) \approx 1$, and:
+Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\varpi &= \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
@@ -262,9 +262,9 @@ Equations $42$ and $43$ give results in units of $\text{rev}/T_P$.
 
 Copyable version:
 ```
-Nodal Precession = -3/4m + 9/32m^2 + 273/128m^3 + 9797/2048m^4 + 199273/24576m^5 + 6657733/589825m^6
+Nodal Precession = -3/4*m + 9/32*m^2 + 273/128*m^3 + 9797/2048*m^4 + 199273/24576*m^5 + 6657733/589825*m^6
 
-Apsidal Precession = 3/4m + 225/32m^2 + 4071/128m^3 + 265493/2048m^4 + 12822631/24576m^5 + 1273925965/589824m^6 + 66702631253/077888m^7 + 29726828924189/679477248m^8
+Apsidal Precession = 3/4*m + 225/32*m^2 + 4071/128*m^3 + 265493/2048*m^4 + 12822631/24576*m^5 + 1273925965/589824*m^6 + 66702631253/077888*m^7 + 29726828924189/679477248*m^8
 ```
 
 #### Example 8
@@ -335,7 +335,7 @@ The precession depends on this value which we will call $K$ for simplicity:
 ```math
 K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{46}
 ```
-Where $n$ and $R_{\text{avg}}$ are the mean motion and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
+Where $R_{\text{avg}}$ is the average radius of the planet, and $a$, $n$, and $e$ are the semi-major axis, mean motion, and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
@@ -353,3 +353,61 @@ Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $
 \omega = \omega_0 + (t - t_0)\dot\omega\tag{49}
 ```
 Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
+#### Example 9
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that for Mars: <br/>
+$R_\text{avg} = 3\:389\:500 \text{ m}$ and $M = 6.4171\cdot10^23\text{ kg}$,
+And for Phobos: <br/>
+$a = 9\:376\:000\text{ m}$, $e = 0.0151$, $T = 27553.84s$, and $i = 1.85\degree$, <br/>
+Find the precession rates of Phobos in units of $\degree/\text{dy}$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+First we find $K$ by equation $46$.
+```math
+\begin{align}
+K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
+&= \frac{3\cdot(1.96045\cdot10^{-3})\cdot(2\pi/27553.84)\cdot(3389500)^2}{2\cdot(9376000)^2\cdot(1-0.0151^2)^2}\\
+&= 8.76756338 \cdot10^{-8} \text{ rad}/s
+&= 0.43402554 \degree/\text{dy}
+\end{align}
+```
+Then, $\dot\Omega$ is given by equation $47$:
+```math
+\begin{align}
+\dot\Omega &= -K \cos(i) \\
+&= -0.4340255 \cdot \cos(1.85\degree) \\
+&= -0.4337993 \degree/\text{dy}
+\end{align}
+```
+And $\dot\omega$ by equation $48$:
+```math
+\begin{align}
+\dot\omega &= -K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
+&= 0.4340255 \cdot \left(2 - \frac{5}{2}\sin^2(1.85\degree)\right) \\
+&= 0.8669202 \degree/\text{dy}
+\end{align}
+```
+Let's check our answers. An [article](https://iopscience.iop.org/article/10.1088/0004-6256/139/2/668#aj329033s7) gives values of
+```math
+\begin{align}
+\dot\Omega &= -0.4358 \degree/\text{dy}\\
+\dot\varpi &= 0.4352 \degree/\text{dy}
+\end{align}
+```
+Using the data sheet values with equation $39$ ($i = 1.85\degree$ is very small):
+```math
+\dot\omega = 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
+```
+We can see we came pretty close.\
+$\blacksquare$
+
+### Multi Moon Systems
+For multi moon systems, the math gets increasingly difficult, and the best way to calculate the location of the moons is with a numerical integrator of the equations of motion. I recommend just making up precession values for multi moon systems.
