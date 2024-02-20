@@ -66,7 +66,7 @@ And so finally:
 ```math
 \varpi_0 = \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0)) \tag{35}
 ```
-**Step 2. Add the precessions separately**
+**Step 2. Add the precessions**
 
 We use equations $33$ and $34$:
 ```math
