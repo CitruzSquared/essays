@@ -20,6 +20,8 @@
      * Equations $29$ to $32$
      * Examples $6$ to $7$
 3. Moons
+   - Equations $33$ to $49$
+   - Examples $8$ to $10$
 4. Appearance
 5. Horizontal Coordinates
 6. Time
