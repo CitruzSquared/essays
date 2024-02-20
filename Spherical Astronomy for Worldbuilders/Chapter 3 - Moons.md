@@ -55,7 +55,7 @@ $M$ is the mass of the planet.
 
 The table of $J_2$ values by planet in the Solar System is given here:
 ```math
-\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Approximate } J_2 \\ \hline
+\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }33 \\ \hline
 \text{Mercury} & 60\cdot10^{-6} & 0.000900 & 600\cdot 10^{-6}\\
 \text{Venus} & 4.458\cdot10^{-6} & 0.000000 & 0.02\cdot 10^{-6}\\
 \text{Earth} & 1.08263\cdot10^{-3} & 0.003353 & 1.08136\cdot10^{-3} \\
