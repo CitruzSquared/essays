@@ -33,8 +33,8 @@
 (a + b)(c + d) &= ac + ad + bc + bd\\
 x^{a/b} &= \sqrt[b]{x^a} \\
 x^{-a} &= \frac{1}{x^a} \\
-x^a\cdotx^b = x^{a + b}
-\left(x^a\right)^b=x^{ab}
+x^a\cdot x^b &= x^{a + b} \\
+\left(x^a\right)^b & =x^{ab} \\
 ax^2 + bx + c &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \end{align}
 ```
