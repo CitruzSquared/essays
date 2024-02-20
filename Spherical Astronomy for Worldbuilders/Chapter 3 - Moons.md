@@ -303,9 +303,9 @@ There are also more minor perturbations in the lunar orbit by the Sun, called th
 
 ### Equator-Aligned Moons
 
-Unfortunately, the derivation of the precession rate of satellites is too complex to be written here, but they depend on the gravitational potential field of the Earth, which can be expressed as an infinite series with coefficients involving [zonal spherical harmonics](https://en.wikipedia.org/wiki/Zonal_spherical_harmonics) $J_1, J_2, J_3, \cdots$ . Fortunately, $J_2$ is about a thousand times larger than all the other terms, so we can focus on the $J_2$ term and ignore the others. Unfortunately, $J_2$ is not easily calculable. It depends on the specific distribution of mass in the three-dimensional structure of the Earth, and the only way to truly know the value of $J_2$ is through observation of the precession rates. So what to do? 
+The precession rates of equator aligned moons depend on the gravitational potential field of the primary planet, which can be expressed as an infinite series with coefficients involving [zonal spherical harmonics](https://en.wikipedia.org/wiki/Zonal_spherical_harmonics) $J_1, J_2, J_3, \cdots$ . Fortunately, $J_2$ is about a thousand times larger than all the other terms, so we can focus on the $J_2$ term and ignore the others. Unfortunately, $J_2$ is not easily calculable. It depends on the specific distribution of mass in the three-dimensional structure of the primary, and the only way to truly know the value of $J_2$ is through observation of the precession rates. So what now? 
 
-Well, we can make a *very* crude approximation that the Earth is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
+Well, we can make a *very* crude approximation that the planet is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
 J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{44}
 ```
