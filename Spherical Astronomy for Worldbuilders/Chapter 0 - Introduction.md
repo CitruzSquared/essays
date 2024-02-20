@@ -94,7 +94,7 @@ A + B + C &= 180\degree \\
 \\
 \frac{d}{dx} [af(x) + bg(x)] &= a\frac{d}{dx}f(x) + b\frac{d}{dx}g(x)\\
 \frac{d}{dx} [f(x)g(x)] &= \frac{df(x)}{dx}g(x) + f(x)\frac{dg(x)}{dx}\\
-\frac{d}{dc} \left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx}f(x)g(x) + f(x)\frac{d}{dx}g(x)}{g(x)^2}
+\frac{d}{dc} \left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx}f(x)g(x) + f(x)\frac{d}{dx}g(x)}{g(x)^2} \\
 \frac{dy}{dt} &= \frac{dy}{dx_1}\frac{dx_1}{dx_2}\frac{dx_2}{dx_3}\cdots\frac{dx_{n-1}}{dx_n}\frac{dx_n}{dt} \\
 \end{align}
 ```
