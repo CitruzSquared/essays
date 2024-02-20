@@ -95,6 +95,28 @@ A + B + C &= 180\degree \\
 \frac{d}{dx} [f(x)g(x)] &= \frac{df(x)}{dx}g(x) + f(x)\frac{dg(x)}{dx}
 \end{align}
 ```
+### Vectors
+```math
+\begin{align}
+\textbf{v} &= v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} = \begin{bmatrix}
+v_1 \\ v_2 \\ v_3
+\end{bmatrix}\\
+|\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
+c\textbf{v} + d\textbf{u} &= \begin{bmatrix}
+cv_1 + du_1 \\ cv_1 + du_2 \\ cv_3 + du_3
+\end{bmatrix}\\
+\textbf{v}\cdot\textbf{u} &= v_1u_1 + v_2u_2 + v_3u_3 \\
+&= \textbf{u}\cdot\textbf{v}\\
+&= |\textbf{v}||\textbf{u}|\cos(\theta)\\
+\textbf{v}\cdot\textbf{v} &= |\textbf{v}|^2\\
+\textbf{v}\times\textbf{u} &= (v_2u_3-v_3u_2)\textbf{i} + (v_3u_1-v_1u_3)\textbf{j} + (v_1u_2-v_2u_1)\textbf{k}\\
+&= -\textbf{u}\times\textbf{v}\\
+|\textbf{v}\times\textbf{u}| &= |\textbf{v}||\textbf{u}|\sin(\theta)\\
+\textbf{v}\times\textbf{v} &= \textbf{0}\\
+(\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{v}\cdot\textbf{u})\textbf{w}\\
+\textbf{v}\times(\textbf{u}\times\textbf{w}) &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{u}\cdot\textbf{w})\textbf{v}
+\end{align}
+```
 ### Matrices
 ```math
 \begin{align}
@@ -149,27 +171,5 @@ a_7b_1 + a_8b_4 + a_9b_7 & a_7b_2 + a_8b_5 + a_9b_8 & a_7b_3 + a_8b_6 + a_9b_9
 \end{bmatrix}\\
 \\
 AB &\neq BA
-\end{align}
-```
-### Vectors
-```math
-\begin{align}
-\textbf{v} &= v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} = \begin{bmatrix}
-v_1 \\ v_2 \\ v_3
-\end{bmatrix}\\
-|\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
-c\textbf{v} + d\textbf{u} &= \begin{bmatrix}
-cv_1 + du_1 \\ cv_1 + du_2 \\ cv_3 + du_3
-\end{bmatrix}\\
-\textbf{v}\cdot\textbf{u} &= v_1u_1 + v_2u_2 + v_3u_3 \\
-&= \textbf{u}\cdot\textbf{v}\\
-&= |\textbf{v}||\textbf{u}|\cos(\theta)\\
-\textbf{v}\cdot\textbf{v} &= |\textbf{v}|^2\\
-\textbf{v}\times\textbf{u} &= (v_2u_3-v_3u_2)\textbf{i} + (v_3u_1-v_1u_3)\textbf{j} + (v_1u_2-v_2u_1)\textbf{k}\\
-&= -\textbf{u}\times\textbf{v}\\
-|\textbf{v}\times\textbf{u}| &= |\textbf{v}||\textbf{u}|\sin(\theta)\\
-\textbf{v}\times\textbf{v} &= \textbf{0}\\
-(\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{v}\cdot\textbf{u})\textbf{w}\\
-\textbf{v}\times(\textbf{u}\times\textbf{w}) &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{u}\cdot\textbf{w})\textbf{v}
 \end{align}
 ```
