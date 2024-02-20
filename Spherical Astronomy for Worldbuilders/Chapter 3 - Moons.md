@@ -71,13 +71,15 @@ The precession depends on this value which we will call $K$ for simplicity:
 ```math
 K = -\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\tag{35}
 ```
-Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.\
+Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
+
 Then, the nodal precession rate is given as:
 ```math
 \dot\Omega = K\cos(i)\tag{36}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
-Note that nodal precession is always in the direction opposite to the orbit, and therefore also called the *node regression*.\
+Note that nodal precession is always in the direction opposite to the orbit, and therefore also called the *node regression*.
+
 The apsidal recession rate is given as:
 ```math
 \dot\omega = K\left(\frac{5}{2}\sin^2(i)-2\right)\tag{37}
