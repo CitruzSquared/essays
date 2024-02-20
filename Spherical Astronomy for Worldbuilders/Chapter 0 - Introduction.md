@@ -195,3 +195,34 @@ a_3 & a_6 & a_9
 \end{bmatrix}
 \end{align}
 ```
+Rotation Matrices:
+```math
+\textbf{v}_{\text{rotated}} = R\textbf{v}_{\text{original}}
+```
+- Rotation about the $x$-axis:
+```math
+R = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos(\theta) & -\sin(\theta) \\
+0 & \sin(\theta) & \cos(\theta)
+\end{bmatrix}
+```
+- Rotation about the $y$-axis:
+```math
+R = 
+\begin{bmatrix}
+\cos(\theta) & 0 & \sin(\theta)\\
+0 & 1 & 0\\
+-\sin(\theta) & 0 & \cos(\theta)
+\end{bmatrix}
+```
+- Rotation about the $z$-axis:
+```math
+R = 
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta) & 0 \\
+\sin(\theta) & \cos(\theta) & 0 \\
+0 & 0 & 1\\
+\end{bmatrix}
+```
