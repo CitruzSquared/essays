@@ -46,7 +46,7 @@ S &= \frac{1}{2}ab\sin(C)\\
 &= \frac{1}{2}cb\sin(A)\\
 &= \frac{1}{2}ac\sin(B)\\
 \pi\text{ rad} &= 180\deg\\
-1\deg &= 60' &= 3600''
+1\deg &= 60' = 3600''
 \end{align}
 ```
 
