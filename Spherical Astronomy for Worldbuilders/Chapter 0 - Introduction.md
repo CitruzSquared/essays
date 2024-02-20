@@ -30,7 +30,6 @@
 ### Algebra
 ```math
 \begin{align}
-(a + b)(c + d) &= ac + ad + bc + bd\\
 x^{a/b} &= \sqrt[b]{x^a} \\
 x^{-a} &= \frac{1}{x^a} \\
 x^a\cdot x^b &= x^{a + b} \\
