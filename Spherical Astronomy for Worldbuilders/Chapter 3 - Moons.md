@@ -220,6 +220,52 @@ As is apparent, our Moon is vastly different from the other moons of our solar s
 Thus it would be more appropriate to call these moons "Orbit-aligned moons" and "Equator-aligned moons" instead.
 
 ### Orbit-Aligned Moons
+Orbit aligned moons have precessions resulting from the gravitational perturbation from the Sun. It can be shown that this perturbation depends on the $T_M/T_P$ ratio, which we denote by $m$.\
+Solving very complex equations of motion [that can be found here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html) leads to these two formulae (derivation too complex to write here):
+```math
+\begin{align}
+\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{39}\\ 
+\\
+\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{40}
+\end{align}
+```
+These formulae are not exact as they ignore small terms such as $e^2$, $e'^2$, $i^2$, and $a/a'$ (where the $x'$ denotes the parameter $x$ of the primary planet), but they are good enough.
+
+Equations $39$ and $40$ give results in units of $\text{rev}/T_P$.
+
+#### Example 8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that for the Moon and the Earth, <br/>
+$T_M = 27.321 \text{ dy}$ and $T_P = 365.242 \text{ dy}$, <br/>
+Calculate the rate of node regression and perigee advance for the Moon in $\text{dy}/{\text{rev}}$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $39$ and $40$:
+```math
+\begin{align}
+\dot\Omega &= -0.0534631 \text{ rev}/\text{yr}\\
+\dot\varpi &= 0.114575 \text{ rev}/\text{yr}\\
+\end{align}
+```
+Thus,
+```math
+\begin{align}
+\dot\Omega &= \frac{365.242\text{ dy}/\text{yr}}{-0.0534631\text{ rev}/\text{yr}} = -6831.7\text{ dy}/\text{rev}\\
+\dot\varpi &= \frac{365.242\text{ dy}/\text{yr}}{0.114575\text{ rev}/\text{yr}} = 3187.8\text{ dy}/\text{rev}
+\end{align}
+```
+These periods of $-6831.7 \text{ dy}$ and $3187.8\text{ dy}$ do not differ much from their true values of $-6793 \text{ dy}$ and $3233\text{ dy}$, and they are called the *nodal precession period* and *apsidal precession period* respectively.\
+$\blacksquare$
+
+There are also more minor perturbation in the lunar orbit by the Sun, called the evection, variation, and the annual equation. Those can be read about [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html) in detail.
 
 ### Equator-Aligned Moons
 
