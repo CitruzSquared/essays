@@ -6,6 +6,7 @@
 **NOTE!** Some of the derivations of formulae in this guide assumes the reader is familiar with algebra, trigonometry, basic differentiation and integration, basic vector operations, and basic matrix operations. (See § Useful Mathematics)
 
 ## Table of Contents
+### 1. The Ephemeris
 1. Coordinates
    - Equations $1$ to $5$
    - Example $1$
@@ -22,6 +23,7 @@
 3. Moons
    - Equations $33$ to $49$
    - Examples $8$ to $10$
+### 2. Terrestrial Observation
 4. Appearance
 5. Horizontal Coordinates
 6. Time
