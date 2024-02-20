@@ -159,7 +159,7 @@ Compared to the true values:
 ```math
 \begin{align}
 \Omega &= 20\degree\enspace45'\\
-\omega &= 322\degree\enspace46'
+\omega &= 322\degree\enspace46'\enspace12''
 \end{align}
 ```
 We came close considering we are only taking into account only one perturbation effect (simple precession) out of almost infinitely many.\
