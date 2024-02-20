@@ -84,7 +84,7 @@ A + B + C &= 180\degree \\
 ```math
 \begin{align}
 \frac{d}{dx} c &= 0 \\
-\frac{d}{dx} ax^b &= abx^{b-1} \\
+\frac{d}{dx} x^a &= ax^{a-1} \\
 \frac{d}{dx} \sin(x) &= \cos(x) \\
 \frac{d}{dx} \cos(x) &= -\sin(x) \\
 \frac{d}{dx} \tan(x) &= \sec^2(x) \\
