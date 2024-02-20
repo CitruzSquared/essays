@@ -64,7 +64,7 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * By definition of the Ecliptic, the Ecliptic Latitude of the Sun is always $0\degree$.
 
 ### Coordinate Transformations
-[Coordinate transformations](https://en.wikipedia.org/wiki/Astronomical_coordinate_systems#Converting_coordinates) between the three coordinate systems are given via rotation matrix multiplications.
+[Coordinate transformations](https://en.wikipedia.org/wiki/Astronomical_coordinate_systems#Converting_coordinates) between the three coordinate systems are given via rotation matrices – the equatorial frame is just the ecliptic frame rotated by $\varepsilon$ along the $x$-axis.
 
 - **Ecliptic to Equatorial:**
 ```math
