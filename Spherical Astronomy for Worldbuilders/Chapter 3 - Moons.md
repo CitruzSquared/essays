@@ -248,7 +248,7 @@ Apsidal Precession = 3/4m + 225/32m^2 + 4071/128m^3 + 265493/2048m^4 + 12822631/
 <img width="2000" height="0"><br>
 Given that for the Moon and the Earth, <br/>
 $T_M = 27.321 \text{ dy}$ and $T_P = 365.242 \text{ dy}$, <br/>
-Calculate the rate of node regression and perigee advance for the Moon in $\text{dy}/{\text{rev}}$.
+Calculate the periods of node regression and perigee advance for the Moon in $\text{dy}$.
 <img width="2000" height="0">
 </td>
 </tbody>
