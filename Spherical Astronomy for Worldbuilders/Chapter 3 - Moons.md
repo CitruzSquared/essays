@@ -394,7 +394,7 @@ And $\dot\omega$ by equation $48$:
 &= 0.8669202 \degree/\text{dy}
 \end{align}
 ```
-Let's check our answers. An [article](https://iopscience.iop.org/article/10.1088/0004-6256/139/2/668#aj329033s7) gives values of
+Let's check our answers. A data sheet gives values of
 ```math
 \begin{align}
 \dot\Omega &= -0.4358 \degree/\text{dy}\\
