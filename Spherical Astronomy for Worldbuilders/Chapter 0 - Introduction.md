@@ -122,8 +122,8 @@ cv_1 + du_1 \\ cv_1 + du_2 \\ cv_3 + du_3
 \textbf{v}\cdot(\textbf{v}\times\textbf{u}) &= 0 = \textbf{u}\cdot(\textbf{v}\times\textbf{u}) \\
 \\
 \textbf{v}\cdot(\textbf{u}\times\textbf{w}) &= \textbf{u}\cdot(\textbf{w}\times\textbf{v}) = \textbf{w}\cdot(\textbf{v}\times\textbf{u})\\
-(\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{v}\cdot\textbf{u})\textbf{w}\\
-\textbf{v}\times(\textbf{u}\times\textbf{w}) &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{u}\cdot\textbf{w})\textbf{v}
+\textbf{v}\times(\textbf{u}\times\textbf{w}) &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{v}\cdot\textbf{u})\textbf{w}\\
+(\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{u}\cdot\textbf{w})\textbf{v}
 \end{align}
 ```
 ### Matrices
