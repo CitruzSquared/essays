@@ -415,7 +415,7 @@ Let's check our answers. A data sheet gives values of
 \dot\varpi &= 0.4352 \degree/\text{dy}
 \end{align}
 ```
-Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $39$ with the data sheet values ($i = 1.85\degree$ is very small):
+Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $39$ with the data sheet values ($i = 1.093\degree$ is very small):
 ```math
 \dot\omega = 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
 ```
