@@ -233,7 +233,7 @@ This table lists some of the Solar System's most prominent moons:
 ```
 where $a$ is the semi-major axis of the moon's orbit, $R$ is the primary planet's radius, $M_M$ and $M_P$ are the masses of the moon and planet respectively, and $T_M$ and $T_P$ are the orbital periods of the moon and planet respectively.
 
-As is apparent, our Moon is vastly different from the other moons of our solar system: our moon has a much larger $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios than other moons. Turns out, these ratios have profound effects on the precession of the orbits of the moons, and thus a distinction must be made between the two kinds of moons: "Luna-type" moons, and "Io-type" moons. (Note: this is not technical terminology.)
+As is apparent, our Moon is vastly different from the other moons of our solar system: our moon has much larger $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios than other moons. Turns out, these ratios have profound effects on the precession of the orbits of the moons, and thus a distinction must be made between the two kinds of moons: "Luna-type" moons, and "Io-type" moons. (Note: this is not technical terminology.)
 
 - "Luna-type" Moons:
   * Have large $a/R$, $M_M/M_P$, and $T_M/T_P$ ratios.
