@@ -53,7 +53,7 @@ A + B + C &= 180\degree \\
 
 ### Trigonometry
 ```math
-\begin{align}
+\begin{alignat}{2}
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
 \sin(-\alpha) &= -\sin(\alpha) \\
 \cos(-\alpha) &= \cos(\alpha) \\
@@ -65,7 +65,12 @@ A + B + C &= 180\degree \\
 \sin(\alpha\pm\beta) &= \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta) \\
 \cos(\alpha\pm\beta) &= \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta) \\
 \sin^2(\alpha) + \cos^2(\alpha) &= 1 \\
-\end{align}
+\arctan(y, x) &= \arctan(y/x)&&\text{ if } x > 0 \\
+&= \arctan(y/x) + 180\degree&&\text{ if } x < 0 \text{ and } y \geq 0\\
+&= \arctan(y/x) - 180\degree&&\text{ if } x < 0 \text{ and } y < 0\\
+&= \pi/2&&\text{ if } x = 0 \text{ and } y > 0 \\
+&= 3\pi/2&&\text{ if } x = 0 \text{ and } y < 0 \\
+\end{alignat}
 ```
 ### Calculus
 ```math
