@@ -220,7 +220,7 @@ As is apparent, our Moon is vastly different from the other moons of our solar s
 Thus it would be more appropriate to call these moons "Orbit-aligned moons" and "Equator-aligned moons" instead.
 
 ### Orbit-Aligned Moons
-Orbit aligned moons have precessions resulting from the gravitational perturbation from the Sun. It can be shown that this perturbation depends on the $T_M/T_P$ ratio, which we denote by $m$.\
+Orbit aligned moons have precessions resulting from the gravitational perturbation from the Sun. It can be shown that this perturbation mostly depends on the $T_M/T_P$ ratio, which we denote by $m$.\
 Solving very complex equations of motion [that can be found here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html) leads to these two formulae (derivation too complex to write here):
 ```math
 \begin{align}
