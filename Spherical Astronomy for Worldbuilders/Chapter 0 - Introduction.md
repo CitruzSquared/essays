@@ -116,6 +116,7 @@ ca_1 + db_1 & ca_2 + db_2 & ca_3 + db_3 \\
 ca_4 + db_4 & ca_5 + db_5 & ca_6 + db_6 \\
 ca_7 + db_7 & ca_8 + db_8 & ca_9 + db_9
 \end{bmatrix}\\
+\\
 \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 a_4 & a_5 & a_6 \\
@@ -130,6 +131,7 @@ a_1b_1 + a_2b_2 + a_3b_3 \\
 a_4b_1 + a_5b_2 + a_6b_3 \\
 a_7b_1 + a_8b_2 + a_9b_3
 \end{bmatrix}\\
+\\
 \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 a_4 & a_5 & a_6 \\
