@@ -53,23 +53,27 @@ A + B + C &= 180\degree \\
 
 ### Trigonometry
 ```math
-\begin{alignat}{2}
+\begin{align}
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
-\sin(-\alpha) &= -\sin(\alpha) \\
-\cos(-\alpha) &= \cos(\alpha) \\
-\tan(-\alpha) &= -\tan(\alpha) \\
-\sin(\alpha) &= \cos(\alpha - \pi/2) \\
+\sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
+\cos(\alpha) &= \cos(-\alpha) = -\cos(\alpha + 180\degree) = -\cos(180\degree - \alpha)\\
+\tan(\alpha) &= -\tan(-\alpha) = \tan(\alpha + 180\degree) = -\tan(180\degree - \alpha)\\
+\sin(\alpha) &= \cos(\alpha - 90\degree) \\
 \csc(\alpha) &= \frac{1}{\sin(\alpha)}\\
 \sec(\alpha) &= \frac{1}{\cos(\alpha)}\\
 \cot(\alpha) &= \frac{1}{\tan(\alpha)}\\
 \sin(\alpha\pm\beta) &= \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta) \\
 \cos(\alpha\pm\beta) &= \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta) \\
 \sin^2(\alpha) + \cos^2(\alpha) &= 1 \\
+\end{align}
+```
+```math
+\begin{alignat}{2}
 \arctan(y, x) &= \arctan(y/x)&&\text{ if } x > 0 \\
 &= \arctan(y/x) + 180\degree&&\text{ if } x < 0 \text{ and } y \geq 0\\
 &= \arctan(y/x) - 180\degree&&\text{ if } x < 0 \text{ and } y < 0\\
-&= \pi/2&&\text{ if } x = 0 \text{ and } y > 0 \\
-&= 3\pi/2&&\text{ if } x = 0 \text{ and } y < 0 \\
+&= \pi/2\text{ if } x = 0 &&\text{ and } y > 0 \\
+&= 3\pi/2\text{ if } x = 0 &&\text{ and } y < 0 \\
 \end{alignat}
 ```
 ### Calculus
