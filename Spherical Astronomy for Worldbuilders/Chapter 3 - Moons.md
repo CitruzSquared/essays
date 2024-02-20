@@ -335,22 +335,26 @@ The precession depends on this value which we will call $K$ for simplicity:
 ```math
 K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{46}
 ```
-Where $R_{\text{avg}}$ is the average radius of the planet, and $a$, $n$, and $e$ are the semi-major axis, mean motion, and eccentricity of the orbit of the satellite respectively.
+Where $R_{\text{avg}}$ is the average radius of the planet, given by:
+```math
+R_{\text{avg}} = \sqrt[3]{R_E^2 \cdot R_P} \tag{47}
+```
+and $a$, $n$, and $e$ are the semi-major axis, mean motion, and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
-\dot\Omega = -K\cos(i)\tag{47}
+\dot\Omega = -K\cos(i)\tag{48}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit.
 
 The apsidal precession rate is given as:
 ```math
-\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{48}
+\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{49}
 ```
 Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $38$ gives:
 ```math
-\omega = \omega_0 + (t - t_0)\dot\omega\tag{49}
+\omega = \omega_0 + (t - t_0)\dot\omega\tag{50}
 ```
 Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
 #### Example 10
@@ -388,7 +392,7 @@ K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
 &= 0.4339 \degree/\text{dy}
 \end{align}
 ```
-Then, $\dot\Omega$ is given by equation $47$:
+Then, $\dot\Omega$ is given by equation $48$:
 ```math
 \begin{align}
 \dot\Omega &= -K \cos(i) \\
@@ -396,7 +400,7 @@ Then, $\dot\Omega$ is given by equation $47$:
 &= -0.4337 \degree/\text{dy}
 \end{align}
 ```
-And $\dot\omega$ by equation $48$:
+And $\dot\omega$ by equation $49$:
 ```math
 \begin{align}
 \dot\omega &= K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
