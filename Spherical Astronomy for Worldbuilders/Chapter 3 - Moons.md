@@ -359,9 +359,9 @@ Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \le
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that for Mars: <br/>
+Given that for Mars: 
 $J_2 = 1.96045\cdot10^{-3}$, $R_\text{avg} = 3389.5 \text{ km}$, and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
-And for Phobos: <br/>
+And for Phobos: 
 $a = 9376\text{ km}$, $e = 0.0151$, and $i = 1.85\degree$, <br/>
 Find the precession rates of Phobos in units of $\degree/\text{dy}$.
 <img width="2000" height="0">
