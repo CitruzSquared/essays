@@ -190,13 +190,15 @@ Thus, if one wanted, they could now calculate the new $\omega$ by:
 ```math
 \omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{38}
 ```
-Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
+But this is not recommended because $\dot\omega$ is a very complex function, unless in cases such as:\
+If $i$ is extremely small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\omega &= \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
 &= \dot\varpi-\dot\Omega. \tag{39}
 \end{align}
 ```
+And now $\dot\omega$ is a constant and equation $38$ may be used.\
 Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```math
 \begin{align}
@@ -208,7 +210,7 @@ But since $\varpi = \Lambda + \Omega$,
 ```math
 \dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{40}
 ```
-Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
+Note that if $i$ is extremely small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\varpi &= \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
@@ -246,7 +248,7 @@ Thus it would be more appropriate to call these moons "Orbit-aligned moons" and 
 
 ### Orbit-Aligned Moons
 Orbit aligned moons have precessions resulting from the gravitational perturbation from the Sun. It can be shown that this perturbation mostly depends on the $T_M/T_P$ ratio, which we denote by $m$.\
-Solving very complex equations of motion (that can be found [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html)) leads to these two formulae (derivation too complex to write here):
+Solving extremely complex equations of motion (that can be found [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html)) leads to these two formulae (derivation too complex to write here):
 ```math
 \begin{align}
 \dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{42}\\ 
