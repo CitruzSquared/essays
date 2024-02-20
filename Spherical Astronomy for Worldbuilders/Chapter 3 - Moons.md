@@ -336,4 +336,8 @@ The apsidal precession rate is given as:
 ```math
 \dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{47}
 ```
-Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$. Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
+Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, thus for equator aligned moons:
+```math
+\omega = \omega_0 + (t - t_0)\dot\omega\tag{48}
+```
+Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
