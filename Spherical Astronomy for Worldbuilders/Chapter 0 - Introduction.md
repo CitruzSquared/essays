@@ -31,6 +31,8 @@
 ```math
 \begin{align}
 (a + b)(c + d) &= ac + ad + bc + bd\\
+x^{a/b} = \sqrt[b]{x^a}
+x^{-a} = \frac{1}{x^a}
 ax^2 + bx + c &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \end{align}
 ```
