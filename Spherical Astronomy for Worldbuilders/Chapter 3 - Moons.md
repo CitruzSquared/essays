@@ -106,6 +106,7 @@ And so finally:
 ```math
 \omega = \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right).\tag{36}
 ```
+We can now use the new $\Omega$ and $\omega$ in equation $31$ to calculate the coordinates of the moon.
 #### Example 8
 <div align="center">
 <table>
