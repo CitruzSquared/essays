@@ -70,6 +70,8 @@ A + B + C &= 180\degree \\
 \sin(\alpha\pm\beta) &= \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta) \\
 \cos(\alpha\pm\beta) &= \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta) \\
 \sin^2(\alpha) + \cos^2(\alpha) &= 1 \\
+\tan^2(\alpha) + 1 &= \sec^2(\alpha) \\
+\cot^2(\alpha) + 1 &= \csc^2(\alpha)
 \end{align}
 ```
 Two Argument Arctangent:
