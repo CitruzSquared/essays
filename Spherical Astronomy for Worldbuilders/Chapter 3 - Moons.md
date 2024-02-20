@@ -101,6 +101,67 @@ Thus
 ```math
 \omega = \arctan\left(\frac{\sin(\Lambda)}{\cos(i)}, \cos(\Lambda)\right).\tag{36}
 ```
+#### Example 8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that the Moon has an inclination value of $5.14\degree$, and that the Moon's precession values are: <br/>
+$\dot\Omega = -1\text{ rev}/6793 \text{ dy}$ and $\dot\varpi = 1\text{ rev}/3233 \text{ dy}$ <br/>  
+Given that on $\text{January 1, } 2020$, $\Omega = 98\degree\enspace8'\enspace24''$ and $\omega = 81\degree\enspace39'$, calcaulate $\Omega$ and $\omega$ on $\text{January 1, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We follow the algorithm above.\
+We first calculate $\varpi_0$ by equation $35$:
+```math
+\begin{align}
+\varpi_0 &= \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0))\\
+&= 98\degree\enspace8'\enspace24'' + \arctan(\sin(81\degree\enspace39') \cos(5.14\degree), \cos(81\degree\enspace39') \\
+&= 179\degree\enspace45'\enspace24.35''
+\end{align}
+```
+We now use equations $33$ and $34$, where $(t - t_0) = 1461\text{ dy}$:
+```math
+\begin{align}
+\Omega &= \Omega_0 + (t - t_0)\dot\Omega \\
+&= 98\degree\enspace8'\enspace24'' - 1461\cdot\frac{360\degree}{6793}\\
+&= 20\degree\enspace42'\enspace47.65''\\
+\varpi &= \varpi_0 + (t - t_0)\dot\varpi\\
+&= 179\degree\enspace45'\enspace24.35'' + 1461\cdot\frac{360\degree}{3233}\\
+&= 342\degree\enspace26'\enspace29.68''
+\end{align}
+```
+We now find the new $\omega$ by equation $36$.
+```math
+\begin{align}
+\Lambda &= 342\degree\enspace26'\enspace29.68'' - 20\degree\enspace42'\enspace47.65'' \\
+&= 321\degree\enspace43'\enspace42.03''\\
+\therefore\omega &= \arctan\left(\frac{\sin(\Lambda)}{\cos(i)}, \cos(\Lambda)\right) \\
+&= \arctan\left(\frac{\sin(321\degree\enspace43'\enspace42.03'')}{\cos(5.14\degree)}, \cos(321\degree\enspace43'\enspace42.03'')\right)\\
+&= 321\degree\enspace36'\enspace57.69''
+\end{align}
+```
+Thus, on $\text{January 1, } 2024$:
+```math
+\begin{align}
+\Omega &= 20\degree\enspace42'\enspace47.65'\\
+\omega &= 321\degree\enspace36'\enspace57.69''
+\end{align}
+```
+Compared to the true values:
+```math
+\begin{align}
+\Omega &= 20\degree\enspace45'\enspace32.86'\\
+\omega &= 322\degree\enspace46'\enspace10.95''
+\end{align}
+```
+We came close considering we are only taking into account only one perturbation effect (simple precession) out of almost infinitely many.
+$\blacksquare$
 
 Furthermore, we can calculate the rate of change of $\omega$ $(\dot\omega)$ from $\dot\Omega$ and $\dot\varpi$:\
 We can introduce some ambiguity by saying:
