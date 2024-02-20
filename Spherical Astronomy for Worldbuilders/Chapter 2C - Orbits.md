@@ -212,7 +212,7 @@ x \\ y \\ z
 \end{bmatrix}
 \enspace[\text{Gm}]
 ```
-$\blacksquare$.
+$\blacksquare$
 
 In order to get geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
 ```math
