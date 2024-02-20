@@ -163,7 +163,7 @@ Compared to the true values:
 \omega &= 322\degree\enspace46'\enspace12''
 \end{align}
 ```
-We came close considering we assume precession is uniform.\
+We came close considering we assumed precession is uniform.\
 $\blacksquare$
 
 Furthermore, we can calculate the rate of change of $\omega$ $(\dot\omega)$ from $\dot\Omega$ and $\dot\varpi$:\
