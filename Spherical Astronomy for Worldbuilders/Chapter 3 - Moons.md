@@ -409,4 +409,4 @@ We can see we came pretty close.\
 $\blacksquare$
 
 ### Multi Moon Systems
-For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the best way to calculate the location of the moons is with a numerical integrator of the equations of motion. I recommend just making up precession values for multi moon systems.
+For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the only plausible way to calculate the location of the moons is with a numerical integrator of the equations of motion. I recommend just ignoring the perturbation of moons by other moons and just focusing on the perturbations by the equatorial bulge or by the Sun, or making up precession values for multi moon systems.
