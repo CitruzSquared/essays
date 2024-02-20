@@ -84,6 +84,8 @@ A + B + C &= 180\degree \\
 ### Calculus
 ```math
 \begin{align}
+\frac{d}{dx} f(x) &= f'(x)\\
+\\
 \frac{d}{dx} c &= 0 \\
 \frac{d}{dx} x^a &= ax^{a-1} \\
 \frac{d}{dx} \sin(x) &= \cos(x) \\
