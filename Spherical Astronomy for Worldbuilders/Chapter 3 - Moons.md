@@ -306,19 +306,19 @@ The table of $J_2$ values by planet in the Solar System is given here:
 Evidently, the approximation is very crude; however it's the best we've got. Now that we have $J_2$, we can calculate the precession rates.\
 The precession depends on this value which we will call $K$ for simplicity:
 ```math
-K = -\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\tag{35}
+K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{41}
 ```
-Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
+Where $n$ and $R_{\text{avg}}$ are the mean motion and the average radius of the planet respectively, and $a$ and $e$ are the semi-major axis and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
-\dot\Omega = K\cos(i)\tag{36}
+\dot\Omega = K\cos(i)\tag{42}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit.
 
 The apsidal recession rate is given as:
 ```math
-\dot\omega = K\left(\frac{5}{2}\sin^2(i)-2\right)\tag{37}
+\dot\omega = K\left(\frac{5}{2}\sin^2(i)-2\right)\tag{43}
 ```
 Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
