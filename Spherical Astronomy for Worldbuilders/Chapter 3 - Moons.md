@@ -360,9 +360,9 @@ Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \le
 <td align="center">
 <img width="2000" height="0"><br>
 Given that for Mars: <br/>
-$R_\text{avg} = 3\:389\:500 \text{ m}$ and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
+$J_2 = 1.96045\cdot10^{-3}$, $R_\text{avg} = 3389.5 \text{ km}$, and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
 And for Phobos: <br/>
-$a = 9\:376\:000\text{ m}$, $e = 0.0151$, $T = 0.31891\text{ dy}$, and $i = 1.85\degree$, <br/>
+$a = 9376\text{ km}$, $e = 0.0151$, $T = 0.31891\text{ dy}$, and $i = 1.85\degree$, <br/>
 Find the precession rates of Phobos in units of $\degree/\text{dy}$.
 <img width="2000" height="0">
 </td>
@@ -374,7 +374,7 @@ First we find $K$ by equation $46$.
 ```math
 \begin{align}
 K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
-&= \frac{3\cdot(1.96045\cdot10^{-3})\cdot(360\degree/0.31891)\cdot(3389500)^2}{2\cdot(9376000)^2\cdot(1-0.0151^2)^2}\\
+&= \frac{3\cdot(1.96045\cdot10^{-3})\cdot(360\degree/0.31891)\cdot(3389.5)^2}{2\cdot(9376)^2\cdot(1-0.0151^2)^2}\\
 &= 0.43402554 \degree/\text{dy}
 \end{align}
 ```
