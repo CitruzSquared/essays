@@ -194,8 +194,8 @@ But this is not recommended because $\dot\omega$ is a very complex function, unl
 If $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
-\dot\omega &= \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
-&= \dot\varpi-\dot\Omega. \tag{39}
+\dot\omega &\approx \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
+&\approx \dot\varpi-\dot\Omega. \tag{39}
 \end{align}
 ```
 And now $\dot\omega$ is a constant and equation $38$ may be used.\
@@ -213,8 +213,8 @@ But since $\varpi = \Lambda + \Omega$,
 Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
-\dot\varpi &= \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
-&= \dot\omega + \dot\Omega. \tag{41}
+\dot\varpi &\approx \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
+&\approx \dot\omega + \dot\Omega. \tag{41}
 \end{align}
 ```
 Which is consistent with equation $39$.
