@@ -85,7 +85,7 @@ Two Argument Arctangent:
 ### Calculus
 ```math
 \begin{align}
-\frac{d}{dx} c &= 0 \\
+\frac{d}{dx} a &= 0 \\
 \frac{d}{dx} x^a &= ax^{a-1} \\
 \frac{d}{dx} \sin(x) &= \cos(x) \\
 \frac{d}{dx} \cos(x) &= -\sin(x) \\
