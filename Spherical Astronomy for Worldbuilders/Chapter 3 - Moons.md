@@ -160,7 +160,7 @@ Compared to the true values:
 \omega &= 322\degree\enspace46'\enspace10.95''
 \end{align}
 ```
-We came close considering we are only taking into account only one perturbation effect (simple precession) out of almost infinitely many.
+We came close considering we are only taking into account only one perturbation effect (simple precession) out of almost infinitely many.\
 $\blacksquare$
 
 Furthermore, we can calculate the rate of change of $\omega$ $(\dot\omega)$ from $\dot\Omega$ and $\dot\varpi$:\
