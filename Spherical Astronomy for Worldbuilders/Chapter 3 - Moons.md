@@ -99,7 +99,11 @@ This can be expressed as:
 ```
 Thus
 ```math
-\omega = \arctan\left(\frac{\sin(\Lambda)}{\cos(i)}, \cos(\Lambda)\right).\tag{36}
+\omega = \arctan\left(\frac{\sin(\Lambda)}{\cos(i)}, \cos(\Lambda)\right)
+```
+And so finally:
+```math
+\omega = \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right).\tag{36}
 ```
 #### Example 8
 <div align="center">
@@ -139,10 +143,8 @@ We now use equations $33$ and $34$, where $(t - t_0) = 1461\text{ dy}$:
 We now find the new $\omega$ by equation $36$.
 ```math
 \begin{align}
-\Lambda &= 342\degree\enspace26'\enspace29.68'' - 20\degree\enspace42'\enspace47.65'' \\
-&= 321\degree\enspace43'\enspace42.03''\\
-\therefore\omega &= \arctan\left(\frac{\sin(\Lambda)}{\cos(i)}, \cos(\Lambda)\right) \\
-&= \arctan\left(\frac{\sin(321\degree\enspace43'\enspace42.03'')}{\cos(5.14\degree)}, \cos(321\degree\enspace43'\enspace42.03'')\right)\\
+\omega &= \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right) \\
+&= \arctan\left(\frac{\sin(342\degree\enspace26'\enspace29.68'' - 20\degree\enspace42'\enspace47.65'')}{\cos(5.14\degree)}, \cos(342\degree\enspace26'\enspace29.68'' - 20\degree\enspace42'\enspace47.65'')\right)\\
 &= 321\degree\enspace36'\enspace57.69''
 \end{align}
 ```
