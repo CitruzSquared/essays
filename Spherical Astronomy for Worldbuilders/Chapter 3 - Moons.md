@@ -17,7 +17,7 @@ When discussing apsidal precession, it is usually the precession of the **longit
 \Omega = \Omega_0 + (t - t_0)\dot\Omega \tag{33}
 ```
 Where $\Omega_0$ is the longitude of the ascending node at time $t = 0$.\
-If the apses precess at a rate $\dot\varpi$, the argument of periapsis at time $t$ is given as:
+If the apses precess at a rate $\dot\varpi$, the longitude of periapsis at time $t$ is given as:
 ```math
 \varpi = \varpi_0 + (t - t_0)\dot\varpi \tag{34}
 ```
