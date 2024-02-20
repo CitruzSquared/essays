@@ -321,4 +321,4 @@ The apsidal precession rate is given as:
 ```math
 \dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{45}
 ```
-Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
+Note that the formular gives $\dot\omega$ directly and not $\dot\varpi$. Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
