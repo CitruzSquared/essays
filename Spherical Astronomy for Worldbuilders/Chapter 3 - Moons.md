@@ -366,7 +366,7 @@ Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \le
 Given that for Mars: 
 $J_2 = 1.96045\cdot10^{-3}$, $R_\text{avg} = 3389.5 \text{ km}$, and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
 And for Phobos: 
-$a = 9376\text{ km}$, $e = 0.0151$, and $i = 1.093\degree$, <br/>
+$a = 9376\text{ km}$, $e = 0.0151$, and $i = 1.09\degree$, <br/>
 Find the precession rates of Phobos in units of $\degree/\text{dy}$.
 <img width="2000" height="0">
 </td>
@@ -396,7 +396,7 @@ Then, $\dot\Omega$ is given by equation $48$:
 ```math
 \begin{align}
 \dot\Omega &= -K \cos(i) \\
-&= -0.4339 \cdot \cos(1.093\degree) \\
+&= -0.4339 \cdot \cos(1.09\degree) \\
 &= -0.4338 \degree/\text{dy}
 \end{align}
 ```
@@ -404,7 +404,7 @@ And $\dot\omega$ by equation $49$:
 ```math
 \begin{align}
 \dot\omega &= K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
-&= 0.4339 \cdot \left(2 - \frac{5}{2}\sin^2(1.093\degree)\right) \\
+&= 0.4339 \cdot \left(2 - \frac{5}{2}\sin^2(1.09\degree)\right) \\
 &= 0.8674 \degree/\text{dy}
 \end{align}
 ```
@@ -415,7 +415,7 @@ Let's check our answers. A data sheet gives values of
 \dot\varpi &= 0.4352 \degree/\text{dy}
 \end{align}
 ```
-Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $39$ with the data sheet values ($i = 1.093\degree$ is very small):
+Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $39$ with the data sheet values ($i = 1.09\degree$ is very small):
 ```math
 \dot\omega = 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
 ```
