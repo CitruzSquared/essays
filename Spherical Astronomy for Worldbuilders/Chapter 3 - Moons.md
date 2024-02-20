@@ -389,7 +389,7 @@ Then, $\dot\Omega$ is given by equation $47$:
 And $\dot\omega$ by equation $48$:
 ```math
 \begin{align}
-\dot\omega &= -K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
+\dot\omega &= K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
 &= 0.4340255 \cdot \left(2 - \frac{5}{2}\sin^2(1.85\degree)\right) \\
 &= 0.8669202 \degree/\text{dy}
 \end{align}
