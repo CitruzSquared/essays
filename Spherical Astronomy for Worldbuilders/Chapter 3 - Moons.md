@@ -93,10 +93,10 @@ In step 1, we found out that $\Lambda$ was given by
 ```
 This can be expressed as:
 ```math
-\begin{align}
-\frac{\sin(\Lambda)}{\cos(i)} &= \sin(\omega)\\
-\cos(\Lambda) &= \cos(\omega)
-\end{align}
+\begin{cases}
+\frac{\sin(\Lambda)}{\cos(i)} = \sin(\omega)\\
+\cos(\Lambda) = \cos(\omega)
+\end{cases}
 ```
 Thus
 ```math
