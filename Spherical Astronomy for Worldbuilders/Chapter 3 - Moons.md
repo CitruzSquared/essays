@@ -376,7 +376,7 @@ By equation $15$:
 \begin{align}
 T &= \sqrt{\frac{4\pi^2 a^3}{GM}}\\
 &= \sqrt{\frac{4\pi^2 (9376000)^3}{(6.674\cdot10^{-11})(6.4171\cdot10^{23})}}\\
-&= 27564s
+&= 27564s\\
 &= 0.319\text{ dy}
 \end{align}
 ```
