@@ -174,7 +174,7 @@ We came close considering we assumed precession is uniform.\
 $\blacksquare$
 
 Furthermore, we can calculate the rate of change of $\omega$ $(\dot\omega)$ from $\dot\Omega$ and $\dot\varpi$:\
-We can introduce some ambiguity by saying:
+First, let's simplify the expression for $\omega$ (this expression introduces some ambiguities but it's okay for this purpose):
 ```math
 \omega = \arctan\left(\frac{\tan(\Lambda)}{\cos(i)}\right)
 ```
