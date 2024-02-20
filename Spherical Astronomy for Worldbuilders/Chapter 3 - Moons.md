@@ -24,7 +24,7 @@ If the apses precess at a rate $\dot\varpi$, the longitude of periapsis at time 
 Where $\varpi_0$ is the longitude of the periapsis at time $t = 0$.\
 These make sense. However, in our ephemeris calculations, we have $\omega$ and not $\varpi$. Thus we need a way of calculating $\varpi$ from $\omega$ and back. The algorithm below shows how to correctly account for the apsidal precession.
 
-**1. Calculate $\varpi_0$ from $\Omega_0$ and $\omega_0$.**
+**Step 1. Calculate $\varpi_0$ from $\Omega_0$ and $\omega_0$.**
 
 Notice that $\varpi_0 = \Omega_0 + \Lambda_0$, where $\Lambda_0 = NOP'$. $\Lambda$ then is calculated as follows:
 
@@ -66,7 +66,7 @@ And so finally:
 ```math
 \varpi_0 = \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0)) \tag{35}
 ```
-**2. Add the precessions separately**
+**Step 2. Add the precessions separately**
 
 We use equations $33$ and $34$:
 ```math
@@ -75,7 +75,7 @@ We use equations $33$ and $34$:
 \varpi &= \varpi_0 + (t - t_0)\dot\varpi
 \end{align}
 ```
-**3. Calculate the new $\omega$.**
+**Step 3. Calculate the new $\omega$.**
 
 We reverse Step 1.\
 First we find the new $\Lambda$:
