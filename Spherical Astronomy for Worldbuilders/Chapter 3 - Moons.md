@@ -256,7 +256,7 @@ Solving extremely complex equations of motion (that can be found [here](https://
 \dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{43}
 \end{align}
 ```
-These formulae are not exact as they ignore small terms involving $e_M^2$, $e_P^2$, $i_M^2$, and $a_M/a_P$ (not ignoring these would make the formulae even more complicated). Thus, for the formula to work best, these parameters for the Moon - Planet system **must be small**.
+These formulae are not exact as they ignore small terms involving $e_M^2$, $e_P^2$, $i_M^2$, and $a_M/a_P$ (not ignoring these would make the formulae unbearably complicated). Thus, for the formula to work best, these parameters for the Moon - Planet system **must be small**.
 
 Equations $42$ and $43$ give results in units of $\text{rev}/T_P$.
 
