@@ -16,7 +16,7 @@ When discussing apsidal precession, it is usually the precession of the **longit
 These precession rates are not constant in reality but they can be approximated as being more or less constant. Thus, if the nodes precess at a rate $\dot\Omega$, the longitude of the ascending node at time $t$ is given as:
 ```math
 \begin{align}
-\Omega = \Omega_0 + \int_{t_0}{t} \dot\Omega dt
+\Omega = \Omega_0 + \int_{t_0}{t} \dot\Omega dt\\
 &=(t - t_0)\dot\Omega \tag{33}
 \end{align}
 ```
@@ -24,7 +24,7 @@ Where $\Omega_0$ is the longitude of the ascending node at time $t = 0$.\
 If the apses precess at a rate $\dot\varpi$, the longitude of periapsis at time $t$ is given as:
 ```math
 \begin{align}
-\varpi = \varpi_0 + \int_{t_0}{t} \dot\varpi dt
+\varpi = \varpi_0 + \int_{t_0}{t} \dot\varpi dt\\
 &=(t - t_0)\dot\varpi \tag{34}
 \end{align}
 ```
