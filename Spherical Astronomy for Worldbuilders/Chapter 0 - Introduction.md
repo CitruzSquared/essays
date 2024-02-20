@@ -36,7 +36,7 @@ ax^2 + bx + c &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 ```
 
 ### Geometry
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e449dca4-5fe6-4109-a2f5-af740ab8c22b" width="250"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/669a9787-9f70-4c9e-89d5-e7f390f5bdbc" width="250"/>
 
 ```math
 \begin{align}
