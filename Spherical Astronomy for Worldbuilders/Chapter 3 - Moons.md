@@ -38,3 +38,43 @@ As is apparent, our Moon is vastly different from the other moons of our solar s
 Thus it would be more appropriate to call these moons "Equator-aligned moons" and "Orbit-aligned moons" instead.
 
 ### Equator-Aligned Moons
+
+Unfortunately, the derivation of the precession rate of satellites is too complex to be written here, but they depend on the gravitational potential field of the Earth, which can be expressed as an infinite series with coefficients involving [zonal spherical harmonics](https://en.wikipedia.org/wiki/Zonal_spherical_harmonics) $J_1, J_2, J_3, \cdots$ . Fortunately, $J_2$ is about a thousand times larger than all the other terms, so we can focus on the $J_2$ term and ignore the others. Unfortunately, $J_2$ is not easily calculable. It depends on the specific distribution of mass in the three-dimensional structure of the Earth, and the only way to truly know the value of $J_2$ is through observation of the precession rates. So what to do? 
+
+Well, we can make a *very* crude approximation that the Earth is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
+```math
+J_2 \approx \frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\tag{33}
+```
+where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated by the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
+```math
+f = \frac{R_E - R_P}{R_E}\tag{34}
+```
+$w$ is the rotational speed of the planet in $\text{rad}$,\
+$G$ is the gravitational constant, and\
+$M$ is the mass of the planet.
+
+The table of $J_2$ values by planet in the Solar System is given here:
+```math
+\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Approximate } J_2 \\ \hline
+\text{Mercury} & 60\cdot10^{-6} & 0.000900 & 600\cdot 10^{-6}\\
+\text{Venus} & 4.458\cdot10^{-6} & 0.000000 & 0.02\cdot 10^{-6}\\
+\text{Earth} & 1.08263\cdot10^{-3} & 0.003353 & 1.08136\cdot10^{-3} \\
+\text{Mars} & 1.96045\cdot10^{-3} & 0.005890 & 2.39485\cdot10^{-3}\\
+\text{Jupiter} & 14.7360\cdot10^{-3} & 0.064870 & 13.5152\cdot 10^{-3}\\
+\text{Saturn} & 16.2980\cdot10^{-3} & 0.097960 & 12.5902\cdot10^{-3}\\
+\text{Uranus} & 3.34343\cdot10^{-3} & 0.022930 & 5.44115\cdot10^{-3}\\
+\text{Neptune} & 3.411\cdot10^{-3} & 0.017080 & 2.69509\cdot10^{-3}\\ \hline
+\end{array}
+```
+As one can see, the approximation is very crude, however it's the best we got. Now that we have $J_2$, we can calculate the precession rates:
+- Nodal Precession Rate
+```math
+\dot\Omega = -\left[\frac{3}{2}\frac{\sqrt{GM}J_2R_{\text{avg}}^2}{(1-e^2)^2a^{7/2}}\right]\cos(i)\tag{35}
+```
+Where $G$ is the gravitational constant, $M$ and $R_{\text{avg}}$ are the mass and the average radius of the planet respectively, and $a$, $e$, and $i$ are the semi-major axis, eccentricity, and inclination of the orbit of the satellite respectively.\
+Note that nodal precession is always in the direction opposite to the orbit, and therefore also called the *node regression*.
+- Apsidal Precession Rate
+```math
+\dot\omega = -\left[\frac{3}{2}\frac{\sqrt{GM}J_2R_{\text{avg}}^2}{(1-e^2)^2a^{7/2}}\right]\left(\frac{5}{2}\sin^2(i)-2\right)\tag{36}
+```
+Note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit, and therefore apsidal precession is also called the *periapsis advance*.
