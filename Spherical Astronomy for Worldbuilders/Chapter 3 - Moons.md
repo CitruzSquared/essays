@@ -66,7 +66,7 @@ The table of $J_2$ values by planet in the Solar System is given here:
 \text{Neptune} & 3.411\cdot10^{-3} & 0.017080 & 2.69509\cdot10^{-3}\\ \hline
 \end{array}
 ```
-Evidently, the approximation is very crude; however it's the best we got. Now that we have $J_2$, we can calculate the precession rates.\
+Evidently, the approximation is very crude; however it's the best we've got. Now that we have $J_2$, we can calculate the precession rates.\
 The precession depends on this value which we will call $K$ for simplicity:
 ```math
 K = -\frac{3\sqrt{GM}J_2R_{\text{avg}}^2}{2(1-e^2)^2a^{7/2}}\tag{35}
