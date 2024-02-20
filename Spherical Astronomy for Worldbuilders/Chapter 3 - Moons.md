@@ -233,6 +233,13 @@ These formulae are not exact as they ignore small terms such as $e^2$, $e'^2$, $
 
 Equations $39$ and $40$ give results in units of $\text{rev}/T_P$.
 
+Copyable version:
+```
+Nodal Precession = 3/4m + 225/32m^2 + 4071/128m^3 + 265493/2048m^4 + 12822631/24576m^5 + 1273925965/589824m^6 + 66702631253/7077888m^7 + 29726828924189/679477248m^8
+
+Apsidal Precession = 3/4m + 225/32m^2 + 4071/128m^3 + 265493/2048m^4 + 12822631/24576m^5 + 1273925965/589824m^6 + 66702631253/077888m^7 + 29726828924189/679477248m^8
+```
+
 #### Example 8
 <div align="center">
 <table>
