@@ -48,6 +48,7 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 c^2 &= a^2 + b^2 - 2ac\cos(C)\\
 S &= \frac{1}{2}ab\sin(C)\\
 A + B + C &= 180\degree \\
+\\
 2\pi\text{ rad} &= 360\degree = 1\text{ rev}\\
 1\degree &= 60' = 3600''
 \end{align}
