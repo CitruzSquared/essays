@@ -98,9 +98,9 @@ A + B + C &= 180\degree \\
 ### Vectors
 ```math
 \begin{align}
-\textbf{v} &= v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} = \begin{bmatrix}
+\textbf{v} &= \begin{bmatrix}
 v_1 \\ v_2 \\ v_3
-\end{bmatrix}\\
+\end{bmatrix} = v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} \\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
 c\textbf{v} + d\textbf{u} &= \begin{bmatrix}
 cv_1 + du_1 \\ cv_1 + du_2 \\ cv_3 + du_3
