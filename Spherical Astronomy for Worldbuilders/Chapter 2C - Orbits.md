@@ -268,7 +268,7 @@ Recall example $5$ where we calculated Earth's perifocal coordinates on this dat
 i &= 0\degree
 \end{align}
 ```
-we get for $(x_{\text{Earth}}, y_{\text{Earth}}, z_{\text{Earth}})$:
+(Remember, only the sum $\Omega + \omega$ matters for the Earth) we get for $(x_{\text{Earth}}, y_{\text{Earth}}, z_{\text{Earth}})$:
 ```math
 \begin{bmatrix}
 x_{\text{Earth}} \\ y_{\text{Earth}} \\ z_{\text{Earth}}
