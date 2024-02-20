@@ -100,7 +100,7 @@ Two Argument Arctangent:
 \\
 \frac{d}{dx} [af(x) + bg(x)] &= af'(x) + bg'(x)\\
 \frac{d}{dx} [f(x)g(x)] &= f'(x)g(x) + f(x)g'(x)\\
-\frac{dy}{dx} &= \frac{dy}{du_1}\frac{du_1}{du_2}\frac{du_2}{du_3}\cdots\frac{du_{n-1}}{du_n}\frac{du_n}{dt} \\
+\frac{dy}{dx} &= \frac{dy}{du_1}\frac{du_1}{du_2}\frac{du_2}{du_3}\cdots\frac{du_{n-1}}{du_n}\frac{du_n}{dx} \\
 \therefore \frac{d}{dx}[f(g(x))] &= f'(g(x))g'(x)\\
 \\
 \int_{a}^{b} f'(x) dx &= f(b) - f(a)
