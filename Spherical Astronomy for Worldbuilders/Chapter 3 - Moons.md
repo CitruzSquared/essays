@@ -368,7 +368,7 @@ Given that for Mars:
 $J_2 = 1.96045\cdot10^{-3}$, $R_\text{avg} = 3389.5 \text{ km}$, and $M = 6.4171\cdot10^{23}\text{ kg}$, <br/>
 And for Phobos: 
 $a = 9376\text{ km}$, $e = 0.0151$, and $i = 1.09\degree$, <br/>
-Find the precession rates of Phobos in units of $\degree/\text{dy}$.
+Find the precession rates of the orbit of Phobos in units of $\degree/\text{dy}$.
 <img width="2000" height="0">
 </td>
 </tbody>
