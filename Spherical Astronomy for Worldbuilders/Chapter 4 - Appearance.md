@@ -170,4 +170,4 @@ When the elongation of any object is $0\degree$, there is no difference in longi
 
 When the elongation is $180\degree = -180\degree$, the object is known to be at [*opposition*](https://en.wikipedia.org/wiki/Opposition_(astronomy)) with the Sun, and can only happen with outer planets (when the outer planet is at $D$) and moons (in which case this is known as the [*full moon*](https://en.wikipedia.org/wiki/Full_moon)). Note that for outer planets, the phase is $\approx100\%$ at both opposition and conjunction.
 
-### Synodic Periods
+### The Synodic Period
