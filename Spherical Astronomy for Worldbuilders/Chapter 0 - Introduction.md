@@ -128,7 +128,8 @@ Two Argument Arctangent:
 \end{align}
 ```
 ### Vectors
-Most of these vector properties are nonessential to this post.
+Most of these vector properties are nonessential to this post.\
+$\textbf{i}, \textbf{j}, \textbf{k}$ are basis vectors.
 ```math
 \begin{align}
 \textbf{v} &= \begin{bmatrix}
