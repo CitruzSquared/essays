@@ -81,14 +81,14 @@ Now we have to find the phase:\
 By equation $55$:
 ```math
 \begin{align}
-\text{Sun - Earth - Venus Angle } &= \arccos(\sin(-23\degree\enspace0'\enspace10'')\sin(-18\degree\enspace57'\enspace52'') + \\&\cos(-23\degree\enspace0'\enspace10'')\cos(-18\degree\enspace57'\enspace52'')\cos(18^h\enspace46^m\enspace38^s - 16^h\enspace07^m\enspace26^s)) \\
+\text{Sun-Earth-Venus Angle } &= \arccos(\sin(-23\degree\enspace0'\enspace10'')\sin(-18\degree\enspace57'\enspace52'') + \\&\cos(-23\degree\enspace0'\enspace10'')\cos(-18\degree\enspace57'\enspace52'')\cos(18^h\enspace46^m\enspace38^s - 16^h\enspace07^m\enspace26^s)) \\
 &= 37\degree\enspace16'\enspace\enspace7.87''
 \end{align}
 ```
 By equation $36$:
 ```math
 \begin{align}
-\text{Sun - Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\enspace16'\enspace\enspace7.87'')}\\
+\text{Sun-Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\enspace16'\enspace\enspace7.87'')}\\
 &= 0.7205 \text{ AU}
 \end{align}
 ```
