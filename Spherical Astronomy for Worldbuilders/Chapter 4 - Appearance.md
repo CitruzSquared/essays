@@ -162,7 +162,7 @@ Let us focus on the inner planet's orbit. When the inner planet (which we will c
 ```math
 \epsilon_{\text{max}} = \arcsin\left(\frac{a_I}{a_O}\right) \tag{61}
 ```
-But because orbits are not perfect circles, this formula (and also the fact that the phase of $I$ is $50\%$ at max elongation) is not exact, and the value of this maximum elongation will change depending on the exact orientation of the planets.
+But because orbits are not perfect circles, this formula (and also the fact that the phase of $I$ is $50$% at max elongation) is not exact, and the value of this maximum elongation will change depending on the exact orientation of the planets.
 
 Now onto the outer planet (which we will call $U$). The outer planet cannot have a maximum elongation, its elongation can take any value between $-180\degree$ and $180\degree$. Moons that orbit the Earth also cannot have a maximum elongation. When the elongation is $90\degree$ (i.e. at the point $Q$ or $Q'$), the planet is known to be at *quadrature*. 
 
