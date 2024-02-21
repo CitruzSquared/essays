@@ -60,7 +60,7 @@ A + B + C &= 180\degree \\
 <br/>
 <br/>
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/ace29e29-229c-47c3-ab50-7cb9a54192ff" width="250"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bf789efb-9131-4177-9556-87214763241f" width="250"/>
 
 ```math
 \begin{align}
