@@ -292,7 +292,7 @@ Calculate the periods of node regression and perigee advance for the Moon in $\t
 </table>
 </div>
 
-For the Moon and Earth:
+For the Moon and the Earth:
 ```math
 \begin{align}
 e_M^2 &= 0.0030\\
