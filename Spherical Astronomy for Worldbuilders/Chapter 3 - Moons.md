@@ -323,7 +323,7 @@ There are also more minor perturbations in the lunar orbit by the Sun, called th
 
 ### Equator-Aligned Moons
 
-The precession rates of equator aligned moons depend on the gravitational potential field of the primary planet, which can be expressed as an infinite series with coefficients involving [zonal spherical harmonics](https://en.wikipedia.org/wiki/Zonal_spherical_harmonics) $J_1, J_2, J_3, \cdots$ . Fortunately, $J_2$ is about a thousand times larger than all the other terms, so we can focus on the $J_2$ term and ignore the others. Unfortunately, $J_2$ is not easily calculable. It depends on the specific distribution of mass in the three-dimensional structure of the primary, and the only way to truly know the value of $J_2$ is through observation of the precession rates. So what now? 
+The precession rates of equator aligned moons depend on the gravitational potential field of the primary planet, which can be expressed as an infinite series with coefficients involving "[zonal spherical harmonics](https://en.wikipedia.org/wiki/Zonal_spherical_harmonics)" $J_1, J_2, J_3, \cdots$ . Fortunately, $J_2$ is about a thousand times larger than all the other terms, so we can focus on the $J_2$ term and ignore the others. Unfortunately, $J_2$ is not easily calculable. It depends on the specific distribution of mass in the three-dimensional structure of the primary, and the only way to truly know the value of $J_2$ is through observation of the precession rates. So what now? 
 
 Well, we can make a *very* crude approximation that the planet is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
