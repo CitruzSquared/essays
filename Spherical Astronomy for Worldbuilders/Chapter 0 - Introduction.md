@@ -53,9 +53,24 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 c^2 &= a^2 + b^2 - 2ac\cos(C)\\
 S &= \frac{1}{2}ab\sin(C)\\
 A + B + C &= 180\degree \\
+\end{align}
+```
+
+<br/>
+<br/>
+<br/>
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/ace29e29-229c-47c3-ab50-7cb9a54192ff" width="250"/>
+
+```math
+\begin{align}
+C &= r\theta\\
+S &= \frac{1}{2}r^2 \theta \\
+(\theta &\text{ in radians})\\
 \\
-2\pi\text{ rad} &= 360\degree = 1\text{ rev}\\
-1\degree &= 60' = 3600''
+2\pi\text{ rad} &= 360\degree = 1\text{ rev} = 24^h\\
+1\degree &= 60' = 3600''\\
+1^h &= 60^m = 3600^s
 \end{align}
 ```
 
