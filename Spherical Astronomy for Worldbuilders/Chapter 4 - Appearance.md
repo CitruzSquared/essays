@@ -110,3 +110,62 @@ Which lines up perfectly with real ephemeris data.\
 $\blacksquare$
 
 ### Elongation
+
+The [*elongation*](https://en.wikipedia.org/wiki/Elongation_(astronomy)) is the difference in ecliptic longitude between an object and the Sun.
+```math
+\epsilon_{\text{Object}} = \lambda_{\text{Object}} - \lambda_{\text{Sun}} \tag{59}
+```
+This angle is expressed in a range of $(-180\degree,180\degree]$. Thus, if the elongation is positive, the object is *East* of the Sun. This means it will rise after the Sun (because the Earth rotates from West to East, things further East will become visible later), and thus also set after the Sun. This means the object will be *visible in the evening*. If the elongation is negative, the object is *West* of the Sun (Remember that ecliptic longitude is measured with East as positive), and by the same reasoning, will be *visible in the morning*. If the elongation is $\approx180\degree$, the object will be visible basically all throughout the night, and if the elongation is $\approx0\degree$, it won't be visible at all since it is too close to the Sun.
+
+#### Example 12
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given the data from example $11$, was Venus a morning star or an evening star on $\text{January 1, } 2024$? <br/>
+Use $\varepsilon = 23.44\degree$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+The data from example 11:
+```math
+\begin{align}
+\alpha_V &= 16^h\enspace07^m\enspace26^s\\
+\delta_V &= -18\degree\enspace57'\enspace52''\\
+\\
+\alpha_S &= 18^h\enspace46^m\enspace38^s \\
+\delta_S &= \delta=-23\degree\enspace0'\enspace10''
+\end{align}
+```
+We need the elongation, so we use equation $1$, $2$, $4$ and equation $59$:
+```math
+\begin{align}
+\lambda_V &= 243\degree\enspace29'\enspace35.63''\\
+\lambda_S &= 280\degree\enspace43'\enspace11.52''\\
+\therefore \epsilon &= -37\degree\enspace13'\enspace35.89''\\
+\end{align}
+```
+The elongation is negative, therefore it is a morning star. Thus the Eastern side of Venus would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun). Combined with the fact that the phase of Venus was $78.2\%$, Venus would look like this in the sky.
+<p align="center">
+  <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/42ac847a-04d5-449e-b73e-f7ecb8331de7">
+</p>
+
+$\blacksquare$
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/f54ce1cc-10c2-4dfd-a5a4-1218b70aa117" width="450"/> In this diagram, the orbit of 3 planets are shown with the Sun at the center $S$. The middle orbit is the orbit of Earth, which is denoted by $O$. The orientation is such that the direction of West to East is counterclockwise.
+
+Let us focus on the inner planet's orbit. When the inner planet (which we will call $I$) is at $E$, its elongation is at its maximum positive value. It is the furthest possible it can be from the Sun. Thus this phenomenon is called "greatest eastern elongation". Similarly, when the inner planet is at $W$, its elongation is at its minimum value (maximum negative value), and thus this phenomenon is called its "greatest western elongation" Because these points $E$ and $W$ happen at the points where the line $OI$ is tangent to the orbit of $I$, the phase of $I$ will more or less be $50\%$ at these points. The maximum elongation can be calculated as:
+```math
+\epsilon_{\text{max}} = \arcsin\left(\frac{a_I}{a_O}\right) \tag{60}
+```
+But because orbits are not perfect circles, this formula (and also the fact that the phase of $I$ is $50\%$ at max elongation) is not exact, and the value of this maximum elongation will change depending on the exact orientation of the planets.
+
+Now onto the outer planet (which we will call $U$). The outer planet cannot have a maximum elongation, its elongation can take any value between $-180\degree$ and $180\degree$. Moons that orbit the Earth also cannot have a maximum elongation. When the elongation is $90\degree$ (i.e. at the point $Q$ or $Q'$), the planet is known to be at *quadrature*. 
+
+When the elongation of any object is $0\degree$, there is no difference in longitude between it and the Sun, and it is known to be [*in conjunction*](https://en.wikipedia.org/wiki/Conjunction_(astronomy)) with the Sun. Note that for inner planets, conjunction can happen at two points in the orbit (at the point $B$ when the phase is $\approx100\%$, and at the point $C$ when the phase is $\approx0\%$). For outer planets, conjunction can only happen when it is on the far side of the Sun (point $A$). For moons, conjunction can only happen when the moon is on the near side of the Sun (phase $\approx0\%$), and this is called the [*new moon*](https://en.wikipedia.org/wiki/New_moon).
+
+When the elongation is $180\degree = -180\degree$, the object is known to be at [*opposition*](https://en.wikipedia.org/wiki/Opposition_(astronomy)) with the Sun, and can only happen with outer planets (when the outer planet is at $D$) and moons (in which case this is known as the [*full moon*](https://en.wikipedia.org/wiki/Full_moon)). Note that for outer planets, the phase is $\approx100\%$ at both opposition and conjunction.
