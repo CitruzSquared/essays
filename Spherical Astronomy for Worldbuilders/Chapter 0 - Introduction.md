@@ -21,8 +21,12 @@
      * Equations $29$ to $32$
      * Examples $6$ to $7$
 3. Moons
-   - Equations $33$ to $52$
-   - Examples $8$ to $10$
+   - Part A
+     * Equations $33$ to $45$
+     * Examples $8$ to $9$
+   - Part B
+     * Equations $46$ to
+     * Examples $10$ to
 ### 2. Terrestrial Observation
 4. Appearance
 5. Horizontal Coordinates
