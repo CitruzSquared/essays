@@ -122,7 +122,7 @@ Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation 
 We can see we came pretty close. The discrepancy comes from other perturbation factors, such as the small but not-nonexistent perturbation from the Sun.\
 $\blacksquare$
 
-### Anomalistic Period
+### The Anomalistic Period
 
 Remember in Chapter $2$ when we calculated the mean anomaly to calculate the eccentric anomaly then to calculate the position of the orbiting object. The mean anomaly was calculated by:
 ```math
