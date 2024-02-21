@@ -132,7 +132,7 @@ Where $t$ was measured from the time of periapsis. However, when dealing with mo
 ```math
 T_A = \frac{T_S T_{\dot\varpi}}{T_{\dot\varpi} - T_S}\tag{53}
 ```
-Where $T_S$ is the sidereal period and $T_{\dot\omega}$ is the period of the precession of periapsis, positive if the precession is in the direction of the orbit, and negative if not.
+Where $T_S$ is the sidereal period and $T_{\dot\varpi}$ is the period of the precession of periapsis, positive if the precession is in the direction of the orbit, and negative if not.
 
 #### Example 11
 <div align="center">
