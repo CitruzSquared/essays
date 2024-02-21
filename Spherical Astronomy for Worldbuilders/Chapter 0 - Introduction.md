@@ -146,7 +146,9 @@ av_1 + bu_1 \\ av_1 + bu_2 \\ av_3 + bu_3
 &= \textbf{u}\cdot\textbf{v}\\
 &= |\textbf{v}||\textbf{u}|\cos(\theta)\\
 \textbf{v}\cdot\textbf{v} &= |\textbf{v}|^2\\
-\textbf{v}\times\textbf{u} &= (v_2u_3-v_3u_2)\textbf{e}_1 + (v_3u_1-v_1u_3)\textbf{e}_2 + (v_1u_2-v_2u_1)\textbf{e}_3\\
+\textbf{v}\times\textbf{u} &= \begin{bmatrix}
+v_2u_3-v_3u_2 \\ v_3u_1-v_1u_3 \\ v_1u_2-v_2u_1
+\end{bmatrix}\\
 &= -\textbf{u}\times\textbf{v}\\
 |\textbf{v}\times\textbf{u}| &= |\textbf{v}||\textbf{u}|\sin(\theta)\\
 \textbf{v}\times\textbf{v} &= \textbf{0}\\
