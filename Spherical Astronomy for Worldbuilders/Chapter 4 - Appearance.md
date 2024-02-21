@@ -35,5 +35,5 @@ By equation $54$:
 &= 1\degree\enspace44'\enspace2''
 \end{align}
 ```
-Which is almost three times larger than the Sun looks from Earth.\
+Which is almost as three times large as the Sun looks from Earth.\
 $\blacksquare$
