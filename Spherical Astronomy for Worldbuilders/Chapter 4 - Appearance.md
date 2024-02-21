@@ -106,7 +106,11 @@ Then finally by equation $59$:
 &= 78.2 \%
 \end{align}
 ```
-Which lines up perfectly with real ephemeris data.\
+And thus Venus would look something like:
+<p align="center">
+  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/fbf93871-95be-4f74-9cbf-3089e599038f">
+</p>
+
 $\blacksquare$
 
 ### Elongation
@@ -149,11 +153,7 @@ We need the elongation, so we use equation $1$, $2$, $4$ and equation $60$:
 \therefore \epsilon &= -37\degree\enspace13'\enspace35.89''\\
 \end{align}
 ```
-The elongation is negative, therefore it is a morning star. Thus the Eastern side of Venus would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun). Combined with the fact that the phase of Venus was $78.2$%, Venus would look like this in the sky.
-<p align="center">
-  <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/42ac847a-04d5-449e-b73e-f7ecb8331de7">
-</p>
-
+The elongation is negative, therefore it is a morning star. Thus the Eastern side of Venus would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun).\
 $\blacksquare$
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/f54ce1cc-10c2-4dfd-a5a4-1218b70aa117" width="450"/> In this diagram, the orbit of 3 planets are shown with the Sun at the center $S$. The middle orbit is the orbit of Earth, which is denoted by $O$. The orientation is such that the direction of West to East is counterclockwise.
