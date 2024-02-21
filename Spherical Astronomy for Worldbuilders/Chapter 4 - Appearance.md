@@ -24,20 +24,20 @@ The line $LL'$ perpendicular to $SP$ and delineates the *terminator line* of $P$
 
 The angle $SPE$ is known as the [*phase angle*](https://en.wikipedia.org/wiki/Phase_angle_(astronomy)). It can be calculated as follows:
 
-Step 1: Calculate the angle $SEP$. \
+- Step 1: Calculate the angle $SEP$. \
 This angle is the angular distance between the Sun and $P$ from the view of the Earth, and can be calculated from the [great circle distance formula](https://en.wikipedia.org/wiki/Great-circle_distance):
 ```math
 SEP = \arccos(\sin(\varphi_S)\sin(\varphi_P) + \cos(\varphi_S)\cos(\varphi_P)\cos(\Delta\vartheta))\tag{56}
 ```
 Where $\varphi_S$ and $\varphi_P$ are the declination or latitude of the Sun and $P$ respectively, and $\Delta\vartheta$ is the difference in right ascension or longitude of the Sun and $P$.
 
-Step 2: Calculate the distance $r$.\
+- Step 2: Calculate the distance $r$.\
 This is the distance from the Sun to $P$, and can be found with the law of cosines:
 ```math
 r = \sqrt{R^2 + \rho^2 - 2R\rho\cos(SEP)}\tag{57}
 ```
 
-Step 3: Calculate the phase angle.\
+- Step 3: Calculate the phase angle.\
 This can be done with the law of sines:
 ```math
 \text{Phase Angle } = \arcsin(R\sin(SEP)/r)\tag{58}
