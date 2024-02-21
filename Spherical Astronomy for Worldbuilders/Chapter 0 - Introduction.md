@@ -64,9 +64,9 @@ A + B + C &= 180\degree \\
 
 ```math
 \begin{align}
+(\theta &\text{ in radians})\\
 C &= r\theta\\
 S &= \frac{1}{2}r^2 \theta \\
-(\theta &\text{ in radians})\\
 \\
 2\pi\text{ rad} &= 360\degree = 1\text{ rev} = 24^h\\
 1\degree &= 60' = 3600''\\
@@ -77,6 +77,7 @@ S &= \frac{1}{2}r^2 \theta \\
 ### Trigonometry
 ```math
 \begin{align}
+(\alpha &\text{ in degrees})\\
 \text{trig}(\alpha + n\cdot 360\degree) &= \text{trig}(\alpha)\enspace[n \in \mathbb{Z}]\\
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
@@ -110,6 +111,8 @@ Two Argument Arctangent:
 \frac{d}{dx} f(x) &= f'(x) = \dot f\\
 \frac{d}{dx} a &= 0 \\
 \frac{d}{dx} x^a &= ax^{a-1} \\
+\\
+(x &\text{ in radians})\\
 \frac{d}{dx} \sin(x) &= \cos(x) \\
 \frac{d}{dx} \cos(x) &= -\sin(x) \\
 \frac{d}{dx} \tan(x) &= \sec^2(x) \\
