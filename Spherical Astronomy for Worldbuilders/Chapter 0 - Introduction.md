@@ -25,8 +25,8 @@
      * Equations $33$ to $45$
      * Examples $8$ to $9$
    - Part B
-     * Equations $46$ to
-     * Examples $10$ to
+     * Equations $46$ to $53$
+     * Examples $10$ to $11$
 ### 2. Terrestrial Observation
 4. Appearance
 5. Horizontal Coordinates
