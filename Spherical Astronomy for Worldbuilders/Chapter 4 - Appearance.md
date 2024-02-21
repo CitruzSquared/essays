@@ -6,11 +6,11 @@ In the last part, we discussed how to calculate the positions of the planets in 
 ### Apparent Radius
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/cddae410-88cf-4199-b2ee-58052fe983e2" width="300"/> How large do objects in space appear from our point of view? Well, in this diagram, an observer at point $O$ is looking at an object with center $C$ and radius $r$. The [*angular size*](https://en.wikipedia.org/wiki/Angular_diameter) (also called the *angular diameter*) is then given by the angle $AOA'$, which is $2 \cdot AOC$. The angle $AOC$, which is called the *angular radius*, is given by this formula:
 ```math
-AOC = \arcsin\left(\frac{r}{OC}\right) \tag{53}
+AOC = \arcsin\left(\frac{r}{OC}\right) \tag{54}
 ```
 Because $AO$ makes a right angle with $AC$, the radius. Thus,
 ```math
-AOA' = 2\arcsin\left(\frac{r}{D}\right)\tag{54}
+AOA' = 2\arcsin\left(\frac{r}{D}\right)\tag{55}
 ```
 where $D$ is the distance to the object, $OC$.
 
@@ -27,34 +27,34 @@ The angle $SPE$ is known as the [*phase angle*](https://en.wikipedia.org/wiki/Ph
 Step 1: Calculate the angle $SEP$. \
 This angle is the angular distance between the Sun and $P$ from the view of the Earth, and can be calculated from the [great circle distance formula](https://en.wikipedia.org/wiki/Great-circle_distance):
 ```math
-SEP = \arccos(\sin(\varphi_S)\sin(\varphi_P) + \cos(\varphi_S)\cos(\varphi_P)\cos(\Delta\vartheta))\tag{55}
+SEP = \arccos(\sin(\varphi_S)\sin(\varphi_P) + \cos(\varphi_S)\cos(\varphi_P)\cos(\Delta\vartheta))\tag{56}
 ```
 Where $\varphi_S$ and $\varphi_P$ are the declination or latitude of the Sun and $P$ respectively, and $\Delta\vartheta$ is the difference in right ascension or longitude of the Sun and $P$.
 
 Step 2: Calculate the distance $r$.\
 This is the distance from the Sun to $P$, and can be found with the law of cosines:
 ```math
-r = \sqrt{R^2 + \rho^2 - 2R\rho\cos(SEP)}\tag{56}
+r = \sqrt{R^2 + \rho^2 - 2R\rho\cos(SEP)}\tag{57}
 ```
 
 Step 3: Calculate the phase angle.\
 This can be done with the law of sines:
 ```math
-\text{Phase Angle } = \arcsin(R\sin(SEP)/r)\tag{57}
+\text{Phase Angle } = \arcsin(R\sin(SEP)/r)\tag{58}
 ```
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/3d239d87-232b-45f0-9c06-a99790222a62" width="300"/> Now in this diagram, we can see that the section of $HH'$ that is illuminated by the Sun is $HA$, or $HP + PA$. $HP$ is just the planetary radius $R_P$, and $PA$ is given by $R_P\cos(LPH')$.
 
 But, $LPH' = 90\degree - EPL$, but also $SPE = 90\degree - EPL$, so $SPE = LPH'$. Thus the section of $HH'$ illuminated by the Sun is given by $R_P + R_P\cos(SPE)$. Dividing this all by the length of $HH' = 2R_P$, we obtain:
 ```math
-\text{Phase } = \frac{1 + \cos(SPE)}{2}\tag{58}
+\text{Phase } = \frac{1 + \cos(SPE)}{2}\tag{59}
 ```
 Where $\text{Phase}$ is the fraction of $P$ seen as illuminated from $E$.
 
 <br/>
 <br/>
 
-#### Example 11
+#### Example 12
 <div align="center">
 <table>
 <tbody>
@@ -70,7 +70,7 @@ Given Venus' radius is $4.045\cdot10^{-5}\text{ AU}$, calculate the angular size
 </table>
 </div>
 
-We get the angular diameter by equation $54$:
+We get the angular diameter by equation $55$:
 ```math
 \begin{align}
 \text{Angular Diameter } &= 2 \arcsin\left(\frac{4.045\cdot10^{-5}\text{ AU}}{1.1882 \text{ AU}}\right) \\
@@ -78,28 +78,28 @@ We get the angular diameter by equation $54$:
 \end{align}
 ```
 Now we have to find the phase:\
-By equation $55$:
+By equation $56$:
 ```math
 \begin{align}
 \text{Sun-Earth-Venus Angle } &= \arccos(\sin(-23\degree\enspace0'\enspace10'')\sin(-18\degree\enspace57'\enspace52'') + \\&\cos(-23\degree\enspace0'\enspace10'')\cos(-18\degree\enspace57'\enspace52'')\cos(18^h\enspace46^m\enspace38^s - 16^h\enspace07^m\enspace26^s)) \\
 &= 37\degree\enspace16'\enspace\enspace7.87''
 \end{align}
 ```
-Then, by equation $56$:
+Then, by equation $57$:
 ```math
 \begin{align}
 \text{Sun-Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\enspace16'\enspace\enspace7.87'')}\\
 &= 0.7205 \text{ AU}
 \end{align}
 ```
-Now, by equation $57$:
+Now, by equation $58$:
 ```math
 \begin{align}
 \text{Phase Angle } &= \arcsin(0.9833\sin(37\degree\enspace16'\enspace\enspace7.87'')/0.7205)\\
 &= 55\degree\enspace44'\enspace\enspace1.61''
 \end{align}
 ```
-Then finally by equation $58$:
+Then finally by equation $59$:
 ```math
 \begin{align}
 \text{Phase } &= \frac{1 + \cos(55\degree\enspace44'\enspace\enspace1.61'')}{2}\\
@@ -113,11 +113,11 @@ $\blacksquare$
 
 The [*elongation*](https://en.wikipedia.org/wiki/Elongation_(astronomy)) is the difference in ecliptic longitude between an object and the Sun.
 ```math
-\epsilon_{\text{Object}} = \lambda_{\text{Object}} - \lambda_{\text{Sun}} \tag{59}
+\epsilon_{\text{Object}} = \lambda_{\text{Object}} - \lambda_{\text{Sun}} \tag{60}
 ```
 This angle is expressed in a range of $(-180\degree,180\degree]$. Thus, if the elongation is positive, the object is *East* of the Sun. This means it will rise after the Sun (because the Earth rotates from West to East, things further East will become visible later), and thus also set after the Sun. This means the object will be *visible in the evening*. If the elongation is negative, the object is *West* of the Sun (Remember that ecliptic longitude is measured with East as positive), and by the same reasoning, will be *visible in the morning*. If the elongation is $\approx180\degree$, the object will be visible basically all throughout the night, and if the elongation is $\approx0\degree$, it won't be visible at all since it is too close to the Sun.
 
-#### Example 12
+#### Example 13
 <div align="center">
 <table>
 <tbody>
@@ -131,7 +131,7 @@ Use $\varepsilon = 23.44\degree$.
 </table>
 </div>
 
-The data from example 11:
+The data from example 12:
 ```math
 \begin{align}
 \alpha_V &= 16^h\enspace07^m\enspace26^s\\
@@ -141,7 +141,7 @@ The data from example 11:
 \delta_S &= \delta=-23\degree\enspace0'\enspace10''
 \end{align}
 ```
-We need the elongation, so we use equation $1$, $2$, $4$ and equation $59$:
+We need the elongation, so we use equation $1$, $2$, $4$ and equation $60$:
 ```math
 \begin{align}
 \lambda_V &= 243\degree\enspace29'\enspace35.63''\\
@@ -160,7 +160,7 @@ $\blacksquare$
 
 Let us focus on the inner planet's orbit. When the inner planet (which we will call $I$) is at $E$, its elongation is at its maximum positive value. It is the furthest possible it can be from the Sun. Thus this phenomenon is called "greatest eastern elongation". Similarly, when the inner planet is at $W$, its elongation is at its minimum value (maximum negative value), and thus this phenomenon is called its "greatest western elongation" Because these points $E$ and $W$ happen at the points where the line $OI$ is tangent to the orbit of $I$, the phase of $I$ will more or less be $50\%$ at these points. The maximum elongation can be calculated as:
 ```math
-\epsilon_{\text{max}} = \arcsin\left(\frac{a_I}{a_O}\right) \tag{60}
+\epsilon_{\text{max}} = \arcsin\left(\frac{a_I}{a_O}\right) \tag{61}
 ```
 But because orbits are not perfect circles, this formula (and also the fact that the phase of $I$ is $50\%$ at max elongation) is not exact, and the value of this maximum elongation will change depending on the exact orientation of the planets.
 
