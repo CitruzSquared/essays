@@ -440,7 +440,7 @@ Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation 
 ```math
 \dot\omega \approx 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
 ```
-We can see we came pretty close.\
+We can see we came pretty close. The discrepancy comes from other perturbation factors, such as the small but not-nonexistent perturbation from the Sun.
 $\blacksquare$
 
 ### Multi Moon Systems
