@@ -130,7 +130,7 @@ M = \frac{2\pi}{T}\cdot t
 ```
 Where $t$ was measured from the time of periapsis. However, when dealing with moons, the periapsis would have moved by the time the moon makes an orbit. Thus, the $T$ used in the formula for $M$ cannot be just the simple $T$ calculated from $15$, which is just the time it takes for the moon to reach the same location (longitude or right ascension) again. (This period is called the *sidereal period*.) To account for the fact that the periapsis has moved, we need a new period, and this is called the *anomalistic period* (as it is the period of repetition of the anomalies). It can be calculated as such:
 ```math
-T_A = \left|\frac{T_S T_{\dot\varpi}}{T_S - T_{\dot\varpi}}\right|\tag{53}
+T_A = \frac{T_S T_{\dot\varpi}}{T_{\dot\varpi} - T_S}\tag{53}
 ```
 Where $T_S$ is the sidereal period and $T_{\dot\omega}$ is the period of the precession of periapsis, positive if the precession is in the direction of the orbit, and negative if not.
 
@@ -151,7 +151,7 @@ What is the length of the anomalistic period of the Moon?
 By equation $53$:
 ```math
 \begin{align}
-T_A &= \left|\frac{27.321 \cdot 3233}{27.321 - 3233}\right|\\
+T_A &= \frac{27.321 \cdot 3233}{3233 - 27.321}\\
 &= 27.554\text{ dy}
 \end{align}
 ```
