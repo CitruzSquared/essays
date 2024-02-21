@@ -297,7 +297,7 @@ For the Moon and Earth:
 \begin{align}
 e_M^2 &= 0.0030\\
 e_P^2 &= 0.0003\\
-i_M^2 &= 0.0081 \text{ rad}^2\\
+i_M^2 &= 0.0080 \text{ rad}^2\\
 a_M/a_P &= 0.0026\\
 \end{align}
 ```
