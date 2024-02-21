@@ -85,7 +85,7 @@ By equation $55$:
 &= 37\degree\enspace16'\enspace\enspace7.87''
 \end{align}
 ```
-By equation $56$:
+Then, by equation $56$:
 ```math
 \begin{align}
 \text{Sun-Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\enspace16'\enspace\enspace7.87'')}\\
