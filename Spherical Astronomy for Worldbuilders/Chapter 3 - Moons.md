@@ -372,7 +372,7 @@ The apsidal precession rate is given as:
 ```math
 \dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{51}
 ```
-Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $38$ gives:
+Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $40$ gives:
 ```math
 \omega = \omega_0 + (t - t_0)\dot\omega\tag{52}
 ```
