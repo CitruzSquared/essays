@@ -18,7 +18,7 @@ where $D$ is the distance to the object, $OC$.
 
 Let's now calculate how much of an object would be visible.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6322b87c-a65e-4623-908e-a5a3e4aad970" width="300"/> In this diagram, $S$ is the position of the Sun, $E$ is the position of the Earth, and $P$ is a planet. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6322b87c-a65e-4623-908e-a5a3e4aad970" width="300"/> In this diagram, $S$ is the position of the Sun, $E$ is the position of the Earth, and $P$ is a celestial body (either a planet or a moon). 
 
 The line $LL'$ perpendicular to $SP$ and delineates the *terminator line* of $P$, or the line where night and day are separated. The line $HH'$ is perpendicular to $EP$ and shows the side of the planet visible to $E$.
 
