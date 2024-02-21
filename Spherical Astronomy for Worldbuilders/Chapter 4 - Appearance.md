@@ -4,9 +4,9 @@ In the last part, we discussed how to calculate the positions of the planets in 
 ## IV. Appearance
 
 ### Apparent Radius
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/cddae410-88cf-4199-b2ee-58052fe983e2" width="350"/> How large do objects in space appear from our point of view? Well, in this diagram, an observer at point $O$ is looking at an object with center $C$ and radius $r$. The [*angular size*](https://en.wikipedia.org/wiki/Angular_diameter) (denoted $\delta$, also called the *angular diameter*) is then given by the angle $AOA'$, which is $2 \cdot AOC$. The angle $AOC$, which is called the *angular radius* (denoted $\theta$), is given by this formula:
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/cddae410-88cf-4199-b2ee-58052fe983e2" width="300"/> How large do objects in space appear from our point of view? Well, in this diagram, an observer at point $O$ is looking at an object with center $C$ and radius $r$. The [*angular size*](https://en.wikipedia.org/wiki/Angular_diameter) (denoted $\delta$, also called the *angular diameter*) is then given by the angle $AOA'$, which is $2 \cdot AOC$. The angle $AOC$, which is called the *angular radius* (denoted $\theta$), is given by this formula:
 ```math
-\theta = \arcsin\left(\frac{r}{OC}\right) \tag{53}
+AOC = \theta = \arcsin\left(\frac{r}{OC}\right) \tag{53}
 ```
 Because $AO$ makes a right angle with $AC$, the radius. Thus,
 ```math
@@ -39,3 +39,9 @@ Which is almost as three times large as the Sun looks from Earth.\
 $\blacksquare$
 
 ### Phase
+
+Let's now calculate how much of an object would be visible.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6322b87c-a65e-4623-908e-a5a3e4aad970" width="300"/> In this diagram, $S$ is the position of the Sun, $E$ is the position of the Earth, and $P$ is a planet. 
+
+The line $LL'$ perpendicular to $SP$ and delineates the *terminator line* of $P$, or the line where night and day are separated. The line $HH'$ is perpendicular to $EP$ and shows the side of the planet visible to $E$.
