@@ -35,6 +35,7 @@
 ```math
 \begin{align}
 (a + b)(c + d) &= ac + ad + bc + bd \\
+\frac{a}{b} = \frac{c}{d} &\implies ac = bd\\
 x^0 &= 1 \\
 x^{a/b} &= \sqrt[b]{x^a} \\
 x^{-a} &= \frac{1}{x^a} \\
