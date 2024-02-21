@@ -77,7 +77,6 @@ S &= \frac{1}{2}r^2 \theta \\
 ### Trigonometry
 ```math
 \begin{align}
-(\alpha &\text{ in degrees})\\
 \text{trig}(\alpha + n\cdot 360\degree) &= \text{trig}(\alpha)\enspace[n \in \mathbb{Z}]\\
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
