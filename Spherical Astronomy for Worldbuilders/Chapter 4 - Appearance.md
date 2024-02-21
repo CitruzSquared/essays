@@ -108,3 +108,5 @@ Then finally by equation $58$:
 ```
 Which lines up perfectly with real ephemeris data.\
 $\blacksquare$
+
+### Elongation
