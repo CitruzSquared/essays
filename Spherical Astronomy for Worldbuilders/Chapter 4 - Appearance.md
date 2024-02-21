@@ -123,7 +123,7 @@ This angle is expressed in a range of $(-180\degree,180\degree]$. Thus, if the e
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given the data from example $11$, was Venus a morning star or an evening star on $\text{January 1, } 2024$? <br/>
+Given the data from example $12$, was Venus a morning star or an evening star on $\text{January 1, } 2024$? <br/>
 Use $\varepsilon = 23.44\degree$.
 <img width="2000" height="0">
 </td>
