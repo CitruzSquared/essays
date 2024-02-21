@@ -1,4 +1,4 @@
-# Part 2. Terrestrial Observations
+![image](https://github.com/CitruzSquared/essays/assets/23460281/8dcbe822-a211-4b75-b9f6-78c5f51a003f)# Part 2. Terrestrial Observations
 In the last part, we discussed how to calculate the positions of the planets in space. Let's now discuss how they look from the Earth.
 
 ## IV. Appearance
@@ -169,5 +169,7 @@ Now onto the outer planet (which we will call $U$). The outer planet cannot have
 When the elongation of any object is $0\degree$, there is no difference in longitude between it and the Sun, and it is known to be [*in conjunction*](https://en.wikipedia.org/wiki/Conjunction_(astronomy)) with the Sun. Note that for inner planets, conjunction can happen at two points in the orbit (at the point $B$ when the phase is $\approx100$%, and at the point $C$ when the phase is $\approx0$%). For outer planets, conjunction can only happen when it is on the far side of the Sun (point $A$). For moons, conjunction can only happen when the moon is on the near side of the Sun (phase $\approx0$%), and this is called the [*new moon*](https://en.wikipedia.org/wiki/New_moon).
 
 When the elongation is $180\degree = -180\degree$, the object is known to be at [*opposition*](https://en.wikipedia.org/wiki/Opposition_(astronomy)) with the Sun, and can only happen with outer planets (when the outer planet is at $D$) and moons (in which case this is known as the [*full moon*](https://en.wikipedia.org/wiki/Full_moon)). Note that for outer planets, the phase is $\approx100$% at both opposition and conjunction.
+
+Because the Moon orbits from West to East, its elongation increases as time passes. It goes from being in conjunction to the Sun to being in quadrature, then to being in opposition, then to quadrature again before going back to being in conjunction. It is easy to see that when the Moon's elongation is East, it is *waxing* (its phase is getting larger), and its Elongation is West, it is *waning* (its phase is getting smaller).
 
 ### The Synodic Period
