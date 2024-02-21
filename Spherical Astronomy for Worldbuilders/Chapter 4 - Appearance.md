@@ -173,6 +173,6 @@ When the elongation is $180\degree = -180\degree$, the object is known to be at 
 
 Because the Moon orbits from West to East, its elongation increases as time passes. It goes from being in conjunction to the Sun to being in quadrature, then to being in opposition, then to quadrature again before going back to being in conjunction. It is easy to see that when the Moon's elongation is East, it is *waxing* (its phase is getting larger), and its elongation is West, it is *waning* (its phase is getting smaller).
 
-In addition, if the orbit of a planet has $0\degree$ inclination with respect to the ecliptic, the Sun-Earth-Planet angle of equation $56% is just equal to the elongation.
+In addition, if the orbit of a planet has $0\degree$ inclination with respect to the ecliptic, the Sun-Earth-Planet angle of equation $56$ is just equal to the elongation.
 
 ### The Synodic Period
