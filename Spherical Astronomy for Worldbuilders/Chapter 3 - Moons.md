@@ -446,4 +446,4 @@ $\blacksquare$
 ### Multi Moon Systems
 For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the only plausible way to calculate the location of the moons is with a numerical integrator of the equations of motion. For example, in example $9$, solving for the precession of Deimos would result in less accurate results because of the perturbation of Deimos by Phobos. The only reason example $9$ worked is because Deimos is much smaller than Phobos and so the effect Deimos has on Phobos is almost negligible.
 
-I recommend ignoring the perturbation of moons by other moons and just focusing on the perturbations by the equatorial bulge or by the Sun, or just making up precession values for multi moon systems.
+Recommended solutions are ignoring the perturbation of moons by other moons and just focusing on the perturbations by the equatorial bulge or by the Sun, or just making up precession values for multi moon systems.
