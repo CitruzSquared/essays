@@ -113,6 +113,15 @@ And so finally:
 \omega = \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right).\tag{36}
 ```
 We can now use the new $\Omega$ and $\omega$ in equation $31$ to calculate the coordinates of the moon.
+
+Note that if $i$ is very small, then $\cos(i) \approx 1$ and equations $35$ and $36$ simplify to:
+```math
+\begin{align}
+\varpi_0 &\approx \Omega_0 + \omega_0 \tag{37}\\
+\omega &\approx \varpi + \Omega \tag{38}
+\end{align}
+```
+
 #### Example 8
 <div align="center">
 <table>
@@ -184,21 +193,22 @@ Then,
 ```
 But since $\Lambda = \varpi - \Omega$,
 ```math
-\dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{37}
+\dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{39}
 ```
 Thus, if one wanted, they could now calculate the new $\omega$ by:
 ```math
-\omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{38}
+\omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{40}
 ```
 But this is not recommended because $\dot\omega$ is a very complex function, unless in cases such as:\
 If $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\omega &\approx \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
-&= \dot\varpi-\dot\Omega. \tag{39}
+&= \dot\varpi-\dot\Omega. \tag{41}
 \end{align}
 ```
-And now $\dot\omega$ is a constant and equation $38$ may be used.\
+Which is consistent with equation $37$.\
+Assuming $\cos(i) = 1$, $\dot\omega$ is a constant and equation $38$ may be used.\
 Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```math
 \begin{align}
@@ -208,16 +218,16 @@ Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```
 But since $\varpi = \Lambda + \Omega$,
 ```math
-\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{40}
+\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{42}
 ```
 Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\varpi &\approx \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
-&= \dot\omega + \dot\Omega. \tag{41}
+&= \dot\omega + \dot\Omega. \tag{43}
 \end{align}
 ```
-Which is consistent with equation $39$.
+Which is consistent with equation $41$.
 ### The Two Types of Moons
 This table lists some of the Solar System's most prominent moons:
 ```math
@@ -251,14 +261,14 @@ Orbit aligned moons have precessions resulting from the gravitational perturbati
 Solving extremely complex equations of motion (that can be found [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html)) leads to these two formulae (derivation too complex to write here):
 ```math
 \begin{align}
-\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{42}\\ 
+\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{44}\\ 
 \\
-\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{43}
+\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{45}
 \end{align}
 ```
 These formulae are not exact as they ignore small terms involving $e_M^2$, $e_P^2$, $i_M^2$, and $a_M/a_P$ (not ignoring these would make the formulae unbearably complicated). Thus, for the formula to work best, these parameters for the Moon - Planet system **must be small**.
 
-Equations $42$ and $43$ give results in units of $\text{rev}/T_P$.
+Equations $44$ and $45$ give results in units of $\text{rev}/T_P$.
 
 Copyable version:
 ```
@@ -291,8 +301,8 @@ i_M^2 &= 0.0081 \text{ rad}^2\\
 a_M/a_P &= 0.0026\\
 \end{align}
 ```
-Which are all very small, so equations $42$ and $43$ will work.\
-We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $42$ and $43$:
+Which are all very small, so equations $44$ and $45$ will work.\
+We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $44$ and $45$:
 ```math
 \begin{align}
 \dot\Omega &= -0.0534631 \text{ rev}/\text{yr}\\
@@ -317,11 +327,11 @@ The precession rates of equator aligned moons depend on the gravitational potent
 
 Well, we can make a *very* crude approximation that the planet is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
-J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{44}
+J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{46}
 ```
 where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated from the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
 ```math
-f = \frac{R_E - R_P}{R_E}\tag{45}
+f = \frac{R_E - R_P}{R_E}\tag{47}
 ```
 $w$ is the rotational speed of the planet in $\text{rad}$,\
 $G$ is the gravitational constant, and\
@@ -329,7 +339,7 @@ $M$ is the mass of the planet.
 
 The table of $J_2$ values by planet in the Solar System is given here:
 ```math
-\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }44 \\ \hline
+\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }46 \\ \hline
 \text{Mercury} & 60\cdot10^{-6} & 0.000900 & 600\cdot 10^{-6}\\
 \text{Venus} & 4.458\cdot10^{-6} & 0.000000 & 0.02\cdot 10^{-6}\\
 \text{Earth} & 1.08263\cdot10^{-3} & 0.003353 & 1.08136\cdot10^{-3} \\
@@ -343,28 +353,28 @@ The table of $J_2$ values by planet in the Solar System is given here:
 Evidently, the approximation is very crude; however it's the best we've got. Now that we have $J_2$, we can calculate the precession rates.\
 The precession depends on this value which we will call $K$ for simplicity:
 ```math
-K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{46}
+K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{48}
 ```
 Where $R_{\text{avg}}$ is the average radius of the planet, given by:
 ```math
-R_{\text{avg}} = \sqrt[3]{R_E^2 \cdot R_P} \tag{47}
+R_{\text{avg}} = \sqrt[3]{R_E^2 \cdot R_P} \tag{49}
 ```
 and $a$, $n$, and $e$ are the semi-major axis, mean motion, and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
-\dot\Omega = -K\cos(i)\tag{48}
+\dot\Omega = -K\cos(i)\tag{50}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit.
 
 The apsidal precession rate is given as:
 ```math
-\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{49}
+\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{51}
 ```
 Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $38$ gives:
 ```math
-\omega = \omega_0 + (t - t_0)\dot\omega\tag{50}
+\omega = \omega_0 + (t - t_0)\dot\omega\tag{52}
 ```
 Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
 #### Example 10
@@ -395,7 +405,7 @@ T &= \sqrt{\frac{4\pi^2 a^3}{GM}}\\
 &= 0.319\text{ dy}
 \end{align}
 ```
-Now find $K$ by equation $46$.
+Now find $K$ by equation $48$.
 ```math
 \begin{align}
 K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
@@ -403,7 +413,7 @@ K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
 &= 0.4339 \degree/\text{dy}
 \end{align}
 ```
-Then, $\dot\Omega$ is given by equation $48$:
+Then, $\dot\Omega$ is given by equation $50$:
 ```math
 \begin{align}
 \dot\Omega &= -K \cos(i) \\
@@ -411,7 +421,7 @@ Then, $\dot\Omega$ is given by equation $48$:
 &= -0.4338 \degree/\text{dy}
 \end{align}
 ```
-And $\dot\omega$ by equation $49$:
+And $\dot\omega$ by equation $51$:
 ```math
 \begin{align}
 \dot\omega &= K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
@@ -426,7 +436,7 @@ Let's check our answers. A data sheet gives values of
 \dot\varpi &= 0.4352 \degree/\text{dy}
 \end{align}
 ```
-Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $39$ with the data sheet values ($i = 1.09\degree$ is very small):
+Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $41$ with the data sheet values ($i = 1.09\degree$ is very small):
 ```math
 \dot\omega \approx 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
 ```
