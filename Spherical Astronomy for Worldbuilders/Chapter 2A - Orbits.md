@@ -19,7 +19,7 @@ Turns out this equation has already been solved for the most part, and the probl
 ### Kepler's First Law
 Since Kepler's first law states that all orbits are ellipses, let us quickly investigate the ellipse.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major axis and is denoted $a$. The distance $OB$ is known as the semi-minor axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major axis and is denoted $a$. ($1$ Astronomical Unit (AU) is defined by the semi-major axis of the Earth's orbit!) The distance $OB$ is known as the semi-minor axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
 ```math
 \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.\tag{7}
 ```
