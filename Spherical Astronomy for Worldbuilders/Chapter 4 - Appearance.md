@@ -153,7 +153,7 @@ We need the elongation, so we use equation $1$, $2$, $4$ and equation $60$:
 \therefore \epsilon &= -37\degree\enspace13'\enspace35.89''\\
 \end{align}
 ```
-The elongation is negative, therefore it is a morning star. Thus the Eastern side of Venus would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun).\
+The elongation is negative, therefore it is a morning star. Additionally, it would be the Eastern side of Venus that would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun).\
 $\blacksquare$
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/f54ce1cc-10c2-4dfd-a5a4-1218b70aa117" width="450"/> In this diagram, the orbit of 3 planets are shown with the Sun at the center $S$. The middle orbit is the orbit of Earth, which is denoted by $O$. The orientation is such that the direction of West to East is counterclockwise.
