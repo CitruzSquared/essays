@@ -124,6 +124,40 @@ $\blacksquare$
 
 ### Anomalistic Period
 
+Remember in Chapter $2$ when we calculated the mean anomaly to calculate the eccentric anomaly then to calculate the position of the orbiting object. The mean anomaly was calculated by:
+```math
+M = \frac{2\pi}{T}\cdot t
+```
+Where $t$ was measured from the time of periapsis. However, when dealing with moons, the periapsis would have moved by the time the moon makes an orbit. Thus, the $T$ used in the formula for $M$ cannot be just the simple $T$ calculated from $15$, which is just the time it takes for the moon to reach the same location (longitude or right ascension) again. (This period is called the *sidereal period*.) To account for the fact that the periapsis has moved, we need a new period, and this is called the *anomalistic period* (as it is the period of repetition of the anomalies). It can be calculated as such:
+```math
+T_A = \left|\frac{T_S T_{\dot\varpi}}{T_S - T_{\dot\varpi}}\right|\tag{53}
+```
+Where $T_S$ is the sidereal period and $T_{\dot\omega}$ is the period of the precession of periapsis, positive if the precession is in the direction of the orbit, and negative if not.
+
+#### Example 11
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+The moon has a sidereal period of $27.321 \text{ dy}$, and the longitude of the perigee precesses by $1 \text{ rev}$ every $3233\text{ dy}$. <br/>
+What is the length of the anomalistic period of the Moon?
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By equation $53$:
+```math
+\begin{align}
+T_A &= \left|\frac{27.321 \cdot 3233}{27.321 - 3233}\right|\\
+&= 27.554\text{ dy}
+\end{align}
+```
+Which we can now use to calculate the mean anomaly.\
+$\blacksquare$
+
 ### Multi Moon Systems
 For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the only plausible way to calculate the location of the moons is with a numerical integrator of the equations of motion. For example, in example $9$, solving for the precession of Deimos would result in less accurate results because of the perturbation of Deimos by Phobos. The only reason example $9$ worked is because Deimos is much smaller than Phobos and so the effect Deimos has on Phobos is almost negligible.
 
