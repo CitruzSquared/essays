@@ -208,7 +208,7 @@ If $i$ is very small, then $\cos(i) \approx 1$, and:
 \end{align}
 ```
 Which is consistent with equation $38$.\
-Assuming $\cos(i) = 1$, $\dot\omega$ is a constant and equation $38$ may be used.\
+In this case where $i$ is very small so $\cos(i) \approx 1$, $\dot\omega$ can be approximated as a constant and equation $40$ may be used.\
 Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```math
 \begin{align}
