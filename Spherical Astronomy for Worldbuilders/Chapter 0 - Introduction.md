@@ -128,7 +128,7 @@ Two Argument Arctangent:
 \end{align}
 ```
 ### Vectors
-Most of these vector properties are nonessential to this post.\
+Most of these vector properties are nonessential to this post.
 
 $\textbf{e}_1$, $\textbf{e}_2$, and $\textbf{e}_3$ are basis vectors.\
 $\theta$ is the angle between $\textbf{v}$ and $\textbf{u}$.
