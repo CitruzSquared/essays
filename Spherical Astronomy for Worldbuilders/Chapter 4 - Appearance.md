@@ -149,7 +149,7 @@ We need the elongation, so we use equation $1$, $2$, $4$ and equation $60$:
 \therefore \epsilon &= -37\degree\enspace13'\enspace35.89''\\
 \end{align}
 ```
-The elongation is negative, therefore it is a morning star. Thus the Eastern side of Venus would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun). Combined with the fact that the phase of Venus was $78.2\%$, Venus would look like this in the sky.
+The elongation is negative, therefore it is a morning star. Thus the Eastern side of Venus would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun). Combined with the fact that the phase of Venus was $78.2$%, Venus would look like this in the sky.
 <p align="center">
   <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/42ac847a-04d5-449e-b73e-f7ecb8331de7">
 </p>
