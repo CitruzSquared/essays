@@ -443,6 +443,8 @@ Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation 
 We can see we came pretty close. The discrepancy comes from other perturbation factors, such as the small but not-nonexistent perturbation from the Sun.\
 $\blacksquare$
 
+### Anomalistic Period
+
 ### Multi Moon Systems
 For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the only plausible way to calculate the location of the moons is with a numerical integrator of the equations of motion. For example, in example $9$, solving for the precession of Deimos would result in less accurate results because of the perturbation of Deimos by Phobos. The only reason example $9$ worked is because Deimos is much smaller than Phobos and so the effect Deimos has on Phobos is almost negligible.
 
