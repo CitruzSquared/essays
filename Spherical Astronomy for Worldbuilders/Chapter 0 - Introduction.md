@@ -129,12 +129,12 @@ Two Argument Arctangent:
 ```
 ### Vectors
 Most of these vector properties are nonessential to this post.\
-$\textbf{i}, \textbf{j}, \textbf{k}$ are basis vectors.
+$\textbf{e}_1, \textbf{e}_2, \textbf{e}_3$ are basis vectors.
 ```math
 \begin{align}
 \textbf{v} &= \begin{bmatrix}
 v_1 \\ v_2 \\ v_3
-\end{bmatrix} = v_1\textbf{i} + v_2\textbf{j} + v_3\textbf{k} \\
+\end{bmatrix} = v_1\textbf{e}_1 + v_2\textbf{e}_2 + v_3\textbf{e}_3 \\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
 a\textbf{v} + b\textbf{u} &= \begin{bmatrix}
 av_1 + bu_1 \\ av_1 + bu_2 \\ av_3 + bu_3
@@ -143,7 +143,7 @@ av_1 + bu_1 \\ av_1 + bu_2 \\ av_3 + bu_3
 &= \textbf{u}\cdot\textbf{v}\\
 &= |\textbf{v}||\textbf{u}|\cos(\theta)\\
 \textbf{v}\cdot\textbf{v} &= |\textbf{v}|^2\\
-\textbf{v}\times\textbf{u} &= (v_2u_3-v_3u_2)\textbf{i} + (v_3u_1-v_1u_3)\textbf{j} + (v_1u_2-v_2u_1)\textbf{k}\\
+\textbf{v}\times\textbf{u} &= (v_2u_3-v_3u_2)\textbf{e}_1 + (v_3u_1-v_1u_3)\textbf{e}_2 + (v_1u_2-v_2u_1)\textbf{e}_3\\
 &= -\textbf{u}\times\textbf{v}\\
 |\textbf{v}\times\textbf{u}| &= |\textbf{v}||\textbf{u}|\sin(\theta)\\
 \textbf{v}\times\textbf{v} &= \textbf{0}\\
