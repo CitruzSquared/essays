@@ -316,7 +316,7 @@ Thus,
 \dot\varpi &= \frac{365.242\text{ dy}/\text{yr}}{0.114575\text{ rev}/\text{yr}} = 3187.8\text{ dy}/\text{rev}
 \end{align}
 ```
-These periods of $-6831.7 \text{ dy}$ and $3187.8\text{ dy}$ do not differ much from their true values of $-6793 \text{ dy}$ and $3233\text{ dy}$ (the discrepancy comes from ignoring terms involving $e_M^2$, $e_P^2$, $i^2$, and $a_M/a_P$), and they are called the *nodal precession period* and *apsidal precession period* respectively.\
+These periods of $-6831.7 \text{ dy}$ and $3187.8\text{ dy}$ do not differ much from their true values of $-6793 \text{ dy}$ and $3233\text{ dy}$ (the discrepancy comes from ignoring terms involving $e_M^2$, $e_P^2$, $i^2$, and $a_M/a_P$, and from truncating the infinite formulae at six and eight terms), and they are called the *nodal precession period* and *apsidal precession period* respectively.\
 $\blacksquare$
 
 There are also more minor perturbations in the lunar orbit by the Sun, called the evection, variation, and the annual equation. Those can be read about [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html) in detail.
