@@ -10,9 +10,8 @@ AOC = \arcsin\left(\frac{r}{OC}\right) \tag{54}
 ```
 Because $AO$ makes a right angle with $AC$, the radius. Thus,
 ```math
-AOA' = 2\arcsin\left(\frac{r}{D}\right)\tag{55}
+AOA' = 2\arcsin\left(\frac{r}{OC}\right)\tag{55}
 ```
-where $D$ is the distance to the object, $OC$.
 
 ### Phase
 
