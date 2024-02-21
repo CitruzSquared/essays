@@ -65,7 +65,7 @@ A + B + C &= 180\degree \\
 
 ```math
 \begin{align}
-(\theta &\text{ in radians})\\
+(\theta \text{ in} &\text{ radians})\\
 C &= r\theta\\
 S &= \frac{1}{2}r^2 \theta \\
 \\
@@ -112,7 +112,7 @@ Two Argument Arctangent:
 \frac{d}{dx} a &= 0 \\
 \frac{d}{dx} x^a &= ax^{a-1} \\
 \\
-(x &\text{ in radians})\\
+(x \text{ in} &\text{ radians})\\
 \frac{d}{dx} \sin(x) &= \cos(x) \\
 \frac{d}{dx} \cos(x) &= -\sin(x) \\
 \frac{d}{dx} \tan(x) &= \sec^2(x) \\
