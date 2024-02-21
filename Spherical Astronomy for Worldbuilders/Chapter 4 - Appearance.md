@@ -1,4 +1,4 @@
-![image](https://github.com/CitruzSquared/essays/assets/23460281/8dcbe822-a211-4b75-b9f6-78c5f51a003f)# Part 2. Terrestrial Observations
+# Part 2. Terrestrial Observations
 In the last part, we discussed how to calculate the positions of the planets in space. Let's now discuss how they look from the Earth.
 
 ## IV. Appearance
