@@ -252,7 +252,7 @@ t &= (175\enspace \text{sdy}\enspace 215\degree\enspace28'\enspace9.28'' + 180\d
 ```
 More repetition will improve our estimations even further, but they rapidly converge. (A third estimate gives the time $11:48:44$.)
 
-We can see that the time of apparent noon is not $12:00$. This difference is called the [Equation of Time](https://en.wikipedia.org/wiki/Equation_of_time), and the amount by it differs by changes throughout the year.
+We can see that the time of apparent noon is not $12:00$. This difference is called the [Equation of Time](https://en.wikipedia.org/wiki/Equation_of_time), and the amount by it differs by changes throughout the year.\
 $\blacksquare$
 
 ### Horizontal Coordinates using Sidereal Time
