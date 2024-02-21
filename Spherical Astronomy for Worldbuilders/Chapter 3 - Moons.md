@@ -118,7 +118,7 @@ Note that if $i$ is very small, then $\cos(i) \approx 1$ and equations $35$ and 
 ```math
 \begin{align}
 \varpi_0 &\approx \Omega_0 + \omega_0 \tag{37}\\
-\omega &\approx \varpi + \Omega \tag{38}
+\omega &\approx \varpi - \Omega \tag{38}
 \end{align}
 ```
 
@@ -207,7 +207,7 @@ If $i$ is very small, then $\cos(i) \approx 1$, and:
 &= \dot\varpi-\dot\Omega. \tag{41}
 \end{align}
 ```
-Which is consistent with equation $37$.\
+Which is consistent with equation $38$.\
 Assuming $\cos(i) = 1$, $\dot\omega$ is a constant and equation $38$ may be used.\
 Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```math
