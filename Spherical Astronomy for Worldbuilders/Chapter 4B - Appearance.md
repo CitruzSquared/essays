@@ -82,7 +82,6 @@ Use $1 \text{ AU} = 149\:600\:000\:000 \text{ m}$.
 We found out in example $12$ that:
 ```math
 \begin{align}
-\text{Sun Earth Distance } &= 0.9833 \text{ AU} = 147\:101\:680\:000 \text{ m}\\
 \text{Earth Venus Distance } &= 1.1882 \text{ AU} = 177\:754\:720\:000 \text{ m}\\
 \text{Sun Venus Distance } &= 0.7205 \text{ AU} = 107\:786\:800\:000 \text{ m}\\
 \text{Venus Phase Angle } &= 55\degree\enspace43'\enspace\enspace57.60''
