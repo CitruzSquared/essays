@@ -186,7 +186,7 @@ This formula is not exact as the orbits of the planets are not perfect circles. 
 
 Evidently, the Earth does not have a synodic orbital period.
 
-#### Example 13
+#### Example 14
 <div align="center">
 <table>
 <tbody>
