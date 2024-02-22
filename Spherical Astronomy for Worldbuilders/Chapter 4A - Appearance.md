@@ -341,5 +341,5 @@ We could have just simply calculated the elongation at even time intervals start
 The time of conjunction (or any elongation, not just conjunction) of any two bodies can be calculated this way.\
 $\blacksquare$
 
-### Apparent Magnitude
+### Brightness
 (Continued in Part B...)
