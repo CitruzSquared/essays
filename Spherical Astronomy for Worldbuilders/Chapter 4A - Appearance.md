@@ -39,10 +39,11 @@ r = \sqrt{R^2 + \rho^2 - 2R\rho\cos(SEP)}\tag{57}
 ```
 
 - Step 3: Calculate the phase angle.\
-This can be done with the law of sines:
+This can yet again be done with the law of cosines:
 ```math
-\text{Phase Angle } = \arcsin(R\sin(SEP)/r)\tag{58}
+\text{Phase Angle } = \arccos\left(\frac{\rho^2 + r^2 - R^2}{2\rho r}\right)\tag{58}
 ```
+Note that if all the distances are known already, then steps $1$ and $2$ can be skipped.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/3d239d87-232b-45f0-9c06-a99790222a62" width="300"/> Now in this diagram, we can see that the section of $HH'$ that is illuminated by the Sun is $HA$, or $HP + PA$. $HP$ is just the planetary radius $R_P$, and $PA$ is given by $R_P\cos(LPH')$.
 
@@ -96,14 +97,14 @@ Then, by equation $57$:
 Now, by equation $58$:
 ```math
 \begin{align}
-\text{Phase Angle } &= \arcsin(0.9833\sin(37\degree\enspace16'\enspace\enspace7.87'')/0.7205)\\
-&= 55\degree\enspace44'\enspace\enspace1.61''
+\text{Phase Angle } &= \arccos\left(\frac{1.1882^2 + 0.7205^2 - 0.9833^2}{2\cdot1.1882\cdot0.7205}\right)\\
+&= 55\degree\enspace43'\enspace\enspace57.60''
 \end{align}
 ```
 Then finally by equation $59$:
 ```math
 \begin{align}
-\text{Phase } &= \frac{1 + \cos(55\degree\enspace44'\enspace\enspace1.61'')}{2}\\
+\text{Phase } &= \frac{1 + \cos(55\degree\enspace43'\enspace\enspace57.60'')}{2}\\
 &= 78.2 \%
 \end{align}
 ```
