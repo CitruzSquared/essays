@@ -114,7 +114,7 @@ $\blacksquare$
 
 ### Apparent Retrograde Motion
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0cda3938-10e9-40ca-a675-c975ed709365" width="350"/> This diagram depicts the Earth ($O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0cda3938-10e9-40ca-a675-c975ed709365" width="350"/> This diagram depicts the Earth (which we have put as stationary at $O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
 
 From the view of the Earth, the inner planet would look to orbit from West to East (i.e. increasing in longitude) most of the time, but when the planet is near inferior conjunction ($C$), or more specifically, in between the points $A$ and $B$, it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
 
@@ -157,4 +157,4 @@ Therefore equation $68$ becomes:
 n' = \frac{360\degree}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
 ```
 Thus if we divide the angle $ASB$ by $n'$, we get the time spent in retrograde. Now to get the angle $ASB$:\
-The diagram above makes it seem this is as simple as $ASB = \arccos(a_2/a_1)$, but this is not the case because this ignores the fact that the Earth moves as well.
+The diagram above makes it seem this is as simple as $ASB = \arccos(a_2/a_1)$, but this is not the case because this ignores the fact that the Earth moves as well. In fact, the angle $ASB$ is not really the angle shown in the diagram because of this.
