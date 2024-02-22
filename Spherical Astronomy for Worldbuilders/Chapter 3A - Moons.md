@@ -130,7 +130,7 @@ Note that if $i$ is very small, then $\cos(i) \approx 1$ and equations $35$ and 
 <img width="2000" height="0"><br>
 The Moon has an inclination value of $5.14\degree$, and that the Moon's precession values are: <br/>
 $\dot\Omega = -1\text{ rev}/6793 \text{ dy}$ and $\dot\varpi = 1\text{ rev}/3233 \text{ dy}$. <br/>  
-Given that on $\text{January 1, } 2020$, $\Omega = 98\degree\enspace8'\enspace24''$ and $\omega = 81\degree\enspace39'$, calcaulate $\Omega$ and $\omega$ on $\text{January 1, } 2024$.
+Given that on $\text{January 1, } 2020$, $\Omega = 98\degree\:8'\:24''$ and $\omega = 81\degree\:39'$, calcaulate $\Omega$ and $\omega$ on $\text{January 1, } 2024$.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -142,41 +142,41 @@ We first calculate $\varpi_0$ by equation $35$:
 ```math
 \begin{align}
 \varpi_0 &= \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0))\\
-&= 98\degree\enspace8'\enspace24'' + \arctan(\sin(81\degree\enspace39') \cos(5.14\degree), \cos(81\degree\enspace39') \\
-&= 179\degree\enspace45'\enspace24.35''
+&= 98\degree\:8'\:24'' + \arctan(\sin(81\degree\:39') \cos(5.14\degree), \cos(81\degree\:39') \\
+&= 179\degree\:45'\:24.35''
 \end{align}
 ```
 We now use equations $33$ and $34$, where $(t - t_0) = 1461\text{ dy}$:
 ```math
 \begin{align}
 \Omega &= \Omega_0 + (t - t_0)\dot\Omega \\
-&= 98\degree\enspace8'\enspace24'' + 1461\cdot\frac{-360\degree}{6793}\\
-&= 20\degree\enspace42'\enspace47.65''\\
+&= 98\degree\:8'\:24'' + 1461\cdot\frac{-360\degree}{6793}\\
+&= 20\degree\:42'\:47.65''\\
 \varpi &= \varpi_0 + (t - t_0)\dot\varpi\\
-&= 179\degree\enspace45'\enspace24.35'' + 1461\cdot\frac{360\degree}{3233}\\
-&= 342\degree\enspace26'\enspace29.68''
+&= 179\degree\:45'\:24.35'' + 1461\cdot\frac{360\degree}{3233}\\
+&= 342\degree\:26'\:29.68''
 \end{align}
 ```
 We now find the new $\omega$ by equation $36$.
 ```math
 \begin{align}
 \omega &= \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right) \\
-&= \arctan\left(\frac{\sin(342\degree\enspace26'\enspace29.68'' - 20\degree\enspace42'\enspace47.65'')}{\cos(5.14\degree)}, \cos(342\degree\enspace26'\enspace29.68'' - 20\degree\enspace42'\enspace47.65'')\right)\\
-&= 321\degree\enspace36'\enspace57.69''
+&= \arctan\left(\frac{\sin(342\degree\:26'\:29.68'' - 20\degree\:42'\:47.65'')}{\cos(5.14\degree)}, \cos(342\degree\:26'\:29.68'' - 20\degree\:42'\:47.65'')\right)\\
+&= 321\degree\:36'\:57.69''
 \end{align}
 ```
 Thus, on $\text{January 1, } 2024$:
 ```math
 \begin{align}
-\Omega &= 20\degree\enspace42'\enspace47.65'\\
-\omega &= 321\degree\enspace36'\enspace57.69''
+\Omega &= 20\degree\:42'\:47.65'\\
+\omega &= 321\degree\:36'\:57.69''
 \end{align}
 ```
 Compared to the true values:
 ```math
 \begin{align}
-\Omega &= 20\degree\enspace45'\\
-\omega &= 322\degree\enspace46'\enspace12''
+\Omega &= 20\degree\:45'\\
+\omega &= 322\degree\:46'\:12''
 \end{align}
 ```
 We came close considering we assumed precession is uniform.\
