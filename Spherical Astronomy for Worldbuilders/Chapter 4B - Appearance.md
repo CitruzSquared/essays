@@ -114,9 +114,9 @@ $\blacksquare$
 
 ### Apparent Retrograde Motion
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0cda3938-10e9-40ca-a675-c975ed709365" width="350"/> This diagram depicts the Earth (which we have put as stationary at $O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2ce4b56e-582c-4f73-a374-6d6cdc66c07e" width="350"/> This diagram depicts the Earth (which we have put as stationary at $O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
 
-From the view of the Earth, the inner planet would look to orbit from West to East (i.e. increasing in longitude) most of the time, but when the planet is near inferior conjunction ($C$), or more specifically, in between the points $A$ and $B$, it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
+From the view of the Earth, the inner planet would look to orbit from West to East (i.e. increasing in longitude) most of the time, but when the planet is near inferior conjunction ($C$), it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
 
 This phenomenon is called [*apparent* retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), as it is not a real physical phenomenon, just an illusion caused by the effects of relative motion. This occurs once every synodic period, as inferior conjunctions happen once every synodic period.
 
@@ -132,7 +132,7 @@ a_1 &= \text{ Semi-major Axis of the Earth}\\
 a_2 &= \text{ Semi-major Axis of the Inner Planet}
 \end{align}
 ```
-Notice that, if we divide the angle length $ASB$ with the time it takes the inner planet to cross it, we will get the time spent in retrograde. The mean motion of the inner planet is given by:
+Let's call the amount of angle the inner planet moves in retrograde $A$. Then, the amount of time it takes the planet to traverse $A$ is the time spent in retrograde. The mean motion of the inner planet is given by:
 ```math
 n_2 = \frac{360\degree}{T_2}
 ```
@@ -156,5 +156,4 @@ Therefore equation $68$ becomes:
 ```math
 n' = \frac{360\degree}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
 ```
-Thus if we divide the angle $ASB$ by $n'$, we get the time spent in retrograde. Now to get the angle $ASB$:\
-The diagram above makes it seem this is as simple as $ASB = 2\arccos(a_2/a_1)$, but this is not the case because this ignores the fact that the Earth moves as well. In fact, the angle $ASB$ is not really the angle shown in the diagram because of this.
+Thus if we divide the angular distance $A$ by $n'$, we get the time spent in retrograde. Now to get the angle $A$:\
