@@ -222,7 +222,7 @@ t &= (175\: \text{sdy}\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.
 ```
 $\blacksquare$
 
-However, in this example, $t = 175$ $ \text{dy} $ $ 11:46:22 \neq 175.00$ $ \text{dy}$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
+However, in this example, $t = 175 \text{ dy } 11:46:22 \neq 175.00 \text{ dy}$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 #### Example 5-II
 <div align="center">
