@@ -114,7 +114,7 @@ $\blacksquare$
 
 ### Apparent Retrograde Motion
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2ce4b56e-582c-4f73-a374-6d6cdc66c07e" width="350"/> This diagram depicts the Earth (which we have put as stationary at $O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0ece4e9d-73c6-4e48-a633-0fc2134669e5" width="350"/> This diagram depicts the Earth (which we have put as stationary at $O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
 
 From the view of the Earth, the inner planet would look to orbit from West to East (i.e. increasing in longitude) most of the time, but when the planet is near inferior conjunction ($C$), it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
 
