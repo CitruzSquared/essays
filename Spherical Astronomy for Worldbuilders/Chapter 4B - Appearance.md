@@ -2,7 +2,7 @@
 
 ### Brightness
 
-[**Apparent magnitude**](https://en.wikipedia.org/wiki/Apparent_magnitude) (denoted $m$) is a logarithmic scale measuring how bright objects *look* in the sky. It stems from a centuries-old system of categorizing stars, class $1$ for the brightest stars and class $6$ for the dimmest. Thus, our modern system of apparent magnitude also operates with **smaller magnitudes being brighter**: magnitude is defined such that a decrease in apparent magnitude by $1$ is a $100^{1/5} = 2.512$ times increase in brightness.
+[**Apparent magnitude**](https://en.wikipedia.org/wiki/Apparent_magnitude) (denoted by $m$) is a logarithmic scale measuring how bright objects *look* in the sky. It stems from a centuries-old system of categorizing stars, class $1$ for the brightest stars and class $6$ for the dimmest. Thus, our modern system of apparent magnitude also operates with **smaller magnitudes being brighter**: magnitude is defined such that a decrease in apparent magnitude by $1$ is a $100^{1/5} = 2.512$ times increase in brightness.
 
 For stars, as they produce their own unchanging light, their apparent magnitude is easily calculable:
 ```math
