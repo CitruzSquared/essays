@@ -243,7 +243,7 @@ $\blacksquare$
 ### Solving for Time of Conjunction
 Because the motion of the planets is very complicated, we cannot exactly solve for the time when two bodies are at the same ecliptic longitude. However, we can use numerical methods to get arbitrarily close.
 
-We cannot use the Newton method as we did in chapter 2 because we do not know the derivative of the function we are going to solve for (the difference in longitude between two objects at time $t$). Thus, we have to use a more crude method: [bisection](https://en.wikipedia.org/wiki/Bisection_method).
+We cannot use the Newton method as we did in chapter $2$ because we do not know the derivative of the function we are going to solve for (the difference in longitude between two objects at time $t$). Thus, we have to use a more crude method: [bisection](https://en.wikipedia.org/wiki/Bisection_method).
 
 Bisection works as follows:\
 To find the solution of an equation $f(t) = 0$,
