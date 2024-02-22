@@ -1,3 +1,3 @@
 (Continued from Part A...)
 
-## Apparent Magnitude
+### Apparent Magnitude
