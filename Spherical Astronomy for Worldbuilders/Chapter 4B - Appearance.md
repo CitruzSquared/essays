@@ -15,7 +15,7 @@ F = \frac{P}{4\pi R^2}\tag{64}
 ```
 Where $P$ is the power output of the star in $\text{W}$, and $R$ is the distance from the star to the observer in $\text{m}$. This makes sense as $4\pi R^2$ is the surface area of a sphere with radius $R$, thus $F$ represents the power output $P$ being spread out over that area.
 
-#### Example 15
+#### Example 16
 <div align="center">
 <table>
 <tbody>
