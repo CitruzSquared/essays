@@ -331,7 +331,7 @@ b & \text{ January 12, } 2024 & +8.5\degree \\ \hline
 ```
 The ephemeris does not go into hourly detail so we must stop here and say the new Moon happened at some time in between $\text{ January 11, } 2024$ and $\text{ January 12, } 2024$, i.e. some time during the day of $\text{ January 11, } 2024$ (We are correct, the new Moon was on $\text{ January 11, } 2024$ at $11:59$).
 
-In a worldbuilding setting, we can solve for the ephemeris at any detail we want using the methods from chapters $2$ and $3$. Thus we can repeat this process to arbitrary precision.
+In a worldbuilding setting, we can create the ephemeris at any detail we want using the methods from chapters $2$ and $3$. Thus we can repeat this process to arbitrary precision.
 
 The time of conjunction (or any elongation, not just conjunction) of any two bodies can be calculated this way.\
 $\blacksquare$.
