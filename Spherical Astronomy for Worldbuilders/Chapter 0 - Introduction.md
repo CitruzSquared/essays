@@ -30,11 +30,11 @@
 ### 2. Terrestrial Observation
 4. Appearance
    - Part A
-     * Equations $54$ to $63$
+     * Equations $54$ to $62$
      * Examples $12$ to $15$
    - Part B
-     *
-     *
+     * Equations $63$ to
+     * Examples $16$ to
 5. Horizontal Coordinates
 6. Time
 7. Earthly Parallax
