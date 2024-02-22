@@ -180,13 +180,9 @@ In addition, if the orbit of a planet has $0\degree$ inclination with respect to
 The time it takes for the elongation to repeat is called the *synodic period*. This is also the time it takes for the phases to repeat as the phases depend on elongation (the Sun-Earth-Object angle can be approximated as the elongation). Because the elongation depends on the location on both the object and the Earth, the formula involves both periods.\
 For inner planets:
 ```math
-T_{P \text{ Synodic}} = \frac{T_E T_P}{T_E - T_P}\tag{62}
+T_{P \text{ Synodic}} = \left|\frac{T_E T_P}{T_E - T_P}\right|\tag{62}
 ```
 where $T$ denotes the sidereal period, and $E$ denotes the Earth, and $P$ denotes the object.\
-And for outer planets:
-```math
-T_{P \text{ Synodic}} = \frac{T_E T_P}{T_P - T_E}\tag{63}
-```
 This formula is not exact as the orbits of the planets are not perfect circles. However it gives the average value.
 
 Evidently, the Earth does not have a synodic orbital period.
@@ -197,7 +193,7 @@ Evidently, the Earth does not have a synodic orbital period.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given their sidereal orbital periods, calculate the synodic period (with respect to Earth) for every planet in the Solar System.
+Given their sidereal orbital periods, calculate the synodic period (with respect to Earth) for every planet in the Solar System and the Moon.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -210,6 +206,7 @@ The sidereal periods are given as such:
 \text{Mercury} & 87.969 \text{ dy} \\
 \text{Venus} & 224.70 \text{ dy} \\
 \text{Earth} & 365.24 \text{ dy} \\
+\text{Moon} & 27.321 \text{ dy} \\
 \text{Mars} & 686.98 \text{ dy} \\
 \text{Jupiter} & 4332.6 \text{ dy} \\
 \text{Saturn} & 10755  \text{ dy} \\
@@ -232,11 +229,11 @@ Doing this for all the planets:
 \text{Mercury} & 87.969 \text{ dy} & 115.88\text{ dy} \\
 \text{Venus} & 224.70 \text{ dy} & 583.96\text{ dy}  \\
 \text{Earth} & 365.24 \text{ dy} & -  \\
+\text{Moon} & 27.321 \text{ dy} & 29.530\text{ dy}  \\ 
 \text{Mars} & 686.98 \text{ dy} & 779.86\text{ dy}  \\
 \text{Jupiter} & 4332.6 \text{ dy} & 398.86\text{ dy}  \\
 \text{Saturn} & 10755  \text{ dy} & 378.08\text{ dy}  \\
-\text{Uranus} & 30688 \text{ dy} & 369.64\text{ dy}  \\
-\text{Neptune} & 60195 \text{ dy} & 367.47\text{ dy}  \\ \hline
+\text{Uranus} & 30688 \text{ dy} & 369.64\text{ dy}  \\ \hline
 \end{array}
 ```
 You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.\
