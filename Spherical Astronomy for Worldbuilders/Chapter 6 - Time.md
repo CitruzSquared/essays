@@ -343,7 +343,7 @@ t &= (175\: \text{ sdy } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{2
 ```
 Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
-At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree\:2'\:32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
+At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree$ $2'$ $32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
 
 Converting to equatorial coordinates:
 ```math
