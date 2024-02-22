@@ -134,15 +134,15 @@ a_2 &= \text{ Semi-major Axis of the Inner Planet}
 ```
 Notice that, if we divide the angle length $ASB$ with the time it takes the inner planet to cross it, we will get the time spent in retrograde. The mean motion of the inner planet is given by:
 ```math
-n_2 = \frac{2\pi}{T_2}
+n_2 = \frac{360\degree}{T_2}
 ```
 But since the Earth is also moving, we need to factor in that too:
 ```math
-n_1 = \frac{2\pi}{T_1}
+n_1 = \frac{360\degree}{T_1}
 ```
 Thus the "relative mean motion" of the inner planet is:
 ```math
-n' = n_1 - n_2 = \frac{2\pi}{T_1} - \frac{2\pi}{T_2} \tag{68}
+n' = n_1 - n_2 = \frac{360\degree}{T_1} - \frac{360\degree}{T_2} \tag{68}
 ```
 But by Kepler's third law (the square of the orbital period is proportional to the cube of the orbital radius), $T_2$ is given by:
 ```math
@@ -154,6 +154,7 @@ T_2 = T_1 \cdot r^{3/2}
 ```
 Therefore equation $68$ becomes:
 ```math
-n' = \frac{2\pi}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
+n' = \frac{360\degree}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
 ```
-Thus if we divide the angle $ASB$ by $n'$, we get the time spent in retrograde. Now to get the angle $ASB$:
+Thus if we divide the angle $ASB$ by $n'$, we get the time spent in retrograde. Now to get the angle $ASB$:\
+The diagram above makes it seem this is as simple as $ASB = \arccos(a_2/a_1)$, but this is not the case because this ignores the fact that the Earth moves as well.
