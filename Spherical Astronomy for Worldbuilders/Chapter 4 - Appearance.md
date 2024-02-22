@@ -239,3 +239,99 @@ You can see that the longer the sidereal period is for a planet compared to the 
 
 Additionally, the synodic period of the Moon $(29.53 \text{ dy})$, by definition of the synodic period, is the average time it takes for the Moon to go from new Moon to new Moon, or from full Moon to full Moon. This is known as the lunar month, and is the basis of the length of the month in many calendar systems around the world, such as the Islamic, Jewish, and Chinese calendars.\
 $\blacksquare$
+
+### Solving for Time of Conjunction
+Because the motion of the planets is very complicated, we cannot exactly solve for the time when two bodies are at the same ecliptic longitude. However, we can use numerical methods to get arbitrarily close.
+
+We cannot use the Newton method as we did in chapter 2 because we do not know the derivative of the function we are going to solve for (the difference in longitude between two objects at time $t$). Thus, we have to use a more crude method: [bisection](https://en.wikipedia.org/wiki/Bisection_method).
+
+Bisection works as follows:\
+To find the solution of an equation $f(t) = 0$,
+- Step 1. Find two values of $t$, $a$ and $b$, such that the sign of $f(a)$ is the opposite of the sign of $f(b)$.\
+If $f(t)$ is continuous between $a$ and $b$, this guarantees that a solution is in between $a$ and $b$.
+- Step 2. Find the midpoint of $a$ and $b$, which we will call $c$.
+- Step 3. Find $f(c)$ and compare its sign to $f(a)$ and $f(b)$. \
+If $\text{sign}(f(c)) = \text{sign}(f(a))$, set $a = c$.\
+If $\text{sign}(f(c)) = \text{sign}(f(b))$, set $b = c$.
+- Step 4. Repeat steps $2$ and $3$ until you reach a value of $f(c)$ close enough to $0$.
+
+#### Example 15
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given a Lunar Ephemeris, find the date of the first new Moon of $2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+A Lunar Ephemeris can be found [here](https://astropixels.com/ephemeris/moon/moon2024.html). This ephemeris has a column for lunar events, but we will ignore this as this data is not available to us in a worldbuilding setting.
+
+We use bisection to solve for when the elongation of the Moon is $0\degree$. \
+We first set $a = \text{ January 1, } 2024$ as the first new Moon of 2024 could not have been before this date.\
+The elongation on this date was $-124.0\degree$. Therefore we need the elongation at time $b$ to be positive.
+We set $b$ to be $a + 0.5\text{ Synodic Period}$, because then, the elongation would be $\approx -124.0\degree + 180\degree$, which is a positive number.\
+Note that if we subtracted $0.5\text{ Synodic Period}$ instead, the elongation would be $\approx -124.0\degree - 180\degree = -304\degree = 56\degree$, which is also a positive number, but this does not work as $f(t)$ (the elongation at time $t$) is not continuous in this region. (There is a jump from $-180\degree$ to $180\degree$).
+
+Now we calculate $b$ to be $\text{ January 16, } 2024$, and the elongations at $a$ and $b$ were:
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 1, } 2024 & -124.0\degree \\
+b & \text{ January 16, } 2024 & +61.8\degree \\ \hline
+\end{array}
+```
+Now we find $c$, be the midpoint of $a$ and $b$, to be $\text{ January 8, } 2024$.
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 1, } 2024 & -124.0\degree \\
+b & \text{ January 16, } 2024 & +61.8\degree \\
+c & \text{ January 8, } 2024 & -45.7\degree \\ \hline
+\end{array}
+```
+The sign of the elongation at time $c$ is the same as the sign at time $a$, so we set $a = c$:
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 8, } 2024 & -45.7\degree \\
+b & \text{ January 16, } 2024 & +61.8\degree \\ \hline
+\end{array}
+```
+Now we repeat the steps: we find the midpoint $c$ and the elongation at $c$ again:
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 8, } 2024 & -45.7\degree \\ 
+b & \text{ January 16, } 2024 & +61.8\degree \\
+c & \text{ January 12, } 2024 & +8.5\degree \\  \hline
+\end{array}
+```
+Now the sign of the elongation at time $c$ is equal to the sign at time $b$, so we set $b = c$:
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 8, } 2024 & -45.7\degree \\
+b & \text{ January 12, } 2024 & +8.5\degree \\ \hline
+\end{array}
+```
+We repeat again. We find $c$ and compare signs of the elongation:\
+$c = \text{ January 10, } 2024, \epsilon = -20.6\degree$, set $a = c$.
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 10, } 2024 & -20.6\degree \\
+b & \text{ January 12, } 2024 & +8.5\degree \\ \hline
+\end{array}
+```
+Repeat once more:
+$c = \text{ January 11, } 2024, \epsilon = -8.4\degree$, set $a = c$.
+```math
+\begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
+a & \text{ January 11, } 2024 & -8.4\degree \\
+b & \text{ January 12, } 2024 & +8.5\degree \\ \hline
+\end{array}
+```
+The ephemeris does not go into hourly detail so we must stop here and say the new Moon happened at some time in between $\text{ January 11, } 2024$ and $\text{ January 12, } 2024$, i.e. some time during the day of $\text{ January 11, } 2024$.
+
+In a worldbuilding setting, we can solve for the ephemeris at any detail we want using the methods from chapters $2$ and $3$. Thus we can repeat this process to arbitrary precision.
+
+The time of conjunction (or any elongation, not just conjunction) of any two bodies can be calculated this way.\
+$\blacksquare$.
