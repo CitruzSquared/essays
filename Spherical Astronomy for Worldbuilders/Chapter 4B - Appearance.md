@@ -13,7 +13,7 @@ $F$ can be calculated with this formula:
 ```math
 F = \frac{P}{4\pi R^2}\tag{64}
 ```
-Where $P$ is the power output of the star in $\text{W}$, and $R$ is the distance from the star to the observer in $\text{m}$. This makes sense as $4\pi R^2$ is the surface area of a sphere with radius $R$, thus $F$ represents the power output $P$ being spread out over that area.
+Where $P$ is the power output of the star in watts$, and $R$ is the distance from the star to the observer in meters$. This makes sense as $4\pi R^2$ is the surface area of a sphere with radius $R$, thus $F$ represents the power output $P$ being spread out over that area.
 
 #### Example 16
 <div align="center">
@@ -42,4 +42,34 @@ $\blacksquare$
 
 <br/>
 
-The brightness of planets is harder to calculate.
+The brightness of planets is harder to calculate: it depends on the *absolute* magnitude, which is the apparent magnitude of an object if the observer were exactly $1 \text{ AU}$ away from it.
+
+The actual calculation of the absolute magnitude of planets is very difficult, but if we approximate planets to be ideally reflecting solid matt spheres, it can be calculated by:
+```math
+H = m_{\text{Sun}} - 5\log_{10}\left(\frac{\sqrt{a}r}{d_0}\right)\tag{65}
+```
+Where $m_{\text{Sun}}$ is the apparent magnitude of the Sun at $1 \text{ AU}$, $a$ is the [albedo](https://en.wikipedia.org/wiki/Albedo) of the planet, a value between $0$ and $1$ describing how much light it reflects (i.e. how white the planet is), $r$ is the radius of the planet, and $d_0$ is the length of $1 \text{ AU}$, approximately $149,600,000,000\text{ m}$.
+
+Then, the apparent magnitude can be calculated by:
+```math
+m = H + 5\log_{10}\left(\frac{d_{PS} \cdot d_{PO}}{d_0^2}\right) - 2.5\log_{10}(q(\alpha))\tag{66}
+```
+Where $d_{PS}$ is the distance from the planet to the Sun in meters, $d_{PO}$ is the distance from the planet to the observer in meters, $d_0$ is the same $d_0$ from before, $1 \text{ AU}$, and $\alpha$ is the phase angle of the planet in degrees.
+
+$q(\alpha)$ is known as the *phase integral*. If we assume planets to be ideally diffusely reflecting spheres, it is given as:
+```math
+q(\alpha) = \frac{2}{3}\left(\left(1- \frac{\alpha}{180\degree}\right)\cos(\alpha) + \frac{1}{\pi}\sin(\alpha)\right)\tag{67}
+```
+
+#### Example 17
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Calculate the apparent magnitude of Venus on $\text{January 1, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
