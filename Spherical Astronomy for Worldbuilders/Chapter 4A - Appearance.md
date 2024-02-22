@@ -104,7 +104,7 @@ Now, by equation $58$:
 Then finally by equation $59$:
 ```math
 \begin{align}
-\text{Phase } &= \frac{1 + \cos(55\degree\enspace43'\enspace\enspace57.60'')}{2}\\
+\text{Phase } (\%) &= \frac{1 + \cos(55\degree\enspace43'\enspace\enspace57.60'')}{2} \cdot 100\% \\
 &= 78.2 \%
 \end{align}
 ```
