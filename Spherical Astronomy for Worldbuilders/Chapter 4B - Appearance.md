@@ -122,4 +122,38 @@ This phenomenon is called [*apparent* retrograde motion](https://en.wikipedia.or
 
 The true way to calculate when a planet goes into retrograde and for how long it stays in retrograde would be to calculate $d\lambda/dt$ and see when it is less than $0$. This is not practical for our purposes because $\lambda$ is not a simple function at all due to the ellipticity of orbits. Thus one would have to use bisection or similar methods to numerically approximate (to arbitrary precision) when exactly a planet goes into retrograde.
 
-In this section, we will assume for a moment that the orbits of the planets are perfect circles and try to calculate for how long a planet would stay in retrograde.
+In this section, we will assume for a moment that the orbits of the planets are perfect circles and try to calculate for how long a planet would stay in retrograde.\
+Let:
+```math
+\begin{align}
+T_1 &= \text{ Orbital Period of the Earth}\\
+T_2 &= \text{ Orbital Period of the Inner Planet}\\
+a_1 &= \text{ Semi-major Axis of the Earth}\\
+a_2 &= \text{ Semi-major Axis of the Inner Planet}
+\end{align}
+```
+Notice that, if we divide the angle length $ASB$ with the time it takes the inner planet to cross it, we will get the time spent in retrograde. The mean motion of the inner planet is given by:
+```math
+n_2 = \frac{2\pi}{T_2}
+```
+But since the Earth is also moving, we need to factor in that too:
+```math
+n_1 = \frac{2\pi}{T_1}
+```
+Thus the "relative mean motion" of the inner planet is:
+```math
+n' = n_1 - n_2 = \frac{2\pi}{T_1} - \frac{2\pi}{T_2} \tag{68}
+```
+But by Kepler's third law (the square of the orbital period is proportional to the cube of the orbital radius), $T_2$ is given by:
+```math
+T_2 = T_1\sqrt{\left(\frac{a_2}{a_1}\right)^3}
+```
+If we set $a_2/a_1 = r$, we get:
+```math
+T_2 = T_1 \cdot r^{3/2}
+```
+Therefore equation $68$ becomes:
+```math
+n' = \frac{2\pi}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
+```
+Thus if we divide the angle $ASB$ by $n'$, we get the time spent in retrograde. Now to get the angle $ASB$:
