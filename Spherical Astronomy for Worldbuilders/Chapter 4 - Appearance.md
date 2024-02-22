@@ -335,5 +335,7 @@ The ephemeris does not go into hourly detail so we must stop here and say the ne
 
 In a worldbuilding setting, we can create the ephemeris at any detail we want using the methods from chapters $2$ and $3$. Thus we can repeat this process to arbitrary precision.
 
+We could have just simply calculated the elongation at even time intervals starting from $\text{ January 1, } 2024$, but that is very inefficient and only guarantees precesion up to the size of the time intervals we are taking. Therefore, bisection is better.
+
 The time of conjunction (or any elongation, not just conjunction) of any two bodies can be calculated this way.\
 $\blacksquare$
