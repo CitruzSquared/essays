@@ -50,6 +50,8 @@ H = m_{\text{Sun}} - 5\log_{10}\left(\frac{\sqrt{a}r}{d_0}\right)\tag{65}
 ```
 Where $m_{\text{Sun}}$ is the apparent magnitude of the Sun at $1 \text{ AU}$, $a$ is the [albedo](https://en.wikipedia.org/wiki/Albedo) of the planet, a value between $0$ and $1$ describing how much light it reflects (i.e. how white the planet is), $r$ is the radius of the planet, and $d_0$ is the length of $1 \text{ AU}$, approximately $149,600,000,000\text{ m}$.
 
+Note that this formula is a great approximation, for example the Moon of Earth has a brighter half and a darker half, so the albedo is not the same depending on which side is visible (i.e. depends on the elongation from the Sun). This is not reflected in the formula, which assumes all bodeis to have uniform albedo.
+
 Then, the apparent magnitude can be calculated by:
 ```math
 m = H + 5\log_{10}\left(\frac{d_{PS} \cdot d_{PO}}{d_0^2}\right) - 2.5\log_{10}(q(\alpha))\tag{66}
@@ -60,6 +62,7 @@ $q(\alpha)$ is known as the *phase integral*. If we assume planets to be ideally
 ```math
 q(\alpha) = \frac{2}{3}\left(\left(1- \frac{\alpha}{180\degree}\right)\cos(\alpha) + \frac{1}{\pi}\sin(\alpha)\right)\tag{67}
 ```
+Note that this formula is quite a great approximation, and does not take into account rings and other factors that may change the brightness of a planet.
 
 #### Example 17
 <div align="center">
