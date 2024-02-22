@@ -96,8 +96,8 @@ Which is known as [**Kepler's Equation**](https://en.wikipedia.org/wiki/Kepler%2
 <td align="center">
 <img width="2000" height="0"><br>
 The orbital period of the Earth $T = 365.2422\text{ dy}$, and the eccentricity of its orbit is $0.0167$. <br/>
-Additionally, when it is at periapsis, its heliocentric ecliptic longitude is $102\degree\enspace56'\enspace49.9''$. <br/>
-Given that the time of perihelion in $2024$ was $\text{January 3, }2024\enspace 00:38$, <br/>
+Additionally, when it is at periapsis, its heliocentric ecliptic longitude is $102\degree\:56'\:49.9''$. <br/>
+Given that the time of perihelion in $2024$ was $\text{January 3, }2024\: 00:38$, <br/>
 calculate the time of Spring Equinox in the Northern Hemisphere in $2024$.
 <img width="2000" height="0">
 </td>
@@ -110,15 +110,15 @@ Because ecliptic coordinates are based on the Earth's orbital plane, it effectiv
 Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Sun, Geocentric}} = 0\degree$, therefore (by equation $5$) it occurs when $\lambda_{\text{Earth, Heliocentric}} = 180\degree$. Thus, the true anomaly of the Earth at the time of Northern Spring Equinox is:
 ```math
 \begin{align}
-\nu &= 180\degree - 102\degree\enspace56'\enspace49.9''\\
-&= 77\degree\enspace3'\enspace50.1''
+\nu &= 180\degree - 102\degree\:56'\:49.9''\\
+&= 77\degree\:3'\:50.1''
 \end{align}
 ```
 Now, by equation $21$:
 ```math
 \begin{align}
 \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
-&= \frac{0.0167 + \cos(77\degree\enspace3'\enspace50.1'')}{1 + 0.0167\cos(77\degree\enspace3'\enspace50.1'')}\\
+&= \frac{0.0167 + \cos(77\degree\:3'\:50.1'')}{1 + 0.0167\cos(77\degree\:3'\:50.1'')}\\
 &= 0.239855411\\
 \therefore E &= 1.3285794 \text{ rad}
 \end{align}
@@ -137,11 +137,11 @@ Therefore, by the definition of $M$ (equation $25$):
 M &= \frac{2\pi}{T}\cdot t\\
 \therefore t &= \frac{TM}{2\pi}\\
 &=\frac{365.2422\text{ dy} \cdot 1.3123669}{2\pi}\\
-&= 76 \text{ dy}\enspace6h\enspace55m
+&= 76 \text{ dy}\:6h\:55m
 \end{align}
 ```
-$76\text{ dy}\enspace6h\enspace55m$ after $\text{January 3, }2024\enspace00:38$ is $\text{March 19, }2024\enspace07:33$.\
-Comparing to the true time ($\text{March 20, }2024\enspace03:07$), we can see that we are close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
+$76\text{ dy}\:6h\:55m$ after $\text{January 3, }2024\:00:38$ is $\text{March 19, }2024\:07:33$.\
+Comparing to the true time ($\text{March 20, }2024\:03:07$), we can see that we are close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
 $\blacksquare$
 
 However what we really want is the reverse operation of example $4$: going from a specific time to a location. Sounds easy: $M$ is very easy to calculate, and $E$ gives us the exact coordinates $(x, y)$, and we have a relation between $M$ and $E$ by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation) (equation $26$)!\
@@ -177,8 +177,8 @@ which we can use to iteratively obtain better and better approximations of $E$, 
 <td align="center">
 <img width="2000" height="0"><br>
 The Earth has orbital period $T = 365.2422\text{ dy}$, its orbit has semi-major axis $a = 149.6 \text{ Gm}$, and its eccentricity $e = 0.0167$. <br/>
-Find the heliocentric ecliptic longitude of the Earth at $t = 76 \text{ dy}\enspace6h\enspace55m$ past periapsis, <br/>
-given that when the Earth at periapsis, its heliocentric ecliptic longitude is $102\degree\enspace56'\enspace49.9''$
+Find the heliocentric ecliptic longitude of the Earth at $t = 76 \text{ dy}\:6h\:55m$ past periapsis, <br/>
+given that when the Earth at periapsis, its heliocentric ecliptic longitude is $102\degree\:56'\:49.9''$
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -189,7 +189,7 @@ Due to the definition of the ecliptic coordinate frame, we can use our perifocal
 We first calculate $M$ by equation $25$:
 ```math
 \begin{align}
-M &= \frac{2\pi}{365.2422\text{ dy}} \cdot 76 \text{ dy}\enspace6h\enspace55m \\
+M &= \frac{2\pi}{365.2422\text{ dy}} \cdot 76 \text{ dy}\:6h\:55m \\
 &= 1.3123669\text{ rad}
 \end{align}
 ```
@@ -232,11 +232,11 @@ y_{\text{perifocal}} &= b \sin (E)\\
 ```
 Then, by equation $17$, the true anomaly is:
 ```math
-\arctan(145.213, 33.384) = 77\degree\enspace3'\enspace10.27''
+\arctan(145.213, 33.384) = 77\degree\:3'\:10.27''
 ```
-Which, when added with the ecliptic longitude of the periapsis $102\degree\enspace56'\enspace49.9''$ gives:
+Which, when added with the ecliptic longitude of the periapsis $102\degree\:56'\:49.9''$ gives:
 ```math
-\lambda_{\text{Earth, Heliocentric}} = 180\degree\enspace17''
+\lambda_{\text{Earth, Heliocentric}} = 180\degree\:17''
 ```
 Which agrees with example $4$. (The $17''$ is due to stray rounding error.)\
 $\blacksquare$
