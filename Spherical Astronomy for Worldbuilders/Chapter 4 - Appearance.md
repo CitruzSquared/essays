@@ -333,7 +333,7 @@ b & \text{ January 12, } 2024 & +8.5\degree \\ \hline
 ```
 The ephemeris does not go into hourly detail so we must stop here and say the new Moon happened at some time in between $\text{ January 11, } 2024$ and $\text{ January 12, } 2024$, i.e. some time during the day of $\text{ January 11, } 2024$, but we can go one step into the blind and calculate $c$ one more time for some extra precision: $c = \text{ January 11, } 2024$ at $12:00$. (We are remarkably close, the new Moon was on $\text{ January 11, } 2024$ at $11:59$.)
 
-In a worldbuilding setting, we can calculate the elongation at times $a$ and $b$ at detail we want using the methods from chapters $2$ and $3$. Thus we can repeat this process **to arbitrary precision**.
+In a worldbuilding setting, we can calculate the elongation at times $a$, $b$, and $c$ at any detail we want using the methods from chapters $2$ and $3$. Thus we can repeat this process **to arbitrary precision**.
 
 We could have just simply calculated the elongation at even time intervals starting from $\text{ January 1, } 2024$, but that is very inefficient and only guarantees precesion up to the size of the time intervals we are taking. Therefore, bisection is better.
 
