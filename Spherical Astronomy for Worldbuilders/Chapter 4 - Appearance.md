@@ -287,7 +287,7 @@ Now we find $c$, be the midpoint of $a$ and $b$, to be $\text{ January 8, } 2024
 ```math
 \begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
 a & \text{ January 1, } 2024 & -124.0\degree \\
-b & \text{ January 16, } 2024 & +61.8\degree \\
+b & \text{ January 16, } 2024 & +61.8\degree \\ \hline
 c & \text{ January 8, } 2024 & -45.7\degree \\ \hline
 \end{array}
 ```
@@ -302,7 +302,7 @@ Now we repeat the steps: we find the midpoint $c$ and the elongation at $c$ agai
 ```math
 \begin{array}{ccc}\hline \text{t} & \text{Date} & \text{Elongation} \\ \hline
 a & \text{ January 8, } 2024 & -45.7\degree \\ 
-b & \text{ January 16, } 2024 & +61.8\degree \\
+b & \text{ January 16, } 2024 & +61.8\degree \\ \hline
 c & \text{ January 12, } 2024 & +8.5\degree \\  \hline
 \end{array}
 ```
