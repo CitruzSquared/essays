@@ -261,7 +261,7 @@ If $\text{sign}(f(c)) = \text{sign}(f(b))$, set $b = c$.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given a Lunar Ephemeris, find the time of the first new Moon of $2024$.
+Find the time of the first new Moon of $2024$.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -273,7 +273,7 @@ A Lunar Ephemeris can be found [here](https://astropixels.com/ephemeris/moon/moo
 - We use bisection to solve for when the elongation of the Moon is $0\degree$.
   
 We first set $a = \text{ January 1, } 2024$ as the first new Moon of 2024 could not have been before this date.\
-The elongation on this date was $-124.0\degree$. Therefore we need the elongation at time $b$ to be positive.
+The elongation on this date was $-124.0\degree$. (We would have to calculate the elongation in a fictional setting as an ephemeris would not be available.) Therefore we need the elongation at time $b$ to be positive.
 
 We set $b$ to be $a + 0.5\text{ Synodic Period}$, because then, the elongation would be $\approx -124.0\degree + 180\degree$, which is a positive number.\
 Note that if we subtracted $0.5\text{ Synodic Period}$ instead, the elongation would be $\approx -124.0\degree - 180\degree = -304\degree = 56\degree$, which is also a positive number, but this does not work as $f(t)$ (the elongation at time $t$) is not continuous in this region. (There is a jump from $-180\degree$ to $180\degree$).
