@@ -54,7 +54,7 @@ Note that this formula is a great approximation, for example the Moon of Earth h
 
 Then, the apparent magnitude can be calculated by:
 ```math
-m = H + 5\log_{10}\left(\frac{d_{PS} \cdot d_{PO}}{d_0^2}\right) - 2.5\log_{10}(q(\alpha))\tag{66}
+m = H + 5\log_{10}\left(\frac{d_{PS} d_{PO}}{d_0^2}\right) - 2.5\log_{10}(q(\alpha))\tag{66}
 ```
 Where $d_{PS}$ is the distance from the planet to the Sun in meters, $d_{PO}$ is the distance from the planet to the observer in meters, $d_0$ is the same $d_0$ from before, $1 \text{ AU}$, and $\alpha$ is the phase angle of the planet in degrees.
 
@@ -71,9 +71,44 @@ Note that this formula is quite a great approximation, and does not take into ac
 <td align="center">
 <img width="2000" height="0"><br>
 Given that the albedo of Venus is $0.69$ and that its radius is $6\:051\:000 \text{ m}$, <br/>
-Calculate the apparent magnitude of Venus on $\text{January 1, } 2024$.
+Calculate the apparent magnitude of Venus on $\text{January 1, } 2024$. <br/>
+Use $1 \text{ AU} = 149\:600\:000\:000 \text{ m}$.
 <img width="2000" height="0">
 </td>
 </tbody>
 </table>
 </div>
+
+We found out in example $12$ that:
+```math
+\begin{align}
+\text{Sun Earth Distance } &= 0.9833 \text{ AU} = 147\:101\:680\:000 \text{ m}\\
+\text{Earth Venus Distance } &= 1.1882 \text{ AU} = 177\:754\:720\:000 \text{ m}\\
+\text{Sun Venus Distance } &= 0.7205 \text{ AU} = 107\:786\:800\:000 \text{ m}\\
+\text{Venus Phase Angle } &= 55\degree\enspace43'\enspace\enspace57.60''
+\end{align}
+```
+We also found out in example $15$ that the apparent magnitude of the Sun from $1\text{ AU}$ away is $-26.8$.\
+Thus, by equation $65$:
+```math
+\begin{align}
+H &= -26.8 - 5\log_{10}\left(\frac{\sqrt{0.69}\cdot 6\:051\:000}{149\:600\:000\:000}\right) \\
+&= -4.432
+\end{align}
+```
+And then by equation $67$:
+```math
+\begin{align}
+q(\alpha) &= \frac{2}{3}\left(\left(1- \frac{55\degree\enspace43'\enspace\enspace57.60''}{180\degree}\right)\cos(55\degree\enspace43'\enspace\enspace57.60'') + \frac{1}{\pi}\sin(55\degree\enspace43'\enspace\enspace57.60'')\right) \\
+&= 0.43452
+\end{align}
+```
+And thus finally by equation $66$:
+```math
+\begin{align}
+m &= -4.432 + 5\log_{10}\left(\frac{107\:786\:800\:000 \cdot 177\:754\:720\:000}{149\:600\:000\:000^2}\right) - 2.5\log_{10}(0.43452)\\
+&= -3.86
+\end{align}
+```
+Comparing this to the true value of $-4.1$, we can see how crude the approximation really is. However, this is the best we can realistically do.\
+$\blacksquare$
