@@ -140,8 +140,8 @@ M &= \frac{2\pi}{T}\cdot t\\
 &= 76 \text{ dy}\:6h\:55m
 \end{align}
 ```
-$76\text{ dy}\:6h\:55m$ after $\text{January 3, }2024\:00:38$ is $\text{March 19, }2024\:07:33$.\
-Comparing to the true time ($\text{March 20, }2024\:03:07$), we can see that we are close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
+$76\text{ dy}$ $6h$ $55m$ after $\text{January 3, }2024$ $00:38$ is $\text{March 19, }2024$ $07:33$.\
+Comparing to the true time ($\text{March 20, }2024$ $03:07$), we can see that we are close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
 $\blacksquare$
 
 However what we really want is the reverse operation of example $4$: going from a specific time to a location. Sounds easy: $M$ is very easy to calculate, and $E$ gives us the exact coordinates $(x, y)$, and we have a relation between $M$ and $E$ by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation) (equation $26$)!\
