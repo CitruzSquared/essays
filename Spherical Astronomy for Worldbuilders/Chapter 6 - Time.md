@@ -116,9 +116,9 @@ This can be interpreted as the fact that at the time of measurement, at the prim
 
 Furthermore, the local sidereal time can be calculated by equation $8$:
 ```math
-\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\: \text{ s dy  }\:116\degree\:31'\:12.25''
+\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\: \text{ sdy }\:116\degree\:31'\:12.25''
 ```
-Where $\text{ s dy  }$ means sidereal days.\
+Where $\text{ sdy }$ means sidereal days.\
 $\blacksquare$
 
 To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $9$ still holds.
@@ -138,27 +138,27 @@ Calculate the standard mean solar time.
 
 We convert to standard sidereal time by subtracting the longitude:
 ```math
-\text{Standard } \Theta = 116\degree\:31'\:12.25'' - 165\degree = -1\: \text{ s dy  } \:311\degree\:31'\: 12.25''\tag{i}
+\text{Standard } \Theta = 116\degree\:31'\:12.25'' - 165\degree = -1\: \text{ sdy } \:311\degree\:31'\: 12.25''\tag{i}
 ```
 We then find the sidereal day corresponding to solar day $175$:
 ```math
-\Theta_{t=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\: \text{ s dy  }\:37\degree\:40'\:36.24''
+\Theta_{t=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\: \text{ sdy }\:37\degree\:40'\:36.24''
 ```
 Which we truncate to:
 ```math
-\Theta_{t=175.00} = 175\: \text{ s dy  } \tag{ii}
+\Theta_{t=175.00} = 175\: \text{ sdy } \tag{ii}
 ```
 Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175 \text{ sdy } -1 \text{ sdy } 311\degree$ $31'$ $12.25''$.\
 Using equation $9$ with $0.5$ sidereal days $= 180\degree$,
 ```math
 \begin{align}
-t &= (174\: \text{ s dy  }\: 311\degree\:31'\:12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
+t &= (174\: \text{ sdy }\: 311\degree\:31'\:12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
 &= 174.7615\: \text{ dy }\\
 &= 174\: \text{ dy } \: 18:16:34
 \end{align}
 ```
 If we add $l$ to $t$, we can see we get local solar day $175$, matching with the local observation date. \
-If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{t=175.00}$ to be $1$ higher. (In our case, $\Theta_{t=175.00} = 176 \text{  s dy  }$.)\
+If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{t=175.00}$ to be $1$ higher. (In our case, $\Theta_{t=175.00} = 176 \text{  sdy }$.)\
 $\blacksquare$
 
 ### The Hour Angle
@@ -215,7 +215,7 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 Then, using the method of Example $4$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
 ```math
 \begin{align}
-t &= (175\: \text{ s dy  }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+t &= (175\: \text{ sdy }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
 &= 175.4905\: \text{ dy } \\
 &= 175\: \text{ dy } \: 11:46:22
 \end{align}
@@ -246,7 +246,7 @@ Again, using equations $1$, $2,$ and $3$, we find:
 Repeating the method of Example 4,
 ```math
 \begin{align}
-t &= (175\: \text{ s dy  }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+t &= (175\: \text{ sdy }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
 &= 175\: \text{ dy }\: 11:48:43
 \end{align}
 ```
@@ -336,7 +336,7 @@ h_L = \Theta_L - \alpha\\
 &=-71\degree\:1'\:54.87'' + 214\degree\:52'\:37.04''\\
 &=143\degree\:50'\:42.17''\\
 
-t &= (175\: \text{ s dy  } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+t &= (175\: \text{ sdy } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{289.42}{290.42}\\
 & = 175\: \text{ dy } \: 07:03:13
 \end{align}
 }
