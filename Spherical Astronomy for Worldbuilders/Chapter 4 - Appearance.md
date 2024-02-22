@@ -197,7 +197,7 @@ Evidently, the Earth does not have a synodic orbital period.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given their sidereal orbital periods, calculate the synodic period for every planet in the Solar System.
+Given their sidereal orbital periods, calculate the synodic period (with respect to Earth) for every planet in the Solar System.
 <img width="2000" height="0">
 </td>
 </tbody>
