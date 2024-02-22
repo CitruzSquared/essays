@@ -112,3 +112,5 @@ m &= -4.432 + 5\log_{10}\left(\frac{107\:786\:800\:000 \cdot 177\:754\:720\:000}
 ```
 Comparing this to the true value of $-4.1$, we can see how crude the approximation really is. However, this is the best we can realistically do.\
 $\blacksquare$
+
+### Apparent Retrograde Motion
