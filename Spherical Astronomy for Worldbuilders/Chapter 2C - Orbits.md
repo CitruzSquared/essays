@@ -141,9 +141,9 @@ Mars' orbital elements are given as:
 \begin{align}
 a &= 227.939 \text{ Gm}\\
 e &= 0.0934\\
-i &= 1\degree\enspace51'\\
-\Omega &= 47\degree\enspace34'\enspace42.7''\\
-\omega &= 286\degree\enspace30'\\
+i &= 1\degree\:51'\\
+\Omega &= 47\degree\:34'\:42.7''\\
+\omega &= 286\degree\:30'\\
 \end{align}
 ```
 We first need the mean anomaly of Mars, which involves finding the oribital period $T$. By equation $15$:
@@ -210,7 +210,7 @@ x \\ y \\ z
 \begin{bmatrix}
 118.787 \\ −172.177 \\ −6.527
 \end{bmatrix}
-\enspace[\text{Gm}]
+\:[\text{Gm}]
 ```
 $\blacksquare$
 
@@ -264,7 +264,7 @@ Recall example $5$ where we calculated Earth's perifocal coordinates on this dat
 ```math
 \begin{align}
 \Omega &= 0\degree\\
-\omega &= 102\degree\enspace56'\enspace49.9''\\
+\omega &= 102\degree\:56'\:49.9''\\
 i &= 0\degree
 \end{align}
 ```
@@ -286,7 +286,7 @@ x_{\text{Earth}} \\ y_{\text{Earth}} \\ z_{\text{Earth}}
 \begin{bmatrix}
 -149.001 \\ 0 \\ 0
 \end{bmatrix}
-\enspace[\text{Gm}]
+\:[\text{Gm}]
 ```
 Thus, by equation $32$:
 ```math
@@ -305,7 +305,7 @@ Thus, by equation $32$:
 \begin{bmatrix}
 267.788 \\ -172.177 \\ -6.527
 \end{bmatrix}
-\enspace[\text{Gm}]
+\:[\text{Gm}]
 ```
 We need equatorial coordinates, so by equation $3$:
 ```math
@@ -325,7 +325,7 @@ We need equatorial coordinates, so by equation $3$:
 \begin{bmatrix}
 267.788 \\ -155.372 \\-74.478
 \end{bmatrix}
-\enspace[\text{Gm}]
+\:[\text{Gm}]
 ```
 Then, by equation $2$:
 ```math
@@ -334,17 +334,17 @@ Then, by equation $2$:
 &= 318.430 \text{ Gm} \\
 &= 2.128 \text{ AU}\\
 \alpha &= \arctan(-155.372, 267.788) \\
-&= 21^h\enspace59^m\enspace30.59^s\\
+&= 21^h\:59^m\:30.59^s\\
 \delta &= \arcsin \left(\frac{-74.478}{\rho}\right) \\
-&= -13\degree\enspace31'\enspace34.55''\\
+&= -13\degree\:31'\:34.55''\\
 \end{align}
 ```
 Comparing this to the true value of
 ```math
 \begin{align}
 \rho &= 2.136\text{ AU}\\
-\alpha &= 21^h\enspace59^m\enspace47^s\\
-\delta &= -13\degree\enspace29'\enspace50''\\
+\alpha &= 21^h\:59^m\:47^s\\
+\delta &= -13\degree\:29'\:50''\\
 \end{align}
 ```
 We can see we were very close considering we ignored all perturbation.\
