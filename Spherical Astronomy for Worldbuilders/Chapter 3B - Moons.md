@@ -128,7 +128,7 @@ Remember in Chapter $2$ when we calculated the mean anomaly to calculate the ecc
 ```math
 M = \frac{2\pi}{T}\cdot t
 ```
-Where $t$ was measured from the time of periapsis. However, when dealing with moons, the periapsis would have moved by the time the moon makes an orbit. Thus, the $T$ used in the formula for $M$ cannot be just the simple $T$ calculated from $15$, which is just the time it takes for the moon to reach the same location (longitude or right ascension) again. (This period is called the *sidereal period*.) To account for the fact that the periapsis has moved, we need a new period, and this is called the *anomalistic period* (as it is the period of repetition of the anomalies). It can be calculated as such:
+Where $t$ was measured from the time of periapsis. However, when dealing with moons, the periapsis would have moved by the time the moon makes an orbit. Thus, the $T$ used in the formula for $M$ cannot be just the simple $T$ calculated from $15$, which is just the (average) time it takes for the moon to reach the same location (longitude or right ascension) again. (This period is called the *sidereal period*.) To account for the fact that the periapsis has moved, we need a new period, and this is called the *anomalistic period* (as it is the period of repetition of the anomalies). It can be calculated as such:
 ```math
 T_A = \frac{T_S T_{\dot\varpi}}{T_{\dot\varpi} - T_S}\tag{53}
 ```
