@@ -113,3 +113,9 @@ Comparing this to the true value of $-4.1$, we can see how crude the approximati
 $\blacksquare$
 
 ### Apparent Retrograde Motion
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0cda3938-10e9-40ca-a675-c975ed709365" width="350"/> This diagram depicts the Earth ($O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
+
+From the view of the Earth, the inner planet would look to orbit from West to East (i.e. increasing in longitude) most of the time, but when the planet is near inferior conjunction ($C$), or more specifically, in between the points $A$ and $B$, it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
+
+This phenomenon is called [*apparent* retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), as it is not a real physical phenomenon, just an illusion caused by the effects of relative motion.
