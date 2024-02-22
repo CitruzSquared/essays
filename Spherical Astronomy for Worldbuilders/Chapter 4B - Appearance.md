@@ -70,6 +70,7 @@ Note that this formula is quite a great approximation, and does not take into ac
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
+Given that the albedo of Venus is $0.69$ and that its radius is $6\:051\:000 \text{ m}$, <br/>
 Calculate the apparent magnitude of Venus on $\text{January 1, } 2024$.
 <img width="2000" height="0">
 </td>
