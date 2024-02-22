@@ -177,8 +177,7 @@ In addition, if the orbit of a planet has $0\degree$ inclination with respect to
 
 ### The Synodic Period
 
-The time it takes for the elongation to repeat is called the *synodic period*. This is also the time it takes for the phases to repeat as the phases depend on elongation (the Sun-Earth-Object angle can be approximated as the elongation). Because the elongation depends on the location on both the object and the Earth, the formula involves both periods.\
-For inner planets:
+The time it takes for the elongation to repeat is called the *synodic period*. This is also the time it takes for the phases to repeat as the phases depend on elongation (the Sun-Earth-Object angle can be approximated as the elongation). Because the elongation depends on the location on both the object and the Earth, the formula involves both periods:
 ```math
 T_{P \text{ Synodic}} = \left|\frac{T_E T_P}{T_E - T_P}\right|\tag{62}
 ```
