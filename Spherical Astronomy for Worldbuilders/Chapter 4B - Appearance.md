@@ -157,4 +157,4 @@ Therefore equation $68$ becomes:
 n' = \frac{360\degree}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
 ```
 Thus if we divide the angle $ASB$ by $n'$, we get the time spent in retrograde. Now to get the angle $ASB$:\
-The diagram above makes it seem this is as simple as $ASB = \arccos(a_2/a_1)$, but this is not the case because this ignores the fact that the Earth moves as well. In fact, the angle $ASB$ is not really the angle shown in the diagram because of this.
+The diagram above makes it seem this is as simple as $ASB = 2\arccos(a_2/a_1)$, but this is not the case because this ignores the fact that the Earth moves as well. In fact, the angle $ASB$ is not really the angle shown in the diagram because of this.
