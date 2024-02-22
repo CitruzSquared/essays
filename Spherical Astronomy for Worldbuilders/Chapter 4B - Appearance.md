@@ -84,7 +84,7 @@ We found out in example $12$ that:
 \begin{align}
 \text{Earth Venus Distance } &= 1.1882 \text{ AU} = 177\:754\:720\:000 \text{ m}\\
 \text{Sun Venus Distance } &= 0.7205 \text{ AU} = 107\:786\:800\:000 \text{ m}\\
-\text{Venus Phase Angle } &= 55\degree\enspace43'\enspace\enspace57.60''
+\text{Venus Phase Angle } &= 55\degree\:43'\:\:57.60''
 \end{align}
 ```
 We also found out in example $15$ that the apparent magnitude of the Sun from $1\text{ AU}$ away is $-26.8$.\
@@ -98,7 +98,7 @@ H &= -26.8 - 5\log_{10}\left(\frac{\sqrt{0.69}\cdot 6\:051\:000}{149\:600\:000\:
 And then by equation $67$:
 ```math
 \begin{align}
-q(\alpha) &= \frac{2}{3}\left(\left(1- \frac{55\degree\enspace43'\enspace\enspace57.60''}{180\degree}\right)\cos(55\degree\enspace43'\enspace\enspace57.60'') + \frac{1}{\pi}\sin(55\degree\enspace43'\enspace\enspace57.60'')\right) \\
+q(\alpha) &= \frac{2}{3}\left(\left(1- \frac{55\degree\:43'\:\:57.60''}{180\degree}\right)\cos(55\degree\:43'\:\:57.60'') + \frac{1}{\pi}\sin(55\degree\:43'\:\:57.60'')\right) \\
 &= 0.43452
 \end{align}
 ```
