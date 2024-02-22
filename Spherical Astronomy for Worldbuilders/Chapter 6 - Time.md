@@ -26,7 +26,7 @@ Thus, since there are $Y\pm1$ sidereal days per $Y$ synodic days, where $Y$ is t
 #### Example 2
 <div align="center">
 <table>
-<tbody>
+<tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
 The Earth has an orbital period of $365.2422$ Earth Solar days while Venus has an orbital period of $1.92$ Venusian Solar days. <br/>
@@ -34,7 +34,7 @@ Calculate the length of the sidereal day on Earth and Venus, keeping in mind Ven
 (The length of an Earth Solar day is $24$ hours while the length of a Venusian Solar day is $116.75$ Earth Solar days.)
 <img width="2000" height="0">
 </td>
-</tbody>
+</tbo dy >
 </table>
 </div>
 
@@ -54,7 +54,7 @@ Since Venus has a retrograde orbit,
 ```
 Substituting the numbers,
 ```math
-\text{Venus Sidereal Day Length} = \frac{1.92}{1.92 - 1} \cdot 116.75\: \text{dy} = 243\: \text{dy}
+\text{Venus Sidereal Day Length} = \frac{1.92}{1.92 - 1} \cdot 116.75\: \text{ dy } = 243\: \text{ dy }
 ```
 Comparing these values to Wikipedia, we can see we are correct.\
 $\blacksquare$
@@ -85,7 +85,7 @@ Under this presumption, the conversion from Solar time to sidereal time is very 
 #### Example 3
 <div align="center">
 <table>
-<tbody>
+<tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
 An observation was made on planet $P$ on solar day $175$ at solar time $05:16:34$ at $l=165\degree E$. <br/>
@@ -93,7 +93,7 @@ Calculate the standard sidereal time at the time of the observation. <br/>
 (Assume a year length of $289.42$ solar days, a solar day length of $24$ hours, and prograde rotation.)
 <img width="2000" height="0">
 </td>
-</tbody>
+</tbo dy >
 </table>
 </div>
 
@@ -102,10 +102,10 @@ First, using equation $7$, we determine the standard time of observation.
 \begin{align}
 \text{Standard Time } (t) &= 05:16:34 - \frac{165\degree/360\degree}{24h} \\
 &= 05:16:34 - 11h \\
-&= -1\: \text{dy} \: 18:16:34
+&= -1\: \text{ dy } \: 18:16:34
 \end{align}
 ```
-Where $\text{dy}$ means Solar days.\
+Where $\text{ dy }$ means Solar days.\
 This means the standard time at the time of observation was solar day $174$ at $18:16:34$, or at $t = 174.7615$ days.\
 Then, using equation $9$:
 ```math
@@ -116,49 +116,49 @@ This can be interpreted as the fact that at the time of measurement, at the prim
 
 Furthermore, the local sidereal time can be calculated by equation $8$:
 ```math
-\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\: \text{sdy}\:116\degree\:31'\:12.25''
+\Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\: \text{ s dy  }\:116\degree\:31'\:12.25''
 ```
-Where $\text{sdy}$ means sidereal days.\
+Where $\text{ s dy  }$ means sidereal days.\
 $\blacksquare$
 
 To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $9$ still holds.
 #### Example 4
 <div align="center">
 <table>
-<tbody>
+<tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ on local solar day $175$, an observation was made at $l = 165\degree E$ at local sidereal time $116\degree$ $31'$ $12.25''.$ <br/>
 Calculate the standard mean solar time.
 <img width="2000" height="0">
 </td>
-</tbody>
+</tbo dy >
 </table>
 </div>
 
 We convert to standard sidereal time by subtracting the longitude:
 ```math
-\text{Standard } \Theta = 116\degree\:31'\:12.25'' - 165\degree = -1\: \text{sdy} \:311\degree\:31'\: 12.25''\tag{i}
+\text{Standard } \Theta = 116\degree\:31'\:12.25'' - 165\degree = -1\: \text{ s dy  } \:311\degree\:31'\: 12.25''\tag{i}
 ```
 We then find the sidereal day corresponding to solar day $175$:
 ```math
-\Theta_{t=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\: \text{sdy}\:37\degree\:40'\:36.24''
+\Theta_{t=175.00} = \frac{290.42}{289.42} \cdot 175 - 0.5 = 175\: \text{ s dy  }\:37\degree\:40'\:36.24''
 ```
 Which we truncate to:
 ```math
-\Theta_{t=175.00} = 175\: \text{sdy} \tag{ii}
+\Theta_{t=175.00} = 175\: \text{ s dy  } \tag{ii}
 ```
-Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175 \text{ sdy } -1 \text{ sdy } 311\degree$ $31'$ $12.25''$.\
+Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175 \text{  s dy   } -1 \text{  s dy   } 311\degree$ $31'$ $12.25''$.\
 Using equation $9$ with $0.5$ sidereal days $= 180\degree$,
 ```math
 \begin{align}
-t &= (174\: \text{sdy}\: 311\degree\:31'\:12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
-&= 174.7615\: \text{dy}\\
-&= 174\: \text{dy} \: 18:16:34
+t &= (174\: \text{ s dy  }\: 311\degree\:31'\:12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
+&= 174.7615\: \text{ dy }\\
+&= 174\: \text{ dy } \: 18:16:34
 \end{align}
 ```
 If we add $l$ to $t$, we can see we get local solar day $175$, matching with the local observation date. \
-If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{t=175.00}$ to be $1$ higher. (In our case, $\Theta_{t=175.00} = 176 \text{ sdy}$.)\
+If we had gotten for this value local solar day $174$, we would try again but with $\Theta_{t=175.00}$ to be $1$ higher. (In our case, $\Theta_{t=175.00} = 176 \text{  s dy  }$.)\
 $\blacksquare$
 
 ### The Hour Angle
@@ -187,15 +187,15 @@ When $h_L = 0$, the star is coincident with the meridian, and the star is at the
 #### Example 5
 <div align="center">
 <table>
-<tbody>
+<tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at standard time $t = 175.00 \text{ dy}$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree$ $40'$ $36.24''$. <br/>
+On planet $P$ at standard time $t = 175.00 \text{  dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree$ $40'$ $36.24''$. <br/>
 What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
 (The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
 <img width="2000" height="0">
 </td>
-</tbody>
+</tbo dy >
 </table>
 </div>
 
@@ -212,30 +212,30 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 ```math
 \Theta = \alpha = 214\degree\:52'\:37.04''.
 ```
-Then, using the method of Example $4$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
+Then, using the method of Example $4$, we try $\Theta = 175 \text{  s dy   } 215\degree$ $25'$ $50.5''$.
 ```math
 \begin{align}
-t &= (175\: \text{sdy}\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175.4905\: \text{dy} \\
-&= 175\: \text{dy} \: 11:46:22
+t &= (175\: \text{ s dy  }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175.4905\: \text{ dy } \\
+&= 175\: \text{ dy } \: 11:46:22
 \end{align}
 ```
 $\blacksquare$
 
-However, in this example, $t = 175 \text{ dy } 11:46:22 \neq 175.00 \text{ dy}$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
+However, in this example, $t = 175 \text{  dy  } 11:46:22 \neq 175.00 \text{  dy }$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 #### Example 5-II
 <div align="center">
 <table>
-<tbody>
+<tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-Using the fact that at $t = 175 \text{ dy } 11:46:22$, $\lambda_{\text{Sun}}$ was $218\degree$ $17'$ $12.78''$, <br/>
+Using the fact that at $t = 175 \text{  dy  } 11:46:22$, $\lambda_{\text{Sun}}$ was $218\degree$ $17'$ $12.78''$, <br/>
 Improve the approximation of the time of apparent noon. <br/>
 (The calculation of $\lambda_{\text{Sun}}$ will be detailed in future chapters.)
 <img width="2000" height="0">
 </td>
-</tbody>
+</tbo dy >
 </table>
 </div>
 
@@ -246,8 +246,8 @@ Again, using equations $1$, $2,$ and $3$, we find:
 Repeating the method of Example 4,
 ```math
 \begin{align}
-t &= (175\: \text{sdy}\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175\: \text{dy}\: 11:48:43
+t &= (175\: \text{ s dy  }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175\: \text{ dy }\: 11:48:43
 \end{align}
 ```
 More repetition will improve our estimations even further, but they rapidly converge. (A third estimate gives the time $11:48:44$.)
@@ -265,14 +265,14 @@ etc.
 #### Example 6
 <div align="center">
 <table>
-<tbody>
+<tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at standard time $t = 175.00\: \text{dy}$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\:40'\:36.24''$. <br/>
+On planet $P$ at standard time $t = 175.00\: \text{ dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\:40'\:36.24''$. <br/>
 What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
-</tbody>
+</tbo dy >
 </table>
 </div>
 
@@ -336,14 +336,14 @@ h_L = \Theta_L - \alpha\\
 &=-71\degree\:1'\:54.87'' + 214\degree\:52'\:37.04''\\
 &=143\degree\:50'\:42.17''\\
 
-t &= (175\: \text{sdy} \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-& = 175\: \text{dy} \: 07:03:13
+t &= (175\: \text{ s dy  } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+& = 175\: \text{ dy } \: 07:03:13
 \end{align}
 }
 ```
 Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
-At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree\:2'\:32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
+At $t = 175 \text{  dy  } 07:03:13$, $\lambda_\text{Sun} = 218\degree\:2'\:32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
 
 Converting to equatorial coordinates:
 ```math
@@ -361,7 +361,7 @@ Now we follow Example $5$.
 \displaylines{
 \begin{align}
 \Theta &=144\degree\:22'\:27.82''\\
-\therefore t &= 175\: \text{dy} \: 07:05:19
+\therefore t &= 175\: \text{ dy } \: 07:05:19
 \end{align}
 }
 ```
