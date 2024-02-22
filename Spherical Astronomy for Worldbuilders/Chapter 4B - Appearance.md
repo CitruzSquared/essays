@@ -70,7 +70,7 @@ Note that this formula is quite a great approximation, and does not take into ac
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that the albedo of Venus is $0.69$ and that its radius is $6\:051\:000 \text{ m}$, <br/>
+Given that the albedo of Venus is $0.76$ and that its radius is $6\:051\:000 \text{ m}$, <br/>
 Calculate the apparent magnitude of Venus on $\text{January 1, } 2024$. <br/>
 Use $1 \text{ AU} = 149\:600\:000\:000 \text{ m}$.
 <img width="2000" height="0">
@@ -91,8 +91,8 @@ We also found out in example $15$ that the apparent magnitude of the Sun from $1
 Thus, by equation $65$:
 ```math
 \begin{align}
-H &= -26.8 - 5\log_{10}\left(\frac{\sqrt{0.69}\cdot 6\:051\:000}{149\:600\:000\:000}\right) \\
-&= -4.432
+H &= -26.8 - 5\log_{10}\left(\frac{\sqrt{0.76}\cdot 6\:051\:000}{149\:600\:000\:000}\right) \\
+&= -4.5365
 \end{align}
 ```
 And then by equation $67$:
@@ -105,8 +105,8 @@ q(\alpha) &= \frac{2}{3}\left(\left(1- \frac{55\degree\enspace43'\enspace\enspac
 And thus finally by equation $66$:
 ```math
 \begin{align}
-m &= -4.432 + 5\log_{10}\left(\frac{107\:786\:800\:000 \cdot 177\:754\:720\:000}{149\:600\:000\:000^2}\right) - 2.5\log_{10}(0.43452)\\
-&= -3.86
+m &= -4.5365 + 5\log_{10}\left(\frac{107\:786\:800\:000 \cdot 177\:754\:720\:000}{149\:600\:000\:000^2}\right) - 2.5\log_{10}(0.43452)\\
+&= -3.97
 \end{align}
 ```
 Comparing this to the true value of $-4.1$, we can see how crude the approximation really is. However, this is the best we can realistically do.\
