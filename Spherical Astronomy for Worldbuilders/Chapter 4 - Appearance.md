@@ -270,9 +270,11 @@ Given a Lunar Ephemeris, find the date of the first new Moon of $2024$.
 
 A Lunar Ephemeris can be found [here](https://astropixels.com/ephemeris/moon/moon2024.html). This ephemeris has a column for lunar events, but we will ignore this as this data is not available to us in a worldbuilding setting.
 
-We use bisection to solve for when the elongation of the Moon is $0\degree$. \
+- We use bisection to solve for when the elongation of the Moon is $0\degree$.
+  
 We first set $a = \text{ January 1, } 2024$ as the first new Moon of 2024 could not have been before this date.\
 The elongation on this date was $-124.0\degree$. Therefore we need the elongation at time $b$ to be positive.
+
 We set $b$ to be $a + 0.5\text{ Synodic Period}$, because then, the elongation would be $\approx -124.0\degree + 180\degree$, which is a positive number.\
 Note that if we subtracted $0.5\text{ Synodic Period}$ instead, the elongation would be $\approx -124.0\degree - 180\degree = -304\degree = 56\degree$, which is also a positive number, but this does not work as $f(t)$ (the elongation at time $t$) is not continuous in this region. (There is a jump from $-180\degree$ to $180\degree$).
 
