@@ -156,4 +156,4 @@ Therefore equation $68$ becomes:
 ```math
 n' = \frac{360\degree}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
 ```
-Thus if we divide the angular distance $A$ by $n'$, we get the time spent in retrograde. Now to get the angle $A$:\
+Thus if we divide the angular distance $A$ by $n'$, we get the time spent in retrograde. Now to get the angle $A$:
