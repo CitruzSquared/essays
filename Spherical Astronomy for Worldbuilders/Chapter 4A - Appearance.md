@@ -63,8 +63,8 @@ Where $\text{Phase}$ is the fraction of $P$ seen as illuminated from $E$.
 <td align="center">
 <img width="2000" height="0"><br>
 On $\text{January 1, } 2024$, <br/>
-Venus was at $\alpha = 16^h\enspace07^m\enspace26^s$ and $\delta=-18\degree\enspace57'\enspace52''$, and was at a distance $1.1882 \text{ AU}$ from the Earth. <br/>
-The Sun was at $\alpha = 18^h\enspace46^m\enspace38^s$ and $\delta=-23\degree\enspace0'\enspace10''$, and was at a distance $0.9833 \text{ AU}$ from the Earth. <br/>
+Venus was at $\alpha = 16^h\:07^m\:26^s$ and $\delta=-18\degree\:57'\:52''$, and was at a distance $1.1882 \text{ AU}$ from the Earth. <br/>
+The Sun was at $\alpha = 18^h\:46^m\:38^s$ and $\delta=-23\degree\:0'\:10''$, and was at a distance $0.9833 \text{ AU}$ from the Earth. <br/>
 Given Venus' radius is $4.045\cdot10^{-5}\text{ AU}$, calculate the angular size and phase (as a percentage) of Venus on $\text{January 1, } 2024$.
 <img width="2000" height="0">
 </td>
@@ -83,14 +83,14 @@ Now we have to find the phase:\
 By equation $56$:
 ```math
 \begin{align}
-\text{Sun-Earth-Venus Angle } &= \arccos(\sin(-23\degree\enspace0'\enspace10'')\sin(-18\degree\enspace57'\enspace52'') + \\&\cos(-23\degree\enspace0'\enspace10'')\cos(-18\degree\enspace57'\enspace52'')\cos(18^h\enspace46^m\enspace38^s - 16^h\enspace07^m\enspace26^s)) \\
-&= 37\degree\enspace16'\enspace\enspace7.87''
+\text{Sun-Earth-Venus Angle } &= \arccos(\sin(-23\degree\:0'\:10'')\sin(-18\degree\:57'\:52'') + \\&\cos(-23\degree\:0'\:10'')\cos(-18\degree\:57'\:52'')\cos(18^h\:46^m\:38^s - 16^h\:07^m\:26^s)) \\
+&= 37\degree\:16'\:\:7.87''
 \end{align}
 ```
 Then, by equation $57$:
 ```math
 \begin{align}
-\text{Sun-Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\enspace16'\enspace\enspace7.87'')}\\
+\text{Sun-Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\:16'\:\:7.87'')}\\
 &= 0.7205 \text{ AU}
 \end{align}
 ```
@@ -98,13 +98,13 @@ Now, by equation $58$:
 ```math
 \begin{align}
 \text{Phase Angle } &= \arccos\left(\frac{1.1882^2 + 0.7205^2 - 0.9833^2}{2\cdot1.1882\cdot0.7205}\right)\\
-&= 55\degree\enspace43'\enspace\enspace57.60''
+&= 55\degree\:43'\:\:57.60''
 \end{align}
 ```
 Then finally by equation $59$:
 ```math
 \begin{align}
-\text{Phase } (\%) &= \frac{1 + \cos(55\degree\enspace43'\enspace\enspace57.60'')}{2} \cdot 100\% \\
+\text{Phase } (\%) &= \frac{1 + \cos(55\degree\:43'\:\:57.60'')}{2} \cdot 100\% \\
 &= 78.2 \%
 \end{align}
 ```
@@ -140,19 +140,19 @@ Use $\varepsilon = 23.44\degree$.
 The data from example 12:
 ```math
 \begin{align}
-\alpha_V &= 16^h\enspace07^m\enspace26^s\\
-\delta_V &= -18\degree\enspace57'\enspace52''\\
+\alpha_V &= 16^h\:07^m\:26^s\\
+\delta_V &= -18\degree\:57'\:52''\\
 \\
-\alpha_S &= 18^h\enspace46^m\enspace38^s \\
-\delta_S &= \delta=-23\degree\enspace0'\enspace10''
+\alpha_S &= 18^h\:46^m\:38^s \\
+\delta_S &= \delta=-23\degree\:0'\:10''
 \end{align}
 ```
 We need the elongation, so we use equation $1$, $2$, $4$ and equation $60$:
 ```math
 \begin{align}
-\lambda_V &= 243\degree\enspace29'\enspace35.63''\\
-\lambda_S &= 280\degree\enspace43'\enspace11.52''\\
-\therefore \epsilon &= -37\degree\enspace13'\enspace35.89''\\
+\lambda_V &= 243\degree\:29'\:35.63''\\
+\lambda_S &= 280\degree\:43'\:11.52''\\
+\therefore \epsilon &= -37\degree\:13'\:35.89''\\
 \end{align}
 ```
 The elongation is negative, therefore it is a morning star. Additionally, it would be the Eastern side of Venus that would be illuminated (Venus is west of the Sun, therefore its Eastern side faces the Sun).\
