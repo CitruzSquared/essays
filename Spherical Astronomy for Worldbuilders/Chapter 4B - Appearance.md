@@ -2,7 +2,7 @@
 
 ### Brightness
 
-[**Apparent magnitude**](https://en.wikipedia.org/wiki/Apparent_magnitude) (denoted by $m$) is a logarithmic scale measuring how bright objects *look* in the sky. It stems from a centuries-old system of categorizing stars, class $1$ for the brightest stars and class $6$ for the dimmest. Thus, our modern system of apparent magnitude also operates with **smaller magnitudes being brighter**: magnitude is defined such that a decrease in apparent magnitude by $1$ is a $100^{1/5} = 2.512$ times increase in brightness.
+[**Apparent magnitude**](https://en.wikipedia.org/wiki/Apparent_magnitude) (denoted by $m$) is a logarithmic scale measuring how bright objects *look* in the sky. It stems from a centuries-old system of categorizing stars, class $1$ for the brightest stars and class $6$ for the dimmest. Thus, our modern system of apparent magnitude also operates with **smaller magnitudes being brighter**: magnitude is defined such that a decrease in apparent magnitude by $x$ is a $100^{1/5 \cdot x}$ times increase in brightness.
 
 For stars, as they produce their own unchanging light, their apparent magnitude is easily calculable:
 ```math
@@ -109,7 +109,7 @@ m &= -4.4316 + 5\log_{10}\left(\frac{107\:786\:800\:000 \cdot 177\:754\:720\:000
 &= -3.86
 \end{align}
 ```
-Comparing this to the true value of $-4.1$, we can see how crude the approximation really is. However, this is the best we can realistically do.\
+Comparing this to the true value of $-4.1$, we can see how crude the approximation really is. (We have estimated Venus to be about $15$% darker than it really is.) However, this is the best we can realistically do.\
 $\blacksquare$
 
 ### Apparent Retrograde Motion
