@@ -39,3 +39,7 @@ m_{\text{Sun}} = -2.5\log_{10}\left(\frac{1351.17}{2.518\cdot10^{-8}}\right) = -
 ```
 Which is very bright (it is a very negative number, and smaller magnitudes are brighter).\
 $\blacksquare$
+
+<br/>
+
+The brightness of planets is harder to calculate.
