@@ -261,7 +261,7 @@ If $\text{sign}(f(c)) = \text{sign}(f(b))$, set $b = c$.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given a Lunar Ephemeris, find the date of the first new Moon of $2024$.
+Given a Lunar Ephemeris, find the time of the first new Moon of $2024$.
 <img width="2000" height="0">
 </td>
 </tbody>
