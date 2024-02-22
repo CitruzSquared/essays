@@ -176,3 +176,10 @@ Because the Moon orbits from West to East, its elongation increases as time pass
 In addition, if the orbit of a planet has $0\degree$ inclination with respect to the ecliptic, the Sun-Earth-Planet angle of equation $56$ is just equal to the elongation.
 
 ### The Synodic Period
+
+The time it takes for the elongation to repeat is called the *synodic period*. This is also the time it takes for the phases to repeat as the phases depend on elongation (the Sun-Earth-Object angle can be approximated as the elongation). Because the elongation depends on the location on both the object and the Earth, the formula involves both periods:
+```math
+T_{P \text{ Synodic}} = \frac{T_E T_P}{|T_E - T_P|}\tag{62}
+```
+where $T$ denotes the sidereal period.\
+This formula is not exact as the orbits of the planets are not perfect circles. However it gives the average value.
