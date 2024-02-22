@@ -148,7 +148,7 @@ Which we truncate to:
 ```math
 \Theta_{t=175.00} = 175\: \text{ s dy  } \tag{ii}
 ```
-Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175 \text{  s dy   } -1 \text{  s dy   } 311\degree$ $31'$ $12.25''$.\
+Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175 \text{ sdy } -1 \text{ sdy } 311\degree$ $31'$ $12.25''$.\
 Using equation $9$ with $0.5$ sidereal days $= 180\degree$,
 ```math
 \begin{align}
@@ -212,7 +212,7 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 ```math
 \Theta = \alpha = 214\degree\:52'\:37.04''.
 ```
-Then, using the method of Example $4$, we try $\Theta = 175 \text{  s dy   } 215\degree$ $25'$ $50.5''$.
+Then, using the method of Example $4$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
 ```math
 \begin{align}
 t &= (175\: \text{ s dy  }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -222,7 +222,7 @@ t &= (175\: \text{ s dy  }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{
 ```
 $\blacksquare$
 
-However, in this example, $t = 175 \text{  dy  } 11:46:22 \neq 175.00 \text{  dy }$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
+However, in this example, $t = 175 \text{ dy } 11:46:22 \neq 175.00 \text{  dy }$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
 #### Example 5-II
 <div align="center">
@@ -230,7 +230,7 @@ Thus, this time only works as a preliminary approximation, and we will have to r
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-Using the fact that at $t = 175 \text{  dy  } 11:46:22$, $\lambda_{\text{Sun}}$ was $218\degree$ $17'$ $12.78''$, <br/>
+Using the fact that at $t = 175 \text{ dy } 11:46:22$, $\lambda_{\text{Sun}}$ was $218\degree$ $17'$ $12.78''$, <br/>
 Improve the approximation of the time of apparent noon. <br/>
 (The calculation of $\lambda_{\text{Sun}}$ will be detailed in future chapters.)
 <img width="2000" height="0">
@@ -343,7 +343,7 @@ t &= (175\: \text{ s dy  } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac
 ```
 Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
-At $t = 175 \text{  dy  } 07:03:13$, $\lambda_\text{Sun} = 218\degree\:2'\:32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
+At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree\:2'\:32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
 
 Converting to equatorial coordinates:
 ```math
