@@ -108,7 +108,7 @@ These cartesian coordinates can be transformed to spherical coordinates by equat
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-On $\text{January }2,\:2024$, the Moon's right ascension was $11^{h}\enspace 19^{m}\enspace 30.12^{s}$ and its declination was $+07\degree\enspace 21'\enspace 42.9''.$ <br/>
+On $\text{January }2,\:2024$, the Moon's right ascension was $11^{h}\: 19^{m}\: 30.12^{s}$ and its declination was $+07\degree\: 21'\: 42.9''.$ <br/>
  Calculate its ecliptic coordinates. (Use $\varepsilon = 23.44\degree$)<br>
 <img width="2000" height="0">
 </td>
@@ -119,8 +119,8 @@ On $\text{January }2,\:2024$, the Moon's right ascension was $11^{h}\enspace 19^
 We first convert the sexagesimal notation to degrees:
 ```math
 \begin{alignat}{3}
-\alpha &= 11^{h}\enspace 19^{m}\enspace &&30.12^{s} &&= 169.8755\degree \\
-\delta &= 07\degree\enspace 21'\enspace &&42.9'' &&= 7.3619\degree
+\alpha &= 11^{h}\: 19^{m}\: &&30.12^{s} &&= 169.8755\degree \\
+\delta &= 07\degree\: 21'\: &&42.9'' &&= 7.3619\degree
 \end{alignat}
 ```
 Keeping in mind that $1^{h}$ is $360\degree/24 = 15\degree$.\
@@ -143,8 +143,8 @@ z_{\text{ecliptic}} &= 0 \cdot x - \sin{(\varepsilon)} \cdot y &&+ \cos{(\vareps
 We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 ```math
 \begin{alignat}{2}
-\lambda &= \arctan(0.210923,-0.976313) &&=  167\degree\enspace48'\enspace32.97''\\
-\beta &= \arcsin(0.0482118/1) &&= \enspace\enspace2\degree\enspace45'\enspace48.24''
+\lambda &= \arctan(0.210923,-0.976313) &&=  167\degree\:48'\:32.97''\\
+\beta &= \arcsin(0.0482118/1) &&= \:\:2\degree\:45'\:48.24''
 \end{alignat}
 ```
 $\blacksquare$
