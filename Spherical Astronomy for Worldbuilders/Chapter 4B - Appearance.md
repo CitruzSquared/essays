@@ -254,7 +254,7 @@ how long is Venus in retrograde motion for from the view of the Earth?
 </table>
 </div>
 
-$b/a = 0.7233\text{ AU}/1\text{ AU} = 0.7233$. Therefore, by equation $75$:
+$r = b/a = 0.7233\text{ AU}/1\text{ AU} = 0.7233$. Therefore, by equation $75$:
 ```math
 \begin{align}
 T_{\text{retro}} &= 365.24\text{ dy} \left|\frac{2\arccos\left(\frac{0.7233 + \sqrt{0.7233}}{0.7233\sqrt{0.7233}+1}\right)}{360\degree\left(0.7233^{-3/2} - 1\right)}\right|\\
