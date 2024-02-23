@@ -273,5 +273,5 @@ Doing this for all the planets yields:
 \text{Neptune} & 158 \text{ dy} & 158\text{ dy}  \\ \hline
 \end{array}
 ```
-As the planet gets further and further away from the Sun, the time it spends in retrograde motion approaches $T_1/2$, which is $183\text{ dy}$ for Earth.\
+As the planet gets further and further away from the Sun, the time it spends in retrograde motion approaches $T_1/2$, which is $183\text{ dy}$ for the Earth.\
 $\blacksquare$
