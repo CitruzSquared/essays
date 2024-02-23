@@ -286,6 +286,9 @@ If we have two objects comparable in mass, they will orbit each other about thei
  T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{16}
 ```
 Where $a$ is the sum of the two semi-major axes.
+
+Note that period is always positive if the motion is prograde, and negative if the motion is retrograde.
+
 #### Example 3
 <div align="center">
 <table>
