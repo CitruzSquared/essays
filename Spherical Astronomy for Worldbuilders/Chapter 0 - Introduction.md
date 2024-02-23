@@ -36,5 +36,7 @@
      * Equations $63$ to $75$
      * Examples $16$ to $18$
 5. Time
+   - Equations $76$ to $79$
+   - Examples $19$ to $21$
 6. Horizontal Coordinates
 7. Earthly Parallax
