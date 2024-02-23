@@ -126,7 +126,7 @@ In this section, we will assume for a moment that the orbits of the planets are 
 
 Apparent retrograde motion happens when $w_\text{obs}$, the observed angular speed of the outer planet from the view of the Earth, is negative. Because $w_\text{obs}$ is continuous, we only need to find the times when it is $0$ as a continuous function must pass through $0$ to go from positive to negative and back. Consider this diagram:
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6458dd65-b400-4f26-8f33-6dfc3ef66907" width="400"/> In this diagram, the Sun is at loction $S$, the Earth at location $E$, and the outer planet at location $P$. The distance from the Sun to the Earth is $a$, the distance from the Sun to the outer planet is $b$, and the distance from the Earth to the outer planet is $\rho$. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6458dd65-b400-4f26-8f33-6dfc3ef66907" width="400"/> In this diagram, the Sun is at loction $S$, the Earth at location $E$, and the outer planet at location $P$. The distance from the Sun to the Earth is $a$, the distance from the Sun to the outer planet is $b$, and the distance from the Earth to the outer planet is denoted $\rho$. 
 
 The velocity of the Earth is shown with the vector $\vec{EU}$, and the velocity of the outer planet is shown with the vector $\vec{PV}$. The magnitudes of these vectors will be denoted $u$ and $v$ respectively.
 
