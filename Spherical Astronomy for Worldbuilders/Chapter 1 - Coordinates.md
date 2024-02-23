@@ -148,7 +148,7 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 \beta &= \arcsin(0.0482118/1) &&= \:\:2\degree\:45'\:48.24''
 \end{alignat}
 ```
-$167\degree$ $48'$ $32.97''$ is in between $150\degree$ and $180\degree$, therefore the Moon was in the zodiac sign Virgo this day. \
+Ecliptic longitude $167\degree$ $48'$ $32.97''$ is in between $150\degree$ and $180\degree$, therefore the Moon was in the zodiac sign Virgo this day. \
 $\blacksquare$
 
 The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. Thus:
