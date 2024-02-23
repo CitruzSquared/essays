@@ -238,6 +238,8 @@ If we use $b/a = r$, we can simplify this equation even further using kepler's t
 ```math
 T_{\text{retro}} = T_E \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1}\right)}{360\degree\left(r^{-3/2} - 1\right)}\right| \tag{75}
 ```
+Again, this formula is just an approximation assuming the orbits are perfectly circular.
+
 As it turns out, even inner planets follow the same principle and the formula works for inner planets as well. For inner planets, they go retrograde near inferior conjunction (i.e. when the Earth is in opposition with the Sun from the inner planet's POV).
 
 #### Example 18
