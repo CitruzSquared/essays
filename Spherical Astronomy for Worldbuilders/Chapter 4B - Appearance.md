@@ -265,7 +265,7 @@ Thus Venus is in retrograde for $42.2 \text{ dy}$ every $583.96 \text{ dy}$ (See
 
 Doing this for all the planets yields:
 ```math
-\begin{array}{cccc}\hline \text{Name} & \text{Equation } 75 & \text{True Value} & \text{\% Time in Retrograde} \\ \hline
+\begin{array}{cccc}\hline \text{Name} & \text{Equation } 75 & \text{True Value} & \text{\% Retro. Time} \\ \hline
 \text{Mercury} & 22.9 \text{ dy} & 21\text{ dy} & 18\% \\
 \text{Venus} & 42.2 \text{ dy} & 41\text{ dy} & 7\% \\
 \text{Mars} & 72.7 \text{ dy} & 72\text{ dy} & 9\% \\
