@@ -239,7 +239,7 @@ T_{\text{retro}} = T_1 \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1
 ```
 As it turns out, even inner planets follow the same principle and the formula works for inner planets as well.
 
-#### Example 17
+#### Example 18
 <div align="center">
 <table>
 <tbody>
