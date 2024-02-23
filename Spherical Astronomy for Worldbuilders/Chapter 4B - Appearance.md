@@ -234,9 +234,9 @@ Using $n = 360\degree/T$ gives:
 ```math
 T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2T_P + b^2T_E}{ab(T_E + T_P)}\right)}{\frac{360\degree}{T_P} - \frac{360\degree}{T_E}}\right| \tag{74}
 ```
-If we use $b/a = r$, we can simplify this equation even further using kepler's third law because then, $T_2 = T_1\sqrt{r^3}$:
+If we use $b/a = r$, we can simplify this equation even further using kepler's third law because then, $T_P = T_E\sqrt{r^3}$:
 ```math
-T_{\text{retro}} = T_1 \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1}\right)}{360\degree\left(r^{-3/2} - 1\right)}\right| \tag{75}
+T_{\text{retro}} = T_E \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1}\right)}{360\degree\left(r^{-3/2} - 1\right)}\right| \tag{75}
 ```
 As it turns out, even inner planets follow the same principle and the formula works for inner planets as well. For inner planets, they go retrograde near inferior conjunction (i.e. when the Earth is in opposition with the Sun from the inner planet's POV).
 
