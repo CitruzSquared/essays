@@ -62,6 +62,7 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * In the Equatorial Coordinate System, the angles $\theta$ and $\varphi$ are called the *Ecliptic Longitude* and *Ecliptic Latitude* and are denoted $\lambda$ and $\beta$ respectively.
    * The Ecliptic Longitude is measured in the plane of the Ecliptic from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Ecliptic such that positive is North.
    * By definition of the Ecliptic, the Ecliptic Latitude of the Sun is always $0\degree$.
+   * The ecliptic longitude is split into twelve equal signs that span $30\degree$ each, called the *zodiac signs*: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius, and Pisces.
 
 ### Coordinate Transformations
 [Coordinate transformations](https://en.wikipedia.org/wiki/Astronomical_coordinate_systems#Converting_coordinates) between the three coordinate systems are given via rotation matrices – the equatorial frame is just the ecliptic frame rotated by $\varepsilon$ along the $x$-axis.
@@ -147,6 +148,7 @@ We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
 \beta &= \arcsin(0.0482118/1) &&= \:\:2\degree\:45'\:48.24''
 \end{alignat}
 ```
+$167\degree$ $48'$ $32.97''$ is in between $150\degree$ and $180\degree$, therefore the Moon was in the zodiac sign Virgo this day. 
 $\blacksquare$
 
 The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. Thus:
