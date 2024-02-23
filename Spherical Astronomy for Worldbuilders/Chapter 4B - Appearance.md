@@ -182,7 +182,7 @@ v_{\text{rel}} &= v\sin(\alpha + \psi) -  u\sin(\psi) \\
 &= \frac{v\sin(\alpha)\cos(\psi) + v\cos(\alpha)\sin(\psi) -  u\sin(\psi)}{\rho} \tag{72}
 \end{align}
 ```
-Now lets analyze the distances and $\psi$.
+Now let's analyze the distances and $\psi$.
 ```math
 \begin{align}
 a &= SD - ED \\
