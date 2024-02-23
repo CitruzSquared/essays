@@ -233,7 +233,8 @@ Doing this for all the planets:
 \text{Mars} & 686.98 \text{ dy} & 779.86\text{ dy}  \\
 \text{Jupiter} & 4332.6 \text{ dy} & 398.86\text{ dy}  \\
 \text{Saturn} & 10755  \text{ dy} & 378.08\text{ dy}  \\
-\text{Uranus} & 30688 \text{ dy} & 369.64\text{ dy}  \\ \hline
+\text{Uranus} & 30688 \text{ dy} & 369.64\text{ dy}  \\
+\text{Neptune} & 60195 \text{ dy} & 367.47\text{ dy}  \\\hline
 \end{array}
 ```
 You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.
