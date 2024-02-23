@@ -91,8 +91,7 @@ Thus, this time only works as a preliminary approximation, and we will have to r
 <td align="center">
 <img width="2000" height="0"><br>
 Using the fact that at $t = 175 \text{ dy } 11:46:22$, $\lambda_{\text{Sun}}$ was $218\degree$ $17'$ $12.78''$, <br/>
-Improve the approximation of the time of apparent noon. <br/>
-(The calculation of $\lambda_{\text{Sun}}$ will be detailed in future chapters.)
+Improve the approximation of the time of apparent noon. 
 <img width="2000" height="0">
 </td>
 </tbo dy >
@@ -203,8 +202,7 @@ t &= (175\: \text{ sdy } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{2
 ```
 Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
-At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree$ $2'$ $32.28''$. (Again, the method of calculation of $\lambda_{\text{Sun}}$ will be shown in future chapters.)
-
+At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree$ $2'$ $32.28''$.\
 Converting to equatorial coordinates:
 ```math
 \begin{alignat}{4}
