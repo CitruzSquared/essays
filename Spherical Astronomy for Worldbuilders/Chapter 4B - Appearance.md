@@ -209,7 +209,7 @@ So we can rewrite equation $72$ as:
 ```math
 \begin{align}
 w_{\text{obs}} &= \frac{v\sin(\alpha) \frac{b\sin(\alpha)}{\rho} + v\cos(\alpha)\frac{b\cos(\alpha) - a}{\rho} -  u\frac{b\cos(\alpha) - a}{\rho}}{\rho}\\
-&= \frac{vb\sin^2(\alpha) + va\cos(\alpha) + vb\cos^2(\alpha) + ua - ub\cos(\alpha)}{\rho^2}\\
+&= \frac{vb\sin^2(\alpha) - va\cos(\alpha) + vb\cos^2(\alpha) + ua - ub\cos(\alpha)}{\rho^2}\\
 &= \frac{vb + ua - (va + ub)\cos(\alpha)}{\rho^2}
 \end{align}
 ```
