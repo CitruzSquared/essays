@@ -271,7 +271,6 @@ Doing this for all the planets yields:
 \text{Saturn} & 138  \text{ dy} & 138\text{ dy}  \\
 \text{Uranus} & 152 \text{ dy} & 151\text{ dy}  \\
 \text{Neptune} & 158 \text{ dy} & 158\text{ dy}  \\ \hline
-\text{Quaoar} & 163 \text{ dy} & ?  \\ \hline
 \end{array}
 ```
 As the planet gets further and further away from the Sun, the time it spends in retrograde motion approaches $T_1/2$, which is $183\text{ dy}$ for the Earth.\
