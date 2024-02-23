@@ -205,7 +205,7 @@ PD &= b\sin(\alpha) = \rho\sin(PED) \\
 \therefore \cos(\psi) &= \frac{b\sin(\alpha)}{\rho}\tag{73-ii}
 \end{align}
 ```
-So we can rewrite equation $72$ as:
+Using equations $73$ we can rewrite equation $72$ as:
 ```math
 \begin{align}
 w_{\text{obs}} &= \frac{v\sin(\alpha) \frac{b\sin(\alpha)}{\rho} + v\cos(\alpha)\frac{b\cos(\alpha) - a}{\rho} -  u\frac{b\cos(\alpha) - a}{\rho}}{\rho}\\
