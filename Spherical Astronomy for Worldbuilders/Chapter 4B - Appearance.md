@@ -265,15 +265,15 @@ Thus Venus is in retrograde for $42.2 \text{ dy}$ every $583.96 \text{ dy}$ (See
 
 Doing this for all the planets yields:
 ```math
-\begin{array}{ccc}\hline \text{Name} & \text{Equation } 75 & \text{True Value} \\ \hline
-\text{Mercury} & 22.9 \text{ dy} & 21\text{ dy} \\
-\text{Venus} & 42.2 \text{ dy} & 41\text{ dy}  \\
-\text{Mars} & 72.7 \text{ dy} & 72\text{ dy}  \\
-\text{Jupiter} & 121 \text{ dy} & 121\text{ dy}  \\
-\text{Saturn} & 138  \text{ dy} & 138\text{ dy}  \\
-\text{Uranus} & 152 \text{ dy} & 151\text{ dy}  \\
-\text{Neptune} & 158 \text{ dy} & 158\text{ dy}  \\ \hline
+\begin{array}{cccc}\hline \text{Name} & \text{Equation } 75 & \text{True Value} & \text{\% Time in Retrograde} \\ \hline
+\text{Mercury} & 22.9 \text{ dy} & 21\text{ dy} & 18\% \\
+\text{Venus} & 42.2 \text{ dy} & 41\text{ dy} & 7\% \\
+\text{Mars} & 72.7 \text{ dy} & 72\text{ dy} & 9\% \\
+\text{Jupiter} & 121 \text{ dy} & 121\text{ dy} & 30\% \\
+\text{Saturn} & 138  \text{ dy} & 138\text{ dy} & 37\% \\
+\text{Uranus} & 152 \text{ dy} & 151\text{ dy} & 41\% \\
+\text{Neptune} & 158 \text{ dy} & 158\text{ dy} & 43\% \\ \hline
 \end{array}
 ```
-As the planet gets further and further away from the Sun, the time it spends in retrograde motion approaches $T_1/2$, which is $183\text{ dy}$ for the Earth.\
+As the planet gets further and further away from the Sun, the time it spends in retrograde motion approaches $T_1/2$ (time spent in retrograde approaches $50$%), which is $183\text{ dy}$ for the Earth.\
 $\blacksquare$
