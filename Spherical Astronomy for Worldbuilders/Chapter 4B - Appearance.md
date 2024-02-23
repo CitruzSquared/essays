@@ -122,16 +122,8 @@ This phenomenon is called [*apparent* retrograde motion](https://en.wikipedia.or
 
 The true way to calculate when a planet goes into retrograde and for how long it stays in retrograde would be to calculate $d\lambda/dt$ and see when it is less than $0$. This is not practical for our purposes because $\lambda$ is not a simple function at all due to the ellipticity of orbits. Thus one would have to use bisection or similar methods to numerically approximate (to arbitrary precision) when exactly a planet goes into retrograde.
 
-In this section, we will assume for a moment that the orbits of the planets are perfect circles and try to calculate for how long a planet would stay in retrograde.\
-Let:
-```math
-\begin{align}
-T_1 &= \text{ Orbital Period of the Earth}\\
-T_2 &= \text{ Orbital Period of the Outer Planet}\\
-a &= \text{ Semi-major Axis of the Earth}\\
-b &= \text{ Semi-major Axis of the Outer Planet}\\
-\end{align}
-```
+In this section, we will assume for a moment that the orbits of the planets are perfect circles and try to calculate for how long a planet would stay in retrograde.
+
 Apparent retrograde motion happens when $w_\text{obs}$, the observed angular speed of the outer planet from the view of the Earth, is negative. Because $w_\text{obs}$ is continuous, we only need to find the times when it is $0$ as a continuous function must pass through $0$ to go from positive to negative and back. Consider this diagram:
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6458dd65-b400-4f26-8f33-6dfc3ef66907" width="400"/> In this diagram, the Sun is at loction $S$, the Earth at location $E$, and the outer planet at location $P$. The distance from the Sun to the Earth is $a$, the distance from the Sun to the outer planet is $b$, and the distance from the Earth to the outer planet is $\rho$. 
@@ -209,7 +201,7 @@ But also,
 ```math
 \begin{align}
 PD &= b\sin(\alpha) = \rho\sin(PED) \\
-&= \rho\cos(\psi)\\
+&= \rho\cos(\psi) \\
 \therefore \cos(\psi) &= \frac{b\sin(\alpha)}{\rho}\tag{73-ii}
 \end{align}
 ```
@@ -225,18 +217,61 @@ We need to find when $w_{\text{obs}} = 0$, so:
 ```math
 \begin{align}
 0 &= \frac{vb + ua - (va + ub)\cos(\alpha)}{\rho^2} \\
-&= \frac{vb + ua - (va + ub)\cos(\alpha)}\\
-\therefore \cos(\alpha) = \frac{vb + ua}{va + ub}
+&= vb + ua - (va + ub)\cos(\alpha) \\
+\therefore \cos(\alpha) &= \frac{vb + ua}{va + ub}
 \end{align}
 ```
 We can write $v = b\cdot n_P$ and $u = a\cdot n_E$, where $n$ is the mean motion, so:
 ```math
 \cos(\alpha) = \frac{a^2n_E + b^2n_P}{ab(n_E + n_P)}
 ```
-Using $n = 360\degree/T$ we can write:
+Since this is the angle when $w_{\text{obs}} = 0$, we need to multiply it by $2$ to get the full range of $\alpha$ where there is retrograde motion (the orbit is symmetric about the line $SD$). Then, dividing $2\alpha$ by the relative mean motion $n' = n_P - n_E$ gives the time spent in retrograde:
+```math
+T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2n_E + b^2n_P}{ab(n_E + n_P)}\right)}{n_P - n_E}\right|
+```
+Using $n = 360\degree/T$ gives:
+```math
+T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2T_P + b^2T_E}{ab(T_E + T_P)}\right)}{\frac{360\degree}{T_P} - \frac{360\degree}{T_E}}\right| \tag{74}
+```
+If we use $b/a = r$, we can simplify this equation even further using kepler's third law because then, $T_2 = T_1\sqrt{r^3}$:
+```math
+T_{\text{retro}} = T_1 \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1}\right)}{360\degree\left(r^{-3/2} - 1\right)}\right| \tag{75}
+```
+As it turns out, even inner planets follow the same principle and the formula works for inner planets as well.
+
+#### Example 17
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that Venus orbits at $0.7233 \text{ AU}$ from the Sun, and the Earth takes $365.24\text{ dy}$ to orbit the Sun, <br/>
+how long is Venus in retrograde motion for?
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+$b/a = 0.7233\text{ AU}/1\text{ AU} = 0.7233$. Therefore, by equation $75$:
 ```math
 \begin{align}
-\cos(\alpha) &= \frac{a^2\frac{360\degree}{T_E} + b^2\frac{360\degree}{T_P}}{ab(\frac{360\degree}{T_E} + \frac{360\degree}{T_P})}\\
-&= \frac{a^2T_P + b^2T_E}{ab(T_P + T_E)}
+T_{\text{retro}} &= 365.24\text{ dy} \left|\frac{2\arccos\left(\frac{0.7233 + \sqrt{0.7233}}{0.7233\sqrt{0.7233}+1}\right)}{360\degree\left(0.7233^{-3/2} - 1\right)}\right|\\
+&= 42.2 \text{ dy}
 \end{align}
 ```
+
+Doing this for all the planets yields:
+```math
+\begin{array}{ccc}\hline \text{Name} & \text{Equation } 75 & \text{True Value} \\ \hline
+\text{Mercury} & 22.9 \text{ dy} & 21\text{ dy} \\
+\text{Venus} & 42.2 \text{ dy} & 41\text{ dy}  \\
+\text{Mars} & 72.7 \text{ dy} & 72\text{ dy}  \\
+\text{Jupiter} & 121 \text{ dy} & 121\text{ dy}  \\
+\text{Saturn} & 138  \text{ dy} & 138\text{ dy}  \\
+\text{Uranus} & 152 \text{ dy} & 151\text{ dy}  \\
+\text{Neptune} & 158 \text{ dy} & 158\text{ dy}  \\ \hline
+\end{array}
+```
+As the planet gets further and further away from the Sun, the time it spends in retrograde motion approaches $T_1/2$, which is $183\text{ dy}$ for Earth.\
+$\blacksquare$
