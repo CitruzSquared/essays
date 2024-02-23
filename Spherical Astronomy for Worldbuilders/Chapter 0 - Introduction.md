@@ -33,8 +33,8 @@
      * Equations $54$ to $62$
      * Examples $12$ to $15$
    - Part B
-     * Equations $63$ to
-     * Examples $16$ to
+     * Equations $63$ to $75$
+     * Examples $16$ to $18$
 5. Horizontal Coordinates
 6. Time
 7. Earthly Parallax
