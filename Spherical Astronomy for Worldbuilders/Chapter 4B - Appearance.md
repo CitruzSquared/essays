@@ -114,9 +114,9 @@ $\blacksquare$
 
 ### Apparent Retrograde Motion
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0ece4e9d-73c6-4e48-a633-0fc2134669e5" width="350"/> This diagram depicts the Earth (which we have put as stationary at $O$) and an inner planet, with orbital directions, counterclockwise, marked with arrows. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0ece4e9d-73c6-4e48-a633-0fc2134669e5" width="350"/> This diagram depicts the Earth (which we have put as stationary at $C$) and an outer planet, with orbital directions (counterclockwise) marked with arrows. 
 
-From the view of the Earth, the inner planet would look to orbit from West to East (i.e. increasing in longitude) most of the time, but when the planet is near inferior conjunction ($C$), it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
+From the view of the Earth, the outer planet would look to orbit from West to East (i.e. increasing in longitude) most of the time (when it is on the far side of the Sun), but when the planet is near opposition ($O$), it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
 
 This phenomenon is called [*apparent* retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), as it is not a real physical phenomenon, just an illusion caused by the effects of relative motion. This occurs once every synodic period, as inferior conjunctions happen once every synodic period.
 
@@ -127,33 +127,116 @@ Let:
 ```math
 \begin{align}
 T_1 &= \text{ Orbital Period of the Earth}\\
-T_2 &= \text{ Orbital Period of the Inner Planet}\\
-a_1 &= \text{ Semi-major Axis of the Earth}\\
-a_2 &= \text{ Semi-major Axis of the Inner Planet}
+T_2 &= \text{ Orbital Period of the Outer Planet}\\
+a &= \text{ Semi-major Axis of the Earth}\\
+b &= \text{ Semi-major Axis of the Outer Planet}\\
 \end{align}
 ```
-Let's call the amount of angle the inner planet moves in retrograde $A$. Then, the amount of time it takes the planet to traverse $A$ is the time spent in retrograde. The mean motion of the inner planet is given by:
+Apparent retrograde motion happens when $w_\text{obs}$, the observed angular speed of the outer planet from the view of the Earth, is negative. Because $w_\text{obs}$ is continuous, we only need to find the times when it is $0$ as a continuous function must pass through $0$ to go from positive to negative and back. Consider this diagram:
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/6458dd65-b400-4f26-8f33-6dfc3ef66907" width="400"/> In this diagram, the Sun is at loction $S$, the Earth at location $E$, and the outer planet at location $P$. The distance from the Sun to the Earth is $a$, the distance from the Sun to the outer planet is $b$, and the distance from the Earth to the outer planet is $\rho$. 
+
+The velocity of the Earth is shown with the vector $\vec{EU}$, and the velocity of the outer planet is shown with the vector $\vec{PV}$. The magnitudes of these vectors will be denoted $u$ and $v$ respectively.
+
+The Earth-Sun-Planet angle is $\alpha$, the Sun-Planet-Earth angle is $\theta$, and the angle $UEP$ is $\psi$.
+
+First, from the definition of angular velocity, we know that
 ```math
-n_2 = \frac{360\degree}{T_2}
+w_{\text{obs}} = \frac{v_{\text{rel}}}{\rho} \tag{68}
 ```
-But since the Earth is also moving, we need to factor in that too:
+But in $v_{\text{rel}}$, the component of this velocity parallel with $EP$ should not be counted because this part of the velocity is not visible. Thus only the perpendicular components of the velocities $\vec{EU}$ and $\vec{PV}$ should be considered:
 ```math
-n_1 = \frac{360\degree}{T_1}
+v_{\text{rel}} = |\vec{PA} - \vec{EB}| \tag{69}
 ```
-Thus the "relative mean motion" of the inner planet is:
+It is evident that:
 ```math
-n' = n_1 - n_2 = \frac{360\degree}{T_1} - \frac{360\degree}{T_2} \tag{68}
+\displaylines{
+\begin{align}
+|\vec{EB}| &= u\sin(\psi) \\
+|\vec{PA}| &= v \cos(VPA)
+\end{align}
+}\tag{70}
 ```
-But by Kepler's third law (the square of the orbital period is proportional to the cube of the orbital radius), $T_2$ is given by:
+Let us determine $VPA$. Because velocity is always perpendicular to the radius in circular motion (because velocity is always tangential, and tangents to a circle are always perpendicular to radii), angle $SPV = 90\degree = SEU$, and so
 ```math
-T_2 = T_1\sqrt{\left(\frac{a_2}{a_1}\right)^3}
+\begin{align}
+SPA &= 90\degree - VPA = 90\degree - \theta\\
+\therefore VPA &= \theta
+\end{align}
 ```
-If we set $a_2/a_1 = r$, we get:
+But $\theta = 180\degree - \alpha - SEP$, where $SEP = 90\degree + \psi$.
+Thus:
 ```math
-T_2 = T_1 \cdot r^{3/2}
+\begin{align}
+VPA &= \theta = 180\degree - \alpha - (90\degree + \psi)\\
+&= 90\degree - (\alpha + \psi)
+\end{align}
 ```
-Therefore equation $68$ becomes:
+Thus, equation $70$ becomes:
 ```math
-n' = \frac{360\degree}{T_1}\left(1 - \frac{1}{r^{3/2}}\right)
+\displaylines{
+\begin{align}
+|\vec{EB}| &= u\sin(\psi) \\
+|\vec{PA}| &= v \cos(90\degree - (\alpha + \psi))\\
+&= v\sin(\alpha + \psi)
+\end{align}
+}\tag{71}
 ```
-Thus if we divide the angular distance $A$ by $n'$, we get the time spent in retrograde. Now to get the angle $A$:
+Thus by equation $69$ and equation $68$:
+```math
+\begin{align}
+v_{\text{rel}} &= v\sin(\alpha + \psi) -  u\sin(\psi) \\
+\therefore w_{\text{obs}} &= \frac{v\sin(\alpha + \psi) -  u\sin(\psi)}{\rho}\\
+&= \frac{v\sin(\alpha)\cos(\psi) + v\cos(\alpha)\sin(\psi) -  u\sin(\psi)}{\rho} \tag{72}
+\end{align}
+```
+Now lets analyze the distances and $psi$.
+```math
+\begin{align}
+a &= SD - ED \\
+&= b\cos(\alpha) - \rho\cos(PED)
+\end{align}
+```
+But $PED = 90\degree - \psi$, so:
+```math
+a = b\cos(\alpha) - \rho\sin(\psi)
+```
+Therefore
+```math
+\sin(\psi) = \frac{b\cos(\alpha) - a}{\rho}\tag{73-i}
+```
+But also,
+```math
+\begin{align}
+PD &= b\sin(\alpha) = \rho\sin(PED) \\
+&= \rho\cos(\psi)\\
+\therefore \cos(\psi) &= \frac{b\sin(\alpha)}{\rho}\tag{73-ii}
+\end{align}
+```
+So we can rewrite equation $72$ as:
+```math
+\begin{align}
+w_{\text{obs}} &= \frac{v\sin(\alpha) \frac{b\sin(\alpha)}{\rho} + v\cos(\alpha)\frac{b\cos(\alpha) - a}{\rho} -  u\frac{b\cos(\alpha) - a}{\rho}}{\rho}\\
+&= \frac{vb\sin^2(\alpha) + va\cos(\alpha) + vb\cos^2(\alpha) + ua - ub\cos(\alpha)}{\rho^2}\\
+&= \frac{vb + ua - (va + ub)\cos(\alpha)}{\rho^2}
+\end{align}
+```
+We need to find when $w_{\text{obs}} = 0$, so:
+```math
+\begin{align}
+0 &= \frac{vb + ua - (va + ub)\cos(\alpha)}{\rho^2} \\
+&= \frac{vb + ua - (va + ub)\cos(\alpha)}\\
+\therefore \cos(\alpha) = \frac{vb + ua}{va + ub}
+\end{align}
+```
+We can write $v = b\cdot n_P$ and $u = a\cdot n_E$, where $n$ is the mean motion, so:
+```math
+\cos(\alpha) = \frac{a^2n_E + b^2n_P}{ab(n_E + n_P)}
+```
+Using $n = 360\degree/T$ we can write:
+```math
+\begin{align}
+\cos(\alpha) &= \frac{a^2\frac{360\degree}{T_E} + b^2\frac{360\degree}{T_P}}{ab(\frac{360\degree}{T_E} + \frac{360\degree}{T_P})}\\
+&= \frac{a^2T_P + b^2T_E}{ab(T_P + T_E)}
+\end{align}
+```
