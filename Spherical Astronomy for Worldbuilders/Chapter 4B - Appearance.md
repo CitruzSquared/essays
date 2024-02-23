@@ -225,7 +225,7 @@ We can write $v = b\cdot n_P$ and $u = a\cdot n_E$, where $n$ is the mean motion
 ```math
 \cos(\alpha) = \frac{a^2n_E + b^2n_P}{ab(n_E + n_P)}
 ```
-Since this is the angle when $w_{\text{obs}} = 0$, we need to multiply it by $2$ to get the full range of $\alpha$ where there is retrograde motion (the orbit is symmetric about the line $SD$). Then, dividing $2\alpha$ by the relative mean motion $n' = n_P - n_E$ gives the time spent in retrograde:
+Since this value for $\alpha$ is the angle when $w_{\text{obs}} = 0$, we need to multiply it by $2$ to get the full range of $\alpha$ where there is retrograde motion (the orbit is symmetric about the line $SD$). Then, dividing $2\alpha$ by the relative mean motion $n' = n_P - n_E$ gives the time spent in retrograde:
 ```math
 T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2n_E + b^2n_P}{ab(n_E + n_P)}\right)}{n_P - n_E}\right|
 ```
