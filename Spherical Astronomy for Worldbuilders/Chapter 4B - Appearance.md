@@ -261,6 +261,7 @@ T_{\text{retro}} &= 365.24\text{ dy} \left|\frac{2\arccos\left(\frac{0.7233 + \s
 &= 42.2 \text{ dy}
 \end{align}
 ```
+Thus Venus is in retrograde for $42.2 \text{ dy}$ every $584 \text{ dy}$ (See example $14$), or roughly $7$% of the time.
 
 Doing this for all the planets yields:
 ```math
