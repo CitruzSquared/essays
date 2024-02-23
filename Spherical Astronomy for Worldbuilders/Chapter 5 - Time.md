@@ -1,5 +1,5 @@
-## VI. Time
-Let us talk about how time and date are measured in astronomy.
+## V. Time
+We will now move on to specific times of observations from the ground, so let us talk about time:
 
 ### Sidereal and Solar time
 When measuring time, two types of time must be distinguished:
@@ -21,9 +21,9 @@ So how long is a solar day in comparison to a sidereal day? Well, think about it
 
 Thus, since there are $Y\pm1$ sidereal days per $Y$ synodic days, where $Y$ is the length of the year in **solar days**,
 ```math
-\text{Sidereal Day} = \frac{Y}{Y \pm 1} \cdot \text{Solar Day}\tag{6}
+\text{Sidereal Day} = \frac{Y}{Y \pm 1} \cdot \text{Solar Day}\tag{76}
 ```
-#### Example 2
+#### Example 19
 <div align="center">
 <table>
 <tbo dy >
@@ -38,7 +38,7 @@ Calculate the length of the sidereal day on Earth and Venus, keeping in mind Ven
 </table>
 </div>
 
-We use equation $6$.\
+We use equation $76$.\
 Since Earth has a prograde orbit,
 ```math
 \text{Sidereal Day Length} = \frac{Y}{Y + 1} \cdot \text{Solar Day Length}
@@ -67,22 +67,22 @@ $\blacksquare$
 
 The prime meridian is the reference longitude on the Earth. This is where longitude is measured from, and it is also where the standard time is measured. All other solar times can be converted to standard time via this formula:
 ```math
-\text{Standard Time } (t) = \text{Local Time} - \frac{l / 360\degree}{\text{Solar Day Length}}\tag{7}
+\text{Standard Time } (t) = \text{Local Time} - \frac{l / 360\degree}{\text{Solar Day Length}}\tag{77}
 ```
 Where $l$ is the local longitude (East is positive).\
 If the time is given as an angle, the following formula is perfectly viable:
 ```math
-\text{Standard Time } (t) = \text{Local Time} - l \tag{8}
+\text{Standard Time } (t) = \text{Local Time} - l \tag{78}
 ```
 
 <ins>The benefit to worldbuilding is that we can decide when time $0$ and when day $0$ is.</ins> **Here, we define time $0$ to be the time of Spring Equnox on the prime meridian, and we shall also, for the sake of convenience, also say that the Spring Equinox happened at exactly midnight.** This means, that at solar time (t) $= 0$, the sidereal time was exactly $-0.5$ sidereal days, as Aries (coincident with the Sun) was at midnight.
 
 Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, we just multiply the time elapsed, in days, from $t = 0$ by $(Y\pm1)/Y$ to get the sidereal time, then subtract by $0.5$ sidereal days to account for the fact that Aries was at midnight at $t = 0$.
 ```math
-\Theta = \frac{Y \pm 1}{Y} \cdot t - 0.5 \tag{9}
+\Theta = \frac{Y \pm 1}{Y} \cdot t - 0.5 \tag{79}
 ```
 
-#### Example 3
+#### Example 20
 <div align="center">
 <table>
 <tbo dy >
@@ -97,7 +97,7 @@ Calculate the standard sidereal time at the time of the observation. <br/>
 </table>
 </div>
 
-First, using equation $7$, we determine the standard time of observation.
+First, using equation $77$, we determine the standard time of observation.
 ```math
 \begin{align}
 \text{Standard Time } (t) &= 05:16:34 - \frac{165\degree/360\degree}{24h} \\
@@ -107,22 +107,22 @@ First, using equation $7$, we determine the standard time of observation.
 ```
 Where $\text{ dy }$ means Solar days.\
 This means the standard time at the time of observation was solar day $174$ at $18:16:34$, or at $t = 174.7615$ days.\
-Then, using equation $9$:
+Then, using equation $79$:
 ```math
 \Theta \text{ (in days)} = \frac{289.42 + 1}{289.42} \cdot 174.7615 - 0.5 = 174.8653$
 ```
 Thus the standard sidereal time at the time of measurement was sidereal day $174,$ $311\degree$ $31'$ $12.25''$. \
 This can be interpreted as the fact that at the time of measurement, at the prime meridian, the cusp of aries had rotated $311\degree$ $31'$ $12.25''$ from the meridian, or in other words: ***the right ascension of the prime meridian was*** $311\degree$ $31'$ $12.25'' = 20^h$ $:46^m$ $4.82^s$.
 
-Furthermore, the local sidereal time can be calculated by equation $8$:
+Furthermore, the local sidereal time can be calculated by equation $78$:
 ```math
 \Theta_{\text{local}} = \Theta_{\text{standard}} + l = 175\: \text{ sdy }\:116\degree\:31'\:12.25''
 ```
 Where $\text{ sdy }$ means sidereal days.\
 $\blacksquare$
 
-To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $9$ still holds.
-#### Example 4
+To convert from sidereal time to mean solar time, it is harder. Often, from later on calculations that give us the sidereal time of an event, the whole part of the sidereal time will not be apparent. Therefore we must guess by knowing the solar date. However, equation $79$ still holds.
+#### Example 21
 <div align="center">
 <table>
 <tbo dy >
@@ -174,17 +174,17 @@ The Western angle between the Prime Meridian and the Star is known as the Standa
 
 It is therefore evident that 
 ```math
-h_L = \Theta_L - \alpha\tag{10}
+h_L = \Theta_L - \alpha\tag{80}
 ```
-and because $\Theta_L = \Theta + l$ (equations $7$ and $8$):
+and because $\Theta_L = \Theta + l$ (equations $77$ and $78$):
 
 ```math
-h_L = \Theta + l - \alpha\tag{11}
+h_L = \Theta + l - \alpha\tag{81}
 ```
 
 When $h_L = 0$, the star is coincident with the meridian, and the star is at the highest point in the sky. If $h_L = 180\degree$, the star is coincident with the lower meridian, and it is at the lowest point in the sky. If the star in question is the Sun, then the times at which $h_L = 0$ and $h_L = 180\degree$ are called *apparent noon* and *apparent midnight* respectively. These are not the same as the *mean noon* and *mean midnight*, the mean values are simply the average of the apparent values over the year. (Yes, this means noon and midnight aren't always at $12:00$ and $00:00$!)
 
-#### Example 5
+#### Example 22
 <div align="center">
 <table>
 <tbo dy >
@@ -199,7 +199,7 @@ What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 
 </table>
 </div>
 
-Recall equation $11$:
+Recall equation $81$:
 ```math
 h_L = \Theta + l - \alpha
 ```
@@ -212,7 +212,7 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 ```math
 \Theta = \alpha = 214\degree\:52'\:37.04''.
 ```
-Then, using the method of Example $4$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
+Then, using the method of Example $21$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
 ```math
 \begin{align}
 t &= (175\: \text{ sdy }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -224,7 +224,7 @@ $\blacksquare$
 
 However, in this example, $t = 175 \text{ dy } 11:46:22 \neq 175.00 \text{  dy }$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
-#### Example 5-II
+#### Example 22-II
 <div align="center">
 <table>
 <tbo dy >
@@ -243,7 +243,7 @@ Again, using equations $1$, $2,$ and $3$, we find:
 ```math
 \Theta = \alpha = 215\degree\:28'\:9.28''.
 ```
-Repeating the method of Example 4,
+Repeating the method of Example 21,
 ```math
 \begin{align}
 t &= (175\: \text{ sdy }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -262,7 +262,7 @@ Using our knowledge, we can calculate the times of certain astronomical events i
 - When is the Moon's location due East?\
 etc.
 
-#### Example 6
+#### Example 23
 <div align="center">
 <table>
 <tbo dy >
