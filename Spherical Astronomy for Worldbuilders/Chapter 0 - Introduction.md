@@ -35,6 +35,6 @@
    - Part B
      * Equations $63$ to $75$
      * Examples $16$ to $18$
-5. Horizontal Coordinates
-6. Time
+5. Time
+6. Horizontal Coordinates
 7. Earthly Parallax
