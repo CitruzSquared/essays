@@ -229,6 +229,7 @@ Since this value for $\alpha$ is the angle when $w_{\text{obs}} = 0$, we need to
 ```math
 T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2n_E + b^2n_P}{ab(n_E + n_P)}\right)}{n_P - n_E}\right|
 ```
+Where we use absolute value to keep the answer positive.\
 Using $n = 360\degree/T$ gives:
 ```math
 T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2T_P + b^2T_E}{ab(T_E + T_P)}\right)}{\frac{360\degree}{T_P} - \frac{360\degree}{T_E}}\right| \tag{74}
