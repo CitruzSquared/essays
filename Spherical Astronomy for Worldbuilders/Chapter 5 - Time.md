@@ -1,5 +1,5 @@
 ## V. Time
-We will now move on to specific times of observations from the ground, so let us talk about time:
+We will now move on to specific observations from the ground, and of great importance here is the time of events. So let us talk about how to measure time:
 
 ### Sidereal and Solar time
 When measuring time, two types of time must be distinguished:
