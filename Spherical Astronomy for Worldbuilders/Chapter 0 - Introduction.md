@@ -66,12 +66,12 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \begin{align}
 \frac{\sin(A)}{a} &= \frac{\sin(B)}{b} = \frac{\sin(C)}{c}\\
 c^2 &= a^2 + b^2 - 2ac\cos(C)\\
+c^2 &= a^2 + b^2 \text{ (If C } = 90\degree)\\
 S &= \frac{1}{2}ab\sin(C)\\
 A + B + C &= 180\degree \\
 \end{align}
 ```
 
-<br/>
 <br/>
 <br/>
 
