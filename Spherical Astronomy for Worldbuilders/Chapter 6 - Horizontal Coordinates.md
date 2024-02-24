@@ -297,7 +297,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 =
 \begin{bmatrix}
 -\sin(\phi) & 0 & \cos(\phi) \\
-0 & -1 & 0 \\ \tag{82}
+0 & -1 & 0 \\ 
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
