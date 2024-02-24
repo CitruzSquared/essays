@@ -39,4 +39,6 @@
    - Equations $76$ to $79$
    - Examples $19$ to $21$
 6. Horizontal Coordinates
+   - Equations $80$ to $84$
+   - Examples $22$ to $26$
 7. Earthly Parallax
