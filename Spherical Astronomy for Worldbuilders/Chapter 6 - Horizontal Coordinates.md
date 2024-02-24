@@ -441,7 +441,7 @@ Thus $\lambda_{\text{Earth Heliocentric}} = 121\degree$ $7' + 180\degree = 301\d
 Now we follow example $4$ (Chapter $2$).
 ```math
 \begin{align}
-\nu &= 301\degree\:7' - 102\degree\:56'\:49.9''
+\nu &= 301\degree\:7' - 102\degree\:56'\:49.9''\\
 &= 198\degree\:10'\:13.29''\\
 \end{align}
 ```
@@ -450,9 +450,9 @@ $\nu$ is bigger than $180\degree$, so:
 \begin{align}
 E &= 2\pi - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\cos(198\degree\:10'\:13.29'')}\right)\\
 &= 3.463975 \text{ rad}\\
-\therefore M &= 3.463975 - 0.0167\sin(3.463975)
-&= 3.469266 \text{ rad}
-\therefore t &= \frac{3.469266}{2\pi}\cdot365.24\text{ dy}
+\therefore M &= 3.463975 - 0.0167\sin(3.463975)\\
+&= 3.469266 \text{ rad}\\
+\therefore t &= \frac{3.469266}{2\pi}\cdot365.24\text{ dy}\\
 &= 202\text{ dy }
 \end{align}
 ```
