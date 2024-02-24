@@ -61,9 +61,9 @@ Where $\text{Phase}$ is the fraction of $P$ seen as illuminated from $E$.
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/b629786c-b9d4-4f51-a3fb-f3a0a64dded4" width="300"/> Thus in the view from $E$, the planet $P$ would look like this, and if we assume the Sun to be shining from the right:
 
 The crescent section between $H$ and $A'$ would be illuminated if the phase was $< 50$% and\
-the gibbous section between $H$ and $A$ would be illuminated if the phase was $> 50$%.
+the gibbous section between $H$ and $A$ would be illuminated if the phase was $> 50$%.\
+With $HA'/HH'$ or $HA/HH'$ being the phase%.
 
-<br/>
 <br/>
 
 #### Example 12
