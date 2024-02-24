@@ -114,10 +114,7 @@ What was the standard mean Solar time of <i>apparent</i> noon on Solar day $175$
 </table>
 </div>
 
-Recall equation $81$:
-```math
-h_L = \Theta + l - \alpha
-```
+We mostly follow the previous example.\
 Because $l = 0\degree$, $h_L = h$.
 ```math
 h = \Theta - \alpha
@@ -157,7 +154,7 @@ Again, using equations $1$, $2,$ and $3$, we find:
 ```math
 \Theta = \alpha = 215\degree\:28'\:9.28''.
 ```
-Repeating the method of Example 21,
+Then repeating the method of Example 21,
 ```math
 \begin{align}
 t &= (175\: \text{ sdy }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -340,7 +337,7 @@ Taking the negative arccosine value for h (negative because sunrise), we get:
 ```math
 h = -71\degree\:1'\:54.87''
 ```
-From here we just need to find the mean time from the hour angle, so we follow Example $5$.
+From here we just need to find the mean time from the hour angle, so we follow Example $23$.
 ```math
 \displaylines{
 h_L = \Theta_L - \alpha\\
@@ -368,7 +365,7 @@ Thus the sunrise equation gives (again, taking the negative arccosine):
 ```math
 h = -70\degree\:51'\:26.21''
 ```
-Now we follow Example $24$.
+Now we follow Example $23$.
 ```math
 \displaylines{
 \begin{align}
