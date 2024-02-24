@@ -147,7 +147,8 @@ Two Argument Arctangent:
 Most of these vector properties are nonessential to this guide.
 
 $\textbf{e}_1$, $\textbf{e}_2$, and $\textbf{e}_3$ are unit basis vectors.\
-$\theta$ is the angle between $\textbf{v}$ and $\textbf{u}$.
+$\theta$ is the angle between $\textbf{v}$ and $\textbf{u}$.\
+$\textbf{0}$ is the zero vector.
 ```math
 \begin{align}
 \textbf{v} &= \begin{bmatrix}
@@ -243,6 +244,7 @@ a_3 & a_6 & a_9
 \end{align}
 ```
 Rotation Matrices:
+$R_x$ denotes a rotation about the $x$-axis, similar for $R_y$ and $R_z$.
 ```math
 \textbf{v}_{\text{rotated}} = R\textbf{v}_{\text{original}}
 ```
