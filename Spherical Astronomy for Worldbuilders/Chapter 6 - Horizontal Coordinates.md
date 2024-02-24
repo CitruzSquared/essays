@@ -16,7 +16,7 @@ In the last chapter, we saw how we could define the sidereal time as the Western
 This is useful as it gives us a way to describe the location of $P$, specifically how East or West it is, in comparison to the meridian.
 
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In the diagram, the Western angle between the Prime Meridian and Aries (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Western angle between the Local Meridian and Aries (the right ascension of the Local Meridian) is the local standard time ($\Theta_L$), as we saw in the last chapter. The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In this diagram, the Western angle between the Prime Meridian and Aries (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Western angle between the Local Meridian and Aries (the right ascension of the Local Meridian) is the local standard time ($\Theta_L$), as we saw in the last chapter. The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
 
 The Western angle between the Prime Meridian and the Star is then known as the Standard Hour Angle of the star ($h$), and the Western angle between the Local Meridian and the Star is known as the Local Hour Angle of the star ($h_L$).
 
@@ -41,8 +41,72 @@ When $h_L = 0$, the star is coincident with the meridian, and the star is at the
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
+On planet $P$, on solar day $175$ at local mean Solar time $11:00:00$, <br/>
+what was the local hour angle of star $S$, with right acension $5^h$?
+<img width="2000" height="0">
+</td>
+</tbo dy >
+</table>
+</div>
+
+$175\text{ dy }11:00:00$ is $175.458333\text{ dy}$.\
+We need the sidereal time, so by equation $79$:
+```math
+\begin{align}
+\Theta_L &= \frac{289.42+1}{289.42} \cdot 175.458333 - 0.5\\
+&= 175\text{ sdy } 203\degree\:14'\:48.61''
+\end{align}
+```
+
+Then, by equation $80$:
+```math
+\begin{align}
+h_L &= 203\degree\:14'\:48.61'' - 5^h\\
+&= 128\degree\:14'\:48.61''
+\end{align}
+```
+$\blacksquare$
+
+#### Example 23
+<div align="center">
+<table>
+<tbo dy >
+<td align="center">
+<img width="2000" height="0"><br>
+On planet $P$, on some time during solar day $175$, the hour angle of star $S$, with right acension $5^h$, was $128\degree\:14'\:48.61''$. <br/>
+What was the local mean Solar time?
+<img width="2000" height="0">
+</td>
+</tbo dy >
+</table>
+</div>
+
+By equation $80$:
+```math
+\begin{align}
+\Theta_L &= 128\degree\:14'\:48.61'' + 5^h\\
+&= 203\degree\:14'\:48.61''
+\end{align}
+```
+Then, by equation $79$ (See example $21$ for more details), we try $\Theta = 175 \text{ sdy } 203\degree$ $14'$ $48.61''$:
+```math
+\begin{align}
+t &= (175\text{ sdy } + 203\degree\:14'\:48.61'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175.458333 \text{ dy}\\
+&= 175\text{ dy }11:00:00
+\end{align}
+```
+Which agrees with example $22$.\
+$\blacksquare$
+
+#### Example 24
+<div align="center">
+<table>
+<tbo dy >
+<td align="center">
+<img width="2000" height="0"><br>
 On planet $P$ at standard time $t = 175.00 \text{  dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree$ $40'$ $36.24''$. <br/>
-What was the mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
+What was the standard mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
 (The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
 <img width="2000" height="0">
 </td>
@@ -66,16 +130,16 @@ Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the defin
 Then, using the method of Example $21$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
 ```math
 \begin{align}
-t &= (175\: \text{ sdy }\: 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
-&= 175.4905\: \text{ dy } \\
-&= 175\: \text{ dy } \: 11:46:22
+t &= (175 \text{ sdy } 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
+&= 175.4905 \text{ dy } \\
+&= 175 \text{ dy } 11:46:22
 \end{align}
 ```
 $\blacksquare$
 
 However, in this example, $t = 175 \text{ dy } 11:46:22 \neq 175.00 \text{  dy }$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
-#### Example 22-II
+#### Example 24-II
 <div align="center">
 <table>
 <tbo dy >
@@ -105,14 +169,113 @@ More repetition will improve our estimations even further, but they rapidly conv
 We can see that the time of apparent noon is not $12:00$. This difference is called the [Equation of Time](https://en.wikipedia.org/wiki/Equation_of_time), and the amount by it differs by changes throughout the year.\
 $\blacksquare$
 
-### Horizontal Coordinates using Sidereal Time
+### Horizontal Coordinates
+Let's now get to defining our coordinates.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2d987d62-1a56-41af-921e-81c8f4555621" width="400"/> Let us say we want to describe the location of $P$. This can be done very simply with two angles, using spherical coordinates. First we drop $P$ down onto the local horizon to form $P'$. Then we can describe the position of $P$ by the angles $NOP'$ and $POP'$. The angle $NOP'$ is called the *azimuth* (denoted $A$) and is measured from North with East as positive. The angle $POP'$ is called the *altitude* (denoted $a$). This system of coordinates is called the [*Horizonal Coordinate System*](https://en.wikipedia.org/wiki/Horizontal_coordinate_system).
+
+The way of calculating the azimuth and altitude is again given with rotation matrices, just like in chapter $1$:
+- **Equatorial to Horizontal:**
+```math
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(\phi) & 0 & -\cos(\phi) \\
+0 & 1 & 0 \\ \tag{82}
+\cos(\phi) & 0 & \sin(\phi)
+\end{bmatrix}
+\begin{bmatrix}
+\cos(\delta) \cos(h) \\
+\cos(\delta) \sin(h) \\
+\sin(\delta)
+\end{bmatrix}
+```
+Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$.
+
+- **Horizontal to Equatorial:**
+```math
+\begin{bmatrix}
+\cos(\delta) \cos(h) \\
+\cos(\delta) \sin(h) \\
+\sin(\delta)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(\phi) & 0 & -\cos(\phi) \\
+0 & 1 & 0 \\ \tag{83}
+-\cos(\phi) & 0 & \sin(\phi)
+\end{bmatrix}
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+```
+
+### Example 25
+<div align="center">
+<table>
+<tbo dy >
+<td align="center">
+<img width="2000" height="0"><br>
+On planet $P$ at latitude $50\degree$, on solar day $175$ at local mean Solar time $11:00:00$, <br/>
+what were the horizontal coordinates of star $S$, with right acension $5^h$ and declension $+30\degree$?
+<img width="2000" height="0">
+</td>
+</tbo dy >
+</table>
+</div>
+
+In example $22$, we found the hour angle of $S$:
+```math
+h = 128\degree\:14'\:48.61''
+```
+Thus, using equation $82$:
+```math
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(50\degree) & 0 & -\cos(50\degree) \\
+0 & 1 & 0 \\
+\cos(50\degree) & 0 & \sin(50\degree)
+\end{bmatrix}
+\begin{bmatrix}
+\cos(30\degree) \cos(128\degree\:14'\:48.61'') \\
+\cos(30\degree) \sin(128\degree\:14'\:48.61'') \\
+\sin(30\degree)
+\end{bmatrix}
+```
+Thus
+```math
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+-0.732080607\\
+0.680134006\\
+0.038415077
+\end{bmatrix}
+```
+Now, using equation $2$, we can find $A$ and $a$:
+```math
+\begin{align}
+\rho &= 1 \text{ (Celestial Sphere has arbitrary radius)}\\
+A &= \arctan(0.680134006, -0.732080607)\\
+&= 312\degree\:53'\:34.41''\\
+a &= \arcsin(0.038415077/1)\\
+&= 2\degree\:12'\:5.63''
+\end{align}
+```
 
 Using our knowledge, we can calculate the times of certain astronomical events involving certain altitudes or azimuths, questions such as:
 - When does the Sun rise?
 - When is the Moon's location due East?\
 etc.
 
-#### Example 23
+#### Example 26
 <div align="center">
 <table>
 <tbo dy >
@@ -128,7 +291,7 @@ What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree 
 
 "Sunrise" means that the Sun is at the horizon, or more specifically, the eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
 
-Recall equation $5$.
+Recall equation $82$.
 ```math
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
@@ -155,10 +318,10 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 &=\cos(\phi)\cos(\delta) \cos(h)+\sin(\phi)\sin(\delta)\\
 
 \therefore \cos(h) &= -\frac{\sin(\phi)\sin(\delta)}{\cos(\phi)\cos(\delta)}\\
-&=-\tan(\phi)\tan(\delta)\tag{12}
+&=-\tan(\phi)\tan(\delta)\tag{84}
 \end{align}
 ```
-Equation $12$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
+Equation $84$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
 Carrying on, we clearly need $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
@@ -191,7 +354,7 @@ t &= (175\: \text{ sdy } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{2
 \end{align}
 }
 ```
-Just as with Example $5$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
+Just as with Example $24$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
 At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree$ $2'$ $32.28''$.\
 Converting to equatorial coordinates:
@@ -205,7 +368,7 @@ Thus the sunrise equation gives (again, taking the negative arccosine):
 ```math
 h = -70\degree\:51'\:26.21''
 ```
-Now we follow Example $5$.
+Now we follow Example $24$.
 ```math
 \displaylines{
 \begin{align}
@@ -216,45 +379,3 @@ Now we follow Example $5$.
 ```
 Further repetition will better our approximations.\
 $\blacksquare$
-<br/>
-<br/>
-
-Also, using the relation between the hour angle and the sidereal time, equation $5$ can be rewritten:
-```math
-\begin{bmatrix}
-x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{13}
-\cos(\phi) & 0 & \sin(\phi)
-\end{bmatrix}
-\begin{bmatrix}
-\cos(\Theta_L) & \sin(\Theta_L) & 0 \\
-\sin(\Theta_L) & -\cos(\Theta_L) & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
-x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
-\end{bmatrix}
-```
-
-- **Equatorial to Horizontal:**
-```math
-\begin{bmatrix}
-x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{5}
-\cos(\phi) & 0 & \sin(\phi)
-\end{bmatrix}
-\begin{bmatrix}
-\cos(\delta) \cos(h) \\
-\cos(\delta) \sin(h) \\
-\sin(\delta)
-\end{bmatrix}
-```
-Where $\phi =$ Latitude of Observer.
