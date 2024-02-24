@@ -189,7 +189,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \sin(\delta)
 \end{bmatrix}
 ```
-Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$.
+Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$, used because it factors in both the rotation of the Earth and the right ascension of the star (equation $80$).
 
 - **Horizontal to Equatorial:**
 ```math
