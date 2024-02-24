@@ -58,6 +58,7 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * The Right Ascension is measured in the plane of the Celestial Equator from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Celestial Equator such that positive is North.
    * The Right Ascension has a peculiar unit, the angle is measured by *hours*, *minutes*, and *seconds*, where $24$ hours is one revolution, $60$ minutes is one hour, and $60$ seconds is one minute. (Thus, $1$ hour is $15\degree$, and $1$ minute is $0.25\degree$, and $1$ second is $0.004166...\degree$.)
    * The points of $+90\degree$ and $-90\degree$ Declination are called the *North* and *South* [*Celestial Poles*](https://en.wikipedia.org/wiki/Celestial_pole) respectively. These points can be thought of as the points in the sky right above True North and True South of Earth. From the view of an observer on the Earth, the celestial poles are always in the direction of North and South. Indeed, the reason the North Star always points North is because it is located so close to the North Celestial Pole (Declension $+89\degree 16'$).
+   * The Earth rotates around the axis that connects the two celestial poles.
 - [**The Ecliptic Coordinate System**](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system)
    * In the Equatorial Coordinate System, the angles $\theta$ and $\varphi$ are called the *Ecliptic Longitude* and *Ecliptic Latitude* and are denoted $\lambda$ and $\beta$ respectively.
    * The Ecliptic Longitude is measured in the plane of the Ecliptic from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Ecliptic such that positive is North.
@@ -65,7 +66,7 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * The points of $+90\degree$ and $-90\degree$ Latitude are called the *North* and *South* [*Ecliptic Poles*](https://en.wikipedia.org/wiki/Orbital_pole) respectively. The celestial poles move extremely slowly around the ecliptic poles due to axial precession, which we will ignore.
    * The ecliptic longitude is split into twelve equal signs that span $30\degree$ each, called the *zodiac signs*: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius, and Pisces. The definition of original zodiac signs is obviously possible in a worldbuilding setting of course.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0b2012ed-cf38-41ed-a1e2-627d9c5e67df" width="400"/> In this diagram, The Earth is at the center $O$, and the motion of the Sun is marked with the arrow. $N$ and $S$ are the celestial poles, and the Earth rotates around the axis $NS$. $N'$ and $S'$ are the ecliptic poles. The direction to the cusp of Aries is marked by "Aries ($X$)".
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0b2012ed-cf38-41ed-a1e2-627d9c5e67df" width="400"/> In this diagram, The Earth is at the center $O$, and the motion of the Sun is marked with the arrow. $N$ and $S$ are the celestial poles, and thus the Earth rotates around the axis $NS$. $N'$ and $S'$ are the ecliptic poles. The direction to the cusp of Aries is marked by "Aries ($X$)".
 
 $\varepsilon$ is the axial tilt of the Earth.
 
