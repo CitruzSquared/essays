@@ -269,6 +269,7 @@ a &= \arcsin(0.038415077/1)\\
 &= 2\degree\:12'\:5.63''
 \end{align}
 ```
+$\blacksquare$
 
 Using our knowledge, we can calculate the times of certain astronomical events involving certain altitudes or azimuths, questions such as:
 - When does the Sun rise?
