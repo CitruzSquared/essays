@@ -169,7 +169,7 @@ $\blacksquare$
 ### Horizontal Coordinates
 Let's now get to defining our coordinates.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2d987d62-1a56-41af-921e-81c8f4555621" width="400"/> Let us say we want to describe the location of $P$. This can be done very simply with two angles, using spherical coordinates. First we drop $P$ down onto the local horizon to form $P'$. Then we can describe the position of $P$ by the angles $NOP'$ and $POP'$. The angle $NOP'$ is called the *azimuth* (denoted $A$) and is measured from North with East as positive. The angle $POP'$ is called the *altitude* (denoted $a$). This system of coordinates is called the [*Horizonal Coordinate System*](https://en.wikipedia.org/wiki/Horizontal_coordinate_system).
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e6a64707-eca1-4a89-a601-b7b9fd3f3182" width="400"/> Let us say we want to describe the location of $P$. This can be done very simply with two angles, using spherical coordinates. First we drop $P$ down onto the local horizon to form $P'$. Then we can describe the position of $P$ by the angles $NOP'$ and $POP'$. The angle $NOP'$ is called the *azimuth* (denoted $A$) and is measured from North with East as positive. The angle $POP'$ is called the *altitude* (denoted $a$). This system of coordinates is called the [*Horizonal Coordinate System*](https://en.wikipedia.org/wiki/Horizontal_coordinate_system).
 
 The way of calculating the azimuth and altitude is again given with rotation matrices, just like in chapter $1$:
 - **Equatorial to Horizontal:**
@@ -179,8 +179,8 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 =
 \begin{bmatrix}
-\sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{82}
+-\sin(\phi) & 0 & \cos(\phi) \\
+0 & -1 & 0 \\ \tag{82}
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
@@ -200,15 +200,15 @@ Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$.
 \end{bmatrix}
 =
 \begin{bmatrix}
-\sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{83}
--\cos(\phi) & 0 & \sin(\phi)
+-\sin(\phi) & 0 & \cos(\phi) \\
+0 & -1 & 0 \\ \tag{83}
+\cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 ```
-The hour angle is used because it factors in both the rotation of the Earth and the right ascension of the star (equation $80$).
+The hour angle is used because it factors in both the rotation of the Earth and the right ascension of the star (equation $80$). In older textbooks, the azimuth is defined starting from South and going West. This is not the IAU's definition of the azimuth anymore, and therefore the azimuth values given in older books would have to be shifted by $180\degree$ to match the modern definition.
 
 #### Example 25
 <div align="center">
@@ -235,8 +235,8 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 =
 \begin{bmatrix}
-\sin(50\degree) & 0 & -\cos(50\degree) \\
-0 & 1 & 0 \\
+-\sin(50\degree) & 0 & \cos(50\degree) \\
+0 & -1 & 0 \\
 \cos(50\degree) & 0 & \sin(50\degree)
 \end{bmatrix}
 \begin{bmatrix}
@@ -252,8 +252,8 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 =
 \begin{bmatrix}
--0.732080607\\
-0.680134006\\
+0.732080607\\
+-0.680134006\\
 0.038415077
 \end{bmatrix}
 ```
@@ -261,8 +261,8 @@ Now, using equation $2$, we can find $A$ and $a$:
 ```math
 \begin{align}
 \rho &= 1 \text{ (Celestial Sphere has arbitrary radius)}\\
-A &= \arctan(0.680134006, -0.732080607)\\
-&= 312\degree\:53'\:34.41''\\
+A &= \arctan(-0.680134006, +0.732080607)\\
+&= 317\degree\:6'\:23.78''\\
 a &= \arcsin(0.038415077/1)\\
 &= 2\degree\:12'\:5.63''
 \end{align}
@@ -296,8 +296,8 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 =
 \begin{bmatrix}
-\sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\
+-\sin(\phi) & 0 & \cos(\phi) \\
+0 & -1 & 0 \\ \tag{82}
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
