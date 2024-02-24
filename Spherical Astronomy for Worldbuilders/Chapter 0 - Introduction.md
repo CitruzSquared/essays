@@ -257,7 +257,7 @@ a_3 & a_6 & a_9
 \end{align}
 ```
 Rotation Matrices:
-$R_x$ denotes a rotation about the $x$-axis, similar for $R_y$ and $R_z$.
+$R_x$ denotes a rotation about the $x$-axis by $\theta$, similar for $R_y$ and $R_z$.
 ```math
 \textbf{v}_{\text{rotated}} = R\textbf{v}_{\text{original}}
 ```
