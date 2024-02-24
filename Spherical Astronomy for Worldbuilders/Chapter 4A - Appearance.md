@@ -64,6 +64,7 @@ The crescent section between $H$ and $A'$ would be illuminated if the phase was 
 the gibbous section between $H$ and $A$ would be illuminated if the phase was $> 50$%.
 
 <br/>
+<br/>
 
 #### Example 12
 <div align="center">
