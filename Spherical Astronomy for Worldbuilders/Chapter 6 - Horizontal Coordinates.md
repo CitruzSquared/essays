@@ -8,7 +8,7 @@ Let's define a set of coordinates that we can use to describe the location of ob
 
 This diagram depicts the celestial sphere around an observer at point $O$. The gray plane is the local horizon. $ON$, $OS$, $OE$, and $OW$, are the local directions of North, South, East, and West respectively. $N'$ and $S'$ depict the celestial poles, and thus the line $N'S'$ is the Earth's Axis, and therefore the plane perpendicular to $N'$ and $S'$ is the Earth's equatorial plane. Therefore, the angle $N'ON$ defines the observer's local latitude $\phi$. $Z$ and $A$ are the observer's Zenith and Nadir respectively.
 
-The plane (or circle) $ZNAS$ defines the local meridian. 
+The plane (or circle) $NZSA$ defines the local meridian. 
 
 In the last chapter, we saw how we could define the sidereal time as the Western distance between Aries and the Meridian. Now we are interested in the point $P$, which may be the location of a star or a planet. We can do the same thing, and we can define the angle between the Meridian and $P$, putting West as positive again. This angle is called the [**hour angle**](https://en.wikipedia.org/wiki/Hour_angle) and is more rigorously defined as the angle between the meridian circle and the circle that goes through $P$, $N'$, and $S'$, which is called the [hour circle](https://en.wikipedia.org/wiki/Hour_circle) of $P$.
 
