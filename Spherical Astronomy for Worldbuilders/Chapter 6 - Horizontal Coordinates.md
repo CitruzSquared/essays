@@ -6,7 +6,7 @@ Let's define a set of coordinates that we can use to describe the location of ob
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/5b1c3310-b4f1-4e70-b954-f4f68287a381" width="400"/> Consider this diagram. 
 
-This diagram depicts the celestial sphere around an observer at point $O$. $ON$, $OS$, $OE$, and $OW$, are the local directions of North, South, East, and West respectively. $N'$ and $S'$ depict the celestial poles, and thus the line $N'S'$ is the Earth's Axis, and therefore the plane perpendicular to $N'$ and $S'$ is the Earth's equatorial plane. Therefore, the angle $N'ON$ defines the observer's local latitude $\phi$. $Z$ and $A$ are the observer's Zenith and Nadir respectively.
+This diagram depicts the celestial sphere around an observer at point $O$. The gray plane is the local horizon. $ON$, $OS$, $OE$, and $OW$, are the local directions of North, South, East, and West respectively. $N'$ and $S'$ depict the celestial poles, and thus the line $N'S'$ is the Earth's Axis, and therefore the plane perpendicular to $N'$ and $S'$ is the Earth's equatorial plane. Therefore, the angle $N'ON$ defines the observer's local latitude $\phi$. $Z$ and $A$ are the observer's Zenith and Nadir respectively.
 
 The plane (or circle) $ZNAS$ defines the local meridian. 
 
