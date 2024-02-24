@@ -114,7 +114,7 @@ Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Sun, Geo
 &= 77\degree\:3'\:50.1''
 \end{align}
 ```
-Now, by equation $21$:
+Now, by equation $21$ ($\nu < 180\degree$):
 ```math
 \begin{align}
 \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
