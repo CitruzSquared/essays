@@ -71,7 +71,6 @@ S &= \frac{1}{2}ab\sin(C)\\
 A + B + C &= 180\degree \\
 \end{align}
 ```
-
 <br/>
 <br/>
 
@@ -90,6 +89,21 @@ S &= \frac{1}{2}r^2 \theta \\
 ```
 
 ### Trigonometry
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/46da7439-0006-4155-8164-379ae2f2cff3" width="250"/>
+
+```math
+\begin{align}
+\\
+\\
+\sin(\alpha) &= \frac{o}{h}\\
+\cos(\alpha) &= \frac{a}{h}\\
+\tan(\alpha) &= \frac{o}{a}
+\end{align}
+```
+
+<br/>
+<br/>
+
 ```math
 \begin{align}
 \text{trig}(\alpha + n\cdot 360\degree) &= \text{trig}(\alpha)\enspace\{n \in \mathbb{Z}\}\\
