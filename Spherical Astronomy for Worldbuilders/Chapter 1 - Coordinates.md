@@ -5,7 +5,7 @@ An [ephemeris](https://en.wikipedia.org/wiki/Ephemeris) (plural *ephemerides*) i
 Let us begin by talking about how objects are even located in space.
 
 ### The Celestial Sphere
-The most important thing in spherical astronomy is the location of celestial objects as seen from Earth. From the Earth, the sky appears to be a great dome all around us, and this is called the [Celestial Sphere](https://en.wikipedia.org/wiki/Celestial_sphere). This is a large sphere of arbitrary radius (commonly just put to 1) that surrounds the Earth that all the stars and planets are projected onto. There are two lines (circles in actuality) of great importance on the Celestial Sphere.
+The most important thing in spherical astronomy is the location of celestial objects as seen from Earth (from a geocentric perspective). From the Earth, the sky appears to be a great dome all around us, and this is called the [Celestial Sphere](https://en.wikipedia.org/wiki/Celestial_sphere). This is a large sphere of arbitrary radius (commonly just put to 1) that surrounds the Earth that all the stars and planets are projected onto. There are two lines (circles in actuality) of great importance on the Celestial Sphere.
 
 - **The [Celestial Equator](https://en.wikipedia.org/wiki/Celestial_equator)**
   * This is the circle on the celestial sphere obtained by projecting the Earth's equator onto the celestial sphere. If one were standing on the equator of the Earth, the celestial equator would appear to be a great circle passing right above the observer, going from East to West.
@@ -62,7 +62,23 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * In the Equatorial Coordinate System, the angles $\theta$ and $\varphi$ are called the *Ecliptic Longitude* and *Ecliptic Latitude* and are denoted $\lambda$ and $\beta$ respectively.
    * The Ecliptic Longitude is measured in the plane of the Ecliptic from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Ecliptic such that positive is North.
    * By definition of the Ecliptic, the Ecliptic Latitude of the Sun is always $0\degree$.
+   * The points of $+90\degree$ and $-90\degree$ Latitude are called the *North* and *South* [*Ecliptic Poles*](https://en.wikipedia.org/wiki/Orbital_pole) respectively. The celestial poles move extremely slowly around the ecliptic poles due to axial precession, which we will ignore.
    * The ecliptic longitude is split into twelve equal signs that span $30\degree$ each, called the *zodiac signs*: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius, and Pisces. The definition of original zodiac signs is obviously possible in a worldbuilding setting of course.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0b2012ed-cf38-41ed-a1e2-627d9c5e67df" width="400"/> In this diagram, The Earth is at the center $O$, and the motion of the Sun is marked with the arrow. $N$ and $S$ are the celestial poles, and the Earth rotates around the axis $NS$. $N'$ and $S'$ are the ecliptic poles. The cusp of Aries is marked by "Aries ($X$)".
+
+$\varepsilon$ is the axial tilt of the Earth.
+
+$XOB$ is the right ascension, and $BOP$ is the declination.\
+$XOA$ is the ecliptic longitude, and $AOP$ is the ecliptic latitude.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 ### Coordinate Transformations
 [Coordinate transformations](https://en.wikipedia.org/wiki/Astronomical_coordinate_systems#Converting_coordinates) between the three coordinate systems are given via rotation matrices – the equatorial frame is just the ecliptic frame rotated by $\varepsilon$ along the $x$-axis.
