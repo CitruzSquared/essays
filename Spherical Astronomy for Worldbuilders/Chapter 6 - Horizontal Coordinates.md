@@ -337,7 +337,7 @@ Substituting $\phi$ and $\delta$:
 \therefore h = \arccos(0.3250415)
 }
 ```
-Taking the negative arccosine value for h (negative because sunrise), we get:
+Taking the negative arccosine value for $h$ (negative because sunrise), we get:
 ```math
 h = -71\degree\:1'\:54.87''
 ```
