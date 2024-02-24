@@ -169,7 +169,7 @@ $\blacksquare$
 ### Horizontal Coordinates
 Let's now get to defining our coordinates.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bba24e72-058d-41ad-84d5-e11d97a593d2" width="400"/> Let us say we want to describe the location of $P$. This can be done very simply with two angles, using spherical coordinates. First we drop $P$ down onto the local horizon to form $P'$. Then we can describe the position of $P$ by the angles $NOP'$ and $POP'$. The angle $NOP'$ is called the *azimuth* (denoted $A$) and is measured from North with East as positive. The angle $POP'$ is called the *altitude* (denoted $a$). This system of coordinates is called the [*Horizonal Coordinate System*](https://en.wikipedia.org/wiki/Horizontal_coordinate_system).
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bba24e72-058d-41ad-84d5-e11d97a593d2" width="400"/> Let us say we want to describe the location of $P$. This can be done very simply with two angles, using spherical coordinates. First we drop $P$ down onto the local horizon to form $P'$. Then we can describe the position of $P$ by the angles $NOP'$ and $POP'$. The angle $NOP'$ is called the *azimuth* (denoted $A$, not to be confused with the $A$ in the diagram) and is measured from North with East as positive. The angle $POP'$ is called the *altitude* (denoted $a$). This system of coordinates is called the [*Horizonal Coordinate System*](https://en.wikipedia.org/wiki/Horizontal_coordinate_system).
 
 The way of calculating the azimuth and altitude is again given with rotation matrices, just like in chapter $1$:
 - **Equatorial to Horizontal:**
