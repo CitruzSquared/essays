@@ -10,7 +10,7 @@ This diagram depicts the celestial sphere around an observer at point $O$. The g
 
 The plane (or circle) $ZNAS$ defines the local meridian. 
 
-In the last chapter, we saw how we could define the sidereal time as the Western distance between Aries and the Meridian. Now we are interested in the point $P$, which may be the location of a star or a planet. We can do the same thing, and we can define the angle between the Meridian and $P$, putting West as positive again. This angle is called the [**hour angle**](https://en.wikipedia.org/wiki/Hour_angle) and is more rigorously defined as the angle between the meridian and the circle that goes through $P$, $N'$, and $S'$, which is called the [hour circle](https://en.wikipedia.org/wiki/Hour_circle) of $P$.
+In the last chapter, we saw how we could define the sidereal time as the Western distance between Aries and the Meridian. Now we are interested in the point $P$, which may be the location of a star or a planet. We can do the same thing, and we can define the angle between the Meridian and $P$, putting West as positive again. This angle is called the [**hour angle**](https://en.wikipedia.org/wiki/Hour_angle) and is more rigorously defined as the angle between the meridian circle and the circle that goes through $P$, $N'$, and $S'$, which is called the [hour circle](https://en.wikipedia.org/wiki/Hour_circle) of $P$.
 
 
 This is useful as it gives us a way to describe the location of $P$, specifically how East or West it is, in comparison to the meridian.
