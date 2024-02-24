@@ -55,6 +55,16 @@ Where $\text{Phase}$ is the fraction of $P$ seen as illuminated from $E$.
 
 <br/>
 <br/>
+<br/>
+<br/>
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/b629786c-b9d4-4f51-a3fb-f3a0a64dded4" width="300"/> Thus in the view from $E$, the planet $P$ would look like this, and if we assume the Sun to be shining from the right:
+
+The section between $H$ and $A'$ would be illuminated if the phase was $< 50$%,\
+the section between $H$ and $P$ would be illuminated if the phase was $= 50$%, and\
+the section between $H$ and $A$ would be illuminated if the phase was $> 50$%.
+
+<br/>
 
 #### Example 12
 <div align="center">
@@ -110,10 +120,11 @@ Then finally by equation $59$:
 ```
 And thus Venus would look something like:
 <p align="center">
-  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/fbf93871-95be-4f74-9cbf-3089e599038f">
+
+  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/ed1b89ff-3c4c-4e04-84d7-e0658861d887">
 </p>
 
-Where the bright side faces in the direction of the Sun.\
+Where the bright side faces in the direction of the Sun. (This *is* truly how Venus looked on that day, but flipped – the Sun was shining from the left.) \
 $\blacksquare$
 
 ### Elongation
