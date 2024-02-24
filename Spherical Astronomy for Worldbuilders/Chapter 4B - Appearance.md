@@ -62,7 +62,7 @@ $q(\alpha)$ is known as the *phase integral*. If we assume planets to be ideally
 ```math
 q(\alpha) = \frac{2}{3}\left(\left(1- \frac{\alpha}{180\degree}\right)\cos(\alpha) + \frac{1}{\pi}\sin(\alpha)\right)\tag{67}
 ```
-Note that this formula is quite a great approximation, and does not take into account rings and other factors that may change the brightness of a planet.
+Note that this formula is a very loose approximation, and does not take into account rings and other factors that may change the brightness of a planet.
 
 #### Example 17
 <div align="center">
