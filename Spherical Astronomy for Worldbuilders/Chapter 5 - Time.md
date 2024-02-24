@@ -152,7 +152,7 @@ Which we truncate to:
 \Theta_{t=175.00} = 175\: \text{ sdy } \tag{ii}
 ```
 Combining the results from $(\text{i})$ and $(\text{ii})$, we try $\Theta = 175 \text{ sdy } -1 \text{ sdy } 311\degree$ $31'$ $12.25''$.\
-Using equation $9$ with $0.5$ sidereal days $= 180\degree$,
+Using equation $79$ with $0.5$ sidereal days $= 180\degree$,
 ```math
 \begin{align}
 t &= (174\: \text{ sdy }\: 311\degree\:31'\:12.25'' + 180\degree) \cdot \frac{289.42}{290.42} \\
