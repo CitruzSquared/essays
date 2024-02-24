@@ -100,7 +100,7 @@ t &= (175\: \text{ sdy }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289
 &= 175\: \text{ dy }\: 11:48:43
 \end{align}
 ```
-More repetition will improve our estimations even further, but they rapidly converge. (A third estimate gives the time $11:48:44$.)
+More repetition will improve our estimations even further, but they rapidly converge. (A third estimate using the longitude of the Sun at $11:48:43$ gives the time $11:48:44$.)
 
 We can see that the time of apparent noon is not $12:00$. This difference is called the [Equation of Time](https://en.wikipedia.org/wiki/Equation_of_time), and the amount by it differs by changes throughout the year.\
 $\blacksquare$
