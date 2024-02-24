@@ -2,29 +2,23 @@
 
 Let's define a set of coordinates that we can use to describe the location of objects from the view of an observer on the ground.
 
-- **Equatorial to Horizontal:**
-```math
-\begin{bmatrix}
-x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\sin(\phi) & 0 & -\cos(\phi) \\
-0 & 1 & 0 \\ \tag{5}
-\cos(\phi) & 0 & \sin(\phi)
-\end{bmatrix}
-\begin{bmatrix}
-\cos(\delta) \cos(h) \\
-\cos(\delta) \sin(h) \\
-\sin(\delta)
-\end{bmatrix}
-```
-Where $\phi =$ Latitude of Observer.
-
-
-
 ### The Hour Angle
-The [hour angle](https://en.wikipedia.org/wiki/Hour_angle), as defined earlier, is the angle between the meridian plane and the hour plane. **This value is measured with West as positive.**
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/5b1c3310-b4f1-4e70-b954-f4f68287a381" width="400"/> Consider this diagram. 
+
+This diagram depicts the celestial sphere around an observer at point $O$. $ON$, $OS$, $OE$, and $OW$, are the local directions of North, South, East, and West respectively. $N'$ and $S'$ depict the celestial poles, and thus the line $N'S'$ is the Earth's Axis, and therefore the plane perpendicular to $N'$ and $S'$ is the Earth's equatorial plane. Therefore, the angle $N'ON$ defines the observer's local latitude $\phi$. $Z$ and $A$ are the observer's Zenith and Nadir respectively.
+
+The plane (or circle) $ZNAS$ defines the local meridian. 
+
+If we were to look at $P$, which may be the location of a star or a planet, we see that we can draw a circle that goes through $P$, $N'$, and $S'$. This circle is called the [hour circle](https://en.wikipedia.org/wiki/Hour_circle). Since the Earth rotates around $N'S'$, the hour circle will rotate around this line too. It will slowly progress West (as the Earth rotates from West to East, things set in the West and rise in the East).
+
+The angle between the hour circle and the meridian circle is called the [hour angle](https://en.wikipedia.org/wiki/Hour_angle) and it is measured with **West as positive**.
+
+<br/>
+<br/>
+
+This is useful as it gives us a way to describe the location of $P$, specifically how East or West it is, in comparison to the meridian.
+
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In the diagram, the Eastern angle between Aries and the Prime Meridian (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Eastern angle between Aries and the Local Meridian is the local standard time ($\Theta_L$). The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
 
@@ -250,3 +244,22 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \end{bmatrix}
 ```
+
+- **Equatorial to Horizontal:**
+```math
+\begin{bmatrix}
+x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(\phi) & 0 & -\cos(\phi) \\
+0 & 1 & 0 \\ \tag{5}
+\cos(\phi) & 0 & \sin(\phi)
+\end{bmatrix}
+\begin{bmatrix}
+\cos(\delta) \cos(h) \\
+\cos(\delta) \sin(h) \\
+\sin(\delta)
+\end{bmatrix}
+```
+Where $\phi =$ Latitude of Observer.
