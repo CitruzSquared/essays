@@ -6,15 +6,13 @@ Let's define a set of coordinates that we can use to describe the location of ob
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/5b1c3310-b4f1-4e70-b954-f4f68287a381" width="400"/> Consider this diagram. 
 
-This diagram depicts the celestial sphere around an observer at point $O$. The gray plane is the local horizon. $ON$, $OS$, $OE$, and $OW$, are the local directions of North, South, East, and West respectively. $N'$ and $S'$ depict the celestial poles, and thus the line $N'S'$ is the Earth's Axis, and therefore the plane perpendicular to $N'$ and $S'$ is the Earth's equatorial plane. Therefore, the angle $N'ON$ defines the observer's local latitude $\phi$. $Z$ and $A$ are the observer's Zenith and Nadir respectively.
+This diagram depicts the celestial sphere around an observer at point $O$. The gray plane is the local horizon. $ON$, $OS$, $OE$, and $OW$, are the local directions of North, South, East, and West respectively. $N'$ and $S'$ depict the celestial poles, and thus the line $N'S'$ is the Earth's rotational axis, and therefore the plane perpendicular to $N'$ and $S'$ is the Earth's equatorial plane. Therefore, the angle $N'ON$ defines the observer's local latitude $\phi$. $Z$ and $A$ are the observer's Zenith and Nadir respectively.
 
 The plane (or circle) $NZSA$ defines the local meridian. 
 
 In the last chapter, we saw how we could define the sidereal time as the Western distance between Aries and the Meridian. Now we are interested in the point $P$, which may be the location of a star or a planet. We can do the same thing, and we can define the angle between the Meridian and $P$, putting West as positive again. This angle is called the [**hour angle**](https://en.wikipedia.org/wiki/Hour_angle) and is more rigorously defined as the angle between the meridian circle and the circle that goes through $P$, $N'$, and $S'$, which is called the [hour circle](https://en.wikipedia.org/wiki/Hour_circle) of $P$.
 
-
 This is useful as it gives us a way to describe the location of $P$, specifically how East or West it is, in comparison to the meridian.
-
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In this diagram, the Western angle between the Prime Meridian and Aries (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Western angle between the Local Meridian and Aries (the right ascension of the Local Meridian) is the local standard time ($\Theta_L$), as we saw in the last chapter. The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
 
