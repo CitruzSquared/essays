@@ -287,7 +287,7 @@ What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree 
 </table>
 </div>
 
-"Sunrise" means that the Sun is at the horizon, or more specifically, the eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
+"Sunrise" means that the Sun is at the horizon, or more specifically, the Eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
 
 Recall equation $82$.
 ```math
