@@ -89,7 +89,7 @@ S &= \frac{1}{2}r^2 \theta \\
 ```
 
 ### Trigonometry
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/46da7439-0006-4155-8164-379ae2f2cff3" width="250"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/d0fd51e1-67d1-44fd-8777-89537e5ecbf6" width="250"/>
 
 ```math
 \begin{align}
