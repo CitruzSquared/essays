@@ -358,7 +358,7 @@ At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree$ $2'$ $32.28
 Converting to equatorial coordinates:
 ```math
 \begin{alignat}{4}
-\delta &=-15&&\degree\:23&&'\:5.06&&''\\
+\delta &=-15&&\degree\:23&&'\:05.06&&''\\
 \alpha &= 215&&\degree\:13&&'\:54.03&&''
 \end{alignat}
 ```
