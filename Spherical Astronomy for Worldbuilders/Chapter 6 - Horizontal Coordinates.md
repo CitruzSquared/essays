@@ -216,7 +216,7 @@ The hour angle is used because it factors in both the rotation of the Earth and 
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at latitude $50\degree$, on solar day $175$ at local mean Solar time $11:00:00$, <br/>
+On planet $P$ at latitude $50\degree$, on Solar day $175$ at local mean Solar time $11:00:00$, <br/>
 what were the horizontal coordinates of star $S$, with right acension $5^h$ and declension $+30\degree$?
 <img width="2000" height="0">
 </td>
