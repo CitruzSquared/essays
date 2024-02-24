@@ -65,7 +65,7 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * The points of $+90\degree$ and $-90\degree$ Latitude are called the *North* and *South* [*Ecliptic Poles*](https://en.wikipedia.org/wiki/Orbital_pole) respectively. The celestial poles move extremely slowly around the ecliptic poles due to axial precession, which we will ignore.
    * The ecliptic longitude is split into twelve equal signs that span $30\degree$ each, called the *zodiac signs*: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius, and Pisces. The definition of original zodiac signs is obviously possible in a worldbuilding setting of course.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0b2012ed-cf38-41ed-a1e2-627d9c5e67df" width="400"/> In this diagram, The Earth is at the center $O$, and the motion of the Sun is marked with the arrow. $N$ and $S$ are the celestial poles, and the Earth rotates around the axis $NS$. $N'$ and $S'$ are the ecliptic poles. The cusp of Aries is marked by "Aries ($X$)".
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0b2012ed-cf38-41ed-a1e2-627d9c5e67df" width="400"/> In this diagram, The Earth is at the center $O$, and the motion of the Sun is marked with the arrow. $N$ and $S$ are the celestial poles, and the Earth rotates around the axis $NS$. $N'$ and $S'$ are the ecliptic poles. The direction to the cusp of Aries is marked by "Aries ($X$)".
 
 $\varepsilon$ is the axial tilt of the Earth.
 
