@@ -22,7 +22,6 @@ The Western angle between the Prime Meridian and the Star is then known as the S
 
 <br/>
 <br/>
-<br/>
 
 It is therefore evident that 
 ```math
