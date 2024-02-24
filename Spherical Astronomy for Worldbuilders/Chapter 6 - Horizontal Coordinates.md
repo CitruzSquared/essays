@@ -191,7 +191,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 ```
 Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$.
 
-- **Horizontal to Equatorial:**
+- **Horizontal to Equatorial (Does not change):**
 ```math
 \begin{bmatrix}
 \cos(\delta) \cos(h) \\
