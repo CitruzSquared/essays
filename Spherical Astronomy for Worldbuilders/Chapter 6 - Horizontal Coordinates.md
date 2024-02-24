@@ -41,7 +41,7 @@ When $h_L = 0$, the star is coincident with the meridian, and the star is at the
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$, on solar day $175$ at local mean Solar time $11:00:00$, <br/>
+On planet $P$, on solar day $175$ at local mean solar time $11:00:00$, <br/>
 what was the local hour angle of star $S$, with right acension $5^h$?
 <img width="2000" height="0">
 </td>
@@ -74,7 +74,7 @@ $\blacksquare$
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$, on some time during solar day $175$, the hour angle of star $S$, with right acension $5^h$, was $128\degree\:14'\:48.61''$. <br/>
-What was the local mean Solar time?
+What was the local mean solar time?
 <img width="2000" height="0">
 </td>
 </tbo dy >
@@ -106,7 +106,7 @@ $\blacksquare$
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ at standard time $t = 175.00 \text{  dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree$ $40'$ $36.24''$. <br/>
-What was the standard mean Solar time of <i>apparent</i> noon on Solar day $175$ at $l = 0\degree E$? <br/>
+What was the standard mean solar time of <i>apparent</i> noon on solar day $175$ at $l = 0\degree E$? <br/>
 (The axial tilt $\varepsilon$ of $P$ is $25.5\degree$)
 <img width="2000" height="0">
 </td>
@@ -218,7 +218,7 @@ Note that in older textbooks, the azimuth is defined starting from South and goi
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$ at latitude $50\degree$, on Solar day $175$ at local mean Solar time $11:00:00$, <br/>
+On planet $P$ at latitude $50\degree$, on solar day $175$ at local mean solar time $11:00:00$, <br/>
 what were the horizontal coordinates of star $S$, with right acension $5^h$ and declension $+30\degree$?
 <img width="2000" height="0">
 </td>
@@ -282,7 +282,7 @@ etc.
 <td align="center">
 <img width="2000" height="0"><br>
 On planet $P$ at standard time $t = 175.00\: \text{ dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\:40'\:36.24''$. <br/>
-What was the mean Solar time of sunrise on Solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
+What was the mean solar time of sunrise on solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
 <img width="2000" height="0">
 </td>
 </tbo dy >
