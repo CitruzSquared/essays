@@ -443,9 +443,11 @@ Now we follow example $4$ (Chapter $2$).
 \begin{align}
 \nu &= 301\degree\:7' - 102\degree\:56'\:49.9''
 &= 198\degree\:10'\:13.29''\\
+\end{align}
 ```
 $\nu$ is bigger than $180\degree$, so:
 ```math
+\begin{align}
 E &= 2\pi - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\cos(198\degree\:10'\:13.29'')}\right)\\
 &= 3.463975 \text{ rad}\\
 \therefore M &= 3.463975 - 0.0167\sin(3.463975)
