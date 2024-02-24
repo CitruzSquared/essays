@@ -175,7 +175,7 @@ The above coordinate systems are *geocentric* in nature, and these are the coord
 ```math
 \displaylines{
 \begin{align}
-\lambda_{\text{Geocentric}} \text{ of the Sun } &= \lambda_{\text{Heliocentric}} \text{ of the Earth } + 180\degree\\
+\lambda_{\text{Geocentric}} \text{ of the Sun } &= \lambda_{\text{Heliocentric}} \text{ of the Earth } \pm 180\degree\\
 \beta_{\text{Geocentric}} \text{ of the Sun } &= -\beta_{\text{Heliocentric}} \text{ of the Earth}
 \end{align}
 }\tag{5}
