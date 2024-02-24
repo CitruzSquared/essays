@@ -112,8 +112,7 @@ And thus Venus would look something like:
 <p align="center">
   <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/fbf93871-95be-4f74-9cbf-3089e599038f">
 </p>
-Where the bright side faces in the direction of the Sun.
-
+Where the bright side faces in the direction of the Sun.\
 $\blacksquare$
 
 ### Elongation
