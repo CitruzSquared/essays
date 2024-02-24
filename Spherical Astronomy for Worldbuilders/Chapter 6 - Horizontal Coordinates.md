@@ -208,7 +208,9 @@ Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$.
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 ```
-The hour angle is used because it factors in both the rotation of the Earth and the right ascension of the star (equation $80$). In older textbooks, the azimuth is defined starting from South and going West. This is not the IAU's definition of the azimuth anymore, and therefore the azimuth values given in older books would have to be shifted by $180\degree$ to match the modern definition.
+The hour angle is used because it factors in both the rotation of the Earth and the right ascension of the star (equation $80$). 
+
+Note that in older textbooks, the azimuth is defined starting from South and going West. This is not the IAU's definition of the azimuth anymore, and therefore the azimuth values given in older books would have to be shifted by $180\degree$ to match the modern definition.
 
 #### Example 25
 <div align="center">
