@@ -22,11 +22,11 @@
      * Examples $2.5$ to $2.6$
 3. Moons
    - Part A
-     * Equations $33$ to $45$
-     * Examples $8$ to $9$
+     * Equations $3.1$ to $3.13$
+     * Examples $3.1$ to $3.2$
    - Part B
-     * Equations $46$ to $53$
-     * Examples $10$ to $11$
+     * Equations $3.14$ to $3.21$
+     * Examples $3.3$ to $3.4$
 ### 2. Terrestrial Observation
 4. Appearance
    - Part A
