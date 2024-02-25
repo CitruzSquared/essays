@@ -85,7 +85,7 @@ Under this presumption, the conversion from Solar time to sidereal time is very 
 \displaylines{
 \begin{align}
 \Theta &= \frac{Y \pm 1}{Y} \cdot t - 0.5\\
-t &= (\Theta + 0.5) \cdot{Y}{Y\pm1}
+t &= (\Theta + 0.5) \cdot\frac{Y}{Y\pm1}
 \end{align}
 }\tag{5.4}
 ```
