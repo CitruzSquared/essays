@@ -8,11 +8,11 @@ How large do objects in space appear from our point of view?
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/cddae410-88cf-4199-b2ee-58052fe983e2" width="300"/>  Well, in this diagram, an observer at point $O$ is looking at an object with center $C$ and radius $r$. The [*angular size*](https://en.wikipedia.org/wiki/Angular_diameter) (also called the *angular diameter*) is then given by the angle $AOA'$, which is $2 \cdot AOC$. The angle $AOC$, which is called the *angular radius*, is given by this formula:
 ```math
-AOC = \arcsin\left(\frac{r}{OC}\right) \tag{54}
+AOC = \arcsin\left(\frac{r}{OC}\right) \tag{4.1}
 ```
 Because $AO$ makes a right angle with $AC$, the radius. Thus,
 ```math
-AOA' = 2\arcsin\left(\frac{r}{OC}\right)\tag{55}
+AOA' = 2\arcsin\left(\frac{r}{OC}\right)\tag{4.2}
 ```
 
 ### Phase
@@ -28,20 +28,20 @@ The angle $SPE$ is known as the [*phase angle*](https://en.wikipedia.org/wiki/Ph
 - Step 1: Calculate the angle $SEP$. \
 This angle is the angular distance between the Sun and $P$ from the view of the Earth, and can be calculated from the [great circle distance formula](https://en.wikipedia.org/wiki/Great-circle_distance):
 ```math
-SEP = \arccos(\sin(\varphi_S)\sin(\varphi_P) + \cos(\varphi_S)\cos(\varphi_P)\cos(\Delta\vartheta))\tag{56}
+SEP = \arccos(\sin(\varphi_S)\sin(\varphi_P) + \cos(\varphi_S)\cos(\varphi_P)\cos(\Delta\vartheta))\tag{4.3}
 ```
 Where $\varphi_S$ and $\varphi_P$ are the declination or latitude of the Sun and $P$ respectively, and $\Delta\vartheta$ is the difference in right ascension or longitude of the Sun and $P$.
 
 - Step 2: Calculate the distance $r$.\
 This is the distance from the Sun to $P$, and can be found with the law of cosines:
 ```math
-r = \sqrt{R^2 + \rho^2 - 2R\rho\cos(SEP)}\tag{57}
+r = \sqrt{R^2 + \rho^2 - 2R\rho\cos(SEP)}\tag{4.4}
 ```
 
 - Step 3: Calculate the phase angle.\
 This can yet again be done with the law of cosines:
 ```math
-\text{Phase Angle } = \arccos\left(\frac{\rho^2 + r^2 - R^2}{2\rho r}\right)\tag{58}
+\text{Phase Angle } = \arccos\left(\frac{\rho^2 + r^2 - R^2}{2\rho r}\right)\tag{4.5}
 ```
 Note that if all the distances are known already, then steps $1$ and $2$ can be skipped.
 
@@ -49,7 +49,7 @@ Note that if all the distances are known already, then steps $1$ and $2$ can be 
 
 But, $LPH' = 90\degree - EPL$, but also $SPE = 90\degree - EPL$, so $SPE = LPH'$. Thus the section of $HH'$ illuminated by the Sun is given by $R_P + R_P\cos(SPE)$. Dividing this all by the length of $HH' = 2R_P$, we obtain:
 ```math
-\text{Phase } = \frac{1 + \cos(SPE)}{2}\tag{59}
+\text{Phase } = \frac{1 + \cos(SPE)}{2}\tag{4.6}
 ```
 Where $\text{Phase}$ is the fraction of $P$ seen as illuminated from $E$.
 
@@ -66,7 +66,7 @@ With $HA'/HH'$ or $HA/HH'$ being the phase%.
 
 <br/>
 
-#### Example 12
+#### Example 4.1
 <div align="center">
 <table>
 <tbody>
@@ -82,7 +82,7 @@ Given Venus' radius is $4.045\cdot10^{-5}\text{ AU}$, calculate the angular size
 </table>
 </div>
 
-We get the angular diameter by equation $55$:
+We get the angular diameter by equation $4.2$:
 ```math
 \begin{align}
 \text{Angular Diameter } &= 2 \arcsin\left(\frac{4.045\cdot10^{-5}\text{ AU}}{1.1882 \text{ AU}}\right) \\
@@ -90,28 +90,28 @@ We get the angular diameter by equation $55$:
 \end{align}
 ```
 Now we have to find the phase:\
-By equation $56$:
+By equation $4.3$:
 ```math
 \begin{align}
 \text{Sun-Earth-Venus Angle } &= \arccos(\sin(-23\degree\:0'\:10'')\sin(-18\degree\:57'\:52'') + \\&\cos(-23\degree\:0'\:10'')\cos(-18\degree\:57'\:52'')\cos(18^h\:46^m\:38^s - 16^h\:07^m\:26^s)) \\
 &= 37\degree\:16'\:\:7.87''
 \end{align}
 ```
-Then, by equation $57$:
+Then, by equation $4.4$:
 ```math
 \begin{align}
 \text{Sun-Venus Distance } &= \sqrt{1.1882^2 + 0.9833^2 - 2\cdot1.1882\cdot0.9833\cdot\cos(37\degree\:16'\:\:7.87'')}\\
 &= 0.7205 \text{ AU}
 \end{align}
 ```
-Now, by equation $58$:
+Now, by equation $4.5$:
 ```math
 \begin{align}
 \text{Phase Angle } &= \arccos\left(\frac{1.1882^2 + 0.7205^2 - 0.9833^2}{2\cdot1.1882\cdot0.7205}\right)\\
 &= 55\degree\:43'\:\:57.60''
 \end{align}
 ```
-Then finally by equation $59$:
+Then finally by equation $4.6$:
 ```math
 \begin{align}
 \text{Phase } (\%) &= \frac{1 + \cos(55\degree\:43'\:\:57.60'')}{2} \cdot 100\% \\
@@ -131,17 +131,17 @@ $\blacksquare$
 
 The [*elongation*](https://en.wikipedia.org/wiki/Elongation_(astronomy)) is the difference in ecliptic longitude between an object and the Sun.
 ```math
-\epsilon_{\text{Object}} = \lambda_{\text{Object}} - \lambda_{\text{Sun}} \tag{60}
+\epsilon_{\text{Object}} = \lambda_{\text{Object}} - \lambda_{\text{Sun}} \tag{4.7}
 ```
 This angle is expressed in a range of $(-180\degree,180\degree]$. Thus, if the elongation is positive, the object is *East* of the Sun. This means it will rise after the Sun (because the Earth rotates from West to East, things further East will become visible later), and thus also set after the Sun. This means the object will be *visible in the evening*. If the elongation is negative, the object is *West* of the Sun (Remember that ecliptic longitude is measured with East as positive), and by the same reasoning, will be *visible in the morning*. If the elongation is $\approx180\degree$, the object will be visible basically all throughout the night, and if the elongation is $\approx0\degree$, it won't be visible at all since it is too close to the Sun.
 
-#### Example 13
+#### Example 4.2
 <div align="center">
 <table>
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given the data from example $12$, was Venus a morning star or an evening star on $\text{January 1, } 2024$? <br/>
+Given the data from example $4.1$, was Venus a morning star or an evening star on $\text{January 1, } 2024$? <br/>
 Use $\varepsilon = 23.44\degree$.
 <img width="2000" height="0">
 </td>
@@ -149,7 +149,7 @@ Use $\varepsilon = 23.44\degree$.
 </table>
 </div>
 
-The data from example 12:
+The data from example $4.1$:
 ```math
 \begin{align}
 \alpha_V &= 16^h\:07^m\:26^s\\
@@ -159,7 +159,7 @@ The data from example 12:
 \delta_S &= \delta=-23\degree\:0'\:10''
 \end{align}
 ```
-We need the elongation, so we use equation $1$, $2$, $4$ and equation $60$:
+We need the elongation, so we use equation $1.1$, $1.2$, $1.4$ and equation $4.7$:
 ```math
 \begin{align}
 \lambda_V &= 243\degree\:29'\:35.63''\\
@@ -174,7 +174,7 @@ $\blacksquare$
 
 Let us focus on the inner planet's orbit. When the inner planet (which we will call $I$) is at $E$, its elongation is at its maximum positive value. It is the furthest possible it can be from the Sun. Thus this phenomenon is called "greatest eastern elongation". Similarly, when the inner planet is at $W$, its elongation is at its minimum value (maximum negative value), and thus this phenomenon is called its "greatest western elongation" Because these points $E$ and $W$ happen at the points where the line $OI$ is tangent to the orbit of $I$, the phase of $I$ will more or less be $50\%$ at these points. The maximum elongation can be calculated as:
 ```math
-\epsilon_{\text{max}} = \arcsin\left(\frac{a_I}{a_O}\right) \tag{61}
+\epsilon_{\text{max}} = \arcsin\left(\frac{a_I}{a_O}\right) \tag{4.8}
 ```
 But because orbits are not perfect circles, this formula (and also the fact that the phase of $I$ is $50$% at max elongation) is not exact, and the value of this maximum elongation will change depending on the exact orientation of the planets.
 
@@ -186,20 +186,20 @@ When the elongation is $180\degree = -180\degree$, the object is known to be at 
 
 Because the Moon orbits from West to East, its elongation increases as time passes. It goes from being in conjunction to the Sun to being in quadrature, then to being in opposition, then to quadrature again before going back to being in conjunction. It is easy to see that when the Moon's elongation is East, it is *waxing* (its phase is getting larger), and its elongation is West, it is *waning* (its phase is getting smaller).
 
-In addition, if the orbit of a planet has $0\degree$ inclination with respect to the ecliptic, the Sun-Earth-Planet angle of equation $56$ is just equal to the elongation.
+In addition, if the orbit of a planet has $0\degree$ inclination with respect to the ecliptic, the Sun-Earth-Planet angle of equation $4.3$ is just equal to the elongation.
 
 ### The Synodic Period
 
 The time it takes for the elongation to repeat is called the *synodic period*. This is also the time it takes for the phases to repeat as the phases depend on elongation (the Sun-Earth-Object angle can be approximated as the elongation). Because the elongation depends on the location on both the object and the Earth, the formula involves both periods:
 ```math
-T_{P \text{ Synodic}} = \left|\frac{T_E T_P}{T_E - T_P}\right|\tag{62}
+T_{P \text{ Synodic}} = \left|\frac{T_E T_P}{T_E - T_P}\right|\tag{4.9}
 ```
 where $T$ denotes the sidereal period, and $E$ denotes the Earth, and $P$ denotes the object.\
 This formula is not exact as the orbits of the planets are not perfect circles. However it gives the average value.
 
 Evidently, the Earth does not have a synodic orbital period.
 
-#### Example 14
+#### Example 4.3
 <div align="center">
 <table>
 <tbody>
@@ -227,7 +227,7 @@ The sidereal periods are given as such:
 \end{array}
 ```
 
-The synodic orbital period is given by equation $62$ and $63$. So for Mercury:
+The synodic orbital period is given by equation $4.9$. So for Mercury:
 ```math
 \begin{align}
 T_{\text{Mercury Synodic}} &= \frac{365.24 \cdot 87.969}{365.24 - 87.969}\\
@@ -271,7 +271,7 @@ If $\text{sign}(f(c)) = \text{sign}(f(a))$, set $a = c$.\
 If $\text{sign}(f(c)) = \text{sign}(f(b))$, set $b = c$.
 - Step 4. Repeat steps $2$ and $3$ until you reach a value of $f(c)$ close enough to $0$.
 
-#### Example 15
+#### Example 4.4
 <div align="center">
 <table>
 <tbody>
