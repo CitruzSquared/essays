@@ -413,7 +413,7 @@ Since we know $\alpha$, $\delta$, $\phi$, and $\varepsilon$, we can solve this e
 
 Copyable Version:
 ```
-arccos(-tan(phi)tan(arcsin(sin(epsilon)sin(lambda)))) + arctan(cos(epsilon)sin(lambda), cos(lambda)) = -arccos(-tan(phi)tan(delta)) + alpha
+-arccos(-tan(phi)tan(arcsin(sin(epsilon)sin(lambda)))) + arctan(cos(epsilon)sin(lambda), cos(lambda)) = -arccos(-tan(phi)tan(delta)) + alpha
 ```
 
 #### Example 6.6
