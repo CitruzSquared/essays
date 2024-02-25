@@ -265,7 +265,7 @@ a &= \arcsin(0.038415077/1)\\
 &= 2\degree\:12'\:5.63''
 \end{align}
 ```
-We can see that $S$ was in the North-West ($270\degree < A < 360\degree$) and very close to the horizon.\
+We can see that $S$ was in the Northwest ($270\degree < A < 360\degree$) and very close to the horizon.\
 $\blacksquare$
 
 Using our knowledge, we can calculate the times of certain astronomical events involving certain altitudes or azimuths, questions such as:
