@@ -448,7 +448,7 @@ Now we follow example $4$ (Chapter $2$).
 $\nu$ is bigger than $180\degree$, so:
 ```math
 \begin{align}
-E &= 2\pi - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\cos(198\degree\:10'\:13.29'')}\right)\\
+E &= - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\cos(198\degree\:10'\:13.29'')}\right) + 2\pi\\
 &= 3.463975 \text{ rad}\\
 \therefore M &= 3.463975 - 0.0167\sin(3.463975)\\
 &= 3.469266 \text{ rad}\\
