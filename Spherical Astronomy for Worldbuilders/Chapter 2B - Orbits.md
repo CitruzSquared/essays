@@ -13,14 +13,14 @@ x_{\text{perifocal}} &= r\cos(\nu) \\
 y_{\text{perifocal}} &= r\sin(\nu) \\
 \therefore \nu &= \arctan(y_{\text{perifocal}}, x_{\text{perifocal}})
 \end{align}
-\tag{17}
+\tag{2.12}
 }
 ```
 Just like in polar coordinates.
 
-Therefore, $r$ here is given by equation $12$:
+Therefore, $r$ here is given by equation $2.7$:
 ```math
-r = \frac{a(1 - e^2)}{1 + e\cos(\nu)}.\tag{18}
+r = \frac{a(1 - e^2)}{1 + e\cos(\nu)}.\tag{2.13}
 ```
 Which we can now use to give exact coordinates for $x$ and $y$.
 
@@ -61,7 +61,7 @@ x_{\text{perifocal}} &= a\sin (E) - ae\\
 y_{\text{perifocal}} &= b\cos (E)\\
 &= a\sqrt{1 - e^2}\sin (E)
 \end{align}
-\tag{19}
+\tag{2.14}
 } 
 ```
 Additionally, by the Pythagorean theorem then,
@@ -73,19 +73,19 @@ r^2 &= (a\cos (E) - ae)^2 + (a\sqrt{1 - e^2}\sin (E))^2\\
 &= a^2 \cos^2 (E) - 2a^2e\cos (E) + a^2e^2 + a^2 - a^2\cos^2 (E) - a^2e^2 + a^2e^2\cos^2 (E) \\
 &= a^2 - 2a^2e\cos (E) + a^2e^2\cos^2 (E)\\
 &= (a - ae\cos (E))^2\\
-\therefore r &= a(1 - e\cos (E)) \tag{20}
+\therefore r &= a(1 - e\cos (E)) \tag{2.15}
 \end{align}
 ```
 Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 ```math
 \begin{align}
 \cos (E) &= \frac{x}{a} = \frac{ae + r \cos (\nu)}{a} = e(1 - e\cos (E))\cos(\nu)\\
-\therefore \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
+\therefore \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{2.16}\\
 \end{align}
 ```
 This formula for $E$ is ambiguous. If $\nu > 180\degree$, we need to take the negative arccosine value.
 
-The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y_{\text{perifocal}}, x_{\text{perifocal})}$ (equation $17$).
+The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y_{\text{perifocal}}, x_{\text{perifocal})}$ (equation $2.12$).
 
 ### Kepler's Second Law
 We have discussed Kepler's first and third laws. Now let us tackle his second law, which states that the area sweeped out by a planet over a unit time must stay constant.
@@ -114,18 +114,18 @@ r^2 \frac{d\nu}{dt} = \frac{2\pi a b}{T}
 ```
 now, denoting $2\pi/T$ as $n$ (this quantity is called the [mean motion](https://en.wikipedia.org/wiki/Mean_motion)), we obtain:
 ```math
-r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{22}
+r^2 \nu' = nab = na^2\sqrt{1 - e^2}\tag{2.17}
 ```
 
-Now, recall equation $20$:
+Now, recall equation $2.15$:
 ```math
 r = a(1 - e\cos (E))
 ```
 Differentiating both sides with respect to time gives us:
 ```math
-r' = ae\sin(E)E' \tag{23}
+r' = ae\sin(E)E' \tag{2.18}
 ```
-Now recall equation $18$:
+Now recall equation $2.13$:
 ```math
 \begin{align}
 r &= \frac{a(1 - e^2)}{1 + e\cos(\nu)} \\
@@ -136,28 +136,28 @@ Differentiating both sides of this equation we obtain:
 ```math
 \begin{align}
 -\frac{r'}{r^2} = -\frac{e \sin (\nu) \nu'}{a(1 - e^2)} \\
-\therefore r' = \frac{e\sin(\nu)r^2\nu'}{a(1 - e^2)} \tag{24}
+\therefore r' = \frac{e\sin(\nu)r^2\nu'}{a(1 - e^2)} \tag{2.19}
 \end{align}
 ```
-Now we substitute equation $22$ in equation $24$:
+Now we substitute equation $2.17$ in equation $2.19$:
 ```math
 r' = \frac{nae\sin(\nu)}{\sqrt{1 - e^2}}
 ```
-Equating this with equation $23$:
+Equating this with equation $2.18$:
 ```math
 \begin{align}
 ae\sin(E)E' &= \frac{nae\sin(\nu)}{\sqrt{1 - e^2}}\\
 E' &= \frac{n\sin(\nu)}{\sqrt{1 - e^2}\sin(E)}
 \end{align}
 ```
-But $\sqrt{1 - e^2}\sin(E)$ is just $y_{\text{perifocal}}/a$ by equation $19$, and $y_{\text{perifocal}} = r\sin(\nu)$ by equation $17$, so:
+But $\sqrt{1 - e^2}\sin(E)$ is just $y_{\text{perifocal}}/a$ by equation $2.14$, and $y_{\text{perifocal}} = r\sin(\nu)$ by equation $2.12$, so:
 ```math
 \begin{align}
 E' &= \frac{n\sin(\nu)}{r\sin(\nu)/a}\\
 \therefore rE' &= na
 \end{align}
 ```
-Now, substituting equation $20$ for $r$:
+Now, substituting equation $2.15$ for $r$:
 ```math
 (1 - e\cos (E)) E' = n
 ```
@@ -168,15 +168,15 @@ E - e\sin(E) = nt + c.
 If we measure $t$ from the time of periapsis, then when $t = 0$, $E - e\sin(E) = 0$ since $E = 0$ at periapsis. Therefore $c. = 0$.\
 Let's also denote $nt$ as $M$. We call this quantity the [*mean anomaly*](https://en.wikipedia.org/wiki/Mean_anomaly):
 ```math
-M = nt = \frac{2\pi}{T}\cdot t\tag{25}
+M = nt = \frac{2\pi}{T}\cdot t\tag{2.20}
 ```
 Now the equation becomes:
 ```math
-M = E - e\sin (E) \tag{26}
+M = E - e\sin (E) \tag{2.21}
 ```
 Which is known as [**Kepler's Equation**](https://en.wikipedia.org/wiki/Kepler%27s_equation). This equation allows us to relate $E$ and $M$, thus relating $E$ and $t$, which allows us to finally calculate the motion of the planets. Keep in mind that we **must use radians** for $M$ and $E$.
 
-#### Example 4
+#### Example 2.3
 <div align="center">
 <table>
 <tbody>
@@ -194,14 +194,14 @@ calculate the time of Spring Equinox in the Northern Hemisphere in $2024$.
 
 Because ecliptic coordinates are based on the Earth's orbital plane, it effectively is equal to the Earth's perifocal coordinate frame, except that the $x$-axis is rotated from the direction of perihelion to the direction of Aries. Therefore, we can use our perifocal equations in the ecliptic frame without much trouble.
 
-Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Sun, Geocentric}} = 0\degree$, therefore (by equation $5$) it occurs when $\lambda_{\text{Earth, Heliocentric}} = 180\degree$. Thus, the true anomaly of the Earth at the time of Northern Spring Equinox is:
+Spring Equinox in the Northern Hemisphere is defined as $\lambda_{\text{Sun, Geocentric}} = 0\degree$, therefore (by equation $1.5$) it occurs when $\lambda_{\text{Earth, Heliocentric}} = 180\degree$. Thus, the true anomaly of the Earth at the time of Northern Spring Equinox is:
 ```math
 \begin{align}
 \nu &= 180\degree - 102\degree\:56'\:49.9''\\
 &= 77\degree\:3'\:50.1''
 \end{align}
 ```
-Now, by equation $21$ ($\nu < 180\degree$):
+Now, by equation $2.16$ ($\nu < 180\degree$):
 ```math
 \begin{align}
 \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\\
@@ -210,7 +210,7 @@ Now, by equation $21$ ($\nu < 180\degree$):
 \therefore E &= 1.3285794 \text{ rad}
 \end{align}
 ```
-Now, by Kepler's equation (equation $26$):
+Now, by Kepler's equation (equation $2.21$):
 ```math
 \begin{align}
 M &= E - e\sin (E)\\
@@ -218,7 +218,7 @@ M &= E - e\sin (E)\\
 &= 1.3123669 \text{ rad}
 \end{align}
 ```
-Therefore, by the definition of $M$ (equation $25$):
+Therefore, by the definition of $M$ (equation $2.20$):
 ```math
 \begin{align}
 M &= \frac{2\pi}{T}\cdot t\\
@@ -231,7 +231,7 @@ $76\text{ dy}$ $6h$ $55m$ after $\text{January 3, }2024$ $00:38$ is $\text{March
 Comparing to the true time ($\text{March 20, }2024$ $03:07$), we can see that we are close. The discrepancy comes from rounding error and the fact that the motion of the Earth is not a true two body problem.\
 $\blacksquare$
 
-However what we really want is the reverse operation of example $4$: going from a specific time to a location. Sounds easy: $M$ is very easy to calculate, and $E$ gives us the exact coordinates $(x, y)$, and we have a relation between $M$ and $E$ by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation) (equation $26$)!\
+However what we really want is the reverse operation of example $2.3$: going from a specific time to a location. Sounds easy: $M$ is very easy to calculate, and $E$ gives us the exact coordinates $(x, y)$, and we have a relation between $M$ and $E$ by [Kepler's equation](https://en.wikipedia.org/wiki/Kepler%27s_equation) (equation $2.21$)!\
 Unfortunately, Kepler's equation
 ```math
 M = E - e\sin (E)
@@ -246,18 +246,18 @@ E - e \sin (E) - M = 0
 We then define $f$ as a function of $E$ to be $f(E) = E - e \sin (E) - M$. Then we juse need to find the root of $f(E) = 0$.\
 We use the [Newton–Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method), given by the iterative equation
 ```math
-x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{27}
+x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)}. \tag{2.22}
 ```
 Clearly, we need to find $f'(E)$.
 ```math
 \frac{df}{dE} =  1 - e \cos (E)
 ```
-By plugging all the values into equation $27$, we obtain:
+By plugging all the values into equation $2.22$, we obtain:
 ```math
-E_{n + 1} = E_n - \frac{E_n - e\sin(E_n) - M}{1 - e\cos(E_n)} \tag{28}
+E_{n + 1} = E_n - \frac{E_n - e\sin(E_n) - M}{1 - e\cos(E_n)} \tag{2.23}
 ```
 which we can use to iteratively obtain better and better approximations of $E$, which we can then use to find the coordinates of the planet.
-#### Example 5
+#### Example 2.4
 <div align="center">
 <table>
 <tbody>
@@ -272,15 +272,15 @@ given that when the Earth at periapsis, its heliocentric ecliptic longitude is $
 </table>
 </div>
 
-Due to the definition of the ecliptic coordinate frame, we can use our perifocal equations in it without much trouble. (See example $4$.)\
-We first calculate $M$ by equation $25$:
+Due to the definition of the ecliptic coordinate frame, we can use our perifocal equations in it without much trouble. (See example $2.3$.)\
+We first calculate $M$ by equation $2.20$:
 ```math
 \begin{align}
 M &= \frac{2\pi}{365.2422\text{ dy}} \cdot 76 \text{ dy}\:6h\:55m \\
 &= 1.3123669\text{ rad}
 \end{align}
 ```
-We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $28$.
+We now perform the Newton iteration. We first guess $E_1 = M$, and obtain $E_2$ by equation $2.23$.
 ```math
 \begin{align}
 E_2 &= M - \frac{M - e\sin(M) - M}{1 - e\cos(M)}\\
@@ -304,7 +304,7 @@ Here is the table of repetitions:
 \end{array}
 ```
 As we can see, $E$ has quickly converged onto $1.3285794\text{ rad}$. In general it can be assumed that $E_4$ or $E_5$ will be enough.\
-We can now calculate $(x, y)$ with equation $19$:
+We can now calculate $(x, y)$ with equation $2.14$:
 ```math
 \begin{align}
 x_{\text{perifocal}} &= a \cos (E) - ae\\
@@ -317,7 +317,7 @@ y_{\text{perifocal}} &= b \sin (E)\\
 &= 145.213 \text{ Gm}
 \end{align}
 ```
-Then, by equation $17$, the true anomaly is:
+Then, by equation $2.12$, the true anomaly is:
 ```math
 \arctan(145.213, 33.384) = 77\degree\:3'\:10.27''
 ```
@@ -325,7 +325,7 @@ Which, when added with the ecliptic longitude of the periapsis $102\degree\:56'\
 ```math
 \lambda_{\text{Earth, Heliocentric}} = 180\degree\:17''
 ```
-Which agrees with example $4$. (The $17''$ is due to stray rounding error.)\
+Which agrees with example $2.3$. (The $17''$ is due to stray rounding error.)\
 $\blacksquare$
 
 #### Proof of Kepler's Second Law
