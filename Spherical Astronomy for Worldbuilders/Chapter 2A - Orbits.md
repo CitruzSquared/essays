@@ -5,7 +5,7 @@ Let us study the motion and position of the planets. The most accurate way to ca
 All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
 It tells us:
 ```math
-\textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}\tag{6}
+\textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}\tag{2.1}
 ```
 where $\textbf{F}$ is the gravitational force on the planet, $G$ is the [*gravitational constant*](https://en.wikipedia.org/wiki/Gravitational_constant), which is $6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$ in SI units, $M$ and $m$ are the masses of the Sun and the planet respectively, and $\textbf{r}$ and $r$ are the position vector of the planet and its magnitude (the distance between the Sun and the planet) respectively.
 
@@ -21,7 +21,7 @@ Since Kepler's first law states that all orbits are ellipses, let us quickly inv
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/bb81dcca-4a3c-4ad7-9f70-6f4eea3af818" width="350"/> In the diagram is an ellipse with center $O$. The distance $OP$ is known as the semi-major axis and is denoted $a$. ($1$ Astronomical Unit (AU) is defined by the semi-major axis of the Earth's orbit!) The distance $OB$ is known as the semi-minor axis and is denoted $b$. The ellipse can be represented algebraically using these two measures: the ellipse is the locus of all points satisfying the equation
 ```math
-\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.\tag{7}
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.\tag{2.2}
 ```
 
 Point $F$ is located at the point where the length $BF = a$. This point $F$ is known as the [focus](https://en.wikipedia.org/wiki/Focus_(geometry)) of an ellipse and this is where the Sun lies in a planetary orbit. 
@@ -34,29 +34,29 @@ The amount of "squishing" of an ellipse is given by the quantity $c/a$ where $c$
 
 Because $BF = a$, $c^2 = a^2 - b^2$, and $e$ can also be written:
 ```math
-e^2 = \frac{a^2-b^2}{a^2} = 1 - \frac{b^2}{a^2}.\tag{8}
+e^2 = \frac{a^2-b^2}{a^2} = 1 - \frac{b^2}{a^2}.\tag{2.3}
 ```
 
 The periapsis distance is then
 ```math
 \begin{align}
 FP &= a - c = a - ae\\
-&= a(1 - e)\tag{9}
+&= a(1 - e)\tag{2.4}
 \end{align}
 ```
 and the apoapsis distance is
 ```math
 \begin{align}
 FA &= a + c = a + ae\\
-&= a(1 + e)\tag{10}
+&= a(1 + e)\tag{2.5}
 \end{align}
 ```
 Finding the semi-major axis length given the periapsis and apoapsis distances is trivial:
 ```math
-a = \frac{1}{2} (FA + FP) \tag{11}
+a = \frac{1}{2} (FA + FP) \tag{2.6}
 ```
 
-#### Example 2
+#### Example 2.1
 <div align="center">
 <table>
 <tbody>
@@ -70,7 +70,7 @@ Find the semi-minor axis, the perihelion distance, and the apohelion distance.
 </table>
 </div>
 
-By rearranging equation $8$:
+By rearranging equation $2.3$:
 ```math
 \begin{align}
 b &= \sqrt{a^2(1 - e^2)}\\
@@ -78,18 +78,18 @@ b &= \sqrt{a^2(1 - e^2)}\\
 &= 149\:577\:161 \text{ km}
 \end{align}
 ```
-The periapsis distance is given by equation $9$:
+The periapsis distance is given by equation $2.4$:
 ```math
 149\:598\:023\text{ km }(1 - 0.0167) = 147\:099\:736\text{ km}
 ```
-And the apoapsis distance is given by equation $10$:
+And the apoapsis distance is given by equation $2.5$:
 ```math
 149\:598\:023\text{ km }(1 + 0.0167) = 152\:096\:309\text{ km}
 ```
 $\blacksquare$
 
 Furthermore, the ellipse can also be written in polar form with the focus at the origin:
-By equation $7$:
+By equation $2.2$:
 ```math
 \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
 ```
@@ -115,7 +115,7 @@ Which gives the following quadratic equation in $r$:
 ```
 Finally, solving for $r$ gives us
 ```math
-r = \frac{a(1 - e^2)}{1 + e\cos(\theta)}.\tag{12}
+r = \frac{a(1 - e^2)}{1 + e\cos(\theta)}.\tag{2.7}
 ```
 
 #### Proof of Kepler's First Law
@@ -133,7 +133,7 @@ It is advised for the average reader to skip this investigation.
 </table>
 </div>
 
-[Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation) (equation $6$) tells us:
+[Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation) (equation $2.1$) tells us:
 ```math
 \textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}
 ```
@@ -202,14 +202,14 @@ Therefore we can write
 ```
 Integrating both sides of this equation gives us
 ```math
-\textbf{v}\times\textbf{h}=GM\textbf{u}+\textbf{C}\tag{13}
+\textbf{v}\times\textbf{h}=GM\textbf{u}+\textbf{C}\tag{2.8}
 ```
 where $\textbf{C}$ is a constant vector.
 
 Let us now choose coordinate axes such that positive $z$-axis lies in the direction of $\textbf{h}$. Thus the planet moves in the $xy$-plane.\
 Now, because $\textbf{v}\times\textbf{h}$ and $\textbf{u}$ are perpendicular to $\textbf{h}$ (i.e. in the $xy$-plane), $\textbf{C}$ must be in the $xy$-plane as well. Since $\textbf{C}$ is a constant vector, we choose the positive $x$-axis to be in the direction of it, and now $r$ and the angle between $\textbf{C}$ and $\textbf{r}$ (which we call $\theta$) define $\textbf{r}$ in polar coordinates.
 
-From equation $13$ we now have:
+From equation $2.8$ we now have:
 ```math
 \begin{align}
 \textbf{r}\cdot(\textbf{v}\times\textbf{h})&=\textbf{r}\cdot(GM\textbf{u}+\textbf{C})\\
@@ -244,7 +244,7 @@ However, $p$ can be written as $p = a/e + ae$, thus:
 ```math
 r=\frac{a + ae^2}{1+e\cos(\theta)}
 ```
-Which is precisely equation $12$.\
+Which is precisely equation $2.7$.\
 $\blacksquare$
 
 <br/>
@@ -252,7 +252,7 @@ $\blacksquare$
 ### Kepler's Third Law
 
 Let us now calculate the [orbital period](https://en.wikipedia.org/wiki/Orbital_period) $T$ of a planet in a circular orbit, given the orbital radius $r$.\
-Newton's law of gravitation (equation $6$) tells us:
+Newton's law of gravitation (equation $2.1$) tells us:
 ```math
 \textbf{F} = -\frac{G M m}{r^3} \cdot \textbf{r}
 ```
@@ -273,23 +273,23 @@ Using the fact that time $=$ distance $/$ speed and that the circumference of th
 ```math
 \begin{align}
 T &= \frac{2\pi r}{v} = \frac{2\pi r}{\sqrt{GM/r}}\\
-&=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{14}
+&=\sqrt{\frac{4 \pi^2 r^3}{GM}}\tag{2.9}
 \end{align}
 ```
-We can see that equation $14$ is essentially Kepler's third law, which states that $T^2 \propto r^3$.\
-Turns out, we can generalize equation $14$ to elliptical orbits without issue!
+We can see that equation $2.9$ is essentially Kepler's third law, which states that $T^2 \propto r^3$.\
+Turns out, we can generalize equation $2.9$ to elliptical orbits without issue!
 ```math
-T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{15}
+T = \sqrt{\frac{4 \pi^2 a^3}{GM}}\tag{2.10}
 ```
 If we have two objects comparable in mass, they will orbit each other about their center of mass, and the period will be:
 ```math
- T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{16}
+ T = \sqrt{\frac{4 \pi^2 a^3}{G(M_1 + M_2)}}. \tag{2.11}
 ```
 Where $a$ is the sum of the two semi-major axes.
 
 Note that period is always positive if the motion is prograde, and negative if the motion is retrograde.
 
-#### Example 3
+#### Example 2.2
 <div align="center">
 <table>
 <tbody>
@@ -302,7 +302,7 @@ Given that $G = 6.674\cdot10^{-11}\text{ m}^3\text{ kg}^{-1}\text{ s}^{-2}$, the
 </table>
 </div>
 
-By equation 15:
+By equation $2.10$:
 ```math
 \begin{align}
 T &= \sqrt{\frac{4 \pi^2 a^3}{GM}}\\
