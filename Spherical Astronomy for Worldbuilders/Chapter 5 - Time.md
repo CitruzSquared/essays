@@ -82,7 +82,7 @@ If the time is given as an angle, the following formula is perfectly viable:
 
 Under this presumption, the conversion from Solar time to sidereal time is very easy. Since the length of a sidereal day is exactly $Y/(Y\pm1)$ of a solar day, we just multiply the time elapsed, in days, from $t = 0$ by $(Y\pm1)/Y$ to get the sidereal time, then subtract by $0.5$ sidereal days to account for the fact that Aries was at midnight at $t = 0$.
 ```math
-\displaymath{
+\displaylines{
 \begin{align}
 \Theta &= \frac{Y \pm 1}{Y} \cdot t - 0.5\\
 t &= (\Theta + 0.5) \cdot{Y}{Y\pm1}
