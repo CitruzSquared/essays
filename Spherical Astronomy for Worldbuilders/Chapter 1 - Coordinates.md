@@ -36,7 +36,7 @@ Using trigonometry, one can find the radius of the latitude circle of a sphere w
 ```math
 \begin{align}
 x &= \rho \cos(\varphi) \cos(\theta)
-\\ y &= \rho \cos(\varphi) \sin(\theta) \tag{1}
+\\ y &= \rho \cos(\varphi) \sin(\theta) \tag{1.1}
 \\ z &= \rho \sin(\varphi)
 \end{align}
 ```
@@ -45,7 +45,7 @@ The reverse transformation, also derived by simple geometry, is given below:
 ```math
 \begin{align}
 \rho &= \sqrt{x^2 + y^2 + z^2}
-\\ \theta &= \arctan(y, x) \tag{2}
+\\ \theta &= \arctan(y, x) \tag{1.2}
 \\ \varphi &= \arcsin(z / \rho)
 \end{align}
 ```
@@ -93,7 +93,7 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & \cos{(\varepsilon)} & -\sin{(\varepsilon)} \\
-0 & \sin{(\varepsilon)} & \cos{(\varepsilon)}  \tag{3}
+0 & \sin{(\varepsilon)} & \cos{(\varepsilon)}  \tag{1.3}
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
@@ -110,7 +110,7 @@ x_{\text{ecliptic}} \\ y_{\text{ecliptic}} \\ z_{\text{ecliptic}}
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & \cos{(\varepsilon)} & \sin{(\varepsilon)} \\
-0 & -\sin{(\varepsilon)} & \cos{(\varepsilon)}  \tag{4}
+0 & -\sin{(\varepsilon)} & \cos{(\varepsilon)}  \tag{1.4}
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
@@ -118,9 +118,9 @@ x_{\text{equatorial}} \\ y_{\text{equatorial}} \\ z_{\text{equatorial}}
 ```
 Again, the $x$ coordinate stays the same as the ecliptic and equatorial coordinate systems have the same $x$-axis: the direction of Vernal Equinox.
 
-These cartesian coordinates can be transformed to spherical coordinates by equation $2$.
+These cartesian coordinates can be transformed to spherical coordinates by equation $1.2$.
 
-#### Example 1
+#### Example 1.1
 <div align="center">
 <table>
 <tbody>
@@ -142,7 +142,7 @@ We first convert the sexagesimal notation to degrees:
 \end{alignat}
 ```
 Keeping in mind that $1^{h}$ is $360\degree/24 = 15\degree$.\
-We then convert the equatorial coordinates given to equatorial cartesian coordinates ($\rho = 1$ because the celestial sphere is of arbitrary radius) using equation $1$:
+We then convert the equatorial coordinates given to equatorial cartesian coordinates ($\rho = 1$ because the celestial sphere is of arbitrary radius) using equation $1.1$:
 ```math
 \begin{alignat}{2}
 x &= \cos(\delta)\cos(\alpha) &&= -0.976313\\
@@ -150,7 +150,7 @@ y &= \cos(\delta)\sin(\alpha) &&= 0.174339\\
 z &= \sin(\delta) &&= 0.128136
 \end{alignat}
 ```
-Next, we carry out the matrix multiplication (equation $4$):
+Next, we carry out the matrix multiplication (equation $1.4$):
 ```math
 \begin{alignat}{3}
 x_{\text{ecliptic}} &= 1 \cdot x + 0 \cdot y &&+ 0 \cdot z && = -0.976313 \\
@@ -158,7 +158,7 @@ y_{\text{ecliptic}} &= 0 \cdot x + \cos{(\varepsilon)} \cdot y &&+ \sin{(\vareps
 z_{\text{ecliptic}} &= 0 \cdot x - \sin{(\varepsilon)} \cdot y &&+ \cos{(\varepsilon)} \cdot z &&= 0.0482118
 \end{alignat}
 ```
-We then convert to spherical coordinates with $\rho = 1$ using equation $2$.
+We then convert to spherical coordinates with $\rho = 1$ using equation $1.2$.
 ```math
 \begin{alignat}{2}
 \lambda &= \arctan(0.210923,-0.976313) &&=  167\degree\:48'\:32.97''\\
@@ -178,6 +178,6 @@ The above coordinate systems are *geocentric* in nature, and these are the coord
 \lambda_{\text{Geocentric}} \text{ of the Sun } &= \lambda_{\text{Heliocentric}} \text{ of the Earth } \pm 180\degree\\
 \beta_{\text{Geocentric}} \text{ of the Sun } &= -\beta_{\text{Heliocentric}} \text{ of the Earth}
 \end{align}
-}\tag{5}
+}\tag{1.5}
 ```
 Thus the Heliocentric Ecliptic latitude of the Earth is also always $0\degree$.
