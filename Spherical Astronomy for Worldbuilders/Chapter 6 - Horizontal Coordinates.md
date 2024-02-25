@@ -84,7 +84,7 @@ By equation $80$:
 &= 203\degree\:14'\:48.61''
 \end{align}
 ```
-Then, by equation $79$ (See example $21$ for more details), we try $\Theta = 175 \text{ sdy } 203\degree$ $14'$ $48.61''$:
+We now follow example $21$: we try $\Theta = 175 \text{ sdy } 203\degree$ $14'$ $48.61''$:
 ```math
 \begin{align}
 t &= (175\text{ sdy } + 203\degree\:14'\:48.61'' + 180\degree) \cdot \frac{289.42}{290.42}\\
