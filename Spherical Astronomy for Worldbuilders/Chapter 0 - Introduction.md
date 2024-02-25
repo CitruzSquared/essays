@@ -8,18 +8,18 @@
 ## Table of Contents
 ### 1. The Ephemeris
 1. Coordinates
-   - Equations $1$ to $5$
-   - Example $1$
+   - Equations $1.1$ to $1.5$
+   - Example $1.1$
 2. Orbits
    - Part A
-     * Equations $6$ to $16$
-     * Examples $2$ to $3$
+     * Equations $2.1$ to $2.11$
+     * Examples $2.1$ to $2.2$
    - Part B
-     * Equations $17$ to $28$
-     * Examples $4$ to $5$
+     * Equations $2.12$ to $2.23$
+     * Examples $2.3$ to $2.4$
    - Part C
-     * Equations $29$ to $32$
-     * Examples $6$ to $7$
+     * Equations $2.24$ to $2.27$
+     * Examples $2.5$ to $2.6$
 3. Moons
    - Part A
      * Equations $33$ to $45$
