@@ -30,11 +30,11 @@
 ### 2. Terrestrial Observation
 4. Appearance
    - Part A
-     * Equations $54$ to $62$
-     * Examples $12$ to $15$
+     * Equations $4.1$ to $4.9$
+     * Examples $4.1$ to $4.4$
    - Part B
-     * Equations $63$ to $75$
-     * Examples $16$ to $18$
+     * Equations $4.10$ to $4.22$
+     * Examples $4.5$ to $4.7$
 5. Time
    - Equations $76$ to $79$
    - Examples $19$ to $21$
