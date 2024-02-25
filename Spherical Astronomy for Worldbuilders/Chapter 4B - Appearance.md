@@ -174,7 +174,7 @@ Thus, equation $4.17$ becomes:
 \end{align}
 }\tag{4.18}
 ```
-Thus by equation $4.16$ and equation $4.14$:
+Thus by equation $4.16$ and equation $4.15$:
 ```math
 \begin{align}
 v_{\text{rel}} &= v\sin(\alpha + \psi) -  u\sin(\psi) \\
