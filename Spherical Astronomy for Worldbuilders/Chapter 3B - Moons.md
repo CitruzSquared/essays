@@ -6,11 +6,11 @@ The precession rates of equator aligned moons depend on the gravitational potent
 
 Well, we can make a *very* crude approximation that the planet is a perfect spheroid of uniform density throughout. Then, $J_2$ is given by:
 ```math
-J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{46}
+J_2 \approx \left|\frac{2f}{3} - \frac{R_E^3 w^2}{3GM}\right|\tag{3.14}
 ```
 where $f$ is the [flattening](https://en.wikipedia.org/wiki/Flattening), calculated from the equatorial radius $R_E$ and the polar radius $R_P$ of the planet as such:
 ```math
-f = \frac{R_E - R_P}{R_E}\tag{47}
+f = \frac{R_E - R_P}{R_E}\tag{3.15}
 ```
 $w$ is the rotational speed of the planet in $\text{rad}$,\
 $G$ is the gravitational constant, and\
@@ -18,7 +18,7 @@ $M$ is the mass of the planet.
 
 The table of $J_2$ values by planet in the Solar System is given here:
 ```math
-\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }46 \\ \hline
+\begin{array}{cccc}\hline \text{Name} & J_2 & \text{Flattening} & \text{Equation }3.14 \\ \hline
 \text{Mercury} & 60\cdot10^{-6} & 0.000900 & 600\cdot 10^{-6}\\
 \text{Venus} & 4.458\cdot10^{-6} & 0.000000 & 0.02\cdot 10^{-6}\\
 \text{Earth} & 1.08263\cdot10^{-3} & 0.003353 & 1.08136\cdot10^{-3} \\
@@ -32,31 +32,31 @@ The table of $J_2$ values by planet in the Solar System is given here:
 Evidently, the approximation is very crude; however it's the best we've got. Now that we have $J_2$, we can calculate the precession rates.\
 The precession depends on this value which we will call $K$ for simplicity:
 ```math
-K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{48}
+K = \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\tag{3.16}
 ```
 Where $R_{\text{avg}}$ is the average radius of the planet, given by:
 ```math
-R_{\text{avg}} = \sqrt[3]{R_E^2 \cdot R_P} \tag{49}
+R_{\text{avg}} = \sqrt[3]{R_E^2 \cdot R_P} \tag{3.17}
 ```
 and $a$, $n$, and $e$ are the semi-major axis, mean motion, and eccentricity of the orbit of the satellite respectively.
 
 Then, the nodal precession rate is given as:
 ```math
-\dot\Omega = -K\cos(i)\tag{50}
+\dot\Omega = -K\cos(i)\tag{3.18}
 ```
 where $i$ is the inclination (with respect to the equator) of the orbit of the satellite.\
 Note that nodal precession is always in the direction opposite to the orbit.
 
 The apsidal precession rate is given as:
 ```math
-\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{51}
+\dot\omega = K\left(2 - \frac{5}{2}\sin^2(i)\right)\tag{3.19}
 ```
-Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $40$ gives:
+Note that the formula gives $\dot\omega$ directly and not $\dot\varpi$, and so $\dot\omega$ is constant. Thus for equator aligned moons, equation $3.8$ gives:
 ```math
-\omega = \omega_0 + (t - t_0)\dot\omega\tag{52}
+\omega = \omega_0 + (t - t_0)\dot\omega\tag{3.20}
 ```
 Also note that if $0\degree \leq i \leq 63.4\degree$ or $116.6\degree \leq i \leq 180\degree$, then the precession of the apses are in the direction of the orbit.
-#### Example 10
+#### Example 3.3
 <div align="center">
 <table>
 <tbody>
@@ -74,8 +74,8 @@ Find the precession rates of the orbit of Phobos in units of $\degree/\text{dy}$
 </table>
 </div>
 
-To find the precession rates, we need $K$, and so we need $T$ because we need to find $n = 360\degree/T$ (equation $25$) for $K$.\
-By equation $15$:
+To find the precession rates, we need $K$, and so we need $T$ because we need to find $n = 360\degree/T$ (equation $2.20$) for $K$.\
+By equation $2.10$:
 ```math
 \begin{align}
 T &= \sqrt{\frac{4\pi^2 a^3}{GM}}\\
@@ -84,7 +84,7 @@ T &= \sqrt{\frac{4\pi^2 a^3}{GM}}\\
 &= 0.319\text{ dy}
 \end{align}
 ```
-Now find $K$ by equation $48$.
+Now find $K$ by equation $3.16$.
 ```math
 \begin{align}
 K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
@@ -92,7 +92,7 @@ K &= \frac{3J_2nR_{\text{avg}}^2}{2a^2(1-e^2)^2}\\
 &= 0.4339 \degree/\text{dy}
 \end{align}
 ```
-Then, $\dot\Omega$ is given by equation $50$:
+Then, $\dot\Omega$ is given by equation $3.18$:
 ```math
 \begin{align}
 \dot\Omega &= -K \cos(i) \\
@@ -100,7 +100,7 @@ Then, $\dot\Omega$ is given by equation $50$:
 &= -0.4338 \degree/\text{dy}
 \end{align}
 ```
-And $\dot\omega$ by equation $51$:
+And $\dot\omega$ by equation $3.19$:
 ```math
 \begin{align}
 \dot\omega &= K \left(2 - \frac{5}{2}\sin^2(i)\right) \\
@@ -115,7 +115,7 @@ Let's check our answers. A data sheet gives values of
 \dot\varpi &= 0.4352 \degree/\text{dy}
 \end{align}
 ```
-Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $41$ with the data sheet values ($i = 1.09\degree$ is very small):
+Since we have $\dot\omega$ but the data sheet has $\dot\varpi$, we use equation $3.9$ with the data sheet values ($i = 1.09\degree$ is very small):
 ```math
 \dot\omega \approx 0.4352 - (-0.4358) = 0.8710\degree/\text{dy}
 ```
@@ -130,11 +130,11 @@ M = \frac{2\pi}{T}\cdot t
 ```
 Where $t$ was measured from the time of periapsis. However, when dealing with moons, the periapsis would have moved by the time the moon makes an orbit. Thus, the $T$ used in the formula for $M$ cannot be just the simple $T$ calculated from $15$, which is just the (average) time it takes for the moon to reach the same location (longitude or right ascension) again. (This period is called the *sidereal period*.) To account for the fact that the periapsis has moved, we need a new period, and this is called the *anomalistic period* (as it is the period of repetition of the anomalies). It can be calculated as such:
 ```math
-T_A = \frac{T_S T_{\dot\varpi}}{T_{\dot\varpi} - T_S}\tag{53}
+T_A = \frac{T_S T_{\dot\varpi}}{T_{\dot\varpi} - T_S}\tag{3.21}
 ```
 Where $T_S$ is the sidereal period and $T_{\dot\varpi}$ is the period of the precession of periapsis, positive if the precession is in the direction of the orbit, and negative if not.
 
-#### Example 11
+#### Example 3.4
 <div align="center">
 <table>
 <tbody>
@@ -148,7 +148,7 @@ What is the length of the anomalistic period of the Moon?
 </table>
 </div>
 
-By equation $53$:
+By equation $3.21$:
 ```math
 \begin{align}
 T_A &= \frac{27.321 \cdot 3233}{3233 - 27.321}\\
@@ -159,6 +159,6 @@ Which we can now use to calculate the mean anomaly.\
 $\blacksquare$
 
 ### Multi Moon Systems
-For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the only plausible way to calculate the location of the moons is with a numerical integrator of the equations of motion. For example, in example $9$, solving for the precession of Deimos would result in less accurate results because of the perturbation of Deimos by Phobos. The only reason example $9$ worked is because Deimos is much smaller than Phobos and so the effect Deimos has on Phobos is almost negligible.
+For multi moon systems, because the moons perturb each other, the math gets increasingly difficult, and the only plausible way to calculate the location of the moons is with a numerical integrator of the equations of motion. For example, in example $3.3$, solving for the precession of Deimos would result in less accurate results because of the perturbation of Deimos by Phobos. The only reason example $3.3$ worked is because Deimos is much smaller than Phobos and so the effect Deimos has on Phobos is almost negligible.
 
 Recommended solutions are ignoring the perturbation of moons by other moons and just focusing on the perturbations by the equatorial bulge or by the Sun, or just making up precession values for multi moon systems.
