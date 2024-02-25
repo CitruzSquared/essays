@@ -1,7 +1,7 @@
 (Continued from Part B...)
 
 ### Orientation of Orbits in 3D Space
-In examples $4$ and $5$, we have calculated the position of the Earth in ecliptic coordinates, which was simple because the Earth's perifocal plane was the definition of the Ecliptic plane. Other planets are not so simple. Let:
+In examples $2.3$ and $2.4$, we have calculated the position of the Earth in ecliptic coordinates, which was simple because the Earth's perifocal plane was the definition of the Ecliptic plane. Other planets are not so simple. Let:
 ```math
 \displaylines{
 \begin{align}
@@ -83,7 +83,7 @@ p \\ q \\ s
 \begin{bmatrix}
 x \\ y \\ z
 \end{bmatrix}
-\tag{29}
+\tag{2.24}
 ```
 The reverse transformation, going from the perifocal frame to the ecliptic frame, is given by the transpose of $R_3 R_2 R_1$:
 ```math
@@ -99,7 +99,7 @@ x \\ y \\ z
 \begin{bmatrix}
 p \\ q \\ s
 \end{bmatrix}
-\tag{30}
+\tag{2.25}
 ```
 Thus the exact position of $Q$ can be calculated in ecliptic coordinates from the values $a, e, i, \Omega$, and $\omega$ and these are called the [**orbital elements**](https://en.wikipedia.org/wiki/Orbital_elements) of $Q$.
 
@@ -117,12 +117,12 @@ x \\ y \\ z
 \begin{bmatrix}
 p \\ q \\ 0
 \end{bmatrix}
-\tag{31}
+\tag{2.26}
 ```
 
-Note that, for the Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $29$ to $31$ will not change.
+Note that, for the Earth, since $i = 0\degree$, $\Omega$ and $\omega$ are on the same plane, and therefore only their sum matters, and as long as $\Omega$ and $\omega$ sum to the same number, their actual values do not matter and the results of equations $2.24$ to $31$ will not change.
 
-#### Example 6
+#### Example 2.5
 <div align="center">
 <table>
 <tbody>
@@ -146,22 +146,22 @@ i &= 1\degree\:51'\\
 \omega &= 286\degree\:30'\\
 \end{align}
 ```
-We first need the mean anomaly of Mars, which involves finding the oribital period $T$. By equation $15$:
+We first need the mean anomaly of Mars, which involves finding the oribital period $T$. By equation $2.10$:
 ```math
 \begin{align}
  T &= \sqrt{\frac{4\pi^2 (227.939 \cdot 10^9)^3}{6.67\cdot10^-11 \cdot 1.989\cdot10^30}}\\
 &= 687 \text{ dy}
 \end{align}
 ```
-Now we follow example $5$.\
-Since $\text{March 20, }2024$ is $637$ days after $\text{June 21, } 2022$, by equation $25$:
+Now we follow example $2.4$.\
+Since $\text{March 20, }2024$ is $637$ days after $\text{June 21, } 2022$, by equation $2.20$:
 ```math
 \begin{align}
 M &= \frac{2\pi}{687 \text{ dy}}\cdot 637\text{ dy}\\
 &= 5.8258938 \text{ rad}
 \end{align}
 ```
-Now we iterate equation $28$:
+Now we iterate equation $2.23$:
 ```math
 \begin{array}{cccc}\hline n & & & E_n \\ \hline
 1 & & & 5.8258938 \\
@@ -170,7 +170,7 @@ Now we iterate equation $28$:
 4 & & & 5.7809308 \\ \hline
 \end{array}
 ```
-Thus, by equation $19$, the perifocal coordinates are:
+Thus, by equation $2.14$, the perifocal coordinates are:
 ```math
 \begin{align}
 p &= 227.939 \cos(5.7809308) - 227.939 \cdot 0.0934\\
@@ -180,7 +180,7 @@ q &= 227.939\sqrt{1 - 0.0934^2} \sin(5.7809308)\\
 s &= 0 \text{ Gm}
 \end{align}
 ```
-Since Mars's orbit is not on the ecliptic plane, we must use equation $31$.\
+Since Mars's orbit is not on the ecliptic plane, we must use equation $2.26$.\
 We first fill out the matrix:
 ```math
 \begin{align}
@@ -192,7 +192,7 @@ We first fill out the matrix:
 \sin i \cos\omega &= 0.00916886198411
 \end{align}
 ```
-Thus, by equation $31$:
+Thus, by equation $2.26$:
 ```math
 \begin{bmatrix}
 x \\ y \\ z
@@ -227,11 +227,11 @@ x_{\text{Planet}}\\ y_{\text{Planet}}\\ z_{\text{Planet}}
  \begin{bmatrix}
 x_{\text{Earth}}\\ y_{\text{Earth}}\\ z_{\text{Earth}}
  \end{bmatrix}
-\tag{32}
+\tag{2.27}
 ```
-Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$, equation $32$ proves equation $5$.
+Considering that $(x_{\text{Sun}}, y_{\text{Sun}}, z_{\text{Sun}}) = (0, 0, 0)$, equation $2.26$ proves equation $1.5$.
 
-For the Moon, because it orbits the Earth and not the Sun, the perifocal frame is around the Earth, and equation $31$ would give the geocentric coordinates already, therefore equation $32$ is not needed.
+For the Moon, because it orbits the Earth and not the Sun, the perifocal frame is around the Earth, and equation $2.26$ would give the geocentric coordinates already, therefore equation $2.27$ is not needed.
 
 ### Calculating the Ephemeris for a Planet
 We've come a long way. Let's put it all together.
@@ -239,14 +239,14 @@ We've come a long way. Let's put it all together.
 **Algorithm to calculate the ephemeris of a planet:**
 1. Assign orbital elements to the Earth and the target planet.
 2. Choose a time $t$.
-3. Calculate where the planet would be along its orbit at this time using equations $25$, $26$, and $19$.
-4. Transform this to heliocentric ecliptic cartesian coordinates by equation $31$.
+3. Calculate where the planet would be along its orbit at this time using equations $2.20$, $2.21$, and $2.14$.
+4. Transform this to heliocentric ecliptic cartesian coordinates by equation $2.26$.
 5. Repeat step $3$ and $4$ for the Earth.
-6. Calculate the geocentric ecliptic cartesian coordinates of the planet by equation $32$.
-7. Use equations $2$ and $3$ to convert to spherical coordinates, either ecliptic or equatorial.
+6. Calculate the geocentric ecliptic cartesian coordinates of the planet by equation $2.27$.
+7. Use equations $1.2$ and $1.3$ to convert to spherical coordinates, either ecliptic or equatorial.
 8. Increment $t$ by some amount $\Delta t$ and repeat steps $3$ to $7$.
 
-#### Example 7
+#### Example 2.6
 <div align="center">
 <table>
 <tbody>
@@ -260,7 +260,7 @@ Calculate Mars' geocentric <i>equatorial</i> coordinates on $\text{March 19, }20
 </table>
 </div>
 
-Recall example $5$ where we calculated Earth's perifocal coordinates on this date. Using equation $31$ with
+Recall example $2.4$ where we calculated Earth's perifocal coordinates on this date. Using equation $2.26$ with
 ```math
 \begin{align}
 \Omega &= 0\degree\\
@@ -288,7 +288,7 @@ x_{\text{Earth}} \\ y_{\text{Earth}} \\ z_{\text{Earth}}
 \end{bmatrix}
 \:[\text{Gm}]
 ```
-Thus, by equation $32$:
+Thus, by equation $2.27$:
 ```math
  \begin{bmatrix}
 \xi_{\text{Mars}} \\ \psi_{\text{Mars}} \\ \zeta_{\text{Mars}}
@@ -307,7 +307,7 @@ Thus, by equation $32$:
 \end{bmatrix}
 \:[\text{Gm}]
 ```
-We need equatorial coordinates, so by equation $3$:
+We need equatorial coordinates, so by equation $1.3$:
 ```math
 \begin{bmatrix}
 \xi_{\text{Mars; equatorial}} \\ \psi_{\text{Mars; equatorial}} \\ \zeta_{\text{Mars; equatorial}}
@@ -327,7 +327,7 @@ We need equatorial coordinates, so by equation $3$:
 \end{bmatrix}
 \:[\text{Gm}]
 ```
-Then, by equation $2$:
+Then, by equation $1.2$:
 ```math
 \begin{align}
 \rho &= \sqrt{267.788^2 + (-155.372)^2 + (-74.478)^2}\\
