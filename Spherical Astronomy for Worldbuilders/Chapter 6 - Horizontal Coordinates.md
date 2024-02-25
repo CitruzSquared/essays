@@ -21,17 +21,17 @@ The Western angle between the Prime Meridian and the Star is then known as the S
 
 It is therefore evident that 
 ```math
-h_L = \Theta_L - \alpha\tag{80}
+h_L = \Theta_L - \alpha\tag{6.1}
 ```
-and because $\Theta_L = \Theta + l$ (equations $77$ and $78$):
+and because $\Theta_L = \Theta + l$ (equations $5.2$ and $5.3$):
 
 ```math
-h_L = \Theta + l - \alpha\tag{81}
+h_L = \Theta + l - \alpha\tag{6.2}
 ```
 
 When $h_L = 0$, the star is coincident with the meridian, and the star is at the highest point in the sky. If $h_L = 180\degree$, the star is coincident with the lower meridian, and it is at the lowest point in the sky. If the star in question is the Sun, then the times at which $h_L = 0$ and $h_L = 180\degree$ are called *apparent noon* and *apparent midnight* respectively. These are not the same as the *mean noon* and *mean midnight*, the mean values are simply the average of the apparent values over the year. (Yes, this means noon and midnight aren't always at $12:00$ and $00:00$!)
 
-#### Example 22
+#### Example 6.1
 <div align="center">
 <table>
 <tbo dy >
@@ -46,7 +46,7 @@ what was the local hour angle of star $S$, with right acension $5^h$?
 </div>
 
 $175\text{ dy }11:00:00$ is $175.458333\text{ dy}$.\
-We need the sidereal time, so by equation $79$:
+We need the sidereal time, so by equation $5.4$:
 ```math
 \begin{align}
 \Theta_L &= \frac{289.42+1}{289.42} \cdot 175.458333 - 0.5\\
@@ -54,7 +54,7 @@ We need the sidereal time, so by equation $79$:
 \end{align}
 ```
 
-Then, by equation $80$:
+Then, by equation $6.1$:
 ```math
 \begin{align}
 h_L &= 203\degree\:14'\:48.61'' - 5^h\\
@@ -63,7 +63,7 @@ h_L &= 203\degree\:14'\:48.61'' - 5^h\\
 ```
 $\blacksquare$
 
-#### Example 23
+#### Example 6.2
 <div align="center">
 <table>
 <tbo dy >
@@ -77,14 +77,14 @@ What was the local mean solar time?
 </table>
 </div>
 
-By equation $80$:
+By equation $6.1$:
 ```math
 \begin{align}
 \Theta_L &= 128\degree\:14'\:48.61'' + 5^h\\
 &= 203\degree\:14'\:48.61''
 \end{align}
 ```
-We now follow example $21$: we try $\Theta = 175 \text{ sdy } 203\degree$ $14'$ $48.61''$:
+We now follow example $5.3$: we try $\Theta = 175 \text{ sdy } 203\degree$ $14'$ $48.61''$:
 ```math
 \begin{align}
 t &= (175\text{ sdy } + 203\degree\:14'\:48.61'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -92,10 +92,10 @@ t &= (175\text{ sdy } + 203\degree\:14'\:48.61'' + 180\degree) \cdot \frac{289.4
 &= 175\text{ dy }11:00:00
 \end{align}
 ```
-Which agrees with example $22$.\
+Which agrees with example $6.1$.\
 $\blacksquare$
 
-#### Example 24
+#### Example 6.3
 <div align="center">
 <table>
 <tbo dy >
@@ -116,11 +116,11 @@ Because $l = 0\degree$, $h_L = h$.
 h = \Theta - \alpha
 ```
 Apparent noon is when $h_L$ of the Sun $= 0\degree$, therefore at apparent noon, $\Theta = \alpha$.\
-Using equations $1$, $2,$ and $3$, and setting $\beta = 0\degree$ from the definition of the Ecliptic, we find:
+Using equations $1.1$, $1.2$, and $1.3$, and setting $\beta = 0\degree$ from the definition of the Ecliptic, we find:
 ```math
 \Theta = \alpha = 214\degree\:52'\:37.04''.
 ```
-Then, using the method of example $21$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
+Then, using the method of example $5.3$, we try $\Theta = 175 \text{ sdy } 215\degree$ $25'$ $50.5''$.
 ```math
 \begin{align}
 t &= (175 \text{ sdy } 214\degree\:52'\:37.04'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -132,7 +132,7 @@ $\blacksquare$
 
 However, in this example, $t = 175 \text{ dy } 11:46:22 \neq 175.00 \text{  dy }$! Thus, our $\lambda_{\text{Sun}}$ value would be off by some amount because the Sun would have moved during the $11h$ $46m$ $22s$.
 Thus, this time only works as a preliminary approximation, and we will have to repeat our calculations if we want a better result.
-#### Example 24-II
+#### Example 6.3-II
 <div align="center">
 <table>
 <tbo dy >
@@ -146,11 +146,11 @@ Improve the approximation of the time of apparent noon.
 </table>
 </div>
 
-Again, using equations $1$, $2,$ and $3$, we find:
+Again, using equations $1.1$, $1.2$, and $1.3$, we find:
 ```math
 \Theta = \alpha = 215\degree\:28'\:9.28''.
 ```
-Then repeating the method of example 21,
+Then repeating the method of example $5.3$,
 ```math
 \begin{align}
 t &= (175\: \text{ sdy }\: 215\degree\:28'\:9.28'' + 180\degree) \cdot \frac{289.42}{290.42}\\
@@ -176,7 +176,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 =
 \begin{bmatrix}
 -\sin(\phi) & 0 & \cos(\phi) \\
-0 & -1 & 0 \\ \tag{82}
+0 & -1 & 0 \\ \tag{6.3}
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
@@ -197,18 +197,18 @@ Where $\phi$ is the latitude of observer and $h$ is the hour angle of $P$.
 =
 \begin{bmatrix}
 -\sin(\phi) & 0 & \cos(\phi) \\
-0 & -1 & 0 \\ \tag{83}
+0 & -1 & 0 \\ \tag{6.4}
 \cos(\phi) & 0 & \sin(\phi)
 \end{bmatrix}
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 \end{bmatrix}
 ```
-The hour angle is used because it factors in both the rotation of the Earth and the right ascension of the star (equation $80$). 
+The hour angle is used because it factors in both the rotation of the Earth and the right ascension of the star (equation $6.1$). 
 
 Note that in older textbooks, the azimuth is defined starting from South and going West. This is not the IAU's definition of the azimuth anymore, and therefore the azimuth values given in older books would have to be shifted by $180\degree$ to match the modern definition.
 
-#### Example 25
+#### Example 6.4
 <div align="center">
 <table>
 <tbo dy >
@@ -222,11 +222,11 @@ what were the horizontal coordinates of star $S$, with right acension $5^h$ and 
 </table>
 </div>
 
-In example $22$, we found the hour angle of $S$:
+In example $6.1$, we found the hour angle of $S$:
 ```math
 h = 128\degree\:14'\:48.61''
 ```
-Thus, using equation $82$:
+Thus, using equation $6.3$:
 ```math
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
@@ -255,7 +255,7 @@ x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
 0.038415077
 \end{bmatrix}
 ```
-Now, using equation $2$, we can find $A$ and $a$:
+Now, using equation $1.2$, we can find $A$ and $a$:
 ```math
 \begin{align}
 \rho &= 1 \text{ (Celestial Sphere has arbitrary radius)}\\
@@ -273,7 +273,7 @@ Using our knowledge, we can calculate the times of certain astronomical events i
 - When is the Moon's location due East?\
 etc.
 
-#### Example 26
+#### Example 6.5
 <div align="center">
 <table>
 <tbo dy >
@@ -289,7 +289,7 @@ What was the mean solar time of sunrise on solar day $175$ at $\phi = 50\degree 
 
 "Sunrise" means that the Sun is at the horizon, or more specifically, the Eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
 
-Recall equation $82$.
+Recall equation $6.3$.
 ```math
 \begin{bmatrix}
 x_{\text{horizontal}} \\ y_{\text{horizontal}} \\ z_{\text{horizontal}}
@@ -316,11 +316,11 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 &=\cos(\phi)\cos(\delta) \cos(h)+\sin(\phi)\sin(\delta)\\
 
 \therefore \cos(h) &= -\frac{\sin(\phi)\sin(\delta)}{\cos(\phi)\cos(\delta)}\\
-&=-\tan(\phi)\tan(\delta)\tag{84}
+&=-\tan(\phi)\tan(\delta)\tag{6.5}
 \end{align}
 ```
-Equation $84$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
-Carrying on, we clearly need $\delta$, so, using equations $1$, $2$, and $3$, we calculate the equatorial coordinates.
+Equation $6.5$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
+Carrying on, we clearly need $\delta$, so, using equations $1.1$, $1.2$, and $1.3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
 \delta &=-15&&\degree\:15&&'\:21.30&&''\\
@@ -338,7 +338,7 @@ Taking the negative arccosine value for $h$ (negative because sunrise), we get:
 ```math
 h = -71\degree\:1'\:54.87''
 ```
-From here we just need to find the mean time from the hour angle, so we follow example $23$.
+From here we just need to find the mean time from the hour angle, so we follow example $6.2$.
 ```math
 \displaylines{
 h_L = \Theta_L - \alpha\\
@@ -352,7 +352,7 @@ t &= (175\: \text{ sdy } \: 143\degree\:50'\:42.17'' + 180\degree) \cdot \frac{2
 \end{align}
 }
 ```
-Just as with example $24$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
+Just as with example $6.3$, this is just a preliminary approximation, and these calculations must be repeated for a more accurate time of sunrise.
 
 At $t = 175 \text{ dy } 07:03:13$, $\lambda_\text{Sun} = 218\degree$ $2'$ $32.28''$.\
 Converting to equatorial coordinates:
@@ -366,7 +366,7 @@ Thus the sunrise equation gives (again, taking the negative arccosine):
 ```math
 h = -70\degree\:51'\:26.21''
 ```
-Now we follow example $23$.
+Now we follow example $6.2$.
 ```math
 \displaylines{
 \begin{align}
@@ -386,14 +386,14 @@ Because the Sun's ecliptic longitude increases (i.e. the Sun moves East), the St
 
 Let's try and find out when the heliacal rising of a star with right ascension $\alpha$ and declination $\delta$ will happen at a location with latitude $\phi$.
 
-We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first say the Sun's ecliptic longitude to be $\lambda$. Then, the Sun's equatorial coordinates are given by equation $3$ (Keep in mind $\beta$ of the Sun is $0\degree$):
+We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first say the Sun's ecliptic longitude to be $\lambda$. Then, the Sun's equatorial coordinates are given by equation $1.3$ (Keep in mind $\beta$ of the Sun is $0\degree$):
 ```math
 \begin{align}
 \alpha_S &= \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))\\
 \delta_S &= \arcsin(\sin(\varepsilon)\sin(\lambda))
 \end{align}
 ```
-Now we use the sunrise equation (equation $84$) to calculate the time of sunrise:
+Now we use the sunrise equation (equation $6.5$) to calculate the time of sunrise:
 ```math
 \Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\delta_S)) + \alpha_S
 ```
@@ -407,11 +407,11 @@ Now we use the sunrise equation again to calculate the time of star rise:
 ```
 These two times must equal:
 ```math
--\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda)) = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha \tag{85}
+-\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda)) = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha \tag{6.6}
 ```
 Since we know $\alpha$, $\delta$, $\phi$, and $\varepsilon$, we can solve this equation for $\lambda$. Once we have $\lambda$, we can find the mean anomaly of the Earth and thus the date of heliacal rising.
 
-#### Example 26
+#### Example 6.6
 <div align="center">
 <table>
 <tbo dy >
@@ -426,11 +426,11 @@ The time of the last periapsis of Earth was $\text{January 3, }2024$.
 </table>
 </div>
 
-We put the values into equation $85$. The right hand side is:
+We put the values into equation $6.6$. The right hand side is:
 ```math
 -\arccos(-\tan(30\degree)\tan(-16\degree\:42'\:58.02'')) + 06^h\:45^m\:08.92^s = 0.371275 \text{ rad}
 ```
-Thus equation $85$ is:
+Thus equation $6.6$ is:
 ```math
 -\arccos(-\tan(30\degree)\tan(\arcsin(\sin(23.44\degree)\sin(\lambda)))) + \arctan(\cos(23.44\degree)\sin(\lambda), \cos(\lambda)) = 0.371275 \text{ rad}
 ```
@@ -438,15 +438,15 @@ Then we solve for $\lambda$ (a computer program was used):
 ```math
 \lambda = 2.1139\text{ rad} = 121\degree\:7'
 ```
-Thus $\lambda_{\text{Earth Heliocentric}} = 121\degree$ $7' + 180\degree = 301\degree$ $7'$ (Equation $5$).\
-Now we follow example $4$ (Chapter $2$).
+Thus $\lambda_{\text{Earth Heliocentric}} = 121\degree$ $7' + 180\degree = 301\degree$ $7'$ (Equation $1.5$).\
+Now we follow example $2.1$.
 ```math
 \begin{align}
 \nu &= 301\degree\:7' - 102\degree\:56'\:49.9''\\
 &= 198\degree\:10'\:13.29''\\
 \end{align}
 ```
-$\nu$ is bigger than $180\degree$, so we take the negative arccosine in equation $21$:
+$\nu$ is bigger than $180\degree$, so we take the negative arccosine in equation $2.16$:
 ```math
 \begin{align}
 E &= - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\cos(198\degree\:10'\:13.29'')}\right) + 2\pi\\
