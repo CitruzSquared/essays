@@ -446,7 +446,7 @@ Now we follow example $4$ (Chapter $2$).
 &= 198\degree\:10'\:13.29''\\
 \end{align}
 ```
-$\nu$ is bigger than $180\degree$, so:
+$\nu$ is bigger than $180\degree$, so we take the negative arccosine in equation $21$:
 ```math
 \begin{align}
 E &= - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\cos(198\degree\:10'\:13.29'')}\right) + 2\pi\\
