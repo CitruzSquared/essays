@@ -400,7 +400,7 @@ Let's now relate $\nu$ with $E$. Putting $C$ as the origin again,
 \therefore \cos (E) &= \frac{e + \cos(\nu)}{1 + e\cos(\nu)}\tag{21}\\
 \end{align}
 ```
-This formula is ambiguous. If $\nu > 180\degree$, we need to subtract the arccosine value we obtain for $E$ from $2\pi$.
+This formula for $E$ is ambiguous. If $\nu > 180\degree$, take the negative arccosine value.
 
 The true anomaly can be obtained from the eccentric anomaly by getting $x_{\text{perifocal}}$ and $y_{\text{perifocal}}$ first, then calculating $\arctan(y_{\text{perifocal}}, x_{\text{perifocal})}$ (equation $17$).
 
