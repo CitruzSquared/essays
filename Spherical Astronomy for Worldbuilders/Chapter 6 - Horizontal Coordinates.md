@@ -444,7 +444,7 @@ Then we solve for $\lambda$ (a computer program was used):
 \lambda = 2.1139\text{ rad} = 121\degree\:7'
 ```
 Thus $\lambda_{\text{Earth Heliocentric}} = 121\degree$ $7' + 180\degree = 301\degree$ $7'$ (Equation $1.5$).\
-Now we follow example $2.1$.
+Now we follow example $2.3$.
 ```math
 \begin{align}
 \nu &= 301\degree\:7' - 102\degree\:56'\:49.9''\\
