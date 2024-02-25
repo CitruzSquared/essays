@@ -409,7 +409,7 @@ These two times must equal:
 ```math
 -\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda)) = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha \tag{85}
 ```
-Since we know $\alpha$, $\delta$, $\phi$, and $\varepsilon$, we can solve this equation for $\lambda$. Once we have $\lambda$, we can reverse the methods of chapter $2$ to find the mean anomaly of the Earth and thus the date of heliacal rising.
+Since we know $\alpha$, $\delta$, $\phi$, and $\varepsilon$, we can solve this equation for $\lambda$. Once we have $\lambda$, we can find the mean anomaly of the Earth and thus the date of heliacal rising.
 
 #### Example 26
 <div align="center">
