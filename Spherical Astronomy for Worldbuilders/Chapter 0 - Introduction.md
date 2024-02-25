@@ -12,10 +12,10 @@
    - Example $1$
 2. Orbits
    - Part A
-     * Equations $6$ to $21$
+     * Equations $6$ to $16$
      * Examples $2$ to $3$
    - Part B
-     * Equations $22$ to $28$
+     * Equations $17$ to $28$
      * Examples $4$ to $5$
    - Part C
      * Equations $29$ to $32$
