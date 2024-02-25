@@ -464,5 +464,5 @@ E &= - \arccos\left(\frac{0.0167 + \cos(198\degree\:10'\:13.29'')}{1 + 0.0167\co
 ```
 $202\text{ dy}$ after $\text{January 3, }2024$ is $\text{July 23, }2024$. Adding about a week to give Sirius time to actually be visible, we get $\text{July 30, }2024$. This is almost exact: the heliacal rising of Sirius happens around $\text{July 30}$ to $\text{August 1}$ in Egypt.
 
-The ancient Egyptians thought of this event to have immense significance because it happened just before the beginning of the flooding season of the Nile river (around late Summer) by coincidence.\
+The ancient Egyptians thought of this event to have immense significance because it happened just before the beginning of the flooding season of the Nile river (around late Summer) by coincidence. Read more about this [here](https://en.wikipedia.org/wiki/Sopdet).\
 $\blacksquare$
