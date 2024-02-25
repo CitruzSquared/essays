@@ -6,16 +6,16 @@
 
 For stars, as they produce their own unchanging light, their apparent magnitude is easily calculable:
 ```math
-m = -2.5\log_{10}\left(\frac{F}{F_0}\right)\tag{63}
+m = -2.5\log_{10}\left(\frac{F}{F_0}\right)\tag{4.10}
 ```
 Where $F$ is the intensity of the starlight at the observer in $\text{W}/\text{m}^2$, and $F_0$ is a constant equaling $2.518\cdot10^{-8} \text{ W}/\text{m}^2$.\
 $F$ can be calculated with this formula:
 ```math
-F = \frac{P}{4\pi R^2}\tag{64}
+F = \frac{P}{4\pi R^2}\tag{4.11}
 ```
 Where $P$ is the power output of the star in watts$, and $R$ is the distance from the star to the observer in meters$. This makes sense as $4\pi R^2$ is the surface area of a sphere with radius $R$, thus $F$ represents the power output $P$ being spread out over that area.
 
-#### Example 16
+#### Example 4.5
 <div align="center">
 <table>
 <tbody>
@@ -29,11 +29,11 @@ Calculate the average apparent magnitude of the Sun from the Earth.
 </table>
 </div>
 
-By equation $64$, the intensity of sunlight on the Earth is:
+By equation $4.11$, the intensity of sunlight on the Earth is:
 ```math
 F = \frac{3.8\cdot10^{26}}{4\cdot\pi \cdot 149\:600\:000\:000^2} = 1351.17 \text{ W}/\text{m}^2
 ```
-Thus, by equation $63$:
+Thus, by equation $4.10$:
 ```math
 m_{\text{Sun}} = -2.5\log_{10}\left(\frac{1351.17}{2.518\cdot10^{-8}}\right) = -26.8
 ```
@@ -46,7 +46,7 @@ The brightness of planets is harder to calculate: it depends on the *absolute* m
 
 The actual calculation of the absolute magnitude of planets is very difficult, but if we approximate planets to be ideally reflecting solid matt spheres, it can be calculated by:
 ```math
-H = m_{\text{Sun}} - 5\log_{10}\left(\frac{\sqrt{a}r}{d_0}\right)\tag{65}
+H = m_{\text{Sun}} - 5\log_{10}\left(\frac{\sqrt{a}r}{d_0}\right)\tag{4.12}
 ```
 Where $m_{\text{Sun}}$ is the apparent magnitude of the Sun at $1 \text{ AU}$, $a$ is the [geometric albedo](https://en.wikipedia.org/wiki/Geometric_albedo) of the planet, a value usually between $0$ and $1$ describing how much light it reflects (i.e. how white the planet is), $r$ is the radius of the planet, and $d_0$ is the length of $1 \text{ AU}$, approximately $149,600,000,000\text{ m}$.
 
@@ -54,17 +54,17 @@ Note that this formula is a great approximation, for example the Moon of Earth h
 
 Then, the apparent magnitude can be calculated by:
 ```math
-m = H + 5\log_{10}\left(\frac{d_{PS} d_{PO}}{d_0^2}\right) - 2.5\log_{10}(q(\alpha))\tag{66}
+m = H + 5\log_{10}\left(\frac{d_{PS} d_{PO}}{d_0^2}\right) - 2.5\log_{10}(q(\alpha))\tag{4.13}
 ```
 Where $d_{PS}$ is the distance from the planet to the Sun in meters, $d_{PO}$ is the distance from the planet to the observer in meters, $d_0$ is the same $d_0$ from before, $1 \text{ AU}$, and $\alpha$ is the phase angle of the planet in degrees.
 
 $q(\alpha)$ is known as the *phase integral*. If we assume planets to be ideally diffusely reflecting spheres, it is given as (the derivation is too difficult to go into detail):
 ```math
-q(\alpha) = \frac{2}{3}\left(\left(1- \frac{\alpha}{180\degree}\right)\cos(\alpha) + \frac{1}{\pi}\sin(\alpha)\right)\tag{67}
+q(\alpha) = \frac{2}{3}\left(\left(1- \frac{\alpha}{180\degree}\right)\cos(\alpha) + \frac{1}{\pi}\sin(\alpha)\right)\tag{4.14}
 ```
 Note that this formula is a very loose approximation, and does not take into account rings and other factors that may change the brightness of a planet.
 
-#### Example 17
+#### Example 4.6
 <div align="center">
 <table>
 <tbody>
@@ -79,7 +79,7 @@ Use $1 \text{ AU} = 149\:600\:000\:000 \text{ m}$.
 </table>
 </div>
 
-We found out in example $12$ that:
+We found out in example $4.1$ that:
 ```math
 \begin{align}
 \text{Earth Venus Distance } &= 1.1882 \text{ AU} = 177\:754\:720\:000 \text{ m}\\
@@ -87,22 +87,22 @@ We found out in example $12$ that:
 \text{Venus Phase Angle } &= 55\degree\:43'\:\:57.60''
 \end{align}
 ```
-We also found out in example $15$ that the apparent magnitude of the Sun from $1\text{ AU}$ away is $-26.8$.\
-Thus, by equation $65$:
+We also found out in example $4.4$ that the apparent magnitude of the Sun from $1\text{ AU}$ away is $-26.8$.\
+Thus, by equation $4.12$:
 ```math
 \begin{align}
 H &= -26.8 - 5\log_{10}\left(\frac{\sqrt{0.69}\cdot 6\:051\:000}{149\:600\:000\:000}\right) \\
 &= -4.4316
 \end{align}
 ```
-And then by equation $67$:
+And then by equation $4.14$:
 ```math
 \begin{align}
 q(\alpha) &= \frac{2}{3}\left(\left(1- \frac{55\degree\:43'\:\:57.60''}{180\degree}\right)\cos(55\degree\:43'\:\:57.60'') + \frac{1}{\pi}\sin(55\degree\:43'\:\:57.60'')\right) \\
 &= 0.43452
 \end{align}
 ```
-And thus finally by equation $66$:
+And thus finally by equation $4.13$:
 ```math
 \begin{align}
 m &= -4.4316 + 5\log_{10}\left(\frac{107\:786\:800\:000 \cdot 177\:754\:720\:000}{149\:600\:000\:000^2}\right) - 2.5\log_{10}(0.43452)\\
@@ -134,11 +134,11 @@ The Earth-Sun-Planet angle is $\alpha$, the Sun-Planet-Earth angle is $\theta$, 
 
 First, from the definition of angular velocity, we know that
 ```math
-w_{\text{obs}} = \frac{v_{\text{rel}}}{\rho} \tag{68}
+w_{\text{obs}} = \frac{v_{\text{rel}}}{\rho} \tag{4.15}
 ```
 But in $v_{\text{rel}}$, the component of this velocity parallel with $EP$ should not be counted because this part of the velocity is not visible. Thus only the perpendicular components of the velocities $\vec{EU}$ and $\vec{PV}$ should be considered:
 ```math
-v_{\text{rel}} = |\vec{PA} - \vec{EB}| \tag{69}
+v_{\text{rel}} = |\vec{PA} - \vec{EB}| \tag{4.16}
 ```
 It is evident that:
 ```math
@@ -147,7 +147,7 @@ It is evident that:
 |\vec{EB}| &= u\sin(\psi) \\
 |\vec{PA}| &= v \cos(VPA)
 \end{align}
-}\tag{70}
+}\tag{4.17}
 ```
 Let us determine $VPA$. Because velocity is always perpendicular to the radius in circular motion (because velocity is always tangential, and tangents to a circle are always perpendicular to radii), angle $SPV = 90\degree = SEU$, and so
 ```math
@@ -164,7 +164,7 @@ VPA &= \theta = 180\degree - \alpha - (90\degree + \psi)\\
 &= 90\degree - (\alpha + \psi)
 \end{align}
 ```
-Thus, equation $70$ becomes:
+Thus, equation $4.17$ becomes:
 ```math
 \displaylines{
 \begin{align}
@@ -172,14 +172,14 @@ Thus, equation $70$ becomes:
 |\vec{PA}| &= v \cos(90\degree - (\alpha + \psi))\\
 &= v\sin(\alpha + \psi)
 \end{align}
-}\tag{71}
+}\tag{4.18}
 ```
-Thus by equation $69$ and equation $68$:
+Thus by equation $4.16$ and equation $4.14$:
 ```math
 \begin{align}
 v_{\text{rel}} &= v\sin(\alpha + \psi) -  u\sin(\psi) \\
 \therefore w_{\text{obs}} &= \frac{v\sin(\alpha + \psi) -  u\sin(\psi)}{\rho}\\
-&= \frac{v\sin(\alpha)\cos(\psi) + v\cos(\alpha)\sin(\psi) -  u\sin(\psi)}{\rho} \tag{72}
+&= \frac{v\sin(\alpha)\cos(\psi) + v\cos(\alpha)\sin(\psi) -  u\sin(\psi)}{\rho} \tag{4.19}
 \end{align}
 ```
 Now let's analyze the distances and $\psi$.
@@ -195,17 +195,17 @@ a = b\cos(\alpha) - \rho\sin(\psi)
 ```
 Therefore
 ```math
-\sin(\psi) = \frac{b\cos(\alpha) - a}{\rho}\tag{73-i}
+\sin(\psi) = \frac{b\cos(\alpha) - a}{\rho}\tag{4.20-i}
 ```
 But also,
 ```math
 \begin{align}
 PD &= b\sin(\alpha) = \rho\sin(PED) \\
 &= \rho\cos(\psi) \\
-\therefore \cos(\psi) &= \frac{b\sin(\alpha)}{\rho}\tag{73-ii}
+\therefore \cos(\psi) &= \frac{b\sin(\alpha)}{\rho}\tag{4.20-ii}
 \end{align}
 ```
-Using equations $73$ we can rewrite equation $72$ as:
+Using equations $4.20$ we can rewrite equation $4.19$ as:
 ```math
 \begin{align}
 w_{\text{obs}} &= \frac{v\sin(\alpha) \frac{b\sin(\alpha)}{\rho} + v\cos(\alpha)\frac{b\cos(\alpha) - a}{\rho} -  u\frac{b\cos(\alpha) - a}{\rho}}{\rho}\\
@@ -232,17 +232,17 @@ T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2n_E + b^2n_P}{ab(n_E + n_P
 Where we use absolute value to keep the answer positive.\
 Using $n = 360\degree/T$ gives:
 ```math
-T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2T_P + b^2T_E}{ab(T_E + T_P)}\right)}{\frac{360\degree}{T_P} - \frac{360\degree}{T_E}}\right| \tag{74}
+T_{\text{retro}} = \left|\frac{2\arccos\left(\frac{a^2T_P + b^2T_E}{ab(T_E + T_P)}\right)}{\frac{360\degree}{T_P} - \frac{360\degree}{T_E}}\right| \tag{4.21}
 ```
 If we use $b/a = r$, we can simplify this equation even further using kepler's third law because then, $T_P = T_E\sqrt{r^3}$:
 ```math
-T_{\text{retro}} = T_E \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1}\right)}{360\degree\left(r^{-3/2} - 1\right)}\right| \tag{75}
+T_{\text{retro}} = T_E \left|\frac{2\arccos\left(\frac{r + \sqrt{r}}{r\sqrt{r}+1}\right)}{360\degree\left(r^{-3/2} - 1\right)}\right| \tag{4.22}
 ```
 Again, this formula is just an approximation assuming the orbits are perfectly circular.
 
 As it turns out, even inner planets follow the same principle and the formula works for inner planets as well. For inner planets, they go retrograde near inferior conjunction (i.e. when the Earth is in opposition with the Sun from the inner planet's POV).
 
-#### Example 18
+#### Example 4.7
 <div align="center">
 <table>
 <tbody>
@@ -256,18 +256,18 @@ how long is Venus in retrograde motion for from the view of the Earth?
 </table>
 </div>
 
-$r = b/a = 0.7233\text{ AU}/1\text{ AU} = 0.7233$. Therefore, by equation $75$:
+$r = b/a = 0.7233\text{ AU}/1\text{ AU} = 0.7233$. Therefore, by equation $4.22$:
 ```math
 \begin{align}
 T_{\text{retro}} &= 365.24\text{ dy} \left|\frac{2\arccos\left(\frac{0.7233 + \sqrt{0.7233}}{0.7233\sqrt{0.7233}+1}\right)}{360\degree\left(0.7233^{-3/2} - 1\right)}\right|\\
 &= 42.2 \text{ dy}
 \end{align}
 ```
-Thus Venus is in retrograde for $42.2 \text{ dy}$ every $583.96 \text{ dy}$ (See example $14$), or roughly $7.2$% of the time. (Apparently the stars are pretty benevolent and only want to break up romantic relationships only about $7$% of the time.)
+Thus Venus is in retrograde for $42.2 \text{ dy}$ every $583.96 \text{ dy}$ (See example $4.3$), or roughly $7.2$% of the time. (Apparently the stars are pretty benevolent and only want to break up romantic relationships only about $7$% of the time.)
 
 Doing this for all the planets yields:
 ```math
-\begin{array}{cccc}\hline \text{Name} & \text{Equation } 75 & \text{True Value} & \text{\% Retro. Time} \\ \hline
+\begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
 \text{Mercury} & 22.9 \text{ dy} & 21\text{ dy} & 18\% \\
 \text{Venus} & 42.2 \text{ dy} & 41\text{ dy} & 7\% \\
 \text{Mars} & 72.7 \text{ dy} & 72\text{ dy} & 9\% \\
