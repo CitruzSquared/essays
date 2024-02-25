@@ -389,15 +389,15 @@ Let's try and find out when the heliacal rising of a star with right ascension $
 We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first say the Sun's ecliptic longitude to be $\lambda$. Then, the Sun's equatorial coordinates are given by equation $1.3$ (Keep in mind $\beta$ of the Sun is $0\degree$):
 ```math
 \begin{align}
-\alpha_S &= \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))\\
-\delta_S &= \arcsin(\sin(\varepsilon)\sin(\lambda))
+\alpha_{\text{Sun}} &= \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))\\
+\delta_{\text{Sun}} &= \arcsin(\sin(\varepsilon)\sin(\lambda))
 \end{align}
 ```
 Now we use the sunrise equation (equation $6.5$) to calculate the time of sunrise:
 ```math
-\Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\delta_S)) + \alpha_S
+\Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\delta_{\text{Sun}})) + \alpha_{\text{Sun}}
 ```
-We now substitute $\alpha_S$ and $\delta_S$ with our calculations from before:
+We now substitute $\alpha_{\text{Sun}}$ and $\delta_{\text{Sun}}$ with our calculations from before:
 ```math
 \Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))
 ```
