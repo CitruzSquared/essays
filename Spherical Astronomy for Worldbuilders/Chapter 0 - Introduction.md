@@ -36,11 +36,11 @@
      * Equations $4.10$ to $4.22$
      * Examples $4.5$ to $4.7$
 5. Time
-   - Equations $76$ to $79$
-   - Examples $19$ to $21$
+   - Equations $5.1$ to $5.4$
+   - Examples $5.1$ to $5.3$
 6. Horizontal Coordinates
-   - Equations $80$ to $85$
-   - Examples $22$ to $27$
+   - Equations $6.1$ to $6.6$
+   - Examples $6.1$ to $6.6$
 7. Earthly Parallax
 
 ## Useful Mathematics
