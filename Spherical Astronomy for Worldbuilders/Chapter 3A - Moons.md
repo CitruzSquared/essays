@@ -17,7 +17,7 @@ These precession rates are not constant in reality but they can be approximated 
 ```math
 \begin{align}
 \Omega &= \Omega_0 + \int_{t_0}^{t} \dot\Omega dt\\
-&=\Omega_0 + (t - t_0)\dot\Omega \tag{33}
+&=\Omega_0 + (t - t_0)\dot\Omega \tag{3.1}
 \end{align}
 ```
 Where $\Omega_0$ is the longitude of the ascending node at time $t = 0$.\
@@ -25,7 +25,7 @@ If the apses precess at a rate $\dot\varpi$, the longitude of periapsis at time 
 ```math
 \begin{align}
 \varpi &= \varpi_0 + \int_{t_0}^{t} \dot\varpi dt\\
-&=\omega_0 + (t - t_0)\dot\varpi \tag{34}
+&=\omega_0 + (t - t_0)\dot\varpi \tag{3.2}
 \end{align}
 ```
 Where $\varpi_0$ is the longitude of the periapsis at time $t = 0$.\
@@ -71,11 +71,11 @@ Thus:
 ```
 And so finally:
 ```math
-\varpi_0 = \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0)) \tag{35}
+\varpi_0 = \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0)) \tag{3.3}
 ```
 **Step 2. Add the precessions**
 
-We use equations $33$ and $34$:
+We use equations $3.1$ and $3.2$:
 ```math
 \begin{align}
 \Omega &= \Omega_0 + (t - t_0)\dot\Omega \\
@@ -110,19 +110,19 @@ Thus
 ```
 And so finally:
 ```math
-\omega = \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right).\tag{36}
+\omega = \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right).\tag{3.4}
 ```
-We can now use the new $\Omega$ and $\omega$ in equation $31$ to calculate the coordinates of the moon.
+We can now use the new $\Omega$ and $\omega$ in equation $2.26$ to calculate the coordinates of the moon.
 
-Note that if $i$ is very small, then $\cos(i) \approx 1$ and equations $35$ and $36$ simplify to:
+Note that if $i$ is very small, then $\cos(i) \approx 1$ and equations $3.3$ and $3.4$ simplify to:
 ```math
 \begin{align}
-\varpi_0 &\approx \Omega_0 + \omega_0 \tag{37}\\
-\omega &\approx \varpi - \Omega \tag{38}
+\varpi_0 &\approx \Omega_0 + \omega_0 \tag{3.5}\\
+\omega &\approx \varpi - \Omega \tag{3.6}
 \end{align}
 ```
 
-#### Example 8
+#### Example 3.1
 <div align="center">
 <table>
 <tbody>
@@ -138,7 +138,7 @@ Given that on $\text{January 1, } 2020$, $\Omega = 98\degree\:8'\:24''$ and $\om
 </div>
 
 We follow the algorithm above.\
-We first calculate $\varpi_0$ by equation $35$:
+We first calculate $\varpi_0$ by equation $3.3$:
 ```math
 \begin{align}
 \varpi_0 &= \Omega_0 + \arctan(\sin(\omega_0) \cos(i), \cos(\omega_0))\\
@@ -146,7 +146,7 @@ We first calculate $\varpi_0$ by equation $35$:
 &= 179\degree\:45'\:24.35''
 \end{align}
 ```
-We now use equations $33$ and $34$, where $(t - t_0) = 1461\text{ dy}$:
+We now use equations $3.1$ and $3.2$, where $(t - t_0) = 1461\text{ dy}$:
 ```math
 \begin{align}
 \Omega &= \Omega_0 + (t - t_0)\dot\Omega \\
@@ -157,7 +157,7 @@ We now use equations $33$ and $34$, where $(t - t_0) = 1461\text{ dy}$:
 &= 342\degree\:26'\:29.68''
 \end{align}
 ```
-We now find the new $\omega$ by equation $36$.
+We now find the new $\omega$ by equation $3.4$.
 ```math
 \begin{align}
 \omega &= \arctan\left(\frac{\sin(\varpi - \Omega)}{\cos(i)}, \cos(\varpi - \Omega)\right) \\
@@ -193,22 +193,22 @@ Then,
 ```
 But since $\Lambda = \varpi - \Omega$,
 ```math
-\dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{39}
+\dot\omega = \frac{\cos(i)\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{\cos^2(i) + \tan^2(\varpi - \Omega)}. \tag{3.7}
 ```
 Thus, if one wanted, they could now calculate the new $\omega$ by:
 ```math
-\omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{40}
+\omega = \omega_0 + \int_{t_0}^{t} \dot\omega dt \tag{3.8}
 ```
 But this is not recommended because $\dot\omega$ is a very complex function, unless in cases such as:\
 If $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\omega &\approx \frac{\sec^2(\varpi - \Omega)(\dot\varpi-\dot\Omega)}{1 + \tan^2(\varpi - \Omega)}\\
-&= \dot\varpi-\dot\Omega. \tag{41}
+&= \dot\varpi-\dot\Omega. \tag{3.9}
 \end{align}
 ```
-Which is consistent with equation $38$.\
-In this case where $i$ is very small so $\cos(i) \approx 1$, $\dot\omega$ can be approximated as a constant and equation $40$ may be used.\
+Which is consistent with equation $3.6$.\
+In this case where $i$ is very small so $\cos(i) \approx 1$, $\dot\omega$ can be approximated as a constant and equation $3.8$ may be used.\
 Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```math
 \begin{align}
@@ -218,16 +218,16 @@ Similarly, $\dot\varpi$ can be calculated from $\dot\Omega$ and $\dot\omega$:
 ```
 But since $\varpi = \Lambda + \Omega$,
 ```math
-\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{42}
+\dot\varpi = \frac{\cos(i)\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)\cos^2(i)} + \dot\Omega. \tag{3.10}
 ```
 Note that if $i$ is very small, then $\cos(i) \approx 1$, and:
 ```math
 \begin{align}
 \dot\varpi &\approx \frac{\sec^2(\omega)\dot\omega}{1 + \tan^2(\omega)} + \dot\Omega \\
-&= \dot\omega + \dot\Omega. \tag{43}
+&= \dot\omega + \dot\Omega. \tag{3.11}
 \end{align}
 ```
-Which is consistent with equation $41$.
+Which is consistent with equation $3.9$.
 ### The Two Types of Moons
 This table lists some of the Solar System's most prominent moons:
 ```math
@@ -261,14 +261,14 @@ Orbit aligned moons have precessions resulting from the gravitational perturbati
 Solving extremely complex equations of motion (that can be found [here](https://farside.ph.utexas.edu/teaching/celestial/Celestialhtml/node97.html)) leads to these two formulae (derivation too complex to write here):
 ```math
 \begin{align}
-\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{44}\\ 
+\dot\Omega &= -\frac{3}{4}m + \frac{9}{32}m^2 + \frac{273}{128}m^3 + \frac{9797}{2048}m^4 + \frac{199273}{24576}m^5 + \frac{6657733}{589825}m^6\cdots \tag{3.12}\\ 
 \\
-\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{45}
+\dot\varpi &= \frac{3}{4}m + \frac{225}{32}m^2 + \frac{4071}{128}m^3 + \frac{265493}{2048}m^4 + \frac{12822631}{24576}m^5 + \frac{1273925965}{589824}m^6 + \frac{66702631253}{7077888}m^7 + \frac{29726828924189}{679477248}m^8 \cdots \tag{3.13}
 \end{align}
 ```
 These formulae are not exact as they ignore small terms involving $e_M^2$, $e_P^2$, $i_M^2$, and $a_M/a_P$ (not ignoring these would make the formulae unbearably complicated). Thus, for the formula to work best, these parameters for the Moon - Planet system **must be small**.
 
-Equations $44$ and $45$ give results in units of $\text{rev}/T_P$.
+Equations $3.12$ and $3.13$ give results in units of $\text{rev}/T_P$.
 
 Copyable version:
 ```
@@ -277,7 +277,7 @@ Nodal Precession = -3/4*m + 9/32*m^2 + 273/128*m^3 + 9797/2048*m^4 + 199273/2457
 Apsidal Precession = 3/4*m + 225/32*m^2 + 4071/128*m^3 + 265493/2048*m^4 + 12822631/24576*m^5 + 1273925965/589824*m^6 + 66702631253/077888*m^7 + 29726828924189/679477248*m^8
 ```
 
-#### Example 9
+#### Example 3.2
 <div align="center">
 <table>
 <tbody>
@@ -301,8 +301,8 @@ i_M^2 &= 0.0080 \text{ rad}^2\\
 a_M/a_P &= 0.0026\\
 \end{align}
 ```
-Which are all very small, so equations $44$ and $45$ will work.\
-We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $44$ and $45$:
+Which are all very small, so equations $3.12$ and $3.13$ will work.\
+We find that $m = 27.321/365.242 = 0.0748$. Thus, by equations $3.12$ and $3.13$:
 ```math
 \begin{align}
 \dot\Omega &= -0.0534631 \text{ rev}/\text{yr}\\
