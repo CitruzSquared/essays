@@ -400,7 +400,7 @@ We now substitute $\alpha_S$ and $\delta_S$ with our calculations from before:
 ```math
 \Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))
 ```
-Now we use the same equation to calculate the time of star rise:
+Now we use the sunrise equation again to calculate the time of star rise:
 ```math
 \Theta_{\text{Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha
 ```
