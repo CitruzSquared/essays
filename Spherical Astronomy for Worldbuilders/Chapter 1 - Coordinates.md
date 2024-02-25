@@ -49,7 +49,7 @@ The reverse transformation, also derived by simple geometry, is given below:
 \\ \varphi &= \arcsin(z / \rho)
 \end{align}
 ```
-Where $\arctan(y, x)$ is the [two argument arctangent](https://en.wikipedia.org/wiki/Atan2), used to avoid tangent ambiguity.
+Where $\arctan(y, x)$ is the [two argument arctangent](https://en.wikipedia.org/wiki/Atan2), used to avoid tangent ambiguity. Note that while most calculators and programming languages use $\arctan(y, x)$, [WolframAlpha](https://www.wolframalpha.com/) uses $\arctan(x, y)$.
 
 There are two coordinate systems in wide use. The [Equatorial Coordinate System](https://en.wikipedia.org/wiki/Equatorial_coordinate_system) and the [Ecliptic Coordinate System](https://en.wikipedia.org/wiki/Ecliptic_coordinate_system). 
 
