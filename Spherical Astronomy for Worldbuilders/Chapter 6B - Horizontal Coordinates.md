@@ -158,7 +158,7 @@ Thus, by equation $6.7$:
 \zeta_S &= 108\degree\:26'\:47.8''\\
 \end{align}
 ```
-Thus, by equation $6.8$:
+And then finally by equation $6.8$:
 ```math
 \begin{align}
 ZPS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:28.0'') \cos(37\degree\:16'\:\:7.9'')}{\sin(83\degree\:12'\:28.0'')\sin(37\degree\:16'\:\:7.9'')}\right)\\
