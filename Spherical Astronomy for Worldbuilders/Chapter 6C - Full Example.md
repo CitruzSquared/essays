@@ -1,7 +1,7 @@
 ### Saturn in the Sky
 Let's try to figure out how Saturn looked in the sky on $\text{January 1, } 2024$ at $19:00$ from London, UK ($\phi = +51\degree, l = 0\degree$).
 
-#### Data Collection
+#### 1. Data Collection
 To figure out what Saturn looked like from the Earth, we must first know how Saturn looks in general:
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/31cbc860-fe82-4627-9ba9-2bc59c92890b" width="350"/> First, and foremost, Saturn can be well modeled as a giant sphere, $58$ $232 \text{ km}$ in radius. 
@@ -33,7 +33,7 @@ The geocentric locations of Saturn and the Sun were:
 \end{align}
 ```
 
-#### Apparent Size
+#### 2. Apparent Size
 Let's first calculate how big Saturn looks.\
 Saturn's apparent size ($AS$) by equation $4.2$:
 ```math
@@ -48,7 +48,7 @@ The rings:
 ```
 Where $I$ and $O$ stand for the inner edge and the outer edge of the rings respectively.
 
-#### Phase
+#### 3. Phase
 Let's now calculate how much of Saturn is visible.\
 By equation $4.3$, the Sun-Earth-Saturn angle ($SEP$) is:
 ```math
@@ -81,7 +81,7 @@ And then finally the phase is given by equation $4.6$:
 ```
 Which makes sense as outer planets tend to always be near full phase.
 
-#### Elongation
+#### 4. Elongation
 We can see that the right ascension of Saturn is greater than the right ascension of the Sun, and therefore the ecliptic longitude would probably also be greater. Therefore the elongation would probably be positive and thus Saturn would be an evening star with its western face illuminated. We do not need to calculate the specific elongation.
 
-#### Horizontal Coordinates
+#### 5. Horizontal Coordinates
