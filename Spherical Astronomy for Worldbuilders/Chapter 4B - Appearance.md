@@ -284,6 +284,7 @@ An example of a very far out body:
 \text{Quaoar} & 163 \text{ dy} & \approx163\text{ dy} & 45\% \\ \hline
 \end{array}
 ```
+This formula works so well because all these bodies have orbital eccentricities very close to $0$.\
 $\blacksquare$
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
