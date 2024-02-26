@@ -138,7 +138,7 @@ Where $S$ is the Sun and $V$ is Venus.\
 We found out the the phase of Venus was:
 <p align="center">
 
-  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/ed1b89ff-3c4c-4e04-84d7-e0658861d887">
+  <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/ed1b89ff-3c4c-4e04-84d7-e0658861d887">
 </p>
 
 Now, let's figure out the lighting direction. Using equation $6.1$:
