@@ -1,5 +1,5 @@
 # Part 2. Terrestrial Observations
-In the last part, we discussed how to calculate the positions of the planets in space. Let's now discuss how they look from the Earth.
+In the last part, we discussed how to calculate the positions of the planets in space. Let's now discuss how they look and behave from the view of the Earth.
 
 ## IV. Appearance
 
