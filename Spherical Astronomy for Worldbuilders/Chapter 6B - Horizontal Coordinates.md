@@ -154,8 +154,8 @@ a_S&= -18\degree\:26'\:47.8''\\
 Thus, by equation $6.7$:
 ```math
 \begin{align}
-\zeta_V &= 83\degree\:12'\:28.0''\\
-\zeta_S &= 108\degree\:26'\:47.8''\\
+\zeta_V &= 90\degree - 6\degree\:47'\:32.0'' = 83\degree\:12'\:28.0''\\
+\zeta_S &= 90\degree - (-18\degree\:26'\:47.8'') = 108\degree\:26'\:47.8''\\
 \end{align}
 ```
 And then finally by equation $6.8$:
