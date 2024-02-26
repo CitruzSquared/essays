@@ -173,6 +173,7 @@ Thus, we rotate Venus by $133\degree$ $3'$ $31.3''$. But since the Sun's azimuth
 Comparing with Stellarium:
 <p align="center">
   <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/8a470f40-b97a-46e9-acd0-25c550e6516f">
+  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/337c923c-0f6d-48b0-9c3c-77fed37d3b43">
 </p>
 
 $\blacksquare$
