@@ -13,7 +13,7 @@ Saturn's north pole points towards $\alpha = 2^h$ $42^m$ $21^s$, $\delta = 83\de
 Now that we know some things about Saturn, let's get onto things we need to know to calculate its appearance.\
 The sidereal time at $19:00, \text{ January 1, } 2024$ was:
 ```math
-\Theta = 01^h\:43^m\:43.9^s
+\Theta = 25\degree\:55'\:58.5''
 ```
 The geocentric locations of Saturn and the Sun were:
 - Saturn ($P$):
