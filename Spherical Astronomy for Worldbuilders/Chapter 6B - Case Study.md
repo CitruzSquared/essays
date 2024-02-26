@@ -79,4 +79,4 @@ And then finally the phase is given by equation $4.6$:
 &= 99.84\%
 \end{align}
 ```
-Which makes sense as outer planets tend to be always near full phase.
+Which makes sense as outer planets tend to always be near full phase.
