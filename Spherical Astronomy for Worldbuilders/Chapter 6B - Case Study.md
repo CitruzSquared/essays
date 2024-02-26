@@ -8,7 +8,7 @@ To figure out what Saturn looked like from the Earth, we must first know how Sat
 
 In addition to that though, the planet has some gorgeous rings. The rings are made up of many parts, but we can generally say that the brightest parts form a disk on the plane of Saturn's equator, spanning from $74$ $500\text{ km}$ to $136$ $780\text{ km}$ from the planet's center (rings C, B, and A).
 
-Saturn's north pole points towards $\alpha = 2^h$ $42^m$ $21^s$, $\delta = 83\degree$ $32'$ $13''$ (Saturn-centric Earth equatorial coordinates).
+Saturn's north pole points towards $\alpha = 2^h$ $42^m$ $21^s$, $\delta = 83\degree$ $32'$ $13''$ (*Saturn-centric* Earth equatorial coordinates).
 
 Now that we know some things about Saturn, let's get onto things we need to know to calculate its appearance.\
 The sidereal time at $19:00, \text{ January 1, } 2024$ was:
