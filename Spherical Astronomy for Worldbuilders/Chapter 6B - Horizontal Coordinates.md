@@ -90,3 +90,6 @@ The ancient Egyptians thought of this event to have immense significance because
 $\blacksquare$
 
 ### Lighting Direction
+In chapter $4$, we learned how to calculate how much of a planet was visible (the phase) and even which side of the planet was illuminated. Let us now figure out specifically which direction the light was coming from.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/86eb72e3-9593-4153-8334-5f4d2d0ff113" width="400"/>
