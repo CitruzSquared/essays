@@ -32,3 +32,51 @@ The geocentric locations of Saturn and the Sun were:
 \rho_S &= 147\:099\:700\text{ km}
 \end{align}
 ```
+
+#### Apparent Size
+Let's first calculate how big Saturn looks.\
+Saturn's apparent size ($AS$) by equation $4.2$:
+```math
+\text{AS}_P = 2\arcsin\left(\frac{58\:232}{1\:540\:141\:300}\right) = 15.60''
+```
+The rings:
+```math
+\begin{align}
+\text{AS}_I &= 2\arcsin\left(\frac{74\:500}{1\:540\:141\:300}\right) = 19.95''\\
+\text{AS}_O &= 2\arcsin\left(\frac{136\:780}{1\:540\:141\:300}\right) = 36.64''
+\end{align}
+```
+Where $I$ and $O$ stand for the inner edge and the outer edge of the rings respectively.
+
+#### Phase
+Let's now calculate how much of Saturn is visible.\
+By equation $4.3$, the Sun-Earth-Saturn angle ($SEP$) is:
+```math
+\begin{align}
+\Delta \alpha &= 22^h\:22^m\:07.21^s - 18^h\:45^m\:45.07^s = 3^h\:36^m\:22.14^s\\
+\therefore SEP &= \arccos(\sin(-11\degree\:55'\:54.3'')\sin(-23\degree\:01'\:15.8'')+\cos(-11\degree\:55'\:54.3'')\cos(-23\degree\:01'\:15.8'')\cos(3^h\:36^m\:22.14^s))\\
+&= 52\degree\:29'\:6.99''
+\end{align}
+```
+The Sun-Saturn distance ($r$) is given then by equation $4.4$:
+```math
+\begin{align}
+r &= \sqrt{(147\:099\:700)^2 + (1\:540\:141\:300)^2 - 2\cdot147\:099\:700\cdot1\:540\:141\:300\cdot\cos(52\degree\:29'\:6.99'')}\\
+&= 1\:455\:247\:779\text{ km}
+\end{align}
+```
+And then the phase angle ($SPE$) is given by equation $4.5$:
+```math
+\begin{align}
+SPE &= \arccos\left(\frac{1\:540\:141\:300^2 + 1\:455\:247\:779^2 - 147\:099\:700^2}{2\cdot1\:540\:141\:300\cdot1\:455\:247\:779}\right)\\
+&= 4\degree\:35'\:55.69''
+\end{align}
+```
+And then finally the phase is given by equation $4.6$:
+```math
+\begin{align}
+\text{Phase}\% &= \frac{1 + \cos(4\degree\:35'\:55.69'')}{2} \cdot 100\%\\
+&= 99.84\%
+\end{align}
+```
+Which makes sense as outer planets tend to be always near full phase.
