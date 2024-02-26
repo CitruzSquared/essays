@@ -135,7 +135,7 @@ SOV &= 37\degree\:16'\:\:7.9''
 \end{align}
 ```
 Where $S$ is the Sun and $V$ is Venus.\
-We found out the the phase of Venus was:
+We found out the the phase of Venus was $78$%:
 <p align="center">
 
   <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/ed1b89ff-3c4c-4e04-84d7-e0658861d887">
