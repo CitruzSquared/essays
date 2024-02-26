@@ -135,7 +135,13 @@ SOV &= 37\degree\:16'\:\:7.9''
 \end{align}
 ```
 Where $S$ is the Sun and $V$ is Venus.\
-Using equation $6.1$:
+We found out the the phase of Venus was:
+<p align="center">
+
+  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/ed1b89ff-3c4c-4e04-84d7-e0658861d887">
+</p>
+
+Now, let's figure out the lighting direction. Using equation $6.1$:
 ```math
 \begin{align}
 h_V &= 190\degree\:23'\:56.5'' - 16^h\:07^m\:26^s = -51\degree\:27'\:33.5''\\
