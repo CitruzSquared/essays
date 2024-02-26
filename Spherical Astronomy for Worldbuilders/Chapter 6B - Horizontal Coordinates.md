@@ -167,10 +167,10 @@ ZPS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:2
 ```
 Thus, we rotate Venus by $133\degree$ $3'$ $31.3''$. But since the Sun's azimuth is less than that of Venus, the Sun must be shining from the left:
 <p align="center">
-  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/7f301b6b-754d-402c-9799-80ba81e157d1">
+  <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/023c2acd-c46c-455d-ab18-5f6c00d7aa16">
 </p>
 
-Comparing with [Stellarium](https://stellarium.org/):
+Comparing with [Stellarium](https://stellarium.org/) (a planetarium software):
 <p align="center">
   <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/8a470f40-b97a-46e9-acd0-25c550e6516f">
   <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/337c923c-0f6d-48b0-9c3c-77fed37d3b43">
