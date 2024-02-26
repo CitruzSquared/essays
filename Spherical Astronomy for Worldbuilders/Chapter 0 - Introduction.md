@@ -39,8 +39,12 @@
    - Equations $5.1$ to $5.4$
    - Examples $5.1$ to $5.3$
 6. Horizontal Coordinates
-   - Equations $6.1$ to $6.6$
-   - Examples $6.1$ to $6.6$
+   - Part A
+     * Equations $6.1$ to $6.5$
+     * Examples $6.1$ to $6.5$
+   - Part B
+     * Equations $6.6$ to $$
+     * Examples $6.6$ to $$
 7. Earthly Parallax
 
 ## Useful Mathematics
