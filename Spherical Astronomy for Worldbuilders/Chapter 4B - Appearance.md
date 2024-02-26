@@ -281,7 +281,7 @@ As the planet gets further and further away from the Sun, the time it spends in 
 An example of a very far out body:
 ```math
 \begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
-\text{Quaoar} & 163 \text{ dy} & ?\text{ dy} & 44.5\% \\ \hline
+\text{Quaoar} & 163 \text{ dy} & ?\text{ dy} & 45\% \\ \hline
 \end{array}
 ```
 $\blacksquare$
