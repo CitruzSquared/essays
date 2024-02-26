@@ -249,7 +249,13 @@ Doing this for all the planets:
 \text{Neptune} & 60195 \text{ dy} & 367.47\text{ dy}  \\\hline
 \end{array}
 ```
-You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.
+You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.\
+An example of a very far out body:
+```math
+\begin{array}{ccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} \\ \hline
+\text{Quaoar} & 105\:495 \text{ dy} & 366.51\text{ dy}  \\\hline
+\end{array}
+```
 
 Additionally, the synodic period of the Moon $(29.53 \text{ dy})$, by definition of the synodic period, is the average time it takes for the Moon to go from new Moon to new Moon, or from full Moon to full Moon. This is known as the lunar month, and is the basis of the length of the month in many calendar systems around the world, such as the Islamic, Jewish, and Chinese calendars.\
 $\blacksquare$
