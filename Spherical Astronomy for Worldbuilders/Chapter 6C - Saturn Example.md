@@ -32,7 +32,7 @@ The geocentric locations of Saturn and the Sun were:
 \rho_S &= 147\:099\:700\text{ km}
 \end{align}
 ```
-Note that these values differ slightly from examples $4.1$ and $6.7$ because of the slightly different time.
+Note that these values differ slightly from examples $4.1$ and $6.7$ because we used a different data set. (Why do different data sets differ on the same quantities? I do not know.)
 
 #### 2. Apparent Size
 Let's first calculate how big Saturn looks.\
