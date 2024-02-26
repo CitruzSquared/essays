@@ -28,7 +28,7 @@
      * Equations $3.14$ to $3.21$
      * Examples $3.3$ to $3.4$
 ### 2. Terrestrial Observation
-4. Appearance
+4. Geocentrism
    - Part A
      * Equations $4.1$ to $4.9$
      * Examples $4.1$ to $4.4$
