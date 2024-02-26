@@ -110,7 +110,7 @@ The angle $SOP$ can be calculated by equation $4.3$.
 
 <br/>
 
-#### Example 6.8
+#### Example 6.7
 <div align="center">
 <table>
 <tbody>
