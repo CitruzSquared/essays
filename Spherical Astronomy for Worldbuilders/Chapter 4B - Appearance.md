@@ -282,7 +282,7 @@ $\blacksquare$
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
 
-Sometimes, a conjunction happens between two planets just before one of them goes into retrograde. This makes it seem like one of the planets goes backwards to conjunct with the other planet again, and when it goes out of retrograde, it goes forward to conjunct again. This phenomenon is called a [triple conjunction](https://en.wikipedia.org/wiki/Triple_conjunction). \
+Sometimes, a conjunction happens between two planets just before one (or both) of them goes into retrograde. This makes it seem like one of the planets goes backwards to conjunct with the other planet again, and when it goes out of retrograde, it goes forward to conjunct again. This phenomenon is called a [triple conjunction](https://en.wikipedia.org/wiki/Triple_conjunction). \
 An example is the Jupiter - Saturn triple conjunction of $1980$ ~ $1981$:
 ```math
 \begin{align}
