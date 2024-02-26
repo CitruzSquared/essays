@@ -98,4 +98,70 @@ This can be calculated with the [spherical law of cosines](https://en.wikipedia.
 ```math
 \cos(ZPS) = \frac{\cos(ZOS) - \cos(ZOP)\cos(SOP)}{\sin(ZOP)\sin(SOP)}
 ```
-The angle $ZOS$ and $ZOP$ are just $90\degree$ minus the altitudes of $S$ and $P$ respectively, and are called the *zenith distances* (denoted $\zeta$) of $S$ and $P$. The angle $SOP$ can be calculated by equation $4.3$.
+The angle $ZOS$ and $ZOP$ are called the *zenith distances* (denoted $\zeta$) of $S$ and $P$ and can be calculated by:
+```math
+\zeta = 90\degree - a\tag{6.7}
+```
+Therefore, the equation becomes:
+```math
+ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.8}
+```
+The angle $SOP$ can be calculated by equation $4.3$.
+
+<br/>
+
+#### Example 6.8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Recall example $4.1$ where we calculated the phase of Venus on $\text{January 1, } 2024$. <br/>
+Calculate how Venus would have looked from London, UK ($\phi = 51\degree, l = 0\degree$) at $06:00$ ($\Theta = 190\degree$ $23'$ $56.5''$).
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Recall from example $4.1$:
+```math
+\begin{align}
+\alpha_V &= 16^h\:07^m\:26^s\\
+\delta_V&=-18\degree\:57'\:52''\\
+\alpha_S &= 18^h\:46^m\:38^s \\
+\delta_S&=-23\degree\:0'\:10''\\
+SOV &= 37\degree\:16'\:\:7.9''
+\end{align}
+```
+Where $S$ is the Sun and $V$ is Venus.\
+Using equation $6.1$:
+```math
+\begin{align}
+h_V &= 190\degree\:23'\:56.5'' - 16^h\:07^m\:26^s = -51\degree\:27'\:33.5''\\
+h_S &= 190\degree\:23'\:56.5'' - 18^h\:46^m\:38^s = -91\degree\:15'\:33.5''
+\end{align}
+```
+Now, using equation $6.3$:
+```math
+\begin{align}
+A_V &= 131\degree\:50'\:46.3''\\
+a_V&= 6\degree\:47'\:32.0''\\
+A_S &= 104\degree\:2'\:39.1''\\
+a_S&= -18\degree\:26'\:47.8''\\
+\end{align}
+```
+Thus, by equation $6.7$:
+```math
+\begin{align}
+\zeta_V &= 83\degree\:12'\:28.0''\\
+\zeta_S &= 108\degree\:26'\:47.8''\\
+\end{align}
+```
+Thus, by equation $6.8$:
+```math
+\begin{align}
+ZPS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:28.0'') \cos(37\degree\:16'\:\:7.9'')}{\sin(83\degree\:12'\:28.0'')\sin(37\degree\:16'\:\:7.9'')}\right)\\
+&= 133\degree\:3'\:31.3''
+\end{align}
+```
