@@ -88,3 +88,5 @@ $202\text{ dy}$ after $\text{January 3, }2024$ is $\text{July 23, }2024$. Adding
 
 The ancient Egyptians thought of this event to have immense significance because it happened just before the beginning of the flooding season of the Nile river (around late Summer) by coincidence. Read more about this [here](https://en.wikipedia.org/wiki/Sopdet).\
 $\blacksquare$
+
+### Lighting Direction
