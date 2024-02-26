@@ -172,8 +172,8 @@ Thus, the light was shining from an angle of $133\degree$ $3'$ $31.3''$ from the
 
 Comparing with [Stellarium](https://stellarium.org/) (a planetarium software):
 <p align="center">
-  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/8a470f40-b97a-46e9-acd0-25c550e6516f">
-  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/337c923c-0f6d-48b0-9c3c-77fed37d3b43"> <br/>
+  <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/8a470f40-b97a-46e9-acd0-25c550e6516f">
+  <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/337c923c-0f6d-48b0-9c3c-77fed37d3b43"> <br/>
   Stellarium image on the left, Stellarium image overlaid with our prediction on the right.
 </p>
 
