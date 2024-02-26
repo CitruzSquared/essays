@@ -278,6 +278,12 @@ Doing this for all the planets yields:
 \end{array}
 ```
 As the planet gets further and further away from the Sun, the time it spends in apparent retrograde motion approaches $T_1/2$ (percentage of time spent in retrograde approaches $50$%), which is $182.6\text{ dy}$ for the Earth.\
+An example of a very far out body:
+```math
+\begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
+\text{Quaoar} & 163 \text{ dy} & ?\text{ dy} & 44.5\% \\ \hline
+\end{array}
+```
 $\blacksquare$
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
