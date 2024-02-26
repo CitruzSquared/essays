@@ -142,7 +142,7 @@ h_V &= 190\degree\:23'\:56.5'' - 16^h\:07^m\:26^s = -51\degree\:27'\:33.5''\\
 h_S &= 190\degree\:23'\:56.5'' - 18^h\:46^m\:38^s = -91\degree\:15'\:33.5''
 \end{align}
 ```
-Now, using equation $6.3$:
+Now, using equation $6.3$ (See example $6.4$ for more detail):
 ```math
 \begin{align}
 A_V &= 131\degree\:50'\:46.3''\\
