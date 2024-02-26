@@ -1,5 +1,5 @@
 ## II. Orbits
-Let us study the motion and position of the planets. The most accurate way to calculate the motion of the planets is with a numerical integrator of the equations of motion, but this can be extremely difficult to make such that it guarantees accuracy even in the very long run. In this chapter, we will learn of ways to solve for the motion of the planets *without* an integrator.
+Unlike stars that have fixed coordinates, planets orbit the Sun, and therefore move around in the sky. (In fact, this is where the word "planet" comes from.) Let us study the motion and position of the planets. The most accurate way to calculate the motion of the planets is with a numerical integrator of the equations of motion, but this can be extremely difficult to make such that it guarantees accuracy even in the very long run. In this chapter, we will learn of ways to solve for the motion of the planets *without* an integrator.
 
 ### Newton and Kepler
 All planets in space obey [Newton's law of gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). \
