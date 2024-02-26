@@ -249,7 +249,7 @@ As it turns out, even inner planets follow the same principle and the formula wo
 <td align="center">
 <img width="2000" height="0"><br>
 Given that Venus orbits at $0.7233 \text{ AU}$ from the Sun, and the Earth takes $365.24\text{ dy}$ to orbit the Sun, <br/>
-how long is Venus in retrograde motion for from the view of the Earth on average?
+for how long is Venus in retrograde motion from the view of the Earth on average?
 <img width="2000" height="0">
 </td>
 </tbody>
