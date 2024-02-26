@@ -1,7 +1,7 @@
 ### Saturn in the Sky
 Let's try to figure out how Saturn looked in the sky on $\text{January 1, } 2024$ at $19:00$ from London, UK ($\phi = +50\degree, l = 0\degree$).
 
-
+#### Data Collection
 To figure out what Saturn looked like from the Earth, we must first know how Saturn looks in general:
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/31cbc860-fe82-4627-9ba9-2bc59c92890b" width="350"/> First, and foremost, Saturn can be well modeled as a giant sphere, $58$ $232 \text{ km}$ in radius. 
