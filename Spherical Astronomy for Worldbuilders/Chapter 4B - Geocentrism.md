@@ -281,7 +281,8 @@ As we can see, as the planet gets further and further away from the Sun, the tim
 An example of a very far out body:
 ```math
 \begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
-\text{Quaoar} & 163 \text{ dy} & \approx163\text{ dy} & 45\% \\ \hline
+\text{Quaoar} & 163 \text{ dy} & \approx163\text{ dy} & 45\% \\
+\text{500 AU Planet} & 177 \text{ dy} & ?\text{ dy} & 48\% \\ \hline
 \end{array}
 ```
 This formula works so well because all these bodies have orbital eccentricities very close to $0$.\
@@ -415,7 +416,8 @@ As we can see, as the planet gets further and further away from the Sun, the ave
 An example of a very far out body:
 ```math
 \begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
-\text{Quaoar} & 2\degree\:02'\\ \hline
+\text{Quaoar} & 2\degree\:02'\\
+\text{500 AU Planet} & 0\degree\:13'\\ \hline
 \end{array}
 ```
 $\blacksquare$
