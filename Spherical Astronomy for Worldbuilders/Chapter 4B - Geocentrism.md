@@ -366,7 +366,7 @@ Thus, by equation $4.26$:
 &= 0.33708\text{ AU}
 \end{align}
 ```
-Then, by equation $4.25$ (Venus is an inner planet, so we switch $E$ and $P$ and use $a = 1$ for $b$ in the formula):
+Then, by equation $4.25$ (Venus is an inner planet, so we switch $E$ and $P$ and use $a = 1$ instead of $b$ in the formula):
 ```math
 \begin{align}
 SEP &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{0.33708}\cdot 1\right)\\
