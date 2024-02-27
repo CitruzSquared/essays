@@ -1,7 +1,8 @@
 # Part 2. Terrestrial Observations
 In the last part, we discussed how to calculate the positions of the planets in space. Let's now discuss how they look and behave from the view of the Earth.
 
-## IV. Appearance
+## IV. Geocentrism
+Let's discuss the effect of viewing object from the Earth.
 
 ### Apparent Size
 How large do objects in space appear from our point of view?
