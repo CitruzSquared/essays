@@ -253,7 +253,7 @@ You can see that the longer the sidereal period is for a planet compared to the 
 An example of a very far out body:
 ```math
 \begin{array}{ccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} \\ \hline
-\text{100 AU Planet} & 365\:240 \text{ dy} & 365.61\text{ dy}  \\\hline
+\text{Quaoar} & 105\:495  \text{ dy} & 366.51\text{ dy}  \\\hline
 \end{array}
 ```
 
