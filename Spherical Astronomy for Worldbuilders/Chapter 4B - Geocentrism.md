@@ -288,7 +288,7 @@ This formula works so well because all these bodies have orbital eccentricities 
 
 <p align="center">
   Graph of some of the properties of $P$ <br/>
-  <img width="650" src="https://github.com/CitruzSquared/essays/assets/23460281/81cffe76-f33e-42fe-b920-c2140b9d5a6e"> <br/>
+  <img width="650" src="https://github.com/CitruzSquared/essays/assets/23460281/e03ac3c8-db56-4636-a452-08534e35ab2f"> <br/>
   Red : Synodic Orbital Period (Units: $T_E$) <br/>
   Green: Retrograde Time (Units: $0.1$ $T_E$) <br/>
   Cyan: % Retrograde Time (Units: $10$%) <br/>
