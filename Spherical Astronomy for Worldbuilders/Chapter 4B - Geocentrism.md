@@ -406,6 +406,11 @@ An example of a very far out body:
 \text{Quaoar} & 2\degree\:2'\\ \hline
 \end{array}
 ```
+$\blacksquare$
+
+<br/>
+
+- Other things regarding apparent retrograde motion:
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
 
