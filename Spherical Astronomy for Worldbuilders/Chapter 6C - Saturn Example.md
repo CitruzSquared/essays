@@ -112,7 +112,7 @@ Therefore, by equation $4.6$:
 ```math
 \begin{align}
 \text{Phase}\% &= \frac{1 + \cos(4\degree\:36')}{2}\cdot100\%\\
-&= 99.8\%
+&= 99.84\%
 \end{align}
 ```
 This makes sense as planets in the far reaches of the Solar System tend to always be at full phase.
