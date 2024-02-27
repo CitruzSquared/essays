@@ -171,7 +171,7 @@ ZVS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:2
 &= 133\degree\:3'\:31.3''
 \end{align}
 ```
-Thus, the light was shining from an angle of $133\degree$ $3'$ $31.3''$ from the Zenith. Keeping in mind that since the Sun's azimuth is less than that of Venus (i.e. the Sun West of Venus), the Sun must be shining from the left:
+Thus, the light was shining from an angle of $133\degree$ $3'$ $31.3''$ from the Zenith. Keeping in mind that since the Sun's azimuth is less than that of Venus, the Sun must be shining from the left:
 <p align="center">
   <img width="150" src="https://github.com/CitruzSquared/essays/assets/23460281/10422092-c198-47be-a4d8-145a0d273e0c">
 </p>
