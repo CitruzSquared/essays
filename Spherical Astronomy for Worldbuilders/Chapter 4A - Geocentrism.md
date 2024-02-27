@@ -238,7 +238,7 @@ T_{\text{Mercury Synodic}} &= \frac{365.24 \cdot 87.969}{365.24 - 87.969}\\
 
 Doing this for all the planets:
 ```math
-\begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} & \text{True Value}\\ \hline
+\begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Equation }4.9 & \text{True Value}\\ \hline
 \text{Mercury} & 87.969 \text{ dy} & 115.88\text{ dy} & 115.88\text{ dy}\\
 \text{Venus} & 224.70 \text{ dy} & 583.96\text{ dy} & 583.92\text{ dy} \\
 \text{Earth} & 365.24 \text{ dy} & - & - \\
@@ -253,7 +253,7 @@ Doing this for all the planets:
 You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.\
 Examples of very far out bodies:
 ```math
-\begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} & \text{True Value}\\ \hline
+\begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Equation }4.9 & \text{True Value}\\ \hline
 \text{Quaoar} & 105\:495  \text{ dy} & 366.51\text{ dy}  & ?\text{ dy}\\
 \text{500 AU Planet} & 4\:083\:507  \text{ dy} & 365.27\text{ dy}  & ?\text{ dy}\\\hline
 \end{array}
