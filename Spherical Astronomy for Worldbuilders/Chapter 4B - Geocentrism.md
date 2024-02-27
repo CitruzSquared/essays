@@ -350,7 +350,7 @@ Thus, by equation $4.26$:
 Then, by equation $4.25$:
 ```math
 \begin{align}
-SEP &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{19.19}\cdot 1\right)\\
+SEP &= \arcsin\left(\frac{\sin(73\degree\:54'\:48'')}{19.19}\cdot 1\right)\\
 &= 103\degree\:10'
 \end{align}
 ```
