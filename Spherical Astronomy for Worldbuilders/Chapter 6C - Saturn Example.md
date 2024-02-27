@@ -223,3 +223,4 @@ Carrying out the math,
 \end{bmatrix}
 \end{align}
 ```
+So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
