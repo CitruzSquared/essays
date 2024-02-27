@@ -251,7 +251,7 @@ Doing this for all the planets:
 \end{array}
 ```
 You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.\
-Examples of a very far out bodies:
+Examples of very far out bodies:
 ```math
 \begin{array}{ccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} \\ \hline
 \text{Quaoar} & 105\:495  \text{ dy} & 366.51\text{ dy}  \\
