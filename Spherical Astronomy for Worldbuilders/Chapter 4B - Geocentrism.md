@@ -277,7 +277,7 @@ Doing this for all the planets yields:
 \text{Neptune} & 158 \text{ dy} & 158\text{ dy} & 43\% \\ \hline
 \end{array}
 ```
-As the planet gets further and further away from the Sun, the time it spends in apparent retrograde motion approaches $T_E/2$ (percentage of time spent in retrograde approaches $50$% as the synodic period approaches $T_E$), which is $182.6\text{ dy}$ for our Earth.\
+As we can see, as the planet gets further and further away from the Sun, the time it spends in apparent retrograde motion approaches $T_E/2$ (percentage of time spent in retrograde approaches $50$% as the synodic period approaches $T_E$), which is $182.6\text{ dy}$ for our Earth.\
 An example of a very far out body:
 ```math
 \begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
@@ -286,6 +286,126 @@ An example of a very far out body:
 ```
 This formula works so well because all these bodies have orbital eccentricities very close to $0$.\
 $\blacksquare$
+
+<br/>
+
+Now we know how long a planet is in retrograde for, but how *far* does the planet go back by? This is called the degrees "recovered" during retrograde.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/4604b40a-1d6d-4fa7-bad0-4698e825ff1e" width="250"/> In this diagram, the Sun is at point $S$, and $E$ and $P$ are the positions of the Earth and the planet at the moment $P$ starts going into retrograde. $E'$ and $P'$ are the positions of the Earth and the planet at the moment $P$ comes out of retrograde. Thus the angles $PSE$ and $P'SE'$ are both the $\alpha$ that we have calculated before. $P''$ is located where the planet would be if its geocentric location did not change (i.e. the planet never went into retrograde), that is: $EP$ and $E'P''$ are parallel. (Note that the angle $SE'P''$ is not $180\degree$.) The distances $SE$ and $SP$ (or $SE'$ and $SP'$ since we are assuming circular orbits), and the Earth-planet distance $EP$ are denoted by $a$, $b$, and $\rho$ respectively just like before. We are interested in how far the planet has gone backwards in its apparent retrograde motion, that is, we are interested in the angle $P''EP'$. 
+
+Because $EP$ and $E'P''$ are parallel, $P''EP' = PQP'$. Because $SEQE'$ forms a quadrilateral, all the angles inside it must sum to $360\degree$. Also note that because triangles $\triangle SEP$ and $\triangle SE'P$ are congruent (by SAS congruency), the angles $SEP$ and $SE'P$ are congruent too. Thus:
+```math
+PQP' = 360\degree - ESE' - 2SEP \tag{4.23}
+```
+$ESE$ is just the angular motion the Earth has moved in the time of the planet's retrograde motion:
+```math
+ESE' = \frac{360\degree}{T_E}\cdot T_{\text{retro}}\tag{4.24}
+```
+We now only need $SEP$, which we use the law of sines for:
+```math
+SEP = \arcsin\left(\frac{\sin(\alpha)}{\rho}\cdot b\right)\tag{4.25}
+```
+$\rho$ can be calculated with the law of cosines:
+```math
+\rho = \sqrt{a^2 + b^2 - 2ab\cos(\alpha)}\tag{4.26}
+```
+And now we finally have all the necessary parts to calculate $PQP'$.
+
+If the planet in question is an inner planet (that is, the planet in question is $E$ and the Earth is $P$), the geometry changes a bit, all the formulas work out but $E$ and $P$ must be switched.
+
+#### Example 4.8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Calculate the average angle recovered during retrograde for every planet in the Solar System, using $T_E = 365.24\text{ dy}$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Let's do Uranus as an example:\
+For Uranus, $b =19.19 \text{ AU}$, $\alpha = 73\degree$ $54'$ $48''$ (the arccosine value of equation $4.22$), and $T_{\text{retro}} = 151.8\text{ dy}$ (by equation $4.22$).\
+Thus, by equation $4.26$:
+```math
+\begin{align}
+\rho &= \sqrt{1^2 + 19.19^2 - 2\cdot1\cdot19.19\cdot\cos(73\degree\:54'\:48'')}\\
+&= 18.94\text{ AU}
+\end{align}
+```
+Then, by equation $4.25$:
+```math
+\begin{align}
+SEP &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{19.19}\cdot 1\right)\\
+&= 103\degree\:10'
+\end{align}
+```
+Also, by equation $4.24$:
+```math
+\begin{align}
+ESE' &= \frac{360\degree}{365.24}\cdot 152\\
+&= 149\degree\:36'
+\end{align}
+```
+Thus, by equation $4.23$:
+```math
+\begin{align}
+PQP' &= 360\degree - 149\degree\:36' - 2\cdot103\degree\:10'\\
+&= 4\degree\:4'
+\end{align}
+```
+
+Let's now do Venus as an example of an inner planet:\
+For Venus, $b =0.7233 \text{ AU}$, $\alpha = 12\degree$ $59'$ $48''$ (the arccosine value of equation $4.22$), and $T_{\text{retro}} = 42.2\text{ dy}$ (by equation $4.22$).\
+Thus, by equation $4.26$:
+```math
+\begin{align}
+\rho &= \sqrt{1^2 + 0.7233^2 - 2\cdot1\cdot0.7233\cdot\cos(12\degree\:59'\:48'')}\\
+&= 0.33708\text{ AU}
+\end{align}
+```
+Then, by equation $4.25$ (Venus is an inner planet, so we switch $E$ and $P$ and use $a = 1$ for $b$ in the formula):
+```math
+\begin{align}
+SEP &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{0.33708}\cdot 1\right)\\
+&= 138\degree\:9'
+\end{align}
+```
+Also, by equation $4.24$ (remembering to use Venus's period $= T_E\sqrt{(b/a)^3}$ instead of $T_E$ because Venus is an inner planet):
+```math
+\begin{align}
+ESE' &= \frac{360\degree}{365.24\sqrt{(0.7233/1)^3}}\cdot 42.2\\
+&= 67\degree\:32'
+\end{align}
+```
+Thus, by equation $4.23$:
+```math
+\begin{align}
+PQP' &= 360\degree - 67\degree\:32' - 2\cdot138\degree\:8'\\
+&= 16\degree\:12'
+\end{align}
+```
+Doing this for all the planets yields:
+```math
+\begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
+\text{Mercury} & 13\degree\:49'\\
+\text{Venus} & 16\degree\:12'\\
+\text{Mars} & 15\degree\:55'\\
+\text{Jupiter} & 9\degree\:57'\\
+\text{Saturn} & 6\degree\:46'\\
+\text{Uranus} & 4\degree\:04'\\
+\text{Neptune} & 4\degree\:48'\\ \hline
+\end{array}
+```
+As we can see, as the planet gets further and further away from the Sun, the average recovered angle during retrogradation approaches $0\degree$.\
+An example of a very far out body:
+```math
+\begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
+\text{Quaoar} & 2\degree\:2'\\ \hline
+\end{array}
+```
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
 
