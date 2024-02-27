@@ -316,8 +316,7 @@ If the planet in question is an inner planet (that is, the planet in question is
 ```math
 \begin{align}
 EQE' &= 360\degree - PSP' - 2SPE \tag{4.27}\\
-PSP' &= \frac{360\degree}{T_P}\cdot T_{\text{retro}}\\
-&= \frac{360\degree}{T_E\sqrt{r^3}}\cdot T_{\text{retro}}\tag{4.28}\\
+PSP' &= \frac{360\degree}{T_P}\cdot T_{\text{retro}} = \frac{360\degree}{T_E\sqrt{r^3}}\cdot T_{\text{retro}}\tag{4.28}\\
 SPE &= \arcsin\left(\frac{\sin(\alpha)}{\rho}\cdot a\right)\tag{4.29}\\
 \end{align}
 ```
