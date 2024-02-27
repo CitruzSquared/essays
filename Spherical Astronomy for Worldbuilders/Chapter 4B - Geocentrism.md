@@ -338,7 +338,7 @@ Calculate the average angle recovered during retrograde for every planet in the 
 </table>
 </div>
 
-Let's do Uranus as an example:\
+Let's do Uranus as an example of an outer planet:\
 For Uranus, $b =19.19 \text{ AU}$, $\alpha = 73\degree$ $54'$ $48''$ (the arccosine value of equation $4.22$), and $T_{\text{retro}} = 151.8\text{ dy}$ (by equation $4.22$).\
 Thus, by equation $4.26$:
 ```math
