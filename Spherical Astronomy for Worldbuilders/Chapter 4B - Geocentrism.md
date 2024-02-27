@@ -322,7 +322,7 @@ SPE &= \arcsin\left(\frac{\sin(\alpha)}{\rho}\cdot a\right)\tag{4.29}\\
 \end{align}
 ```
 Where $r = b/a$.\
-The formula for $\rho$ stays the same.
+Note that the formula for $\rho$ stays the same.
 
 Note that as with equation $4.22$, these formulae are not exact as they assume circular orbits; the angle recovered is different every retrograde cycle.
 
