@@ -258,6 +258,7 @@ Examples of very far out bodies:
 \text{500 AU Planet} & 4\:083\:507  \text{ dy} & 365.27\text{ dy}  & ?\text{ dy}\\\hline
 \end{array}
 ```
+(While Quaoar is a real (dwarf) planet, "500 AU Planet" only serves as a theoretical example.)
 
 Additionally, the synodic period of the Moon $(29.53 \text{ dy})$, by definition of the synodic period, is the average time it takes for the Moon to go from new Moon to new Moon, or from full Moon to full Moon. This is known as the lunar month, and is the basis of the length of the month in many calendar systems around the world, such as the Islamic, Jewish, and Chinese calendars.\
 $\blacksquare$
