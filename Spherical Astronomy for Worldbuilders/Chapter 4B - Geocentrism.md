@@ -285,6 +285,13 @@ An example of a very far out body:
 \end{array}
 ```
 This formula works so well because all these bodies have orbital eccentricities very close to $0$.\
+
+<p align="center">
+  <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/81cffe76-f33e-42fe-b920-c2140b9d5a6e"> <br/>
+  Graph of Synodic Orbital Period (red), Retrograde Time ($\times10$, green), % Retro. Time ($\times10$, cyan). <br/>
+  $x$-axis : Distance from the Sun in units of AU ($a$), $y$-axis : Time in units of $T_E$.
+</p>
+
 $\blacksquare$
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
