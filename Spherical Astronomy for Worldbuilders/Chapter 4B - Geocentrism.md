@@ -130,7 +130,7 @@ Apparent retrograde motion happens when $w_\text{obs}$, the observed angular spe
 
 The velocity of the Earth is shown with the vector $\vec{EU}$, and the velocity of the outer planet is shown with the vector $\vec{PV}$. The magnitudes of these vectors will be denoted $u$ and $v$ respectively.
 
-The Earth-Sun-Planet angle is $\alpha$, the Sun-Planet-Earth angle is $\theta$, and the angle $UEP$ is $\psi$.
+The Earth-Sun-Planet angle is $\alpha$ (not to be confused with right ascension), the Sun-Planet-Earth angle is $\theta$, and the angle $UEP$ is $\psi$.
 
 First, from the definition of angular velocity, we know that
 ```math
