@@ -278,7 +278,7 @@ Doing this for all the planets yields:
 \end{array}
 ```
 As we can see, as the planet gets further and further away from the Sun, the time it spends in apparent retrograde motion approaches $T_E/2$ (percentage of time spent in retrograde approaches $50$% as the synodic period approaches $T_E$), which is $182.6\text{ dy}$ for our Earth.\
-Examples of a very far out bodies:
+Examples of very far out bodies:
 ```math
 \begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
 \text{Quaoar} & 163 \text{ dy} & \approx163\text{ dy} & 45\% \\
@@ -413,7 +413,7 @@ Doing this for all the planets yields:
 \end{array}
 ```
 As we can see, as the planet gets further and further away from the Sun, the average recovered angle during retrogradation approaches $0\degree$.\
-Examples of a very far out bodies:
+Examples of very far out bodies:
 ```math
 \begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
 \text{Quaoar} & 2\degree\:02'\\
