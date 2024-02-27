@@ -238,24 +238,24 @@ T_{\text{Mercury Synodic}} &= \frac{365.24 \cdot 87.969}{365.24 - 87.969}\\
 
 Doing this for all the planets:
 ```math
-\begin{array}{ccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} \\ \hline
-\text{Mercury} & 87.969 \text{ dy} & 115.88\text{ dy} \\
-\text{Venus} & 224.70 \text{ dy} & 583.96\text{ dy}  \\
-\text{Earth} & 365.24 \text{ dy} & -  \\
-\text{Moon} & 27.321 \text{ dy} & 29.530\text{ dy}  \\ 
-\text{Mars} & 686.98 \text{ dy} & 779.86\text{ dy}  \\
-\text{Jupiter} & 4332.6 \text{ dy} & 398.86\text{ dy}  \\
-\text{Saturn} & 10755  \text{ dy} & 378.08\text{ dy}  \\
-\text{Uranus} & 30688 \text{ dy} & 369.64\text{ dy}  \\
-\text{Neptune} & 60195 \text{ dy} & 367.47\text{ dy}  \\\hline
+\begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} & \text{True Value}\\ \hline
+\text{Mercury} & 87.969 \text{ dy} & 115.88\text{ dy} & 115.88\text{ dy}\\
+\text{Venus} & 224.70 \text{ dy} & 583.96\text{ dy} & 583.92\text{ dy} \\
+\text{Earth} & 365.24 \text{ dy} & - & -} \\
+\text{Moon} & 27.321 \text{ dy} & 29.530\text{ dy} & 29.531\text{ dy} \\ 
+\text{Mars} & 686.98 \text{ dy} & 779.86\text{ dy} & 779.94\text{ dy} \\
+\text{Jupiter} & 4332.6 \text{ dy} & 398.86\text{ dy} & 398.88\text{ dy} \\
+\text{Saturn} & 10755  \text{ dy} & 378.08\text{ dy} & 378.09\text{ dy} \\
+\text{Uranus} & 30688 \text{ dy} & 369.64\text{ dy} & 369.66\text{ dy} \\
+\text{Neptune} & 60195 \text{ dy} & 367.47\text{ dy} & 367.49\text{ dy} \\\hline
 \end{array}
 ```
 You can see that the longer the sidereal period is for a planet compared to the Earth's, the closer the synodic period for that planet is to the Earth year. This makes sense because if a planet has a very long orbital period, it is effectively stationary, and then the only factor affecting its elongation is the Earth's orbit.\
 Examples of very far out bodies:
 ```math
-\begin{array}{ccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} \\ \hline
-\text{Quaoar} & 105\:495  \text{ dy} & 366.51\text{ dy}  \\
-\text{500 AU Planet} & 4\:083\:507  \text{ dy} & 365.27\text{ dy}  \\\hline
+\begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} & \text{True Value}\\ \hline
+\text{Quaoar} & 105\:495  \text{ dy} & 366.51\text{ dy}  & ?\text{ dy}\\
+\text{500 AU Planet} & 4\:083\:507  \text{ dy} & 365.27\text{ dy}  & ?\text{ dy}\\\hline
 \end{array}
 ```
 
