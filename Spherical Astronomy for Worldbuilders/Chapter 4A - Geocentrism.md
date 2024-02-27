@@ -241,7 +241,7 @@ Doing this for all the planets:
 \begin{array}{cccc}\hline \text{Name} & \text{Sidereal Period} & \text{Synodic Period} & \text{True Value}\\ \hline
 \text{Mercury} & 87.969 \text{ dy} & 115.88\text{ dy} & 115.88\text{ dy}\\
 \text{Venus} & 224.70 \text{ dy} & 583.96\text{ dy} & 583.92\text{ dy} \\
-\text{Earth} & 365.24 \text{ dy} & - & -} \\
+\text{Earth} & 365.24 \text{ dy} & - & - \\
 \text{Moon} & 27.321 \text{ dy} & 29.530\text{ dy} & 29.531\text{ dy} \\ 
 \text{Mars} & 686.98 \text{ dy} & 779.86\text{ dy} & 779.94\text{ dy} \\
 \text{Jupiter} & 4332.6 \text{ dy} & 398.86\text{ dy} & 398.88\text{ dy} \\
