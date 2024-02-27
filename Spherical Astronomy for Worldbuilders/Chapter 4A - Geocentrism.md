@@ -15,7 +15,7 @@ Because $AO$ makes a right angle with $AC$, the radius. Thus,
 ```math
 AOA' = 2\arcsin\left(\frac{r}{OC}\right)\tag{4.2}
 ```
-If the object in question is a disk, then $\arctan()$ instead of $\arcsin()$ should be used.
+If the object in question is a disk perpendicular to the viewer and not a sphere, then $\arctan()$ instead of $\arcsin()$ should be used.
 
 ### Phase
 
