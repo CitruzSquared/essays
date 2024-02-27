@@ -403,9 +403,9 @@ EQE' &= 360\degree - 67\degree\:32' - 2\cdot138\degree\:8'\\
 Doing this for all the planets yields:
 ```math
 \begin{array}{ccc}\hline \text{Name} & \text{Equations} & \text{True Value} \\ \hline
-\text{Mercury} & 13\degree\:49' & \approx9\degree\sim16\degree\\
-\text{Venus} & 16\degree\:12' & \approx15\degree\sim18\degree\\
-\text{Mars} & 15\degree\:55' & \approx10\degree\sim20\degree\\
+\text{Mercury} & 13\degree\:49' & \approx9\degree\text{ to }16\degree\\
+\text{Venus} & 16\degree\:12' & \approx15\degree\text{ to }18\degree\\
+\text{Mars} & 15\degree\:55' & \approx10\degree\text{ to }20\degree\\
 \text{Jupiter} & 9\degree\:57' & \approx10\degree\\
 \text{Saturn} & 6\degree\:46' & \approx7\degree\\
 \text{Uranus} & 4\degree\:04' & \approx4\degree\\
