@@ -163,3 +163,63 @@ By equation $4.2$ (remembering to use $\arctan()$ for the rings since they are d
 \text{Outer Ring Vert. } &= 2\arctan\left(\frac{21\:747}{1\:540\:141\:300}\right) = 5.82''
 \end{align}
 ```
+
+#### Shadow of Saturn on its Rings
+Now would be a great time to familiarize oneself with [vector projection](https://en.wikipedia.org/wiki/Vector_projection). 
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e98ab018-21b8-4ab8-b807-e05c880c39bb" width="350"/> Let's approximate the shadow of Saturn on its rings as a straight line shadow in the direction of a vector $\textbf{a}$ like the diagram. Because $\textbf{a}$ is in the same direction as Saturn is from the Sun ($\textbf{v}_d$) but in the plane of the rings (Saturn's equator), its the projection of $\textbf{v}_d$ onto Saturn's equator, and since Saturn's equator is perpendicular to the North pole vector $\textbf{n}$, $\textbf{a}$ is the "rejection" of $\textbf{v}_d$ from $\textbf{n}$.
+
+The rejection can be calculated as follows:
+```math
+\textbf{a} = \textbf{v}_d - \text{proj}_{\textbf{n}}\textbf{v}_d
+```
+Where $\text{proj}_{\textbf{n}}\textbf{v}_d$ is the projection of $\textbf{v}_d$ onto $\textbf{n}$:
+```math
+\text{proj}_{\textbf{n}}\textbf{v}_d = (\textbf{n}\cdot\textbf{v}_d)\textbf{n}
+```
+Carrying out the math,
+```math
+\begin{align}
+\text{proj}_{\textbf{n}}\textbf{v}_d = \left(
+\begin{bmatrix}
+0.08548148\\
+0.07323415\\
+0.99364464
+\end{bmatrix}\cdot
+\begin{bmatrix}
+0.92401427\\
+-0.33772384\\
+-0.17927700
+\end{bmatrix}
+\right)
+\begin{bmatrix}
+0.08548148\\
+0.07323415\\
+0.99364464
+\end{bmatrix}
+=
+\begin{bmatrix}
+-0.01058983\\
+-0.00907257\\
+-0.12309711
+\end{bmatrix}\\
+\\ \therefore
+\textbf{a} =
+\begin{bmatrix}
+0.92401427\\
+-0.33772384\\
+-0.17927700
+\end{bmatrix} -
+\begin{bmatrix}
+-0.01058983\\
+-0.00907257\\
+-0.12309711
+\end{bmatrix}
+=
+\begin{bmatrix}
+0.93460409\\
+-0.32865127\\
+-0.05617989
+\end{bmatrix}
+\end{align}
+```
