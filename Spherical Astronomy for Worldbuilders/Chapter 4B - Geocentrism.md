@@ -284,17 +284,7 @@ An example of a very far out body:
 \text{Quaoar} & 163 \text{ dy} & \approx163\text{ dy} & 45\% \\ \hline
 \end{array}
 ```
-This formula works so well because all these bodies have orbital eccentricities very close to $0$.
-
-<p align="center">
-  Graph of some of the properties of $P$ <br/>
-  <img width="650" src="https://github.com/CitruzSquared/essays/assets/23460281/e03ac3c8-db56-4636-a452-08534e35ab2f"> <br/>
-  Red : Synodic Orbital Period (Units: $T_E$) <br/>
-  Green: Retrograde Time (Units: $0.1$ $T_E$) <br/>
-  Cyan: % Retrograde Time (Units: $10$%) <br/>
-  $x$-axis : Orbital Radius Ratio $r$ ($b/a$)
-</p>
-
+This formula works so well because all these bodies have orbital eccentricities very close to $0$.\
 $\blacksquare$
 
 On Mercury, near perihelion, the orbital speed exceeds the rotational speed, leading to an apparent retrograde motion of the Sun: the Sun appears to go backwards for a period of time, and thus some places on Mercury experience a double sunrise or double sunset.
