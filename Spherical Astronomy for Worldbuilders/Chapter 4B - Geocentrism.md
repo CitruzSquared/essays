@@ -287,6 +287,7 @@ An example of a very far out body:
 This formula works so well because all these bodies have orbital eccentricities very close to $0$.
 
 <p align="center">
+  Graph of some of the properties of $P$ <br/>
   <img width="650" src="https://github.com/CitruzSquared/essays/assets/23460281/81cffe76-f33e-42fe-b920-c2140b9d5a6e"> <br/>
   Red : Synodic Orbital Period (Units: $T_E$) <br/>
   Green: Retrograde Time (Units: $0.1$ $T_E$) <br/>
