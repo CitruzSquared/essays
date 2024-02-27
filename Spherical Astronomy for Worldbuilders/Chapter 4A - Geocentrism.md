@@ -260,7 +260,7 @@ An example of a very far out body:
 Additionally, the synodic period of the Moon $(29.53 \text{ dy})$, by definition of the synodic period, is the average time it takes for the Moon to go from new Moon to new Moon, or from full Moon to full Moon. This is known as the lunar month, and is the basis of the length of the month in many calendar systems around the world, such as the Islamic, Jewish, and Chinese calendars.\
 $\blacksquare$
 
-Applying the synodic period formula for two far-out planets gives the (very) approximate time between two conjunctions of those two planets.
+Applying the synodic period formula for two far-out planets gives the (very) approximate average time between two conjunctions of those two planets.
 
 ### Solving for Time of Conjunction
 Because the motion of the planets is very complicated, we cannot exactly solve for the time when two bodies are at the same ecliptic longitude. However, we can use numerical methods to get arbitrarily close.
