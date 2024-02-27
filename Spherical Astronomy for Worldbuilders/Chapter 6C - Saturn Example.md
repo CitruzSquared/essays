@@ -40,18 +40,14 @@ In a worldbuilding setting, we would have the vector forms, not the spherical fo
 ```math
 \textbf{p}=
 \begin{bmatrix}
-1\:371\:517\:050\\
--624\:168\:063\\
--318\:418\:649
+1\:371\:517\:050\\-624\:168\:063\\-318\:418\:649
 \end{bmatrix}
 ```
 - Earth to Sun Vector ($\textbf{s}$):
 ```math
 \textbf{s}=
 \begin{bmatrix}
-26\:847\:342\\
--132\:696\:193\\
--57\:526\:188
+26\:847\:342\\-132\:696\:193\\-57\:526\:188
 \end{bmatrix}
 ```
 - Sun to Saturn Vector ($\textbf{v}$):\
@@ -59,32 +55,24 @@ This is given by $\textbf{p} - \textbf{s}$.
 ```math
 \textbf{v}=
 \begin{bmatrix}
-1\:344\:669\:710\\
--491\:471\:870\\
--260\:892\:461
+1\:344\:669\:710\\-491\:471\:870\\-260\:892\:461
 \end{bmatrix}
 ```
 And their normalized forms (Direction vectors)
 ```math
 \textbf{p}_d=
 \begin{bmatrix}
-0.89051378\\
--0.405266753\\
--0.20674639
+0.89051378\\-0.405266753\\-0.20674639
 \end{bmatrix}
 \enspace\enspace
 \textbf{s}_d=
 \begin{bmatrix}
-0.18251119\\
--0.90208337\\
--0.39106938
+0.18251119\\-0.90208337\\-0.39106938
 \end{bmatrix}
 \enspace\enspace
 \textbf{v}_d=
 \begin{bmatrix}
-0.92401427\\
--0.33772384\\
--0.17927700
+0.92401427\\-0.33772384\\-0.17927700
 \end{bmatrix}
 ```
 The Sun - Saturn distance is given by the magnitude of $\textbf{v}$:
@@ -95,9 +83,7 @@ Additionally, the direction vector pointing towards the North pole of Saturn (fr
 ```math
 \textbf{n}=
 \begin{bmatrix}
-0.08548148\\
-0.07323415\\
-0.99364464
+0.08548148\\0.07323415\\0.99364464
 \end{bmatrix}
 ```
 #### 2. Phase
@@ -131,14 +117,10 @@ C'A' = CA\cos(NCQ)
 $\cos(NCQ)$ is given by the dot product of the two direction vectors $\textbf{n}$ and $-\textbf{p}_d$:
 ```math
 \begin{bmatrix}
-0.08548148\\
-0.07323415\\
-0.99364464
+0.08548148\\0.07323415\\0.99364464
 \end{bmatrix}\cdot
 \begin{bmatrix}
--0.89051378\\
-0.405266753\\
-0.20674639
+-0.89051378\\0.405266753\\0.20674639
 \end{bmatrix}
 =0.158989
 ```
@@ -182,44 +164,30 @@ Carrying out the math,
 \begin{align}
 \text{proj}_{\textbf{n}}\textbf{v}_d = \left(
 \begin{bmatrix}
-0.08548148\\
-0.07323415\\
-0.99364464
+0.08548148\\0.07323415\\0.99364464
 \end{bmatrix}\cdot
 \begin{bmatrix}
-0.92401427\\
--0.33772384\\
--0.17927700
+0.92401427\\-0.33772384\\-0.17927700
 \end{bmatrix}
 \right)
 \begin{bmatrix}
-0.08548148\\
-0.07323415\\
-0.99364464
+0.08548148\\0.07323415\\0.99364464
 \end{bmatrix}
 =
 \begin{bmatrix}
--0.01058983\\
--0.00907257\\
--0.12309711
+-0.01058983\\-0.00907257\\-0.12309711
 \end{bmatrix}\\
 \\ \therefore
 \textbf{a} =
 \begin{bmatrix}
-0.92401427\\
--0.33772384\\
--0.17927700
+0.92401427\\-0.33772384\\-0.17927700
 \end{bmatrix} -
 \begin{bmatrix}
--0.01058983\\
--0.00907257\\
--0.12309711
+-0.01058983\\-0.00907257\\-0.12309711
 \end{bmatrix}
 =
 \begin{bmatrix}
-0.93460409\\
--0.32865127\\
--0.05617989
+0.93460409\\-0.32865127\\-0.05617989
 \end{bmatrix}
 \end{align}
 ```
