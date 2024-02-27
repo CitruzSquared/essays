@@ -82,7 +82,4 @@ And then finally the phase is given by equation $4.6$:
 ```
 Which makes sense as outer planets tend to always be near full phase.
 
-#### 4. Elongation
-We can see that the right ascension of Saturn is greater than the right ascension of the Sun, and therefore the ecliptic longitude would probably also be greater. Therefore the elongation would probably be positive and thus Saturn would be an evening star with its western face illuminated. We do not need to calculate the specific elongation.
-
-#### 5. The Rings
+#### 4. The Rings
