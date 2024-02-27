@@ -33,8 +33,8 @@
      * Equations $4.1$ to $4.9$
      * Examples $4.1$ to $4.4$
    - Part B
-     * Equations $4.10$ to $4.22$
-     * Examples $4.5$ to $4.7$
+     * Equations $4.10$ to $4.26$
+     * Examples $4.5$ to $4.8$
 5. Time
    - Equations $5.1$ to $5.4$
    - Examples $5.1$ to $5.3$
