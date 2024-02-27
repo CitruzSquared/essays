@@ -290,7 +290,7 @@ $\blacksquare$
 
 <br/>
 
-Now we know how long a planet is in retrograde for, but how *far* does the planet go back by? This is called the angled "recovered" during retrograde.
+Now we know how long a planet is in retrograde for, but how *far* does the planet go back by? This is called the angle "recovered" during retrograde.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/4604b40a-1d6d-4fa7-bad0-4698e825ff1e" width="250"/> In this diagram, the Sun is at point $S$, and $E$ and $P$ are the positions of the Earth and the planet at the moment $P$ starts going into retrograde. $E'$ and $P'$ are the positions of the Earth and the planet at the moment $P$ comes out of retrograde. Thus the angles $PSE$ and $P'SE'$ are both the $\alpha$ that we have calculated before. $P''$ is located where the planet would be if its geocentric location did not change (i.e. the planet never went into retrograde), that is: $EP$ and $E'P''$ are parallel. (Note that the angle $SE'P''$ is not $180\degree$.) The distances $SE$ and $SP$ (or $SE'$ and $SP'$ since we are assuming circular orbits), and the Earth-planet distance $EP$ are denoted by $a$, $b$, and $\rho$ respectively just like before. We are interested in how far the planet has gone backwards in its apparent retrograde motion, that is, we are interested in the angle $P''EP'$. 
 
