@@ -191,4 +191,11 @@ Carrying out the math,
 \end{bmatrix}
 \end{align}
 ```
+Which, when normalized becomes:
+```math
+a=
+\begin{bmatrix}
+0.94185956\\-0.33120264\\-0.05661602
+\end{bmatrix}
+```
 So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
