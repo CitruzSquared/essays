@@ -118,15 +118,15 @@ Therefore, by equation $4.6$:
 This makes sense as planets in the far reaches of the Solar System tend to always be at full phase.
 #### The Rings
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/768cf34c-71bc-4248-8227-71632f098d61" width="350"/> In this diagram, the center of Saturn is $C$, and the rings span from $A$ to $B$. $\textbf{n}$ is the vector to the north pole, perpendicular to the plane of the rings (the equator) and the Earth is in the direction $-\textbf{p}$ (because the Earth to Saturn vector is $\textbf{p}$, the Saturn to Earth vector must be $-\textbf{p}$).
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/9fb1a5ab-ba66-4f31-aa40-a117b2f0cbb3" width="350"/> In this diagram, the center of Saturn is $C$, and the rings span from $A$ to $B$. $\textbf{n}$ is the vector to the north pole, perpendicular to the plane of the rings (the equator) and the Earth is in the direction $-\textbf{p}$ (because the Earth to Saturn vector is $\textbf{p}$, the Saturn to Earth vector must be $-\textbf{p}$).
 
 From the view of the Earth, the rings look like they span the distance $A'B'$, which is the projection of $AB$ perpendicular to $\textbf{p}_d$. Thus the radii of the disks appear to be:
 ```math
-C'B' = CB\sin(QCA)
+C'A' = CA\sin(QCA)
 ```
 but since $QCA = 90\degree - NCQ$:
 ```math
-C'B' = CB\cos(NCQ)
+C'A' = CA\cos(NCQ)
 ```
 $\cos(NCQ)$ is given by the dot product of the two direction vectors $\textbf{n}$ and $-\textbf{p}_d$:
 ```math
