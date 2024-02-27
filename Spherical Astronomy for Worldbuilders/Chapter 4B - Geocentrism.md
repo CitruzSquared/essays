@@ -277,7 +277,7 @@ Doing this for all the planets yields:
 \text{Neptune} & 158 \text{ dy} & 158\text{ dy} & 43\% \\ \hline
 \end{array}
 ```
-As the planet gets further and further away from the Sun, the time it spends in apparent retrograde motion approaches $T_1/2$ (percentage of time spent in retrograde approaches $50$%), which is $182.6\text{ dy}$ for the Earth.\
+As the planet gets further and further away from the Sun, the time it spends in apparent retrograde motion approaches $T_1/2$ (percentage of time spent in retrograde approaches $50$% as the synodic period approaches $T_1$), which is $182.6\text{ dy}$ for the Earth.\
 An example of a very far out body:
 ```math
 \begin{array}{cccc}\hline \text{Name} & \text{Equation } 4.22 & \text{True Value} & \text{\% Retro. Time} \\ \hline
