@@ -288,7 +288,9 @@ This formula works so well because all these bodies have orbital eccentricities 
 
 <p align="center">
   <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/81cffe76-f33e-42fe-b920-c2140b9d5a6e"> <br/>
-  Graph of Synodic Orbital Period (red), Retrograde Time ($\times10$, green), % Retro. Time ($\div10$, cyan). <br/>
+  Red : Synodic Orbital Period <br/>
+  Green: Retrograde Time $\times10$ <br/>
+  Cyan: % Retro. Time $\div10$ <br/>
   $x$-axis : Distance from the Sun in units of AU ($a$), $y$-axis : Time in units of $T_E$.
 </p>
 
