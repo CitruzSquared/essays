@@ -402,22 +402,22 @@ EQE' &= 360\degree - 67\degree\:32' - 2\cdot138\degree\:8'\\
 ```
 Doing this for all the planets yields:
 ```math
-\begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
-\text{Mercury} & 13\degree\:49'\\
-\text{Venus} & 16\degree\:12'\\
-\text{Mars} & 15\degree\:55'\\
-\text{Jupiter} & 9\degree\:57'\\
-\text{Saturn} & 6\degree\:46'\\
-\text{Uranus} & 4\degree\:04'\\
-\text{Neptune} & 2\degree\:48'\\ \hline
+\begin{array}{ccc}\hline \text{Name} & \text{Equations} & \text{True Value} \\ \hline
+\text{Mercury} & 13\degree\:49' & \approx9\degree\sim16\degree\\
+\text{Venus} & 16\degree\:12' & \approx15\degree\sim18\degree\\
+\text{Mars} & 15\degree\:55' & \approx10\degree\sim20\degree\\
+\text{Jupiter} & 9\degree\:57' & \approx10\degree\\
+\text{Saturn} & 6\degree\:46' & \approx7\degree\\
+\text{Uranus} & 4\degree\:04' & \approx4\degree\\
+\text{Neptune} & 2\degree\:48' & \approx3\degree\\ \hline
 \end{array}
 ```
 As we can see, as the planet gets further and further away from the Sun, the average recovered angle during retrogradation approaches $0\degree$.\
 Examples of very far out bodies:
 ```math
-\begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
-\text{Quaoar} & 2\degree\:02'\\
-\text{500 AU Planet} & 0\degree\:13'\\ \hline
+\begin{array}{ccc}\hline \text{Name} & \text{Equations} & \text{True Value} \\ \hline
+\text{Quaoar} & 2\degree\:02' & ?\degree\\
+\text{500 AU Planet} & 0\degree\:13' & ?\degree\\ \hline
 \end{array}
 ```
 $\blacksquare$
