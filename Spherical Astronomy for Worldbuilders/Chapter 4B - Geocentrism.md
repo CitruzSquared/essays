@@ -403,7 +403,7 @@ As we can see, as the planet gets further and further away from the Sun, the ave
 An example of a very far out body:
 ```math
 \begin{array}{cc}\hline \text{Name} & \text{Avg. Recovered Angle} \\ \hline
-\text{Quaoar} & 2\degree\:2'\\ \hline
+\text{Quaoar} & 2\degree\:02'\\ \hline
 \end{array}
 ```
 $\blacksquare$
