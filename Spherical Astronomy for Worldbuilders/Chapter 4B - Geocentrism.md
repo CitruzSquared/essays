@@ -396,7 +396,7 @@ Doing this for all the planets yields:
 \text{Jupiter} & 9\degree\:57'\\
 \text{Saturn} & 6\degree\:46'\\
 \text{Uranus} & 4\degree\:04'\\
-\text{Neptune} & 4\degree\:48'\\ \hline
+\text{Neptune} & 2\degree\:48'\\ \hline
 \end{array}
 ```
 As we can see, as the planet gets further and further away from the Sun, the average recovered angle during retrogradation approaches $0\degree$.\
