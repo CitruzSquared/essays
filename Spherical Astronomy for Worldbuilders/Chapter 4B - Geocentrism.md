@@ -345,7 +345,7 @@ SEP &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{19.19}\cdot 1\right)\\
 Also, by equation $4.24$:
 ```math
 \begin{align}
-ESE' &= \frac{360\degree}{365.24}\cdot 152\\
+ESE' &= \frac{360\degree}{365.24}\cdot 151.8\\
 &= 149\degree\:36'
 \end{align}
 ```
