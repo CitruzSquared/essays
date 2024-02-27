@@ -313,6 +313,8 @@ And now we finally have all the necessary parts to calculate $PQP'$.
 
 If the planet in question is an inner planet (that is, the planet in question is $E$ and the Earth is $P$), the geometry changes a bit, all the formulas work out but $E$ and $P$ must be switched.
 
+Note that as with equation $4.22$, these formulae are not exact as they assume circular orbits; the angle recovered is different every retrograde cycle.
+
 #### Example 4.8
 <div align="center">
 <table>
