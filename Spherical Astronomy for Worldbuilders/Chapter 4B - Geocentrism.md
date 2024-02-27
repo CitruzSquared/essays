@@ -314,7 +314,7 @@ And now we finally have all the necessary parts to calculate $PQP'$.
 If the planet in question is an inner planet (that is, the planet in question is $E$ and the Earth is $P$), the geometry changes a bit, all the formulas work out but $E$ and $P$ must be switched:
 ```math
 \begin{align}
-EQE' &= 360\degree - PSP' - 2SEP \tag{4.27}\\
+EQE' &= 360\degree - PSP' - 2SPE \tag{4.27}\\
 PSP' &= \frac{360\degree}{T_P}\cdot T_{\text{retro}}\\
 &= \frac{360\degree}{T_E\sqrt{r^3}}\cdot T_{\text{retro}}\tag{4.28}\\
 SPE &= \arcsin\left(\frac{\sin(\alpha)}{\rho}\cdot a\right)\tag{4.29}\\
