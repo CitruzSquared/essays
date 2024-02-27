@@ -293,12 +293,12 @@ Sometimes, a conjunction happens between two planets just before one (or both) o
 An example is the Jupiter - Saturn triple conjunction of $1980$ ~ $1981$:
 ```math
 \begin{align}
-\text{1st Jupiter - Saturn Conjunction : } & \text{December 31, } 1980\\
+\text{1st Conjunction : } & \text{December 31, } 1980\\
 \text{Saturn Retrograde Begins : } & \text{January 18, } 1981 \\
 \text{Jupiter Retrograde Begins : } & \text{January 24, } 1981 \\
-\text{2nd Jupiter - Saturn Conjunction : } & \text{March 4, } 1981	\\
+\text{2nd Conjunction : } & \text{March 4, } 1981	\\
 \text{Jupiter Retrograde Ends : } & \text{May 27, } 1981 \\
 \text{Saturn Retrograde Ends : } & \text{June 5, } 1981 \\
-\text{3rd Jupiter - Saturn Conjunction : } & \text{July 24, } 1981 \\ 
+\text{3rd Conjunction : } & \text{July 24, } 1981 \\ 
 \end{align}
 ```
