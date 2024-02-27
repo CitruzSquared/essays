@@ -311,7 +311,7 @@ $\rho$ can be calculated with the law of cosines:
 ```
 And now we finally have all the necessary parts to calculate $PQP'$.
 
-If the planet in question is an inner planet (that is, the planet in question is $E$ and the Earth is $P$), the geometry changes a bit, all the formulas work out but $E$ and $P$ must be switched.
+If the planet in question is an inner planet (that is, the planet in question is $E$ and the Earth is $P$), the geometry changes a bit, all the formulas work out but $E$ and $P$ must be switched: $E$ is on the outside and $P$ is on the inside so the angles that must be calculated are $PSP'$, $SPE$, and $EQE'$.
 
 Note that as with equation $4.22$, these formulae are not exact as they assume circular orbits; the angle recovered is different every retrograde cycle.
 
@@ -371,21 +371,21 @@ Thus, by equation $4.26$:
 Then, by equation $4.25$ (Venus is an inner planet, so we switch $E$ and $P$ and use $a = 1\text{ AU}$ instead of $b$ in the formula):
 ```math
 \begin{align}
-SEP &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{0.33708}\cdot 1\right)\\
+SPE &= \arcsin\left(\frac{\sin(12\degree\:59'\:48'')}{0.33708}\cdot 1\right)\\
 &= 138\degree\:9'
 \end{align}
 ```
 Also, by equation $4.24$ (remembering to use Venus's period $= T_E\sqrt{(b/a)^3}$ instead of $T_E$ because Venus is an inner planet):
 ```math
 \begin{align}
-ESE' &= \frac{360\degree}{365.24\sqrt{(0.7233/1)^3}}\cdot 42.2\\
+PSP' &= \frac{360\degree}{365.24\sqrt{(0.7233/1)^3}}\cdot 42.2\\
 &= 67\degree\:32'
 \end{align}
 ```
 Thus, by equation $4.23$:
 ```math
 \begin{align}
-PQP' &= 360\degree - 67\degree\:32' - 2\cdot138\degree\:8'\\
+EQE' &= 360\degree - 67\degree\:32' - 2\cdot138\degree\:8'\\
 &= 16\degree\:12'
 \end{align}
 ```
