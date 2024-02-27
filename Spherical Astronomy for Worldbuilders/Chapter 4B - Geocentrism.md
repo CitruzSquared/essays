@@ -284,7 +284,7 @@ An example of a very far out body:
 \text{Quaoar} & 163 \text{ dy} & \approx163\text{ dy} & 45\% \\ \hline
 \end{array}
 ```
-This formula works so well because all these bodies have orbital eccentricities very close to $0$.\
+This formula works so well because all these bodies have orbital eccentricities very close to $0$.
 
 <p align="center">
   <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/81cffe76-f33e-42fe-b920-c2140b9d5a6e"> <br/>
