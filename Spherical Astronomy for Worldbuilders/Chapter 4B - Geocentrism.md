@@ -331,7 +331,7 @@ Note that as with equation $4.22$, these formulae are not exact as they assume c
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Calculate the average angle recovered during retrograde for every planet in the Solar System, using $T_E = 365.24\text{ dy}$.
+Calculate the angle recovered during retrograde for every planet in the Solar System, using $T_E = 365.24\text{ dy}$.
 <img width="2000" height="0">
 </td>
 </tbody>
