@@ -77,7 +77,7 @@ And then finally the phase is given by equation $4.6$:
 ```math
 \begin{align}
 \text{Phase}\% &= \frac{1 + \cos(4\degree\:35'\:55.69'')}{2} \cdot 100\%\\
-&= 99.84\%
+&= 99.8\%
 \end{align}
 ```
 Which makes sense as outer planets tend to always be near full phase.
