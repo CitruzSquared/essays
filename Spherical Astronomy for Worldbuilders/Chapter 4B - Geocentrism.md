@@ -292,7 +292,7 @@ This formula works so well because all these bodies have orbital eccentricities 
   Red : Synodic Orbital Period (Units: $T_E$) <br/>
   Green: Retrograde Time (Units: $0.1$ $T_E$) <br/>
   Cyan: % Retrograde Time (Units: $10$%) <br/>
-  $x$-axis : Orbital radius in units of AU ($a$).
+  $x$-axis : Orbital radius of $P$ in units of AU ($a$).
 </p>
 
 $\blacksquare$
