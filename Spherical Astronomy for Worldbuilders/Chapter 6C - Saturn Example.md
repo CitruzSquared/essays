@@ -298,7 +298,7 @@ Remembering that the positive $y$-axis lies to the left, (the positive $y$-axis 
   $z$ points in the direction of the Celestial North pole.
 </p>
 
-Using the fact that the equator is perpendicular to the line $NC$, we can draw the rings too (using the angular sizes from before):
+Using the fact that the equator is perpendicular to the line $NC$, we can draw the rings too (using the apparent sizes from before):
 
 <p align="center">
   <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/c8144f54-2f5c-47f0-8a1f-e530a3afb760"> <br/>
