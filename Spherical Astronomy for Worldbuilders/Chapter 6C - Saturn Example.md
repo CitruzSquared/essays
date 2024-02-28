@@ -248,7 +248,7 @@ R\cdot \textbf{p} =\begin{bmatrix}
 1\:540\:141\:300\\0\\0
 \end{bmatrix}
 ```
-And we can see we get an answer solely in the $x$-axis, which is the expected answer. Note that this transformation does not affect the grid rotation (i.e. the grid will still be pointing straight up and down and straight left and right) because we did not rotate about the $x$-axis.
+And we can see we get an answer solely in the $x$-axis, which is the expected answer. Note that this transformation does not affect the coordinate grid's orientation (i.e. the grid will still be pointing straight up and down and straight left and right) because we did not rotate about the $x$-axis.
 
 We can now transform the North pole vector $\textbf{n}$:
 ```math
