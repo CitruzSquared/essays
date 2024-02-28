@@ -313,7 +313,7 @@ We can now also draw the shadow of Saturn on its rings. Drawing a line along the
 </p>
 
 #### 8. Horizontal Coordinates
-Finally, we have to figure out how the planet looked from London at the specified time. The overall features would look the same, but tilted by some amount. We can find out the tilt of the equatorial grid in relation to the horizontal grid in the same way we found the lighting direction in example $6.7$: we can find the direction to the Celestial North pole after transforming to horizontal coordinates.
+We figured out how Saturn looks like in the equatorial grid, but now we have to figure out how the planet looked from London at the specified time. The overall features would look the same, but tilted by some amount. We can find out the tilt of the equatorial grid in relation to the horizontal grid in the same way we found the lighting direction in example $6.7$: we can find the direction to the Celestial North pole after transforming to horizontal coordinates.
 
 First, we need the hour angles of both Saturn and the Celestial North Pole. We have $\Theta$ and $\alpha_\text{Saturn}$ from before. The Celestial pole lies at $\alpha = 0^h$, $\delta = 90\degree$. Thus:
 ```math
