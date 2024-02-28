@@ -146,7 +146,7 @@ By equation $4.2$ (remembering to use $\arctan()$ for the rings since they are d
 \end{align}
 ```
 
-#### 6. Shadow of Saturn on its Rings
+#### 6. The Shadow of Saturn on its Rings
 Now would be a great time to familiarize oneself with [vector projection](https://en.wikipedia.org/wiki/Vector_projection). 
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e98ab018-21b8-4ab8-b807-e05c880c39bb" width="350"/> Let's approximate the shadow of Saturn on its rings as a straight line shadow in the direction of a vector $\textbf{a}$ like the diagram. Because $\textbf{a}$ is in the same direction as Saturn is from the Sun ($\textbf{v}_d$) but in the plane of the rings (Saturn's equator), its the projection of $\textbf{v}_d$ onto Saturn's equator, and since Saturn's equator is perpendicular to the North pole vector $\textbf{n}$, $\textbf{a}$ is the "rejection" of $\textbf{v}_d$ from $\textbf{n}$.
