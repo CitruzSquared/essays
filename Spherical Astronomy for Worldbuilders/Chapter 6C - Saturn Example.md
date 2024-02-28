@@ -86,7 +86,7 @@ Additionally, the direction vector pointing towards the North pole of Saturn (fr
 0.08548148\\0.07323415\\0.99364464
 \end{bmatrix}
 ```
-#### 3. Phase
+#### 3. Phase Percentage
 Let's calculate the phase of Saturn. We have all the distances already so we can go straight to equation $4.5$:
 ```math
 \begin{align}
@@ -200,7 +200,7 @@ Which, when normalized becomes:
 ```
 So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
 
-#### 7. Orientation of Saturn
+#### 7. The Orientation of Saturn
 To determine the plane of Saturn's equator from the Earth's view, let us define new coordinate axes such that the $x$-axis points towards Saturn. To do this:
 1. We first rotate by $22^h$ $22^m$ $07.21^s$ (the right ascension of Saturn) about the $z$-axis.
 ```math
