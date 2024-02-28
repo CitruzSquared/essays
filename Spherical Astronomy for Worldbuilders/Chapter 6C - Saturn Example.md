@@ -332,8 +332,8 @@ A_{NP} &= 0\degree\\
 a_{NP} &= 51\degree
 \end{align}
 ```
-Now we follow example $6.7$.\
-The angle between Saturn and the Celestial North Pole is simply their difference in declinations $90\degree - \delta_P$:
+Now we follow example $6.7$ except we use the Celestial North pole instead of the Sun.\
+The angle between Saturn and the Celestial North pole is simply their difference in declinations $90\degree - \delta_P$:
 ```math
 90\degree - \delta_P = 101\degree\:55'\:54.3''
 ```
