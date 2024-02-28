@@ -260,7 +260,7 @@ a_3 & a_6 & a_9
 \end{bmatrix}
 \end{align}
 ```
-Rotation Matrices:
+Coordinate Frame Rotation Matrices:\
 $R_x$ denotes a rotation about the $x$-axis by $\theta$, similar for $R_y$ and $R_z$.
 ```math
 \textbf{v}_{\text{New Coordinate Frame}} = R\textbf{v}_{\text{Old Coordinate Frame}}
