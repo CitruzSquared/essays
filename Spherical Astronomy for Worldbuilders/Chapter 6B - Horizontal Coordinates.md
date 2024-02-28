@@ -89,7 +89,7 @@ $202\text{ dy}$ after $\text{January 3, }2024$ is $\text{July 23, }2024$. Adding
 The ancient Egyptians thought of this event to have immense significance because it happened just before the beginning of the flooding season of the Nile river (around late Summer) by coincidence. Read more about this [here](https://en.wikipedia.org/wiki/Sopdet).\
 $\blacksquare$
 
-### Lahaina Noon
+### The Subsolar Point
 
 ### Lighting Direction
 Here is another thing we can do with horizontal coordinates: in chapter $4$, we learned how to calculate how much of a planet was visible (the phase) and even which side of the planet was illuminated. Let us now figure out specifically which direction the light was coming from.
