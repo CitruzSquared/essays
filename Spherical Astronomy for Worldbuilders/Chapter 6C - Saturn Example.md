@@ -102,7 +102,7 @@ Therefore, by equation $4.6$:
 \end{align}
 ```
 This makes sense as planets in the far reaches of the Solar System tend to always be at full phase.
-#### The Rings
+#### 4. The Rings
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/9fb1a5ab-ba66-4f31-aa40-a117b2f0cbb3" width="350"/> In this diagram, the center of Saturn is $C$, and the rings span from $A$ to $B$. $\textbf{n}$ is the vector to the north pole, perpendicular to the plane of the rings (the equator) and the Earth is in the direction $-\textbf{p}$ (because the Earth to Saturn vector is $\textbf{p}$, the Saturn to Earth vector must be $-\textbf{p}$).
 
@@ -133,7 +133,7 @@ Thus:
 ```
 Where $O$ and $I$ stand for the outer and inner edge of the rings respectively. Note that these are just the vertical sizes, and the horizontal size is the full $136$ $780\text{ km}$ and $92$ $000\text{ km}$; i.e. the outer edge of the rings looks like an ellipse with height radius $21$ $747\text{ km}$ and width radius $136$ $780\text{ km}$, and the inner edge looks like an ellipse with height radius $14$ $627\text{ km}$ and width radius $92$ $000\text{ km}$.
 
-#### 4. Apparent Diameters
+#### 5. Apparent Diameters
 Let's now calculate the apparent sizes of everything from Earth.\
 By equation $4.2$ (remembering to use $\arctan()$ for the rings since they are disks):
 ```math
@@ -146,7 +146,7 @@ By equation $4.2$ (remembering to use $\arctan()$ for the rings since they are d
 \end{align}
 ```
 
-#### 5. Shadow of Saturn on its Rings
+#### 6. Shadow of Saturn on its Rings
 Now would be a great time to familiarize oneself with [vector projection](https://en.wikipedia.org/wiki/Vector_projection). 
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e98ab018-21b8-4ab8-b807-e05c880c39bb" width="350"/> Let's approximate the shadow of Saturn on its rings as a straight line shadow in the direction of a vector $\textbf{a}$ like the diagram. Because $\textbf{a}$ is in the same direction as Saturn is from the Sun ($\textbf{v}_d$) but in the plane of the rings (Saturn's equator), its the projection of $\textbf{v}_d$ onto Saturn's equator, and since Saturn's equator is perpendicular to the North pole vector $\textbf{n}$, $\textbf{a}$ is the "rejection" of $\textbf{v}_d$ from $\textbf{n}$.
@@ -200,7 +200,7 @@ a=
 ```
 So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
 
-#### 6. Orientation of Saturn
+#### 7. Orientation of Saturn
 To determine the plane of Saturn's equator from the Earth's view, let us define new coordinate axes such that the $x$-axis points towards Saturn. To do this:
 1. We first rotate by $22^h$ $22^m$ $07.21^s$ (the right ascension of Saturn) about the $z$-axis.
 ```math
@@ -320,7 +320,7 @@ We can now also draw the shadow of Saturn on its rings. Drawing a line along the
   The two lines outline the shadow.
 </p>
 
-#### 7. Horizontal Coordinates
+#### 8. Horizontal Coordinates
 Finally, we have to figure out how the planet looked from London at the specified time. The overall features would look the same, but tilted by some amount. We can find out the tilt of the equatorial grid in relation to the horizontal grid in the same way we found the lighting direction in example $6.7$: we can find the direction to the Celestial North pole after transforming to horizontal coordinates.
 
 First, we need the hour angles of both Saturn and the Celestial North Pole. We have $\Theta$ and $\alpha_\text{Saturn}$ from before. The Celestial pole lies at $\alpha = 0^h$, $\delta = 90\degree$. Thus:
