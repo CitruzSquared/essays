@@ -256,7 +256,7 @@ R\cdot\textbf{n} = \begin{bmatrix}
 -0.15898937\\0.10206395\\0.98199049
 \end{bmatrix}
 ```
-We can see that the $x$ coordinate is negative and therefore the north pole vector is pointing towards the Earth.
+We can see that the $x$ coordinate is negative and therefore the North pole vector is pointing towards the Earth.
 
 We can also transform the shadow vector $\textbf{a}$:
 ```math
