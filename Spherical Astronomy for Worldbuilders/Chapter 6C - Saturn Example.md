@@ -272,7 +272,7 @@ R\cdot\textbf{a} = \begin{bmatrix}
 0.9846695\\0.08867982\\0.15020611
 \end{bmatrix}
 ```
-The $x$ coordinate is positive so the shadow vector is pointing away from us (to be expected).
+The $x$ coordinate is positive so the shadow vector is pointing away from the Earth (as expected).
 
 We can project these vectors onto the viewing plane (the $yz$-plane) by simply removing the $x$ component:
 ```math
