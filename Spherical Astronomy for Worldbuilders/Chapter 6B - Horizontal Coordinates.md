@@ -184,3 +184,5 @@ Comparing with [Stellarium](https://stellarium.org/) (a planetarium software):
 </p>
 
 $\blacksquare$
+
+### Lahaina Noon and the Subsolar Point
