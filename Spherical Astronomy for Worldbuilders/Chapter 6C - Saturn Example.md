@@ -218,20 +218,12 @@ R_2 = \begin{bmatrix}
 \sin(-11\degree\:55'\:54.3'') & 0 & \cos(-11\degree\:55'\:54.3'')
 \end{bmatrix}
 ```
-3. The total rotation is given by the matrix product $R_2 R_1$, which when calculated gives:
+3. The total rotation is given by the matrix product $R_2 R_1$, which when fully calculated gives:
 ```math
 R = \begin{bmatrix}
 0.89051378 & -0.40526675 & -0.20674639\\
 0.41421607 & 0.91017858 & 0\\
 0.18817613 & -0.08563768 & 0.97839457
-\end{bmatrix}
-```
-The reverse rotation is given by the transpose $R^T$:
-```math
-R^T = \begin{bmatrix}
-0.89051378 & 0.41421607 & 0.18817613 \\
--0.40526675 & 0.91017858 & -0.08563768\\
--0.20674639 & 0 & 0.97839457
 \end{bmatrix}
 ```
 We can verify the matrix by doing the simple calculation which transforms the vector $\textbf{p}$ into our new coordinate frame:
