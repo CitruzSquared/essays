@@ -35,7 +35,7 @@ The geocentric locations of Saturn and the Sun were:
 Note that these values differ slightly from examples $4.1$ and $6.7$ because we used a different data set. (Why do different data sets differ on the same quantities? I do not know.)
 
 #### 2. Vectors
-In a worldbuilding setting, we would have the vector forms, not the spherical forms. Let's convert the spherical coordinates to vectors by equation $1.1$:
+In a worldbuilding setting, we would have the vector forms, not the spherical forms. Vectors will also be much easier to work with for the purposes of this question. So let's convert the spherical coordinates to vectors by equation $1.1$:
 - Earth to Saturn Vector ($\textbf{p}$):
 ```math
 \textbf{p}=
