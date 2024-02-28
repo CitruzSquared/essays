@@ -200,7 +200,7 @@ a=
 ```
 So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
 
-#### 6. Orientation of Saturn and its General Shape
+#### 6. Orientation of Saturn
 To determine the plane of Saturn's equator from the Earth's view, let us define new coordinate axes such that the $x$-axis points towards Saturn. To do this:
 1. We first rotate by $22^h$ $22^m$ $07.21^s$ (the right ascension of Saturn) about the $z$-axis.
 ```math
