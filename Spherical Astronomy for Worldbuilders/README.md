@@ -260,10 +260,10 @@ a_3 & a_6 & a_9
 \end{bmatrix}
 \end{align}
 ```
-Coordinate Frame Rotation Matrices:\
+Coordinate Transformation Rotation Matrices:\
 $R_x$ denotes a rotation about the $x$-axis by $\theta$, similar for $R_y$ and $R_z$.
 ```math
-\textbf{v}_{\text{New Coordinate Frame}} = R\textbf{v}_{\text{Old Coordinate Frame}}
+\textbf{v}_{\text{New Coordinate Frame}} = R_n R_{n-1}\cdots R_2 R_1\textbf{v}_{\text{Old Coordinate Frame}}
 ```
 ```math
 R_x = 
@@ -287,3 +287,4 @@ R_z =
 0 & 0 & 1
 \end{bmatrix}
 ```
+The inverse transformation is given by the transpose of $R_n R_{n-1}\cdots R_2 R_1$.
