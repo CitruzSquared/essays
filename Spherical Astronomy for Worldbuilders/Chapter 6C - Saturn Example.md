@@ -305,7 +305,7 @@ Using the fact that the equator is perpendicular to the line $NC$, we can draw t
   The line through $C$ that is perpendicular to $NC$ is the axis of the ellipses of the rings. <br/> The rings are seen from above because the North pole faces the Earth.
 </p>
 
-We can now also draw the shadow of Saturn on its rings. Drawing two lines along the vector $\textbf{a}_{yz}$ (just like what we did with $\textbf{n}_yz$) starting at both edges of Saturn's equator:
+We can now also draw the shadow of Saturn on its rings. Drawing two lines along the vector $\textbf{a}_{yz}$ (just like what we did with $\textbf{n}_{yz}$) starting at both edges of Saturn's equator:
 
 <p align="center">
   <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/4c96bad3-9000-4e71-801f-eee5f1a26085"> <br/>
