@@ -284,17 +284,17 @@ The $x$ coordinate is positive so the shadow vector is pointing away from us (to
 
 We can project these vectors onto the viewing plane (the $yz$-plane) by simply removing the $x$ component:
 ```math
-\textbf{n}_p = \begin{bmatrix}
+\textbf{n}_yz = \begin{bmatrix}
 0\\0.10206395\\0.98199049
 \end{bmatrix}
 \enspace\enspace
-\textbf{a}_p = \begin{bmatrix}
+\textbf{a}_yz = \begin{bmatrix}
 0\\0.08867982\\0.15020611
 \end{bmatrix}
 ```
 When "zoomed in" into an object enough, the spherical grid can be approximated by a regular grid. (see [small angle approximation](https://en.wikipedia.org/wiki/Small-angle_approximation)). Therefore we can treat these as planar vectors since we are dealing with angles in the arcseconds. Let's multiply $\textbf{n}'$ by $8.00''$ (the angular radius of Saturn; half of the value we calculated earlier) to see where the North pole lies in our view.
 ```math
-8.00''\textbf{n}_p = \begin{bmatrix}
+8.00''\textbf{n}_yz = \begin{bmatrix}
 0''\\0.81651164''\\7.85592395''
 \end{bmatrix}
 ```
@@ -313,7 +313,7 @@ Using the fact that the equator is perpendicular to the line $NC$, we can draw t
   The line through $C$ that is perpendicular to $NC$ is the axis of the ellipses of the rings. <br/> The rings are seen from above because the North pole faces the Earth.
 </p>
 
-We can now also draw the shadow of Saturn on its rings. Drawing a line along the vector $\textbf{a}_p$ starting at either edge of Saturn's equator:
+We can now also draw the shadow of Saturn on its rings. Drawing a line along the vector $\textbf{a}_yz$ starting at either edge of Saturn's equator:
 
 <p align="center">
   <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/33643fc1-a5ee-41c3-99d4-d729d91b89dc"> <br/>
