@@ -358,17 +358,17 @@ Therefore, by equation $6.8$:
 &= 29\degree\:54'\:1.7''\\
 \end{align}
 ```
-So Saturn is tilted by $29\degree$ $54'$ $1.7''$ from the vertical, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest). Thus:
+So Saturn is tilted by $29\degree$ $54'$ $1.7''$ from the vertical, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest). Thus we tilt the whole image $29\degree$ $54'$ $1.7''$ to the right:
 
 <p align="center">
-  <img width="500" src="https://github.com/CitruzSquared/essays/assets/23460281/4e396ea1-9af5-44f5-b3e1-97b8436ab1b4"> <br/>
+  <img width="500" src="https://github.com/CitruzSquared/essays/assets/23460281/a2e82a9a-d5e2-42fb-b7ec-be4f119e9d33"> <br/>
   Saturn from London, UK on $\text{January 1, } 2024$ at $19:00$.
 </p>
 
 Comparing with [Stellarium](https://stellarium.org/):
 
 <p align="center">
-  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/10263da7-5aa5-4487-999a-faf9131aea3e"> 
-  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/9b9931f1-5534-44ec-b861-bc93e76aa766"> <br/>
+  <img width="375" src="https://github.com/CitruzSquared/essays/assets/23460281/10263da7-5aa5-4487-999a-faf9131aea3e"> 
+  <img width="375" src="https://github.com/CitruzSquared/essays/assets/23460281/9b9931f1-5534-44ec-b861-bc93e76aa766"> <br/>
   Stellarium image on the left, Stellarium image overlaid with our prediction on the right.
 </p>
