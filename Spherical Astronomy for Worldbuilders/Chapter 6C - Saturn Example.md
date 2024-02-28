@@ -292,7 +292,7 @@ We can project these vectors onto the viewing plane (the $yz$-plane) by simply r
 0\\0.08867982\\0.15020611
 \end{bmatrix}
 ```
-When "zoomed in" into an object enough, the spherical grid can be approximated by a regular grid. (see [small angle approximation](https://en.wikipedia.org/wiki/Small-angle_approximation)). Therefore we can treat these as planar vectors since we are dealing with angles in the arcseconds. Let's multiply $\textbf{n}'$ by $8.00''$ (the angular radius of Saturn; half of the value we calculated earlier) to see where the North pole lies in our view.
+When "zoomed in" into an object enough, the spherical grid can be approximated by a regular grid. (See [small angle approximation](https://en.wikipedia.org/wiki/Small-angle_approximation)). Therefore we can treat these as planar vectors since we are dealing with angles in the arcseconds. Let's multiply $\textbf{n}_{yz}$ by $8.00''$ (the angular radius of Saturn; half of the value we calculated earlier) to see where the North pole lies in our view.
 ```math
 8.00''\textbf{n}_{yz} = \begin{bmatrix}
 0''\\0.81651164''\\7.85592395''
