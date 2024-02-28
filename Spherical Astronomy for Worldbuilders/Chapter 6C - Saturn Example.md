@@ -359,7 +359,7 @@ Therefore, by equation $6.8$:
 &= 29\degree\:54'\:1.7''\\
 \end{align}
 ```
-So Saturn is tilted by $29\degree$ $54'$ $1.7''$ from the vertical, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest). Thus we tilt the whole image $29\degree$ $54'$ $1.7''$ to the right and finally obtain:
+So the equatorial grid is tilted by $29\degree$ $54'$ $1.7''$ from the horizontal grid at the location of Saturn. Thus, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest), we tilt the whole image $29\degree$ $54'$ $1.7''$ to the right and finally obtain:
 
 <p align="center">
   <img width="500" src="https://github.com/CitruzSquared/essays/assets/23460281/a2e82a9a-d5e2-42fb-b7ec-be4f119e9d33"> <br/>
