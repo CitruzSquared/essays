@@ -263,27 +263,27 @@ a_3 & a_6 & a_9
 Rotation Matrices:
 $R_x$ denotes a rotation about the $x$-axis by $\theta$, similar for $R_y$ and $R_z$.
 ```math
-\textbf{v}_{\text{rotated}} = R\textbf{v}_{\text{original}}
+\textbf{v}_{\text{New Coordinate Frame}} = R\textbf{v}_{\text{Old Coordinate Frame}}
 ```
 ```math
 R_x = 
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos(\theta) & -\sin(\theta) \\
-0 & \sin(\theta) & \cos(\theta)
+0 & \cos(\theta) & \sin(\theta) \\
+0 & -\sin(\theta) & \cos(\theta)
 \end{bmatrix},
 \enspace\enspace
 R_y = 
 \begin{bmatrix}
-\cos(\theta) & 0 & \sin(\theta)\\
+\cos(\theta) & 0 & -\sin(\theta)\\
 0 & 1 & 0\\
--\sin(\theta) & 0 & \cos(\theta)
+\sin(\theta) & 0 & \cos(\theta)
 \end{bmatrix},
 \enspace\enspace
 R_z = 
 \begin{bmatrix}
-\cos(\theta) & -\sin(\theta) & 0 \\
-\sin(\theta) & \cos(\theta) & 0 \\
+\cos(\theta) & \sin(\theta) & 0 \\
+-\sin(\theta) & \cos(\theta) & 0 \\
 0 & 0 & 1
 \end{bmatrix}
 ```
