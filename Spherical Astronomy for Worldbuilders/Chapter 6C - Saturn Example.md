@@ -6,7 +6,7 @@ To figure out what Saturn looked like from the Earth, we must first know how Sat
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/31cbc860-fe82-4627-9ba9-2bc59c92890b" width="350"/> First, and foremost, Saturn can be well modeled as a giant sphere, $58$ $232 \text{ km}$ in radius. 
 
-In addition to that though, the planet has some gorgeous rings. The rings are made up of many parts, but we can generally say that the brightest parts form a disk on the plane of Saturn's equator, spanning from $74$ $500\text{ km}$ to $136$ $780\text{ km}$ from the planet's center (rings C, B, and A).
+In addition to that though, the planet has some gorgeous rings. The rings are made up of many parts, but we can generally say that the brightest parts form a disk on the plane of Saturn's equator, spanning from $92$ $000\text{ km}$ to $136$ $780\text{ km}$ from the planet's center (rings B and A).
 
 Saturn's north pole points towards $\alpha = 2^h$ $42^m$ $21^s$, $\delta = 83\degree$ $32'$ $13''$ (*Saturn-centric* Earth equatorial coordinates).
 
@@ -128,10 +128,10 @@ Thus:
 ```math
 \begin{align}
 \text{Ring Size}_O &= 136\:780\cdot0.158989 = 21\:747\text{ km}\\
-\text{Ring Size}_I &= 74\:500\cdot0.158989 = 11\:844\text{ km}
+\text{Ring Size}_I &= 92\:000\cdot0.158989 = 14\:627\text{ km}
 \end{align}
 ```
-Where $O$ and $I$ stand for the outer and inner edge of the rings respectively. Note that these are just the vertical sizes, and the horizontal size is the full $136$ $780\text{ km}$ and $74$ $500\text{ km}$; i.e. the outer edge of the rings looks like an ellipse with height radius $21$ $747\text{ km}$ and width radius $136$ $780\text{ km}$, and the inner edge looks like an ellipse with height radius $11$ $844\text{ km}$ and width radius $74$ $500\text{ km}$.
+Where $O$ and $I$ stand for the outer and inner edge of the rings respectively. Note that these are just the vertical sizes, and the horizontal size is the full $136$ $780\text{ km}$ and $92$ $000\text{ km}$; i.e. the outer edge of the rings looks like an ellipse with height radius $21$ $747\text{ km}$ and width radius $136$ $780\text{ km}$, and the inner edge looks like an ellipse with height radius $14$ $627\text{ km}$ and width radius $92$ $000\text{ km}$.
 
 #### Apparent Diameters
 Let's now calculate the apparent sizes of everything from Earth.\
@@ -139,8 +139,8 @@ By equation $4.2$ (remembering to use $\arctan()$ for the rings since they are d
 ```math
 \begin{align}
 \text{Saturn } &= 2\arcsin\left(\frac{58\:232}{1\:540\:141\:300}\right) = 16.00''\\
-\text{Inner Ring Horiz. } &= 2\arctan\left(\frac{74\:500}{1\:540\:141\:300}\right) = 19.95''\\
-\text{Inner Ring Vert. } &= 2\arctan\left(\frac{11\:844}{1\:540\:141\:300}\right) = 3.17''\\
+\text{Inner Ring Horiz. } &= 2\arctan\left(\frac{92\:000}{1\:540\:141\:300}\right) = 24.64''\\
+\text{Inner Ring Vert. } &= 2\arctan\left(\frac{14\:627}{1\:540\:141\:300}\right) = 3.92''\\
 \text{Outer Ring Horiz. } &= 2\arctan\left(\frac{136\:780}{1\:540\:141\:300}\right) = 36.64''\\
 \text{Outer Ring Vert. } &= 2\arctan\left(\frac{21\:747}{1\:540\:141\:300}\right) = 5.82''
 \end{align}
@@ -200,7 +200,7 @@ a=
 ```
 So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
 
-#### Saturn's North Pole and Equator
+#### Saturn's Orientation
 To determine the plane of Saturn's equator from the Earth's view, let us define new coordinate axes such that the $x$-axis points towards Saturn. To do this:
 1. We first rotate by $22^h$ $22^m$ $07.21^s$ (the right ascension of Saturn) about the $z$-axis.
 ```math
@@ -234,5 +234,87 @@ R^T = \begin{bmatrix}
 -0.20674639 & 0 & 0.97839457
 \end{bmatrix}
 ```
+We can verify the matrix by doing the simple calculation which transforms the vector $\textbf{p}$ into our new coordinate frame:
+```math
+R\cdot \textbf{p} =\begin{bmatrix}
+0.89051378 & -0.40526675 & -0.20674639\\
+0.41421607 & 0.91017858 & 0\\
+0.18817613 & -0.08563768 & 0.97839457
+\end{bmatrix}
+\begin{bmatrix}
+1\:371\:517\:050\\-624\:168\:063\\-318\:418\:649
+\end{bmatrix} =
+\begin{bmatrix}
+1\:540\:141\:300\\0\\0
+\end{bmatrix}
+```
+And we can see we get an answer solely in the $x$-axis, which is the expected answer. Note that this transformation does not affect the grid rotation (i.e. the grid will still be pointing straight up and down and straight left and right) because we did not rotate about the $x$-axis.
 
-When "zoomed in" into an object enough, the spherical grid can be approximated by a regular grid. (see [small angle approximation](https://en.wikipedia.org/wiki/Small-angle_approximation)). 
+We can now transform the North pole vector $\textbf{n}$:
+```math
+R\cdot\textbf{n} = \begin{bmatrix}
+0.89051378 & -0.40526675 & -0.20674639\\
+0.41421607 & 0.91017858 & 0\\
+0.18817613 & -0.08563768 & 0.97839457
+\end{bmatrix}
+\begin{bmatrix}
+0.08548148\\0.07323415\\0.99364464
+\end{bmatrix}=
+\begin{bmatrix}
+-0.15898937\\0.10206395\\0.98199049
+\end{bmatrix}
+```
+We can see that the $x$ coordinate is negative and therefore the north pole vector is pointing towards the Earth.
+
+We can also transform the shadow vector $\textbf{a}$:
+```math
+R\cdot\textbf{a} = \begin{bmatrix}
+0.89051378 & -0.40526675 & -0.20674639\\
+0.41421607 & 0.91017858 & 0\\
+0.18817613 & -0.08563768 & 0.97839457
+\end{bmatrix}
+\begin{bmatrix}
+0.94185956\\-0.33120264\\-0.05661602
+\end{bmatrix}=
+\begin{bmatrix}
+0.9846695\\0.08867982\\0.15020611
+\end{bmatrix}
+```
+The $x$ coordinate is positive so the shadow vector is pointing away from us (to be expected).
+
+We can project these vectors onto the viewing plane (the $yz$-plane) by simply removing the $x$ component:
+```math
+\textbf{n}_p = \begin{bmatrix}
+0\\0.10206395\\0.98199049
+\end{bmatrix}
+\enspace\enspace
+\textbf{a}_p = \begin{bmatrix}
+0\\0.08867982\\0.15020611
+\end{bmatrix}
+```
+When "zoomed in" into an object enough, the spherical grid can be approximated by a regular grid. (see [small angle approximation](https://en.wikipedia.org/wiki/Small-angle_approximation)). Therefore we can treat these as planar vectors since we are dealing with angles in the arcseconds. Let's multiply $\textbf{n}'$ by $8.00''$ (the angular radius of Saturn; half of the value we calculated earlier) to see where the North pole lies in our view.
+```math
+8.00''\textbf{n}_p = \begin{bmatrix}
+0''\\0.81651164''\\7.85592395''
+\end{bmatrix}
+```
+Remembering that the positive $y$-axis lies to the left, (the positive $y$-axis is left of the positive $x$-axis), we can treat this vector as simple coordinates, and thus, We can start drawing out the shape of Saturn:
+
+<p align="center">
+  <img width="200" src="https://github.com/CitruzSquared/essays/assets/23460281/caa11f62-25de-44f3-bceb-971543cd4f09"> <br/>
+  $C$ and $N$ are the center and North pole of Saturn respectively.
+</p>
+
+Using the fact that the equator is perpendicular to the line $NC$, we can draw the rings too (using the angular sizes from before):
+
+<p align="center">
+  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/1b106d84-4a18-4544-aa62-cb2786a434ec"> <br/>
+  The line through $C$ that is perpendicular to $NC$ is the axis of the ellipses of the rings.
+</p>
+
+We can now also draw the shadow of Saturn on its rings. Drawing a line along the vector $\textbf{a}_p$ starting at either edge of Saturn's equator:
+
+<p align="center">
+  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/33643fc1-a5ee-41c3-99d4-d729d91b89dc"> <br/>
+  The two lines outline the shadow.
+</p>
