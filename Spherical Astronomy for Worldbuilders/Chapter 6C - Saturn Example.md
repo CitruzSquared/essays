@@ -274,7 +274,7 @@ R\cdot\textbf{a} = \begin{bmatrix}
 ```
 The $x$ coordinate is positive so the shadow vector is pointing away from the Earth (as expected).
 
-We can project these vectors onto the viewing plane (the $yz$-plane) by simply removing the $x$ component (Saturn is far enough away that an [orthogonal projection](https://en.wikipedia.org/wiki/Orthographic_projection) works):
+We can project these vectors onto the viewing plane (the $yz$-plane) by simply removing the $x$ component (Saturn is far enough away that a simple [orthographic projection](https://en.wikipedia.org/wiki/Orthographic_projection) works):
 ```math
 \textbf{n}_{yz} = \begin{bmatrix}
 0\\0.10206395\\0.98199049
