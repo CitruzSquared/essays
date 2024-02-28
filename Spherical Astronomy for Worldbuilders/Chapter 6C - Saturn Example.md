@@ -193,7 +193,7 @@ Carrying out the math,
 ```
 Which, when normalized becomes:
 ```math
-a=
+\textbf{a}=
 \begin{bmatrix}
 0.94185956\\-0.33120264\\-0.05661602
 \end{bmatrix}
