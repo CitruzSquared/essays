@@ -302,14 +302,14 @@ Remembering that the positive $y$-axis lies to the left, (the positive $y$-axis 
 
 <p align="center">
   <img width="200" src="https://github.com/CitruzSquared/essays/assets/23460281/caa11f62-25de-44f3-bceb-971543cd4f09"> <br/>
-  $C$ and $N$ are the center and North pole of Saturn respectively.
+  $C$ and $N$ are the center and North pole of Saturn respectively. <br/> The phase is not drawn because it is close to $100$%.
 </p>
 
 Using the fact that the equator is perpendicular to the line $NC$, we can draw the rings too (using the angular sizes from before):
 
 <p align="center">
   <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/1b106d84-4a18-4544-aa62-cb2786a434ec"> <br/>
-  The line through $C$ that is perpendicular to $NC$ is the axis of the ellipses of the rings.
+  The line through $C$ that is perpendicular to $NC$ is the axis of the ellipses of the rings. <br/> The rings are seen from above because the North pole faces the Earth.
 </p>
 
 We can now also draw the shadow of Saturn on its rings. Drawing a line along the vector $\textbf{a}_p$ starting at either edge of Saturn's equator:
@@ -318,3 +318,44 @@ We can now also draw the shadow of Saturn on its rings. Drawing a line along the
   <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/33643fc1-a5ee-41c3-99d4-d729d91b89dc"> <br/>
   The two lines outline the shadow.
 </p>
+
+#### Horizontal Coordinates
+Finally, we have to figure out how the planet looked from London at the specified time. It would look the same, but tilted by some amount. We can find out the tilt of the equatorial grid in relation to the horizontal grid in the same way we found the lighting direction in example $6.7$: we can find the direction to the Celestial North pole after transforming to horizontal coordinates.
+
+First, we need the hour angles of both Saturn and the Celestial North Pole. We have $\Theta$ and $\alpha_\text{Saturn}$ from before. The Celestial pole lies at $\alpha = 0^h$, $\delta = 90\degree$. Thus:
+```math
+\begin{align}
+h_P &= 25\degree\:55'\:58.5'' - 22^h\:22^m\:07.21^s = 50\degree\:24'\:10.35''\\
+h_{NP} &= 25\degree\:55'\:58.5'' - 0^h = 25\degree\:55'\:58.5''
+\end{align}
+```
+Where $P$ is Saturn and $NP$ is the Celestial North pole.\
+Thus, the horizontal coordinates are (by equation $6.3$ with $\phi = 51\degree$):
+```math
+\begin{align}
+A_P &= 230\degree\:48'\:18.8''\\
+a_P &= 13\degree\:24'\:7.0''\\
+A_{NP} &= 0\degree\\
+a_{NP} &= 51\degree
+\end{align}
+```
+Now we follow example $6.7$.\
+The angle between Saturn and the Celestial North Pole is simply their difference in declinations $90\degree - \delta_P$:
+```math
+90\degree - \delta_P = 101\degree\:55'\:54.3''
+```
+And the zenith distances are:
+```math
+\begin{align}
+\zeta_P &= 90\degree - 13\degree\:24'\:7.0'' = 76\degree\:36'\:53.0''\\
+\zeta_NP &= 90\degree - 51\degree = 49\degree\\
+\end{align}
+```
+Therefore, by equation $6.8$:
+```math
+\begin{align}
+\text{Tilt } &= \arccos\left(\frac{\cos(49\degree) - \cos(76\degree\:36'\:53.0'')\cos(101\degree\:55'\:54.3'')}{\sin(76\degree\:36'\:53.0'')\sin(101\degree\:55'\:54.3'')}\right)\\
+&= 42\degree\:17'\:48.9''\\
+\end{align}
+```
+So Saturn is tilted by $42\degree$ $17'$ $48.9''$ from the vertical, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest).
