@@ -200,7 +200,7 @@ a=
 ```
 So the shadow points in the direction of $\textbf{a}$ in Saturn-centric Earth Equatorial coordinates.
 
-#### Saturn's Orientation
+#### Orientation of Saturn
 To determine the plane of Saturn's equator from the Earth's view, let us define new coordinate axes such that the $x$-axis points towards Saturn. To do this:
 1. We first rotate by $22^h$ $22^m$ $07.21^s$ (the right ascension of Saturn) about the $z$-axis.
 ```math
@@ -348,14 +348,27 @@ And the zenith distances are:
 ```math
 \begin{align}
 \zeta_P &= 90\degree - 13\degree\:24'\:7.0'' = 76\degree\:36'\:53.0''\\
-\zeta_NP &= 90\degree - 51\degree = 49\degree\\
+\zeta_{NP} &= 90\degree - 51\degree = 39\degree\\
 \end{align}
 ```
 Therefore, by equation $6.8$:
 ```math
 \begin{align}
-\text{Tilt } &= \arccos\left(\frac{\cos(49\degree) - \cos(76\degree\:36'\:53.0'')\cos(101\degree\:55'\:54.3'')}{\sin(76\degree\:36'\:53.0'')\sin(101\degree\:55'\:54.3'')}\right)\\
-&= 42\degree\:17'\:48.9''\\
+\text{Tilt } &= \arccos\left(\frac{\cos(39\degree) - \cos(76\degree\:36'\:53.0'')\cos(101\degree\:55'\:54.3'')}{\sin(76\degree\:36'\:53.0'')\sin(101\degree\:55'\:54.3'')}\right)\\
+&= 29\degree\:54'\:1.7''\\
 \end{align}
 ```
-So Saturn is tilted by $42\degree$ $17'$ $48.9''$ from the vertical, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest).
+So Saturn is tilted by $29\degree$ $54'$ $1.7''$ from the vertical, keeping in mind that the celestial pole is to the right (the celestial pole is in the North and Saturn (Azimuth = $230\degree$) is in the Southwest). Thus:
+
+<p align="center">
+  <img width="500" src="https://github.com/CitruzSquared/essays/assets/23460281/4e396ea1-9af5-44f5-b3e1-97b8436ab1b4"> <br/>
+  Saturn from London, UK on $\text{January 1, } 2024$ at $19:00$.
+</p>
+
+Comparing with [Stellarium](https://stellarium.org/):
+
+<p align="center">
+  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/10263da7-5aa5-4487-999a-faf9131aea3e"> 
+  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/9b9931f1-5534-44ec-b861-bc93e76aa766"> <br/>
+  Stellarium image on the left, Stellarium image overlaid with our prediction on the right.
+</p>
