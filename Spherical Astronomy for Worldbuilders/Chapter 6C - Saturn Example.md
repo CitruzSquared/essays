@@ -302,7 +302,7 @@ Remembering that the positive $y$-axis lies to the left, (the positive $y$-axis 
 
 <p align="center">
   <img width="200" src="https://github.com/CitruzSquared/essays/assets/23460281/caa11f62-25de-44f3-bceb-971543cd4f09"> <br/>
-  $C$ and $N$ are the center and North pole of Saturn respectively. <br/> The phase is not drawn because it is close to $100$%. <br/>
+  $C$ and $N$ are the center and North pole of Saturn respectively. <br/> The phase is not drawn because it is very close to $100$%. <br/>
   $z$ points in the direction of increasing declension, and $y$ points in the direction of increasing right ascension.
 </p>
 
