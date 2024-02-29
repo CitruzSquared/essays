@@ -324,7 +324,7 @@ To use the sunrise equation (equation $6.5$), we clearly need $\delta$, so, usin
 \alpha &= 214&&\degree\:52&&'\:37.04&&''
 \end{alignat}
 ```
-Substituting $\phi$ and $\delta$:
+Substituting $\phi$ and $\delta$ into equation $6.5$:
 ```math
 \displaylines{
 \cos(h) = -\tan(50\degree)\tan(-15\degree\:15'\:21.3'')\\
