@@ -162,8 +162,8 @@ But we also know that since $\beta$ of the Sun is $0\degree$, $z_{\text{ecliptic
 So we take the arcsine. $\arcsin()$ has two solutions:
 ```math
 \begin{align}
-\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right)\\ \tag{6.9}
-\alpha_2 &= 12^h - \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right)\\ \tag{6.10}
+\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.9}\\
+\alpha_2 &= 12^h - \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.10}
 \end{align}
 ```
 Therfore at any location, if Lahaina noon is possible, there will be two dates when this happens. (Unless one is *exactly* at the Tropic of Cancer or Capricorn. Then $\alpha_1$ works out to be equal to $\alpha_2$.)
@@ -192,15 +192,17 @@ Then, by equations $6.9$ and $6.10$:
 ```math
 \begin{align}
 \alpha_1 &= \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
-&= 4^h\:19^m\:17^s
+&= 4^h\:19^m\:17^s\\
 \alpha_2 &= 12^h - \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
 &= 7^h\:40^m\:43^s
 \end{align}
 ```
 Then, by equation $1.4$:
 ```math
-\lambda_1 = 66\degree\:40'
+\begin{align}
+\lambda_1 = 66\degree\:40'\\
 \lambda_2 = 113\degree\:20'
+\end{align}
 ```
 These can be converted to dates by following example $2.3$, and should result in dates around $\text{May 27, } 2024$ and $\text{July 15, } 2024$. At these dates, at the moment of local apparent noon, the Sun is directly overhead Mecca, and therefore for anyone in any other place in the world where the Sun is up, their shadow would point perfectly away from Mecca. The direction of the Muslim prayer (the *Qibla*) can be determined this way. Read more about this [here](https://en.wikipedia.org/wiki/Qibla_observation_by_shadows).
 
