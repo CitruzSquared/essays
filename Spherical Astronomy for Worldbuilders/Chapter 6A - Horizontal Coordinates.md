@@ -268,25 +268,7 @@ a &= \arcsin(0.038415077/1)\\
 We can see that $S$ was in the Northwest ($270\degree < A < 360\degree$) and very close to the horizon.\
 $\blacksquare$
 
-Using our knowledge, we can calculate the times of certain astronomical events involving certain altitudes or azimuths, questions such as:
-- When does the Sun rise?
-- When is the Moon's location due East?\
-etc.
-
-#### Example 6.5
-<div align="center">
-<table>
-<tbo dy >
-<td align="center">
-<img width="2000" height="0"><br>
-On planet $P$ at standard time $t = 175.00\: \text{ dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\:40'\:36.24''$. <br/>
-What was the mean solar time of sunrise on solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
-<img width="2000" height="0">
-</td>
-</tbo dy >
-</table>
-</div>
-
+### Time of Sunrise
 "Sunrise" means that the Sun is at the horizon, or more specifically, the Eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
 
 Recall equation $6.3$.
@@ -319,8 +301,23 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 &=-\tan(\phi)\tan(\delta)\tag{6.5}
 \end{align}
 ```
-Equation $6.5$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it works for any celestial object, not just the Sun.\
-Carrying on, we clearly need $\delta$, so, using equations $1.1$, $1.2$, and $1.3$, we calculate the equatorial coordinates.
+Equation $6.5$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it can be used to calculate the rising time of any celestial object, not just the Sun. If the positive arccosine value is taken, then the formula will calculate the setting time instead.
+
+#### Example 6.5
+<div align="center">
+<table>
+<tbo dy >
+<td align="center">
+<img width="2000" height="0"><br>
+On planet $P$ at standard time $t = 175.00\: \text{ dy }$, the Sun's Ecliptic Longitude $\lambda_{\text{Sun}}$ was $217\degree\:40'\:36.24''$. <br/>
+What was the mean solar time of sunrise on solar day $175$ at $\phi = 50\degree N$ and $l = 0\degree E$? <br/>
+<img width="2000" height="0">
+</td>
+</tbo dy >
+</table>
+</div>
+
+To use the sunrise equation (equation $6.5$), we clearly need $\delta$, so, using equations $1.1$, $1.2$, and $1.3$, we calculate the equatorial coordinates.
 ```math
 \begin{alignat}{4}
 \delta &=-15&&\degree\:15&&'\:21.30&&''\\
