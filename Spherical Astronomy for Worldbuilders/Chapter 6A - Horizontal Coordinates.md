@@ -69,7 +69,7 @@ $\blacksquare$
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-On planet $P$, on some time during solar day $175$, the hour angle of star $S$, with right acension $5^h$, was $128\degree\:14'\:48.61''$. <br/>
+On planet $P$, on some time during solar day $175$, the hour angle of star $S$ (with right acension $5^h$) was $128\degree\:14'\:48.61''$. <br/>
 What was the local mean solar time?
 <img width="2000" height="0">
 </td>
