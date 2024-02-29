@@ -90,6 +90,119 @@ The ancient Egyptians thought of this event to have immense significance because
 $\blacksquare$
 
 ### The Subsolar Point
+In some regions of the world, there are times when the Sun is directly overhead (i.e. at the Zenith) and objects leave no shadow on the ground. This phenomenon is called the [Lahaina noon](https://en.wikipedia.org/wiki/Lahaina_Noon) and the point where this occurs on the Earth is called the [subsolar point](https://en.wikipedia.org/wiki/Subsolar_point). Let's try to find the subsolar time at any time. 
+
+Say that at (solar) time $t$, the Sun was at right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
+```math
+\phi_{\text{Subsolar}} = \delta \tag{6.7}
+```
+Because the declension of the Sun cannot exceed the axial tilt of the planet, Lahaina noon only occurs in regions with latitudes between $+\varepsilon$ and $-\varepsilon$ (the Tropics of Cancer and Capricorn).
+
+If the Sun is at the Zenith, then it is also at the meridian and thus it would be the apparent noon at that place. Thus we just have to find the longitude where it is exactly apparent noon at time $t$. The hour angle of the Sun at apparent noon is $0\degree$, so that longitude would be where $\Theta_L = \alpha$ (by equation $6.1$). Thus, if we know the standard sidereal time $\Theta$ at time $t$, we can calculate the longitude by:
+```math
+l_{\text{Subsolar}} = \alpha - \Theta\tag{6.8}
+```
+Which comes from equation $6.2$.
+
+#### Example 6.7
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Find the subsolar point on the Earth on $\text{May 27, } 2024$ at standard solar time $09:18$. <br/>
+$\lambda = 66\degree$ $40'$, $\Theta = 24\degree$ $55'$ $27''$, $\varepsilon = 23.44\degree$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By equation $1.3$:
+```math
+\begin{align}
+\alpha = 4^h\:19^m\:17^s\\
+\delta = 21\degree\:25'\:25''
+\end{align}
+```
+Thus by equation $6.7$ and $6.8$:
+```math
+\begin{align}
+\phi &= \delta = 21\degree\:25'\:25''\\
+l &= \Theta - \alpha = 39\degree\:53'\:42''
+\end{align}
+```
+Which is in Mecca, Saudi Arabia.\
+$\blacksquare$
+
+
+Now to find the date when Lahaina noon occurs at a specific location. We have from earlier:
+```math
+\delta = \phi
+```
+But also, by equation $1.1$ we know:
+```math
+\begin{align}
+x_{\text{equatorial}} &= \cos(\delta)\cos(\alpha)\\
+y_{\text{equatorial}} &= \cos(\delta)\sin(\alpha)\\
+z_{\text{equatorial}} &= \sin(\delta)
+\end{align}
+```
+Therefore, using equation $1.4$:
+```math
+z_{\text{ecliptic}} = -\sin(\varepsilon)\cos(\delta)\sin(\alpha) + \cos(\varepsilon)\sin(\delta)
+```
+But we also know that since $\beta$ of the Sun is $0\degree$, $z_{\text{ecliptic}} = \sin(0\degree) = 0$. Thus:
+```math
+\begin{align}
+0 &= -\sin(\varepsilon)\cos(\delta)\sin(\alpha) + \cos(\varepsilon)\sin(\delta)\\
+\therefore \sin(\alpha) &= \frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}
+\end{align}
+```
+So we take the arcsine. $\arcsin()$ has two solutions:
+```math
+\begin{align}
+\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right)\\ \tag{6.9}
+\alpha_2 &= 12^h - \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right)\\ \tag{6.10}
+\end{align}
+```
+Therfore at any location, if Lahaina noon is possible, there will be two dates when this happens. (Unless one is *exactly* at the Tropic of Cancer or Capricorn. Then $\alpha_1$ works out to be equal to $\alpha_2$.)
+
+From $\alpha$ and $\delta$ we can find $\lambda$ and then find the date by means of example $2.3$.
+
+#### Example 6.8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Find the $\lambda$ values for which there is Lahaina noon in Mecca, Saudi Arabia. <br/>
+$\phi = 21\degree$ $25'$ $25''$, $l =39\degree$ $53'$ $42''$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By equation $6.7$:
+```math
+\delta = \phi = 24\degree\:25'\:25''
+```
+Then, by equations $6.9$ and $6.10$:
+```math
+\begin{align}
+\alpha_1 &= \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
+&= 4^h\:19^m\:17^s
+\alpha_2 &= 12^h - \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
+&= 7^h\:40^m\:43^s
+\end{align}
+```
+Then, by equation $1.4$:
+```math
+\lambda_1 = 66\degree\:40'
+\lambda_2 = 113\degree\:20'
+```
+These can be converted to dates by following example $2.3$, and should result in dates around $\text{May 27, } 2024$ and $\text{July 15, } 2024$. At these dates, at the moment of local apparent noon, the Sun is directly overhead Mecca, and therefore for anyone in any other place in the world where the Sun is up, their shadow would point perfectly away from Mecca. The direction of the Muslim prayer (the *Qibla*) can be determined this way. Read more about this [here](https://en.wikipedia.org/wiki/Qibla_observation_by_shadows).
 
 ### Lighting Direction
 Here is another thing we can do with horizontal coordinates: in chapter $4$, we learned how to calculate how much of a planet was visible (the phase) and even which side of the planet was illuminated. Let us now figure out specifically which direction the light was coming from.
@@ -102,17 +215,17 @@ This can be calculated with the [spherical law of cosines](https://en.wikipedia.
 ```
 The angle $ZOS$ and $ZOP$ are called the *zenith distances* (denoted $\zeta$) of $S$ and $P$ and can be calculated by:
 ```math
-\zeta = 90\degree - a\tag{6.7}
+\zeta = 90\degree - a\tag{6.11}
 ```
 Therefore, the equation becomes:
 ```math
-ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.8}
+ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.12}
 ```
 The angle $SOP$ can be calculated by equation $4.3$.
 
 <br/>
 
-#### Example 6.7
+#### Example 6.9
 <div align="center">
 <table>
 <tbody>
@@ -159,14 +272,14 @@ A_S &= 104\degree\:2'\:39.1''\\
 a_S&= -18\degree\:26'\:47.8''\\
 \end{align}
 ```
-Thus, by equation $6.7$:
+Thus, by equation $6.11$:
 ```math
 \begin{align}
 \zeta_V &= 90\degree - 6\degree\:47'\:32.0'' = 83\degree\:12'\:28.0''\\
 \zeta_S &= 90\degree - (-18\degree\:26'\:47.8'') = 108\degree\:26'\:47.8''\\
 \end{align}
 ```
-And then finally by equation $6.8$:
+And then finally by equation $6.12$:
 ```math
 \begin{align}
 ZVS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:28.0'') \cos(37\degree\:16'\:\:7.9'')}{\sin(83\degree\:12'\:28.0'')\sin(37\degree\:16'\:\:7.9'')}\right)\\
