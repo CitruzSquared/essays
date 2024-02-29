@@ -1,5 +1,5 @@
 ### Saturn in the Sky
-We figured out how Venus looked in examples $4.1$ and $6.7$. Let's do something more detailed: Let's figure out how Saturn looked in the sky on $\text{January 1, } 2024$ at $19:00$ from London, UK ($\phi = +51\degree, l = 0\degree$).
+We figured out how Venus looked in examples $4.1$ and $6.9$. Let's do something more detailed: Let's figure out how Saturn looked in the sky on $\text{January 1, } 2024$ at $19:00$ from London, UK ($\phi = +51\degree, l = 0\degree$).
 
 #### 1. Data Collection
 To figure out what Saturn looked like from the Earth, we must first know how Saturn looks in general:
@@ -32,7 +32,7 @@ The geocentric locations of Saturn and the Sun were:
 \rho_S &= 147\:099\:700\text{ km}
 \end{align}
 ```
-Note that these values differ slightly from examples $4.1$ and $6.7$ because we used a different data set. (Why do different data sets differ on the same quantities? I do not know.)
+Note that these values differ slightly from examples $4.1$ and $6.9$ because we used a different data set. (Why do different data sets differ on the same quantities? I do not know.)
 
 #### 2. Vectors
 In a worldbuilding setting, we would have the vector forms, not the spherical forms. Vectors will also be much easier to work with for the purposes of this question. So let's convert the spherical coordinates to vectors by equation $1.1$:
@@ -313,7 +313,7 @@ We can now also draw the shadow of Saturn on its rings. Drawing two lines along 
 </p>
 
 #### 8. Horizontal Coordinates
-We figured out how Saturn looks like in the equatorial grid, but now we have to figure out how the planet looked from London at the specified time. The overall features would look the same, but tilted by some amount. We can find out the tilt of the equatorial grid in relation to the horizontal grid in the same way we found the lighting direction in example $6.7$: we can find the direction to the Celestial North pole after transforming to horizontal coordinates.
+We figured out how Saturn looks like in the equatorial grid, but now we have to figure out how the planet looked from London at the specified time. The overall features would look the same, but tilted by some amount. We can find out the tilt of the equatorial grid in relation to the horizontal grid in the same way we found the lighting direction in example $6.9$: we can find the direction to the Celestial North pole after transforming to horizontal coordinates.
 
 First, we need the hour angles of both Saturn and the Celestial North Pole. We have $\Theta$ and $\alpha_\text{Saturn}$ from before. The Celestial pole lies at $\alpha = 0^h$, $\delta = 90\degree$. Thus:
 ```math
@@ -332,7 +332,7 @@ A_{NP} &= 0\degree\\
 a_{NP} &= 51\degree
 \end{align}
 ```
-Now we follow example $6.7$ except we use the Celestial North pole instead of the Sun.\
+Now we follow example $6.9$ except we use the Celestial North pole instead of the Sun.\
 The angle between Saturn and the Celestial North pole is simply their difference in declinations $90\degree - \delta_P$:
 ```math
 90\degree - \delta_P = 101\degree\:55'\:54.3''
