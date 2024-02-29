@@ -116,7 +116,7 @@ $\blacksquare$
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/0ece4e9d-73c6-4e48-a633-0fc2134669e5" width="300"/> This diagram depicts the Earth (which we have put as stationary at $C$) and an outer planet, with orbital directions (counterclockwise) marked with arrows. 
 
-From the view of the Earth, the outer planet would look to orbit from West to East (i.e. increasing in longitude) most of the time (when it is on the far side of the Sun), but when the planet is near opposition ($O$), it would appear to move East to West (i.e. decreasing in longitude). This makes it seem like the planet moves backwards for a period of time before going forward again.
+From the view of the Earth, the outer planet would look to orbit from West to East (i.e. increasing in longitude) most of the time (when it is on the far side of the Sun), but when the planet is near opposition ($O$), it would appear to move East to West (i.e. decreasing in longitude), because the Earth would be moving faster East than the planet is. This makes it seem like the planet moves backwards for a period of time.
 
 This phenomenon is called [*apparent* retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), as it is not a real physical phenomenon, just an illusion caused by the effects of relative motion. This occurs only once every synodic period, as oppositions only happen once every synodic period.
 
