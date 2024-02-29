@@ -204,7 +204,7 @@ Then, by equation $1.4$:
 \lambda_2 = 113\degree\:20'
 \end{align}
 ```
-These can be converted to dates by following example $2.3$, and should result in dates around $\text{May 27, } 2024$ and $\text{July 15, } 2024$. At these dates, at the moment of local apparent noon, the Sun is directly overhead Mecca, and therefore for anyone in any other place in the world where the Sun is up, their shadow would point perfectly away from Mecca. The direction of the Muslim prayer (the *Qibla*) can be determined this way. Read more about this [here](https://en.wikipedia.org/wiki/Qibla_observation_by_shadows).
+These can be converted to dates by following example $2.3$, and should result in dates around $\text{May 27, } 2024$ and $\text{July 15, } 2024$. At these dates, at the moment of local apparent noon at Mecca, the Sun is directly overhead Mecca, and therefore for anyone in any other place in the world where the Sun is up, their shadow would point perfectly away from Mecca. The direction of the Muslim prayer (the *Qibla*), which is in the direction of Mecca, can be determined then by the direction opposite one's shadow on these dates. Read more about this [here](https://en.wikipedia.org/wiki/Qibla_observation_by_shadows).
 
 ### Lighting Direction
 Here is another thing we can do with horizontal coordinates: in chapter $4$, we learned how to calculate how much of a planet was visible (the phase) and even which side of the planet was illuminated. Let us now figure out specifically which direction the light was coming from.
