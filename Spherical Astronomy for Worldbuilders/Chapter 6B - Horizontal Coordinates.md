@@ -163,7 +163,7 @@ So we take the arcsine. $\arcsin()$ has two solutions:
 ```math
 \begin{align}
 \alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.9}\\
-\alpha_2 &= 12^h - \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.10}
+\alpha_2 &= 12^h - \alpha_1 \tag{6.10}
 \end{align}
 ```
 Therfore at any location, if Lahaina noon is possible, there will be two dates when this happens. (Unless one is *exactly* at the Tropic of Cancer or Capricorn. Then $\alpha_1$ works out to be equal to $\alpha_2$.)
@@ -193,7 +193,7 @@ Then, by equations $6.9$ and $6.10$:
 \begin{align}
 \alpha_1 &= \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
 &= 4^h\:19^m\:17^s\\
-\alpha_2 &= 12^h - \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
+\alpha_2 &= 12^h - 4^h\:19^m\:17^s\\
 &= 7^h\:40^m\:43^s
 \end{align}
 ```
