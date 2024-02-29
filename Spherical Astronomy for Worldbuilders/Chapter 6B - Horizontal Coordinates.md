@@ -92,7 +92,7 @@ $\blacksquare$
 ### The Subsolar Point
 In some regions of the world, there are times when the Sun is directly overhead (i.e. at the Zenith) and objects leave no shadow on the ground. This phenomenon is called the [Lahaina noon](https://en.wikipedia.org/wiki/Lahaina_Noon) and the point where this occurs on the Earth is called the [subsolar point](https://en.wikipedia.org/wiki/Subsolar_point). Let's try to find the subsolar time at any time. 
 
-Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
+Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point on Earth corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
 ```math
 \phi_{\text{Subsolar}} = \delta \tag{6.7}
 ```
