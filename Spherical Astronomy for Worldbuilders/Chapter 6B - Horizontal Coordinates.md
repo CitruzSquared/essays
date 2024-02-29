@@ -200,8 +200,8 @@ Then, by equations $6.9$ and $6.10$:
 Then, by equation $1.4$:
 ```math
 \begin{align}
-\lambda_1 = 66\degree\:40'\\
-\lambda_2 = 113\degree\:20'
+\lambda_1 &= 66\degree\:40'\\
+\lambda_2 &= 113\degree\:20'
 \end{align}
 ```
 $\lambda_1$ is the value of $\lambda$ from the previous example.
