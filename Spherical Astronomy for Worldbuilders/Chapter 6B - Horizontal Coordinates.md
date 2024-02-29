@@ -206,7 +206,7 @@ Then, by equation $1.4$:
 ```
 $\lambda_1$ is the value of $\lambda$ from the previous example.
 
-These can be converted to dates by following example $2.3$, and should result in dates around $\text{May 27, } 2024$ and $\text{July 15, } 2024$. At these dates, at the moment of local apparent noon at Mecca, the Sun is directly overhead Mecca, and therefore for anyone in any other place in the world where the Sun is up, their shadow would point perfectly away from Mecca. The direction of the Muslim prayer (the *Qibla*), which is in the direction of Mecca, can be determined then by the direction opposite one's shadow on these dates. Read more about this [here](https://en.wikipedia.org/wiki/Qibla_observation_by_shadows).\
+These can be converted to dates by following example $2.3$, and should result in dates around $\text{May 27, } 2024$ and $\text{July 15, } 2024$. At these dates, at the moment of local apparent noon at Mecca, the Sun is directly overhead Mecca, and therefore for anyone in any other place in the world where the Sun is up, their shadow would point perfectly away from Mecca. The direction of the Muslim prayer (the *Qibla*), which is in the direction of Mecca, can be determined then by the direction opposite to one's shadow on these dates. Read more about this [here](https://en.wikipedia.org/wiki/Qibla_observation_by_shadows).\
 $\blacksquare$
 
 ### Lighting Direction
