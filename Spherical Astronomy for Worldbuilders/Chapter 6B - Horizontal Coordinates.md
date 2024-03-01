@@ -43,9 +43,9 @@ But, since we introduced ambiguities earlier, this solution for $\lambda$ is not
 ```
 To ensure a negative value for $h$ (since the ecliptic must be rising), we employ one final correction:
 ```math
-\begin{cases}
-\lambda_{Asc} = \lambda + 180\degree & \lambda<180\degree\\
-\lambda_{Asc} = \lambda - 180\degree & \lambda>180\degree
+\lambda_{Asc} = \begin{cases}
+\lambda + 180\degree & \lambda<180\degree\\
+\lambda - 180\degree & \lambda>180\degree
 \end{cases}\tag{6.8}
 ```
 #### Example 6.6
