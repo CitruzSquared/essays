@@ -80,7 +80,7 @@ Then, by equation $6.8$:
 &= 62\degree\:49'\:13''
 \end{align}
 ```
-Which falls in the sign Gemini ($60\degree<\lambda<90\degree$).\
+Which falls in the sign Gemini ($60\degree<\lambda<90\degree$), which was indeed the rising sign in Dubai at $\text{January 1, } 2024$ $15:00$ ($\text{UTC}+4:00$)\
 $\blacksquare$
 
 ### Heliacal Rising
