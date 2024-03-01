@@ -1,5 +1,88 @@
 (Continued from Part A...)
 
+### The Ascending Sign
+The part of the ecliptic that is rising at any given time and location is called the [*ascendant*](https://en.wikipedia.org/wiki/Ascendant) (denoted $Asc.$) at that time and location. This is often simplified to the rising zodiac sign (the *ascending sign*) and holds great importance in real world astrology. Let us calculate it.
+
+In order for something to be rising, it must satisfy the sunrise equation:
+```math
+\cos(h) = -\tan(\phi)\tan(\delta)
+```
+But by equation $6.1$:
+```math
+\begin{align}
+\cos(\Theta_L - \alpha) &= -\tan(\phi)\tan(\delta)\\
+\cos(\Theta_L)\cos(\alpha)+\sin(\Theta_L)\sin(\alpha) &= -\tan(\phi)\tan(\delta)\\
+-\cos(\Theta_L)-\sin(\Theta_L)\tan(\alpha) &= \frac{\tan(\phi)\sin(\delta)}{\cos(\alpha)\cos(\delta)}\tag{6.6}
+\end{align}
+```
+Also, by equation $1.3$, a point on the ecliptic with longitude $\lambda$ ($\beta = 0\degree$) has equatorial coordinates:
+```math
+\begin{align}
+\alpha &= \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))\\
+&= \arctan(\cos(\varepsilon)\tan(\lambda)) \enspace\enspace\text{(Introduces ambiguities)}\\
+\delta &= \arcsin(\sin(\varepsilon)\sin(\lambda))
+\end{align}
+```
+Substituting these into equation $6.6$:
+```math
+-\cos(\Theta_L)-\sin(\Theta_L)\cos(\varepsilon)\tan(\lambda) = \frac{\tan(\phi)\sin(\varepsilon)\sin(\lambda)}{\cos(\alpha)\cos(\delta)}
+```
+But, $\cos(\alpha)\cos(\delta)$ is just $x_{\text{equatorial}}$ (by equation $1.1$) which is just equal to $x_{\text{ecliptic}}$ (by equation $1.4$) which is $\cos(\lambda)\cos(\beta)$ (by equation $1.4$) which becomes $\cos(\lambda)$ (because $\beta = 0\degree$). Thus:
+```math
+\begin{align}
+-\cos(\Theta_L)-\sin(\Theta_L)\cos(\varepsilon)\tan(\lambda) &= \frac{\tan(\phi)\sin(\varepsilon)\sin(\lambda)}{\cos(\lambda)}\\
+&= \tan(\phi)\sin(\varepsilon)\tan(\lambda)\\
+\therefore -\frac{\cos(\Theta_L)}{\tan(\lambda)} - \sin(\Theta_L)\cos(\varepsilon) &= \tan(\phi)\sin(\varepsilon)\\
+\therefore \tan(\lambda) &= \frac{-\cos(\Theta_L)}{\tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)}\\
+\therefore \lambda &= \arctan\left(\frac{-\cos(\Theta_L)}{\tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)}\right)
+\end{align}
+```
+But, since we introduced ambiguities earlier, this solution for $\lambda$ is not complete. We must use the two argument arctangent instead:
+```math
+\lambda = \arctan\left(-\cos(\Theta_L), \tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)\right)\tag{6.7}
+```
+To ensure a negative value for $h$ (since the ecliptic must be rising), we employ this rule:
+```math
+\begin{cases}
+\lambda_{Asc} = \lambda + 180\degree & \lambda<180\degree\\
+\lambda_{Asc} = \lambda - 180\degree & \lambda>180\degree
+\end{cases}\tag{6.8}
+```
+#### Example 6.6
+<div align="center">
+<table>
+<tbo dy >
+<td align="center">
+<img width="2000" height="0"><br>
+Find the ascending sign at standard solar time $11:00$ on $\text{January 1, } 2024$ at Dubai, UAE ($\phi = +25\degree, l = 55\degree$). <br/>
+$\Theta = 265\degree$ $36'$ $15''$ and $\varepsilon = 23.44\degree$.
+<img width="2000" height="0">
+</td>
+</tbo dy >
+</table>
+</div>
+
+By equation $5.3$:
+```math
+\Theta_L = 265\degree\:36'\:15'' + 55\degree = 320\degree\:36'\:15''
+```
+Then, by equation $6.7$:
+```math
+\begin{align}
+\lambda &= \arctan\left(-\cos(320\degree\:36'\:15''), \tan(25\degree)\sin(23.44\degree) +\sin(320\degree\:36'\:15'')\cos(23.44\degree)\right)\\
+&= 242\degree\:49'\:13''
+\end{align}
+```
+Then, by equation $6.8$:
+```math
+\begin{align}
+\lambda_{Asc} &= 242\degree\:49'\:13'' - 180\degree\\
+&= 62\degree\:49'\:13''
+\end{align}
+```
+Which falls in the sign Gemini ($60\degree<\lambda<90\degree$).\
+$\blacksquare$
+
 ### Heliacal Rising
 
 Because the Earth orbits the Sun, different parts of the sky are completely blocked out by the glare of the Sun in different seasons. The [heliacal rising](https://en.wikipedia.org/wiki/Heliacal_rising) of a star happens when a star becomes visible for the first time again after being blocked out by the glare of the Sun for some time.
@@ -8,43 +91,19 @@ Because the Sun's ecliptic longitude increases (i.e. the Sun moves East), the St
 
 Let's try and find out when the heliacal rising of a star with right ascension $\alpha$ and declination $\delta$ will happen at a location with latitude $\phi$.
 
-We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first say the Sun's ecliptic longitude to be $\lambda$. Then, the Sun's equatorial coordinates are given by equation $1.3$ (Keep in mind $\beta$ of the Sun is $0\degree$):
+We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first find out when the star would rise. The rising time of a point with right ascension $\alpha$ and declination $\delta$ is given by the sunrise equation and equation $6.1$:
 ```math
-\begin{align}
-\alpha_{\text{Sun}} &= \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))\\
-\delta_{\text{Sun}} &= \arcsin(\sin(\varepsilon)\sin(\lambda))
-\end{align}
+\Theta_{L \text{ Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha\tag{6.11}
 ```
-Now we use the sunrise equation (equation $6.5$) to calculate the time of sunrise:
-```math
-\Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\delta_{\text{Sun}})) + \alpha_{\text{Sun}}
-```
-We now substitute $\alpha_{\text{Sun}}$ and $\delta_{\text{Sun}}$ with our calculations from before:
-```math
-\Theta_{\text{Sunrise}} = -\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda))
-```
-Now we use the sunrise equation again to calculate the time of star rise:
-```math
-\Theta_{\text{Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha
-```
-These two times must equal:
-```math
--\arccos(-\tan(\phi)\tan(\arcsin(\sin(\varepsilon)\sin(\lambda)))) + \arctan(\cos(\varepsilon)\sin(\lambda), \cos(\lambda)) = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha \tag{6.6}
-```
-Since we know $\alpha$, $\delta$, $\phi$, and $\varepsilon$, we can solve this equation for $\lambda$. Once we have $\lambda$, we can find the mean anomaly of the Earth and thus the date of heliacal rising.
+Then we just have to find the $\lambda$ for which the Sun would rise at exactly $\Theta_{\text{Star-rise}}$, because then the date can be found by the method of example $2.3$. But, this problem has already been solved by equation $6.7$ and $6.8$! Therefore to get the date of heliacal rising, we simply find what the ascending sign is at that location for the time of starrise, and calculate the date for which the Sun also rises at that time.
 
-Copyable Version:
-```
--arccos(-tan(phi)tan(arcsin(sin(epsilon)sin(lambda)))) + arctan(cos(epsilon)sin(lambda), cos(lambda)) = -arccos(-tan(phi)tan(delta)) + alpha
-```
-
-#### Example 6.6
+#### Example 6.7
 <div align="center">
 <table>
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-Calculate the date of the heliacal rising of the star Sirius ($\alpha = 06^h$ $45^m$ $08.92^s$, $\delta = -16\degree$ $42'$ $58.02''$) in Egypt ($\phi = 30\degree$). <br/>
+Calculate the date of the heliacal rising of the star Sirius ($\alpha = 06^h$ $45^m$ $09^s$, $\delta = -16\degree$ $42'$ $58''$) in Egypt ($\phi = 30\degree$). <br/>
 Use $\varepsilon = 23.44\degree$, $e = 0.0167$, and $T = 365.24\text{ dy}$ for the Earth. <br/>
 The time of the last periapsis of Earth was $\text{January 3, }2024$.
 <img width="2000" height="0">
@@ -53,17 +112,26 @@ The time of the last periapsis of Earth was $\text{January 3, }2024$.
 </table>
 </div>
 
-We put the values into equation $6.6$. The right hand side is:
+By equation $6.11$:
 ```math
--\arccos(-\tan(30\degree)\tan(-16\degree\:42'\:58.02'')) + 06^h\:45^m\:08.92^s = 0.371275 \text{ rad}
+\begin{align}
+\Theta_{L \text{ Star-rise}} &= -\arccos(-\tan(30\degree)\tan($\delta = -16\degree\:42'\:58'')) + 06^h\:45^m\:09^s\\
+&= 21\degree\:16'\:21''
+\end{align}
 ```
-Thus equation $6.6$ is:
+Then, by equation $6.7$:
 ```math
--\arccos(-\tan(30\degree)\tan(\arcsin(\sin(23.44\degree)\sin(\lambda)))) + \arctan(\cos(23.44\degree)\sin(\lambda), \cos(\lambda)) = 0.371275 \text{ rad}
+\begin{align}
+\lambda &= \arctan\left(-\cos(21\degree\:16'\:21''), \tan(30\degree)\sin(23.44\degree) +\sin(21\degree\:16'\:21'')\cos(23.44\degree)\right)\\
+&= 301\degree\:7'\:3''
+\end{align}
 ```
-Then we solve for $\lambda$ (a computer program was used):
+Then, by equation $6.8$:
 ```math
-\lambda = 2.1139\text{ rad} = 121\degree\:7'
+\begin{align}
+\lambda_{Asc} &= 301\degree\:7'\:3'' - 180\degree\\
+&= 121\degree\:7'\:3''
+\end{align}
 ```
 Thus $\lambda_{\text{Earth Heliocentric}} = 121\degree$ $7' + 180\degree = 301\degree$ $7'$ (Equation $1.5$).\
 Now we follow example $2.3$.
@@ -94,17 +162,17 @@ In some regions of the world, there are times when the Sun is directly overhead 
 
 Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point on Earth corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
 ```math
-\phi_{\text{Subsolar}} = \delta \tag{6.7}
+\phi_{\text{Subsolar}} = \delta \tag{6.9}
 ```
 Because the declension of the Sun cannot exceed the axial tilt of the planet, Lahaina noon only occurs in regions with latitudes between $+\varepsilon$ and $-\varepsilon$ (the Tropics of Cancer and Capricorn).
 
 If the Sun is at the Zenith, then it is also at the meridian and thus it would be the apparent noon at that place. Thus we just have to find the longitude where it is exactly apparent noon at time $t$. The hour angle of the Sun at apparent noon is $0\degree$, so that longitude would be where $\Theta_L = \alpha$ (by equation $6.1$). Thus, if we know the standard sidereal time $\Theta$ at time $t$, we can calculate the longitude by:
 ```math
-l_{\text{Subsolar}} = \alpha - \Theta\tag{6.8}
+l_{\text{Subsolar}} = \alpha - \Theta\tag{6.10}
 ```
 Which comes from equation $6.2$.
 
-#### Example 6.7
+#### Example 6.8
 <div align="center">
 <table>
 <tbody>
@@ -125,7 +193,7 @@ By equation $1.3$:
 \delta = 21\degree\:25'\:25''
 \end{align}
 ```
-Thus by equation $6.7$ and $6.8$:
+Thus by equation $6.9$ and $6.10$:
 ```math
 \begin{align}
 \phi &= \delta = 21\degree\:25'\:25''\\
@@ -162,15 +230,15 @@ But we also know that since $\beta$ of the Sun is $0\degree$, $z_{\text{ecliptic
 So we take the arcsine. $\arcsin()$ has two solutions:
 ```math
 \begin{align}
-\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.9}\\
-\alpha_2 &= 12^h - \alpha_1 \tag{6.10}
+\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.11}\\
+\alpha_2 &= 12^h - \alpha_1 \tag{6.12}
 \end{align}
 ```
 Therfore at any location, if Lahaina noon is possible, there will be two dates when this happens. (Unless one is *exactly* at the Tropic of Cancer or Capricorn. Then $\alpha_1$ works out to be equal to $\alpha_2$.)
 
 From $\alpha$ and $\delta$ we can find $\lambda$ and then find the date by means of example $2.3$. However, notice that the coordinates of the Sun depend only on $\phi$ and not $l$. This means that this formula predicts that an entire line of latitude will all experience Lahaina noon, however this is impossible as there is only one subsolar point for a specific location of the Sun, not a whole latitude line. In reality, what's happening here is that on average the whole latitude line will experience Lahaina noon but the true subsolar point depends on the specific rotation of the Earth (i.e. the sidereal time). However, the change in declination of the Sun is so slow (it takes one full year to complete the cycle of declination) that the change of latitude of the subsolar point in the course of a sidereal day is almost negligible, and thus we can approximate that it is the whole latitude line that experiences Lahaina noon. This approximation works better the more sidereal days there are in a planet year.
 
-#### Example 6.8
+#### Example 6.9
 <div align="center">
 <table>
 <tbody>
@@ -188,7 +256,7 @@ By equation $6.7$:
 ```math
 \delta = \phi = 24\degree\:25'\:25''
 ```
-Then, by equations $6.9$ and $6.10$:
+Then, by equations $6.1$ and $6.12$:
 ```math
 \begin{align}
 \alpha_1 &= \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
@@ -220,17 +288,17 @@ This can be calculated with the [spherical law of cosines](https://en.wikipedia.
 ```
 The angle $ZOS$ and $ZOP$ are called the *zenith distances* (denoted $\zeta$) of $S$ and $P$ and can be calculated by:
 ```math
-\zeta = 90\degree - a\tag{6.11}
+\zeta = 90\degree - a\tag{6.13}
 ```
 Therefore, the equation becomes:
 ```math
-ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.12}
+ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.14}
 ```
 The angle $SOP$ can be calculated by equation $4.3$.
 
 <br/>
 
-#### Example 6.9
+#### Example 6.10
 <div align="center">
 <table>
 <tbody>
@@ -277,14 +345,14 @@ A_S &= 104\degree\:2'\:39.1''\\
 a_S&= -18\degree\:26'\:47.8''\\
 \end{align}
 ```
-Thus, by equation $6.11$:
+Thus, by equation $6.13$:
 ```math
 \begin{align}
 \zeta_V &= 90\degree - 6\degree\:47'\:32.0'' = 83\degree\:12'\:28.0''\\
 \zeta_S &= 90\degree - (-18\degree\:26'\:47.8'') = 108\degree\:26'\:47.8''\\
 \end{align}
 ```
-And then finally by equation $6.12$:
+And then finally by equation $6.14$:
 ```math
 \begin{align}
 ZVS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:28.0'') \cos(37\degree\:16'\:\:7.9'')}{\sin(83\degree\:12'\:28.0'')\sin(37\degree\:16'\:\:7.9'')}\right)\\
