@@ -62,7 +62,7 @@ $\Theta = 265\degree$ $36'$ $15''$ and $\varepsilon = 23.44\degree$.
 </table>
 </div>
 
-By equation $5.3$:
+We need the local sidereal time, so by equation $5.3$:
 ```math
 \Theta_L = 265\degree\:36'\:15'' + 55\degree = 320\degree\:36'\:15''
 ```
