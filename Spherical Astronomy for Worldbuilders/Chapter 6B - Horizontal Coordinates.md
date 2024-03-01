@@ -41,7 +41,7 @@ But, since we introduced ambiguities earlier, this solution for $\lambda$ is not
 ```math
 \lambda = \arctan\left(-\cos(\Theta_L), \tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)\right)\tag{6.7}
 ```
-To ensure a negative value for $h$ (since the ecliptic must be rising), we employ this rule:
+To ensure a negative value for $h$ (since the ecliptic must be rising), we employ one final correction:
 ```math
 \begin{cases}
 \lambda_{Asc} = \lambda + 180\degree & \lambda<180\degree\\
