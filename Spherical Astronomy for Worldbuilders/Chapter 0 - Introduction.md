@@ -43,8 +43,8 @@
      * Equations $6.1$ to $6.5$
      * Examples $6.1$ to $6.5$
    - Part B
-     * Equations $6.6$ to $6.15$
-     * Examples $6.6$ to $6.10$
+     * Equations $6.6$ to $6.16$
+     * Examples $6.6$ to $6.11$
 7. Earthly Parallax
 
 ## Useful Mathematics
