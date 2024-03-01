@@ -133,7 +133,7 @@ Then, by equation $6.8$:
 &= 121\degree\:7'\:3''
 \end{align}
 ```
-Thus the longitude of the Sun should be $121\degree$ $7'$ if it were to rise at the same time as Sirius.
+Thus the longitude of the Sun should be $121\degree$ $7'$ if it were to rise at the same time as Sirius.\
 If $\lambda_{\text{Sun}} = 121\degree$ $7'$, then $\lambda_{\text{Earth Heliocentric}} = 121\degree$ $7' + 180\degree = 301\degree$ $7'$ (Equation $1.5$).\
 Now we follow example $2.3$.
 ```math
