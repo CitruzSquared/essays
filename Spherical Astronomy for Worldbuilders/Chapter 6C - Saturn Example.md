@@ -344,7 +344,7 @@ And the zenith distances are:
 \zeta_{NP} &= 90\degree - 51\degree = 39\degree\\
 \end{align}
 ```
-Therefore, by equation $6.8$:
+Therefore, by equation $6.16$:
 ```math
 \begin{align}
 \text{Tilt } &= \arccos\left(\frac{\cos(39\degree) - \cos(76\degree\:36'\:53.0'')\cos(101\degree\:55'\:54.3'')}{\sin(76\degree\:36'\:53.0'')\sin(101\degree\:55'\:54.3'')}\right)\\
