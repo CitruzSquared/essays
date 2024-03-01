@@ -245,7 +245,7 @@ From $\alpha$ and $\delta$ we can find $\lambda$ and then find the date by means
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the $\lambda$ values for which there is Lahaina noon in Mecca, Saudi Arabia. <br/>
+Find the $\lambda$ values of the Sun for which there is Lahaina noon in Mecca, Saudi Arabia. <br/>
 $\phi = 21\degree$ $25'$ $25''$.
 <img width="2000" height="0">
 </td>
