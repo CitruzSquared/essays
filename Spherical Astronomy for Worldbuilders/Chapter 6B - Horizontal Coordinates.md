@@ -93,7 +93,7 @@ Let's try and find out when the heliacal rising of a star with right ascension $
 
 We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first find out when the star would rise. The rising time of a point with right ascension $\alpha$ and declination $\delta$ is given by the sunrise equation and equation $6.1$:
 ```math
-\Theta_{L \text{ Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha\tag{6.11}
+\Theta_{L \text{ Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha\tag{6.9}
 ```
 Then we just have to find the $\lambda$ for which the Sun would rise at exactly $\Theta_{\text{Star-rise}}$, because then the date can be found by the method of example $2.3$. But, this problem has already been solved by equation $6.7$ and $6.8$! Therefore to get the date of heliacal rising, we simply find what the ascending sign is at that location for the time of starrise, and calculate the date for which the Sun also rises at that time.
 
@@ -112,7 +112,7 @@ The time of the last periapsis of Earth was $\text{January 3, }2024$.
 </table>
 </div>
 
-By equation $6.11$:
+By equation $6.9$:
 ```math
 \begin{align}
 \Theta_{L \text{ Star-rise}} &= -\arccos(-\tan(30\degree)\tan($\delta = -16\degree\:42'\:58'')) + 06^h\:45^m\:09^s\\
@@ -162,13 +162,13 @@ In some regions of the world, there are times when the Sun is directly overhead 
 
 Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point on Earth corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
 ```math
-\phi_{\text{Subsolar}} = \delta \tag{6.9}
+\phi_{\text{Subsolar}} = \delta \tag{6.10}
 ```
 Because the declension of the Sun cannot exceed the axial tilt of the planet, Lahaina noon only occurs in regions with latitudes between $+\varepsilon$ and $-\varepsilon$ (the Tropics of Cancer and Capricorn).
 
 If the Sun is at the Zenith, then it is also at the meridian and thus it would be the apparent noon at that place. Thus we just have to find the longitude where it is exactly apparent noon at time $t$. The hour angle of the Sun at apparent noon is $0\degree$, so that longitude would be where $\Theta_L = \alpha$ (by equation $6.1$). Thus, if we know the standard sidereal time $\Theta$ at time $t$, we can calculate the longitude by:
 ```math
-l_{\text{Subsolar}} = \alpha - \Theta\tag{6.10}
+l_{\text{Subsolar}} = \alpha - \Theta\tag{6.11}
 ```
 Which comes from equation $6.2$.
 
@@ -193,7 +193,7 @@ By equation $1.3$:
 \delta = 21\degree\:25'\:25''
 \end{align}
 ```
-Thus by equation $6.9$ and $6.10$:
+Thus by equation $6.10$ and $6.11$:
 ```math
 \begin{align}
 \phi &= \delta = 21\degree\:25'\:25''\\
@@ -230,8 +230,8 @@ But we also know that since $\beta$ of the Sun is $0\degree$, $z_{\text{ecliptic
 So we take the arcsine. $\arcsin()$ has two solutions:
 ```math
 \begin{align}
-\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.11}\\
-\alpha_2 &= 12^h - \alpha_1 \tag{6.12}
+\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.12}\\
+\alpha_2 &= 12^h - \alpha_1 \tag{6.13}
 \end{align}
 ```
 Therfore at any location, if Lahaina noon is possible, there will be two dates when this happens. (Unless one is *exactly* at the Tropic of Cancer or Capricorn. Then $\alpha_1$ works out to be equal to $\alpha_2$.)
@@ -252,11 +252,11 @@ $\phi = 21\degree$ $25'$ $25''$.
 </table>
 </div>
 
-By equation $6.7$:
+By equation $6.10$:
 ```math
 \delta = \phi = 24\degree\:25'\:25''
 ```
-Then, by equations $6.1$ and $6.12$:
+Then, by equations $6.12$ and $6.13$:
 ```math
 \begin{align}
 \alpha_1 &= \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
@@ -288,11 +288,11 @@ This can be calculated with the [spherical law of cosines](https://en.wikipedia.
 ```
 The angle $ZOS$ and $ZOP$ are called the *zenith distances* (denoted $\zeta$) of $S$ and $P$ and can be calculated by:
 ```math
-\zeta = 90\degree - a\tag{6.13}
+\zeta = 90\degree - a\tag{6.14}
 ```
 Therefore, the equation becomes:
 ```math
-ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.14}
+ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.15}
 ```
 The angle $SOP$ can be calculated by equation $4.3$.
 
@@ -345,14 +345,14 @@ A_S &= 104\degree\:2'\:39.1''\\
 a_S&= -18\degree\:26'\:47.8''\\
 \end{align}
 ```
-Thus, by equation $6.13$:
+Thus, by equation $6.14$:
 ```math
 \begin{align}
 \zeta_V &= 90\degree - 6\degree\:47'\:32.0'' = 83\degree\:12'\:28.0''\\
 \zeta_S &= 90\degree - (-18\degree\:26'\:47.8'') = 108\degree\:26'\:47.8''\\
 \end{align}
 ```
-And then finally by equation $6.14$:
+And then finally by equation $6.15$:
 ```math
 \begin{align}
 ZVS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:28.0'') \cos(37\degree\:16'\:\:7.9'')}{\sin(83\degree\:12'\:28.0'')\sin(37\degree\:16'\:\:7.9'')}\right)\\
