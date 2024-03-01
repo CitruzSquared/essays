@@ -375,5 +375,5 @@ Now we follow example $6.2$.
 Further repetition will better our approximations.\
 $\blacksquare$
 
-### Heliacal Rising
+### The Ascending Sign
 (Continued in Part B...)
