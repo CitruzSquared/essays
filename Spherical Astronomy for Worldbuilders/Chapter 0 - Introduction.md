@@ -287,4 +287,4 @@ R_z =
 0 & 0 & 1
 \end{bmatrix}
 ```
-The inverse transformation is given by the transpose of $R_n R_{n-1}\cdots R_2 R_1$.
+The inverse transformation is given by the transpose of $R_n R_{n-1}\cdots R_2 R_1$ because rotation matrices are [orthogonal](https://en.wikipedia.org/wiki/Orthogonal_matrix).
