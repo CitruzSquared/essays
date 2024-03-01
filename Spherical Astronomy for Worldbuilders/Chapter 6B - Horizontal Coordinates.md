@@ -95,7 +95,7 @@ We estimate the heliacal rising to be the point when the star would rise exactly
 ```math
 \Theta_{L \text{ Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha\tag{6.9}
 ```
-Then we just have to find the $\lambda$ for which the Sun would rise at exactly $\Theta_{\text{Star-rise}}$, because then the date can be found by the method of example $2.3$. But, this problem has already been solved by equation $6.7$ and $6.8$! Therefore to get the date of heliacal rising, we simply find what the ascending sign is at that location for the time of starrise, and calculate the date for which the Sun also rises at that time.
+Then we just have to find the $\lambda$ for which the Sun would rise at exactly $\Theta_{\text{Star-rise}}$, because then the date can be found by the method of example $2.3$. But, this problem has already been solved by equation $6.7$ and $6.8$! Therefore to get the date of heliacal rising, we simply find what the ascending sign is at that location for the time of starrise, and calculate the date for which the Sun is at that longitude.
 
 #### Example 6.7
 <div align="center">
