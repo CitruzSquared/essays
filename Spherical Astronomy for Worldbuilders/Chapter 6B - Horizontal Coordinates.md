@@ -34,10 +34,9 @@ But, $\cos(\alpha)\cos(\delta)$ is just $x_{\text{equatorial}}$ (by equation $1.
 &= \tan(\phi)\sin(\varepsilon)\tan(\lambda)\\
 \therefore -\frac{\cos(\Theta_L)}{\tan(\lambda)} - \sin(\Theta_L)\cos(\varepsilon) &= \tan(\phi)\sin(\varepsilon)\\
 \therefore \tan(\lambda) &= \frac{-\cos(\Theta_L)}{\tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)}\\
-\therefore \lambda &= \arctan\left(\frac{-\cos(\Theta_L)}{\tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)}\right)
 \end{align}
 ```
-But, since we introduced ambiguities earlier, this solution for $\lambda$ is not complete. We must use the two argument arctangent instead:
+Splitting $\tan()$ into $\sin()/\cos()$ and taking the two argument arctangent, we get:
 ```math
 \lambda = \arctan\left(-\cos(\Theta_L), \tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)\right)\tag{6.7}
 ```
