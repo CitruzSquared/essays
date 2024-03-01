@@ -115,7 +115,7 @@ The time of the last periapsis of Earth was $\text{January 3, }2024$.
 By equation $6.9$:
 ```math
 \begin{align}
-\Theta_{L \text{ Star-rise}} &= -\arccos(-\tan(30\degree)\tan($\delta = -16\degree\:42'\:58'')) + 06^h\:45^m\:09^s\\
+\Theta_{L \text{ Star-rise}} &= -\arccos(-\tan(30\degree)\tan(-16\degree\:42'\:58'')) + 06^h\:45^m\:09^s\\
 &= 21\degree\:16'\:21''
 \end{align}
 ```
