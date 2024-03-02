@@ -141,6 +141,7 @@ Two Argument Arctangent:
 ```math
 \begin{align}
 \frac{d}{dx} f(x) &= f'(x) = \dot f\\
+&= \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
 \frac{d}{dx} a &= 0 \\
 \frac{d}{dx} x^a &= ax^{a-1} \\
 \\
