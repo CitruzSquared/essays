@@ -170,7 +170,7 @@ But from earlier we know that for a point on the ecliptic with longitiude $\lamb
 ```
 And thus:
 ```math
-\tan(\Theta) = \frac{\cos(\varepsilon)\sin(\lambda)}{\cos(\lambda)}
+\tan(\Theta) = \cos(\varepsilon)\tan(\lambda)}
 ```
 Splitting $\tan()$ into $\sin()/\cos()$ and taking the two argument arctangent:
 ```math
