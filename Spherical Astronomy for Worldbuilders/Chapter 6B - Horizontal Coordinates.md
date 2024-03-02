@@ -222,7 +222,7 @@ Which comes from equation $6.2$.
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the subsolar point on the Earth at the time where $\lambda = 66\degree$ $40'$ and $\Theta = 24\degree$ $55'$ $27''$. <br/>
+Find the subsolar point if $\lambda = 66\degree$ $40'$ and $\Theta = 24\degree$ $55'$ $27''$. <br/>
 Use $\varepsilon = 23.44\degree$.
 <img width="2000" height="0">
 </td>
