@@ -79,7 +79,7 @@ Then, by equation $6.8$:
 &= 62\degree\:49'\:13''
 \end{align}
 ```
-Which falls in the sign Gemini ($60\degree<\lambda<90\degree$), which was indeed the rising sign in Dubai at $\text{January 1, } 2024$ $15:00$ ($\text{UTC}+4:00$)\
+Which falls in the sign Gemini ($60\degree<\lambda<90\degree$), which was indeed the rising sign in Dubai at $\text{January 1, } 2024$ $15:00$ ($\text{UTC}+4:00$).\
 $\blacksquare$
 
 ### Heliacal Rising
@@ -198,7 +198,7 @@ Thus by equation $6.10$:
 &= 318\degree\:9'\:59''
 \end{align}
 ```
-Which falls in the sign Aquarius ($300\degree<\lambda<330\degree$), which was indeed the Midheaven sign in Dubai at $\text{January 1, } 2024$ $15:00$ ($\text{UTC}+4:00$)\
+Which falls in the sign Aquarius ($300\degree<\lambda<330\degree$), which was indeed the Midheaven sign in Dubai at $\text{January 1, } 2024$ $15:00$ ($\text{UTC}+4:00$).\
 $\blacksquare$
 
 ### The Subsolar Point
