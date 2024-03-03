@@ -418,7 +418,7 @@ By equation $1.3$:
 ```
 Thus the limits of sunrise and sundown are:
 ```math
-\phi = \pm\arctan(\cot(23\degree\:26'\:24'') = \pm66\degree\:33'\:36''
+\phi = \pm\arctan(\cot(23\degree\:26'\:24'')) = \pm66\degree\:33'\:36''
 ```
 Now we use equation $6.6$.\
 For $\phi = 0\degree$:
