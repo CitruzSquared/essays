@@ -13,11 +13,11 @@ In examples $2.3$ and $2.4$, we have calculated the position of the Earth in ecl
 
 #### Orbital Elements
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/22bef238-757a-4561-8d17-3b41dbf22c5b" width="350"/> This diagram depicts the orbit of a non-Earth planet $Q$ where $O$ is the location of the Sun and $P$ is the periapsis of the orbit. The direction of orbit is given by the arrow pointing from $P$ to $Q$. Thus the true anomaly $\nu$ of $Q$ is the angle $POQ$.
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/22bef238-757a-4561-8d17-3b41dbf22c5b" width="350"/> This diagram depicts the orbit of a non-Earth planet $Q$ where $O$ is the location of the Sun and $P$ is the periaetas of the orbit. The direction of orbit is given by the arrow pointing from $P$ to $Q$. Thus the true anomaly $\nu$ of $Q$ is the angle $POQ$.
 
 As one can see, the orbit is tilted upwards from the Ecliptic plane by an angle $i$, and therefore forms a line of intersection. The angle $i$ is called the [*inclination*](https://en.wikipedia.org/wiki/Orbital_inclination), and the line where the orbit crosses the ecliptic plane (the line $ND$) is known as the [*line of nodes*](https://en.wikipedia.org/wiki/Orbital_node). The point on the line of nodes where the planet is moving upwards (point $N$) is called the *ascending node* and the other point is known as the *descending node* (point $D$).
 
-The angle $AON$ is known as the [*longitude of the ascending node*](https://en.wikipedia.org/wiki/Longitude_of_the_ascending_node) and is denoted $\Omega$, and the angle $NOP$ is known as the [*argument of periapsis*](https://en.wikipedia.org/wiki/Argument_of_periapsis) and is denoted $\omega$. Then, remembering that the $x$-axis in the ecliptic frame points towards Aries, and that the $p$-axis in the perifocal frame points towards the periapsis, the ecliptic frame can be transformed into the perifocal frame by the procedure below:
+The angle $AON$ is known as the [*longitude of the ascending node*](https://en.wikipedia.org/wiki/Longitude_of_the_ascending_node) and is denoted $\Omega$, and the angle $NOP$ is known as the [*argument of periaetas*](https://en.wikipedia.org/wiki/Argument_of_periaetas) and is denoted $\omega$. Then, remembering that the $x$-axis in the ecliptic frame points towards Aries, and that the $p$-axis in the perifocal frame points towards the periaetas, the ecliptic frame can be transformed into the perifocal frame by the procedure below:
 ```math
 \displaylines{
 \begin{align}
@@ -55,7 +55,7 @@ R_3 =
 0 & 0 & 1
 \end{bmatrix}
 ```
-Now the $x$-axis points towards the periapsis.
+Now the $x$-axis points towards the periaetas.
 
 The full rotation matrix is given by multiplying all these steps together:
 ```math
@@ -214,10 +214,10 @@ x \\ y \\ z
 ```
 $\blacksquare$
 
-In order to get geocentric coordinates, which we will denote by $(\xi, \psi, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
+In order to get geocentric coordinates, which we will denote by $(\xi, \eta, \zeta)$, we simply subtract the Earth's cartesian coordinates from the target's.
 ```math
  \begin{bmatrix}
-\xi_{\text{Planet}} \\ \psi_{\text{Planet}} \\ \zeta_{\text{Planet}}
+\xi_{\text{Planet}} \\ \eta_{\text{Planet}} \\ \zeta_{\text{Planet}}
  \end{bmatrix}
 =
  \begin{bmatrix}
@@ -253,7 +253,7 @@ We've come a long way. Let's put it all together.
 <td align="center">
 <img width="2000" height="0"><br>
 Calculate Mars' geocentric <i>equatorial</i> coordinates on $\text{March 19, }2024$. <br/>
- Use $\varepsilon = 23.44\degree$ for the Earth.
+ Use $\vareetalon = 23.44\degree$ for the Earth.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -291,7 +291,7 @@ x_{\text{Earth}} \\ y_{\text{Earth}} \\ z_{\text{Earth}}
 Thus, by equation $2.27$:
 ```math
  \begin{bmatrix}
-\xi_{\text{Mars}} \\ \psi_{\text{Mars}} \\ \zeta_{\text{Mars}}
+\xi_{\text{Mars}} \\ \eta_{\text{Mars}} \\ \zeta_{\text{Mars}}
  \end{bmatrix}
 =
 \begin{bmatrix}
@@ -310,7 +310,7 @@ Thus, by equation $2.27$:
 We need equatorial coordinates, so by equation $1.3$:
 ```math
 \begin{bmatrix}
-\xi_{\text{Mars; equatorial}} \\ \psi_{\text{Mars; equatorial}} \\ \zeta_{\text{Mars; equatorial}}
+\xi_{\text{Mars; equatorial}} \\ \eta_{\text{Mars; equatorial}} \\ \zeta_{\text{Mars; equatorial}}
 \end{bmatrix}
 =
 \begin{bmatrix}
