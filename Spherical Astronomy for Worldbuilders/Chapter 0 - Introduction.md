@@ -46,11 +46,11 @@
    - Sidereal and Solar time
    - Converting between Times
 6. **Horizontal Coordinates**
-   - Part A (Eq. $6.1$ to $6.5$, Ex. $6.1$ to $6.5$)
+   - Part A (Eq. $6.1$ to $6.6$, Ex. $6.1$ to $6.6$)
      * The Hour Angle
      * Horizontal Coordinates
      * Time of Sunrise
-   - Part B (Eq. $6.6$ to $6.16$, Ex. $6.6$ to $6.11$)
+   - Part B (Eq. $6.7$ to $6.17$, Ex. $6.7$ to $6.12$)
      * The Ascending Sign
      * Heliacal Rising
      * The Medium Coeli
