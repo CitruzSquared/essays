@@ -401,7 +401,7 @@ l = \begin{cases}
 <tbo dy >
 <td align="center">
 <img width="2000" height="0"><br>
-Find the terminator on $\text{June 21, }2023$ at standard solar time $14:56:00$ <br/>
+Find the terminator on $\text{June 21, }2023$ at standard solar time $14:56:00$. <br/>
 $\lambda_{\text{Sun}} = 90\degree$, $\Theta = 133\degree$ $33'$ $1''$, and $\varepsilon = 23.44\degree$.
 <img width="2000" height="0">
 </td>
