@@ -39,7 +39,7 @@
      * Elongation
      * The Synodic Period
      * Solving for Time of Conjunction
-   - Part B (Eq. $4.10$ to $4.26$, Ex. $4.5$ to $4.8$)
+   - Part B (Eq. $4.10$ to $4.29$, Ex. $4.5$ to $4.8$)
      * Brightness
      * Apparent Retrograde Motion
 5. **Time** (Eq. $5.1$ to $5.4$, Ex. $5.1$ to $5.3$)
