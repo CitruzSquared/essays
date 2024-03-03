@@ -7,11 +7,11 @@
 
 ## Table of Contents
 ### 1. The Ephemeris
-1. Coordinates (Eq. $1.1$ to $1.5$, Ex. $1.1$)
+1. **Coordinates** (Eq. $1.1$ to $1.5$, Ex. $1.1$)
    - The Celestial Sphere
    - Coordinate Axes
    - Coordinate Transformations
-2. Orbits
+2. **Orbits**
    - Part A (Eq. $2.1$ to $2.11$, Ex. $2.1$ to $2.2$)
      * Newton and Kepler
      * Kepler's First Law
@@ -22,7 +22,7 @@
    - Part C (Eq. $2.24$ to $2.27$, Ex. $2.5$ to $2.6$)
      * Orientation of Orbits in 3D Space
      * Calculating the Ephemeris for a Planet
-3. Moons
+3. **Moons**
    - Part A (Eq. $3.1$ to $3.13$, Ex. $3.1$ to $3.2$)
      * Change in Ω and ω
      * The Two Types of Moons
@@ -32,7 +32,7 @@
      * The Anomalistic Period
      * Multi Moon Systems
 ### 2. Terrestrial Observation
-4. Geocentrism
+4. **Geocentrism**
    - Part A (Eq. $4.1$ to $4.9$, Ex. $4.1$ to $4.4$)
      * Apparent Size
      * Phase
@@ -42,10 +42,10 @@
    - Part B (Eq. $4.10$ to $4.26$, Ex. $4.5$ to $4.8$)
      * Brightness
      * Apparent Retrograde Motion
-5. Time (Eq. $5.1$ to $5.4$, Ex. $5.1$ to $5.3$)
+5. **Time** (Eq. $5.1$ to $5.4$, Ex. $5.1$ to $5.3$)
    - Sidereal and Solar time
    - Converting between Times
-6. Horizontal Coordinates
+6. **Horizontal** Coordinates
    - Part A (Eq. $6.1$ to $6.5$, Ex. $6.1$ to $6.5$)
      * The Hour Angle
      * Horizontal Coordinates
@@ -58,7 +58,7 @@
      * Lighting Direction
    - Part C
      * Saturn in the Sky
-7. Parallax
+7. **Parallax**
 
 ## Useful Mathematics
 
