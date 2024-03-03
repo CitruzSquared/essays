@@ -50,6 +50,7 @@
      * The Hour Angle
      * Horizontal Coordinates
      * Time of Sunrise
+     * The Terminator
    - Part B (Eq. $6.7$ to $6.17$, Ex. $6.7$ to $6.12$)
      * The Ascending Sign
      * Heliacal Rising
