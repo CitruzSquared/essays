@@ -45,7 +45,7 @@
    - Part B
      * Equations $6.6$ to $6.16$
      * Examples $6.6$ to $6.11$
-7. Earthly Parallax
+7. Parallax
 
 ## Useful Mathematics
 
