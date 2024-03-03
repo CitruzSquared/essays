@@ -457,7 +457,7 @@ Plotting all these on a map, we get:
   <img width="450" src="https://github.com/CitruzSquared/essays/assets/23460281/0af4ffe1-757c-40c5-801d-9001a14c646d"> <br/>
   The Earth's terminator on $\text{June 21, }2023$ at $14:56:00$ from <a href="https://www.timeanddate.com/">timeanddate.com</a>. <br/>
   On this map, our calculations correspond to the border of the lightest shade of black. <br/>
-  Ignore the Sun and Moon icons.
+  The Sun and Moon icons show the subsolar and sublunar points (to be discussed later).
 </p>
 
 $\blacksquare$
