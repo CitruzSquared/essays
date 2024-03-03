@@ -1,7 +1,7 @@
 (Continued from Part A...)
 
 ### The Ascending Sign
-The part of the ecliptic that is rising at any given time and location is called the [*ascendant*](https://en.wikipedia.org/wiki/Ascendant) (denoted $Asc.$) at that time and location. This is often simplified to the rising zodiac sign (the *ascending sign*) and holds great importance in real world astrology. 
+The part of the ecliptic that is rising at any given time and location is called the [*ascendant*](https://en.wikipedia.org/wiki/Ascendant) (denoted $Asc.$) at that time and location. This is often simplified to the rising Zodiac sign (the *ascending sign*) and holds great importance in real world astrology. 
 
 In order for something to be rising, it must satisfy the sunrise equation:
 ```math
@@ -158,7 +158,7 @@ The ancient Egyptians thought of this event to have immense significance because
 $\blacksquare$
 
 ### The Medium Coeli
-Similar to the Ascending sign, the zodiac sign that is highest in the sky is known as the [*Medium Coeli* (or "Midheaven")](https://en.wikipedia.org/wiki/Midheaven_(astrology)) (denoted $M.C.$).
+Similar to the Ascending sign, the Zodiac sign that is highest in the sky is known as the [*Medium Coeli* (or "Midheaven")](https://en.wikipedia.org/wiki/Midheaven_(astrology)) (denoted $M.C.$).
 
 If something is highest in the sky, it is passing the meridian and thus the hour angle is $0\degree$. Thus, by equation $6.1$:
 ```math
