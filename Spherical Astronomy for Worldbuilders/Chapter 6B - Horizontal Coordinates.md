@@ -12,7 +12,7 @@ But by equation $6.1$:
 \begin{align}
 \cos(\Theta_L - \alpha) &= -\tan(\phi)\tan(\delta)\\
 \cos(\Theta_L)\cos(\alpha)+\sin(\Theta_L)\sin(\alpha) &= -\tan(\phi)\tan(\delta)\\
--\cos(\Theta_L)-\sin(\Theta_L)\tan(\alpha) &= \frac{\tan(\phi)\sin(\delta)}{\cos(\alpha)\cos(\delta)}\tag{6.6}
+-\cos(\Theta_L)-\sin(\Theta_L)\tan(\alpha) &= \frac{\tan(\phi)\sin(\delta)}{\cos(\alpha)\cos(\delta)}\tag{6.7}
 \end{align}
 ```
 Also, by equation $1.3$, a point on the ecliptic with longitude $\lambda$ ($\beta = 0\degree$) has equatorial coordinates:
@@ -23,7 +23,7 @@ Also, by equation $1.3$, a point on the ecliptic with longitude $\lambda$ ($\bet
 \delta &= \arcsin(\sin(\varepsilon)\sin(\lambda))
 \end{align}
 ```
-Substituting these into equation $6.6$:
+Substituting these into equation $6.7$:
 ```math
 -\cos(\Theta_L)-\sin(\Theta_L)\cos(\varepsilon)\tan(\lambda) = \frac{\tan(\phi)\sin(\varepsilon)\sin(\lambda)}{\cos(\alpha)\cos(\delta)}
 ```
@@ -38,16 +38,16 @@ But, $\cos(\alpha)\cos(\delta)$ is just $x_{\text{equatorial}}$ (by equation $1.
 ```
 Splitting $\tan()$ into $\sin()/\cos()$ and taking the two argument arctangent, we get:
 ```math
-\lambda = \arctan\left(-\cos(\Theta_L), \tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)\right)\tag{6.7}
+\lambda = \arctan\left(-\cos(\Theta_L), \tan(\phi)\sin(\varepsilon) +\sin(\Theta_L)\cos(\varepsilon)\right)\tag{6.8}
 ```
 To ensure a negative value for $h$ (since the ecliptic must be rising), we employ one final correction:
 ```math
 \lambda_{Asc} = \begin{cases}
 \lambda + 180\degree & \lambda<180\degree\\
 \lambda - 180\degree & \lambda>180\degree
-\end{cases}\tag{6.8}
+\end{cases}\tag{6.9}
 ```
-#### Example 6.6
+#### Example 6.7
 <div align="center">
 <table>
 <tbo dy >
@@ -65,14 +65,14 @@ We need the local sidereal time, so by equation $5.3$:
 ```math
 \Theta_L = 265\degree\:36'\:15'' + 55\degree = 320\degree\:36'\:15''
 ```
-Then, by equation $6.7$:
+Then, by equation $6.8$:
 ```math
 \begin{align}
 \lambda &= \arctan\left(-\cos(320\degree\:36'\:15''), \tan(25\degree)\sin(23.44\degree) +\sin(320\degree\:36'\:15'')\cos(23.44\degree)\right)\\
 &= 242\degree\:49'\:13''
 \end{align}
 ```
-Then, by equation $6.8$:
+Then, by equation $6.9$:
 ```math
 \begin{align}
 \lambda_{Asc} &= 242\degree\:49'\:13'' - 180\degree\\
@@ -92,11 +92,11 @@ Let's try and find out when the heliacal rising of a star with right ascension $
 
 We estimate the heliacal rising to be the point when the star would rise exactly at sunrise, but in reality it is some days after this time because the Star still needs some time to be visible. Let's first find out when the star would rise. The rising time of a point with right ascension $\alpha$ and declination $\delta$ is given by the sunrise equation and equation $6.1$:
 ```math
-\Theta_{L \text{ Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha\tag{6.9}
+\Theta_{L \text{ Star-rise}} = -\arccos(-\tan(\phi)\tan(\delta)) + \alpha\tag{6.10}
 ```
-Then we just have to find the $\lambda$ for which the Sun would rise at exactly $\Theta_{\text{Star-rise}}$, because then the date can be found by the method of example $2.3$. But, this problem has already been solved by equation $6.7$ and $6.8$! Therefore to get the date of heliacal rising, we simply find what the ascending sign is at that location for the time of starrise, and calculate the date for which the Sun is at that longitude.
+Then we just have to find the $\lambda$ for which the Sun would rise at exactly $\Theta_{\text{Star-rise}}$, because then the date can be found by the method of example $2.3$. But, this problem has already been solved by equation $6.8$ and $6.9$! Therefore to get the date of heliacal rising, we simply find what the ascending sign is at that location for the time of starrise, and calculate the date for which the Sun is at that longitude.
 
-#### Example 6.7
+#### Example 6.8
 <div align="center">
 <table>
 <tbo dy >
@@ -111,21 +111,21 @@ The time of the last periapsis of Earth was $\text{January 3, }2024$.
 </table>
 </div>
 
-By equation $6.9$:
+By equation $6.10$:
 ```math
 \begin{align}
 \Theta_{L \text{ Star-rise}} &= -\arccos(-\tan(30\degree)\tan(-16\degree\:42'\:58'')) + 06^h\:45^m\:09^s\\
 &= 21\degree\:16'\:21''
 \end{align}
 ```
-Then, by equation $6.7$:
+Then, by equation $6.8$:
 ```math
 \begin{align}
 \lambda &= \arctan\left(-\cos(21\degree\:16'\:21''), \tan(30\degree)\sin(23.44\degree) +\sin(21\degree\:16'\:21'')\cos(23.44\degree)\right)\\
 &= 301\degree\:7'\:3''
 \end{align}
 ```
-Then, by equation $6.8$:
+Then, by equation $6.9$:
 ```math
 \begin{align}
 \lambda_{Asc} &= 301\degree\:7'\:3'' - 180\degree\\
@@ -174,9 +174,9 @@ And thus:
 ```
 Splitting $\tan()$ into $\sin()/\cos()$ and taking the two argument arctangent:
 ```math
-\lambda = \arctan\left(\frac{\sin(\Theta_L)}{\cos(\varepsilon)}, \cos(\Theta_L)\right)\tag{6.10}
+\lambda = \arctan\left(\frac{\sin(\Theta_L)}{\cos(\varepsilon)}, \cos(\Theta_L)\right)\tag{6.11}
 ```
-#### Example 6.8
+#### Example 6.9
 <div align="center">
 <table>
 <tbody>
@@ -190,8 +190,8 @@ $\Theta = 265\degree$ $36'$ $15''$ and $\varepsilon = 23.44\degree$.
 </table>
 </div>
 
-The local sidereal time was found in example $6.6$ to be $320\degree$ $36'$ $15''$.\
-Thus by equation $6.10$:
+The local sidereal time was found in example $6.7$ to be $320\degree$ $36'$ $15''$.\
+Thus by equation $6.11$:
 ```math
 \begin{align}
 \lambda_{M.C.} &= \arctan\left(\frac{\sin(320\degree\:36'\:15'')}{\cos(23.44\degree)}, \cos(320\degree\:36'\:15'')\right)\\
@@ -206,17 +206,17 @@ In some regions of the world, there are times when the Sun is directly overhead 
 
 Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point on Earth corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
 ```math
-\phi_{\text{Subsolar}} = \delta \tag{6.11}
+\phi_{\text{Subsolar}} = \delta \tag{6.12}
 ```
 Because the declension of the Sun cannot exceed the axial tilt of the planet, Lahaina noon only occurs in regions with latitudes between $+\varepsilon$ and $-\varepsilon$ (the Tropics of Cancer and Capricorn).
 
 If the Sun is at the Zenith, then it is also at the meridian and thus it would be the apparent noon at that place. Thus we just have to find the longitude where it is exactly apparent noon at time $t$. The hour angle of the Sun at apparent noon is $0\degree$, so that longitude would be where $\Theta_L = \alpha$ (by equation $6.1$). Thus, if we know the standard sidereal time $\Theta$ at time $t$, we can calculate the longitude by:
 ```math
-l_{\text{Subsolar}} = \alpha - \Theta\tag{6.12}
+l_{\text{Subsolar}} = \alpha - \Theta\tag{6.13}
 ```
 Which comes from equation $6.2$.
 
-#### Example 6.9
+#### Example 6.10
 <div align="center">
 <table>
 <tbody>
@@ -237,7 +237,7 @@ By equation $1.3$:
 \delta = 21\degree\:25'\:25''
 \end{align}
 ```
-Thus by equation $6.11$ and $6.12$:
+Thus by equation $6.12$ and $6.13$:
 ```math
 \begin{align}
 \phi &= \delta = 21\degree\:25'\:25''\\
@@ -274,15 +274,15 @@ But we also know that since $\beta$ of the Sun is $0\degree$, $z_{\text{ecliptic
 So we take the arcsine. $\arcsin()$ has two solutions:
 ```math
 \begin{align}
-\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.13}\\
-\alpha_2 &= 12^h - \alpha_1 \tag{6.14}
+\alpha_1 &= \arcsin\left(\frac{\cos(\varepsilon)\sin(\delta)}{\sin(\varepsilon)\cos(\delta)}\right) \tag{6.14}\\
+\alpha_2 &= 12^h - \alpha_1 \tag{6.15}
 \end{align}
 ```
 Therfore at any location, if Lahaina noon is possible, there will be two dates when this happens. (Unless one is *exactly* at the Tropic of Cancer or Capricorn. Then $\alpha_1$ works out to be equal to $\alpha_2$.)
 
 From $\alpha$ and $\delta$ we can find $\lambda$ and then find the date by means of example $2.3$. However, notice that the coordinates of the Sun depend only on $\phi$ and not $l$. This means that this formula predicts that an entire line of latitude will all experience Lahaina noon, however this is impossible as there is only one subsolar point for a specific location of the Sun, not a whole latitude line. In reality, what's happening here is that on average the whole latitude line will experience Lahaina noon but the true subsolar point depends on the specific rotation of the Earth (i.e. the sidereal time). However, the change in declination of the Sun is so slow (it takes one full year to complete the cycle of declination) that the change of latitude of the subsolar point in the course of a sidereal day is almost negligible, and thus we can approximate that it is the whole latitude line that experiences Lahaina noon. This approximation works better the more sidereal days there are in a planet year.
 
-#### Example 6.10
+#### Example 6.11
 <div align="center">
 <table>
 <tbody>
@@ -299,7 +299,7 @@ By equation $6.10$:
 ```math
 \delta = \phi = 24\degree\:25'\:25''
 ```
-Then, by equations $6.13$ and $6.14$:
+Then, by equations $6.14$ and $6.15$:
 ```math
 \begin{align}
 \alpha_1 &= \arcsin\left(\frac{\cos(23.44\degree)\sin(24\degree\:25'\:25'')}{\sin(23.44\degree)\cos(24\degree\:25'\:25'')}\right)\\
@@ -331,17 +331,17 @@ This can be calculated with the [spherical law of cosines](https://en.wikipedia.
 ```
 The angle $ZOS$ and $ZOP$ are called the *zenith distances* (denoted $\zeta$) of $S$ and $P$ and can be calculated by:
 ```math
-\zeta = 90\degree - a\tag{6.15}
+\zeta = 90\degree - a\tag{6.16}
 ```
 Therefore, the equation becomes:
 ```math
-ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.16}
+ZPS = \arccos\left(\frac{\cos(\zeta_S) - \cos(\zeta_P) \cos(SOP)}{\sin(\zeta_P)\sin(SOP)}\right)\tag{6.17}
 ```
 The angle $SOP$ can be calculated by equation $4.3$.
 
 <br/>
 
-#### Example 6.11
+#### Example 6.12
 <div align="center">
 <table>
 <tbody>
@@ -388,14 +388,14 @@ A_S &= 104\degree\:2'\:39.1''\\
 a_S&= -18\degree\:26'\:47.8''\\
 \end{align}
 ```
-Thus, by equation $6.15$:
+Thus, by equation $6.16$:
 ```math
 \begin{align}
 \zeta_V &= 90\degree - 6\degree\:47'\:32.0'' = 83\degree\:12'\:28.0''\\
 \zeta_S &= 90\degree - (-18\degree\:26'\:47.8'') = 108\degree\:26'\:47.8''\\
 \end{align}
 ```
-And then finally by equation $6.16$:
+And then finally by equation $6.17$:
 ```math
 \begin{align}
 ZVS &= \arccos\left(\frac{\cos(108\degree\:26'\:47.8'') - \cos(83\degree\:12'\:28.0'') \cos(37\degree\:16'\:\:7.9'')}{\sin(83\degree\:12'\:28.0'')\sin(37\degree\:16'\:\:7.9'')}\right)\\
