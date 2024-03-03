@@ -450,7 +450,7 @@ Filling out for $66\degree$ $33'$ $36''\leq\phi\leq66\degree$ $33'$ $36''$:
 -66\degree\:33'\:36'' & 316\degree\:27' & 316\degree\:27'\\ \hline
 \end{array}
 ```
-Plotting all these on a map, we get:
+Plotting all these points on a map, we get:
 <p align="center">
   <img width="450" src="https://github.com/CitruzSquared/essays/assets/23460281/26c676ad-d825-4f04-846a-e6ff4abbbbd8"> <br/>
   The Earth's terminator on $\text{June 21, }2023$ at $14:56:00$ <br/>
