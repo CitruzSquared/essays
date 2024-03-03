@@ -64,7 +64,7 @@ There are two coordinate systems in wide use. The [Equatorial Coordinate System]
    * The Ecliptic Longitude is measured in the plane of the Ecliptic from the Cusp of Aries with East as the positive direction. Declination is measured perpendicular from the Ecliptic such that positive is North.
    * By definition of the Ecliptic, the Ecliptic Latitude of the Sun is always $0\degree$.
    * The points of $+90\degree$ and $-90\degree$ Latitude are called the *North* and *South* [*Ecliptic Poles*](https://en.wikipedia.org/wiki/Orbital_pole) respectively. The celestial poles move extremely slowly around the ecliptic poles due to axial precession, which we will ignore.
-   * The ecliptic longitude is split into twelve equal signs that span $30\degree$ each, called the *zodiac signs*: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius, and Pisces. The definition of original zodiac signs is obviously possible in a worldbuilding setting of course.
+   * The ecliptic longitude is split into twelve equal signs that span $30\degree$ each, called the [*Zodiac signs*](https://en.wikipedia.org/wiki/Astrological_sign): Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius, and Pisces. The definition of original zodiac signs is obviously possible in a worldbuilding setting of course.
 
 All this is summarized in this diagram below:
 
