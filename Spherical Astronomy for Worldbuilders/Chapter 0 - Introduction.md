@@ -59,6 +59,7 @@
    - Part C
      * Saturn in the Sky
 7. **Parallax**
+### Eclipses and Transits
 
 ## Useful Mathematics
 
