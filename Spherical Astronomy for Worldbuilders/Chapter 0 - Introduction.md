@@ -59,10 +59,11 @@
    - Part C
      * Saturn in the Sky
 7. **Parallax**
-### 3. Eclipses and Transits
+### 3. Syzygy
 8. **Solar Eclipses**
 9. **Lunar Eclispes**
 10. **Transits**
+11. **Lunar Occultations**
 
 ## Useful Mathematics
 
