@@ -303,6 +303,7 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 ```
 Equation $6.5$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it can be used to calculate the rising time of any celestial object, not just the Sun. If the positive arccosine value is taken, then the formula will calculate the setting time instead.
 
+It can be shown that if $\phi > \arctan(\cot(\delta))$, then the sunrise equation predicts $\cos(h) > 1$ which is impossible. Likewise, if $\phi < -\arctan(\cot(\delta))$, then $\cos(h) < -1$ which is also impossible. This means that the Sun will not rise or set in these latitudes. In particular, if $\cos(h) > 1$, then the Sun is perpetually up. If $\cos(h) < -1$, then the Sun is perpetually below the horizon.
 #### Example 6.5
 <div align="center">
 <table>
@@ -373,6 +374,88 @@ Now we follow example $6.2$.
 }
 ```
 Further repetition will better our approximations.\
+$\blacksquare$
+
+### The Terminator
+The [*terminator*](https://en.wikipedia.org/wiki/Terminator_(solar)) is the line separating night and day at any moment in time. Let's say at standard solar time $t$, the standard sidereal time was $\Theta$. To find the terminator, we find the places where the Sun is rising or setting, i.e. we use the sunrise equation:
+```math
+\cos(h) = -\tan(\phi)\tan(\delta)
+```
+Therefore:
+```math
+h = \begin{cases}
+-\arccos(-\tan(\phi)\tan(\delta)) & \text{ Sunrise}\\
+\arccos(-\tan(\phi)\tan(\delta)) & \text{ Sunset}
+\end{cases}
+```
+but by equation $6.2$, $h = \Theta + l - \alpha$, so:
+```math
+l = \begin{cases}
+-\arccos(-\tan(\phi)\tan(\delta)) - \Theta + \alpha & \text{ Sunrise}\\
+\arccos(-\tan(\phi)\tan(\delta)) - \Theta + \alpha & \text{ Sunset}
+\end{cases}\tag{6.6}
+```
+#### Example 6.6
+<div align="center">
+<table>
+<tbo dy >
+<td align="center">
+<img width="2000" height="0"><br>
+Find the terminator on $\text{June 21, }2023$ at $14:56:00$ <br/>
+$\lambda_{\text{Sun}} = 90\degree$, $\Theta = 133\degree$ $33'$ $1''$, and $\varepsilon = 23.44\degree$.
+<img width="2000" height="0">
+</td>
+</tbo dy >
+</table>
+</div>
+
+By equation $1.3$:
+```math
+\begin{align}
+\alpha_{\text{Sun}} &= 90\degree\\
+\delta_{\text{Sun}} &= 23\degree\:26'\:24'' (=\varepsilon)
+\end{align}
+```
+Thus the limits of sunrise and sundown are:
+```math
+\phi = \pm\arctan(\cot(23\degree\:26'\:24'') = \pm66\degree\:33'\:36''
+```
+Now we use equation $6.6$.\
+For $\phi = 0\degree$:
+```math
+l = \begin{cases}
+-\arccos(-\tan(0\degree)\tan(23\degree\:26'\:24'')) - 133\degree\:33'\:1'' + 90\degree & \text{ Sunrise}\\
+= 226\degree\:26'\:59'' &  \text{ Sunrise} \\
+\arccos(-\tan(0\degree)\tan(23\degree\:26'\:24'')) - 133\degree\:33'\:1'' + 90\degree & \text{ Sunset}\\
+= 46\degree\:26'\:59'' & \text{ Sunset}
+\end{cases}
+```
+Filling out for $66\degree$ $33'$ $36''\leq\phi\leq66\degree$ $33'$ $36''$:
+```math
+\begin{array}{|c|c|c|}\hline \phi & l \text{ of Sunrise} & l \text{ of Sundown}\\ \hline
+66\degree\:33'\:36'' & 136\degree\:27' & 136\degree\:27'\\
+60\degree & 177\degree\:47' & 95\degree\:7'\\
+50\degree & 195\degree\:20' & 77\degree\:34'\\
+40\degree & 205\degree\:7' & 67\degree\:47'\\
+30\degree & 211\degree\:57' & 60\degree\:57'\\
+20\degree & 217\degree\:22' & 55\degree\:32'\\
+10\degree & 222\degree\:4' & 50\degree\:50'\\
+0\degree & 226\degree\:27' & 46\degree\:27'\\
+-10\degree & 230\degree\:50' & 42\degree\:4'\\
+-20\degree & 235\degree\:32' & 37\degree\:22'\\
+-30\degree & 240\degree\:57' & 31\degree\:57'\\
+-40\degree & 247\degree\:47' & 25\degree\:7'\\
+-50\degree & 257\degree\:34' & 15\degree\:20'\\
+-60\degree & 275\degree\:7' & 357\degree\:47'\\
+-66\degree\:33'\:36'' & 316\degree\:27' & 316\degree\:27'\\ \hline
+\end{array}
+```
+Plotting all these on a map, we get:
+<p align="center">
+  <img width="450" src="https://github.com/CitruzSquared/essays/assets/23460281/26c676ad-d825-4f04-846a-e6ff4abbbbd8"> <br/>
+  The Earth's terminator on $\text{June 21, }2023$ at $14:56:00$
+</p>
+
 $\blacksquare$
 
 ### The Ascending Sign
