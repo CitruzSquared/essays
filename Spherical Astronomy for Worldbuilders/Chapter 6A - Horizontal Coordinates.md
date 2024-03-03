@@ -303,7 +303,7 @@ z_{\text{horizontal}} = 0 &= \cos(\phi)\cos(\delta) \cos(h) + 0\cdot\cos(\delta)
 ```
 Equation $6.5$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Sunrise_equation). However, it can be used to calculate the rising time of any celestial object, not just the Sun. If the positive arccosine value is taken, then the formula will calculate the setting time instead.
 
-Notice that if $\phi > \arctan(\cot(\delta))$, then the sunrise equation predicts $\cos(h) > 1$ which is impossible. Likewise, if $\phi < -\arctan(\cot(\delta))$, then $\cos(h) < -1$ which is also impossible. This means that the Sun will not rise or set in these latitudes. In particular, if $\cos(h) > 1$, then the Sun is perpetually up. If $\cos(h) < -1$, then the Sun is perpetually below the horizon.
+Notice that if $\phi > \arctan(\cot(\delta))$, then the sunrise equation predicts $\cos(h) > 1$ which is impossible. Likewise, if $\phi < -\arctan(\cot(\delta))$, then $\cos(h) < -1$ which is also impossible. This means that the object will not rise or set in these latitudes. In particular, if $\cos(h) > 1$, then the object is perpetually up. If $\cos(h) < -1$, then the object is perpetually below the horizon.
 #### Example 6.5
 <div align="center">
 <table>
