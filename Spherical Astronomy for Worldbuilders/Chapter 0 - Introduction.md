@@ -45,7 +45,7 @@
 5. **Time** (Eq. $5.1$ to $5.4$, Ex. $5.1$ to $5.3$)
    - Sidereal and Solar time
    - Converting between Times
-6. **Horizontal** Coordinates
+6. **Horizontal Coordinates**
    - Part A (Eq. $6.1$ to $6.5$, Ex. $6.1$ to $6.5$)
      * The Hour Angle
      * Horizontal Coordinates
