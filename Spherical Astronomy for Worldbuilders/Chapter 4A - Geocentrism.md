@@ -1,4 +1,9 @@
 # Part 2. Terrestrial Observations
+<p align="center">
+  <img width="100" src="https://github.com/CitruzSquared/essays/assets/23460281/1ca5135c-f8e7-459f-8055-380675806c4b"> <br/>
+  The Phases of the Moon.
+</p>
+
 In the last part, we discussed how to calculate the positions of the planets in space. Let's now discuss how they look and behave from the view of the Earth.
 
 ## IV. Geocentrism
