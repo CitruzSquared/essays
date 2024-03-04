@@ -1,9 +1,4 @@
 ## VI. Horizontal Coordinates
-<p align="center">
-  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/c42197f2-f6f4-4b2b-a6a5-8454eeadfd1e"> <br/>
-  The Setting Sun.
-</p>
-
 Let's define a set of coordinates that we can use to describe the location of objects from the view of an observer on the ground.
 
 ### The Hour Angle
