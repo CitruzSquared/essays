@@ -1,4 +1,9 @@
 ## III. Moons
+<p align="center">
+  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/b034af38-ac10-45b7-8e03-8736af53e270"><br/>
+   Lunar Apsidal Precession.
+</p>
+
 In the previous chapter, we studied the motion of the planets, which was modeled fairly well by Keplerian motion. Moons behave mostly in the same way, but we need to account for a few extra things due to their small size and relatively small semi-major axis lengths. In particular, [**orbital precession**](https://en.wikipedia.org/wiki/Orbital_precession), the change in the orbital elements over time caused by gravitational perturbation, cannot be ignored for moons in the same way we have ignored them for the planets. 
 
 The two precessions we must account for are:
