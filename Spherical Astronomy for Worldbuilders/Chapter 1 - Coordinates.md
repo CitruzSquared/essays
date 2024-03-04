@@ -2,6 +2,11 @@
 An [ephemeris](https://en.wikipedia.org/wiki/Ephemeris) (plural *ephemerides*) is a table listing the locations of celestial objects at specific times. Let us see how to calculate the ephemeris.
 
 ## I. Coordinates
+<p align="center">
+  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/da37d7a0-4447-4d9e-98b1-624dc2ea1606"><br/>
+ The Celestial Sphere.
+</p>
+
 Let us begin by talking about how objects are even located in space.
 
 ### The Celestial Sphere
