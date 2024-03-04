@@ -411,8 +411,8 @@ $\lambda_{\text{Sun}} = 90\degree$, $\Theta = 133\degree$ $33'$ $1''$, and $\var
 By equation $1.3$:
 ```math
 \begin{align}
-\alpha_{\text{Sun}} &= 90\degree\\
-\delta_{\text{Sun}} &= 23\degree\:26'\:24''
+\alpha &= 90\degree\\
+\delta &= 23\degree\:26'\:24''
 \end{align}
 ```
 Thus the limits of sunrise and sundown are:
