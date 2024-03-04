@@ -62,7 +62,7 @@
 7. **Parallax**
 ### 3. Syzygy
 8. **Solar Eclipses**
-9. **Lunar Eclispes**
+9. **Lunar Eclipses**
 10. **Transits**
 11. **Lunar Occultations**
 
