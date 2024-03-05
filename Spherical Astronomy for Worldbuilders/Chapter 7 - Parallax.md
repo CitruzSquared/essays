@@ -166,7 +166,7 @@ Because $\Theta_L$ is the right ascension of the local meridian. Then, given tha
 ```math
 (p', q', s') = (p - x, q - y, s - z) \tag{7.11}
 ```
-Which can be turned back into spherical coordinates and then be used to calculate horizontal coordinates.
+Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.
 
 #### Example 7.2
 <div align="center">
