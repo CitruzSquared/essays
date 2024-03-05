@@ -89,7 +89,7 @@ From the equation of the ellipse and its derivative, substituting $1 - e^2$ for 
 we find:
 ```math
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-\enspace\enspace\enspace\text{and}\enspace\enspace\enspace
+\:\:\:\text{and}\:\:\:
 y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 ```
 But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
@@ -127,7 +127,7 @@ By multiplying the 2nd line of equation $7.7$ with the 1st line of equation $7.8
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-The Earth's equatorial radius and polar radius are given as $6378.137\enspace\text{km}$ and $6356.752\enspace\text{km}$ respectively. <br/>
+The Earth's equatorial radius and polar radius are given as $6378.137\:\text{km}$ and $6356.752\:\text{km}$ respectively. <br/>
 Find the radius of the Earth at geographic latitude $35\degree N$.
 <img width="2000" height="0">
 </td>
@@ -139,24 +139,83 @@ By equation $7.4$:
 ```math
 \displaylines{
 \tan(\phi') = \frac{6356.752^2}{6378.137^2} \cdot \tan(35\degree)\\
-\therefore\phi' = 34\degree\enspace49'\enspace9.79''.
+\therefore\phi' = 34\degree\:49'\:9.79''.
 }
 ```
 Then by equation $7.5$:
 ```math
 \begin{align}
 \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\\
-&= \frac{6378.137\cdot6356.752}{\sqrt{6356.752^2 \cos^2(34\degree\enspace49'\enspace9.79'') + 6378.137^2 \sin^2(4\degree\enspace49'\enspace9.79'')}}\\
-&= 6371.141\enspace\text{km}.
+&= \frac{6378.137\cdot6356.752}{\sqrt{6356.752^2 \cos^2(34\degree\:49'\:9.79'') + 6378.137^2 \sin^2(4\degree\:49'\:9.79'')}}\\
+&= 6371.141\:\text{km}.
 \end{align}
 ```
-Or by equation $7.9$:
+A solution by equation $7.6$ or equation $7.9$ is also valid of course.\
+$\blacksquare$
+
+### Parallax
+Knowing the radius of the Earth, we can formulate the position of any point on the Earth in equatorial coordinates as follows:
 ```math
 \begin{align}
-\rho &= a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\\
-&= 6378.137 \sqrt{\frac{\cos(35\degree)}{\cos(34\degree\enspace49'\enspace9.79'')\cos(35\degree-34\degree\enspace49'\enspace9.79'')}}\\
-&= 6371.141\enspace\text{km}.
+x &= \rho \cos(\phi')\cos(\Theta_L)\\
+y &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\ 
+z &= \rho \sin(\phi')
 \end{align}
 ```
-A solution by equation $7.6$ is also valid of course.\
+Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the *true* equatorial coordinates of a celestial body is $(p, q, s)$, we can calculate its apparent equatorial coordinates $(p', q', s')$ by:
+```math
+(p', q', s') = (p - x, q - y, s - z) \tag{7.11}
+```
+Which can be turned back into spherical coordinates.
+
+#### Example 7.2
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+On $\text{January 1, } 2024$ at standard time $00:00$ ($\Theta = 100\degree$ $9'$ $9.42''$), <br/> 
+the true equatorial coordinates of the Moon were $\alpha = 10^h$ $35^m$ $11.55^s$ and $\delta = +12\degree$ $45'$ $8.3''$. <br/>
+Given that the distance to the Moon was $404$ $634.3 \text{ km}$, calculate the apparent equatorial coordinates at $\phi = 35\degree$ and $l = 150\degree$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+In cartesian coordinates, the Moon's true coordinates were (by equation $1.1$):
+```math
+\begin{alignat}{2}
+p &= 404\:634.3 \cos(12\degree\:45'\:8.3'')\cos(10^h\:35^m\:11.55^s) &&= -367940.1\\
+q &= 404\:634.3 \cos(12\degree\:45'\:8.3'')\sin(10^h\:35^m\:11.55^s) &&=  142728.4\\ 
+s &= 404\:634.3 \sin(12\degree\:45'\:8.3'') &&= 89317.63
+\end{alignat}
+```
+The local sidereal time was (by equation $5.3$):
+```math
+\Theta_L = 100\degree\:9'\:9.42'' + 150\degree = 250\degree\:9'\:9.42''
+```
+The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.10$):
+```math
+\begin{alignat}{2}
+x &= 6371.141 \cos(34\degree\:49'\:9.79'')\cos(250\degree\:9'\:9.42'') &&= -1775.813\\
+y &= 6371.141 \cos(34\degree\:49'\:9.79'')\sin(250\degree\:9'\:9.42'') &&= -4919.741\\ 
+z &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
+\end{alignat}
+```
+Thus, by equation $7.11$:
+```math
+\begin{alignat}{2}
+p_{\text{apparent}} &= -367940.1 - (-1775.813) &&= -366164.3\\
+q_{\text{apparent}} &= 142728.4 - (-4919.741) &&= 147648.1\\ 
+s_{\text{apparent}} &= 89317.63 - 3637.867 &&= 85679.76
+\end{alignat}
+```
+Thus, by equation $1.2$:
+```math
+\begin{alignat}{2}
+\alpha_{\text{apparent}} &= \arctan(147648.1, -366164.3) &&= 10^h\:32^m\:21.39^s\\
+\delta_{\text{apparent}} &= \arcsin\left(\frac{85679.76}{\sqrt{(-371312.8)^2 + 146726.2^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
+\end{alignat}
+```
 $\blacksquare$
