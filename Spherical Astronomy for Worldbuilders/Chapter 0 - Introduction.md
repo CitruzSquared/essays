@@ -60,6 +60,10 @@
    - Part C
      * Saturn in the Sky
 7. **Parallax**
+   - The Shape of the Earth
+   - Latitude
+   - Apparent Coordinates
+   - Horizontal Parallax
 ### 3. Syzygy
 8. **Solar Eclipses**
 9. **Lunar Eclipses**
