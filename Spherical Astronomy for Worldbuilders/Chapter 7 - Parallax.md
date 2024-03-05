@@ -154,22 +154,22 @@ A solution by equation $7.6$ or equation $7.9$ is also valid of course.\
 $\blacksquare$
 
 ### Apparent Coordinates
-Knowing the radius of the Earth, we can formulate the position of any point on the Earth in geocentric equatorial coordinates as follows:
+Knowing the radius of the Earth, we can formulate the position of any point on the Earth $(p, q, s)$ in geocentric equatorial coordinates as follows:
 ```math
 \begin{align}
-x &= \rho \cos(\phi')\cos(\Theta_L)\\
-y &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\ 
-z &= \rho \sin(\phi')
+p &= \rho \cos(\phi')\cos(\Theta_L)\\
+q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\ 
+s &= \rho \sin(\phi')
 \end{align}
 ```
-Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian equatorial coordinates of a celestial body is $(p, q, s)$, we can calculate its apparent cartesian equatorial coordinates $(p', q', s')$ by:
+Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian equatorial coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian equatorial coordinates $(x', y', z')$ by:
 ```math
-(p', q', s') = (p - x, q - y, s - z) \tag{7.11}
+(x', y', z') = (x - p, y - q, z - s) \tag{7.11}
 ```
 Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.\
 Naturally, if one is given the apparent equatorial coordinates then the true coordinates are:
 ```math
-(p, q, s) = (p' + x, q' + y, s' + z) \tag{7.12}
+(x, y, z) = (x' + p, y' + q, z' + s) \tag{7.12}
 ```
 
 While the disparity of location between the observer and the center of the Earth significantly changes the location of closer objects (like the Sun and the inner planets, and in particular the Moon) it does not matter much for very far objects like the stars, and the stars can be regarded has having 0 parallax, i.e. no difference in location whatsoever.
@@ -192,9 +192,9 @@ Given that the distance to the Moon was $404$ $634.3 \text{ km}$, calculate its 
 In cartesian coordinates, the Moon's true coordinates were (by equation $1.1$):
 ```math
 \begin{alignat}{2}
-p &= 404\:634.3 \cos(12\degree\:45'\:8.3'')\cos(10^h\:35^m\:11.55^s) &&= -367940.1\\
-q &= 404\:634.3 \cos(12\degree\:45'\:8.3'')\sin(10^h\:35^m\:11.55^s) &&=  142728.4\\ 
-s &= 404\:634.3 \sin(12\degree\:45'\:8.3'') &&= 89317.63
+x &= 404\:634.3 \cos(12\degree\:45'\:8.3'')\cos(10^h\:35^m\:11.55^s) &&= -367940.1\\
+y &= 404\:634.3 \cos(12\degree\:45'\:8.3'')\sin(10^h\:35^m\:11.55^s) &&=  142728.4\\ 
+z &= 404\:634.3 \sin(12\degree\:45'\:8.3'') &&= 89317.63
 \end{alignat}
 ```
 The local sidereal time was (by equation $5.3$):
@@ -204,17 +204,17 @@ The local sidereal time was (by equation $5.3$):
 The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.10$):
 ```math
 \begin{alignat}{2}
-x &= 6371.141 \cos(34\degree\:49'\:9.79'')\cos(250\degree\:9'\:9.42'') &&= -1775.813\\
-y &= 6371.141 \cos(34\degree\:49'\:9.79'')\sin(250\degree\:9'\:9.42'') &&= -4919.741\\ 
-z &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
+p &= 6371.141 \cos(34\degree\:49'\:9.79'')\cos(250\degree\:9'\:9.42'') &&= -1775.813\\
+q &= 6371.141 \cos(34\degree\:49'\:9.79'')\sin(250\degree\:9'\:9.42'') &&= -4919.741\\ 
+s &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
 \end{alignat}
 ```
 Thus, by equation $7.11$:
 ```math
 \begin{alignat}{2}
-p' &= -367940.1 - (-1775.813) &&= -366164.3\\
-q' &= 142728.4 - (-4919.741) &&= 147648.1\\ 
-s' &= 89317.63 - 3637.867 &&= 85679.76
+x' &= -367940.1 - (-1775.813) &&= -366164.3\\
+y' &= 142728.4 - (-4919.741) &&= 147648.1\\ 
+z' &= 89317.63 - 3637.867 &&= 85679.76
 \end{alignat}
 ```
 Thus, by equation $1.2$:
