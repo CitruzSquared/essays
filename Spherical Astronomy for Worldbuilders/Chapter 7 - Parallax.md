@@ -215,7 +215,7 @@ Thus, by equation $1.2$:
 ```math
 \begin{alignat}{2}
 \alpha' &= \arctan(147648.1, -366164.3) &&= 10^h\:32^m\:21.39^s\\
-\delta' &= \arcsin\left(\frac{85679.76}{\sqrt{(-371312.8)^2 + 146726.2^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
+\delta' &= \arcsin\left(\frac{85679.76}{\sqrt{(-366164.3)^2 + 147648.1^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
 \end{alignat}
 ```
 In a worldbuilding setting however, the cartesian coordinates of the Moon would already be known, and therefore one can skip the first step.
