@@ -252,7 +252,7 @@ A &= 281\degree\:15'\:28.20''\\
 a &= 5\degree\:17'\:8.62''\\
 \end{align}
 ```
-The values using the apparent coordinates are what an observer standing at that location would actually see.\
+Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded values), it is evident that the values using the apparent coordinates are what an observer standing at that location would actually see.\
 $\blacksquare$
 
 ### Parallax Angle
