@@ -218,7 +218,41 @@ Thus, by equation $1.2$:
 \delta' &= \arcsin\left(\frac{85679.76}{\sqrt{(-366164.3)^2 + 147648.1^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
 \end{alignat}
 ```
-In a worldbuilding setting however, the cartesian coordinates of the Moon would already be known, and therefore one can skip the first step.
+In a worldbuilding setting however, the cartesian coordinates of the Moon would already be known, and therefore one can skip the first step.\
+$\blacksquare$
+
+To demonstrate the difference, let's calculate the horizontal coordinates of the Moon.
+#### Example 7.3
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Make calculate the horizontal coordinates of the Moon at the time and location from the previous example using the true and apparent coordinates.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We use equation $6.3$.\
+For the true coordinates:
+```math
+\begin{align}
+h_L &= 250\degree\:9'\:9.42'' - 10^h\:35^m\:11.55^s = 91\degree\:21'\:16.17''\\
+A &= 281\degree\:15'\:18.12''\\
+a &= 6\degree\:11'\:2.82''\\
+\end{align}
+```
+For the apparent coordinates:
+```math
+\begin{align}
+h_L &= 250\degree\:9'\:9.42'' - 10^h\:32^m\:9.43^s = 92\degree\:6'\:48.03''\\
+A &= 281\degree\:15'\:28.20''\\
+a &= 5\degree\:17'\:8.62''\\
+\end{align}
+```
+The values using the apparent coordinates are what an observer standing at that location would actually see.\
 $\blacksquare$
 
 ### Parallax Angle
