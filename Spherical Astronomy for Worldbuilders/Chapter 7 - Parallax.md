@@ -166,7 +166,11 @@ Because $\Theta_L$ is the right ascension of the local meridian. Then, given tha
 ```math
 (p', q', s') = (p - x, q - y, s - z) \tag{7.11}
 ```
-Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.
+Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.\
+Naturally, if one is given the apparent equatorial coordinates then the true coordinates are:
+```math
+(p, q, s) = (p' + x, q' + y, s' + z) \tag{7.12}
+```
 
 While the disparity of location between the observer and the center of the Earth significantly changes the location of closer objects (like the Sun and the inner planets, and in particular the Moon) it does not matter much for very far objects like the stars, and the stars can be regarded has having 0 parallax, i.e. no difference in location whatsoever.
 
