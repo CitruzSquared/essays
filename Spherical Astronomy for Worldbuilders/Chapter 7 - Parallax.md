@@ -218,4 +218,5 @@ Thus, by equation $1.2$:
 \delta' &= \arcsin\left(\frac{85679.76}{\sqrt{(-371312.8)^2 + 146726.2^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
 \end{alignat}
 ```
+In a worldbuilding setting however, the cartesian coordinates of the Moon would already be known, and therefore one can skip the first step.
 $\blacksquare$
