@@ -153,7 +153,7 @@ Then by equation $7.5$:
 A solution by equation $7.6$ or equation $7.9$ is also valid of course.\
 $\blacksquare$
 
-### Parallax
+### Apparent Coordinates
 Knowing the radius of the Earth, we can formulate the position of any point on the Earth in geocentric equatorial coordinates as follows:
 ```math
 \begin{align}
