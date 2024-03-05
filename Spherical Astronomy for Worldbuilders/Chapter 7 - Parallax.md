@@ -3,9 +3,9 @@
 Our formulae for the location of planets in the sky, and hence the values in our ephemeris, are calculated for a hypothetical observer at the center of the Earth. These values are called the *true* values. On the surface, there is a measurable difference in the values of angles compared to their true values due to the difference in viewing location, particularly for close objects such as the Moon. The actual observed angles are called the *apparent* values, and their difference is called the *parallax*. Let us see how to calculate this parallax.
 
 ### The Shape of the Earth
-In order to observe from the surface of the Earth, we must know the shape of the Earth. The Earth is roughly a squished sphere, meaning it is a spheroid. Due to the Earth's rotation, its polar radius its smaller than its equatorial radius. The amount of flattening of the Earth, called the *compression* ($c$), is calculated with the following formula:
+In order to observe from the surface of the Earth, we must know the shape of the Earth. As mentioned in chapter $3$, the Earth is roughly a squished sphere, meaning it is a spheroid. Due to the Earth's rotation, its polar radius its smaller than its equatorial radius. The amount of flattening of the Earth, called the *flattening* ($f$), is calculated with the following formula:
 ```math
-c = 1 - \frac{b}{a}\tag{14}
+f = \frac{a - b}{a}\tag{7.1}
 ```
 Where $b =$ the polar radius, and $a =$ the equatorial radius.
 
@@ -15,10 +15,10 @@ e^2 = 1 - \frac{b^2}{a^2}
 ```
 it follows that
 ```math
-e^2 = 1 - (1 - c)^2
+e^2 = 1 - (1 - f)^2
 ```
 ```math
-\therefore e = \sqrt{2c - c^2}.\tag{15}
+\therefore e = \sqrt{2c - f^2}.\tag{7.2}
 ```
 
 ### Latitude
@@ -35,7 +35,7 @@ So, given a geodetic latitude, how do we find the geocentric latitude?
 
 Well, consider the equation of the ellipse with semi-major axis $a$ and semi-minor axis $b$:
 ```math
-\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\tag{16}
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\tag{7.3}
 ```
 Because $PO$ is perpendicular to the tangent $PT$, the slope of $PO$ must be $-1/m_{PT}$. In other words:
 ```math
@@ -45,13 +45,13 @@ And from the triangle $PCQ$,
 ```math
 \tan(\phi') = \frac{y}{x}
 ```
-Implicitly differentiating equation $16$:
+Implicitly differentiating equation $7.3:
 ```math
 \frac{y}{x} = -\frac{b^2}{a^2} \frac{d x}{d y}
 ```
 Therefore:
 ```math
-\tan(\phi') = \frac{b^2}{a^2} \cdot \tan(\phi).\tag{17}
+\tan(\phi') = \frac{b^2}{a^2} \cdot \tan(\phi).\tag{7.4}
 ```
 It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, i.e. $\phi - \phi'$, called the *reduction in latitude*, is equal to the angle $CPO$ in the diagram.
 
@@ -65,7 +65,7 @@ we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
 \begin{align}
 1 &= \frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2}\\
 a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
-\therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{18}\\
+\therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{7.5}\\
 \end{align}
 ```
 We can substitute $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
@@ -74,7 +74,7 @@ We can substitute $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, a
 \rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin^2(\phi')}}\\
 &= \frac{b}{\sqrt{(1 - e^2) \cos^2(\phi') + \sin^2(\phi')}}\\
 &= \frac{b}{\sqrt{\cos^2(\phi') + \sin^2(\phi') - e^2 \cos^2(\phi')}}\\
-&= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{19}
+&= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{7.6}
 \end{align}
 ```
 
@@ -103,25 +103,25 @@ With the addition of an auxiliary $\psi$, these equations can be simplified:
 ```math
 \begin{align}
 \sin(\psi) &= e\sin(\phi)\\
-\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{20}\\
+\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{7.7}\\
 \rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
 \end{align}
 ```
-We can deduce from equation $20$ by using the angle addition formulae
+We can deduce from equation $7.7$ by using the angle addition formulae
 ```math
 \displaylines{
 \begin{align}
 \rho \cos(\phi - \phi') &= a \cos(\psi)\\
 \rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
 \end{align}
-}\tag{21}
+}\tag{7.8}
 ```
-By multiplying the 2nd line of equation $20$ with the 1st line of equation $21$, we obtain:
+By multiplying the 2nd line of equation $7.7$ with the 1st line of equation $7.8$, we obtain:
 ```math
-\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{22}
+\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{7.9}
 ```
 
-#### Example 7
+#### Example 7.1
 <div align="center">
 <table>
 <tbody>
@@ -135,14 +135,14 @@ Find the radius of the Earth at geographic latitude $35\degree N$.
 </table>
 </div>
 
-By equation $17$:
+By equation $7.4$:
 ```math
 \displaylines{
 \tan(\phi') = \frac{6356.752^2}{6378.137^2} \cdot \tan(35\degree)\\
 \therefore\phi' = 34\degree\enspace49'\enspace9.79''.
 }
 ```
-Then by equation $18$:
+Then by equation $7.5$:
 ```math
 \begin{align}
 \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\\
@@ -150,7 +150,7 @@ Then by equation $18$:
 &= 6371.141\enspace\text{km}.
 \end{align}
 ```
-Or by equation $22$:
+Or by equation $7.9$:
 ```math
 \begin{align}
 \rho &= a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\\
@@ -158,5 +158,5 @@ Or by equation $22$:
 &= 6371.141\enspace\text{km}.
 \end{align}
 ```
-A solution by equation $19$ is also valid of course.\
+A solution by equation $7.6$ is also valid of course.\
 $\blacksquare$
