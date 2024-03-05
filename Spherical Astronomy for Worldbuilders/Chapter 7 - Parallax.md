@@ -168,6 +168,8 @@ Because $\Theta_L$ is the right ascension of the local meridian. Then, given tha
 ```
 Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.
 
+While the disparity of location between the observer and the center of the Earth significantly changes the location of closer objects (like the Sun and the inner planets, and in particular the Moon) it does not matter much for very far objects like the stars, and the stars can be regarded has having 0 parallax, i.e. no difference in location whatsoever.
+
 #### Example 7.2
 <div align="center">
 <table>
