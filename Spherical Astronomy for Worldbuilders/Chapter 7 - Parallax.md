@@ -220,3 +220,5 @@ Thus, by equation $1.2$:
 ```
 In a worldbuilding setting however, the cartesian coordinates of the Moon would already be known, and therefore one can skip the first step.
 $\blacksquare$
+
+### Parallax Angle
