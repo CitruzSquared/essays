@@ -206,16 +206,16 @@ z &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
 Thus, by equation $7.11$:
 ```math
 \begin{alignat}{2}
-p_{\text{apparent}} &= -367940.1 - (-1775.813) &&= -366164.3\\
-q_{\text{apparent}} &= 142728.4 - (-4919.741) &&= 147648.1\\ 
-s_{\text{apparent}} &= 89317.63 - 3637.867 &&= 85679.76
+p' &= -367940.1 - (-1775.813) &&= -366164.3\\
+q' &= 142728.4 - (-4919.741) &&= 147648.1\\ 
+s' &= 89317.63 - 3637.867 &&= 85679.76
 \end{alignat}
 ```
 Thus, by equation $1.2$:
 ```math
 \begin{alignat}{2}
-\alpha_{\text{apparent}} &= \arctan(147648.1, -366164.3) &&= 10^h\:32^m\:21.39^s\\
-\delta_{\text{apparent}} &= \arcsin\left(\frac{85679.76}{\sqrt{(-371312.8)^2 + 146726.2^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
+\alpha' &= \arctan(147648.1, -366164.3) &&= 10^h\:32^m\:21.39^s\\
+\delta' &= \arcsin\left(\frac{85679.76}{\sqrt{(-371312.8)^2 + 146726.2^2 + 85679.76^2}}\right) &&= +12\degree\:14'\:38.9''
 \end{alignat}
 ```
 $\blacksquare$
