@@ -162,7 +162,7 @@ y &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\
 z &= \rho \sin(\phi')
 \end{align}
 ```
-Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the *true* equatorial coordinates of a celestial body is $(p, q, s)$, we can calculate its apparent equatorial coordinates $(p', q', s')$ by:
+Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian equatorial coordinates of a celestial body is $(p, q, s)$, we can calculate its apparent cartesian equatorial coordinates $(p', q', s')$ by:
 ```math
 (p', q', s') = (p - x, q - y, s - z) \tag{7.11}
 ```
