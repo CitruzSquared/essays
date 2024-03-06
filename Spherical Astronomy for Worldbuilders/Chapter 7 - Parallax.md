@@ -337,9 +337,9 @@ We calculated in previous examples that for this latitude:
 Thus, by equation $7.14$:
 ```math
 \begin{alignat}{2}
-p &= -6371.141 \sin(34\degree\:49'\:9.79'') &&= -20.08377\\
+p &= -6371.141 \sin(10'\:50.21'') &&= -20.08377\\
 q &= 0\\
-s &= 6371.141 \cos(34\degree\:49'\:9.79'') &&= 6371.109
+s &= 6371.141 \cos(10'\:50.21'') &&= 6371.109
 \end{alignat}
 ```
 By equation $1.1$:
