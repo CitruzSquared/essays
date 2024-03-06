@@ -363,6 +363,22 @@ a' &= \arcsin\left(\frac{37217.62}{\sqrt{78535.46^2 + (-394543.1)^2 + 37217.62^2
 Which agree with example $7.3$ within rounding error.\
 $\blacksquare$
 
+### Parallax Corrected Sunrise Equation
+In chapter $6$, we derived the sunrise equation that can be used to determine the hour angle for when an object would be at the horizon. However, our formulation used the geocentric horizontal coordinates which are not what an observer on the surface would actually see. To calculate the observed hour angle, we must correct for parallax.
+
+In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, and thus by equation $7.11$, $z = s$. $z$, the geocentric horizontal z coordinate of the object is given by equation $6.3$:
+```math
+z = \Delta \cos(\phi) \cos(\delta) \cos(h) + \Delta \sin(\phi) \sin(\delta)
+```
+and $s$ is given by equation $7.13$:
+```math
+s = \rho \cos(\phi - \phi')
+```
+Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise equation:
+```math
+\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \Delta \tan(\phi) \tan(\delta) \tag{7.14}
+```
+The first term in this equation is the correction term.
 ### Horizontal Parallax
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
@@ -373,7 +389,7 @@ Or in other words, the parallax in altitude is equal to the angle subtended by t
 
 It is evident then, that:
 ```math
-\sin(\pi) = \frac{a}{\Delta}\tag{7.14}
+\sin(\pi) = \frac{a}{\Delta}\tag{7.15}
 ```
 Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
 #### Example 7.5
@@ -389,7 +405,7 @@ Determine the maximum possible parallax in the position of the Moon given that t
 </table>
 </div>
 
-The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.14$:
+The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.15$:
 ```math
 \begin{align}
 \sin(\pi) &= \frac{6378.137}{404\:634.3}\\
