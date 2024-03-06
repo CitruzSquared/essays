@@ -301,7 +301,7 @@ z &= \Delta \sin(a)
 ```
 These are the true coordinates of the object.
 
-The position $(p, q, s)$ of $P$ in this new system are given as:
+The position $(p, q, s)$ of $P$ in the second (geocentric) system are given as:
 ```math
 \begin{align}
 p &= -\rho \sin(\phi - \phi')\\
