@@ -271,22 +271,8 @@ A' &= 281\degree\:15'\:28.20''\\
 a' &= 5\degree\:17'\:8.62''\\
 \end{align}
 ```
-Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded values), it is evident that the values calculated using the apparent coordinates are what an observer standing at that location would actually see. Thus, the notion of "geocentric (true) horizontal coordinates" is merely a simplification and has no real-life meaning. That is not to say it is not useful, as we will see in the *Apparent Horizontal Coordinates* section. \
+Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded values), it is evident that the values calculated using the apparent coordinates are what an observer standing at that location would actually see. Thus, the notion of "geocentric (true) horizontal coordinates" is merely a simplification and has no real-life meaning. That is not to say it is not useful, as we will see in the next section. \
 $\blacksquare$
-
-### Horizontal Parallax
-
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
-```math
-SAH' - SCH = ASC
-```
-Or in other words, the parallax in altitude is equal to the angle subtended by the radius of the Earth from $S$. Thus, maximum parallax is achieved when $S$ is at the local horizon $H'$, when $S$ subtends the whole radius of the Earth. This angle is called the *horizontal parallax*, and is maximum when the radius of the Earth $CA$ is the equatorial radius, in which case it is called the *equatorial horizontal parallax* (denoted by $\pi$).
-
-It is evident then, that:
-```math
-\sin(\pi) = \frac{a}{\Delta}\tag{7.13}
-```
-Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
 
 ### Apparent Horizontal Coordinates
 It is possible to calculate the apparent horizontal coordinates from the geocentric horizontal coordinates, thus eliminating the need to calculate the apparent declination and hour angle for every location on the Earth: one calculation of the horizontal coordinates for a specific latitude using geocentric equatorial coordinates can be corrected to locations on the surface of the Earth.
@@ -315,7 +301,7 @@ The position $(p, q, s)$ of $P$ in the second (geocentric) system are given as:
 ```math
 \begin{align}
 p &= -\rho \sin(\phi - \phi')\\
-q &= 0 \tag{7.14} \\
+q &= 0 \tag{7.13} \\
 s &= \rho \cos(\phi - \phi')
 \end{align}
 ```
@@ -352,7 +338,7 @@ We calculated in previous examples that for this latitude:
 \therefore \phi - \phi' &= 10'\:50.21''
 \end{align}
 ```
-Thus, by equation $7.14$:
+Thus, by equation $7.13$:
 ```math
 \begin{alignat}{2}
 p &= -6371.141 \sin(10'\:50.21'') &&= -20.08377\\
@@ -376,4 +362,46 @@ a' &= \arcsin\left(\frac{37217.62}{\sqrt{78535.46^2 + (-394543.1)^2 + 37217.62^2
 \end{alignat}
 ```
 Which agree with example $7.3$ within rounding error.\
+$\blacksquare$
+
+### Horizontal Parallax
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
+```math
+SAH' - SCH = ASC
+```
+Or in other words, the parallax in altitude is equal to the angle subtended by the radius of the Earth from $S$. Thus, maximum parallax is achieved when $S$ is at the local horizon $H'$, when $S$ subtends the whole radius of the Earth. This angle is called the *horizontal parallax*, and is maximum when the radius of the Earth $CA$ is the equatorial radius, in which case it is called the *equatorial horizontal parallax* (denoted by $\pi$).
+
+It is evident then, that:
+```math
+\sin(\pi) = \frac{a}{\Delta}\tag{7.14}
+```
+Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
+#### Example 7.5
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the maximum possible parallax in the position of the Moon given that the Moon was $404$ $634.3 \text{ km}$ away and that the equatorial radius of the Earth is $6378.137\text{ km}$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.14$:
+```math
+\begin{align}
+\sin(\pi) &= \frac{6378.137}{404\:634.3}\\
+\therefore \pi = 54'\:11''
+\end{align}
+```
+Thus the position of the Moon could vary by up to $54'$ $11''$ from the geocentric position depending on the location of the observer on the Earth.
+
+The absolute maximum parallax of the Moon happens at perigee when the Moon is $356$ $400\text{ km}$ from the Earth:
+```math
+\pi = \arcsin\left(\frac{6378.137}{356\:400}\right) = 1\degree\:1'\:32''
+```
+The Moon's position could vary by more than a degree in this case.\
 $\blacksquare$
