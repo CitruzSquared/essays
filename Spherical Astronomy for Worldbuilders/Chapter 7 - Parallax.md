@@ -235,7 +235,7 @@ To demonstrate the difference, let's calculate the horizontal coordinates of the
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Make calculate the horizontal coordinates of the Moon at the time and location from the previous example using the true and apparent coordinates.
+Calculate the horizontal coordinates of the Moon at the time and location from the previous example using the true and apparent coordinates.
 <img width="2000" height="0">
 </td>
 </tbody>
