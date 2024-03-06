@@ -187,7 +187,7 @@ First, let's simplify the expression for $\omega$ (this expression introduces so
 ```math
 \omega = \arctan\left(\frac{\tan(\Lambda)}{\cos(i)}\right)
 ```
-Then,
+Then (reckoning all angles in radians),
 ```math
 \dot\omega = \frac{\cos^2(i)}{\cos^2(i) + \tan^2(\Lambda)}\cdot\frac{\sec^2(\Lambda)}{\cos(i)}\cdot\dot\Lambda
 ```
