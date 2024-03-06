@@ -366,7 +366,7 @@ $\blacksquare$
 ### Parallax Corrected Sunrise Equation
 In chapter $6$, we derived the sunrise equation that can be used to determine the hour angle for when an object would be at the horizon. However, our formulation used the geocentric horizontal coordinates which are not what an observer on the surface would actually see. To calculate the observed hour angle, we must correct for parallax.
 
-In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, and thus by equation $7.11$, $z = s$. $z$, the geocentric horizontal z coordinate of the object is given by equation $6.3$:
+In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, and thus by equation $7.11$, $z$ must equal $s$. $z$, the geocentric horizontal z coordinate of the object is given by equation $6.3$:
 ```math
 z = \Delta \cos(\phi) \cos(\delta) \cos(h) + \Delta \sin(\phi) \sin(\delta)
 ```
