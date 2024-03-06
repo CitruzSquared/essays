@@ -289,7 +289,7 @@ It is evident then, that:
 Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
 
 ### Apparent Horizontal Coordinates
-It is possible to calculate the apparent horizontal coordinates from the geocentric horizontal coordinates, thus eliminating the need to calculate the apparent declination and hour angle for every location on the Earth: one calculation of the horizontal coordinates for the center of the Earth can be corrected to any location on the surface of the Earth.
+It is possible to calculate the apparent horizontal coordinates from the geocentric horizontal coordinates, thus eliminating the need to calculate the apparent declination and hour angle for every location on the Earth: one calculation of the horizontal coordinates for a specific latitude using geocentric equatorial coordinates can be corrected to locations on the surface of the Earth.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/1de6400b-51a2-4e33-a0fe-5f96ce0f04f5" width="350"/> Consider a coordinate system where the origin is the place of observation $P$, the $x$-axis points northward along the meridian along the horizon, i.e. $TP$, and the $z$-axis points upward towards the Zenith, i.e. $PZ$. The $y$-axis is then the East-West line at point $P$. In this coordinate system, the position $(x', y', z')$ of an object in the sky is given as (by equation $1.1$):
 ```math
