@@ -314,8 +314,7 @@ From equation $7.14$, the apparent horizontal coordinates can be described by eq
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Calculate the apparent horizontal coordinates of the Moon from $\phi = 35\degree$, $l = 150\degree$ given: <br/>
-the geocentric horizontal coordinates of the Moon for this latitude was $\Delta = 404$ $634.3 \text{ km}, A = 281\degree$ $15'$ $18.12'', a = 6\degree$ $11'$ $2.82''$.
+Calculate the apparent horizontal coordinates of the Moon from $\phi = 35\degree$, given that the geocentric horizontal coordinates of the Moon at this time for this latitude was $\Delta = 404$ $634.3 \text{ km}, A = 281\degree$ $15'$ $18.12'', a = 6\degree$ $11'$ $2.82''$.
 <img width="2000" height="0">
 </td>
 </tbody>
