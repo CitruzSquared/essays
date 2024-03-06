@@ -242,7 +242,7 @@ Make calculate the horizontal coordinates of the Moon at the time and location f
 </table>
 </div>
 
-We use equation $6.3$.\
+We use equation $6.3$ with the geodetic latitude $35\degree$.\
 For the true coordinates:
 ```math
 \begin{align}
