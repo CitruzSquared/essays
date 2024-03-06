@@ -209,7 +209,7 @@ Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be c
 \begin{alignat}{2}
 x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) \cos(h) + \cos(\phi) \sin(\delta) &&= 0\\
 y_{\text{horizontal}} &= \cos(\delta)\sin(h) &&= 0
-\end{align}
+\end{alignat}
 ```
 If the Sun is at the Zenith then it is also at the meridian and thus it would be the apparent noon at that place. Thus, $h = 0\degree$. Substituting this gives:
 ```math
