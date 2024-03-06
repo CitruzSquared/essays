@@ -291,7 +291,7 @@ z' &= \Delta' \sin(a')
 ```
 Where $\Delta'$ is the apparent distance to the object. These are the apparent coordinates of the object.
 
-Consider another coordinate system, parallel to the first but centered at the Earth's center $C$, i.e. the $x$-axis points in the direction $T'C$, and the $z$-axis points in the direction $CZ'$. The position $(x, y, z)$ of the same object as before is given in this new coordinate system as (by equation $1.1$):
+Consider another coordinate system, parallel to the first but centered at the Earth's center $C$, i.e. the $x$-axis points in the direction $T'C$, and the $z$-axis points in the direction $CZ'$. The position $(x, y, z)$ of the object is given in this new coordinate system as (by equation $1.1$):
 ```math
 \begin{align}
 x &= \Delta \cos(a)\cos(A)\\
