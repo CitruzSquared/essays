@@ -63,8 +63,8 @@
    - The Shape of the Earth
    - Latitude
    - Apparent Equatorial Coordinates
-   - Horizontal Parallax
    - Apparent Horizontal Coordinates
+   - Horizontal Parallax
 ### 3. Syzygy
 8. **Solar Eclipses**
 9. **Lunar Eclipses**
