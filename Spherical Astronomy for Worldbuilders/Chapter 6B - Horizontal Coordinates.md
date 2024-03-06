@@ -211,7 +211,7 @@ x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) \cos(h) + \cos(\phi) \sin(\del
 y_{\text{horizontal}} &= \cos(\delta)\sin(h)
 \end{align}
 ```
-If the Sun is at the Zenith then it is also at the meridian and thus it would be the apparent noon at that place. Thus, $h = 0\degree$:
+If the Sun is at the Zenith then it is also at the meridian and thus it would be the apparent noon at that place. Thus, $h = 0\degree$. Substituting this gives:
 ```math
 \begin{align}
 x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) + \cos(\phi) \sin(\delta) \\
