@@ -206,9 +206,9 @@ In some regions of the world, there are times when the Sun is directly overhead 
 
 Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. If the Sun is at the Zenith, then the $x$ and $y$ coordinates of the Sun in the horizontal frame would be $0$ and only the $z$ component would exist. From equation $6.3$ we can deduce:
 ```math
-\begin{align}
-x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) \cos(h) + \cos(\phi) \sin(\delta) \\
-y_{\text{horizontal}} &= \cos(\delta)\sin(h)
+\begin{alignat}{2}
+x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) \cos(h) + \cos(\phi) \sin(\delta) &&= 0\\
+y_{\text{horizontal}} &= \cos(\delta)\sin(h) &&= 0
 \end{align}
 ```
 If the Sun is at the Zenith then it is also at the meridian and thus it would be the apparent noon at that place. Thus, $h = 0\degree$. Substituting this gives:
