@@ -18,7 +18,7 @@ it follows that
 e^2 = 1 - (1 - f)^2
 ```
 ```math
-\therefore e = \sqrt{2c - f^2}.\tag{7.2}
+\therefore e = \sqrt{2f - f^2}.\tag{7.2}
 ```
 
 ### Latitude
