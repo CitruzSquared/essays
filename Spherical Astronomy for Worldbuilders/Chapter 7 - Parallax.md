@@ -378,7 +378,8 @@ Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise
 ```math
 \cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \Delta \tan(\phi) \tan(\delta) \tag{7.14}
 ```
-The first term in this equation is the correction term.
+The first term in this equation is the correction term. It is evident from the many examples of chapter $6$ that the uncorrected variant is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, closer objects like the Moon can have an incredibly significant parallax (see the next section) and therefore the parallax corrected version of the sunrise equation should be used.
+
 ### Horizontal Parallax
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
