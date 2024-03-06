@@ -403,5 +403,5 @@ The absolute maximum parallax of the Moon happens when the Moon is closest to th
 ```math
 \pi = \arcsin\left(\frac{6378.137}{356\:400}\right) = 1\degree\:1'\:32''
 ```
-The Moon's position could vary by more than a degree in this case.\
+The Moon's position could vary from the geocentric position by more than a degree in this case.\
 $\blacksquare$
