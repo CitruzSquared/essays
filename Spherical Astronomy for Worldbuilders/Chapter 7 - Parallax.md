@@ -153,7 +153,7 @@ Then by equation $7.5$:
 A solution by equation $7.6$ or equation $7.9$ is also valid of course.\
 $\blacksquare$
 
-### Apparent Coordinates
+### Apparent Equatorial Coordinates
 Knowing the radius of the Earth, we can formulate the position of any point on the Earth $(p, q, s)$ in geocentric equatorial coordinates as follows:
 ```math
 \begin{align}
@@ -162,12 +162,12 @@ q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\
 s &= \rho \sin(\phi')
 \end{align}
 ```
-Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian equatorial coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian equatorial coordinates $(x', y', z')$ by:
+Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian coordinates $(x', y', z')$ by:
 ```math
 (x', y', z') = (x - p, y - q, z - s) \tag{7.11}
 ```
 Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.\
-Naturally, if one is given the apparent equatorial coordinates then the true coordinates are:
+Naturally, if one is given the apparent coordinates then the true coordinates are:
 ```math
 (x, y, z) = (x' + p, y' + q, z' + s) \tag{7.12}
 ```
@@ -265,3 +265,101 @@ Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded val
 $\blacksquare$
 
 ### Horizontal Parallax
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
+```math
+SAH' - SCH = ASC
+```
+Or in other words, the parallax in altitude is equal to the angle subtended by the radius of the Earth from $S$. Thus, maximum parallax is achieved when $S$ is at the local horizon $H'$, when $S$ subtends the whole radius of the Earth. This angle is called the *horizontal parallax*, and is maximum when the radius of the Earth $CA$ is the equatorial radius, in which case it is called the *equatorial horizontal parallax* (denoted by $\pi$).
+
+It is evident then, that:
+```math
+\sin(\pi) = \frac{a}{\Delta}\tag{7.13}
+```
+Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
+
+### Apparent Horizontal Coordinates
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/36b3cf67-ee1c-4b11-93f6-f9f251ef6948" width="350"/> Consider a coordinate system where the origin is the place of observation $P$, the $x$-axis points along the meridian along the horizon, i.e. $PT$, and the $z$-axis points towards the Zenith, i.e. $PZ$. The $y$-axis is then the East-West line at point $P$. In this coordinate system, the position $(x', y', z')$ of an object in the sky is given as (by equation $1.1$):
+```math
+\begin{align}
+x' &= \Delta' \cos(a')\cos(A')\\
+y' &= \Delta' \cos(a')\sin(A')\\ 
+z' &= \Delta' \sin(a')
+\end{align}
+```
+Where $\Delta'$ is the apparent distance to the object. These are the apparent coordinates of the object.
+
+Consider another coordinate system, parallel to the first but centered at the Earth's center $C$, i.e. the $x$-axis points in the direction $CT'$, and the $z$-axis points in the direction $CZ'$. The position $(x, y, z)$ of the same object as before is given in this new coordinate system as (by equation $1.1$):
+```math
+\begin{align}
+x &= \Delta \cos(a)\cos(A)\\
+y &= \Delta \cos(a)\sin(A)\\ 
+z &= \Delta \sin(a)
+\end{align}
+```
+These are the true coordinates of the object.
+
+The position $(p, q, s)$ of $P$ in this new system are given as:
+```math
+\begin{align}
+p &= \rho \sin(\phi - \phi')\\
+q &= 0 \tag{7.15} \\
+s &= \rho \cos(\phi - \phi')
+\end{align}
+```
+Because $\phi - \phi' = CPO = PCZ'$. Thus, the apparent horizontal coordinates can be described by equation $7.11$.
+#### Example 7.4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Calculate the apparent horizontal coordinates of the Moon from $\phi = 35\degree$, $l = 150\degree$ given: <br/>
+the geocentric horizontal coordinates of the Moon for this latitude was $\Delta = 404$ $634.3 \text{ km}, A = 281\degree$ $15'$ $18.12'', a = 6\degree$ $11'$ $2.82''$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We calculated in previous examples that for this latitude:
+```math
+\begin{align}
+\rho &= 6371.141\text{ km}\\
+\phi' &= 34\degree\:49'\:9.79''\\
+\therefore \phi - \phi' &= 10'\:50.21''
+\end{align}
+```
+Thus, by equation $7.15$:
+```math
+\begin{alignat}{2}
+p &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 20.08377\\
+q &= 0\\
+s &= 6371.141 \cos(34\degree\:49'\:9.79'') &&= 6371.109
+\end{alignat}
+```
+By equation $1.1$:
+```math
+\begin{alignat}{2}
+x &= 404\:634.3 \cos(6\degree\:11'\:2.82'')\cos(281\degree\:15'\:18.12'')&&= 78515.54\\
+y &= 404\:634.3 \cos(6\degree\:11'\:2.82'')\sin(281\degree\:15'\:18.12'')&&= -394543.1\\
+z &= 404\:634.3 \sin(6\degree\:11'\:2.82'') &&= 43588.73
+\end{alignat}
+```
+Thus, by equation $7.11$:
+```math
+\begin{alignat}{2}
+x' &= 78515.54 - 20.08377 &&= 78495.46\\
+y' &= -394543.1 - 0 &&= -394543.1\\
+z' &= 43588.73 - 6371.109 &&= 37217.62
+\end{alignat}
+```
+Thus, by equation $1.2$:
+```math
+\begin{alignat}{2}
+A' &= \arctan(-394543.1, 78495.46) &&= 281\degree\:15'\:8.03''\\
+a' &= \arcsin\left(\frac{37217.62}{\sqrt{78495.46^2 + (-394543.1)^2 + 37217.62^2}}\right) &&= 5\degree\:17'\:8.97''\\
+\end{alignat}
+```
+Which agree with example $7.3$ within rounding error.\
+$\blacksquare$
