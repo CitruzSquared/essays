@@ -281,7 +281,7 @@ Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric d
 ### Apparent Horizontal Coordinates
 It is possible to calculate the apparent horizontal coordinates from the geocentric horizontal coordinates.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/36b3cf67-ee1c-4b11-93f6-f9f251ef6948" width="350"/> Consider a coordinate system where the origin is the place of observation $P$, the $x$-axis points along the meridian along the horizon, i.e. $PT$, and the $z$-axis points towards the Zenith, i.e. $PZ$. The $y$-axis is then the East-West line at point $P$. In this coordinate system, the position $(x', y', z')$ of an object in the sky is given as (by equation $1.1$):
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/36b3cf67-ee1c-4b11-93f6-f9f251ef6948" width="350"/> Consider a coordinate system where the origin is the place of observation $P$, the $x$-axis points northward along the meridian along the horizon, i.e. $TP$, and the $z$-axis points upward towards the Zenith, i.e. $PZ$. The $y$-axis is then the East-West line at point $P$. In this coordinate system, the position $(x', y', z')$ of an object in the sky is given as (by equation $1.1$):
 ```math
 \begin{align}
 x' &= \Delta' \cos(a')\cos(A')\\
@@ -291,7 +291,7 @@ z' &= \Delta' \sin(a')
 ```
 Where $\Delta'$ is the apparent distance to the object. These are the apparent coordinates of the object.
 
-Consider another coordinate system, parallel to the first but centered at the Earth's center $C$, i.e. the $x$-axis points in the direction $CT'$, and the $z$-axis points in the direction $CZ'$. The position $(x, y, z)$ of the same object as before is given in this new coordinate system as (by equation $1.1$):
+Consider another coordinate system, parallel to the first but centered at the Earth's center $C$, i.e. the $x$-axis points in the direction $T'C$, and the $z$-axis points in the direction $CZ'$. The position $(x, y, z)$ of the same object as before is given in this new coordinate system as (by equation $1.1$):
 ```math
 \begin{align}
 x &= \Delta \cos(a)\cos(A)\\
