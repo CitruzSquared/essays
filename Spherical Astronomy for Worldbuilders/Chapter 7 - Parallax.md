@@ -370,7 +370,7 @@ $\blacksquare$
 ```math
 SAH' - SCH = ASC
 ```
-Or in other words, the parallax in altitude is equal to the angle subtended by the radius of the Earth from $S$. Thus, maximum parallax is achieved when $S$ is at the local horizon $H'$, when $S$ subtends the whole radius of the Earth. This angle is called the *horizontal parallax*, and is maximum when the radius of the Earth $CA$ is the equatorial radius, in which case it is called the *equatorial horizontal parallax* (denoted by $\pi$).
+Or in other words, the parallax in altitude is equal to the angle subtended by the radius of the Earth from $S$. It is evident therefore that maximum parallax is achieved when $S$ is at the local horizon $H'$, when $S$ subtends the whole radius of the Earth. This angle is called the *horizontal parallax*, and is maximum when the radius of the Earth $CA$ is the equatorial radius, in which case it is called the *equatorial horizontal parallax* (denoted by $\pi$).
 
 It is evident then, that:
 ```math
