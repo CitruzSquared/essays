@@ -394,7 +394,7 @@ The maximum possible parallax is the equatorial horizontal parallax, so by equat
 ```math
 \begin{align}
 \sin(\pi) &= \frac{6378.137}{404\:634.3}\\
-\therefore \pi = 54'\:11''
+\therefore \pi &= 54'\:11''
 \end{align}
 ```
 Thus the position of the Moon could vary by up to $54'$ $11''$ from the geocentric position depending on the location of the observer on the Earth.
