@@ -285,7 +285,7 @@ y' &= \Delta' \cos(a')\sin(A')\\
 z' &= \Delta' \sin(a')
 \end{align}
 ```
-Where $\Delta'$ is the apparent distance to the object. These are the apparent coordinates of the object.
+Where $\Delta'$ is the apparent distance to the object. These are the apparent horizontal coordinates of the object.
 
 Consider another coordinate system, parallel to the first but centered at the Earth's center $C$, i.e. the $x$-axis points in the direction $T'C$, and the $z$-axis points in the direction $CZ'$. The position $(x, y, z)$ of the object is given in this new coordinate system as (by equation $1.1$):
 ```math
@@ -295,7 +295,7 @@ y &= \Delta \cos(a)\sin(A)\\
 z &= \Delta \sin(a)
 \end{align}
 ```
-These are the true coordinates of the object.
+These are the true (geocentric) horizontal coordinates of the object.
 
 The position $(p, q, s)$ of $P$ in the second (geocentric) system are given as:
 ```math
