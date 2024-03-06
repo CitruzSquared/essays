@@ -5,7 +5,7 @@ Our formulae for the location of planets in the sky, and hence the values in our
 ### The Shape of the Earth
 In order to observe from the surface of the Earth, we must know the shape of the Earth. As mentioned in chapter $3$, the Earth is roughly a squished sphere, meaning it is a spheroid. Due to the Earth's rotation, its polar radius its smaller than its equatorial radius. The amount of flattening of the Earth, called the *flattening* ($f$), is calculated with the following formula:
 ```math
-f = \frac{a - b}{a}\tag{7.1}
+f = \frac{a - b}{a} = 1 - \frac{b}{a}\tag{7.1}
 ```
 Where $b =$ the polar radius, and $a =$ the equatorial radius.
 
