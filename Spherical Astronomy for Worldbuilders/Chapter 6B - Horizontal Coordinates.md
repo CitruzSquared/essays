@@ -204,13 +204,30 @@ $\blacksquare$
 ### The Subsolar Point
 In some regions of the world, there are times when the Sun is directly overhead (i.e. at the Zenith) and objects leave no shadow on the ground. This phenomenon is called the [Lahaina noon](https://en.wikipedia.org/wiki/Lahaina_Noon) and the point where this occurs on the Earth is called the [subsolar point](https://en.wikipedia.org/wiki/Subsolar_point). Let's try to find the subsolar time at any time. 
 
-Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. The subsolar point would be the point on Earth corresponding to these equatorial coordinates. Thus the latitude of the subsolar point is simply the declination of the Sun:
+Say that at (solar) time $t$, the Sun was at longitude $\lambda$, which can be converted into right ascension $\alpha$ and declination $\delta$. If the Sun is at the Zenith, then the $x$ and $y$ coordinates of the Sun in the horizontal frame would be $0$ and only the $z$ component would exist. From equation $6.3$ we can deduce:
 ```math
-\phi_{\text{Subsolar}} = \delta \tag{6.12}
+\begin{align}
+x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) \cos(h) + \cos(\phi) \sin(\delta) \\
+y_{\text{horizontal}} &= \cos(\delta)\sin(h)
+\end{align}
+```
+If the Sun is at the Zenith then it is also at the meridian and thus it would be the apparent noon at that place. Thus, $h = 0\degree$:
+```math
+\begin{align}
+x_{\text{horizontal}} &= -\sin(\phi) \cos(\delta) + \cos(\phi) \sin(\delta) \\
+y_{\text{horizontal}} &= 0
+\end{align}
+```
+The $y$ coordinate is already $0$. Setting $x_{\text{horizontal}} = 0$ and solving for $\phi$ we get:
+```math
+\begin{align}
+\tan(\phi) &= \tan(\delta)\\
+\therefore \phi_{\text{Subsolar}} &= \delta \tag{6.12}
+\end{align}
 ```
 Because the declension of the Sun cannot exceed the axial tilt of the planet, Lahaina noon only occurs in regions with latitudes between $+\varepsilon$ and $-\varepsilon$ (the Tropics of Cancer and Capricorn).
 
-If the Sun is at the Zenith, then it is also at the meridian and thus it would be the apparent noon at that place. Thus we just have to find the longitude where it is exactly apparent noon at time $t$. The hour angle of the Sun at apparent noon is $0\degree$, so that longitude would be where $\Theta_L = \alpha$ (by equation $6.1$). Thus, if we know the standard sidereal time $\Theta$ at time $t$, we can calculate the longitude by:
+Because $h = 0\degree$, $\Theta_L = \alpha$ (by equation $6.1$). Thus, if we know the standard sidereal time $\Theta$ at time $t$, we can calculate the longitude by:
 ```math
 l_{\text{Subsolar}} = \alpha - \Theta\tag{6.13}
 ```
