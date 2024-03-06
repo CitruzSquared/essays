@@ -336,6 +336,14 @@ the geocentric horizontal coordinates of the Moon for this latitude was $\Delta 
 </table>
 </div>
 
+The Moon's coordinates by equation $1.1$:
+```math
+\begin{alignat}{2}
+x &= 404\:634.3 \cos(6\degree\:11'\:2.82'')\cos(281\degree\:15'\:18.12'')&&= 78515.54\\
+y &= 404\:634.3 \cos(6\degree\:11'\:2.82'')\sin(281\degree\:15'\:18.12'')&&= -394543.1\\
+z &= 404\:634.3 \sin(6\degree\:11'\:2.82'') &&= 43588.73
+\end{alignat}
+```
 We calculated in previous examples that for this latitude:
 ```math
 \begin{align}
@@ -350,14 +358,6 @@ Thus, by equation $7.14$:
 p &= -6371.141 \sin(10'\:50.21'') &&= -20.08377\\
 q &= 0\\
 s &= 6371.141 \cos(10'\:50.21'') &&= 6371.109
-\end{alignat}
-```
-By equation $1.1$:
-```math
-\begin{alignat}{2}
-x &= 404\:634.3 \cos(6\degree\:11'\:2.82'')\cos(281\degree\:15'\:18.12'')&&= 78515.54\\
-y &= 404\:634.3 \cos(6\degree\:11'\:2.82'')\sin(281\degree\:15'\:18.12'')&&= -394543.1\\
-z &= 404\:634.3 \sin(6\degree\:11'\:2.82'') &&= 43588.73
 \end{alignat}
 ```
 Thus, by equation $7.11$:
