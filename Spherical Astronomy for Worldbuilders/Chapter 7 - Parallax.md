@@ -246,7 +246,7 @@ We use equation $6.3$ with the geodetic latitude $35\degree$.\
 For the true coordinates:
 ```math
 \begin{align}
-h_L &= 250\degree\:9'\:9.42'' - 10^h\:35^m\:11.55^s = 91\degree\:21'\:16.17''\\
+h &= 250\degree\:9'\:9.42'' - 10^h\:35^m\:11.55^s = 91\degree\:21'\:16.17''\\
 \delta &= 12\degree\:45'\:8.3''
 \end{align}
 ```
@@ -260,7 +260,7 @@ a &= 6\degree\:11'\:2.82''\\
 For the apparent coordinates:
 ```math
 \begin{align}
-h_L' &= 250\degree\:9'\:9.42'' - 10^h\:32^m\:9.43^s = 92\degree\:6'\:48.03''\\
+h' &= 250\degree\:9'\:9.42'' - 10^h\:32^m\:9.43^s = 92\degree\:6'\:48.03''\\
 \delta' &= 12\degree\:14'\:38.9''
 \end{align}
 ```
