@@ -376,9 +376,9 @@ s = \rho \cos(\phi - \phi')
 ```
 Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise equation:
 ```math
-\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \Delta \tan(\phi) \tan(\delta) \tag{7.14}
+\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{7.14}
 ```
-The first term in this equation is the correction term. It is evident from the many examples of chapter $6$ that the uncorrected variant is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, closer objects like the Moon can have an incredibly significant parallax (see the next section) and therefore the parallax corrected version of the sunrise equation should be used.
+The first term in this equation is the correction for parallax. It is evident from the many examples of chapter $6$ that the uncorrected variant is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, closer objects like the Moon can have an incredibly significant parallax (see the next section) and therefore the parallax corrected version of the sunrise equation should be used.
 
 ### Horizontal Parallax
 
