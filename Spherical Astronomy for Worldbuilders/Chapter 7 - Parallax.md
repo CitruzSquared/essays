@@ -255,10 +255,10 @@ a &= 6\degree\:11'\:2.82''\\
 For the apparent coordinates:
 ```math
 \begin{align}
-h_L &= 250\degree\:9'\:9.42'' - 10^h\:32^m\:9.43^s = 92\degree\:6'\:48.03''\\
+h_L' &= 250\degree\:9'\:9.42'' - 10^h\:32^m\:9.43^s = 92\degree\:6'\:48.03''\\
 \\
-A &= 281\degree\:15'\:28.20''\\
-a &= 5\degree\:17'\:8.62''\\
+A' &= 281\degree\:15'\:28.20''\\
+a' &= 5\degree\:17'\:8.62''\\
 \end{align}
 ```
 Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded values), it is evident that the values using the apparent coordinates are what an observer standing at that location would actually see.\
