@@ -304,12 +304,14 @@ These are the true coordinates of the object.
 The position $(p, q, s)$ of $P$ in this new system are given as:
 ```math
 \begin{align}
-p &= \rho \sin(\phi - \phi')\\
+p &= -\rho \sin(\phi - \phi')\\
 q &= 0 \tag{7.14} \\
 s &= \rho \cos(\phi - \phi')
 \end{align}
 ```
-Because $\phi - \phi' = CPO = PCZ'$. Thus, the apparent horizontal coordinates can be described by equation $7.11$.
+Because $\phi - \phi' = CPO = PCZ'$. The minus sign on $p$ is due to the fact that the line $PZ$ is located closer to the equator than $CZ'$, i.e. more south in the Northern hemisphere and more north in the Southern hemisphere. Because the $x$-axis points northward, there must be a negative sign.
+
+From equation $7.14$, the apparent horizontal coordinates can be described by equation $7.11$.
 #### Example 7.4
 <div align="center">
 <table>
@@ -335,7 +337,7 @@ We calculated in previous examples that for this latitude:
 Thus, by equation $7.14$:
 ```math
 \begin{alignat}{2}
-p &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 20.08377\\
+p &= -6371.141 \sin(34\degree\:49'\:9.79'') &&= -20.08377\\
 q &= 0\\
 s &= 6371.141 \cos(34\degree\:49'\:9.79'') &&= 6371.109
 \end{alignat}
@@ -351,7 +353,7 @@ z &= 404\:634.3 \sin(6\degree\:11'\:2.82'') &&= 43588.73
 Thus, by equation $7.11$:
 ```math
 \begin{alignat}{2}
-x' &= 78515.54 - 20.08377 &&= 78495.46\\
+x' &= 78515.54 - (-20.08377) &&= 78535.46\\
 y' &= -394543.1 - 0 &&= -394543.1\\
 z' &= 43588.73 - 6371.109 &&= 37217.62
 \end{alignat}
@@ -359,8 +361,8 @@ z' &= 43588.73 - 6371.109 &&= 37217.62
 Thus, by equation $1.2$:
 ```math
 \begin{alignat}{2}
-A' &= \arctan(-394543.1, 78495.46) &&= 281\degree\:15'\:8.03''\\
-a' &= \arcsin\left(\frac{37217.62}{\sqrt{78495.46^2 + (-394543.1)^2 + 37217.62^2}}\right) &&= 5\degree\:17'\:8.97''\\
+A' &= \arctan(-394543.1, 78535.46) &&= 281\degree\:15'\:28.14''\\
+a' &= \arcsin\left(\frac{37217.62}{\sqrt{78535.46^2 + (-394543.1)^2 + 37217.62^2}}\right) &&= 5\degree\:17'\:8.60''\\
 \end{alignat}
 ```
 Which agree with example $7.3$ within rounding error.\
