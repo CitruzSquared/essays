@@ -399,7 +399,7 @@ The maximum possible parallax is the equatorial horizontal parallax, so by equat
 ```
 Thus the position of the Moon could vary by up to $54'$ $11''$ from the geocentric position depending on the location of the observer on the Earth.
 
-The absolute maximum parallax of the Moon happens when the Moon is closest to the Earth. The Earth-Moon distance in this case is $356$ $400\text{ km}$, therefore:
+The absolute maximum parallax of the Moon happens when the Moon is closest to the Earth. The distance from the Earth to the Moon in this case is $356$ $400\text{ km}$, therefore:
 ```math
 \pi = \arcsin\left(\frac{6378.137}{356\:400}\right) = 1\degree\:1'\:32''
 ```
