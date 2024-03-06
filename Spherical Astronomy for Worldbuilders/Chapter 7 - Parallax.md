@@ -305,7 +305,7 @@ The position $(p, q, s)$ of $P$ in this new system are given as:
 ```math
 \begin{align}
 p &= \rho \sin(\phi - \phi')\\
-q &= 0 \tag{7.15} \\
+q &= 0 \tag{7.14} \\
 s &= \rho \cos(\phi - \phi')
 \end{align}
 ```
@@ -332,7 +332,7 @@ We calculated in previous examples that for this latitude:
 \therefore \phi - \phi' &= 10'\:50.21''
 \end{align}
 ```
-Thus, by equation $7.15$:
+Thus, by equation $7.14$:
 ```math
 \begin{alignat}{2}
 p &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 20.08377\\
