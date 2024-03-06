@@ -247,7 +247,12 @@ For the true coordinates:
 ```math
 \begin{align}
 h_L &= 250\degree\:9'\:9.42'' - 10^h\:35^m\:11.55^s = 91\degree\:21'\:16.17''\\
-\\
+\delta &= 12\degree\:45'\:8.3''
+\end{align}
+```
+Therefore:
+```math
+\begin{align}
 A &= 281\degree\:15'\:18.12''\\
 a &= 6\degree\:11'\:2.82''\\
 \end{align}
@@ -256,7 +261,12 @@ For the apparent coordinates:
 ```math
 \begin{align}
 h_L' &= 250\degree\:9'\:9.42'' - 10^h\:32^m\:9.43^s = 92\degree\:6'\:48.03''\\
-\\
+\delta' &= 12\degree\:14'\:38.9''
+\end{align}
+```
+Therefore:
+```math
+\begin{align}
 A' &= 281\degree\:15'\:28.20''\\
 a' &= 5\degree\:17'\:8.62''\\
 \end{align}
