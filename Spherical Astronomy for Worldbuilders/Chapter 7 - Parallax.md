@@ -45,7 +45,7 @@ And from the triangle $PCQ$,
 ```math
 \tan(\phi') = \frac{y}{x}
 ```
-Implicitly differentiating equation $7.3:
+Implicitly differentiating equation $7.3$:
 ```math
 \frac{y}{x} = -\frac{b^2}{a^2} \frac{d x}{d y}
 ```
