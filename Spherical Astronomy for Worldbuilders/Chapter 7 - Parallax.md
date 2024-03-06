@@ -271,7 +271,7 @@ A' &= 281\degree\:15'\:28.20''\\
 a' &= 5\degree\:17'\:8.62''\\
 \end{align}
 ```
-Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded values), it is evident that the values using the apparent coordinates are what an observer standing at that location would actually see. Thus, the notion of "geocentric (true) horizontal coordinates" is merely a simplification and has no real meaning.\
+Comparing to the real life values of $A = 281\degree, a = 5\degree$ (rounded values), it is evident that the values calculated using the apparent coordinates are what an observer standing at that location would actually see. Thus, the notion of "geocentric (true) horizontal coordinates" is merely a simplification and has no real meaning.\
 $\blacksquare$
 
 ### Horizontal Parallax
