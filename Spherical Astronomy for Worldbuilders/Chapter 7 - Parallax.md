@@ -173,7 +173,7 @@ Naturally, if one is given the apparent coordinates then the true coordinates ar
 ```
 The differences in $\alpha$ and $\delta$ between the true and apparent values are called the parallax in right ascension and declension respectively.
 
-While the disparity of location between the observer and the center of the Earth significantly changes the location of closer objects (like the Sun and the inner planets, and in particular the Moon) it does not matter much for very far objects like the stars, and the stars can be regarded has having 0 parallax, i.e. no difference in location whatsoever.
+While the disparity of location between the observer and the center of the Earth significantly changes the location of closer objects (like the Sun and the planets, and in particular the Moon) it does not matter much for very far objects like the stars, and the stars can be regarded has having 0 parallax, i.e. no difference in location whatsoever.
 
 #### Example 7.2
 <div align="center">
