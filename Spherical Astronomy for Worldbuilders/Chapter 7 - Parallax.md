@@ -380,7 +380,10 @@ Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise
 ```
 This formula only involves geocentric coordinates for ease of calculation.
 
-It is easy to see that if $\rho = 0$, i.e. the place of observation is the center of the Earth, this equation reduces to the regular sunrise equation. It is evident from the many examples of chapter $6$ that the uncorrected version is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, even closer objects like the Moon can have a very significant parallax (see the next section) and therefore the parallax corrected version of the sunrise equation should be used.
+It is easy to see that if $\rho = 0$, i.e. the place of observation is the center of the Earth, this equation reduces to the regular sunrise equation. It is evident from the many examples of chapter $6$ that the uncorrected version is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, even closer objects like the Moon can have a very significant parallax (see the *Horizontal Parallax* section) and therefore the parallax corrected version of the sunrise equation should be used.
+
+### Parallax Corrected Subsolar Point
+
 
 ### Horizontal Parallax
 
