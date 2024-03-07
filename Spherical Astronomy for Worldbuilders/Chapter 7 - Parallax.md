@@ -469,5 +469,5 @@ Therefore the geodetic latitude of $P$ is (by equation $7.4$):
 ```math
 \phi = \arctan\left(\frac{6378.137^2}{6356.752^2} \tan(12\degree\:40'\:15.6'')\right) = 12\degree\:45'\:13.0''
 ```
-Which is less than a $5$ arcsecond difference from the value given by the simple $\phi = \delta$.\
+Which is less than a $5$ arcsecond difference from the value given by the simple $\phi = \delta$. With a more significant flattening value this difference becomes more appreciable.\
 $\blacksquare$
