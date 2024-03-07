@@ -444,7 +444,7 @@ Use $a = 6378.137$ $\text{km}$ and $b = 6356.752$ $\text{km}$.
 </table>
 </div>
 
-$\delta$ in radians is $0.2225697$ $\text{ rad}$. We can now perform Newton iteration:
+$\delta$ in radians is $0.2225697\text{ rad}$. We can now perform Newton iteration:
 ```math
 \theta_{n+1} = \theta_n - \frac{a\Delta\cos(\delta)\sec(\theta_n) - b\Delta\sin(\delta)\csc(\theta_n) - a^2 + b^2}{a \Delta\cos(\delta) \tan(\theta_n) \sec(\theta_n) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta_n)}
 ```
