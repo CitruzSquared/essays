@@ -428,7 +428,7 @@ Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.1
 a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.14}
 ```
 Using $\theta = \delta$ is a good first guess. Note that all angles must be reckoned in radians for Newton Raphson's method.\
-Also note that as the flattening increases, and $\delta$ gets closer to $0$, the rate of convergence gets slower and more and more iterations must be needed, to the point where bisection might be better. However this should not be a problem for most planets as they have very low flatenning values.
+Also note that as the flattening increases, and $\delta$ gets closer to $0$, the rate of convergence gets slower and slower and more and more iterations are needed, to the point where bisection might be better. However this should not be a problem for most planets as they have very low flatenning values.
 #### Example 7.6
 <div align="center">
 <table>
