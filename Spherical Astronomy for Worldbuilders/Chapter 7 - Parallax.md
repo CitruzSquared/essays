@@ -423,7 +423,7 @@ This normal line must pass through $S(v, u)$. Thus, we can substitude $x$ and $y
 ```math
 a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.14}
 ```
-Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.13$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.13$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
+Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.13$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.14$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
 ```math
 a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.15}
 ```
