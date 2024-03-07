@@ -75,7 +75,7 @@ a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-The Earth's equatorial radius and polar radius are given as $6378.137\:\text{km}$ and $6356.752\:\text{km}$ respectively. <br/>
+The Earth's equatorial radius and polar radius are given as $6378.137$ $\text{km}$ and $6356.752$ $\text{km}$ respectively. <br/>
 Find the radius of the Earth at geographic latitude $35\degree N$.
 <img width="2000" height="0">
 </td>
@@ -327,13 +327,9 @@ Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise
 ```
 This formula only involves geocentric coordinates for ease of calculation.
 
-It is easy to see that if $\rho = 0$, i.e. the place of observation is the center of the Earth, this equation reduces to the regular sunrise equation. It is evident from the many examples of chapter $6$ that the uncorrected version is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, even closer objects like the Moon can have a very significant parallax (see the *Horizontal Parallax* section) and therefore the parallax corrected version of the sunrise equation should be used.
-
-### Parallax Corrected Subsolar Point
-If the Earth is regarded as a sphere, there is no parallax.
+It is easy to see that if $\rho = 0$, i.e. the place of observation is the center of the Earth, this equation reduces to the regular sunrise equation. It is evident from the many examples of chapter $6$ that the uncorrected version is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, even closer objects like the Moon can have a very significant parallax (see the next section) and therefore the parallax corrected version of the sunrise equation should be used.
 
 ### Horizontal Parallax
-
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
 ```math
 SAH' - SCH = ASC
@@ -342,7 +338,7 @@ Or in other words, the parallax in altitude is equal to the angle subtended by t
 
 It is evident then, that:
 ```math
-\sin(\pi) = \frac{a}{\Delta}\tag{7.15}
+\sin(\pi) = \frac{a}{\Delta}\tag{7.11}
 ```
 Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
 #### Example 7.5
@@ -358,7 +354,7 @@ Determine the maximum possible parallax in the position of the Moon given that t
 </table>
 </div>
 
-The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.15$:
+The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.11$:
 ```math
 \begin{align}
 \sin(\pi) &= \frac{6378.137}{404\:634.3}\\
@@ -372,4 +368,106 @@ The absolute maximum parallax of the Moon happens when the Moon is closest to th
 \pi = \arcsin\left(\frac{6378.137}{356\:400}\right) = 1\degree\:1'\:32''
 ```
 The Moon's position could vary from the geocentric position by more than a degree in this case.\
+$\blacksquare$
+
+### Parallax Corrected Subsolar Point
+As we saw in the last section, the parallax is maximum if the object is on the horizon. Similarly, the parallax is minimum if the object is at the Zenith, so much so that on a spherical Earth, no parallax exists for an object at the Zenith. Even for an ellipsoidal Earth, the parallax in the longitude of the subsolar point is zero, and the parallax in the latitude of the subsolar point is so miniscule for a low flattening value that it is not worth calculating. However, the method of calculation is given here regardless.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/57646d94-2271-496d-a9e6-2ba3c183506b" width="300"/> Consider a meridianal slice of an ellipsoidal Earth where $N$ is the North pole and $CE$ is the line of the equator. $S$ is the position of an object a geocentric distance $\Delta$ and geocentric declination $SCE = \delta$. The point $P$ is the sub-object point, where the object appears perpendicular to the local horizon $PT$ (i.e. at the Zenith). The angle we are interested in is the angle $PQE$, the geodetic latitude of $P$.
+
+Let's define a 2D coordinate frame where the $C$ is the origin, the $x$-axis points towards $E$, and the $y$-axis points towards $N$. Let the coordinates of $P$ in this system be $(x_0, y_0)$ and coordinates of $S$ be $(v, u)$. Then, by geometry:
+```math
+\begin{align}
+v &= \Delta\cos(\delta)\\
+u &= \Delta\sin(\delta)
+\end{align}
+```
+Also, as found earlier (in the *Latitude* section), the derivative of equation of the ellipse is given by:
+```math
+\frac{y}{x} = -\frac{b^2}{a^2} \frac{d x}{d y}
+```
+Therefore the slope $m$ of the normal line at a point $(x_0, y_0)$ is given by:
+```math
+m=-\frac{dx}{dy}= \frac{a^2 y_0}{b^2 x_0}
+```
+Plugging $m$ into the equation of a line passing through $(x_0, y_0)$, we obtain:
+```math
+\begin{align}
+y - y_0  &= \frac{a^2 y_0}{b^2 x_0} (x - x_0)\\
+\therefore b^2 x_0(y - y_0) &= a^2 y_0(x - x_0)\\
+\therefore b^2 y x_0 - b^2 x_0 y_0 &= a^2 x y_0 - a^2 y_0 x_0
+\end{align}
+```
+Dividing both sides by $x_0 y_0$ we obtain:
+```math
+\begin{align}
+\frac{b^2 y}{y_0} - b^2 &= \frac{a^2 x}{x_0} - a^2\\
+\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{7.11}\\
+\end{align}
+```
+At this point it is convenient to introduce an auxiliary variable $\theta$ such that:
+```math
+\displaylines{
+\begin{align}
+x_0 &= a\cos(\theta)\\
+y_0 &= b\sin(\theta)
+\end{align}
+}\tag{7.12}
+```
+The reader can verify that this does indeed satisfy the equation for an ellipse (equation $7.3$).\
+Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. Therefore, plugging equations $7.12$ into equation $7.11$, the equation for the normal at $(x_0, y_0)$ is given by:
+```math
+ax\sec(\theta) - by\csc(\theta) - a^2 + b^2 = 0
+```
+This normal line must pass through $S(v, u)$. Thus, we can substitude $x$ and $y$ by $v = \Delta\cos(\delta)$ and $u = \Delta\sin(\delta)$:
+```math
+a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.13}
+```
+Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.12$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.13$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
+```math
+a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.14}
+```
+Using $\theta = \delta$ is a good first guess. Note that all angles must be reckoned in radians for Newton Raphson's method.\
+Also note that as the flattening increases, and $\delta$ gets closer to $0$, the rate of convergence gets slower and more and more iterations must be needed, to the point where bisection might be better. However this should not be a problem for most planets as they have very low flatenning values.
+#### Example 7.6
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given the true declension of the Moon $\delta = 12\degree$ $45'$ $8.3''$ and the geocentric distance $\Delta = 404$ $634.3 \text{ km}$, <br/> 
+find the parallax corrected latitude of the sublunar point. <br/>
+Use $a = 6378.137$ $\text{km}$ and $b = 6356.752$ $\text{km}$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+$\delta$ in radians is $0.2225697$ $\text{ rad}$. We can now iterate equation $7.14$:
+```math
+\theta_{n+1} = \frac{a\Delta\cos(\delta)\sec(\theta_n) - b\Delta\sin(\delta)\csc(\theta_n) - a^2 + b^2}{a \Delta\cos(\delta) \tan(\theta_n) \sec(\theta_n) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta_n)}
+```
+Using $\theta_1 = \delta$ as a first guess, this gives $\theta_2 = 0.2218684\text{ rad}$. The table of repetitions is given here:
+```math
+\begin{array}{cccc}\hline n & & & E_n \\ \hline
+1 & & & 0.2225697 \\
+2 & & & 0.2218684 \\
+3 & & & 0.2218704 \\
+4 & & & 0.2218704 \\ \hline
+\end{array}
+```
+The geocentric latitude of $P$ are given then as:
+```math
+\begin{alignat}{2}
+x_0 &= 6378.137\cos(0.2218704) &&= 6221.793\\
+y_0 &= 6356.752\sin(0.2218704) &&= 1398.832\\
+\therefore \phi' &= \arctan\left(\frac{1398.832}{6221.793}\right) &&= 12\degree\:40'\:15.6''
+\end{align}
+```
+Therefore the geodetic latitude of $P$ is (by equation $7.4$):
+```math
+\phi = \arctan\left(\frac{6378.137^2}{6356.752^2} \tan(12\degree\:40'\:15.6'')\right) = 12\degree\:45'\:13.0''
+```
+Which is less than a $5$ arcsecond difference from the value given by the simple $\phi = \delta$.\
 $\blacksquare$
