@@ -463,7 +463,7 @@ The geocentric latitude of $P$ are given then as:
 x_0 &= 6378.137\cos(0.2218704) &&= 6221.793\\
 y_0 &= 6356.752\sin(0.2218704) &&= 1398.832\\
 \therefore \phi' &= \arctan\left(\frac{1398.832}{6221.793}\right) &&= 12\degree\:40'\:15.6''
-\end{align}
+\end{alignat}
 ```
 Therefore the geodetic latitude of $P$ is (by equation $7.4$):
 ```math
