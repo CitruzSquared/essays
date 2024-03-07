@@ -41,11 +41,11 @@ Because $PO$ is perpendicular to the tangent $PT$, the slope of $PO$ must be $-1
 ```math
 \tan(\phi) = -\frac{d x}{d y}
 ```
-And from the triangle $PCQ$,
+And from the triangle $PCQ$ we can deduce:
 ```math
 \tan(\phi') = \frac{y}{x}
 ```
-Implicitly differentiating equation $7.3$:
+Implicitly differentiating equation $7.3$ we obtain:
 ```math
 \frac{y}{x} = -\frac{b^2}{a^2} \frac{d x}{d y}
 ```
