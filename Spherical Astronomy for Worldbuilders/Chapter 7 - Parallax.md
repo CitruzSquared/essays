@@ -402,7 +402,7 @@ Dividing both sides by $x_0 y_0$ we obtain:
 ```math
 \begin{align}
 \frac{b^2 y}{y_0} - b^2 &= \frac{a^2 x}{x_0} - a^2\\
-\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{7.11}\\
+\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{7.12}\\
 \end{align}
 ```
 At this point it is convenient to introduce an auxiliary variable $\theta$ such that:
@@ -412,20 +412,20 @@ At this point it is convenient to introduce an auxiliary variable $\theta$ such 
 x_0 &= a\cos(\theta)\\
 y_0 &= b\sin(\theta)
 \end{align}
-}\tag{7.12}
+}\tag{7.13}
 ```
 The reader can verify that this does indeed satisfy the equation for an ellipse (equation $7.3$).\
-Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $7.12$ into equation $7.11$, the equation for the normal at $(x_0, y_0)$ is given by:
+Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $7.13$ into equation $7.12$, the equation for the normal at $(x_0, y_0)$ is given by:
 ```math
 ax\sec(\theta) - by\csc(\theta) - a^2 + b^2 = 0
 ```
 This normal line must pass through $S(v, u)$. Thus, we can substitude $x$ and $y$ by $v = \Delta\cos(\delta)$ and $u = \Delta\sin(\delta)$:
 ```math
-a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.13}
+a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.14}
 ```
-Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.12$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.13$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
+Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.13$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.13$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
 ```math
-a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.14}
+a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.15}
 ```
 Using $\theta = \delta$ is a good first guess. Note that all angles must be reckoned in radians for Newton Raphson's method.\
 Also note that as the flattening increases, and $\delta$ gets closer to $0$, the rate of convergence gets slower and slower and more and more iterations are needed, to the point where bisection might be better. However this should not be a problem for most planets as they have very low flatenning values.
