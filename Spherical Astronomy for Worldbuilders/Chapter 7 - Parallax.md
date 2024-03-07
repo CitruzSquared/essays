@@ -68,58 +68,6 @@ a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
 \therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{7.5}\\
 \end{align}
 ```
-We can substitute $b^2 = a^2(1 - e^2)$, where $e =$ eccentricity of the Earth, and obtain:
-```math
-\begin{align}
-\rho &= \frac{ab}{\sqrt{a^2(1 - e^2) \cos^2(\phi') + a^2 \sin^2(\phi')}}\\
-&= \frac{b}{\sqrt{(1 - e^2) \cos^2(\phi') + \sin^2(\phi')}}\\
-&= \frac{b}{\sqrt{\cos^2(\phi') + \sin^2(\phi') - e^2 \cos^2(\phi')}}\\
-&= \frac{b}{\sqrt{1 - e^2 \cos^2(\phi')}}\tag{7.6}
-\end{align}
-```
-
-An alternate formula is given as follows:\
-From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
-```math
-\displaylines{
-{x^2} + \frac{y^2}{1 - e^2} = a^2\\
-\frac{y}{x} = (1 - e^2) \tan(\phi)
-}
-```
-we find:
-```math
-x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-\:\:\:\text{and}\:\:\:
-y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-```
-But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
-```math
-\begin{align}
-\rho \cos(\phi') &= \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\\
-\rho \sin(\phi') &= \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-\end{align}
-```
-With the addition of an auxiliary $\psi$, these equations can be simplified:
-```math
-\begin{align}
-\sin(\psi) &= e\sin(\phi)\\
-\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{7.7}\\
-\rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
-\end{align}
-```
-We can deduce from equation $7.7$ by using the angle addition formulae
-```math
-\displaylines{
-\begin{align}
-\rho \cos(\phi - \phi') &= a \cos(\psi)\\
-\rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
-\end{align}
-}\tag{7.8}
-```
-By multiplying the 2nd line of equation $7.7$ with the 1st line of equation $7.8$, we obtain:
-```math
-\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{7.9}
-```
 
 #### Example 7.1
 <div align="center">
@@ -150,7 +98,6 @@ Then by equation $7.5$:
 &= 6371.141\:\text{km}.
 \end{align}
 ```
-A solution by equation $7.6$ or equation $7.9$ is also valid of course.\
 $\blacksquare$
 
 ### Apparent Equatorial Coordinates
@@ -158,18 +105,18 @@ Knowing the radius of the Earth, we can formulate the position of any point on t
 ```math
 \begin{align}
 p &= \rho \cos(\phi')\cos(\Theta_L)\\
-q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\ 
+q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.6} \\ 
 s &= \rho \sin(\phi')
 \end{align}
 ```
 Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian coordinates $(x', y', z')$ by:
 ```math
-(x', y', z') = (x - p, y - q, z - s) \tag{7.11}
+(x', y', z') = (x - p, y - q, z - s) \tag{7.7}
 ```
 Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.\
 Naturally, if one is given the apparent coordinates then the true coordinates are:
 ```math
-(x, y, z) = (x' + p, y' + q, z' + s) \tag{7.12}
+(x, y, z) = (x' + p, y' + q, z' + s) \tag{7.8}
 ```
 The differences in $\alpha$ and $\delta$ between the true and apparent values are called the parallax in right ascension and declension respectively.
 
@@ -202,7 +149,7 @@ The local sidereal time was (by equation $5.3$):
 ```math
 \Theta_L = 100\degree\:9'\:9.42'' + 150\degree = 250\degree\:9'\:9.42''
 ```
-The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.10$):
+The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.6$):
 ```math
 \begin{alignat}{2}
 p &= 6371.141 \cos(34\degree\:49'\:9.79'')\cos(250\degree\:9'\:9.42'') &&= -1775.813\\
@@ -210,7 +157,7 @@ q &= 6371.141 \cos(34\degree\:49'\:9.79'')\sin(250\degree\:9'\:9.42'') &&= -4919
 s &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
 \end{alignat}
 ```
-Thus, by equation $7.11$:
+Thus, by equation $7.7$:
 ```math
 \begin{alignat}{2}
 x' &= -367940.1 - (-1775.813) &&= -366164.3\\
@@ -301,13 +248,13 @@ The position $(p, q, s)$ of $P$ in the second (geocentric) system are given as:
 ```math
 \begin{align}
 p &= -\rho \sin(\phi - \phi')\\
-q &= 0 \tag{7.13} \\
+q &= 0 \tag{7.9} \\
 s &= \rho \cos(\phi - \phi')
 \end{align}
 ```
 Because $\phi - \phi' = CPO = PCZ'$. The minus sign on $p$ is due to the fact that the line $PZ$ is located closer to the equator than $CZ'$, i.e. more south in the Northern hemisphere and more north in the Southern hemisphere. Because the $x$-axis points northward, there must be a negative sign.
 
-From equation $7.14$, the apparent horizontal coordinates can be described by equation $7.11$.
+From equation $7.9$, the apparent horizontal coordinates can be described by equation $7.11$.
 #### Example 7.4
 <div align="center">
 <table>
@@ -337,7 +284,7 @@ We calculated in previous examples that for this latitude:
 \therefore \phi - \phi' &= 10'\:50.21''
 \end{align}
 ```
-Thus, by equation $7.13$:
+Thus, by equation $7.9$:
 ```math
 \begin{alignat}{2}
 p &= -6371.141 \sin(10'\:50.21'') &&= -20.08377\\
@@ -345,7 +292,7 @@ q &= 0 &&\\
 s &= 6371.141 \cos(10'\:50.21'') &&= 6371.109
 \end{alignat}
 ```
-Thus, by equation $7.11$:
+Thus, by equation $7.7$:
 ```math
 \begin{alignat}{2}
 x' &= 78515.54 - (-20.08377) &&= 78535.46\\
@@ -370,20 +317,20 @@ In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, 
 ```math
 z = \Delta \cos(\phi) \cos(\delta) \cos(h) + \Delta \sin(\phi) \sin(\delta)
 ```
-and $s$ is given by equation $7.13$:
+and $s$ is given by equation $7.9$:
 ```math
 s = \rho \cos(\phi - \phi')
 ```
 Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise equation:
 ```math
-\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{7.14}
+\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{7.10}
 ```
 This formula only involves geocentric coordinates for ease of calculation.
 
 It is easy to see that if $\rho = 0$, i.e. the place of observation is the center of the Earth, this equation reduces to the regular sunrise equation. It is evident from the many examples of chapter $6$ that the uncorrected version is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, even closer objects like the Moon can have a very significant parallax (see the *Horizontal Parallax* section) and therefore the parallax corrected version of the sunrise equation should be used.
 
 ### Parallax Corrected Subsolar Point
-
+If the Earth is regarded as a sphere, there is no parallax.
 
 ### Horizontal Parallax
 
