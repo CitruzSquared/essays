@@ -450,7 +450,7 @@ $\delta$ in radians is $0.2225697$ $\text{ rad}$. We can now iterate equation $7
 ```
 Using $\theta_1 = \delta$ as a first guess, this gives $\theta_2 = 0.2218684\text{ rad}$. The table of repetitions is given here:
 ```math
-\begin{array}{cccc}\hline n & & & E_n \\ \hline
+\begin{array}{cccc}\hline n & & & \theta_n \\ \hline
 1 & & & 0.2225697 \\
 2 & & & 0.2218684 \\
 3 & & & 0.2218704 \\
