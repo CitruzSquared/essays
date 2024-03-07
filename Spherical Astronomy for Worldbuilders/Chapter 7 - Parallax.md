@@ -130,7 +130,7 @@ While the disparity of location between the observer and the center of the Earth
 <img width="2000" height="0"><br>
 On $\text{January 1, } 2024$ at standard time $00:00$ ($\Theta = 100\degree$ $9'$ $9.42''$), <br/> 
 the true equatorial coordinates of the Moon were $\alpha = 10^h$ $35^m$ $11.55^s$ and $\delta = +12\degree$ $45'$ $8.3''$. <br/>
-Given that the distance to the Moon was $404$ $634.3 \text{ km}$, calculate its apparent equatorial coordinates from $\phi = 35\degree$ and $l = 150\degree$.
+Given that the distance to the Moon $\Delta$ was $404$ $634.3 \text{ km}$, calculate its apparent equatorial coordinates from $\phi = 35\degree$ and $l = 150\degree$.
 <img width="2000" height="0">
 </td>
 </tbody>
