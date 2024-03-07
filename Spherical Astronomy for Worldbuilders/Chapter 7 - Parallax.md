@@ -415,7 +415,7 @@ y_0 &= b\sin(\theta)
 }\tag{7.12}
 ```
 The reader can verify that this does indeed satisfy the equation for an ellipse (equation $7.3$).\
-Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. Therefore, plugging equations $7.12$ into equation $7.11$, the equation for the normal at $(x_0, y_0)$ is given by:
+Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $7.12$ into equation $7.11$, the equation for the normal at $(x_0, y_0)$ is given by:
 ```math
 ax\sec(\theta) - by\csc(\theta) - a^2 + b^2 = 0
 ```
