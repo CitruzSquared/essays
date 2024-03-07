@@ -457,7 +457,7 @@ Using $\theta_1 = \delta$ as a first guess, this gives $\theta_2 = 0.2218684\tex
 4 & & & 0.2218704 \\ \hline
 \end{array}
 ```
-The geocentric latitude of $P$ are given then as:
+The geocentric latitude of $P$ is given then as:
 ```math
 \begin{alignat}{2}
 x_0 &= 6378.137\cos(0.2218704) &&= 6221.793\\
