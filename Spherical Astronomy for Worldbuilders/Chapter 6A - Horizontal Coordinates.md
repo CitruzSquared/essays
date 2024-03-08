@@ -376,7 +376,7 @@ Now we follow example $6.2$.
 Further repetition will better our approximations.\
 $\blacksquare$
 
-Note that the sunrise equation calculates when the center of the Sun (or any other object) is at the horizon. Because things have an apparent angular size in the sky, this means that the sunrise equation calculates at what hour angle exactly half of the object is visible. To calculate the precise time of first or last visibility, this angular size must be taken into account, which we did not do here.
+Note that the sunrise equation calculates when the center of the Sun (or any other object) is at the horizon. Because things have an apparent angular size in the sky, this means that the sunrise equation calculates at what hour angle exactly half of the object is visible. To calculate the precise time of first or last visibility, this angular size must be taken into account by calculating when the object's altitude would be 1 apparent radius below the horizon (instead of the altitude being precisely $0\degree$), which we did not do here.
 
 ### The Terminator
 The [*terminator*](https://en.wikipedia.org/wiki/Terminator_(solar)) is the line separating night and day at any moment in time. Let's say at standard solar time $t$, the standard sidereal time was $\Theta$. To find the terminator, we find the places where the Sun is rising or setting, i.e. we use the sunrise equation:
