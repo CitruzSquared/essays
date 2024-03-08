@@ -68,7 +68,7 @@ a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
 \therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{7.5}\\
 \end{align}
 ```
-Note that the exact distance to the center of the Earth also depend on the elevation of the observer but we will ignore this for simplicity.
+Note that the exact distance to the center of the Earth also depend on the elevation of the observer but we will ignore this for simplicity, especially since any realistic elevation does not compare to the radius of the Earth. 
 
 #### Example 7.1
 <div align="center">
