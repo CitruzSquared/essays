@@ -304,7 +304,6 @@ Equation $6.5$ is called the [Sunrise Equation](https://en.wikipedia.org/wiki/Su
 
 Notice that if $\phi > \arctan(\cot(\delta))$, then the sunrise equation predicts $\cos(h) > 1$ which is impossible. Likewise, if $\phi < -\arctan(\cot(\delta))$, then $\cos(h) < -1$ which is also impossible. This means that the object will not rise or set in these latitudes. In particular, if $\cos(h) > 1$, then the object is perpetually below the horizon. If $\cos(h) < -1$, then the object is perpetually up.
 
-The sunrise equation calculates when the center of the Sun (or any other object) is at the horizon. Because things have an apparent angular size in the sky, this means that the sunrise equation calculates at what hour angle exactly half of the object is visible. To calculate the precise time of first or last visibility, this angular size must be taken into account.
 #### Example 6.5
 <div align="center">
 <table>
@@ -376,6 +375,8 @@ Now we follow example $6.2$.
 ```
 Further repetition will better our approximations.\
 $\blacksquare$
+
+Note that the sunrise equation calculates when the center of the Sun (or any other object) is at the horizon. Because things have an apparent angular size in the sky, this means that the sunrise equation calculates at what hour angle exactly half of the object is visible. To calculate the precise time of first or last visibility, this angular size must be taken into account, which we did not do here.
 
 ### The Terminator
 The [*terminator*](https://en.wikipedia.org/wiki/Terminator_(solar)) is the line separating night and day at any moment in time. Let's say at standard solar time $t$, the standard sidereal time was $\Theta$. To find the terminator, we find the places where the Sun is rising or setting, i.e. we use the sunrise equation:
