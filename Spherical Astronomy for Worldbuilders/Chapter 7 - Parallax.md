@@ -28,10 +28,7 @@ How do we define latitude on a spheroid?
 
 When one refers to latitude, usually one is referring to the *geodetic* (*geographical*) latitude ($\phi$). This is the value of latitude we used in chapter $6$.
 
-However, the geocentric latitude is more convenient in some situations.\
-So, given a geodetic latitude, how do we find the geocentric latitude?
-
-<br/>
+However, the geocentric latitude is more convenient in some situations. So, given a geodetic latitude, how do we find the geocentric latitude?
 
 Well, consider the equation of the ellipse with semi-major axis $a$ and semi-minor axis $b$:
 ```math
