@@ -59,7 +59,7 @@
      * Lighting Direction
    - Part C
      * Saturn in the Sky
-7. **Parallax** (Eq. $7.1$ to $7.15$, Ex. $7.1$ to $7.6$)
+7. **Parallax** (Eq. $7.1$ to $7.16$, Ex. $7.1$ to $7.6$)
    - The Shape of the Earth
    - Latitude
    - Apparent Equatorial Coordinates
