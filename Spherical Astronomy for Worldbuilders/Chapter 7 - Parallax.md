@@ -329,7 +329,7 @@ This formula only involves geocentric coordinates of the celestial object.
 
 It is easy to see that if $\rho = 0$, i.e. the place of observation is the center of the Earth, this equation reduces to the regular sunrise equation. It is evident from the many examples of chapter $6$ that the uncorrected version is accurate enough for most things: obviously the stars (since they have no parallax), and even for closer objects like the Sun. However, even closer objects like the Moon can have a very significant parallax (see the next section) and therefore the parallax corrected version of the sunrise equation should be used.
 
-An interesting thing happens when $\Delta$ is small enough (within a few planetary radii) and $\delta$ is small enough: both North and South poles may not be able to see the object above the horizon (i.e. $\cos(h) > 1$). However, never will both poles see the object above the horizon. This makes sense geometrically.
+An interesting thing happens when $\Delta$ is small enough (within a few planetary radii) and $\delta$ is small enough: both North and South poles may not be able to see the object above the horizon (i.e. $\cos(h) > 1$ for both poles). However, never will both poles see the object above the horizon. This makes sense geometrically.
 
 ### Horizontal Parallax
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
