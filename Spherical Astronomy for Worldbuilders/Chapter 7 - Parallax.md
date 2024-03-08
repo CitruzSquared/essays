@@ -331,6 +331,8 @@ It is easy to see that if $\rho = 0$, i.e. the place of observation is the cente
 
 An interesting thing happens when $\Delta$ is small enough (within a few planetary radii) and $\delta$ is small enough: both North and South poles may not be able to see the object above the horizon (i.e. $\cos(h) > 1$ for both poles). However, never will both poles see the object above the horizon. This makes sense geometrically.
 
+Also note that the parallax corrected sunrise equation still does not account for the apparent size of the object.
+
 ### Horizontal Parallax
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/421ed255-ca91-49ad-8606-3fdb88c149d6" width="250"/> In this diagram, the place of observation is $A$, the object being observed is $S$, and the geocentric and local horizons are given by $CH$ and $AH'$ respectively. The true altitude of the star is $SCH$ and the apparent altitude is $SAH'$. Simple geometry will show that:
 ```math
