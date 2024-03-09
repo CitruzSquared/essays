@@ -267,8 +267,8 @@ a &= \arcsin(0.038415077/1)\\
 We can see that $S$ was in the Northwest ($270\degree < A < 360\degree$) and very close to the horizon.\
 $\blacksquare$
 
-### Time of Sunrise
-"Sunrise" means that the Sun is at the horizon, or more specifically, the Eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
+### The Sunrise Equation
+Let's calculate the time of sunrise. "Sunrise" means that the Sun is at the horizon, or more specifically, the Eastern horizon. This means that the altitude $a$ of the Sun is $0\degree$, and the hour angle of the sun $h$ is a negative number. (Remember, the hour angle is measured such that *West* is positive.)
 
 Recall equation $6.3$.
 ```math
