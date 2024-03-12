@@ -65,7 +65,7 @@ a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
 ```
 Note that the exact distance to the center of the Earth also depend on the elevation of the observer (and no, it is not as simple as adding the elevation to $\rho$) but we will ignore this for simplicity, especially since any realistic elevation does not compare to the radius of the Earth. 
 
-An alternate formula is given as follows:\
+An alternate formula for $\rho$ is given as follows:\
 From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
 ```math
 \displaylines{
