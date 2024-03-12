@@ -67,7 +67,7 @@
    - Parallax Corrected Sunrise Equation
    - Horizontal Parallax
    - Parallax Corrected Subsolar Point
-### 3. Syzygy
+### 3. Eclipses
 8. **Solar Eclipses**
 9. **Lunar Eclipses**
 10. **Transits**
