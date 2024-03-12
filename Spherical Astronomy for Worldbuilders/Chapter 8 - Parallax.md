@@ -1,4 +1,4 @@
-## VII. Parallax
+## VIII. Parallax
 
 Our formulae for the location of planets in the sky, and hence the values in our ephemeris, are calculated for a hypothetical observer at the center of the Earth. These values are called the *true* values. On the surface, there is a measurable difference in the values of angles compared to their true values due to the difference in viewing location, particularly for close objects such as the Moon. The actual observed angles are called the *apparent* values, and their difference is called the *parallax*. Let us see how to calculate this parallax.
 
@@ -7,24 +7,24 @@ We can formulate the position of any point on the Earth $(p, q, s)$ in geocentri
 ```math
 \begin{align}
 p &= \rho \cos(\phi')\cos(\Theta_L)\\
-q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\ 
+q &= \rho \cos(\phi')\sin(\Theta_L)\tag{8.10} \\ 
 s &= \rho \sin(\phi')
 \end{align}
 ```
 Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian coordinates $(x', y', z')$ by:
 ```math
-(x', y', z') = (x - p, y - q, z - s) \tag{7.11}
+(x', y', z') = (x - p, y - q, z - s) \tag{8.11}
 ```
 Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.\
 Naturally, if one is given the apparent coordinates then the true coordinates are:
 ```math
-(x, y, z) = (x' + p, y' + q, z' + s) \tag{7.12}
+(x, y, z) = (x' + p, y' + q, z' + s) \tag{8.12}
 ```
 The differences in $\alpha$ and $\delta$ between the true and apparent values are called the parallax in right ascension and declension respectively.
 
 While the disparity of location between the observer and the center of the Earth significantly changes the location of closer objects (like the Sun and the planets, and in particular the Moon) it does not matter much for very far objects like the stars, and the stars can be regarded has having 0 parallax, i.e. no difference in location whatsoever.
 
-#### Example 7.2
+#### Example 8.2
 <div align="center">
 <table>
 <tbody>
@@ -51,7 +51,7 @@ The local sidereal time was (by equation $5.3$):
 ```math
 \Theta_L = 100\degree\:9'\:9.42'' + 150\degree = 250\degree\:9'\:9.42''
 ```
-The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.10$):
+The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $8.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $8.10$):
 ```math
 \begin{alignat}{2}
 p &= 6371.141 \cos(34\degree\:49'\:9.79'')\cos(250\degree\:9'\:9.42'') &&= -1775.813\\
@@ -59,7 +59,7 @@ q &= 6371.141 \cos(34\degree\:49'\:9.79'')\sin(250\degree\:9'\:9.42'') &&= -4919
 s &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
 \end{alignat}
 ```
-Thus, by equation $7.11$:
+Thus, by equation $8.11$:
 ```math
 \begin{alignat}{2}
 x' &= -367940.1 - (-1775.813) &&= -366164.3\\
@@ -78,7 +78,7 @@ In a worldbuilding setting however, the cartesian coordinates of the Moon would 
 $\blacksquare$
 
 To demonstrate the difference, let's calculate the horizontal coordinates of the Moon.
-#### Example 7.3
+#### Example 8.3
 <div align="center">
 <table>
 <tbody>
@@ -150,14 +150,14 @@ The position $(p, q, s)$ of $P$ in the second (geocentric) system are given as:
 ```math
 \begin{align}
 p &= -\rho \sin(\phi - \phi')\\
-q &= 0 \tag{7.13} \\
+q &= 0 \tag{8.13} \\
 s &= \rho \cos(\phi - \phi')
 \end{align}
 ```
 Because $\phi - \phi' = CPO = PCZ'$. The minus sign on $p$ is due to the fact that the line $PZ$ is located closer to the equator than $CZ'$, i.e. more south in the Northern hemisphere and more north in the Southern hemisphere. Because the $x$-axis points northward, there must be a negative sign.
 
-From equation $7.13$, the apparent horizontal coordinates can be described by equation $7.11$.
-#### Example 7.4
+From equation $8.13$, the apparent horizontal coordinates can be described by equation $8.11$.
+#### Example 8.4
 <div align="center">
 <table>
 <tbody>
@@ -186,7 +186,7 @@ We calculated in previous examples that for this latitude:
 \therefore \phi - \phi' &= 10'\:50.21''
 \end{align}
 ```
-Thus, by equation $7.13$:
+Thus, by equation $8.13$:
 ```math
 \begin{alignat}{2}
 p &= -6371.141 \sin(10'\:50.21'') &&= -20.08377\\
@@ -194,7 +194,7 @@ q &= 0 &&\\
 s &= 6371.141 \cos(10'\:50.21'') &&= 6371.109
 \end{alignat}
 ```
-Thus, by equation $7.11$:
+Thus, by equation $8.11$:
 ```math
 \begin{alignat}{2}
 x' &= 78515.54 - (-20.08377) &&= 78535.46\\
@@ -209,23 +209,23 @@ A' &= \arctan(-394543.1, 78535.46) &&= 281\degree\:15'\:28.14''\\
 a' &= \arcsin\left(\frac{37217.62}{\sqrt{78535.46^2 + (-394543.1)^2 + 37217.62^2}}\right) &&= 5\degree\:17'\:8.60''\\
 \end{alignat}
 ```
-Which agree with example $7.3$ within rounding error.\
+Which agree with example $8.3$ within rounding error.\
 $\blacksquare$
 
 ### Parallax Corrected Sunrise Equation
 In chapter $6$, we derived the sunrise equation that can be used to determine the hour angle for when an object would be at the horizon. However, our formulation used the geocentric horizontal coordinates which are not what an observer on the surface would actually see. To calculate the observed hour angle, we must correct for parallax.
 
-In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, and thus by equation $7.11$, $z$ must equal $s$. $z$, the geocentric horizontal z coordinate of the object is given by equation $6.3$:
+In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, and thus by equation $8.11$, $z$ must equal $s$. $z$, the geocentric horizontal z coordinate of the object is given by equation $6.3$:
 ```math
 z = \Delta \cos(\phi) \cos(\delta) \cos(h) + \Delta \sin(\phi) \sin(\delta)
 ```
-and $s$ is given by equation $7.13$:
+and $s$ is given by equation $8.13$:
 ```math
 s = \rho \cos(\phi - \phi')
 ```
 Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise equation:
 ```math
-\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{7.14}
+\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{8.14}
 ```
 This formula only involves geocentric coordinates of the celestial object.
 
@@ -244,10 +244,10 @@ Or in other words, the parallax in altitude is equal to the angle subtended by t
 
 It is evident then, that:
 ```math
-\sin(\pi) = \frac{a}{\Delta}\tag{7.15}
+\sin(\pi) = \frac{a}{\Delta}\tag{8.15}
 ```
 Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
-#### Example 7.5
+#### Example 8.5
 <div align="center">
 <table>
 <tbody>
@@ -260,7 +260,7 @@ Determine the maximum possible parallax in the position of the Moon given that t
 </table>
 </div>
 
-The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.15$:
+The maximum possible parallax is the equatorial horizontal parallax, so by equation $8.15$:
 ```math
 \begin{align}
 \sin(\pi) &= \frac{6378.137}{404\:634.3}\\
@@ -308,7 +308,7 @@ Dividing both sides by $x_0 y_0$ we obtain:
 ```math
 \begin{align}
 \frac{b^2 y}{y_0} - b^2 &= \frac{a^2 x}{x_0} - a^2\\
-\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{7.16}\\
+\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{8.16}\\
 \end{align}
 ```
 At this point it is convenient to introduce an auxiliary variable $\theta$ such that:
@@ -318,24 +318,24 @@ At this point it is convenient to introduce an auxiliary variable $\theta$ such 
 x_0 &= a\cos(\theta)\\
 y_0 &= b\sin(\theta)
 \end{align}
-}\tag{7.17}
+}\tag{8.17}
 ```
-The reader can verify that this does indeed satisfy the equation for an ellipse (equation $7.3$).\
-Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $7.17$ into equation $7.16$, the equation for the normal at $(x_0, y_0)$ is given by:
+The reader can verify that this does indeed satisfy the equation for an ellipse (equation $8.3$).\
+Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $8.17$ into equation $8.16$, the equation for the normal at $(x_0, y_0)$ is given by:
 ```math
 ax\sec(\theta) - by\csc(\theta) - a^2 + b^2 = 0
 ```
 This normal line must pass through $S(v, u)$. Thus, we can substitude $x$ and $y$ by $v = \Delta\cos(\delta)$ and $u = \Delta\sin(\delta)$:
 ```math
-a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.18}
+a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{8.18}
 ```
-Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.17$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.18$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
+Solving this equation for $\theta$ gives the coordinates of $P$ by equation $8.17$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $8.4$. Equation $8.18$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
 ```math
-a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.19}
+a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{8.19}
 ```
 Using $\theta = \delta$ is a good first guess. Note that all angles must be reckoned in radians for Newton Raphson's method.\
 Also note that as the flattening increases, and $\delta$ gets closer to $0$, the rate of convergence gets slower and slower and more and more iterations are needed, to the point where bisection might be better. However this should not be a problem for most planets as they have very low flatenning values.
-#### Example 7.6
+#### Example 8.6
 <div align="center">
 <table>
 <tbody>
@@ -352,7 +352,7 @@ Use $a = 6378.137$ $\text{km}$ and $b = 6356.752$ $\text{km}$.
 
 $\delta$ in radians is $0.2225697\text{ rad}$. We can now perform Newton iteration:
 ```math
-\theta_{n+1} = \theta_n - \frac{a\Delta\cos(\delta)\sec(\theta_n) - b\Delta\sin(\delta)\csc(\theta_n) - a^2 + b^2}{a \Delta\cos(\delta) \tan(\theta_n) \sec(\theta_n) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta_n)} \tag{7.20}
+\theta_{n+1} = \theta_n - \frac{a\Delta\cos(\delta)\sec(\theta_n) - b\Delta\sin(\delta)\csc(\theta_n) - a^2 + b^2}{a \Delta\cos(\delta) \tan(\theta_n) \sec(\theta_n) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta_n)} \tag{8.20}
 ```
 Using $\theta_1 = \delta$ as a first guess, this gives $\theta_2 = 0.2218684\text{ rad}$. The table of repetitions is given here:
 ```math
@@ -371,7 +371,7 @@ y_0 &= 6356.752\sin(0.2218704) &&= 1398.832\\
 \therefore \phi' &= \arctan\left(\frac{1398.832}{6221.793}\right) &&= 12\degree\:40'\:15.6''
 \end{alignat}
 ```
-Therefore the geodetic latitude of $P$ is (by the reverse of equation $7.4$):
+Therefore the geodetic latitude of $P$ is (by the reverse of equation $8.4$):
 ```math
 \phi = \arctan\left(\frac{6378.137^2}{6356.752^2} \tan(12\degree\:40'\:15.6'')\right) = 12\degree\:45'\:13.0''
 ```
