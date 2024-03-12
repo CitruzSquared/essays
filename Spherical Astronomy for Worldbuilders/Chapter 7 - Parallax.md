@@ -26,7 +26,7 @@ How do we define latitude on a spheroid?
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/1b3d589b-28e2-4723-8f49-4938366bd700" width="350"/> In the diagram, where the Earth is depicted as an ellipse, we can see two ways to define the latitude of the point $P$. The *geocentric* latitude is given by the angle $PCE$, and the *geodetic* or *geographical* latitude given by the angle $POH$, where the line $OP$ is perpendicular to the tangent at $P$, $PT$, and $OH$ is parallel to $CE$.
 
-When one refers to latitude, usually one is referring to the *geodetic* (*geographical*) latitude ($\phi$). This is the value of latitude we used in chapter $6$.
+When one refers to latitude, usually one is referring to the *geodetic* (*geographical*) latitude ($\phi$). This definition is used as this definition of latitude makes sure that a perpendicular change in the observer's elevation does not change the observer's latitude. This is the value of latitude we used in chapter $6$.
 
 However, the geocentric latitude is more convenient in some situations. So, given a geodetic latitude, how do we find the geocentric latitude? Well, consider the equation of the ellipse with semi-major axis $a$ and semi-minor axis $b$:
 ```math
