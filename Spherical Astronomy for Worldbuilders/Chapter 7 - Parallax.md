@@ -139,6 +139,7 @@ Then by equation $7.5$:
 &= 6371.141\:\text{km}.
 \end{align}
 ```
+The reader can verify that equation $7.9$ gives the same answer.\
 $\blacksquare$
 
 ### Apparent Equatorial Coordinates
