@@ -65,6 +65,51 @@ a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
 ```
 Note that the exact distance to the center of the Earth also depend on the elevation of the observer (and no, it is not as simple as adding the elevation to $\rho$) but we will ignore this for simplicity, especially since any realistic elevation does not compare to the radius of the Earth. 
 
+An alternate formula is given as follows:\
+From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
+```math
+\displaylines{
+{x^2} + \frac{y^2}{1 - e^2} = a^2\\
+\frac{y}{x} = (1 - e^2) \tan(\phi)
+}
+```
+we find:
+```math
+x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\:\:\:\text{and}\:\:\:
+y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+```
+But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
+```math
+\displaylines{
+\begin{align}
+\rho \cos(\phi') &= \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\\
+\rho \sin(\phi') &= \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\end{align}
+} \tag{7.6}
+```
+With the addition of an auxiliary $\psi$, these equations can be simplified:
+```math
+\begin{align}
+\sin(\psi) &= e\sin(\phi)\\
+\rho \cos(\phi') &= a \cos(\phi)\sec(\psi)\tag{7.7}\\
+\rho \sin(\phi') &= a (1 - e^2) \sin(\phi)\sec(\psi)
+\end{align}
+```
+We can deduce from equation $7.7$ by using the angle addition formulae
+```math
+\displaylines{
+\begin{align}
+\rho \cos(\phi - \phi') &= a \cos(\psi)\\
+\rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
+\end{align}
+}\tag{7.8}
+```
+By multiplying the 2nd line of equation $7.7$ with the 1st line of equation $7.8$, we obtain:
+```math
+\rho = a \sqrt{\frac{\cos(\phi)}{\cos(\phi')\cos(\phi-\phi')}}\tag{7.9}
+```
+
 #### Example 7.1
 <div align="center">
 <table>
@@ -101,18 +146,18 @@ Knowing the radius of the Earth, we can formulate the position of any point on t
 ```math
 \begin{align}
 p &= \rho \cos(\phi')\cos(\Theta_L)\\
-q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.6} \\ 
+q &= \rho \cos(\phi')\sin(\Theta_L)\tag{7.10} \\ 
 s &= \rho \sin(\phi')
 \end{align}
 ```
 Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian coordinates $(x', y', z')$ by:
 ```math
-(x', y', z') = (x - p, y - q, z - s) \tag{7.7}
+(x', y', z') = (x - p, y - q, z - s) \tag{7.11}
 ```
 Which can be turned back into spherical coordinates and then be used to calculate the phenomena detailed in chapter $6$.\
 Naturally, if one is given the apparent coordinates then the true coordinates are:
 ```math
-(x, y, z) = (x' + p, y' + q, z' + s) \tag{7.8}
+(x, y, z) = (x' + p, y' + q, z' + s) \tag{7.12}
 ```
 The differences in $\alpha$ and $\delta$ between the true and apparent values are called the parallax in right ascension and declension respectively.
 
@@ -145,7 +190,7 @@ The local sidereal time was (by equation $5.3$):
 ```math
 \Theta_L = 100\degree\:9'\:9.42'' + 150\degree = 250\degree\:9'\:9.42''
 ```
-The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.6$):
+The radius of the Earth at $\phi = 35\degree$ ($\phi' =  34\degree$ $49'$ $9.79''$) was calculated in example $7.1$ to be $6371.141\text{ km}$. Thus, the equatorial coordinates of the point $\phi = 35\degree, l = 150\degree$ is (by equation $7.10$):
 ```math
 \begin{alignat}{2}
 p &= 6371.141 \cos(34\degree\:49'\:9.79'')\cos(250\degree\:9'\:9.42'') &&= -1775.813\\
@@ -153,7 +198,7 @@ q &= 6371.141 \cos(34\degree\:49'\:9.79'')\sin(250\degree\:9'\:9.42'') &&= -4919
 s &= 6371.141 \sin(34\degree\:49'\:9.79'') &&= 3637.867
 \end{alignat}
 ```
-Thus, by equation $7.7$:
+Thus, by equation $7.11$:
 ```math
 \begin{alignat}{2}
 x' &= -367940.1 - (-1775.813) &&= -366164.3\\
@@ -244,13 +289,13 @@ The position $(p, q, s)$ of $P$ in the second (geocentric) system are given as:
 ```math
 \begin{align}
 p &= -\rho \sin(\phi - \phi')\\
-q &= 0 \tag{7.9} \\
+q &= 0 \tag{7.13} \\
 s &= \rho \cos(\phi - \phi')
 \end{align}
 ```
 Because $\phi - \phi' = CPO = PCZ'$. The minus sign on $p$ is due to the fact that the line $PZ$ is located closer to the equator than $CZ'$, i.e. more south in the Northern hemisphere and more north in the Southern hemisphere. Because the $x$-axis points northward, there must be a negative sign.
 
-From equation $7.9$, the apparent horizontal coordinates can be described by equation $7.11$.
+From equation $7.13$, the apparent horizontal coordinates can be described by equation $7.11$.
 #### Example 7.4
 <div align="center">
 <table>
@@ -280,7 +325,7 @@ We calculated in previous examples that for this latitude:
 \therefore \phi - \phi' &= 10'\:50.21''
 \end{align}
 ```
-Thus, by equation $7.9$:
+Thus, by equation $7.13$:
 ```math
 \begin{alignat}{2}
 p &= -6371.141 \sin(10'\:50.21'') &&= -20.08377\\
@@ -288,7 +333,7 @@ q &= 0 &&\\
 s &= 6371.141 \cos(10'\:50.21'') &&= 6371.109
 \end{alignat}
 ```
-Thus, by equation $7.7$:
+Thus, by equation $7.11$:
 ```math
 \begin{alignat}{2}
 x' &= 78515.54 - (-20.08377) &&= 78535.46\\
@@ -313,13 +358,13 @@ In order for the apparent altitude to be $0\degree$, $z'$ must be equal to $0$, 
 ```math
 z = \Delta \cos(\phi) \cos(\delta) \cos(h) + \Delta \sin(\phi) \sin(\delta)
 ```
-and $s$ is given by equation $7.9$:
+and $s$ is given by equation $7.13$:
 ```math
 s = \rho \cos(\phi - \phi')
 ```
 Equating the two and solving for $\cos(h)$ yields the parallax corrected sunrise equation:
 ```math
-\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{7.10}
+\cos(h) = \frac{\rho \cos(\phi - \phi')}{\Delta \cos(\phi) \cos(\delta)} - \tan(\phi) \tan(\delta) \tag{7.14}
 ```
 This formula only involves geocentric coordinates of the celestial object.
 
@@ -338,7 +383,7 @@ Or in other words, the parallax in altitude is equal to the angle subtended by t
 
 It is evident then, that:
 ```math
-\sin(\pi) = \frac{a}{\Delta}\tag{7.11}
+\sin(\pi) = \frac{a}{\Delta}\tag{7.15}
 ```
 Where $a$ is the equatorial radius of the Earth and $\Delta$ is the geocentric distance to the object.
 #### Example 7.5
@@ -354,7 +399,7 @@ Determine the maximum possible parallax in the position of the Moon given that t
 </table>
 </div>
 
-The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.11$:
+The maximum possible parallax is the equatorial horizontal parallax, so by equation $7.15$:
 ```math
 \begin{align}
 \sin(\pi) &= \frac{6378.137}{404\:634.3}\\
@@ -402,7 +447,7 @@ Dividing both sides by $x_0 y_0$ we obtain:
 ```math
 \begin{align}
 \frac{b^2 y}{y_0} - b^2 &= \frac{a^2 x}{x_0} - a^2\\
-\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{7.12}\\
+\therefore 0 &= \frac{a^2 x}{x_0} - \frac{b^2 y}{y_0} - a^2 + b^2\tag{7.16}\\
 \end{align}
 ```
 At this point it is convenient to introduce an auxiliary variable $\theta$ such that:
@@ -412,20 +457,20 @@ At this point it is convenient to introduce an auxiliary variable $\theta$ such 
 x_0 &= a\cos(\theta)\\
 y_0 &= b\sin(\theta)
 \end{align}
-}\tag{7.13}
+}\tag{7.17}
 ```
 The reader can verify that this does indeed satisfy the equation for an ellipse (equation $7.3$).\
-Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $7.13$ into equation $7.12$, the equation for the normal at $(x_0, y_0)$ is given by:
+Note that $\theta$ does not represent any real angle, it is just a convenient auxiliary that parametrizes the ellipse. By plugging equations $7.17$ into equation $7.16$, the equation for the normal at $(x_0, y_0)$ is given by:
 ```math
 ax\sec(\theta) - by\csc(\theta) - a^2 + b^2 = 0
 ```
 This normal line must pass through $S(v, u)$. Thus, we can substitude $x$ and $y$ by $v = \Delta\cos(\delta)$ and $u = \Delta\sin(\delta)$:
 ```math
-a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.14}
+a\Delta\cos(\delta)\sec(\theta) - b\Delta\sin(\delta)\csc(\theta) - a^2 + b^2 = 0\tag{7.18}
 ```
-Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.13$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.14$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
+Solving this equation for $\theta$ gives the coordinates of $P$ by equation $7.17$, which gives the geocentric latitude by $\tan(\phi') = y_0/x_0$, which finally gives the geodetic latitude by equation $7.4$. Equation $7.18$ is not easy to solve however, and the best way to solve it is by numerical approximation: the derivative is given here for use in Newton Raphson iteration.
 ```math
-a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.15}
+a \Delta\cos(\delta) \tan(\theta) \sec(\theta) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta)\tag{7.19}
 ```
 Using $\theta = \delta$ is a good first guess. Note that all angles must be reckoned in radians for Newton Raphson's method.\
 Also note that as the flattening increases, and $\delta$ gets closer to $0$, the rate of convergence gets slower and slower and more and more iterations are needed, to the point where bisection might be better. However this should not be a problem for most planets as they have very low flatenning values.
@@ -446,7 +491,7 @@ Use $a = 6378.137$ $\text{km}$ and $b = 6356.752$ $\text{km}$.
 
 $\delta$ in radians is $0.2225697\text{ rad}$. We can now perform Newton iteration:
 ```math
-\theta_{n+1} = \theta_n - \frac{a\Delta\cos(\delta)\sec(\theta_n) - b\Delta\sin(\delta)\csc(\theta_n) - a^2 + b^2}{a \Delta\cos(\delta) \tan(\theta_n) \sec(\theta_n) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta_n)} \tag{7.16}
+\theta_{n+1} = \theta_n - \frac{a\Delta\cos(\delta)\sec(\theta_n) - b\Delta\sin(\delta)\csc(\theta_n) - a^2 + b^2}{a \Delta\cos(\delta) \tan(\theta_n) \sec(\theta_n) + b \Delta\sin(\delta) \cot(\theta) \csc(\theta_n)} \tag{7.20}
 ```
 Using $\theta_1 = \delta$ as a first guess, this gives $\theta_2 = 0.2218684\text{ rad}$. The table of repetitions is given here:
 ```math
