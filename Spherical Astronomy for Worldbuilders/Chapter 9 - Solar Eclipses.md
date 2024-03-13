@@ -1,1 +1,3 @@
-## 3. Eclipses
+# Part 3. Eclipses
+
+## IX. Solar Eclipses
