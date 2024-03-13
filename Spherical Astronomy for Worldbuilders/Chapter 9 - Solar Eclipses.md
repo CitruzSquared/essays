@@ -215,21 +215,18 @@ x, y, z &= \text{The geocentric fundamental cartesian coordinates of the Moon}\\
 ```
 Then:
 ```math
-\begin{align}
 \begin{bmatrix}
 x\\y\\z
-\end{bmatrix} &= R \begin{bmatrix}
+\end{bmatrix} = R \begin{bmatrix}
 v\\ u\\ w
-\end{bmatrix}\\
-\tag{9.5}\\
+\end{bmatrix} \enspace\enspace \text{ and } \enspace\enspace
 \begin{bmatrix}
 \xi\\\eta\\\zeta
-\end{bmatrix} &= R \begin{bmatrix}
+\end{bmatrix} = R \begin{bmatrix}
 \rho \cos(\phi')\cos(\Theta_L)\\
 \rho \cos(\phi')\sin(\Theta_L) \\ 
 \rho \sin(\phi')
 \end{bmatrix}
-\end{align}
 ```
 Where $\rho$ is the radius of the Earth at geocentric latitude $\phi'$.\
 These equations, letting $r, \alpha, \delta$ be the geocentric spherical equatorial coordinates of the Moon, expand to (using angle addition formulae to simplify):
