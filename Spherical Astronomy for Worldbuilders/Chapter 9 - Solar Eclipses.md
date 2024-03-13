@@ -115,7 +115,7 @@ Also:
 \text{Earth's equatorial Radius } &=6378.137 \text{ km}\\
 \text{Moon's Radius } &= 1737.4 \text{ km}\\
 \text{Sun's Radius } &= 696\:000 \text{ km}\\
-I = 5.14\degree
+I &= 5.14\degree
 \end{align}
 ```
 Thus:
