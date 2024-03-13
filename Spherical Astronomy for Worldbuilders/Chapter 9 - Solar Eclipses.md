@@ -229,15 +229,7 @@ v\\ u\\ w
 \end{bmatrix}
 ```
 Where $\rho$ is the radius of the Earth at geocentric latitude $\phi'$.\
-These equations, letting $r, \alpha, \delta$ be the geocentric spherical equatorial coordinates of the Moon, expand to (using angle addition formulae to simplify):
-```math
-\begin{align}
-x &= r \cos(\delta) \sin(\alpha - a) \\
-y &= r [\sin(\delta)\cos(d) - \cos(\delta)\sin(d)\cos(\alpha - a)] \tag{9.6}\\
-z &= r [\sin(\delta)\sin(d) + \cos(\delta)\cos(d)\cos(\alpha - a)] \\
-\end{align}
-```
-and
+The second of these equations expands to (using angle addition formulae to simplify):
 ```math
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(\Theta_L - a) \\
@@ -249,7 +241,7 @@ But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing 
 ```math
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(h) \\
-\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(h)] \tag{9.7}\\
+\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(h)] \tag{9.5}\\
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(h)] \\
 \end{align}
 ```
@@ -257,7 +249,7 @@ The inverse transformation is given by the transpose of $R$:
 ```math
 R^{-1} = R^T = \begin{bmatrix}
 -\sin(a) & \cos(a) \sin(d) & \cos(a) \cos(d)\\
-\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.7} \\
+\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.6} \\
 0 & \cos(d) & -\sin(d)
 \end{bmatrix}
 ```
@@ -266,7 +258,7 @@ R^{-1} = R^T = \begin{bmatrix}
 
 The distance between the shadow and the observer $\Delta$ is given by:
 ```math
-\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.8}
+\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.7}
 ```
 Which can also be expressed as:
 ```math
