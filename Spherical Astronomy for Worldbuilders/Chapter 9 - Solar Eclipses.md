@@ -142,5 +142,5 @@ Therefore:
 &=1\degree\:33'\:47.73''
 \end{align}
 ```
-Which is greater than $\beta$ at conjunction. Therefore, a solar eclipse will occur.\
+Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar eclipse will occur.\
 $\blacksquare$
