@@ -174,7 +174,7 @@ G \sin(d) &= w' - w
 ```
 We have the direction of the shadow of the Moon in equatorial spherical coordinates as right ascension $a$ and declination $d$, and $G$ is the distance from the Moon to the Sun.
 
-### Position of the Observer relative to the Shadow
+### Position of the Shadow and Observer
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/cd42ee6a-6c20-4031-bf9a-021b7d883cec" width="350"/> Consider this diagram. Here, $O$ is the center of the Earth, $P$ is the celestial North pole, and $M$ and $S$ are the true positions of the center of the Moon and Sun. $M'$ and $S'$ are their positions projected on to the celestial sphere. Thus, $SM$ is the shadow.
 
