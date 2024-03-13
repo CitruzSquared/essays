@@ -190,7 +190,7 @@ R_1 = \begin{bmatrix}
 0 & 0 & 1
 \end{bmatrix}
 ```
-Then we rotate by $d + 90\degree$ about the $x$-axis to align the $z$-axis with the shadow.
+Then we rotate by $d + 90\degree$ about the $x$-axis to align the $z$-axis with the shadow while keeping the $y$-axis pointed towards North.
 ```math
 R_2 = \begin{bmatrix}
 1 & 0 & 0 \\
@@ -246,7 +246,7 @@ The distance between the shadow and the observer $\Delta$ is given by:
 ```math
 \Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.7}
 ```
-This can also be expressed as:
+Which can also be expressed as:
 ```math
 \displaylines{
 \begin{align}
@@ -256,3 +256,5 @@ This can also be expressed as:
 }\tag{9.8}
 ```
 Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the previous diagram.
+
+### The Size of the Shadow
