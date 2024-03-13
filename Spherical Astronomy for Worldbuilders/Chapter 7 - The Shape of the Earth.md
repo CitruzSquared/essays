@@ -8,6 +8,7 @@ f = \frac{a - b}{a} = 1 - \frac{b}{a}\tag{7.1}
 ```
 Where $b =$ the polar radius, and $a =$ the equatorial radius.
 
+The ellipsoid, being a solid of rotation where every vertical (merdianal) cross section is an ellipse, can be simplified to be an ellipse for most things:\
 Since the eccentricity $e$ of an ellipse is defined by
 ```math
 e^2 = 1 - \frac{b^2}{a^2}
@@ -19,7 +20,6 @@ e^2 = 1 - (1 - f)^2
 ```math
 \therefore e = \sqrt{2f - f^2}.\tag{7.2}
 ```
-The ellipsoid, being a solid of rotation where every vertical (merdianal) cross section is an ellipse, can be simplified to be an ellipse for most things.
 
 ### Latitude
 How do we define latitude on a spheroid?
