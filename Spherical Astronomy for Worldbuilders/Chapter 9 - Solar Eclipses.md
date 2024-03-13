@@ -147,6 +147,112 @@ Therefore:
 &=1\degree\:33'\:47.73''
 \end{align}
 ```
-Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar eclipse will occur.\
+Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar eclipse will occur.
+
 There is a shorter way of doing this: we can precalculate the minimum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is less than this minimum value, a solar eclipse must surely occur. We can also precalculate the maximum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is greater than this maximum value, a solar eclipse will surely not occur. If it is in between these two values, the full calculation is required.\
 $\blacksquare$
+
+### Direction of the Shadow
+The shadow of the Moon points in the direction of the Moon from the Sun. Thus, if we say that:
+```math
+\begin{align}
+v, u, w &= \text{The geocentric equatorial cartesian coordinates of the Moon}\\
+v', u', w' &= \text{The geocentric equatorial cartesian coordinates of the Sun}
+\end{align}
+```
+We have for the coordinates of the Sun from the Moon:
+```math
+(v' - v, u' - u, w' - w)
+```
+And thus if we convert these to spherical coordinates:
+```math
+\begin{align}
+G \cos(d) \cos(a) &= v' - v\\
+G \cos(d) \sin(a) &= u' - u\\
+G \sin(d) &= w' - w
+\end{align}
+```
+We have the direction of the shadow of the Moon in equatorial spherical coordinates as right ascension $a$ and declination $d$, and $G$ is the distance from the Moon to the Sun.
+
+### Position of the Observer relative to the Shadow
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/cd42ee6a-6c20-4031-bf9a-021b7d883cec" width="350"/> Consider this diagram. Here, $O$ is the center of the Earth, $P$ is the celestial North pole, and $M$ and $S$ are the true positions of the center of the Moon and Sun. $M'$ and $S'$ are their positions projected on to the celestial sphere. Thus, $SM$ is the shadow.
+
+We define a coordinate system as such: Let the origin be the center of the Earth, $z$-axis point in the direction of the shadow $SM$, the $y$-axis perpendicular to the $z$-axis such that it points towards North, and the $x$ axis perpendicular to both such that it points to the point on the celestial equator with right ascension $a + 90\degree$.
+
+In this coordinate system, the $xy$-plane is known as the *fundamental plane*, and the point at which the shadow meets the fundamental plane is $F$.
+
+To convert from the equatorial coordinate frame to the fundamental frame, we first rotate the equatorial frame by $a + 90\degree$ about the $z$-axis to align the $x$-axis:
+```math
+R_1 = \begin{bmatrix}
+\cos(a + 90\degree) & \sin(a + 90\degree) & 0 \\
+-\sin(a + 90\degree) & \cos(a + 90\degree) & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+```
+Then we rotate by $d + 90\degree$ about the $x$-axis to align the $z$-axis with the shadow.
+```math
+R_2 = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos(d + 90\degree) & \sin(d + 90\degree) \\
+0 & -\sin(d + 90\degree) & \cos(d + 90\degree)
+\end{bmatrix}
+```
+The total rotation is the product of the two matrices:
+```math
+R = R_2R_1 = \begin{bmatrix}
+-\sin(a) & \cos(a) & 0\\
+\cos(a) \sin(d) & \sin(a) \sin(d) & \cos(d) \tag{9.4} \\
+\cos(a) \cos(d) & \sin(a) \cos(d) & -\sin(d)
+\end{bmatrix}
+```
+We can now express the coordinates of both the Moon and observer in this new system. Let:
+```math
+\begin{align}
+x, y, z &= \text{The geocentric fundamental cartesian coordinates of the Moon}\\
+\xi, \eta, \zeta &= \text{The geocentric fundamental cartesian coordinates of the observer}
+\end{align}
+```
+Then:
+```math
+\begin{align}
+\begin{bmatrix}
+x\\y\\z
+\end{bmatrix} &= R \begin{bmatrix}
+v\\ u\\ w
+\end{bmatrix}\\
+\tag{9.5}\\
+\begin{bmatrix}
+\xi\\\eta\\\zeta
+\end{bmatrix} &= R \begin{bmatrix}
+\rho \cos(\phi')\cos(\Theta_L)\\
+\rho \cos(\phi')\sin(\Theta_L) \\ 
+\rho \sin(\phi')
+\end{bmatrix}
+\end{align}
+```
+The inverse transformation is given by the transpose of $R$:
+```math
+R^{-1} = R^T = \begin{bmatrix}
+-\sin(a) & \cos(a) \sin(d) & \cos(a) \cos(d)\\
+\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.6} \\
+0 & \cos(d) & -\sin(d)
+\end{bmatrix}
+```
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/23f53b50-7d4e-4737-a573-1c400ea75c00" width="350"/> On the fundamental plane, the situation looks like this diagram: where the shadow of the Moon is centered on $M_1$, the projection of $(x, y, z)$ onto the fundamental plane, and the observer is at $C_1$, the projection of $(\xi, \eta, \zeta)$ on the fundamental plane.
+
+The distance between the shadow and the observer $\Delta$ is given by:
+```math
+\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.7}
+```
+This can also be expressed as:
+```math
+\displaylines{
+\begin{align}
+\Delta \cos(Q) &= x - \xi\\
+\Delta \sin(Q) &= y - \eta
+\end{align}
+}\tag{9.8}
+```
+Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the previous diagram.
