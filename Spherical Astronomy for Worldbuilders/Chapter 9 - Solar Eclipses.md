@@ -97,17 +97,13 @@ Determine if the new Moon of $\text{April, } 2024$ will result in a solar eclips
 </div>
 
 We can find via the method of example $4.4$ that the new Moon occured on $\text{April 8, } 2024$ at $18:21$. At this time:\
-For the Moon:
 ```math
 \begin{align}
-\lambda &=19\degree\:4'\:12.19''\\
-\beta &= 0\degree\:20'\:52.53''\\
-\Delta &= 359\:807.95 \text{ km}
+\lambda_\text{Conjunction} &=19\degree\:4'\:12.19''\\
+\beta_\text{Moon} &= 0\degree\:20'\:52.53''\\
+\Delta_\text{Moon} &= 359\:807.95 \text{ km}\\
+\Delta_\text{Sun} &= 149\:823\:425.56\text{ km}
 \end{align}
-```
-For the Sun:
-```math
-\Delta_\text{Sun} = 149\:823\:425.56\text{ km}
 ```
 Also:
 ```math
@@ -146,5 +142,5 @@ Therefore:
 &=1\degree\:33'\:47.73''
 \end{align}
 ```
-Which is greater than $\beta$. Therefore, a solar eclipse will occur.\
+Which is greater than $\beta$ at conjunction. Therefore, a solar eclipse will occur.\
 $\blacksquare$
