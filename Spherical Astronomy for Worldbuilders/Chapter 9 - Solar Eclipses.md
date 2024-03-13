@@ -136,14 +136,14 @@ At $19:21$:
 \lambda_{\text{Sun}} &=19\degree\:6'\:34.7''\\
 \therefore \sigma &= \frac{19\degree\:6'\:34.7'' - 19\degree\:4'\:12.19''}{1h} = 2.38'/h\\
 \therefore q &= \frac{37.48'}{2.38'} = 15.7479\\
-\therefore I' &= \frac{15.7479}{15.7479 - 1} \tan(5.14\degree) = 5.503\degree
+\therefore I' &= \arctan\left(\frac{15.7479}{15.7479 - 1} \tan(5.14\degree)\right) = 5.486\degree
 \end{align}
 ```
 Therefore:
 ```math
 \begin{align}
-(s + s' + \pi - \pi')\sec(I') &= (16'\:35.99'' + 15'\:58.2'' + 1\degree\:0'\:56.55'' - 8.78'')\sec(5.503\degree) \\
-&=1\degree\:33'\:47.89''
+(s + s' + \pi - \pi')\sec(I') &= (16'\:35.99'' + 15'\:58.2'' + 1\degree\:0'\:56.55'' - 8.78'')\sec(5.486\degree) \\
+&=1\degree\:33'\:47.73''
 \end{align}
 ```
 Which is greater than $\beta$. Therefore, a solar eclipse will occur.\
