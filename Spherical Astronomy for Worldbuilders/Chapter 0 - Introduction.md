@@ -59,9 +59,10 @@
      * Lighting Direction
    - Part C
      * Saturn in the Sky
-7. **Parallax** (Eq. $7.1$ to $7.16$, Ex. $7.1$ to $7.6$)
-   - The Shape of the Earth
+7. **The Shape of the Earth** (Eq. $8.1$ to $8.9$, Ex. $8.1$)
+   - The Ellipsoid
    - Latitude
+8. **Parallax** (Eq. $8.1$ to $8.11$, Ex. $8.1$ to $8.5$)
    - Apparent Equatorial Coordinates
    - Apparent Horizontal Coordinates
    - Parallax Corrected Sunrise Equation
