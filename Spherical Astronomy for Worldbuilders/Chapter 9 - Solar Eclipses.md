@@ -298,9 +298,9 @@ k &= \text{ The Moon's radius } = MB\\
 f &= \text{ The angle of the shadow cone } = EVF\\
 c &= \text{ The distance between the vertex }\\
 & \text{ of the cone and the fundamental plane} = VF\\
-l &= \text{ The radius of the shadow }\\
+L &= \text{ The radius of the shadow }\\
 & \text{ on the fundamental plane } = EF\\
-L &= \text{ The radius of the shadow}\\
+\Lambda &= \text{ The radius of the shadow}\\
 &\text{ on the parallel plane } = CD\\
 \zeta &= \text{ The distance from the parallel plane}\\
 &\text{ to the fundamental plane } = DF\\
@@ -328,8 +328,8 @@ We then have:
 ```math
 \displaylines{
 \begin{align}
-l &= c\tan(f) = z\tan(f) \pm k\sec(f)\\
-L &= (c-\zeta)\tan(f) = L - \zeta\tan(f)
+L &= c\tan(f) = z\tan(f) \pm k\sec(f)\\
+\Lambda &= (c-\zeta)\tan(f) = L - \zeta\tan(f)
 \end{align}
 }\tag{9.13}
 ```
@@ -339,7 +339,7 @@ For brevity we will put:
 ```math
 \begin{align}
 i &= \tan(f)\\
-l &= ic \tag{5.14}\\
-L &= l - i\zeta
+L &= ic \tag{5.14}\\
+\Lambda &= L - i\zeta
 \end{align}
 ```
