@@ -52,7 +52,7 @@ SN' &= (\mu - \sigma)t\\
 Dividing both the numerator and denominator by $\sigma t$ and setting $\sigma /\mu = q$, we get:
 ```math
 \begin{align}
-\frac{SN}{SN'} &= \frac{\lambda}{\lambda - 1}\\
+\frac{SN}{SN'} &= \frac{q}{q - 1}\\
 \therefore \tan(I') &= \frac{q}{q - 1} \tan(I) \tag{9.2}
 \end{align}
 ```
