@@ -237,12 +237,12 @@ The second of these equations expands to (using angle addition formulae to simpl
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\Theta_L - a)] \\
 \end{align}
 ```
-But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $h$, therefore:
+But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $\theta$ (some sources denote it by $\mu$), therefore:
 ```math
 \begin{align}
-\xi &= \rho \cos(\phi') \sin(h) \\
-\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(h)] \tag{9.5}\\
-\zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(h)] \\
+\xi &= \rho \cos(\phi') \sin(\theta) \\
+\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(\theta)] \tag{9.5}\\
+\zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\theta)] \\
 \end{align}
 ```
 The inverse transformation is given by the transpose of $R$:
