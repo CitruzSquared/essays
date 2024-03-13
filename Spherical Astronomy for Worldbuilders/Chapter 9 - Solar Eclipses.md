@@ -143,4 +143,5 @@ Therefore:
 \end{align}
 ```
 Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar eclipse will occur.\
+There is a shorter way of doing this: we can precalculate the minimum value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_text{Moon}$ at conjunction is less than this minimum value, a solar eclipse must surely occur. We can also calculate the maximum value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_text{Moon}$ at conjunction is greater than this maximum value, a solar eclipse will surely not occur. If it is in between these two values, the full calculation is required.
 $\blacksquare$
