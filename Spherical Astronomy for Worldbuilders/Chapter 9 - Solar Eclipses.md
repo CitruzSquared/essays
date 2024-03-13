@@ -313,7 +313,7 @@ We can see from the left diagram (the penumbral cone) that $SV + MV = G$. We can
 ```math
 \sin(f) = \frac{K + k}{G} \tag{9.10}
 ```
-For the right diagram (the umbral cone), the vertex of the cone is below the fundamental plane. Regardless, we can see that $SV - MV = G$ and thus:
+For the right diagram (the umbral cone), the vertex of the cone is below the parallel plane (total eclipse). Regardless, we can see that $SV - MV = G$ and thus:
 ```math
 \sin(f) = \frac{K - k}{G} \tag{9.11}
 ```
