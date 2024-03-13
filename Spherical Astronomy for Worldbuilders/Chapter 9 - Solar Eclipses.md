@@ -96,7 +96,7 @@ Determine if the new Moon of $\text{April, } 2024$ will result in a solar eclips
 </table>
 </div>
 
-We can find via the method of example $4.4$ that the new Moon occured on $\text{April 8, } 2024$ at $18:21$. At this time:\
+We can find via the method of example $4.4$ that the new Moon occured on $\text{April 8, } 2024$ at $18:21$. At this time:
 ```math
 \begin{align}
 \lambda_\text{Conjunction} &=19\degree\:4'\:12.19''\\
