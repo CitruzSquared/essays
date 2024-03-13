@@ -114,7 +114,7 @@ Also:
 I &= 5.14\degree
 \end{align}
 ```
-Thus:
+Thus by equations $4.1$ and $8.6$:
 ```math
 \begin{alignat}{2}
 s &= \arcsin\left(\frac{1737.4}{359\:807.95}\right) &&= 16'\:35.99''\\
