@@ -288,13 +288,13 @@ Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the prev
 
 ### The Size of the Shadow
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/4599e516-fdbc-42eb-8f61-db7e7f41246e" width="450"/> In these diagrams, $S$ is the center of the Sun, $M$ is the center of the Moon, the line $EF$ is the fundamental plane, and the line $CD$ is a parallel plane a distance $DF = \zeta$ above the fundamental plane.
-
-Let:
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/4599e516-fdbc-42eb-8f61-db7e7f41246e" width="450"/> In these diagrams, $S$ is the center of the Sun, $M$ is the center of the Moon, the line $EF$ is the fundamental plane, and the line $CD$ is a parallel plane a distance $DF = \zeta$ above the fundamental plane. Let:
 ```math
 \begin{align}
 K &= \text{ The Sun's radius } = SA\\
 k &= \text{ The Moon's radius } = MB\\
+G &= \text{ The Distance between }\\
+&\text{the Sun and the Moon } = SM\\
 f &= \text{ The angle of the shadow cone } = EVF\\
 c &= \text{ The distance between the vertex }\\
 & \text{ of the cone and the fundamental plane} = VF\\
