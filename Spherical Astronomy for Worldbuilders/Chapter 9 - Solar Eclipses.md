@@ -270,6 +270,7 @@ Which can also be expressed as:
 }\tag{9.9}
 ```
 Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the previous diagram.
+
 <br/>
 
 ### The Size of the Shadow
