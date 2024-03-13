@@ -152,6 +152,19 @@ Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar ecl
 There is a shorter way of doing this: we can precalculate the minimum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is less than this minimum value, a solar eclipse must surely occur. We can also precalculate the maximum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is greater than this maximum value, a solar eclipse will surely not occur. If it is in between these two values, the full calculation is required.\
 $\blacksquare$
 
+### Partial Total, and Annular Eclipses
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/365a2fd7-5c0b-4ba6-8c44-1e15cdcd0abd" width="250"/> Any object, when illuminated by a non-point source, casts two shadows: *penumbral* and *umbral*. In this diagram, the Moon (at $M$) is casting a shadow on the surface on the Earth ($CD$). An observer standing between $C$ and $C'$ only sees the Sun ($S$) partly covered: this is known as a *partial solar eclipse* and this shadow cone is known as the *penumbral cone*. An observer standing between $C$ and $D$ cannot see the Sun as it is totally blocked by the Moon: this is known as a *total solar eclipse* and this shadow cone is known as the *umbral cone*. (The same is true on the other side of the image.) 
+
+<br/>
+
+There is one more kind of eclipse known as an *annular eclipse*. This happens when a total solar eclipse occurs (i.e. the observer is in the umbral region) but the Moon is not large enough to cover the whole Sun and thus leaves a ring of the Sun visible around the Sun. The cone here is then called the *antumbral cone* but the math works out exactly like the umbral cone.
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 ### Direction of the Shadow
 The shadow of the Moon points in the direction of the Moon from the Sun. Thus, if we say that:
 ```math
@@ -168,7 +181,7 @@ And thus if we convert these to spherical coordinates:
 ```math
 \begin{align}
 G \cos(d) \cos(a) &= v' - v\\
-G \cos(d) \sin(a) &= u' - u\\
+G \cos(d) \sin(a) &= u' - u \tag{9.4}\\
 G \sin(d) &= w' - w
 \end{align}
 ```
@@ -202,7 +215,7 @@ The total rotation is the product of the two matrices:
 ```math
 R = R_2R_1 = \begin{bmatrix}
 -\sin(a) & \cos(a) & 0\\
-\cos(a) \sin(d) & \sin(a) \sin(d) & \cos(d) \tag{9.4} \\
+\cos(a) \sin(d) & \sin(a) \sin(d) & \cos(d) \tag{9.5} \\
 \cos(a) \cos(d) & \sin(a) \cos(d) & -\sin(d)
 \end{bmatrix}
 ```
@@ -229,7 +242,7 @@ v\\ u\\ w
 \end{bmatrix}
 ```
 Where $\rho$ is the radius of the Earth at geocentric latitude $\phi'$.\
-The second of these equations expands to (using angle addition formulae to simplify):
+Let's expand the second of these equations (using angle addition formulae to simplify):
 ```math
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(\Theta_L - a) \\
@@ -237,11 +250,11 @@ The second of these equations expands to (using angle addition formulae to simpl
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\Theta_L - a)] \\
 \end{align}
 ```
-But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $\theta$ (some sources denote it by $\mu$), therefore:
+But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $\theta$ (note that some other sources denote it by $\mu$), therefore:
 ```math
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(\theta) \\
-\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(\theta)] \tag{9.5}\\
+\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(\theta)] \tag{9.6}\\
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\theta)] \\
 \end{align}
 ```
@@ -249,16 +262,16 @@ The inverse transformation is given by the transpose of $R$:
 ```math
 R^{-1} = R^T = \begin{bmatrix}
 -\sin(a) & \cos(a) \sin(d) & \cos(a) \cos(d)\\
-\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.6} \\
+\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.7} \\
 0 & \cos(d) & -\sin(d)
 \end{bmatrix}
 ```
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/23f53b50-7d4e-4737-a573-1c400ea75c00" width="350"/> On the fundamental plane, the situation looks like this diagram: where the shadow of the Moon is centered on $M_1$, the projection of $(x, y, z)$ onto the fundamental plane, and the observer is at $C_1$, the projection of $(\xi, \eta, \zeta)$ on the fundamental plane.
 
-The distance between the shadow and the observer $\Delta$ is given by:
+The distance between the shadow and the observer $\Delta = M_1C_1$ is given by:
 ```math
-\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.7}
+\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.8}
 ```
 Which can also be expressed as:
 ```math
@@ -274,3 +287,59 @@ Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the prev
 <br/>
 
 ### The Size of the Shadow
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/4599e516-fdbc-42eb-8f61-db7e7f41246e" width="450"/> In these diagrams, $S$ is the center of the Sun, $M$ is the center of the Moon, the line $EF$ is the fundamental plane, and the line $CD$ is a parallel plane a distance $DF = \zeta$ above the fundamental plane.
+
+Let:
+```math
+\begin{align}
+K &= \text{ The Sun's radius } = SA\\
+k &= \text{ The Moon's radius } = MB\\
+f &= \text{ The angle of the shadow cone } = EVF\\
+c &= \text{ The distance between the vertex }\\
+& \text{ of the cone and the fundamental plane} = VF\\
+l &= \text{ The radius of the shadow }\\
+& \text{ on the fundamental plane } = EF\\
+L &= \text{ The radius of the shadow}\\
+&\text{ on the parallel plane } = CD\\
+\zeta &= \text{ The distance from the parallel plane}\\
+&\text{ to the fundamental plane } = DF\\
+z &= \text{ The distance from the Moon}\\
+&\text{ to the fundamental plane } = MF\\
+\end{align}
+```
+
+We can see from the left diagram (the penumbral cone) that $SV + MV = G$. We can also see that $SA/SV = MB/MV = \sin(f)$. Thus:
+```math
+\sin(f) = \frac{K + k}{G} \tag{9.10}
+```
+For the right diagram (the umbral cone), the vertex of the cone is below the fundamental plane. Regardless, we can see that $SV - MV = G$ and thus:
+```math
+\sin(f) = \frac{K - k}{G} \tag{9.11}
+```
+Equation $9.11$ is true for annular eclipses as well (in which case the vertex of the cone is between the Moon and the parallel plane).
+
+Then, because $MV = k/\sin(f)$, $c$ is given by:
+```math
+c = z\pm \frac{k}{\sin(f)} \tag{9.12}
+```
+the upper sign being used for the penumbra and the lower for the umbra.\
+We then have:
+```math
+\displaylines{
+\begin{align}
+l &= c\tan(f) = z\tan(f) \pm k\sec(f)\\
+L &= (c-\zeta)\tan(f) = L - \zeta\tan(f)
+\end{align}
+}\tag{9.13}
+```
+For the umbral cone, $c - \zeta$ is negative when the vertex of the cone falls beneath the parallel plane, in which case we have total eclipse. Therefore we have $L$ as a negative number when there is a total eclipse, and positive for partial and annular eclipses. $L$, being a distance, a positive quantity should be "correct", but keeping it as a negative number will be convenient later.
+
+For brevity we will put:
+```math
+\begin{align}
+i &= \tan(f)\\
+l &= ic \tag{5.14}\\
+L &= l - i\zeta
+\end{align}
+```
