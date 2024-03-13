@@ -131,7 +131,12 @@ At $19:21$:
 \therefore \mu &= \frac{19\degree\:41'\:40.88'' - 19\degree\:4'\:12.19''}{1h} = 37.48'/h\\
 \lambda_{\text{Sun}} &=19\degree\:6'\:34.7''\\
 \therefore \sigma &= \frac{19\degree\:6'\:34.7'' - 19\degree\:4'\:12.19''}{1h} = 2.38'/h\\
-\therefore q &= \frac{37.48}{2.38} = 15.7479\\
+\end{align}
+```
+Therefore:
+```math
+\begin{align}
+q &= \frac{37.48}{2.38} = 15.7479\\
 \therefore I' &= \arctan\left(\frac{15.7479}{15.7479 - 1} \tan(5.14\degree)\right) = 5.486\degree
 \end{align}
 ```
