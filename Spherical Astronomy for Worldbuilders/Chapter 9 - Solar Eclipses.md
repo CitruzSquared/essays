@@ -118,7 +118,7 @@ Thus by equations $4.1$ and $8.6$:
 ```math
 \begin{alignat}{2}
 s &= \arcsin\left(\frac{1737.4}{359\:807.95}\right) &&= 16'\:35.99''\\
-s' &= \arcsin\left(\frac{6378.137}{359\:807.95}\right) &&= 15'\:58.2''\\
+s' &= \arcsin\left(\frac{696\:000}{149\:823\:425.56}\right) &&= 15'\:58.2''\\
 \pi &= \arcsin\left(\frac{6378.137}{359\:807.95}\right) &&= 1\degree\:0'\:56.55''\\
 \pi' &= \arcsin\left(\frac{6378.137}{149\:823\:425.56}\right) &&= 8.78''
 \end{alignat}
