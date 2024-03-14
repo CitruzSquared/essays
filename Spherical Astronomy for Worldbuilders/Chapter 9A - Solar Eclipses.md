@@ -258,7 +258,7 @@ Let's expand the second of these equations (using angle addition formulae to sim
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\Theta_L - a)] 
 \end{align}
 ```
-But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $\theta$ (note that some other sources denote it by $\mu$), therefore:
+But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $\theta$. Therefore:
 ```math
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(\theta) \\
@@ -266,6 +266,8 @@ But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing 
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\theta)] 
 \end{align}
 ```
+$\theta$ is easily calculable as just the hour angle of the shadow axis at the standard meridian (denoted by $\mu$) plus the longitude of the place of observation (which we will denote $\lambda$). 
+
 The inverse transformation is given by the transpose of $R$:
 ```math
 R^{-1} = R^T = \begin{bmatrix}
@@ -352,7 +354,7 @@ L &= l - i\zeta
 \end{align}
 ```
 
-The quantities $a$, $d$, $\theta$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), and $l_2$ ($l$ for the umbra) are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+The quantities $a$, $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), and $l_2$ ($l$ for the umbra) are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
 
 #### Example 9.2
 <div align="center">
@@ -428,7 +430,7 @@ Additionally, the sidereal time for $18:00, \text{ April 8, } 2024$ is:
 ```
 So, by equation $6.1$, the hour angle of the shadow axis (at the Greenwich (standard) meridian) is:
 ```math
-\theta = 107\degree\:29'\:7.05'' - 17\degree\:35'\:2.58'' = 89\degree\:54'\:4.47''
+\mu = 107\degree\:29'\:7.05'' - 17\degree\:35'\:2.58'' = 89\degree\:54'\:4.47''
 ```
 By equation $9.11$, $9.12$, $9.13$, and $9.15$ (and the radius data from example $9.1$):
 ```math
@@ -448,7 +450,7 @@ Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) a
 \begin{align}
 a &= 17\degree\:35'\:2.58''\\
 d &= 7\degree\:27'\:34.93''\\
-\theta &= 89\degree\:54'\:4.47''\\
+\mu &= 89\degree\:54'\:4.47''\\
 x &= -0.30856088 \:R_E\\
 y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
@@ -457,13 +459,13 @@ l_1 &= 0.53573027 \:R_E\\
 l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
-Also of importance are the derivatives of the quantities $x$, $y$, and $\theta$ (in radians). By taking a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), we find:\
+Also of importance are the derivatives of the quantities $x$, $y$, and $\mu$ (in radians). By taking a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), we find:\
 At $17:45$:
 ```math
 \begin{align}
 x &= -0.4364434 \:R_E\\
 y &= 0.15693548 \:R_E\\
-\theta &= 86\degree\:9'\:0.73''\\
+\mu &= 86\degree\:9'\:0.73''\\
 \end{align}
 ```
 At $18:15$:
@@ -471,7 +473,7 @@ At $18:15$:
 \begin{align}
 x &= -0.18070657 \:R_E\\
 y &= 0.29258104 \:R_E\\
-\theta &= 93\degree\:39'\:8.07''\\
+\mu &= 93\degree\:39'\:8.07''\\
 \end{align}
 ```
 Therefore:
@@ -479,7 +481,7 @@ Therefore:
 \begin{alignat}{2}
 x' &= \frac{-0.18070657 - (-0.4364434)}{0.5h} &&= 0.51147366 \: R_E/h\\
 y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
-\theta' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h\\
+\mu' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h\\
 \end{alignat}
 ```
 $\blacksquare$
