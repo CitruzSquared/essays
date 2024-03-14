@@ -459,7 +459,7 @@ l_1 &= 0.53573027 \:R_E\\
 l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
-Also of importance are the derivatives of the quantities $x$, $y$, and $\mu$ (in radians). By taking a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), we find:\
+Also of importance are the derivatives of the quantities $x$, $y$, and $\mu$ (in radians), denoted $x'$, $y'$, and $\mu'$. By taking a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), we find:\
 At $17:45$:
 ```math
 \begin{align}
