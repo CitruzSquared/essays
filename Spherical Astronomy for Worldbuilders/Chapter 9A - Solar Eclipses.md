@@ -128,9 +128,14 @@ At $19:21$:
 ```math
 \begin{align}
 \lambda_{\text{Moon}} &=19\degree\:41'\:40.88''\\
-\therefore \mu &= \frac{19\degree\:41'\:40.88'' - 19\degree\:4'\:12.19''}{1h} = 37.48'/h\\
-\lambda_{\text{Sun}} &=19\degree\:6'\:34.7''\\
-\therefore \sigma &= \frac{19\degree\:6'\:34.7'' - 19\degree\:4'\:12.19''}{1h} = 2.38'/h\\
+\lambda_{\text{Sun}} &=19\degree\:6'\:34.7''
+\end{align}
+```
+Therefore:
+```math
+\begin{align}
+\mu &= \frac{19\degree\:41'\:40.88'' - 19\degree\:4'\:12.19''}{1h} = 37.48'/h\\
+\sigma &= \frac{19\degree\:6'\:34.7'' - 19\degree\:4'\:12.19''}{1h} = 2.38'/h
 \end{align}
 ```
 Therefore:
