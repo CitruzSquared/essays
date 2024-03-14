@@ -428,7 +428,7 @@ Additionally, the sidereal time for $18:00, \text{ April 8, } 2024$ is:
 ```math
 \Theta = 107\degree\:29'\:7.05''
 ```
-So, by equation $6.1$, the hour angle of the shadow axis (at the Greenwich (standard) meridian) is:
+So, by equation $6.1$, the hour angle of the shadow axis at the Greenwich (standard) meridian is:
 ```math
 \mu = 107\degree\:29'\:7.05'' - 17\degree\:35'\:2.58'' = 89\degree\:54'\:4.47''
 ```
