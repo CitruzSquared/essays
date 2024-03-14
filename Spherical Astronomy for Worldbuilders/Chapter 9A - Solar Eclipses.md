@@ -344,7 +344,7 @@ L &= ic \tag{5.15}\\
 \end{align}
 ```
 
-The quantities $a$, $d$, $\theta$, $x$, $y$, $L_1$ ($L$ for the penumbra), and $L_2$ ($L$ for the umbra) are known as the [Besselian elements](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+The quantities $a$, $d$, $\theta$, $x$, $y$, $i_1$, $i_2$, $L_1$ ($L$ for the penumbra), and $L_2$ ($L$ for the umbra) are known as the [Besselian elements](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
 
 #### Example 9.2
 <div align="center">
@@ -441,10 +441,12 @@ Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) a
 a &= 17\degree\:35'\:2.58''\\
 d &= 7\degree\:27'\:34.93''\\
 \theta &= 89\degree\:54'\:4.47''\\
-x &= -0.30856088\\
-y &= 0.22479055\\
-L_1 &= 0.53573027\\
-L_2 &= -0.00902906\\
+x &= -0.30856088 \text{ R_E}\\
+y &= 0.22479055 \text{ R_E}\\
+i_1 &= 0.0046683\\
+i_2 &= 0.0046451\\
+L_1 &= 0.53573027 \text{ R_E}\\
+L_2 &= -0.00902906 \text{ R_E}
 \end{align}
 ```
 $\blacksquare$
