@@ -159,16 +159,15 @@ $\blacksquare$
 
 ### Partial Total, and Annular Eclipses
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/365a2fd7-5c0b-4ba6-8c44-1e15cdcd0abd" width="250"/> Any object, when illuminated by a non-point source, casts two shadows: *penumbral* and *umbral*. In this diagram, the Moon (at $M$) is casting a shadow on the surface on the Earth ($CD$). An observer standing between $C$ and $C'$ only sees the Sun ($S$) partly covered: this is known as a *partial solar eclipse* and this shadow cone is known as the *penumbral cone*. An observer standing between $C$ and $D$ cannot see the Sun as it is totally blocked by the Moon: this is known as a *total solar eclipse* and this shadow cone is known as the *umbral cone*. (The same is true on the other side of the image.) 
+<p align="center">
+  <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/1d634c03-a53b-4d23-90ab-56df30abf0fc"> <br/>
+</p>
 
-<br/>
+Any object illuminated by a non-point source casts two shadows: *penumbral* and *umbral*. In the diagram above, the penumbral shadow cast by the Moon ($M$) is shown by regions $A$ and $B$. An observer in these regions sees the Moon slightly offset from the Sun ($S$) and so only sees a part of the Sun covered by the Moon. This is known as a *partial solar eclipse*. 
 
-There is one more kind of eclipse known as an *annular eclipse*. This happens when a total solar eclipse occurs (i.e. the observer is in the umbral region) but the Moon is not large enough to cover the whole Sun and thus leaves a ring of the Sun visible around the Sun. The cone here is then called the *antumbral cone* but the math works out exactly like the umbral cone.
+The umbral region is marked by regions $C$ and $D$. An observer in region $C$ cannot see the Sun at all since it is completely blocked by the Moon. This is known as a *total solar eclipse*. In region $D$, the Moon still coveres the center of the Sun but does not appear large enough to cover all of it. Therefore the Sun looks like a glowing ring around the Moon, and therefore this is known as an *annular solar eclipse*.
 
-<br/>
-<br/>
-<br/>
-<br/>
+On our Earth, our Moon is just at the perfect distance where the orbital eccentricity allows the Moon to be both close enough and far enough to create all three partial, total, and annular solar eclipses (and sometimes a total eclipse becomes annular halfway through or vice versa, this is known as a *hybrid solar eclipse*). This is not true for the vast majority of planets: Mars with its two small moons only experiences annular and partial solar eclipses.
 
 ### Direction of the Shadow
 The shadow of the Moon points in the direction of the Moon from the Sun. Thus, if we say that:
