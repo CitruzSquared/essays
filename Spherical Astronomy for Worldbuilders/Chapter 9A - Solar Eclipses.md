@@ -301,9 +301,9 @@ G &= \text{ The distance between }\\
 f &= \text{ The angle of the shadow cone } = EVF\\
 c &= \text{ The distance between the vertex }\\
 & \text{ of the cone and the fundamental plane} = VF\\
-L &= \text{ The radius of the shadow }\\
+l &= \text{ The radius of the shadow }\\
 & \text{ on the fundamental plane } = EF\\
-\Lambda &= \text{ The radius of the shadow}\\
+L &= \text{ The radius of the shadow}\\
 &\text{ on the parallel plane } = CD\\
 \zeta &= \text{ The distance from the parallel plane}\\
 &\text{ to the fundamental plane } = DF\\
@@ -331,23 +331,23 @@ We then have:
 ```math
 \displaylines{
 \begin{align}
-L &= c\tan(f) = z\tan(f) \pm k\sec(f)\\
-\Lambda &= (c-\zeta)\tan(f) = L - \zeta\tan(f)
+l &= c\tan(f) = z\tan(f) \pm k\sec(f)\\
+L &= (c-\zeta)\tan(f) = l - \zeta\tan(f)
 \end{align}
 }\tag{9.14}
 ```
-For the umbral cone, $c - \zeta$ is negative when the vertex of the cone falls beneath the parallel plane, in which case we have total eclipse. Therefore we have $L$ as a negative number when there is a total eclipse, and positive for partial and annular eclipses. $L$, being a distance, a positive quantity should be "correct", but keeping it as a negative number will be convenient later.
+For the umbral cone, $c - \zeta$ is negative when the vertex of the cone falls beneath the parallel plane, in which case we have total eclipse. Therefore we have $L$ as a negative number when there is a total eclipse, and positive for partial and annular eclipses. $l$, being a distance, a positive quantity should be "correct", but keeping it as a negative number will be convenient later.
 
 For brevity we will put:
 ```math
 \begin{align}
 i &= \tan(f)\\
-L &= ic \tag{5.15}\\
-\Lambda &= L - i\zeta
+l &= ic \tag{5.15}\\
+L &= l - i\zeta
 \end{align}
 ```
 
-The quantities $a$, $d$, $\theta$, $x$, $y$, $i_1$, $i_2$, $L_1$ ($L$ for the penumbra), and $L_2$ ($L$ for the umbra) are known as the [Besselian elements](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+The quantities $a$, $d$, $\theta$, $x$, $y$, $i_1$, $i_2$, $l_1$ ($l$ for the penumbra), and $l_2$ ($l$ for the umbra) are known as the [Besselian elements](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
 
 #### Example 9.2
 <div align="center">
@@ -434,8 +434,8 @@ i_1 &= \tan(16.80592'') &&= 0.0046683\\
 i_2 &= \tan(16.72222'') &&= 0.0046451\\
 c_1 &= 359\:772.487 + \frac{1737.4}{\sin(16.80592'')} &&= 731\:942.688 \text{ km}\\
 c_2 &= 359\:772.487 - \frac{1737.4}{\sin(16.80592'')} &&= -12\:397.713 \text{ km}\\
-L_1 &= 0.0046683 \cdot 719\:445.246 &&= 3416.961\text{ km}\\
-L_2 &= 0.0046451 \cdot -12\:397.713 &&= -57.589\text{ km}
+l_1 &= 0.0046683 \cdot 719\:445.246 &&= 3416.961\text{ km}\\
+l_2 &= 0.0046451 \cdot -12\:397.713 &&= -57.589\text{ km}
 \end{alignat}
 ```
 Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
@@ -448,8 +448,8 @@ x &= -0.30856088 \:R_E\\
 y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
 i_2 &= 0.0046451\\
-L_1 &= 0.53573027 \:R_E\\
-L_2 &= -0.00902906 \:R_E
+l_1 &= 0.53573027 \:R_E\\
+l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
 $\blacksquare$
