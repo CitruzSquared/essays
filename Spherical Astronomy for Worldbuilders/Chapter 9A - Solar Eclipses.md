@@ -320,7 +320,7 @@ For the right diagram (the umbral cone), the vertex of the cone is below the par
 ```math
 \sin(f) = \frac{K - k}{G} \tag{9.12}
 ```
-Equation $9.11$ is true for annular eclipses as well (in which case the vertex of the cone is between the Moon and the parallel plane).
+Equation $9.12$ is true for annular eclipses as well (in which case the vertex of the cone is between the Moon and the parallel plane).
 
 Then, because $MV = k/\sin(f)$, $c$ is given by:
 ```math
