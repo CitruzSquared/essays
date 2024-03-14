@@ -445,7 +445,7 @@ l_1 &= 0.0046683 \cdot 719\:445.246 &&= 3416.961\text{ km}\\
 l_2 &= 0.0046451 \cdot -12\:397.713 &&= -57.589\text{ km}
 \end{alignat}
 ```
-Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
+Expressing distances in terms of Earth equatorial radii ($R_E = 6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
 ```math
 \begin{align}
 a &= 17\degree\:35'\:2.58''\\
