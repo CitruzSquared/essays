@@ -457,4 +457,29 @@ l_1 &= 0.53573027 \:R_E\\
 l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
+Also of importance are the derivatives of the quantities $x$, $y$, and $\theta$ (in radians). By taking a time step of $\pm 15$ minutes, we find:\
+At $17:45$:
+```math
+\begin{align}
+x &= -0.4364434 \:R_E\\
+y &= 0.15693548 \:R_E\\
+\theta &= 86\degree\:9'\:0.73''\\
+\end{align}
+```
+At $18:15$:
+```math
+\begin{align}
+x &= -0.18070657 \:R_E\\
+y &= 0.29258104 \:R_E\\
+\theta &= 93\degree\:39'\:8.07''\\
+\end{align}
+```
+Therefore:
+```math
+\begin{alignat}{2}
+x' &= \frac{-0.18070657 - (-0.4364434)}{0.5h} &&= 0.51147366 \: R_E/h\\
+y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
+\theta' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} &&= 0.26187054 \text{ rad}/h\\
+\end{alignat}
+```
 $\blacksquare$
