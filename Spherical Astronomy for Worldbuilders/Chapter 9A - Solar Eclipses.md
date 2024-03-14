@@ -266,7 +266,7 @@ But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing 
 \zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\theta)] 
 \end{align}
 ```
-$\theta$ is easily calculable as just the hour angle of the shadow axis at the standard meridian (denoted by $\mu$) plus the longitude of the place of observation (which we will denote $\lambda$). 
+$\theta$ is easily calculable (by equation $6.2$) as just the hour angle of the shadow axis at the standard meridian (denoted by $\mu$) plus the longitude of the place of observation (which we will denote by $\lambda$). 
 
 The inverse transformation is given by the transpose of $R$:
 ```math
