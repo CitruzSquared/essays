@@ -347,7 +347,7 @@ For brevity we will put:
 ```math
 \begin{align}
 i &= \tan(f)\\
-l &= ic \tag{5.15}\\
+l &= ic \tag{9.15}\\
 L &= l - i\zeta
 \end{align}
 ```
