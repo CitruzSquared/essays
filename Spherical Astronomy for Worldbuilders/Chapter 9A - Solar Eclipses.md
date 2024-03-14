@@ -483,3 +483,6 @@ y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
 \end{alignat}
 ```
 $\blacksquare$
+
+### The Outline of the Shadow on the Surface of the Earth
+(Continued in Part B...)
