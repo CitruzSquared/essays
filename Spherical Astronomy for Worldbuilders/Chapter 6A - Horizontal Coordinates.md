@@ -26,8 +26,10 @@ and because $\Theta_L = \Theta + l$ (equations $5.2$ and $5.3$):
 
 ```math
 \displaylines{
-h_L = \Theta + l - \alpha\\
-h_L = h + l
+\begin{align}
+h_L &= \Theta + l - \alpha\\
+&= h + l
+\end{align}
 }\tag{6.2}
 ```
 
