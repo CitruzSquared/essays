@@ -203,20 +203,20 @@ R_1 = \begin{bmatrix}
 0 & 0 & 1
 \end{bmatrix}
 ```
-Then we rotate by $d + 90\degree$ about the $x$-axis to align the $z$-axis with the shadow while keeping the $y$-axis pointed towards North.
+Then we rotate by $90\degree - d$ about the $x$-axis to align the $z$-axis with the shadow while keeping the $y$-axis pointed towards North.
 ```math
 R_2 = \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos(d + 90\degree) & \sin(d + 90\degree) \\
-0 & -\sin(d + 90\degree) & \cos(d + 90\degree)
+0 & \cos(90\degree - d) & \sin(90\degree - d) \\
+0 & -\sin(90\degree - d) & \cos(90\degree - d)
 \end{bmatrix}
 ```
 The total rotation is the product of the two matrices:
 ```math
 R = R_2R_1 = \begin{bmatrix}
 -\sin(a) & \cos(a) & 0\\
-\cos(a) \sin(d) & \sin(a) \sin(d) & \cos(d) \tag{9.5} \\
-\cos(a) \cos(d) & \sin(a) \cos(d) & -\sin(d)
+-\cos(a) \sin(d) & -sin(a) \sin(d) & \cos(d) \tag{9.5}\\
+\cos(a) \cos(d) & \sin(a) \cos(d) & \sin(d)
 \end{bmatrix}
 ```
 We can now express the coordinates of both the Moon and observer in this new system. Let:
@@ -237,7 +237,7 @@ v\\ u\\ w
 \xi\\\eta\\\zeta
 \end{bmatrix} = R \begin{bmatrix}
 \rho \cos(\phi')\cos(\Theta_L)\\
-\rho \cos(\phi')\sin(\Theta_L) \\ 
+\rho \cos(\phi')\sin(\Theta_L) \\ \tag{9.6}
 \rho \sin(\phi')
 \end{bmatrix}
 ```
@@ -247,22 +247,22 @@ Let's expand the second of these equations (using angle addition formulae to sim
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(\Theta_L - a) \\
 \eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(\Theta_L - a)] \\
-\zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\Theta_L - a)] \\
+\zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\Theta_L - a)] 
 \end{align}
 ```
 But $\Theta_L - a$ is the local hour angle of the point $Z$ (the point pointing in the direction of the shadow), which we will denote by $\theta$ (note that some other sources denote it by $\mu$), therefore:
 ```math
 \begin{align}
 \xi &= \rho \cos(\phi') \sin(\theta) \\
-\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(\theta)] \tag{9.6}\\
-\zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\theta)] \\
+\eta &= \rho [\sin(\phi')\cos(d) - \cos(\phi')\sin(d)\cos(\theta)] \tag{9.7}\\
+\zeta &= \rho [\sin(\phi')\sin(d) + \cos(\phi')\cos(d)\cos(\theta)] 
 \end{align}
 ```
 The inverse transformation is given by the transpose of $R$:
 ```math
 R^{-1} = R^T = \begin{bmatrix}
 -\sin(a) & \cos(a) \sin(d) & \cos(a) \cos(d)\\
-\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.7} \\
+\cos(a) & \sin(a) \sin(d) & \sin(a) \cos(d) \tag{9.8} \\
 0 & \cos(d) & -\sin(d)
 \end{bmatrix}
 ```
@@ -271,7 +271,7 @@ R^{-1} = R^T = \begin{bmatrix}
 
 The distance between the shadow and the observer $\Delta = M_1C_1$ is given by:
 ```math
-\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.8}
+\Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.9}
 ```
 Which can also be expressed as:
 ```math
@@ -280,7 +280,7 @@ Which can also be expressed as:
 \Delta \cos(Q) &= x - \xi\\
 \Delta \sin(Q) &= y - \eta
 \end{align}
-}\tag{9.9}
+}\tag{9.10}
 ```
 Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the previous diagram.
 
@@ -311,17 +311,17 @@ z &= \text{ The distance from the Moon}\\
 
 We can see from the left diagram (the penumbral cone) that $SV + MV = G$. We can also see that $SA/SV = MB/MV = \sin(f)$. Thus:
 ```math
-\sin(f) = \frac{K + k}{G} \tag{9.10}
+\sin(f) = \frac{K + k}{G} \tag{9.11}
 ```
 For the right diagram (the umbral cone), the vertex of the cone is below the parallel plane (total eclipse). Regardless, we can see that $SV - MV = G$ and thus:
 ```math
-\sin(f) = \frac{K - k}{G} \tag{9.11}
+\sin(f) = \frac{K - k}{G} \tag{9.12}
 ```
 Equation $9.11$ is true for annular eclipses as well (in which case the vertex of the cone is between the Moon and the parallel plane).
 
 Then, because $MV = k/\sin(f)$, $c$ is given by:
 ```math
-c = z\pm \frac{k}{\sin(f)} \tag{9.12}
+c = z\pm \frac{k}{\sin(f)} \tag{9.13}
 ```
 the upper sign being used for the penumbra and the lower for the umbra.\
 We then have:
@@ -331,7 +331,7 @@ We then have:
 L &= c\tan(f) = z\tan(f) \pm k\sec(f)\\
 \Lambda &= (c-\zeta)\tan(f) = L - \zeta\tan(f)
 \end{align}
-}\tag{9.13}
+}\tag{9.14}
 ```
 For the umbral cone, $c - \zeta$ is negative when the vertex of the cone falls beneath the parallel plane, in which case we have total eclipse. Therefore we have $L$ as a negative number when there is a total eclipse, and positive for partial and annular eclipses. $L$, being a distance, a positive quantity should be "correct", but keeping it as a negative number will be convenient later.
 
@@ -339,7 +339,112 @@ For brevity we will put:
 ```math
 \begin{align}
 i &= \tan(f)\\
-L &= ic \tag{5.14}\\
+L &= ic \tag{5.15}\\
 \Lambda &= L - i\zeta
 \end{align}
 ```
+
+The quantities $a$, $d$, $\theta$, $x$, $y$, $L_1$ ($L$ for the penumbra), and $L_2$ ($L$ for the umbra) are known as the [Besselian elements](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+
+#### Example 9.2
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the Besselian elements for the solar eclipse of $\text{April 8, } 2024$ at $18:00$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Let $r, \alpha, \delta$ be the equatorial spherical coordinates of the Moon and $r', \alpha', \delta'$ be the equatorial spherical coordinates of the Sun. From an ephemeris, we find that on $\text{April 8, } 2024$ at $18:00$:
+```math
+\begin{align}
+r &= 359\:780.727\text{ km}\\
+\alpha &= 1^h\:9^m\:4.27^s\\
+\delta &= 7\degree\:41'\:16.5''\\
+r' &= 149\:822\:802.516 \text{ km}\\
+\alpha' &= 1^h\:10^m\:19.99^s \\
+\delta' &= 7\degree\:27'\:36.9''
+\end{align}
+```
+Thus the cartesian coordinates of the Moon and Sun are:
+```math
+\begin{align}
+v &= 340\:068.149\text{ km}\\
+u &= 107\:766.833\text{ km}\\
+w &= 46\:713.3280\text{ km}\\
+v' &= 141\:783\:968 \text{ km}\\
+u' &= 44\:073\:369.0 \text{ km} \\
+w' &= 20\:042\:873.5 \text{ km}
+\end{align}
+```
+(If vectors are already known, the above step may be skipped)\
+Therefore, by equation $9.4$:
+```math
+\begin{alignat}{2}
+G \cos(d) \cos(a) &= 141\:783\:968 - 340\:068.149 &&= 141\:273\:455\\
+G \cos(d) \sin(a) &= 44\:073\:369.0 - 107\:766.833 &&= 44\:771\:300.3\\
+G \sin(d) &= 20\:042\:873.5 - 46\:713.3280 &&= 19\:404\:611.7
+\end{alignat}
+```
+Therefore:
+```math
+\begin{alignat}{2}
+G &= \sqrt{141\:273\:455^2 + 44\:771\:300.3^2 + 19\:404\:611.7^2} &&= 149\:463\:030\text{ km}\\
+a &= \arctan(44\:771\:300.3, 141\:273\:455) &&= 17\degree\:35'\:2.58''\\
+d &= \arcsin(19\:404\:611.7 / G) &&= 7\degree\:27'\:34.93''\\
+\end{alignat}
+```
+Thus, by equation $9.5$, the rotation matrix is:
+```math
+R = \begin{bmatrix}
+-0.302104542 & 0.9532748008 & 0\\
+-0.12376256 & -0.039221882 & 0.991536420\\
+0.945206683 & 0.299547656 & 0.12982884
+\end{bmatrix}
+```
+Thus, by equation $9.6$:
+```math
+\begin{align}
+x &= -1968.0435\text{ km}\\
+y &= 1433.7449\text{ km}\\
+z &= 359\:772.487\text{ km}
+\end{align}
+```
+Additionally, the sidereal time for $18:00, \text{ April 8, } 2024$ is:
+```math
+\Theta = 107\degree\:29'\:7.05''
+```
+So, by equation $6.1$, the hour angle of the shadow axis (at the greenwich (standard) meridian) is:
+```math
+\theta = 107\degree\:29'\:7.05'' - 17\degree\:35'\:2.58'' = 89\degree\:54'\:4.47''
+```
+By equation $9.11$, $9.12$, and $9.15$ (and the radius data from example $9.1$):
+```math
+\begin{alignat}{2}
+f_1 &= \arcsin\left(\frac{696\:000 + 1737.4}{149\:463\:030}\right) &&= 16.80592''\\
+f_2 &= \arcsin\left(\frac{696\:000 - 1737.4}{149\:463\:030}\right) &&= 16.72222''\\
+i_1 &= \tan(16.80592'') &&= 0.0046683\\
+i_2 &= \tan(16.72222'') &&= 0.0046451\\
+c_1 &= 359\:772.487 + \frac{1737.4}{\sin(16.80592'')} &&= 731\:942.688 \text{ km}\\
+c_2 &= 359\:772.487 - \frac{1737.4}{\sin(16.80592'')} &&= -12\:397.713 \text{ km}\\
+L_1 &= 0.0046683 \cdot 719\:445.246 &&= 3416.961\text{ km}\\
+L_2 &= 0.0046451 \cdot 24\:895.156 &&= -57.589\text{ km}
+\end{alignat}
+```
+Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
+```math
+\begin{align}
+a &= 17\degree\:35'\:2.58''\\
+d &= 7\degree\:27'\:34.93''\\
+\theta &= 89\degree\:54'\:4.47''\\
+x &= -0.30856088\\
+y &= 0.22479055\\
+L_1 &= 0.53573027\\
+L_2 &= -0.00902906\\
+\end{align}
+```
+$\blacksquare$
