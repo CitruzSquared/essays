@@ -381,7 +381,7 @@ u' &= 44\:073\:369.0 \text{ km} \\
 w' &= 20\:042\:873.5 \text{ km}
 \end{align}
 ```
-(If vectors are already known, the above step may be skipped)\
+(If vectors are already known, the above step may be skipped.)\
 Therefore, by equation $9.4$:
 ```math
 \begin{alignat}{2}
