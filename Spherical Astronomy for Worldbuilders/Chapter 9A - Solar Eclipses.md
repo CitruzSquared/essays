@@ -293,7 +293,7 @@ Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the prev
 \begin{align}
 K &= \text{ The Sun's radius } = SA\\
 k &= \text{ The Moon's radius } = MB\\
-G &= \text{ The Distance between }\\
+G &= \text{ The distance between }\\
 &\text{the Sun and the Moon } = SM\\
 f &= \text{ The angle of the shadow cone } = EVF\\
 c &= \text{ The distance between the vertex }\\
