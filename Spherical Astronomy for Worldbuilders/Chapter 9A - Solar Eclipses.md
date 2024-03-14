@@ -479,7 +479,7 @@ Therefore:
 \begin{alignat}{2}
 x' &= \frac{-0.18070657 - (-0.4364434)}{0.5h} &&= 0.51147366 \: R_E/h\\
 y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
-\theta' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot{1\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h\\
+\theta' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h\\
 \end{alignat}
 ```
 $\blacksquare$
