@@ -360,7 +360,7 @@ The quantities $a$, $d$, $\theta$, $x$, $y$, $i_1$, $i_2$, $l_1$ ($l$ for the pe
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Determine the Besselian elements for the solar eclipse of $\text{April 8, } 2024$ at $18:00$.
+Determine the Besselian elements for the solar eclipse of $\text{April 8, } 2024$ for the time $18:00$.
 <img width="2000" height="0">
 </td>
 </tbody>
