@@ -441,12 +441,12 @@ Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) a
 a &= 17\degree\:35'\:2.58''\\
 d &= 7\degree\:27'\:34.93''\\
 \theta &= 89\degree\:54'\:4.47''\\
-x &= -0.30856088 \text{ R_E}\\
-y &= 0.22479055 \text{ R_E}\\
+x &= -0.30856088 \:R_E\\
+y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
 i_2 &= 0.0046451\\
-L_1 &= 0.53573027 \text{ R_E}\\
-L_2 &= -0.00902906 \text{ R_E}
+L_1 &= 0.53573027 \:R_E\\
+L_2 &= -0.00902906 \:R_E
 \end{align}
 ```
 $\blacksquare$
