@@ -171,6 +171,7 @@ On our Earth, our Moon is just at the perfect distance where the orbital eccentr
 
 <p align="center">
   <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/8d22bfd0-acef-48a7-9fea-894b6a7043b5"> <br/>
+  Left: Partial Solar Eclipse. Center: Total Solar Eclipse. Right: Annular Solar Eclipse.
 </p>
 
 ### Direction of the Shadow
