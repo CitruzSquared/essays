@@ -13,7 +13,7 @@ In the last chapter, we saw how we could define the sidereal time as the Western
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/743585dd-02e4-41f2-ba17-18ecfa2a35cc" width="400"/> In this diagram, the Western angle between the Prime Meridian and Aries (the right ascension of the Prime Meridian) is the standard sidereal time ($\Theta$), and the Western angle between the Local Meridian and Aries (the right ascension of the Local Meridian) is the local standard time ($\Theta_L$), as we saw in the last chapter. The Eastern angle between Aries and the Star is, by definition, the right ascension of the star ($\alpha$). Furthermore, the Eastern angle between the Prime Meridian and the Local Meridian is the longitude $l$. (Eastern angle meaning the angle measured in the Eastern direction.)
 
-The Western angle between the Prime Meridian and the Star is then known as the Standard Hour Angle of the star ($h$), and the Western angle between the Local Meridian and the Star is known as the Local Hour Angle of the star ($h_L$ but also $h$).
+The Western angle between the Prime Meridian and the Star is then known as the Standard Hour Angle of the star ($h$), and the Western angle between the Local Meridian and the Star is known as the Local Hour Angle of the star ($h_L$).
 
 <br/>
 <br/>
