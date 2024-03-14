@@ -220,7 +220,7 @@ The total rotation is the product of the two matrices:
 ```math
 R = R_2R_1 = \begin{bmatrix}
 -\sin(a) & \cos(a) & 0\\
--\cos(a) \sin(d) & -sin(a) \sin(d) & \cos(d) \tag{9.5}\\
+-\cos(a) \sin(d) & -\sin(a) \sin(d) & \cos(d) \tag{9.5}\\
 \cos(a) \cos(d) & \sin(a) \cos(d) & \sin(d)
 \end{bmatrix}
 ```
