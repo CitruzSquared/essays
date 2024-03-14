@@ -432,7 +432,7 @@ i_2 &= \tan(16.72222'') &&= 0.0046451\\
 c_1 &= 359\:772.487 + \frac{1737.4}{\sin(16.80592'')} &&= 731\:942.688 \text{ km}\\
 c_2 &= 359\:772.487 - \frac{1737.4}{\sin(16.80592'')} &&= -12\:397.713 \text{ km}\\
 L_1 &= 0.0046683 \cdot 719\:445.246 &&= 3416.961\text{ km}\\
-L_2 &= 0.0046451 \cdot 24\:895.156 &&= -57.589\text{ km}
+L_2 &= 0.0046451 \cdot -12\:397.713 &&= -57.589\text{ km}
 \end{alignat}
 ```
 Expressing distances in terms of Earth equatorial radii ($6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
