@@ -283,7 +283,7 @@ The distance between the shadow and the observer $\Delta = FC_1$ is given by:
 ```math
 \Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.9}
 ```
-Which can also be expressed as:
+Which can also be expressed trigonometrically, which will be useful later:
 ```math
 \displaylines{
 \begin{align}
@@ -292,7 +292,7 @@ Which can also be expressed as:
 \end{align}
 }\tag{9.10}
 ```
-Where $Q$ is the angle $NC_1F$. By geometry, this is also $PZM'$ from the previous diagram.
+Where $Q$ is the angle $NC_1F$ Notice that $Q$ describes the position angle of the shadow in relation to the observer.
 
 <br/>
 
