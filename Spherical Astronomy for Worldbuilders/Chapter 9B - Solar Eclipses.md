@@ -296,6 +296,7 @@ Thus, by equation $9.30$:
 \lambda &= -61\degree\:32'\:4.40'' - 89\degree\:54'\:4.47'' &&= 208\degree\:33\:51.12''
 \end{alignat}
 ```
+If solutions do not exist, then that means that this point is not on the surface of the Earth.\
 The point we just calculated is the highlighted red point on this map:
 <p align="center">
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/41222663-02b9-434c-a028-244dbf6dfe55"> <br/>
