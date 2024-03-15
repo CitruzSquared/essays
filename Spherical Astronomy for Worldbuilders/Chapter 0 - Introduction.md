@@ -68,7 +68,7 @@
    - Parallax Corrected Sunrise Equation
    - Horizontal Parallax
    - Parallax Corrected Subsolar Point
-### 3. Eclipses
+### 3. Syzygy
 9. **Solar Eclipses**
     - Part A (Eq. $9.1$ to $9.15$, Ex. $9.1$ to $9.2$)
       * Condition for Eclipse
