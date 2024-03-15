@@ -352,7 +352,7 @@ By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full 
 210\degree & 51\degree\:3' & 266\degree\:14'\\
 240\degree & 36\degree\:57' & 281\degree\:3'\\
 270\degree & 20\degree\:23' & 283\degree\:50'\\
-300\degree & 5\degree\:4' & 273\degree\:50'\\
+300\degree & 5\degree\:4' & 278\degree\:50'\\
 330\degree & -6\degree\:12' & 267\degree\:37'\\ \hline
 \end{array}
 ```
