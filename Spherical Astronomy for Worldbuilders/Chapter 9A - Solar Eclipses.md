@@ -1,6 +1,27 @@
-# Part 3. Eclipses
+# Part 3. Syzygy
+In astronomy, the word [*syzygy*](https://en.wikipedia.org/wiki/Syzygy_(astronomy)) refers to phenomena where three or more celestial bodies are in one line. This can result in these phenomena:
+
+1. Transits
+   - When an object passes in front of a larger object, covering part of it.
+2. Occultations
+   - When an object passes in front of a smaller object, covering it from view.
+3. Shadow Eclipses
+   - When an object passes through the shadow of another.
+
+From the Earth, these phenomena are of particular interest:
+1. [Solar Eclipses](https://en.wikipedia.org/wiki/Solar_eclipse)
+   - When the Moon passes in front of the Sun.
+2. [Lunar Eclipses](https://en.wikipedia.org/wiki/Lunar_eclipse)
+   - When the Moon passes through the shadow of the Earth, turning it dark.
+3. [Inner Planet Transits](https://en.wikipedia.org/wiki/Astronomical_transit)
+   - When an inner planet passes in front of the Sun.
+4. [Lunar Occultations](https://en.wikipedia.org/wiki/Occultation)
+   - When the Moon passes in front of a star or a planet, covering it from view.
+
+This section of the guide will detail the prediction and calculation of these four phenomena.
 
 ## IX. Solar Eclipses
+This chapter will go into detail about solar eclipses.
 
 ### Condition for Eclipse
 A solar eclipse can only happen if the Moon and the Sun are in the sky in the same position, i.e. only at new Moon. Not all new moons result in a solar eclipse however, due to the inclination of the Moon's orbit to the Ecliptic.
