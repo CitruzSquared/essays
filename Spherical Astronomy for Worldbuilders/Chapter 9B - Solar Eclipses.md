@@ -288,11 +288,14 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
 \zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
-Now for the optional correction step. By equation $9.32$:
+Now, by equation $9.32$:
 ```math
-\eta_1 = 0.22553395 + \frac{0.0046683 \cdot 0.49006614\cos(90\degree)}{0.98821200} = 0.22553395
+\begin{alignat}{2}
+\xi &= -0.84429113 + 0.0046683 \cdot 0.49006614\sin(90\degree) &&= -0.84200334\\
+\eta_1 &= 0.22553395 + \frac{0.0046683 \cdot 0.49006614\cos(90\degree)}{0.98821200} &&= 0.22553395
+\end{alignat}
 ```
-Now, by equation $9.27$:
+Now for the optional correction step. By equation $9.27$:
 ```math
 \begin{align}
 \zeta &= -0.99994358 \cdot 0.22553395 \sin(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'') + 0.99994358 \cdot 0.49006614 \cos(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'')\\
@@ -308,7 +311,7 @@ Then, by equation $9.28*$:
 \therefore \zeta_1 &= +\sqrt{0.24016307} &&= 0.49006435
 \end{alignat}
 ```
-This correction to $\zeta_1$ is so miniscule that it may be skipped: the first value we obtained for $\zeta_1$ may be used in equation $9.28$ to obtain $\xi$ and $\eta$. The difference in the value for $\xi$ obtained in this example would be in the order of $0.0001$%.\
+This correction to $\xi$, $\eta_1$, and $\zeta_1$ is miniscule. The difference in the value for $\xi$ obtained in this example is in the order of $0.0001$%.\
 Now, by equation $9.29$:
 ```math
 \begin{alignat}{2}
