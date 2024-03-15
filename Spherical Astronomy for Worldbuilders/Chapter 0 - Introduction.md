@@ -76,7 +76,7 @@
       * Direction of the Shadow
       * Position of the Shadow and the Observer
       * The Size of the Shadow
-   - Part B (Eq. $9.16$ to $9.33$, Ex. $9.3$)
+   - Part B (Eq. $9.16$ to $9.34$, Ex. $9.3$)
       * The Outline of the Shadow on the Surface of the Earth
    - Part C
      * Beginning / Ending Condition
