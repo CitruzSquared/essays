@@ -321,7 +321,7 @@ Now, by equation $9.29$:
 \cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + 0.49006435\cos(7\degree\:29'\:4.25'') &&= 0.45651141\\
 \sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + 0.49006435\sin(7\degree\:29'\:4.25'') &&= 0.28744732\\
 \therefore \phi_1 &= \arcsin(0.28744732) &&= 16\degree\:42'\:18.69''\\
-\therefore \theta &= \arctan(-0.84200438, 0.45651141) &&= -61\degree\:32'\:4.85''\\
+\therefore \theta &= \arctan(-0.84200438, 0.45651141) &&= -61\degree\:32'\:4.85''
 \end{alignat}
 ```
 Finally, the latitude and longitude of the place are given by equation $9.30$:
