@@ -136,7 +136,7 @@ Similarly, if we multiply the second equation by $\cos(d_1)$ and the third by $\
 ```math
 \sin(\phi_1) = \eta_1\cos(d_1) + \zeta_1\sin(d_1) \tag{9.26-ii}
 ```
-We can find $\zeta$ if we know $\zeta_1$. If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22$ we get:
+Using these equations, we can find $\zeta$ if we know $\zeta_1$. If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22$ we get:
 ```math
 \begin{align}
 \zeta &= \rho_2(\eta_1\cos(d_1) + \zeta_1\sin(d_1))\sin(d_2) + \rho_2\cos(d_2)(-\eta_1\sin(d_1) + \zeta_1\cos(d_1))\\
