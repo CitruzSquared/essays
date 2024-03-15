@@ -135,11 +135,19 @@ Similarly, if we multiply the second equation by $\cos(d_1)$ and the third by $\
 ```math
 \sin(\phi_1) = \eta_1\cos(d_1) + \zeta_1\sin(d_1) \tag{9.26 ii}
 ```
+If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22$ we get:
+```math
+\begin{align}
+\zeta &= \rho_2(\eta_1\cos(d_1) + \zeta_1\sin(d_1))\sin(d_2) + \rho_2\cos(d_2)(-\eta_1\sin(d_1) + \zeta_1\cos(d_1))\\
+&= \rho_2\eta_1\cos(d_1)\sin(d_2) + \rho_2\zeta_1\sin(d_1)\sin(d_2) - \rho_2\eta_1\cos(d_2)\sin(d_1) + \rho_2\zeta_1\cos(d_2)\cos(d_1)\\
+&= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_2\cos(cos(d_1-d_2)\tag{9.27}
+\end{align}
+```
 For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
 ```math
 \begin{align}
 (l - i\zeta_1)\cos(Q) &= x - \xi\\
-(l - i\zeta_1)\sin(Q) &= y - \rho_1\eta_1\tag{9.27}\\
+(l - i\zeta_1)\sin(Q) &= y - \rho_1\eta_1\tag{9.28}\\
 \xi^2 + \eta_1^2 + \zeta_1^2 = 1
 \end{align}
 ```
@@ -147,7 +155,7 @@ Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. Now fr
 ```math
 \begin{align}
 \cos(\phi_1)\sin(\theta) &= \xi \\
-\cos(\phi_1)\cos(\theta) &= -\eta_1\sin(d_1) + \zeta_1\cos(d_1)\tag{9.28}\\
+\cos(\phi_1)\cos(\theta) &= -\eta_1\sin(d_1) + \zeta_1\cos(d_1)\tag{9.29}\\
 \sin(\phi_1) &= \eta_1\cos(d_1) + \zeta_1\sin(d_1)
 \end{align}
 ```
@@ -158,5 +166,5 @@ Which fully determine $\phi_1$ and $\theta$. The actual geodetic latitude and lo
 \tan(\phi) &= \frac{\tan(\phi_1)}{\sqrt{1 - e^2}}\\
 \lambda &= \mu - \theta
 \end{align}
-}\tag{9.29}
+}\tag{9.30}
 ```
