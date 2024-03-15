@@ -215,7 +215,7 @@ If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2
 ```math
 \cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.34}
 ```
-As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$.
+As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$. The negative value would give the point on the other side of the Earth that would see the eclipse as well if the Earth were completely transparent.
 
 Once $\zeta_1$ has been found and if more accuracy is desired, we can correct for the $\zeta = \zeta_1$ approximation we made earlier. We substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
 ```math
