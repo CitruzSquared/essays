@@ -269,7 +269,7 @@ c_3 &= -\cos^2(60\degree\:54'\:52.23'') &&= 0.23630692
 ```
 Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
-\zeta_1 = \frac{-c_2 + \sqrt{c_2^2 - 4c_1c_3}}{2c_1} = 0.49006614
+\zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
 Now, by equation $9.28$:
 ```math
@@ -282,8 +282,8 @@ Thus, by equation $9.29$:
 ```math
 \begin{alignat}{2}
 \cos(\phi_1)\sin(\theta) &= -0.84200334 &&\\
-\cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + \zeta_1\cos(7\degree\:29'\:4.25'') &&= 0.45651318\\
-\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + \zeta_1\sin(7\degree\:29'\:4.25'') &&= 0.28744755\\
+\cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + 0.49006614\cos(7\degree\:29'\:4.25'') &&= 0.45651318\\
+\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + 0.49006614\sin(7\degree\:29'\:4.25'') &&= 0.28744755\\
 \therefore \phi_1 &= \arcsin(0.28744755) &&= 16\degree\:42'\:18.74''\\
 \therefore \theta &= \arctan(-0.84200334, 0.45651318) &&= -61\degree\:32'\:4.40''\\
 \end{alignat}
