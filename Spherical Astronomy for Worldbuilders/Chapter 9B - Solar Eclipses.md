@@ -165,7 +165,7 @@ Which fully determine $\phi_1$ and $\theta$. The actual geodetic latitude and lo
 \displaylines{
 \begin{align}
 \tan(\phi) &= \frac{\tan(\phi_1)}{\sqrt{1 - e^2}}\\
-\lambda &= \mu - \theta
+\lambda &= \theta - \mu
 \end{align}
 }\tag{9.30}
 ```
@@ -260,7 +260,7 @@ Then we find $\beta$ and $\gamma$ by equation $9.31$:
 \sin(\beta)\sin(\gamma) &= -0.30856088 - 0.53573027\sin(90\degree) &&= -0.84429113\\
 \sin(\beta)\cos(\gamma) &= \frac{0.22479055 - 0.53573027\cos(90\degree)}{0.99670381} &&= 0.22553395\\
 \therefore \gamma &= \arctan(-0.84429113, 0.22553395) &&= -75\degree\:2'\:38.03''\\
-\therefore \beta &= \arcsin(\sqrt{(-0.84429113)^2 + 0.22553395^2}) &&= 60\degree\:54'\:52.23''
+\therefore \beta &= \arcsin(-0.84429113/\sin(-75\degree\:2'\:38.03'')) &&= 60\degree\:54'\:52.23''
 \end{alignat}
 ```
 Now we have everything neccessary to solve equation $9.32*$ (we use equation $9.32*$ because $\rho_1$ is very close to $1$). Let us denote the first coefficient by $c_1$, the second by $c_2$, and the third by $c_3$:
@@ -287,17 +287,17 @@ Thus, by equation $9.29$:
 \begin{alignat}{2}
 \cos(\phi_1)\sin(\theta) &= -0.84200334 &&\\
 \cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + \zeta_1\cos(7\degree\:29'\:4.25'') &&= 0.45651318\\
-\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + \zeta_1\sin(7\degree\:29'\:4.25'') &&= -0.15977729\\
-\therefore \phi_1 &= \arcsin(-0.15977729) &&= -9\degree\:11'\:38.29''\\
+\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + \zeta_1\sin(7\degree\:29'\:4.25'') &&= 0.28744755\\
+\therefore \phi_1 &= \arcsin(0.28744755) &&= 16\degree\:42'\:18.74''\\
 \therefore \theta &= \arctan(-0.84200334, 0.45651318) &&= -61\degree\:32'\:4.40''\\
 \end{alignat}
 ```
 Thus, by equation $9.30$:
 ```math
 \begin{alignat}{2}
-\tan(\phi) &= \frac{\tan(-9\degree\:11'\:38.29'')}{\sqrt{1 - 0.081819^2}} &&= -0.16240115\\
-\therefore \phi &= \arctan(-0.16240115) &&= 9\degree\:13'\:27.73''\\
-\lambda &= 89\degree\:54'\:4.47'' - (-61\degree\:32'\:4.40'') &&= 151\degree\:26'\:8.88''
+\tan(\phi) &= \frac{\tan(16\degree\:42'\:18.74'')}{\sqrt{1 - 0.081819^2}} &&= 0.30112303\\
+\therefore \phi &= \arctan(-0.16240115) &&= 16\degree\:45'\:29.73''\\
+\lambda &= -61\degree\:32'\:4.40'' - 89\degree\:54'\:4.47'' &&= 208\degree\:33\:51.12''
 \end{alignat}
 ```
 $\blacksquare$
