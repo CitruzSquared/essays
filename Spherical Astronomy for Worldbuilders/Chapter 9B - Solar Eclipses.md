@@ -233,7 +233,7 @@ Which should only involve simple substitution. The full procedure is shown in th
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the point on the outline of the Moon's penumbra for $Q = 90\degree$ on $\text{April 8, } 2024$ for the time $18:00$. <br/>
+Find the point on the outline of the Moon's penumbra for $Q = 90\degree$ on $\text{April 8, } 2024$ at the time $18:00$. <br/>
 Use $e = 0.081819$.
 <img width="2000" height="0">
 </td>
