@@ -17,7 +17,7 @@ An in particular, these phenomena are of special interest:
 4. [Lunar Occultations](https://en.wikipedia.org/wiki/Occultation)
    - When the Moon passes in front of a star or a planet, covering it from view.
 
-While rarer phenomena exist such as the [transit of the Crab Pulsar by Titan](https://en.wikipedia.org/wiki/Crab_Nebula#Transits_by_Solar_System_bodies) or the [occultation of Mercury by Venus](https://www.bogan.ca/astro/occultations/1737occl.htm), This section of the guide will detail the prediction and calculation of those four phenomena listed above.
+While rarer phenomena exist such as the [transit of other planets' moons across nebulae](https://en.wikipedia.org/wiki/Crab_Nebula#Transits_by_Solar_System_bodies) or the [occultation of planets by other planets](https://www.bogan.ca/astro/occultations/1737occl.htm), This section of the guide will detail the prediction and calculation of those four phenomena listed above.
 
 ## IX. Solar Eclipses
 This chapter will go into detail about solar eclipses.
