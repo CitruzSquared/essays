@@ -205,7 +205,7 @@ There are two solutions to these quadratics. To find the correct one, let us fir
 ```math
 Z = \text{ the zenith distance of the point Z (the point in the direction of the shadow axis).}
 ```
-Then, since $Z$ points to right ascension $a$ and declination $d$, the hour angle of this point is $\mu - a = \theta$, and thus, via the third equation of equation $6.3$ (using the fact that zenith distance $= 90\degree - $ altitude (equation $6.16$)):
+Then, since $Z$ points to right ascension $a$ and declination $d$, the hour angle of this point is $\mu - a = \theta$, and thus, via the third equation of equation $6.3$ (using the fact that zenith distance $= 90\degree -$ altitude (equation $6.16$)):
 ```math
 \cos(Z) = \sin(\phi)\sin(d) + \cos(\phi)\cos(d)\cos(\theta)
 ```
