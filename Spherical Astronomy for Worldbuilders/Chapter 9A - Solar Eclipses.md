@@ -217,9 +217,9 @@ G \sin(d) &= w' - w
 We have the direction of the shadow of the Moon in equatorial spherical coordinates as right ascension $a$ and declination $d$, and $G$ is the distance from the Moon to the Sun.
 
 ### Position of the Shadow and the Observer
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/23c9a897-b36b-4c97-b15b-14ba270cfee5" width="350"/> Consider this diagram. Here, $O$ is the center of the Earth, $P$ is the celestial North pole, and $M$ and $S$ are the true positions of the center of the Moon and Sun. $M'$ and $S'$ are their positions projected on to the celestial sphere. Thus, $SM$ is the shadow.
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/23c9a897-b36b-4c97-b15b-14ba270cfee5" width="350"/> Consider this diagram. Here, $O$ is the center of the Earth, $P$ is the celestial North pole, and $M$ and $S$ are the true positions of the center of the Moon and Sun. $M'$ and $S'$ are their positions projected on to the celestial sphere. Thus, $SM$ is the shadow. Because the celestial sphere is infinite (of arbitrary radius), we can say that the shadow originates from the infinitely far away vanishing point $Z$, a point in the direction of $SM$.
 
-We define a coordinate system as such: Let the origin be the center of the Earth, $z$-axis point in the direction of the shadow $SM$, the $y$-axis perpendicular to the $z$-axis such that it points towards North, and the $x$ axis perpendicular to both such that it points to the point on the celestial equator with right ascension $a + 90\degree$.
+We define a coordinate system as such: Let the origin be the center of the Earth, the $z$-axis point in the direction $Z$, the $y$-axis perpendicular to the $z$-axis such that it points towards North, and the $x$ axis perpendicular to both such that it points to the point on the celestial equator with right ascension $a + 90\degree$.
 
 In this coordinate system, the $xy$-plane is known as the *fundamental plane*, and the point at which the shadow meets the fundamental plane is $F$.
 
