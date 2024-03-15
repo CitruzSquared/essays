@@ -302,7 +302,7 @@ Thus, by equation $9.30$:
 ```
 The point we just calculated is the highlighted red point on this map:
 <p align="center">
-  <img width="350" src="https://github.com/CitruzSquared/essays/assets/23460281/41222663-02b9-434c-a028-244dbf6dfe55"> <br/>
+  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/41222663-02b9-434c-a028-244dbf6dfe55"> <br/>
 </p>
 
 By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow.\
