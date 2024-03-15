@@ -144,7 +144,7 @@ If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22
 &= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_1\cos(d_1-d_2)\tag{9.27}
 \end{align}
 ```
-For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. (If extreme accuracy is desired, substitude equation $9.27$ for $\zeta$ and solve the system of equations.) Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
+For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
 ```math
 \begin{align}
 (l - i\zeta_1)\sin(Q) &= x - \xi\\
@@ -152,7 +152,7 @@ For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ 
 \xi^2 + \eta_1^2 + \zeta_1^2 &= 1
 \end{align}
 ```
-Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
+Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. If even more accuracy is wanted, substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$. Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
 ```math
 \begin{align}
 \cos(\phi_1)\sin(\theta) &= \xi \\
@@ -271,6 +271,7 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
 \zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
+We could calculate $\zeta$ and then use the more accurate value in equation $9.28$ but in most cases this level of accuracy is not necessary.
 Now, by equation $9.28$:
 ```math
 \begin{alignat}{2}
