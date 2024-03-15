@@ -197,7 +197,7 @@ Rearranging the terms, we get a quadratic in $\zeta_1$:
 ```math
 \left(1 + i^2\sin^2(Q) + \frac{i^2\cos^2(Q)}{\rho_1^2}\right)\zeta_1^2 + \left(2i\sin(\beta)\sin(\gamma)\sin(Q) + \frac{2i\sin(\beta)\cos(\gamma)\cos(Q)}{\rho_1}\right)\zeta_1 -\cos^2(\beta) = 0 \tag{9.32}
 ```
-All the coefficients involve known numbers. If the approximation $\rho_1 = 1$ is to be taken, this equation simplifies down to:
+All the coefficients involve known numbers. If the approximation $\rho_1 = 1$ is taken, this equation simplifies down to:
 ```math
 (1 + i^2)\zeta_1^2 + 2i\sin(\beta)\cos(Q-\gamma)\zeta_1 - \cos^2(\beta) = 0 \tag{9.32*}
 ```
