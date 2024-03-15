@@ -141,7 +141,7 @@ If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22
 \begin{align}
 \zeta &= \rho_2(\eta_1\cos(d_1) + \zeta_1\sin(d_1))\sin(d_2) + \rho_2\cos(d_2)(-\eta_1\sin(d_1) + \zeta_1\cos(d_1))\\
 &= \rho_2\eta_1\cos(d_1)\sin(d_2) + \rho_2\zeta_1\sin(d_1)\sin(d_2) - \rho_2\eta_1\cos(d_2)\sin(d_1) + \rho_2\zeta_1\cos(d_2)\cos(d_1)\\
-&= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_2\cos(d_1-d_2)\tag{9.27}
+&= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_1\cos(d_1-d_2)\tag{9.27}
 \end{align}
 ```
 For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
