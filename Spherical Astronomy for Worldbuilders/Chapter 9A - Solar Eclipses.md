@@ -277,9 +277,9 @@ R^{-1} = R^T = \begin{bmatrix}
 \end{bmatrix}
 ```
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/23f53b50-7d4e-4737-a573-1c400ea75c00" width="350"/> On the fundamental plane, the situation looks like this diagram: where the shadow of the Moon is centered on $M_1$, the projection of $(x, y, z)$ onto the fundamental plane, and the observer is at $C_1$, the projection of $(\xi, \eta, \zeta)$ on the fundamental plane.
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/7426e777-c8c5-468e-995b-e38626752352" width="350"/> On the fundamental plane, the situation looks like this diagram: where the shadow of the Moon is centered on $F$, the projection of $(x, y, z)$ onto the fundamental plane, and the observer is at $C_1$, the projection of $(\xi, \eta, \zeta)$ on the fundamental plane.
 
-The distance between the shadow and the observer $\Delta = M_1C_1$ is given by:
+The distance between the shadow and the observer $\Delta = FC_1$ is given by:
 ```math
 \Delta^2 = (x - \xi)^2 + (y - \eta)^2 \tag{9.9}
 ```
@@ -287,12 +287,12 @@ Which can also be expressed as:
 ```math
 \displaylines{
 \begin{align}
-\Delta \cos(Q) &= x - \xi\\
-\Delta \sin(Q) &= y - \eta
+\Delta \sin(Q) &= x - \xi\\
+\Delta \cos(Q) &= y - \eta
 \end{align}
 }\tag{9.10}
 ```
-Where $Q$ is the angle $NC_1M_1$. By geometry, this is also $PZM'$ from the previous diagram.
+Where $Q$ is the angle $NC_1F$. By geometry, this is also $PZM'$ from the previous diagram.
 
 <br/>
 
