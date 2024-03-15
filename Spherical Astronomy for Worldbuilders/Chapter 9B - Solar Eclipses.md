@@ -130,11 +130,11 @@ Therefore, equations $9.22$ can be further simplified to:
 ```
 If we multiply the second equation by $-\sin(d_1)$ and the third by $\cos(d_1)$ and sum them, we obtain:
 ```math
-\cos(\phi_1)\cos(\theta) = -\eta_1\sin(d_1) + \zeta_1\cos(d_1) \tag{9.26 i}
+\cos(\phi_1)\cos(\theta) = -\eta_1\sin(d_1) + \zeta_1\cos(d_1) \tag{9.26-i}
 ```
 Similarly, if we multiply the second equation by $\cos(d_1)$ and the third by $\sin(d_1)$ and sum them, we obtain:
 ```math
-\sin(\phi_1) = \eta_1\cos(d_1) + \zeta_1\sin(d_1) \tag{9.26 ii}
+\sin(\phi_1) = \eta_1\cos(d_1) + \zeta_1\sin(d_1) \tag{9.26-ii}
 ```
 If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22$ we get:
 ```math
