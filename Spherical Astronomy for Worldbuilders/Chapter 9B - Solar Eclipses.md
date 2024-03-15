@@ -253,18 +253,13 @@ i_1 &= 0.0046683\\
 l_1 &= 0.53573027 \:R_E\\
 \end{align}
 ```
-We first $\rho_1$, $d_1$, $\rho_2$ and $d_2$ by equation $9.21$:
+We first $\rho_1$ and $d_1$ by equation $9.21$:
 ```math
 \begin{alignat}{2}
 \rho_1 \sin(d_1) &= \sin(7\degree\:27'\:34.93'') &&= 0.12982884\\
 \rho_1 \cos(d_1) &= \cos(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.98821200\\
 \therefore \rho_1 &= \sqrt{0.12982884^2 + 0.98821200^2} &&= 0.99670381\\
 \therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25''
-\\
-\rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
-\rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
-\therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
-\therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
 \end{alignat}
 ```
 Then we find $\beta$ and $\gamma$ by equation $9.31$:
@@ -295,14 +290,23 @@ Now, by equation $9.32$:
 \eta_1 &= 0.22553395 + \frac{0.0046683 \cdot 0.49006614\cos(90\degree)}{0.98821200} &&= 0.22553395
 \end{alignat}
 ```
-Now for the optional correction step. By equation $9.27$:
+Now for the optional correction step. We first find $\rho_2$ and $d_2$ by equation $9.21$:
+```math
+\begin{alignat}{2}
+\rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
+\rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
+\therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
+\therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
+\end{alignat}
+```
+Then, we find $\zeta$ by equation $9.27$:
 ```math
 \begin{align}
 \zeta &= -0.99994358 \cdot 0.22553395 \sin(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'') + 0.99994358 \cdot 0.49006614 \cos(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'')\\
 &= 0.48984331
 \end{align}
 ```
-Then, by equation $9.28*$:
+Then, we find the corrected values of $\xi$, $\eta_1$, and $\zeta_1$ by equation $9.28*$:
 ```math
 \begin{alignat}{2}
 \xi &= -0.30856088 - (0.53573027 - 0.0046683\cdot0.48984331)\sin(90\degree) &&= -0.84200438\\
@@ -322,7 +326,7 @@ Now, by equation $9.29$:
 \therefore \theta &= \arctan(-0.84200438, 0.45651141) &&= -61\degree\:32'\:4.85''\\
 \end{alignat}
 ```
-Thus, by equation $9.30$:
+Finally, the latitude and longitude of the place are given by equation $9.30$:
 ```math
 \begin{alignat}{2}
 \tan(\phi) &= \frac{\tan(16\degree\:42'\:18.69'')}{\sqrt{1 - 0.081819^2}} &&= 0.30112276\\
