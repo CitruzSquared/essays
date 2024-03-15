@@ -243,7 +243,6 @@ Find the outline of the Moon's penumbra at the time $18:00$ during the eclipse o
 The relevant Besselian elements (calculated in the previous example) are given here:
 ```math
 \begin{align}
-a &= 17\degree\:35'\:2.58''\\
 d &= 7\degree\:27'\:34.93''\\
 \mu &= 89\degree\:54'\:4.47''\\
 x &= -0.30856088 \:R_E\\
