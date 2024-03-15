@@ -283,7 +283,7 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
 \zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
-Now, by equation $9.32$:
+Now we find $\xi$ and $\eta_1$ by equation $9.32$:
 ```math
 \begin{alignat}{2}
 \xi &= -0.84429113 + 0.0046683 \cdot 0.49006614\sin(90\degree) &&= -0.84200334\\
