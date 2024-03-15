@@ -69,10 +69,20 @@
    - Horizontal Parallax
    - Parallax Corrected Subsolar Point
 ### 3. Eclipses
-8. **Solar Eclipses**
-9. **Lunar Eclipses**
-10. **Transits**
-11. **Lunar Occultations**
+9. **Solar Eclipses**
+    - Part A (Eq. $9.1$ to $9.15$, Ex. $9.1$ to $9.2$)
+      * Condition for Eclipse
+      * Partial Total, and Annular Eclipses
+      * Direction of the Shadow
+      * Position of the Shadow and the Observer
+      * The Size of the Shadow
+   - Part B (Eq. $9.16$ to $9.33$, Ex. $9.3$)
+      * The Outline of the Shadow on the Surface of the Earth
+   - Part C
+     * Beginning / Ending Condition
+10. **Lunar Eclipses**
+11. **Transits**
+12. **Lunar Occultations**
 
 ## Useful Mathematics
 
