@@ -2,7 +2,7 @@
 
 ### The Outline of the Shadow on the Surface of the Earth
 
-At a distance $\zeta$ above the fundamental plane, the shadow's radius is $L$. Therefore, for places on a parallel plane at the edge of the shadow, that is, for places where the eclipse is beginning or ending:
+At a distance $\zeta$ above the fundamental plane, the shadow's radius is $L$. Therefore, for places on a parallel plane at the edge of the shadow, that is, for places where the eclipse is beginning or ending, the distance to the shadow must equal the radius of the shadow and therefore:
 ```math
 \Delta = L \tag{9.16}
 ```
