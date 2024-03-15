@@ -233,7 +233,7 @@ Which should only involve simple substitution. The full procedure is shown in th
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the point on the outline of the Moon's penumbra for $Q = 90\degree$ on $\text{April 8, } 2024$ at the time $18:00$. <br/>
+Find the outline of the Moon's penumbra at the time $18:00$ during the eclipse of $\text{April 8, } 2024$. <br/>
 Use $e = 0.081819$.
 <img width="2000" height="0">
 </td>
@@ -253,16 +253,23 @@ i_1 &= 0.0046683\\
 l_1 &= 0.53573027 \:R_E\\
 \end{align}
 ```
-We first $\rho_1$ and $d_1$ by equation $9.21$:
+Since $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$, We first find $\rho_1$, $d_1$, $\rho_2$, and $d_2$ by equation $9.21$:
 ```math
 \begin{alignat}{2}
 \rho_1 \sin(d_1) &= \sin(7\degree\:27'\:34.93'') &&= 0.12982884\\
 \rho_1 \cos(d_1) &= \cos(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.98821200\\
 \therefore \rho_1 &= \sqrt{0.12982884^2 + 0.98821200^2} &&= 0.99670381\\
-\therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25''
+\therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25''\\
+\rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
+\rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
+\therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
+\therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
 \end{alignat}
 ```
-Then we find $\beta$ and $\gamma$ by equation $9.31$:
+Note that $\rho_2$ and $d_2$ are only needed for the optional correction step.
+
+Now we choose a value for $Q$. I will give the procedure for $Q = 90\degree$ in full detail.\
+We first find $\beta$ and $\gamma$ by equation $9.31$:
 ```math
 \begin{alignat}{2}
 \sin(\beta)\sin(\gamma) &= -0.30856088 - 0.53573027\sin(90\degree) &&= -0.84429113\\
@@ -290,16 +297,7 @@ Now we find $\xi$ and $\eta_1$ by equation $9.32$:
 \eta_1 &= 0.22553395 + \frac{0.0046683 \cdot 0.49006614\cos(90\degree)}{0.98821200} &&= 0.22553395
 \end{alignat}
 ```
-Now for the optional correction step. We first find $\rho_2$ and $d_2$ by equation $9.21$:
-```math
-\begin{alignat}{2}
-\rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
-\rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
-\therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
-\therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
-\end{alignat}
-```
-Then, we find $\zeta$ by equation $9.27$:
+Now for the optional correction step. We find $\zeta$ by equation $9.27$:
 ```math
 \begin{align}
 \zeta &= -0.99994358 \cdot 0.22553395 \sin(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'') + 0.99994358 \cdot 0.49006614 \cos(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'')\\
@@ -339,7 +337,7 @@ The point we just calculated is the highlighted red point on this map:
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/41222663-02b9-434c-a028-244dbf6dfe55"> <br/>
 </p>
 
-By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow (see table and figure below). Note that $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$ and therefore don't need to be recalculated for every iteration. 
+By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow:
 ```math
 \begin{array}{|c|c|c|}\hline Q & \phi & \lambda\\ \hline
 0\degree & -10\degree\:52' & 251\degree\:47'\\
