@@ -29,7 +29,7 @@ To convert $\xi, \eta, \zeta$ to coordinates on the surface of the Earth, we hav
 \zeta &= \rho \sin(\phi')\sin(d) + \rho\cos(\phi')\cos(d)\cos(\theta) 
 \end{align}
 ```
-The five equations of $9.7$ and $9.18$ involve six variables, so one of them must be a free variable. Taking $Q$ as a free variable and letting it range from $0\degree$ to $360\degree$ gives us the full outline of the shadow as $Q$ describes the angle between the place of observation and the position of the shadow, therefore we let $Q$ range free.
+The five equations of $9.7$ and $9.18$ involve six variables, so one of them must be a free variable. Taking $Q$ as a free variable and letting it range from $0\degree$ to $360\degree$ gives us the full outline of the shadow as $Q$ describes the angle between the place of observation and the position of the shadow. Therefore we let $Q$ range free.
 
 However, we run into a problem: when using equations $9.7$, we need $\rho$ to find $\phi'$, but since $\rho$ depends on $\phi'$, we cannot determine $\rho$ until $\phi'$ is found. [Friedrich Bessel](https://en.wikipedia.org/wiki/Friedrich_Bessel) found a clever workaround to this problem:\
 If $\phi$ is the geodetic latitude and distances are measured in units of Earth equatorial radii (such that $a = 1$), then we have equations $7.6$:
