@@ -432,7 +432,7 @@ So, by equation $6.1$, the hour angle of the shadow axis at the Greenwich (stand
 ```math
 \mu = 107\degree\:29'\:7.05'' - 17\degree\:35'\:2.58'' = 89\degree\:54'\:4.47''
 ```
-By equation $9.11$, $9.12$, $9.13$, and $9.15$ (and the radius data from example $9.1$):
+We find the remaining elements by equation $9.11$, $9.12$, $9.13$, and $9.15$ (and the radius data from example $9.1$):
 ```math
 \begin{alignat}{2}
 f_1 &= \arcsin\left(\frac{696\:000 + 1737.4}{149\:463\:030}\right) &&= 16.80592''\\
