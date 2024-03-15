@@ -273,7 +273,7 @@ c_3 &= -\cos^2(60\degree\:54'\:52.23'') &&= 0.23630692
 ```
 Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
-\zeta_1 = 0.49006614
+\zeta_1 = \frac{-c_2 + \sqrt{c_2^2 - 4c_1c_3}}{2c_1} = 0.49006614
 ```
 Now, by equation $9.28$:
 ```math
