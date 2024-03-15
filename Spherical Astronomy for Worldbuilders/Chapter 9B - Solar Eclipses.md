@@ -324,7 +324,7 @@ Thus, by equation $9.30$:
 \begin{alignat}{2}
 \tan(\phi) &= \frac{\tan(16\degree\:42'\:18.69'')}{\sqrt{1 - 0.081819^2}} &&= 0.30112276\\
 \therefore \phi &= \arctan(0.30112276) &&= 16\degree\:45'\:29.68''\\
-\lambda &= -61\degree\:32'\:4.85'' - 89\degree\:54'\:4.47'' &&= 208\degree\:33\:50.68''
+\lambda &= -61\degree\:32'\:4.85'' - 89\degree\:54'\:4.47'' &&= 208\degree\:33'\:50.68''
 \end{alignat}
 ```
 If solutions do not exist, then that means that this point is not on the surface of the Earth.\
