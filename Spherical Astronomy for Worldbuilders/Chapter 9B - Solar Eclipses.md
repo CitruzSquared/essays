@@ -110,7 +110,7 @@ Let us ignore the $2\sin(\phi_1)\cos(d_1)\cos(\phi_1)\sin(d_1)\cos(\theta)$ term
 Adding back the term we ignored, we find that the result is a perfect square.
 ```math
 \begin{align}
-\zeta_1^2 &= -\sin^2(\phi_1)\sin^2(d_1) + 2\sin(\phi_1)\sin(d_1)\cos(\phi_1)\cos(d_1)\cos(\theta) + \cos^2(\phi_1)\cos^2(\theta)\cos^2(d_1)\\
+\zeta_1^2 &= -\sin^2(\phi_1)\sin^2(d_1) + 2\sin(\phi_1)\sin(d_1)\cos(\phi_1)\cos(d_1)\cos(\theta) + \cos^2(\phi_1)\cos^2(d_1)\cos^2(\theta)\\
 &= (\sin(\phi_1)\sin(d_1) + \cos(\phi_1)\cos(d_1)\cos(\theta))^2
 \end{align}
 ```
