@@ -311,7 +311,7 @@ Then, by equation $9.28*$:
 \therefore \zeta_1 &= +\sqrt{0.24016307} &&= 0.49006435
 \end{alignat}
 ```
-This correction to $\xi$, $\eta_1$, and $\zeta_1$ is miniscule. The difference in the value for $\xi$ obtained in this example is in the order of $0.0001$%.\
+This correction to $\xi$, $\eta_1$, and $\zeta_1$ is absolutely miniscule. The difference in the value for $\xi$ obtained in this example is in the order of $0.0001$%.\
 Now, by equation $9.29$:
 ```math
 \begin{alignat}{2}
