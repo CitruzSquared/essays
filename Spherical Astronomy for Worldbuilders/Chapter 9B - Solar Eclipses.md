@@ -229,7 +229,7 @@ Use $e = 0.081819$.
 </table>
 </div>
 
-The Besselian elements (for the penumbra) for this time (calculated in the previous example) are given here:
+The relevant Besselian elements for this time (calculated in the previous example) are given here:
 ```math
 \begin{align}
 a &= 17\degree\:35'\:2.58''\\
@@ -239,10 +239,6 @@ x &= -0.30856088 \:R_E\\
 y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
 l_1 &= 0.53573027 \:R_E\\
-x' &= 0.51147366 \: R_E/h\\
-y' &= 0.27129112 \:R_E/h\\
-d' &= 0.00025898 \text{ rad}/h\\
-\mu' &= 0.26187054 \text{ rad}/h
 \end{align}
 ```
 We first $\rho_1$ and $d_1$ by equation $9.21$:
