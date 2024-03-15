@@ -339,7 +339,7 @@ The point we just calculated is the highlighted red point on this map:
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/41222663-02b9-434c-a028-244dbf6dfe55"> <br/>
 </p>
 
-By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow. Note that $\rho_1$, $d_1$, $rho_2$, and $d_2$ do not depend on $Q$ and therefore don't need to be recalculated for every iteration:
+By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow. Note that $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$ and therefore don't need to be recalculated for every iteration. Here is the table of latitudes and longitudes for different values of $Q$ at this time:
 ```math
 \begin{array}{|c|c|c|}\hline Q & \phi & \lambda\\ \hline
 0\degree & -10\degree\:52' & 251\degree\:47'\\
