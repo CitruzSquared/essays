@@ -296,7 +296,7 @@ Thus, by equation $9.30$:
 ```math
 \begin{alignat}{2}
 \tan(\phi) &= \frac{\tan(-9\degree\:11'\:38.29'')}{\sqrt{1 - 0.081819^2}} &&= -0.16240115\\
-\therefore \phi &= \arctan(-0.16240115) &&= 9\degree\:13'\:27.73''
+\therefore \phi &= \arctan(-0.16240115) &&= 9\degree\:13'\:27.73''\\
 \lambda &= 89\degree\:54'\:4.47'' - (-61\degree\:32'\:4.40'') &&= 151\degree\:26'\:8.88''
 \end{alignat}
 ```
