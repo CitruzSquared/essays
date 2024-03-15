@@ -180,10 +180,12 @@ In order to solve equation $9.28$, let $\beta$ and $\gamma$ be defined such that
 ```
 Then, we have:
 ```math
+\displaylines{
 \begin{align}
 \xi &= \sin(\beta)\sin(\gamma) + i\zeta_1\sin(Q)\\
 \eta_1 &= \sin(\beta)\cos(\gamma) + \frac{i\zeta_1\cos(Q)}{\rho_1}
 \end{align}
+}\tag{9.32}
 ```
 Substituting these into the last equation of $9.28$, we have:
 ```math
@@ -195,11 +197,11 @@ Substituting these into the last equation of $9.28$, we have:
 ```
 Rearranging the terms, we get a quadratic in $\zeta_1$:
 ```math
-\left(1 + i^2\sin^2(Q) + \frac{i^2\cos^2(Q)}{\rho_1^2}\right)\zeta_1^2 + \left(2i\sin(\beta)\sin(\gamma)\sin(Q) + \frac{2i\sin(\beta)\cos(\gamma)\cos(Q)}{\rho_1}\right)\zeta_1 -\cos^2(\beta) = 0 \tag{9.32}
+\left(1 + i^2\sin^2(Q) + \frac{i^2\cos^2(Q)}{\rho_1^2}\right)\zeta_1^2 + \left(2i\sin(\beta)\sin(\gamma)\sin(Q) + \frac{2i\sin(\beta)\cos(\gamma)\cos(Q)}{\rho_1}\right)\zeta_1 -\cos^2(\beta) = 0 \tag{9.33}
 ```
 All the coefficients involve known numbers. If the approximation $\rho_1 = 1$ is taken, this equation simplifies down to:
 ```math
-(1 + i^2)\zeta_1^2 + 2i\sin(\beta)\cos(Q-\gamma)\zeta_1 - \cos^2(\beta) = 0 \tag{9.32*}
+(1 + i^2)\zeta_1^2 + 2i\sin(\beta)\cos(Q-\gamma)\zeta_1 - \cos^2(\beta) = 0 \tag{9.33*}
 ```
 There are two solutions to these quadratics. To find the correct one, let us first say:
 ```math
@@ -211,11 +213,11 @@ Then, since $Z$ points to right ascension $a$ and declination $d$, the hour angl
 ```
 If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2(\phi)}\right)$, we see that we obtain the formula for $\zeta_1$ in equation $9.25$. Thus:
 ```math
-\cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.33}
+\cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.34}
 ```
 As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$.
 
-Once $\zeta_1$ has been found and even more accuracy is wanted, substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
+Once $\zeta_1$ has been found, to undo the $\zeta = \zeta_1$ approximation, we substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
 ```math
 \begin{align}
 (l - i\zeta)\sin(Q) &= x - \xi\\
@@ -223,7 +225,7 @@ Once $\zeta_1$ has been found and even more accuracy is wanted, substitute the v
 \xi^2 + \eta_1^2 + \zeta_1^2 &= 1
 \end{align}
 ```
-Which should only involve simple substitution.
+Which should only involve simple substitution. The full procedure is shown in the following example.
 
 #### Example 9.3
 <div align="center">
@@ -251,13 +253,18 @@ i_1 &= 0.0046683\\
 l_1 &= 0.53573027 \:R_E\\
 \end{align}
 ```
-We first $\rho_1$ and $d_1$ by equation $9.21$:
+We first $\rho_1$, $d_1$, $\rho_2$ and $d_2$ by equation $9.21$:
 ```math
 \begin{alignat}{2}
 \rho_1 \sin(d_1) &= \sin(7\degree\:27'\:34.93'') &&= 0.12982884\\
 \rho_1 \cos(d_1) &= \cos(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.98821200\\
 \therefore \rho_1 &= \sqrt{0.12982884^2 + 0.98821200^2} &&= 0.99670381\\
 \therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25''
+\\
+\rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
+\rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
+\therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
+\therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
 \end{alignat}
 ```
 Then we find $\beta$ and $\gamma$ by equation $9.31$:
@@ -269,7 +276,7 @@ Then we find $\beta$ and $\gamma$ by equation $9.31$:
 \therefore \beta &= \arcsin(-0.84429113/\sin(-75\degree\:2'\:38.03'')) &&= 60\degree\:54'\:52.23''
 \end{alignat}
 ```
-Now we have everything neccessary to solve equation $9.32*$ (we use equation $9.32*$ because $\rho_1$ is very close to $1$). Let us denote the first coefficient by $c_1$, the second by $c_2$, and the third by $c_3$:
+Now we have everything neccessary to solve equation $9.33*$ (we use equation $9.33*$ because $\rho_1$ is very close to $1$). Let us denote the first coefficient by $c_1$, the second by $c_2$, and the third by $c_3$:
 ```math
 \begin{alignat}{2}
 c_1 &= 1 + 0.0046683^2 &&= 1.00002179\\
@@ -281,30 +288,42 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
 \zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
-We could now calculate $\zeta$ and then use $9.28*$ to get an even more accurate value for $\zeta_1$ but in most cases this level of accuracy is not necessary.\
-Now, by equation $9.28$:
+Now, by equation $9.32$:
+```math
+\eta_1 = 0.22553395 + \frac{0.0046683 \cdot 0.49006614\cos(90\degree)}{0.98821200} = 0.22553395
+```
+Now, by equation $9.27$:
+```math
+\begin{align}
+\zeta &= -0.99994358 \cdot 0.22553395 \sin(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'') + 0.99994358 \cdot 0.49006614 \cos(7\degree\:29'\:4.25'' - 7\degree\:26'\:5.89'')\\
+&= 0.48984331
+\end{align}
+```
+Then, by equation $9.28*$:
 ```math
 \begin{alignat}{2}
-\xi &= -0.30856088 - (0.53573027 - 0.0046683\cdot0.49006614)\sin(90\degree) &&= -0.84200334\\
-\eta_1 &= \frac{0.22479055 - (0.53573027 - 0.0046683\cdot0.49006614)\cos(90\degree)}{0.99670381} &&= 0.22553395\\
+\xi &= -0.30856088 - (0.53573027 - 0.0046683\cdot0.48984331)\sin(90\degree) &&= -0.84200438\\
+\eta_1 &= \frac{0.22479055 - (0.53573027 - 0.0046683\cdot0.48984331)\cos(90\degree)}{0.99670381} &&= 0.22553395\\
+\therefore \zeta_1^2 &= 1 - \xi^2 - \eta_1^2 &&= 0.24016307\\
+\therefore \zeta &= +\sqrt{0.24016307} &&= 0.49006435
 \end{alignat}
 ```
 Thus, by equation $9.29$:
 ```math
 \begin{alignat}{2}
-\cos(\phi_1)\sin(\theta) &= -0.84200334 &&\\
-\cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + 0.49006614\cos(7\degree\:29'\:4.25'') &&= 0.45651318\\
-\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + 0.49006614\sin(7\degree\:29'\:4.25'') &&= 0.28744755\\
-\therefore \phi_1 &= \arcsin(0.28744755) &&= 16\degree\:42'\:18.74''\\
-\therefore \theta &= \arctan(-0.84200334, 0.45651318) &&= -61\degree\:32'\:4.40''\\
+\cos(\phi_1)\sin(\theta) &= -0.84200438 &&\\
+\cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + 0.49006435\cos(7\degree\:29'\:4.25'') &&= 0.45651141\\
+\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + 0.49006435\sin(7\degree\:29'\:4.25'') &&= 0.28744732\\
+\therefore \phi_1 &= \arcsin(0.28744732) &&= 16\degree\:42'\:18.69''\\
+\therefore \theta &= \arctan(-0.84200438, 0.45651141) &&= -61\degree\:32'\:4.85''\\
 \end{alignat}
 ```
 Thus, by equation $9.30$:
 ```math
 \begin{alignat}{2}
-\tan(\phi) &= \frac{\tan(16\degree\:42'\:18.74'')}{\sqrt{1 - 0.081819^2}} &&= 0.30112303\\
-\therefore \phi &= \arctan(-0.16240115) &&= 16\degree\:45'\:29.73''\\
-\lambda &= -61\degree\:32'\:4.40'' - 89\degree\:54'\:4.47'' &&= 208\degree\:33\:51.12''
+\tan(\phi) &= \frac{\tan(16\degree\:42'\:18.69'')}{\sqrt{1 - 0.081819^2}} &&= 0.30112276\\
+\therefore \phi &= \arctan(0.30112276) &&= 16\degree\:45'\:29.68''\\
+\lambda &= -61\degree\:32'\:4.85'' - 89\degree\:54'\:4.47'' &&= 208\degree\:33\:50.68''
 \end{alignat}
 ```
 If solutions do not exist, then that means that this point is not on the surface of the Earth.\
