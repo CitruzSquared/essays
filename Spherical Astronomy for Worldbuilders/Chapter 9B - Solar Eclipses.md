@@ -304,11 +304,12 @@ Then, by equation $9.28*$:
 \begin{alignat}{2}
 \xi &= -0.30856088 - (0.53573027 - 0.0046683\cdot0.48984331)\sin(90\degree) &&= -0.84200438\\
 \eta_1 &= \frac{0.22479055 - (0.53573027 - 0.0046683\cdot0.48984331)\cos(90\degree)}{0.99670381} &&= 0.22553395\\
-\therefore \zeta_1^2 &= 1 - \xi^2 - \eta_1^2 &&= 0.24016307\\
-\therefore \zeta &= +\sqrt{0.24016307} &&= 0.49006435
+\therefore \zeta_1^2 &= 1 - (-0.84200438)^2 - (0.22553395)^2 &&= 0.24016307\\
+\therefore \zeta_1 &= +\sqrt{0.24016307} &&= 0.49006435
 \end{alignat}
 ```
-Thus, by equation $9.29$:
+This correction to $\zeta_1$ is so small that it may be skipped: the first value we obtained for $\zeta_1$ may be used in equation $9.28$ to obtain $\xi$ and $\eta$. The error in this example is in the order of $0.0001$%.\
+Now, by equation $9.29$:
 ```math
 \begin{alignat}{2}
 \cos(\phi_1)\sin(\theta) &= -0.84200438 &&\\
