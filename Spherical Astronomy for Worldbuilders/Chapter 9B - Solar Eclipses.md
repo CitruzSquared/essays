@@ -278,7 +278,7 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 Now, by equation $9.28$:
 ```math
 \begin{alignat}{2}
-\xi &= x - (0.53573027 - 0.0046683\cdot0.49006614)\sin(90\degree) &&= -0.84200334\\
+\xi &= -0.30856088 - (0.53573027 - 0.0046683\cdot0.49006614)\sin(90\degree) &&= -0.84200334\\
 \eta_1 &= \frac{0.22479055 - (0.53573027 - 0.0046683\cdot0.49006614)\cos(90\degree)}{0.99670381} &&= 0.22553395\\
 \end{alignat}
 ```
