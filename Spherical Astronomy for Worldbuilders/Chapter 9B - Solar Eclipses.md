@@ -301,3 +301,6 @@ Thus, by equation $9.30$:
 \end{alignat}
 ```
 $\blacksquare$
+
+### Beginning / Ending Condition
+(Continued in Part C...)
