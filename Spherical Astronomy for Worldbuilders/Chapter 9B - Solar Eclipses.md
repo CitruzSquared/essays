@@ -152,7 +152,15 @@ For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ 
 \xi^2 + \eta_1^2 + \zeta_1^2 &= 1
 \end{align}
 ```
-Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. If even more accuracy is wanted, substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$. Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
+Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. If even more accuracy is wanted, substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
+```math
+\begin{align}
+(l - i\zeta)\sin(Q) &= x - \xi\\
+(l - i\zeta)\cos(Q) &= y - \rho_1\eta_1\tag{9.28*}\\
+\xi^2 + \eta_1^2 + \zeta_1^2 &= 1
+\end{align}
+```
+Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
 ```math
 \begin{align}
 \cos(\phi_1)\sin(\theta) &= \xi \\
@@ -271,7 +279,7 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
 \zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
-We could calculate $\zeta$ and then use the more accurate value in equation $9.28$ but in most cases this level of accuracy is not necessary.
+We could now calculate $\zeta$ and then use $9.28*$ to get an even more accurate value for $\zeta_1$ but in most cases this level of accuracy is not necessary.\
 Now, by equation $9.28$:
 ```math
 \begin{alignat}{2}
