@@ -263,7 +263,7 @@ Then we find $\beta$ and $\gamma$ by equation $9.31$:
 \therefore \beta &= \arcsin(\sqrt{(-0.84429113)^2 + 0.22553395^2}) &&= 60\degree\:54'\:52.23''
 \end{alignat}
 ```
-Now we have everything neccessary to solve equation $9.32*$ (we use equation $9.32*$ becausebecause $\rho_1$ is very close to $1$). Let us denote the first coefficient by $c_1$, the second by $c_2$, and the third by $c_3$:
+Now we have everything neccessary to solve equation $9.32*$ (we use equation $9.32*$ because $\rho_1$ is very close to $1$). Let us denote the first coefficient by $c_1$, the second by $c_2$, and the third by $c_3$:
 ```math
 \begin{alignat}{2}
 c_1 &= 1 + 0.0046683^2 &&= 1.00002179\\
