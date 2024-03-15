@@ -374,7 +374,7 @@ L &= l - i\zeta
 \end{align}
 ```
 
-The quantities $a$, $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), $l_2$ ($l$ for the umbra), and the derivatives of $x$, $y$, $d$, and $\mu$ are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+The quantities $a$, $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), $l_2$ ($l$ for the umbra), and the derivatives of the quantities $x$, $y$, $d$, and $\mu$ are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
 
 #### Example 9.2
 <div align="center">
