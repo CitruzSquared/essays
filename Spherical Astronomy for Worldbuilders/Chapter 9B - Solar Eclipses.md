@@ -217,7 +217,7 @@ If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2
 ```
 As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$.
 
-Once $\zeta_1$ has been found, to undo the $\zeta = \zeta_1$ approximation, we substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
+Once $\zeta_1$ has been found and if more accuracy is desired, we can undo the $\zeta = \zeta_1$ approximation. We substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
 ```math
 \begin{align}
 (l - i\zeta)\sin(Q) &= x - \xi\\
@@ -288,7 +288,7 @@ Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
 ```math
 \zeta_1 = \frac{-(-0.00788288) + \sqrt{(-0.00788288)^2 - 4\cdot1.00002179\cdot0.23630692}}{2\cdot1.00002179} = 0.49006614
 ```
-Now, by equation $9.32$:
+Now for the optional correction step. By equation $9.32$:
 ```math
 \eta_1 = 0.22553395 + \frac{0.0046683 \cdot 0.49006614\cos(90\degree)}{0.98821200} = 0.22553395
 ```
@@ -308,7 +308,7 @@ Then, by equation $9.28*$:
 \therefore \zeta_1 &= +\sqrt{0.24016307} &&= 0.49006435
 \end{alignat}
 ```
-This correction to $\zeta_1$ is so small that it may be skipped: the first value we obtained for $\zeta_1$ may be used in equation $9.28$ to obtain $\xi$ and $\eta$. The difference in the value for $\xi$ obtained in this example would be in the order of $0.0001$%.\
+This correction to $\zeta_1$ is so miniscule that it may be skipped: the first value we obtained for $\zeta_1$ may be used in equation $9.28$ to obtain $\xi$ and $\eta$. The difference in the value for $\xi$ obtained in this example would be in the order of $0.0001$%.\
 Now, by equation $9.29$:
 ```math
 \begin{alignat}{2}
