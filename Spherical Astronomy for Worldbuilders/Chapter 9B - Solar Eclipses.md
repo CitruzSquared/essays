@@ -209,7 +209,7 @@ Then, since $Z$ points to right ascension $a$ and declination $d$, the hour angl
 ```math
 \cos(Z) = \sin(\phi)\sin(d) + \cos(\phi)\cos(d)\cos(\theta)
 ```
-If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2(\phi)}]\right)$, we see that we obtain the formula for $\zeta_1$ in equation $9.25$. Thus:
+If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2(\phi)}\right)$, we see that we obtain the formula for $\zeta_1$ in equation $9.25$. Thus:
 ```math
 \cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.33}
 ```
