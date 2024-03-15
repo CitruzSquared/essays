@@ -233,8 +233,7 @@ Which should only involve simple substitution. The full procedure is shown in th
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the outline of the Moon's penumbra at the time $18:00$ during the eclipse of $\text{April 8, } 2024$. <br/>
-Use $e = 0.081819$.
+Find the outline of the Moon's penumbra at the time $18:00$ during the eclipse of $\text{April 8, } 2024$.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -252,6 +251,10 @@ y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
 l_1 &= 0.53573027 \:R_E\\
 \end{align}
+```
+As well as the eccentricity of the Earth spheroid:
+```math
+e = 0.081819
 ```
 Since $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$, We first find $\rho_1$, $d_1$, $\rho_2$, and $d_2$ by equation $9.21$:
 ```math
