@@ -308,7 +308,7 @@ Then, by equation $9.28*$:
 \therefore \zeta_1 &= +\sqrt{0.24016307} &&= 0.49006435
 \end{alignat}
 ```
-This correction to $\zeta_1$ is so small that it may be skipped: the first value we obtained for $\zeta_1$ may be used in equation $9.28$ to obtain $\xi$ and $\eta$. The error in this example is in the order of $0.0001$%.\
+This correction to $\zeta_1$ is so small that it may be skipped: the first value we obtained for $\zeta_1$ may be used in equation $9.28$ to obtain $\xi$ and $\eta$. The difference in the value for $\xi$ obtained in this example would be in the order of $0.0001$%.\
 Now, by equation $9.29$:
 ```math
 \begin{alignat}{2}
