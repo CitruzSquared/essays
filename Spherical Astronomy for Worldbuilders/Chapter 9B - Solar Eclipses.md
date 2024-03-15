@@ -229,7 +229,7 @@ Use $e = 0.081819$.
 </table>
 </div>
 
-The relevant Besselian elements for this time (calculated in the previous example) are given here:
+The relevant Besselian elements (calculated in the previous example) are given here:
 ```math
 \begin{align}
 a &= 17\degree\:35'\:2.58''\\
