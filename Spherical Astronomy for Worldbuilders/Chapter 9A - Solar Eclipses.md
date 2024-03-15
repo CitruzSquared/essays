@@ -354,7 +354,7 @@ L &= l - i\zeta
 \end{align}
 ```
 
-The quantities $a$, $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), and $l_2$ ($l$ for the umbra) are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+The quantities $a$, $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), $l_2$ ($l$ for the umbra), and the derivatives of $x$, $y$, and $\mu$ are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
 
 #### Example 9.2
 <div align="center">
@@ -459,7 +459,7 @@ l_1 &= 0.53573027 \:R_E\\
 l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
-Also of importance are the derivatives of the quantities $x$, $y$, and $\mu$ (in radians), denoted $x'$, $y'$, and $\mu'$. By taking a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), we find:\
+For the derivatives of $x$, $y$, and $\mu$ (in radians), denoted $x'$, $y'$, and $\mu'$, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:\
 At $17:45$:
 ```math
 \begin{align}
