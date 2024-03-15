@@ -1,6 +1,5 @@
 # Part 3. Syzygy
 In astronomy, the word [*syzygy*](https://en.wikipedia.org/wiki/Syzygy_(astronomy)) refers to phenomena where three or more celestial bodies are in one line. This can result in these phenomena:
-
 1. Transits
    - When an object passes in front of a larger object, covering part of it.
 2. Occultations
@@ -18,7 +17,7 @@ From the Earth, these phenomena are of particular interest:
 4. [Lunar Occultations](https://en.wikipedia.org/wiki/Occultation)
    - When the Moon passes in front of a star or a planet, covering it from view.
 
-This section of the guide will detail the prediction and calculation of these four phenomena.
+This section of the guide will detail the prediction and calculation of those four phenomena.
 
 ## IX. Solar Eclipses
 This chapter will go into detail about solar eclipses.
