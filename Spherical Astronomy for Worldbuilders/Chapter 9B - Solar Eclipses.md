@@ -339,7 +339,7 @@ The point we just calculated is the highlighted red point on this map:
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/41222663-02b9-434c-a028-244dbf6dfe55"> <br/>
 </p>
 
-By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow. If solutions do not exist, that means that this point is not on the surface of the Earth.\
+By ranging $Q$ from $0\degree$ to $360\degree$ we can get the shape of the full shadow. If solutions do not exist, that means that that part of the shadow falls off the surface of the Earth.\
 $\blacksquare$
 
 ### Beginning / Ending Condition
