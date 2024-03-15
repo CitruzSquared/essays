@@ -24,7 +24,7 @@ This section of the guide will detail the prediction and calculation of these fo
 This chapter will go into detail about solar eclipses.
 
 ### Condition for Eclipse
-A solar eclipse can only happen if the Moon and the Sun are in the sky in the same position, i.e. only at new Moon. Not all new moons result in a solar eclipse however, due to the inclination of the Moon's orbit to the Ecliptic.
+A solar eclipse can only happen if the Moon and the Sun are in the sky in the same position, i.e. only when they are in conjunction, a.k.a. new Moon. Not all new moons result in a solar eclipse however, due to the inclination of the Moon's orbit to the Ecliptic.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/7bda2d9e-5464-4488-9f92-8359beaccd5c" width="250"/> Consider this diagram. In this diagram, the line $SN$ is the ecliptic and $MN$ is the orbit of the Moon, and therefore $N$ is the lunar orbital (descending) node. Therefore the Moon moves along $MN$ and the Sun moves along $SN$ at a slower pace. 
 
