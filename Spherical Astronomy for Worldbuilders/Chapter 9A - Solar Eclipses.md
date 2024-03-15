@@ -463,27 +463,27 @@ For the derivatives of $x$, $y$, $d$ (in radians), and $\mu$ (in radians), denot
 At $17:45$:
 ```math
 \begin{align}
+d &= 7\degree\:27'\:21.62''\\
 x &= -0.4364434 \:R_E\\
 y &= 0.15693548 \:R_E\\
-d &= 7\degree\:27'\:21.62''\\
 \mu &= 86\degree\:9'\:0.73''
 \end{align}
 ```
 At $18:15$:
 ```math
 \begin{align}
+d &= 7\degree\:27'\:48.33''\\
 x &= -0.18070657 \:R_E\\
 y &= 0.29258104 \:R_E\\
-d &= 7\degree\:27'\:48.33''\\
 \mu &= 93\degree\:39'\:8.07''
 \end{align}
 ```
 Therefore:
 ```math
 \begin{alignat}{2}
+d' &= \frac{7\degree\:27'\:48.33'' - 7\degree\:27'\:21.62''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.00025898 \text{ rad}/h\\
 x' &= \frac{-0.18070657 - (-0.4364434)}{0.5h} &&= 0.51147366 \: R_E/h\\
 y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
-d' &= \frac{7\degree\:27'\:48.33'' - 7\degree\:27'\:21.62''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.00025898 \text{ rad}/h\\
 \mu' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h
 \end{alignat}
 ```
