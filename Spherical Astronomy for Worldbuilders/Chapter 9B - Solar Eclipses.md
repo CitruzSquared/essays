@@ -14,8 +14,8 @@ Which can also be expressed as (using equation 9.10):
 ```math
 \displaylines{
 \begin{align}
-(l - i\zeta)\cos(Q) &= x - \xi\\
-(l - i\zeta)\sin(Q) &= y - \eta
+(l - i\zeta)\sin(Q) &= x - \xi\\
+(l - i\zeta)\cos(Q) &= y - \eta
 \end{align}
 }\tag{9.18}
 ```
@@ -73,6 +73,7 @@ Let
 \rho_2 \cos(d_2) &= \cos(d)\\
 \end{align}
 ```
+Note that the subscripts do not mean penumbra and umbra here: they are just there to distinguish the variables.\
 Now, equations $9.20$ become:
 ```math
 \begin{align}
@@ -96,7 +97,7 @@ Then:
 &= 1 - \cos^2(\phi_1) \sin^2(\theta) - \sin^2(\phi_1)\cos^2(d_1) + 2\sin(\phi_1)\cos(d_1)\cos(\phi_1)\sin(d_1)\cos(\theta) - \cos^2(\phi_1)\sin^2(d_1)\cos^2(\theta)
 \end{align}
 ```
-Let us ignore the $2\sin(\phi_1)\cos(d_1)\cos(\phi_1)\sin(d_1)\cos(\theta)$ term for now.
+Let us ignore the $2\sin(\phi_1)\cos(d_1)\cos(\phi_1)\sin(d_1)\cos(\theta)$ term for now. Carrying out algebra for the rest of the terms:
 ```math
 \begin{align}
 & 1 - \cos^2(\phi_1) \sin^2(\theta) - \sin^2(\phi_1)\cos^2(d_1) - \cos^2(\phi_1)\sin^2(d_1)\cos^2(\theta)\\
@@ -108,7 +109,7 @@ Let us ignore the $2\sin(\phi_1)\cos(d_1)\cos(\phi_1)\sin(d_1)\cos(\theta)$ term
 = & -\sin^2(\phi_1)\sin^2(d_1) + \cos^2(\phi_1)\cos^2(\theta)\cos^2(d_1)
 \end{align}
 ```
-Adding back the term we ignored, we find that the result is a perfect square.
+When we add back the term we ignored, we find that the result is a perfect square.
 ```math
 \begin{align}
 \zeta_1^2 &= -\sin^2(\phi_1)\sin^2(d_1) + 2\sin(\phi_1)\sin(d_1)\cos(\phi_1)\cos(d_1)\cos(\theta) + \cos^2(\phi_1)\cos^2(d_1)\cos^2(\theta)\\
@@ -140,18 +141,18 @@ If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22
 \begin{align}
 \zeta &= \rho_2(\eta_1\cos(d_1) + \zeta_1\sin(d_1))\sin(d_2) + \rho_2\cos(d_2)(-\eta_1\sin(d_1) + \zeta_1\cos(d_1))\\
 &= \rho_2\eta_1\cos(d_1)\sin(d_2) + \rho_2\zeta_1\sin(d_1)\sin(d_2) - \rho_2\eta_1\cos(d_2)\sin(d_1) + \rho_2\zeta_1\cos(d_2)\cos(d_1)\\
-&= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_2\cos(cos(d_1-d_2)\tag{9.27}
+&= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_2\cos(d_1-d_2)\tag{9.27}
 \end{align}
 ```
 For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
 ```math
 \begin{align}
-(l - i\zeta_1)\cos(Q) &= x - \xi\\
-(l - i\zeta_1)\sin(Q) &= y - \rho_1\eta_1\tag{9.28}\\
-\xi^2 + \eta_1^2 + \zeta_1^2 = 1
+(l - i\zeta_1)\sin(Q) &= x - \xi\\
+(l - i\zeta_1)\cos(Q) &= y - \rho_1\eta_1\tag{9.28}\\
+\xi^2 + \eta_1^2 + \zeta_1^2 &= 1
 \end{align}
 ```
-Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. Now from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
+Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
 ```math
 \begin{align}
 \cos(\phi_1)\sin(\theta) &= \xi \\
@@ -168,3 +169,48 @@ Which fully determine $\phi_1$ and $\theta$. The actual geodetic latitude and lo
 \end{align}
 }\tag{9.30}
 ```
+In order to solve equation $9.28$, let $\beta$ and $\gamma$ be defined such that:
+```math
+\displaylines{
+\begin{align}
+\sin(\beta)\sin(\gamma) &= x - l\sin(Q)\\
+\sin(\beta)\cos(\gamma) &= \frac{y - l\cos(Q)}{\rho_1}\\
+\end{align}
+}\tag{9.31}
+```
+Then, we have:
+```math
+\begin{align}
+\xi &= \sin(\beta)\sin(\gamma) + i\zeta_1\sin(Q)\\
+\eta_1 &= \sin(\beta)\cos(\gamma) + \frac{i\zeta_1\cos(Q)}{\rho_1}
+\end{align}
+```
+Substituting these into the last equation of $9.28$, we have:
+```math
+\begin{align}
+(\sin(\beta)\sin(\gamma) + i\zeta_1\sin(Q))^2 + \left(\sin(\beta)\cos(\gamma) + \frac{i\zeta_1\cos(Q)}{\rho_1}\right)^2 + \zeta_1^2 &= 1\\
+\sin^2(\beta)\sin^2(\gamma) + 2i\zeta_1\sin(\beta)\sin(\gamma)\sin(Q) + i^2\zeta_1^2\sin^2(Q) + \sin^2(\beta)\cos^2(\gamma) + \frac{2i\zeta_1\sin(\beta)\cos(\gamma)\cos(Q)}{\rho_1} + \frac{i^2\zeta_1^2\cos^2(Q)}{\rho_1^2} + \zeta_1^2 &= 1\\
+-\cos^2(\beta) + 2i\zeta_1\sin(\beta)\sin(\gamma)\sin(Q) + i^2\zeta_1^2\sin^2(Q) + \frac{2i\zeta_1\sin(\beta)\cos(\gamma)\cos(Q)}{\rho_1} + \frac{i^2\zeta_1^2\cos^2(Q)}{\rho_1^2} + \zeta_1^2 &= 0
+\end{align} 
+```
+Rearranging the terms, we get a quadratic in $\zeta_1$:
+```math
+\left(1 + i^2\sin^2(Q) + \frac{i^2\cos^2(Q)}{\rho_1^2}\right)\zeta_1^2 + \left(2i\sin(\beta)\sin(\gamma)\sin(Q) + \frac{2i\sin(\beta)\cos(\gamma)\cos(Q)}{\rho_1}\right)\zeta_1 -\cos^2(\beta) = 0 \tag{9.32}
+```
+All the coefficients involve known numbers. If the approximation $\rho_1 = 1$ is to be taken, this equation simplifies down to:
+```math
+(1 + i^2)\zeta_1^2 + 2i\sin(\beta)\sin(Q-\gamma)\zeta_1 - \cos^2(\beta) = 0 \tag{9.32*}
+```
+There are two solutions to these quadratics. To find the correct one, let us first say:
+```math
+Z = \text{ the zenith distance of the point Z (the point in the direction of the shadow axis).}
+```
+Then, since $Z$ points to right ascension $a$ and declination $d$, the hour angle of this point is $\mu - a = \theta$, and thus, via the third equation of equation $6.3$ (using the fact that zenith distance $= 90\degree - $ altitude (equation $6.16$)):
+```math
+\cos(Z) = \sin(\phi)\sin(d) + \cos(\phi)\cos(d)\cos(\theta)
+```
+If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2(\phi)}]\right)$, we see that we obtain the formula for $\zeta_1$ in equation $9.25$. Thus:
+```math
+\cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.33}
+```
+As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$.
