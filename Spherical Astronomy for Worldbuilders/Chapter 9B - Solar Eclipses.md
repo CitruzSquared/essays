@@ -199,7 +199,7 @@ Rearranging the terms, we get a quadratic in $\zeta_1$:
 ```
 All the coefficients involve known numbers. If the approximation $\rho_1 = 1$ is to be taken, this equation simplifies down to:
 ```math
-(1 + i^2)\zeta_1^2 + 2i\sin(\beta)\sin(Q-\gamma)\zeta_1 - \cos^2(\beta) = 0 \tag{9.32*}
+(1 + i^2)\zeta_1^2 + 2i\sin(\beta)\cos(Q-\gamma)\zeta_1 - \cos^2(\beta) = 0 \tag{9.32*}
 ```
 There are two solutions to these quadratics. To find the correct one, let us first say:
 ```math
@@ -214,3 +214,90 @@ If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2
 \cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.33}
 ```
 As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$.
+
+#### Example 9.3
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Find the point on the outline of the Moon's penumbra for $Q = 90\degree$ on $\text{April 8, } 2024$ for the time $18:00$. <br/>
+Use $e = 0.081819$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+The Besselian elements (for the penumbra) for this time (calculated in the previous example) are given here:
+```math
+\begin{align}
+a &= 17\degree\:35'\:2.58''\\
+d &= 7\degree\:27'\:34.93''\\
+\mu &= 89\degree\:54'\:4.47''\\
+x &= -0.30856088 \:R_E\\
+y &= 0.22479055 \:R_E\\
+i_1 &= 0.0046683\\
+l_1 &= 0.53573027 \:R_E\\
+x' &= 0.51147366 \: R_E/h\\
+y' &= 0.27129112 \:R_E/h\\
+d' &= 0.00025898 \text{ rad}/h\\
+\mu' &= 0.26187054 \text{ rad}/h
+\end{align}
+```
+We first $\rho_1$ and $d_1$ by equation $9.21$:
+```math
+\begin{alignat}{2}
+\rho_1 \sin(d_1) &= \sin(7\degree\:27'\:34.93'') &&= 0.12982884\\
+\rho_1 \cos(d_1) &= \cos(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.98821200\\
+\therefore \rho_1 &= \sqrt{0.12982884^2 + 0.98821200^2} &&= 0.99670381\\
+\therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25''
+\end{alignat}
+```
+Then we find $\beta$ and $\gamma$ by equation $9.31$:
+```math
+\begin{alignat}{2}
+\sin(\beta)\sin(\gamma) &= -0.30856088 - 0.53573027\sin(90\degree) &&= -0.84429113\\
+\sin(\beta)\cos(\gamma) &= \frac{0.22479055 - 0.53573027\cos(90\degree)}{0.99670381} &&= 0.22553395\\
+\therefore \gamma &= \arctan(-0.84429113, 0.22553395) &&= -75\degree\:2'\:38.03''\\
+\therefore \beta &= \arcsin(\sqrt{(-0.84429113)^2 + 0.22553395^2}) &&= 60\degree\:54'\:52.23''
+\end{alignat}
+```
+Now we have everything neccessary to solve equation $9.32*$ (we use equation $9.32*$ becausebecause $\rho_1$ is very close to $1$). Let us denote the first coefficient by $c_1$, the second by $c_2$, and the third by $c_3$:
+```math
+\begin{alignat}{2}
+c_1 &= 1 + 0.0046683^2 &&= 1.00002179\\
+c_2 &= 2\cdot0.0046683\sin(60\degree\:54'\:52.23'')\cos(90\degree - (-75\degree\:2'\:38.03'')) &&= -0.00788288\\
+c_3 &= -\cos^2(60\degree\:54'\:52.23'') &&= 0.23630692
+\end{alignat}
+```
+Solving the quadratic and choosing the positive value for $\zeta_1$ gives:
+```math
+\zeta_1 = 0.49006614
+```
+Now, by equation $9.28$:
+```math
+\begin{alignat}{2}
+\xi &= x - (0.53573027 - 0.0046683\cdot0.49006614)\sin(90\degree) &&= -0.84200334\\
+\eta_1 &= \frac{0.22479055 - (0.53573027 - 0.0046683\cdot0.49006614)\cos(Q)}{\rho_1} &&= 0.22553395\\
+\end{alignat}
+```
+Thus, by equation $9.29$:
+```math
+\begin{alignat}{2}
+\cos(\phi_1)\sin(\theta) &= -0.84200334 &&\\
+\cos(\phi_1)\cos(\theta) &= -0.22553395\sin(7\degree\:29'\:4.25'') + \zeta_1\cos(7\degree\:29'\:4.25'') &&= 0.45651318\\
+\sin(\phi_1) &= 0.22553395\cos(7\degree\:29'\:4.25'') + \zeta_1\sin(7\degree\:29'\:4.25'') &&= -0.15977729\\
+\therefore \phi_1 &= \arcsin(-0.15977729) &&= -9\degree\:11'\:38.29''\\
+\therefore \theta &= \arctan(-0.84200334, 0.45651318) &&= -61\degree\:32'\:4.40''\\
+\end{alignat}
+```
+Thus, by equation $9.30$:
+```math
+\begin{alignat}{2}
+\tan(\phi) &= \frac{\tan(-9\degree\:11'\:38.29'')}{\sqrt{1 - 0.081819^2}} &&= -0.16240115\\
+\therefore \phi &= \arctan(-0.16240115) &&= 9\degree\:13'\:27.73''
+\lambda &= 89\degree\:54'\:4.47'' - (-61\degree\:32'\:4.40'') &&= 151\degree\:26'\:8.88''
+\end{alignat}
+```
+$\blacksquare$
