@@ -152,15 +152,7 @@ For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ 
 \xi^2 + \eta_1^2 + \zeta_1^2 &= 1
 \end{align}
 ```
-Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. If even more accuracy is wanted, substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
-```math
-\begin{align}
-(l - i\zeta)\sin(Q) &= x - \xi\\
-(l - i\zeta)\cos(Q) &= y - \rho_1\eta_1\tag{9.28*}\\
-\xi^2 + \eta_1^2 + \zeta_1^2 &= 1
-\end{align}
-```
-Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
+Which fully determine $\xi$, $\eta_1$ and $\zeta_1$ for any value of $Q$. Now, from $\xi$, $\eta_1$ and $\zeta_1$ we can use equations $9.25$ and $9.26$:
 ```math
 \begin{align}
 \cos(\phi_1)\sin(\theta) &= \xi \\
@@ -222,6 +214,16 @@ If we multiply both sides by $\sqrt{1 - e^2} / \left(\rho_1 \sqrt{1 - e^2 \sin^2
 \cos(Z) = \zeta_1\rho_1\frac{\sqrt{1 - e^2 \sin^2(\phi)}}{\sqrt{1 - e^2}} = \zeta_1\rho_1\frac{\sin(\phi)}{\sin(\phi_1)} \tag{9.33}
 ```
 As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_1$ have the same sign. But since we need the eclipse to be visible, $Z$ cannot be more than $90\degree$ (or else the eclipse would be below the horizon) and thus $\cos(Z) > 0$ and therefore we can say that $\zeta_1 > 0$.
+
+Once $\zeta_1$ has been found and even more accuracy is wanted, substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
+```math
+\begin{align}
+(l - i\zeta)\sin(Q) &= x - \xi\\
+(l - i\zeta)\cos(Q) &= y - \rho_1\eta_1\tag{9.28*}\\
+\xi^2 + \eta_1^2 + \zeta_1^2 &= 1
+\end{align}
+```
+Which should only involve simple substitution.
 
 #### Example 9.3
 <div align="center">
