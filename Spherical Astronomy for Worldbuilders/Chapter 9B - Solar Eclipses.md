@@ -144,7 +144,7 @@ If we substitute equation $9.26$ into the equation for $\zeta$ in equation $9.22
 &= -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_1\cos(d_1-d_2)\tag{9.27}
 \end{align}
 ```
-For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
+For planets with low flattening values, $\zeta_1$ varies so little from $\zeta$ that we may substitute it for $\zeta$ in the equation for $L$. (If extreme accuracy is desired, substitude equation $9.27$ for $\zeta$ and solve the system of equations.) Therefore our problem now takes the following form. We first have equations $9.18$ (with equation $9.23$ substituted in) and $9.24$:
 ```math
 \begin{align}
 (l - i\zeta_1)\sin(Q) &= x - \xi\\
