@@ -313,7 +313,6 @@ The relevant Besselian elements are:
 ```math
 \begin{align}
 d &= 7\degree\:27'\:34.93''\\
-\mu &= 89\degree\:54'\:4.47''\\
 x &= -0.30856088 \:R_E\\
 y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
