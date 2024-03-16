@@ -292,4 +292,61 @@ Collecting terms as $\sin(Q)$ and $\cos(Q)$, we obtain:
 ```math
 P' = a' + \sin(Q)(c' - (i^2 + 1)\zeta \mu'\cos(d)) + \cos(Q)(-b' + (i^2 + 1)\zeta d') \tag{9.50}
 ```
-Equation $9.50$ is known as the *second fundamental equation of eclipse theory*.
+Equation $9.50$ is known as the *second fundamental equation of eclipse theory*. Note that the approximation $\zeta = \zeta_1$ may be made here.
+
+Notice that if $P' = 0$, then by equation $9.38$, $P = 0$ and therefore the eclipse is *beginning and ending at the same time*. This means that the observer is right at the point where the Moon just barely grazes the Sun, and therefore is on the limit of visibility of eclipse. This will be important later.
+
+#### Example 9.4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine if the eclipse was beginning or ending at the point for $Q = 90\degree$ determined in the last example.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+The relevant Besselian elements are:
+```math
+\begin{align}
+d &= 7\degree\:27'\:34.93''\\
+\mu &= 89\degree\:54'\:4.47''\\
+x &= -0.30856088 \:R_E\\
+y &= 0.22479055 \:R_E\\
+i_1 &= 0.0046683\\
+l_1 &= 0.53573027 \:R_E\\
+d' &= 0.00025898 \text{ rad}/h\\
+x' &= 0.51147366 \: R_E/h\\
+y' &= 0.27129112 \:R_E/h\\
+\mu' &= 0.26187054 \text{ rad}/h\\
+l_1' &= 0.00006156 \: R_E/h
+\end{align}
+```
+Also, $\zeta$ was:
+```math
+\zeta = 0.48984331
+```
+We first find $a'$, $b'$, and $c'$ by equation $9.49$:
+```math
+\begin{align}
+a' &= -0.00006156 + 0.26187054 \cdot0.0046683 \cdot(-0.30856088)\cos(7\degree\:27'\:34.93'') + 0.22479055\cdot0.0046683\cdot0.00025898\\
+&= -0.000435308\\
+b' &= -0.27129112 + 0.26187054 \cdot(-0.30856088) \sin(7\degree\:27'\:34.93'') + 0.53573027\cdot0.0046683\cdot0.00025898\\
+&= -0.28178103\\
+c' &= 0.51147366 + 0.26187054\cdot0.22479055\sin(7\degree\:27'\:34.93'') + 0.53573027\cdot 0.0046683\cdot0.26187054\cos(7\degree\:27'\:34.93'')\\
+&= 0.51976555
+\end{align}
+```
+Then we find $P'$ by equation $9.50$:
+```math
+\begin{align}
+P' &= -0.000435308 + \sin(90\degree)(0.51976555 - (0.0046683^2 + 1)0.48984331\cdot 0.26187054\cos(7\degree\:27'\:34.93''))\\
+& + \cos(90\degree)(-(-0.28178103) + (0.0046683^2 + 1)0.48984331\cdot 0.00025898)\\
+&= 0.39213761 > 0
+\end{align}
+```
+Since $P > 0$ and $l > 0$ (penumbra), $P > 0$ by equation $9.38$ and therefore the eclipse was ending.\
+$\blacksquare$
