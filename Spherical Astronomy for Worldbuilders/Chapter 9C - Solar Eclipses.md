@@ -133,10 +133,10 @@ The second term $\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\tex
 ```math
 \begin{align}
 \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) &= \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r} - \boldsymbol{\omega}\times\boldsymbol{\Delta})\\
-&= \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r}) - \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\times\boldsymbol{\Delta})\\
+&= \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r}) - \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\times\boldsymbol{\Delta})
 \end{align}
 ```
-The scalar triple product $\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\times\boldsymbol{\Delta})$ is:
+The second term, the scalar triple product $\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\times\boldsymbol{\Delta})$, is:
 ```math
 \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\times\boldsymbol{\Delta}) = \boldsymbol{\omega}\cdot(\boldsymbol{\Delta}\times\boldsymbol{\hat{\Delta}}) = \boldsymbol{\omega}\cdot\textbf{0} = 0
 ```
