@@ -166,7 +166,7 @@ x \\ y \\ \zeta
 \end{bmatrix}
 \tag{9.43}
 ```
-For the third term of equation $9.41$, notice that in equation $9.4$0 we can write $\zeta'$ as a vector dot product:
+For the third term of equation $9.41$, notice that in equation $9.40$ we can write $\zeta'$ as a vector dot product:
 ```math
 \zeta' = \begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
