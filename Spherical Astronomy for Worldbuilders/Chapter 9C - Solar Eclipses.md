@@ -73,7 +73,8 @@ Then they are rotating about the $z$-axis as $\Theta_L$ changes. Thus the rotati
 0\\0 \\d\Theta/dt
 \end{bmatrix}
 ```
-But we now want to get the velocity vector relative to the shadow axis. The shadow axis (in equatorial coordinates) is also rotating about the $x$ and $z$ axes:
+Because $d\Theta_L/dt = d\Theta/dt + d/dt (l) = d\Theta/dt$.
+But we want the velocity vector relative to the shadow axis. The shadow axis (in equatorial coordinates) is also rotating about the $x$ and $z$ axes:
 ```math
 \begin{bmatrix}
 -dd/dt\\0 \\da/dt
