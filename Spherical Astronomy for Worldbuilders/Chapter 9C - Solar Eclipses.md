@@ -286,9 +286,10 @@ c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)
 In older books, the approximations $id' = 0$ and $i^2 = 0$ are used, which are adequate, but for the sake of accuracy we will keep the whole expression. Now, expanding out equation $9.48$ we get:
 We obtain for $P'$:
 ```math
-\begin{align}
-P' &= c'\sin(Q) - b'\cos(Q) - \zeta (i^2 + 1)\mu'\cos(d)\sin(Q) + \zeta (i^2 + 1)d'\cos(Q) + a'\\
-&= a' + (c' - (i^2 + 1)\zeta \mu'\cos(d))\sin(Q) + (-b' + (i^2 + 1)\zeta d')\cos(Q) \tag{9.50}
-\end{align}
+P' = c'\sin(Q) - b'\cos(Q) - \zeta (i^2 + 1)\mu'\cos(d)\sin(Q) + \zeta (i^2 + 1)d'\cos(Q) + a'
+```
+Collecting terms as $\sin(Q)$ and $\cos(Q)$, we obtain:
+```math
+P' = a' + \sin(Q)(c' - (i^2 + 1)\zeta \mu'\cos(d)) + \cos(Q)(-b' + (i^2 + 1)\zeta d') \tag{9.50}
 ```
 Equation $9.50$ is known as the *second fundamental equation of eclipse theory*.
