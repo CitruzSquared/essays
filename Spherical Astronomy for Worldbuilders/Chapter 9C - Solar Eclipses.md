@@ -222,7 +222,7 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\cdot \textbf{r} \tag{9.46}
 ```
-Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$,
+Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$ (equation $9.45$),
 ```math
 \boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
 -\mu'\cos(d)\\ d'\\ -d'y/\zeta
@@ -232,7 +232,6 @@ Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$,
 ```
 And therefore we can write equation $9.46$ as:
 ```math
-\begin{align}
 P' &= \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -y\sin(d)\\ x\sin(d)\\ -x\cos(d)
 \end{bmatrix} - li\begin{bmatrix}
@@ -241,8 +240,11 @@ P' &= \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix} - l' + i\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
-\end{bmatrix}\cdot \textbf{r} \\
-&= \begin{bmatrix}
+\end{bmatrix}\cdot \textbf{r}
+```
+Which, when all the vectors are substituted in, can be written:
+```math
+P' = \begin{bmatrix}
 \sin(Q) \\ \cos(Q) \\ 0
 \end{bmatrix}\cdot\left(\begin{bmatrix}
 x '\\ y' \\ \zeta'
@@ -259,7 +261,6 @@ x '\\ y' \\ \zeta'
 \end{bmatrix}\cdot \begin{bmatrix}
 x \\ y \\ \zeta
 \end{bmatrix}\tag{9.47}
-\end{align}
 ```
 
 New variables $a'$, $b'$, and $c'$ such that:
