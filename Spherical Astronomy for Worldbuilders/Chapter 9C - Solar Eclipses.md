@@ -138,7 +138,7 @@ The scalar triple product $\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\ti
 ```
 Thus, 
 ```math
-\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) = \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r})
+\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) = \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r}) \tag{9.41}
 ```
 $\boldsymbol{\omega} \times \textbf{r}$ is:
 ```math
@@ -155,12 +155,12 @@ x \\ y \\ \zeta
 \mu'x\sin(d) - d'\zeta\\
 -\mu'x\cos(d) + d'y
 \end{bmatrix}  = \mu' \begin{bmatrix}
--y\sin(d)\\ x\sin(d)\\ x\cos(d)
+-y\sin(d)\\ x\sin(d)\\ -x\cos(d)
 \end{bmatrix}
 - \zeta \begin{bmatrix}
 -\mu'\cos(d)\\ d'\\ -d'y/\zeta
 \end{bmatrix}
-\tag{9.41}
+\tag{9.42}
 ```
 For the third term of equation $9.40$, notice that in equation $9.39$ we can write $\zeta'$ as a vector dot product:
 ```math
@@ -168,7 +168,55 @@ For the third term of equation $9.40$, notice that in equation $9.39$ we can wri
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\cdot\begin{bmatrix}
 \xi \\ \eta \\ \zeta
-\end{bmatrix}\tag{9.42}
+\end{bmatrix} = \begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \boldsymbol{\varrho} = \begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot (\textbf{r} - \boldsymbol{\Delta})\tag{9.43}
+```
+To finish, we have from equation $9.10$ and $9.16$:
+```math
+\boldsymbol{\Delta} = (l - i\zeta)\boldsymbol{\hat{\Delta}} = (l - i\zeta) \begin{bmatrix}
+\sin(Q) \\ \cos(Q) \\ 0
+\end{bmatrix}\tag{9.44}
+```
+Substituting equations equation $9.44$ into equation $9.43$ and $9.41$, $9.42$, and $9.43$ into equation $9.40$, we have:
+```math
+\begin{align}
+P &= \boldsymbol{\hat{\Delta}}\cdot \left(\textbf{r}' - \mu' \begin{bmatrix}
+-y\sin(d)\\ x\sin(d)\\ -x\cos(d)
+\end{bmatrix}
++ \zeta \begin{bmatrix}
+-\mu'\cos(d)\\ d'\\ -d'y/\zeta
+\end{bmatrix} \right) - l' + i \begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot (\textbf{r} - (l - i\zeta)\boldsymbol{\hat{\Delta}})\\
+&= \boldsymbol{\hat{\Delta}}\cdot \textbf{r}' - \mu' \boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
+-y\sin(d)\\ x\sin(d)\\ -x\cos(d)
+\end{bmatrix} + \zeta \boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
+-\mu'\cos(d)\\ d'\\ -d'y/\zeta
+\end{bmatrix} - l' + i\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \textbf{r} - li\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \boldsymbol{\hat{\Delta}} + i^2\zeta\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \boldsymbol{\hat{\Delta}}
+\end{align}
+```
+If we collect the terms as $\boldsymbol{\hat{\Delta}}$ and $\zeta$, we get:
+```math
+P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
+-y\sin(d)\\ x\sin(d)\\ -x\cos(d)
+\end{bmatrix} - li\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix} \right) + \zeta \boldsymbol{\hat{\Delta}}\cdot\left(\begin{bmatrix}
+-\mu'\cos(d)\\ d'\\ -d'y/\zeta
+\end{bmatrix} + i^2 \begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\right) - l' + i\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \textbf{r}
 ```
 
 neglect the terms involving $i^2$ as they are too small, and define new variables $a'$, $b'$, and $c'$ such that:
