@@ -263,16 +263,32 @@ x '\\ y' \\ \zeta'
 x \\ y \\ \zeta
 \end{bmatrix}\tag{9.47}
 ```
-
-New variables $a'$, $b'$, and $c'$ such that:
+Even though $P'$ now involves all known variables, for the sake of brevity it is conventional to define three new variables $a'$, $b'$, and $c'$ such that $P'$ can be written as:
+```math
+P' = \begin{bmatrix}
+\sin(Q) \\ \cos(Q) \\ 0
+\end{bmatrix}\cdot\begin{bmatrix}
+c' \\ -b' \\ 0
+\end{bmatrix} + \zeta (i^2 + 1) \begin{bmatrix}
+\sin(Q) \\ \cos(Q) \\ 0
+\end{bmatrix}\cdot\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix} + a' \tag{9.48}
+```
+Matching equation $9.48$ to equation $9.47$, we get for $a'$, $b'$, and $c'$:
 ```math
 \begin{align}
 a' &= -l' + \mu' i x\cos(d) + yid'\\
-b' &= -y' + \mu' x \sin(d) + lid' \\
-c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)\\
+b' &= -y' + \mu' x \sin(d) + lid' \tag{9.49}\\
+c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)
 \end{align}
 ```
+In older books, the approximations $id' = 0$ and $i^2 = 0$ are used, which are adequate, but for the sake of accuracy we will keep the whole expression. Now, expanding out equation $9.48$ we get:
 We obtain for $P'$:
 ```math
-P' = a' - b'\cos(Q) + c'\sin(Q) - \zeta(\mu'\cos(d)\sin(Q) - d'\cos(Q))
+\begin{align}
+P' &= c'\sin(Q) - b'\cos(Q) - \zeta (i^2 + 1)\mu'\cos(d)\sin(Q) + \zeta (i^2 + 1)d'\cos(Q) + a'\\
+&= a' + (c' - (i^2 + 1)\zeta \mu'\cos(d))\sin(Q) + (-b' + (i^2 + 1)\zetad')\cos(Q) \tag{9.50}
+\end{align}
 ```
+Equation $9.50$ is known as the *second fundamental equation of eclipse theory*.
