@@ -168,7 +168,7 @@ x \\ y \\ \zeta
 ```
 For the third term of equation $9.41$, notice that in equation $9.40$ we can write $\zeta'$ as a vector dot product:
 ```math
-\zeta' = \begin{bmatrix}
+\zeta' = -\mu'\xi\cos(d) + d'\eta = \begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\cdot\begin{bmatrix}
 \xi \\ \eta \\ \zeta
