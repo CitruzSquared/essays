@@ -89,7 +89,7 @@ dd/dt\\0 \\d\Theta/dt - da/dt
 d'\\0 \\\mu'
 \end{bmatrix}
 ```
-To transform into fundamental coordinates, we only need to multiply by a rotation about the equatorial $x$ axis by $90\degree - d$ since the transformation about the $z$ axis by $a - 90\degree$ does not change anything about the $z$-axis component of the rotation vector. Therefore:
+To transform into fundamental coordinates, we only need to multiply by a rotation about the equatorial $x$ axis by $90\degree - d$ since the transformation about the $z$ axis by $a - 90\degree$ does not change anything about the rotation vector. Therefore:
 ```math
 \boldsymbol{\omega} = \begin{bmatrix}
 1 & 0 & 0 \\
