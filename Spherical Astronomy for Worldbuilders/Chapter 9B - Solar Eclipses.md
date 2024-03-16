@@ -19,7 +19,7 @@ Which can also be expressed as (using equation 9.10):
 \end{align}
 }\tag{9.18}
 ```
-Equation $9.18$ is known as the *fundamental equation of eclipse theory*.
+Equation $9.18$ is known as the *first fundamental equation of eclipse theory*.
 
 To convert $\xi, \eta, \zeta$ to coordinates on the surface of the Earth, we have equations $9.7$, restated here:
 ```math
