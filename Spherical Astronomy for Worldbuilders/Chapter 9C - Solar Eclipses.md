@@ -16,7 +16,7 @@ And $\textbf{r}$ be defined as the position of the Moon's shadow at the level of
 x\\ y \\ \zeta \tag{9.36}
 \end{bmatrix}
 ```
-Now the vector pointin from the shadow to the observer $\boldsymbol{\Delta}$ can be defined as:
+Now the vector pointing from the shadow to the observer $\boldsymbol{\Delta}$ can be defined as:
 ```math
 \boldsymbol{\Delta} = \textbf{r} - \boldsymbol{\varrho} = \begin{bmatrix}
 x - \xi \\ y - \eta \\ 0
