@@ -45,7 +45,7 @@ Then
 ```math
 P = LP' \tag{9.38}
 ```
-We can see that if $P'$ and $L$ have like signs, then $P$ is positive and the eclipse is ending. If $P'$ and $L$ have opposite signs, then $P$ is negative and the eclipse is beginning.
+And so can see that if $P'$ and $L$ have like signs, then $P$ is positive and the eclipse is ending. If $P'$ and $L$ have opposite signs, then $P$ is negative and the eclipse is beginning. Let us now develop the quantity $P'$.
 
 We can safely say that $i$ is constant and therefore:
 ```math
