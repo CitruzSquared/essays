@@ -248,7 +248,7 @@ d &= 7\degree\:27'\:34.93''\\
 x &= -0.30856088 \:R_E\\
 y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
-l_1 &= 0.53573027 \:R_E\\
+l_1 &= 0.53573027 \:R_E
 \end{align}
 ```
 As well as the eccentricity of the Earth spheroid:
