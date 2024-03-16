@@ -374,7 +374,7 @@ L &= l - i\zeta
 \end{align}
 ```
 
-The quantities $a$, $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), $l_2$ ($l$ for the umbra), and the derivatives of the quantities $x$, $y$, $d$, and $\mu$ are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
+The quantities $d$, $\mu$, $x$, $y$, $i_1$ ($i$ for the penumbra), $i_2$ ($i$ for the umbra), $l_1$ ($l$ for the penumbra), $l_2$ ($l$ for the umbra), and their derivatives are known as the [**Besselian elements**](https://en.wikipedia.org/wiki/Besselian_elements) of a solar eclipse.
 
 #### Example 9.2
 <div align="center">
@@ -468,7 +468,6 @@ l_2 &= 0.0046451 \cdot -12\:397.713 &&= -57.589\text{ km}
 Expressing distances in terms of Earth equatorial radii ($R_E = 6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
 ```math
 \begin{align}
-a &= 17\degree\:35'\:2.58''\\
 d &= 7\degree\:27'\:34.93''\\
 \mu &= 89\degree\:54'\:4.47''\\
 x &= -0.30856088 \:R_E\\
@@ -479,14 +478,16 @@ l_1 &= 0.53573027 \:R_E\\
 l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
-For the derivatives of $x$, $y$, $d$ (in radians), and $\mu$ (in radians), denoted $x'$, $y'$, $d'$, and $\mu'$, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:\
+The quantity $i$ will stay roughly constant for the whole eclipse for most reasonable cases. For the other derivatives, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:\
 At $17:45$:
 ```math
 \begin{align}
 d &= 7\degree\:27'\:21.62''\\
 x &= -0.4364434 \:R_E\\
 y &= 0.15693548 \:R_E\\
-\mu &= 86\degree\:9'\:0.73''
+\mu &= 86\degree\:9'\:0.73''\\
+l_1 &= 0.53571408 \:R_E\\
+l_2 &= -0.00904516 \:R_E
 \end{align}
 ```
 At $18:15$:
@@ -495,7 +496,9 @@ At $18:15$:
 d &= 7\degree\:27'\:48.33''\\
 x &= -0.18070657 \:R_E\\
 y &= 0.29258104 \:R_E\\
-\mu &= 93\degree\:39'\:8.07''
+\mu &= 93\degree\:39'\:8.07''\\
+l_1 &= 0.53574486 \:R_E\\
+l_2 &= -0.00901454 \:R_E
 \end{align}
 ```
 Therefore:
@@ -504,7 +507,9 @@ Therefore:
 d' &= \frac{7\degree\:27'\:48.33'' - 7\degree\:27'\:21.62''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.00025898 \text{ rad}/h\\
 x' &= \frac{-0.18070657 - (-0.4364434)}{0.5h} &&= 0.51147366 \: R_E/h\\
 y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
-\mu' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h
+\mu' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h\\
+l_1' &= \frac{0.53574486 - 0.53571408}{0.5h} &&= 0.00006156 \: R_E/h\\
+l_2' &= \frac{-0.00901454 - (-0.00904516)}{0.5h} &&= 0.00006124 \:R_E/h\\
 \end{alignat}
 ```
 $\blacksquare$
