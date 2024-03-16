@@ -154,28 +154,28 @@ x \\ y \\ \zeta
 \mu'(-y\sin(d) + \zeta\cos(d))\\
 \mu'x\sin(d) - d'\zeta\\
 -\mu'x\cos(d) + d'y
-\end{bmatrix} = \mu' \begin{bmatrix}
--y\sin(d) + \zeta\cos(d)\\
-x\sin(d) - d'\zeta/mu'\\
-x\cos(d) + d'y/mu'
-\end{bmatrix} = \mu' \begin{bmatrix}
--y\sin(d)\\
-x\sin(d)\\
-x\cos(d)
+\end{bmatrix}  = \mu' \begin{bmatrix}
+-y\sin(d)\\ x\sin(d)\\ x\cos(d)
 \end{bmatrix}
 - \zeta \begin{bmatrix}
-\mu'\cos(d)\\
-d'\\
--d'y/\zeta
+-\mu'\cos(d)\\ d'\\ -d'y/\zeta
 \end{bmatrix}
-
 \tag{9.41}
 ```
+For the third term of equation $9.40$, notice that in equation $9.39$ we can write $\zeta'$ as a vector dot product:
+```math
+\zeta' = \begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot\begin{bmatrix}
+\xi \\ \eta \\ \zeta
+\end{bmatrix}\tag{9.42}
+```
+
 neglect the terms involving $i^2$ as they are too small, and define new variables $a'$, $b'$, and $c'$ such that:
 ```math
 \begin{align}
 a' &= -l' + \mu' i x\cos(d) + yid'\\
-b' &= -y' + \mu' x \sin(d) + lid' \tag{9.37}\\
+b' &= -y' + \mu' x \sin(d) + lid' \\
 c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)\\
 \end{align}
 ```
