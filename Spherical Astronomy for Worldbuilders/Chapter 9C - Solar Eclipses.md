@@ -222,7 +222,7 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\cdot \textbf{r} \tag{9.46}
 ```
-Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$ (equation $9.37$ and $9.45$),
+Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$ (see equations $9.37$ and $9.45$),
 ```math
 \boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
 -\mu'\cos(d)\\ d'\\ -d'y/\zeta
