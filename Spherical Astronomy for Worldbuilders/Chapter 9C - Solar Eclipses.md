@@ -232,7 +232,8 @@ Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$,
 ```
 And therefore we can write equation $9.46$ as:
 ```math
-P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
+\begin{align}
+P' &= \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -y\sin(d)\\ x\sin(d)\\ -x\cos(d)
 \end{bmatrix} - li\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
@@ -240,7 +241,25 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix} - l' + i\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
-\end{bmatrix}\cdot \textbf{r} \tag{9.47}
+\end{bmatrix}\cdot \textbf{r} \\
+&= \begin{bmatrix}
+\sin(Q) \\ \cos(Q) \\ 0
+\end{bmatrix}\cdot\left(\begin{bmatrix}
+x '\\ y' \\ \zeta'
+\end{bmatrix} - \mu'\begin{bmatrix}
+-y\sin(d)\\ x\sin(d)\\ -x\cos(d)
+\end{bmatrix} - li\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix} \right) + \zeta (i^2 + 1) \begin{bmatrix}
+\sin(Q) \\ \cos(Q) \\ 0
+\end{bmatrix}\cdot\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix} - l' + i\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \begin{bmatrix}
+x \\ y \\ \zeta
+\end{bmatrix}\tag{9.47}
+\end{align}
 ```
 
 New variables $a'$, $b'$, and $c'$ such that:
