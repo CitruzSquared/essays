@@ -284,7 +284,6 @@ c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)
 \end{align}
 ```
 Now, expanding out equation $9.48$ we get:
-We obtain for $P'$:
 ```math
 P' = c'\sin(Q) - b'\cos(Q) - \zeta (i^2 + 1)\mu'\cos(d)\sin(Q) + \zeta (i^2 + 1)d'\cos(Q) + a'
 ```
