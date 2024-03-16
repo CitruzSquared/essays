@@ -41,6 +41,10 @@ If we now set:
 ```math
 P' = \boldsymbol{\hat{\Delta}}\cdot\boldsymbol{\Delta}' - L' 
 ```
+Then
+```math
+P = LP' \tag{9.38}
+```
 We can see that if $P'$ and $L$ have like signs, then $P$ is positive and the eclipse is ending. If $P'$ and $L$ have opposite signs, then $P$ is negative and the eclipse is beginning.
 
 We can safely say that $i$ is constant and therefore:
@@ -53,7 +57,7 @@ Also, By equation $9.37$,
 ```
 Therefore:
 ```math
-P' = \boldsymbol{\hat{\Delta}}\cdot\textbf{r}' - \boldsymbol{\hat{\Delta}}\cdot\boldsymbol{\varrho}' - (l'- i\zeta') \tag{9.38}
+P' = \boldsymbol{\hat{\Delta}}\cdot\textbf{r}' - \boldsymbol{\hat{\Delta}}\cdot\boldsymbol{\varrho}' - (l'- i\zeta') \tag{9.39}
 ```
 So we need to develop the quantities in the right hand side.
 
@@ -115,15 +119,15 @@ d'\\ \cos(d)\mu'\\ \sin(d)\mu'
 \mu'(-\eta\sin(d) + \zeta\cos(d))\\
 \mu'\xi\sin(d) - d'\zeta\\
 -\mu'\xi\cos(d) + d'\eta
-\end{bmatrix} \tag{9.39}
+\end{bmatrix} \tag{9.40}
 ```
-We can substitute $\boldsymbol{\varrho}' = \boldsymbol{\omega} \times \boldsymbol{\varrho}$ into equation $9.38$: 
+We can substitute $\boldsymbol{\varrho}' = \boldsymbol{\omega} \times \boldsymbol{\varrho}$ into equation $9.39$: 
 ```math
 P' = \boldsymbol{\hat{\Delta}}\cdot\textbf{r}' - \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \boldsymbol{\varrho}) - (l'- i\zeta')
 ```
 Using equation $9.37$ we can write:
 ```math
-P' = \boldsymbol{\hat{\Delta}}\cdot\textbf{r}' - \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) - (l'- i\zeta') \tag{9.40}
+P' = \boldsymbol{\hat{\Delta}}\cdot\textbf{r}' - \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) - (l'- i\zeta') \tag{9.41}
 ```
 The second term $\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta}))$ can be expanded as:
 ```math
@@ -138,7 +142,7 @@ The scalar triple product $\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega}\ti
 ```
 Thus, 
 ```math
-\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) = \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r}) \tag{9.41}
+\boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times (\textbf{r} - \boldsymbol{\Delta})) = \boldsymbol{\hat{\Delta}}\cdot(\boldsymbol{\omega} \times \textbf{r}) \tag{9.42}
 ```
 $\boldsymbol{\omega} \times \textbf{r}$ is:
 ```math
@@ -160,9 +164,9 @@ x \\ y \\ \zeta
 - \zeta \begin{bmatrix}
 -\mu'\cos(d)\\ d'\\ -d'y/\zeta
 \end{bmatrix}
-\tag{9.42}
+\tag{9.43}
 ```
-For the third term of equation $9.40$, notice that in equation $9.39$ we can write $\zeta'$ as a vector dot product:
+For the third term of equation $9.41$, notice that in equation $9.4$0 we can write $\zeta'$ as a vector dot product:
 ```math
 \zeta' = \begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
@@ -172,15 +176,15 @@ For the third term of equation $9.40$, notice that in equation $9.39$ we can wri
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\cdot \boldsymbol{\varrho} = \begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
-\end{bmatrix}\cdot (\textbf{r} - \boldsymbol{\Delta})\tag{9.43}
+\end{bmatrix}\cdot (\textbf{r} - \boldsymbol{\Delta})\tag{9.44}
 ```
 To finish, we have from equation $9.10$ and $9.16$:
 ```math
 \boldsymbol{\Delta} = (l - i\zeta)\boldsymbol{\hat{\Delta}} = (l - i\zeta) \begin{bmatrix}
 \sin(Q) \\ \cos(Q) \\ 0
-\end{bmatrix}\tag{9.44}
+\end{bmatrix}\tag{9.45}
 ```
-Substituting equations equation $9.44$ into equation $9.43$ and $9.41$, $9.42$, and $9.43$ into equation $9.40$, we have:
+Substituting equations equation $9.45$ into equation $9.44$ and $9.43$, $9.44$, and $9.44$ into equation $9.41$, we have:
 ```math
 \begin{align}
 P &= \boldsymbol{\hat{\Delta}}\cdot \left(\textbf{r}' - \mu' \begin{bmatrix}
@@ -216,7 +220,7 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\right) - l' + i\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
-\end{bmatrix}\cdot \textbf{r} \tag{9.45}
+\end{bmatrix}\cdot \textbf{r} \tag{9.46}
 ```
 Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$,
 ```math
@@ -226,7 +230,7 @@ Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$,
 -\mu'\cos(d)\\ d'\\ 0
 \end{bmatrix}
 ```
-And therefore we can write equation $9.45$ as:
+And therefore we can write equation $9.46$ as:
 ```math
 P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -y\sin(d)\\ x\sin(d)\\ -x\cos(d)
@@ -236,7 +240,7 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix} - l' + i\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
-\end{bmatrix}\cdot \textbf{r} \tag{9.46}
+\end{bmatrix}\cdot \textbf{r} \tag{9.47}
 ```
 
 New variables $a'$, $b'$, and $c'$ such that:
