@@ -216,10 +216,30 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\right) - l' + i\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
-\end{bmatrix}\cdot \textbf{r}
+\end{bmatrix}\cdot \textbf{r} \tag{9.45}
+```
+Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$,
+```math
+\boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
+-\mu'\cos(d)\\ d'\\ -d'y/\zeta
+\end{bmatrix} = \boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
+-\mu'\cos(d)\\ d'\\ 0
+\end{bmatrix}
+```
+And therefore we can write equation $9.45$ as:
+```math
+P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
+-y\sin(d)\\ x\sin(d)\\ -x\cos(d)
+\end{bmatrix} - li\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix} \right) + \zeta (i^2 + 1) \boldsymbol{\hat{\Delta}}\cdot\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix} - l' + i\begin{bmatrix}
+-\mu'\cos(d) \\ d' \\ 0
+\end{bmatrix}\cdot \textbf{r} \tag{9.46}
 ```
 
-neglect the terms involving $i^2$ as they are too small, and define new variables $a'$, $b'$, and $c'$ such that:
+New variables $a'$, $b'$, and $c'$ such that:
 ```math
 \begin{align}
 a' &= -l' + \mu' i x\cos(d) + yid'\\
