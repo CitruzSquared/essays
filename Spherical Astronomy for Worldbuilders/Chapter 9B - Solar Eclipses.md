@@ -220,9 +220,9 @@ As $\rho_1\sin(\phi)/\sin(\phi_1)$ is a positive quantity, $\cos(Z)$ and $\zeta_
 Once $\zeta_1$ has been found and if more accuracy is desired, we can correct for the $\zeta = \zeta_1$ approximation we made earlier. We substitute the value of $\zeta_1$ just obtained into equation $9.27$, obtain a value for $\zeta$, then substitute that into the value for $L$ to calculate new values for $\xi$, $\eta_1$ and $\zeta_1$ using these equations:
 ```math
 \begin{align}
-(l - i\zeta)\sin(Q) &= x - \xi\\
-(l - i\zeta)\cos(Q) &= y - \rho_1\eta_1\tag{9.28*}\\
-\xi^2 + \eta_1^2 + \zeta_1^2 &= 1
+\xi &= x - (l - i\zeta)\sin(Q) \\
+\eta_1\rho_1 &= y - (l - i\zeta)\cos(Q) \tag{9.28*}\\
+\zeta_1^2 &= 1 - \xi^2 - \eta_1^2
 \end{align}
 ```
 Which should only involve simple substitution. The full procedure is shown in the following example.
