@@ -232,7 +232,7 @@ Because the third element of $\boldsymbol{\hat{\Delta}}$ is $0$ (equation $9.45$
 ```
 And therefore we can write equation $9.46$ as:
 ```math
-P' &= \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
+P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -y\sin(d)\\ x\sin(d)\\ -x\cos(d)
 \end{bmatrix} - li\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
