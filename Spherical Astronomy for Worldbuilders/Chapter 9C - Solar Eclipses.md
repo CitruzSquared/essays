@@ -208,7 +208,7 @@ P' &= \boldsymbol{\hat{\Delta}}\cdot \left(\textbf{r}' - \mu' \begin{bmatrix}
 \end{bmatrix}\cdot \boldsymbol{\hat{\Delta}}
 \end{align}
 ```
-If we collect the terms as $\boldsymbol{\hat{\Delta}}$ and $\zeta$, we get:
+If we collect the terms as $\boldsymbol{\hat{\Delta}}\cdot$ and $\zeta\boldsymbol{\hat{\Delta}}\cdot$, we get:
 ```math
 P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -y\sin(d)\\ x\sin(d)\\ -x\cos(d)
