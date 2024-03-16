@@ -187,7 +187,7 @@ To finish, we have from equation $9.10$ and $9.16$:
 Substituting equations equation $9.45$ into equation $9.44$ and $9.42$, $9.43$, and $9.44$ into equation $9.41$, we have:
 ```math
 \begin{align}
-P &= \boldsymbol{\hat{\Delta}}\cdot \left(\textbf{r}' - \mu' \begin{bmatrix}
+P' &= \boldsymbol{\hat{\Delta}}\cdot \left(\textbf{r}' - \mu' \begin{bmatrix}
 -y\sin(d)\\ x\sin(d)\\ -x\cos(d)
 \end{bmatrix}
 + \zeta \begin{bmatrix}
