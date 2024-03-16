@@ -242,7 +242,7 @@ P' = \boldsymbol{\hat{\Delta}}\cdot\left(\textbf{r}' - \mu'\begin{bmatrix}
 -\mu'\cos(d) \\ d' \\ 0
 \end{bmatrix}\cdot \textbf{r}
 ```
-Which, when all the vectors are substituted in, can be written:
+Which, when all the vectors are substituted in, becomes:
 ```math
 P' = \begin{bmatrix}
 \sin(Q) \\ \cos(Q) \\ 0
