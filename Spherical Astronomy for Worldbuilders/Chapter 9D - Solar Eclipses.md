@@ -225,7 +225,9 @@ We will not make a second approximation for the sake of brevity. We do however n
 ```math
 \begin{array}{ccc}\hline \text{Element} & 17:45 & 18:50 \\ \hline
 \mu & 1.50360469 & 1.78729814 \\ \hline
+\end{array}
 ```
+Now we can continue:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
 \xi& -0.94101017 & 0.24788926\\
@@ -239,10 +241,10 @@ We will not make a second approximation for the sake of brevity. We do however n
 Arranged in a chart:
 ```math
 \begin{array}{cccc}\hline \text{Contact} & \text{Time} & \text{Latitude} & \text{E. Longitude}\\ \hline
-P1 & 15:42:35 & -15\degree\:0'\:9'' & 40\degree\:36'\:8'' \\
+P1 & 15:42:35 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
 P2 & 17:44:56 & 19\degree\:39'\:49'' & 181\degree\:10'\:5'' \\
 P3 & 18:49:44 & 73\degree\:54'\:3'' & 14\degree\:34'\:28'' \\
-P4 & 20:52:48 & 216\degree\:36'\:36'' & 323\degree\:34'\:7'' \\ \hline
+P4 & 20:52:48 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
 \end{array}
 ```
 $\blacksquare$
