@@ -205,5 +205,3 @@ N & 1.08255544 & 1.08376454\\
 \end{array}
 ```
 $*$ The value of $\mu$ from the element table above (the Besselian elements after the first approximation) was used.
-
-Thus the eclipse began, globally, at $15:42:35$ at $(-15\degree$ $0'$ $9'', 216\degree$ $36'$ $36'')$, and ended, globally, at $20:52:48$ at $(40\degree$ $36'$ $8'', 323\degree$ $34'$ $7'')$.
