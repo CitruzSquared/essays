@@ -302,7 +302,7 @@ Notice that if $P' = 0$, then by equation $9.38$, $P = 0$ and therefore the ecli
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Determine if the eclipse was beginning or ending at the point for $Q = 90\degree$ determined in the last example.
+Determine whether the eclipse was beginning or ending at the point for $Q = 90\degree$ determined in the last example.
 <img width="2000" height="0">
 </td>
 </tbody>
