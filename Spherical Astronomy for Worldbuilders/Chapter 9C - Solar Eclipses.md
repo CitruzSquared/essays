@@ -446,7 +446,7 @@ p &= \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma
 \tan(\gamma) &= \rho_1\tan(\gamma')
 \end{align}\tag{9.57}
 ```
-Which yields a second approximation for $p$ which yields another value of $\psi$. As many repetitions can be taken until convergence is reached. After repetition, a value for $\gamma'$ gives:
+Which yields a second approximation for $p$ which yields another value of $\psi$. When using this new value for $\psi$ in equation $9.55$, new Besselian elements must be calculated for the time. As many repetitions can be taken until convergence is reached. After repetition, a value for $\gamma'$ gives:
 ```math
 \begin{align}
 \xi &= \sin(\gamma')\\
