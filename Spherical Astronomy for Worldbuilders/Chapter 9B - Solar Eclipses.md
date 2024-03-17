@@ -73,7 +73,7 @@ Let
 \rho_2 \cos(d_2) &= \cos(d)\\
 \end{align}
 ```
-Note that the subscripts do not mean penumbra and umbra here: they are just there to distinguish the variables.\
+Since $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$, they can be calculated along with the Besselian elements. Note that the subscripts do not mean penumbra and umbra here: they are just there to distinguish the variables.\
 Now, equations $9.20$ become:
 ```math
 \begin{align}
