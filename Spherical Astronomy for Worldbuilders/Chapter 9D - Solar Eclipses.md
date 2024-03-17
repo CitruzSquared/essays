@@ -205,3 +205,44 @@ N & 1.08255544 & 1.08376454\\
 \end{array}
 ```
 $*$ The value of $\mu$ from the element table above (the Besselian elements after the first approximation) was used.
+
+For the internal contacts, again taking $T_0 = 18:00$:
+```math
+\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
+m_0 & 0.38175987 & 0.38175987\\
+M & -0.94118943 & -0.94118943\\
+n & 0.57896820 & 0.57896820\\
+N & 1.08311714 & 1.08311714\\
+\sin(\psi) & -0.7391599 & -0.7391599\\
+\psi & 3.97341485 & -0.83182219\\
+\tau & -0.25120821 & 0.82898786\\
+T & 17:44:56 & 18:49:44\\
+\gamma & 5.05653199 & 0.25129495\\
+\gamma' & -1.22560336 & 0.25050091\\
+\end{array}
+```
+We will not make a second approximation for the sake of brevity. We do however need to calculate $\mu$ for the new times:
+```math
+\begin{array}{ccc}\hline \text{Element} & 17:45 & 18:50 \\ \hline
+\mu & 1.50360469 & 1.78729814 \\ \hline
+```
+```math
+\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
+\xi& -0.94101017 & 0.24788926\\
+\eta_1& 0.33837827 & 0.96878837\\
+\phi_1 & 0.34213097 & 1.28891708\\
+\theta & -1.61760172 &  2.04167242 \\
+\phi & 19\degree\:39'\:49'' & 73\degree\:54'\:3''\\
+\lambda & 181\degree\:10'\:5'' & 14\degree\:34'\:28''\\ \hline
+\end{array}
+```
+Arranged in a chart:
+```math
+\begin{array}{cccc}\hline \text{Contact} & \text{Time} & \text{Latitude} & \text{E. Longitude}\\ \hline
+P1 & 15:42:35 & -15\degree\:0'\:9'' & 40\degree\:36'\:8'' \\
+P2 & 17:44:56 & 19\degree\:39'\:49'' & 181\degree\:10'\:5'' \\
+P3 & 18:49:44 & 73\degree\:54'\:3'' & 14\degree\:34'\:28'' \\
+P4 & 20:52:48 & 216\degree\:36'\:36'' & 323\degree\:34'\:7'' \\ \hline
+\end{array}
+```
+$\blacksquare$
