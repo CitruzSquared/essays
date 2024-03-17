@@ -324,7 +324,7 @@ y' &= 0.27129112 \:R_E/h\\
 l_1' &= 0.00006156 \: R_E/h
 \end{align}
 ```
-Also, $\zeta$ was:
+Also, $\zeta$ for $Q = 90\degree$ was:
 ```math
 \zeta = 0.48984331
 ```
