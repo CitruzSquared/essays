@@ -241,10 +241,10 @@ Now we can continue:
 Arranged in a chart:
 ```math
 \begin{array}{cccc}\hline \text{Contact} & \text{Time} & \text{Latitude} & \text{E. Longitude}\\ \hline
-P1 & 15:42:35 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
-P2 & 17:44:56 & 19\degree\:39'\:49'' & 181\degree\:10'\:5'' \\
-P3 & 18:49:44 & 73\degree\:54'\:3'' & 14\degree\:34'\:28'' \\
-P4 & 20:52:48 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
+\text{First External Contact} & 15:42:35 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
+\text{First Internal Contact}  & 17:44:56 & 19\degree\:39'\:49'' & 181\degree\:10'\:5'' \\
+\text{Last Internal Contact}  & 18:49:44 & 73\degree\:54'\:3'' & 14\degree\:34'\:28'' \\
+\text{Last External Contact}  & 20:52:48 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
 \end{array}
 ```
 $\blacksquare$
