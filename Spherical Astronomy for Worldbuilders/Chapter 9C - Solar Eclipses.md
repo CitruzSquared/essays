@@ -455,3 +455,15 @@ Which yields a second approximation for $p$ which yields another value of $\psi$
 \end{align}
 ```
 From which equations $9.29$ and $9.30$ give the location of contact on the surface of the Earth.
+#### Example 9.5
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Find the time and location of the $P_1$, $P_2$, $P_3$, and $P_4$ contacts for the solar eclipse of $\text{April 8, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
