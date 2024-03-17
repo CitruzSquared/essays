@@ -449,9 +449,9 @@ p = \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)
 Which yields a second approximation for $p$ which yields another value of $\psi$. As many repetitions can be taken until convergence is reached. After repetition, a value for $\gamma'$ gives:
 ```math
 \begin{align}
-\xi = \sin(\gamma')\\
-\eta_1 = \cos(\gamma') \tag{9.58}\\
-\zeta_1 = 0
+\xi &= \sin(\gamma')\\
+\eta_1 &= \cos(\gamma') \tag{9.58}\\
+\zeta_1 &= 0
 \end{align}
 ```
 From which equations $9.29$ and $9.30$ give the location of contact on the surface of the Earth.
