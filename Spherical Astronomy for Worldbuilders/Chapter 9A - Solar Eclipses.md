@@ -478,28 +478,16 @@ l_1 &= 0.53573027 \:R_E\\
 l_2 &= -0.00902906 \:R_E
 \end{align}
 ```
-The quantity $i$ will stay roughly constant for the whole eclipse for most reasonable cases. For the other derivatives, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:\
-At $17:45$:
+The quantity $i$ will stay roughly constant for the whole eclipse for most reasonable cases. For the other derivatives, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:
 ```math
-\begin{align}
-d &= 7\degree\:27'\:21.62''\\
-x &= -0.4364434 \:R_E\\
-y &= 0.15693548 \:R_E\\
-\mu &= 86\degree\:9'\:0.73''\\
-l_1 &= 0.53571408 \:R_E\\
-l_2 &= -0.00904516 \:R_E
-\end{align}
-```
-At $18:15$:
-```math
-\begin{align}
-d &= 7\degree\:27'\:48.33''\\
-x &= -0.18070657 \:R_E\\
-y &= 0.29258104 \:R_E\\
-\mu &= 93\degree\:39'\:8.07''\\
-l_1 &= 0.53574486 \:R_E\\
-l_2 &= -0.00901454 \:R_E
-\end{align}
+\begin{array}{ccc}\hline \text{Element} & 17:45 & 18:15 \\ \hline
+d & 7\degree\:27'\:21.62'' & 7\degree\:27'\:48.33''\\
+x & -0.4364434 \:R_E & -0.18070657 \:R_E\\
+y & 0.15693548 \:R_E & 0.29258104 \:R_E\\
+\mu & 86\degree\:9'\:0.73'' & 93\degree\:39'\:8.07''\\
+l_1 & 0.53571408 \:R_E & 0.53574486 \:R_E\\
+l_2 & -0.00904516 \:R_E & -0.00901454 \:R_E\\ \hline
+\end{array}
 ```
 Therefore:
 ```math
