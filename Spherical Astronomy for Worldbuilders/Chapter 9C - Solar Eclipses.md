@@ -349,3 +349,5 @@ P' &= -0.000435308 + \sin(90\degree)(0.51976555 - (0.0046683^2 + 1)\cdot0.489843
 ```
 Since $P > 0$ and $L > 0$ (penumbra), $P > 0$ by equation $9.38$ and therefore the eclipse was ending.\
 $\blacksquare$
+
+### Contact Times and Greatest Eclipse
