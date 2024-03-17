@@ -352,4 +352,106 @@ P' &= -0.000435308 + \sin(90\degree)(0.51976555 - (0.0046683^2 + 1)\cdot0.489843
 Since $P > 0$ and $L > 0$ (penumbra), $P > 0$ by equation $9.38$ and therefore the eclipse was ending.\
 $\blacksquare$
 
-### Contact Times and Greatest Eclipse
+### Contacts
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/91a468a0-a447-411d-a60f-4ee875b5f00d" width="350"/>  As the shadow of the Moon (the shaded circle) passes over the Earth (the larger circle centered on $E$), there are a few key times of interest. 
+
+The times and points at which the shadow cone of the Moon is tangent to the Earth are known as *contacts*. There are four contacts, labeled $1$, $2$, $3$, and $4$ in the diagram:
+1. First External Contact (External Ingress)
+2. First Internal Contact (Internal Ingress)
+3. Last Internal Contact (Internal Egress)
+4. Last External Contact (External Egress)
+
+If the shadow in question is the penumbra, these times are called $P_1$, $P_2$, $P_3$, and $P_4$ respectively, and if the shadow is the umbra, they are called $U_1$, $U_2$, $U_3$, and $U_4$ respectively.
+
+Evidently, $P1$ and $P4$ are the times at which the eclipse begins and ends globally, and $U1$ and $U2$ are the times at which the total (or annular) eclipse begins and ends globally.
+
+Also, notice that because the shadow cone is tangent to the Earth, at the locations of contact the eclipse must be at the local horizon. For our purposes, this means that the zenith distance of the point $Z$ (the point that points in the direction of the shadow axis) is $90\degree$, and therefore by equation $9.34$, $\zeta_1 = 0$. This means that, by equation $9.24$, for contacts:
+```math
+\xi^2 + \eta_1^2 = 1\tag{9.51}
+```
+On the fundamental plane, let's define $m$, $M$, $p$, and $\gamma$ such that:
+```math
+\begin{align}
+m\sin(M) &= x\\
+m\cos(M) &= y\\
+p\sin(\gamma) &= \xi\\
+p\cos(\gamma) &= \eta
+\end{align} \tag{9.52}
+```
+Then, the distance from the center of the Earth to $(x, y)$ is $m$ and the distance to $(\xi, \eta)$ is $p$.\
+Thus, at the contacts we have:
+```math
+m = p\pm l 
+```
+Where the top sign is for external contacts and the bottom is for internal contacts.\
+Therefore, at contacts, we have:
+```math
+\begin{align}
+(p \pm l)\sin(M) &= x\\
+(p \pm l)\cos(M) &= y
+\end{align}\tag{9.53}
+```
+For reasonable cases, $x$ and $y$ are very close to linear. Thus, if we say that at time $T_0$ the coordinates of the shadow of the Moon were $x_0$ and $y_0$ and their derivatives were $x'$ and $y'$, we have at time $\tau$ after $T_0$:
+```math
+\begin{align}
+x &= x_0 + x'\tau\\
+y &= y_0 + y'\tau
+\end{align}
+```
+If we now put:
+```math
+\begin{align}
+m_0\sin(M_0) &= x_0\\
+m_0\cos(M_0) &= y_0\\
+n\sin(N) &= x'\\
+n\cos(N) &= y'
+\end{align} \tag{9.54}
+```
+Then equations $9.53$ become:
+```math
+\begin{align}
+(p \pm l)\sin(M) &= m_0\sin(M_0) + \tau n\sin(N) \\
+(p \pm l)\cos(M) &= m_0\cos(M_0) + \tau n\cos(N) 
+\end{align}
+```
+If we subtract $N$ from all angles in the above equation, we get:
+```math
+\begin{align}
+(p \pm l)\sin(M - N) &= m_0\sin(M_0 - N)\\
+(p \pm l)\cos(M - N) &= m_0\cos(M_0 - N) + \tau n
+\end{align}
+```
+Now, if we put $\psi = M - N$, we have, for the time of contacts:
+```math
+\begin{align}
+\sin(\psi) &= \frac{m_0\sin(M_0 - N)}{(p \pm l)}\\
+\tau &=  \frac{(p \pm l)\cos(\psi) - m_0\cos(M_0 - N)}{n}\\
+T &= T_0 \pm \tau
+\end{align} \tag{9.55}
+```
+Where in the last equation we take the top sign for last contacts and the bottom sign for first contacts. Notice that in the first equation, for interior contacts, if $p - l$ is less than $m_0\sin(M_0 - N)$, then $\sin(\psi)$ exceeds 1: this means that there are no interior contacts and there is always a part of the shadow that misses the Earth.
+
+In these formulae, we have everything we need except $p$. Because $(\xi, \eta)$ must be on the edge of the Earth, $p$ must be very close to $1$ and we can start with $p = 1$ as a first approximation. Once getting the first approximation for $\psi$, we have $M = N + \psi$, but also since at the contacts $(x, y)$ and $(\xi, \eta)$ must be on the same line (see diagram), $M = \gamma$ and thus $\gamma = N + \psi$. Now, if we put $\xi = \sin(\gamma')$, then by equation $9.51$, $\eta_1 = \cos(\gamma')$, and then because $\eta = \rho_1\eta_1$ (equation $9.23$), we have:
+```math
+\begin{align}
+p\sin(\gamma) &= \sin(\gamma')\\
+p\cos(\gamma) &= \rho_1\cos(\gamma')
+\end{align}\tag{9.56}
+```
+From these we can deduce:
+```math
+\begin{align}
+p = \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)}\\
+\tan(\gamma) &= \rho_1\tan(\gamma')
+\end{align}\tag{9.57}
+```
+Which yields a second approximation for $p$ which yields another value of $\psi$. As many repetitions can be taken until convergence is reached. After repetition, a value for $\gamma'$ gives:
+```math
+\begin{align}
+\xi = \sin(\gamma')\\
+\eta_1 = \cos(\gamma') \tag{9.58}\\
+\zeta_1 = 0
+\end{align}
+```
+From which equations $9.29$ and $9.30$ give the location of contact on the surface of the Earth.
