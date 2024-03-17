@@ -425,32 +425,36 @@ If we subtract $N$ from all angles in the above equation, we get:
 Now, if we put $\psi = M - N$, we have, for the time of contacts:
 ```math
 \begin{align}
-\sin(\psi) &= \frac{m_0\sin(M_0 - N)}{(p \pm l)}\\
+\sin(\psi) &= \frac{m_0\sin(M_0 - N)}{p \pm l}\\
 \tau &=  \frac{(p \pm l)\cos(\psi) - m_0\cos(M_0 - N)}{n}\\
 T &= T_0 \pm \tau
 \end{align} \tag{9.55}
 ```
 Where in the last equation we take the top sign for last contacts and the bottom sign for first contacts. Notice that in the first equation, for interior contacts, if $p - l$ is less than $m_0\sin(M_0 - N)$, then $\sin(\psi)$ exceeds $1$ and therefore no $\psi$ exists: this means that there are no interior contacts and there is always a part of the shadow that misses the Earth.
 
-In these formulae, we have everything we need except $p$. Because $(\xi, \eta)$ must be on the edge of the Earth, $p$ must be very close to $1$ and we can start with $p = 1$ as a first approximation. Once getting the first approximation for $\psi$, we have $M = N + \psi$, but also since at the contacts $(x, y)$ and $(\xi, \eta)$ must be on the same line (see diagram), $M = \gamma$ and thus $\gamma = N + \psi$. Now, if we put $\xi = \sin(\gamma')$, then by equation $9.51$, $\eta_1 = \cos(\gamma')$, and then because $\eta = \rho_1\eta_1$ (equation $9.23$), we have:
+In these formulae, we have everything we need except $p$. Because $(\xi, \eta)$ must be on the edge of the Earth, $p$ must be very close to $1$ and we can start with $p = 1$ as a first approximation. Once getting the first approximation for $\psi$, we have $M = N + \psi$, but also since at the contacts $(x, y)$ and $(\xi, \eta)$ must be on the same line (see diagram), $M = \gamma$ and thus:
+```math
+\gamma = N + \psi \tag{9.56}
+```
+Now, if we put $\xi = \sin(\gamma')$, then by equation $9.51$, $\eta_1 = \cos(\gamma')$, and then because $\eta = \rho_1\eta_1$ (equation $9.23$), we have:
 ```math
 \begin{align}
 p\sin(\gamma) &= \sin(\gamma')\\
 p\cos(\gamma) &= \rho_1\cos(\gamma')
-\end{align}\tag{9.56}
+\end{align}\tag{9.57}
 ```
 From these we can deduce:
 ```math
 \begin{align}
-p &= \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)}\\
-\tan(\gamma) &= \rho_1\tan(\gamma')
-\end{align}\tag{9.57}
+\tan(\gamma') &= \rho_1\tan(\gamma)\\
+p &= \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)}
+\end{align}\tag{9.58}
 ```
-Which yields a second approximation for $p$ which yields another value of $\psi$. When using this new value for $\psi$ in equation $9.55$, new Besselian elements must be calculated for the time. As many repetitions can be taken until convergence is reached. After repetition, a value for $\gamma'$ gives:
+Which yields a second approximation for $p$ which yields another value of $\psi$. As many repetitions can be taken until convergence is reached. After repetition, a value for $\gamma'$ gives:
 ```math
 \begin{align}
 \xi &= \sin(\gamma')\\
-\eta_1 &= \cos(\gamma') \tag{9.58}\\
+\eta_1 &= \cos(\gamma') \tag{9.59}\\
 \zeta_1 &= 0
 \end{align}
 ```
@@ -467,3 +471,51 @@ Find the time and location of the $P_1$, $P_2$, $P_3$, and $P_4$ contacts for th
 </tbody>
 </table>
 </div>
+
+Elements will be taken from previous examples and all angles will be given in radians.\
+We will take $T_0 = 18:00$. Equations $9.54$ give:
+```math
+\begin{alignat}{2}
+m_0\sin(M_0) &= -0.30856086 &&\\
+m_0\cos(M_0) &= 0.22479055 &&\\
+\therefore m_0 &= \sqrt{(-0.30856086)^2 + 0.22479055^2} &&= 0.38175987\\
+\therefore M &= \arctan(-0.30856086, 0.22479055) &&= -0.94118943 \text{ rad}\\
+n\sin(N) &= 0.51147366 &&\\
+n\cos(N) &= 0.27129112 &&\\
+\therefore n &= \sqrt{0.51147366^2 + 0.27129112} &&= 0.57896820\\
+\therefore N &= \arctan(0.51147366, 0.27129112) &&= 1.08311714 \text{ rad}
+\end{alignat}
+```
+Now, taking $p = 1$ as a first approximation, for $P_1$, equations $9.55$ give:
+```math
+\begin{align}
+\sin(\psi) &= \frac{0.38175987 \sin(-0.94118943 - 1.08311714)}{1 + 0.53573027}\\
+&= -0.22345693\\
+\therefore \psi &= -0.22535964\text{ rad}\\
+\tau &=  \frac{(1 + 0.53573027)\cos(-0.22535964) - 0.38175987\cos(-0.94118943 - 1.08311714)}{0.57896820}\\
+&= 2.87434701h\\
+T_\text{First External} &= 18:00 - 2.87434701h = 15:07:32\\
+T_\text{Last External} &= 18:00 + 2.87434701h = 20:52:28
+\end{align}
+```
+Then by equation $9.56$ and $9.58$:
+```math
+\begin{alignat}{2}
+\gamma &= 1.08311714 + -0.22345693 &&= 0.8577575\\
+\gamma' &= \arctan(0.99670381 \tan(0.8577575)) &&= 0.85612355\\
+p &= \frac{\sin(0.85612355)}{\sin(0.8577575)} &&= 0.99858559
+\end{alignat}
+```
+Rounding the contact times to the nearest minute,
+```math
+\begin{array}{ccc}\hline \text{Element} & 15:08 & 20:52 \\ \hline
+d & 0.12945233 & 7\degree\:27'\:48.33''\\
+x & -1.77450619 & -0.18070657 \
+y & -0.5533137 & 0.29258104 \\
+\mu & 1.57092161 & 93\degree\:39'\:8.07''\\
+i_1 & 0.00466849  & 0.53574486 \\
+l_1 & 0.53544889 & 0.53574486 \\
+x' (\Delta t = \pm 15m) & 0.53571408 & 0.53574486 \\
+y' (\Delta t = \pm 15m) & -0.00904516 & -0.00901454\\ \hline
+\end{array}
+```
