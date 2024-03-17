@@ -218,7 +218,7 @@ N & 1.08311714 & 1.08311714\\
 \tau & -0.25120821 & 0.82898786\\
 T & 17:44:56 & 18:49:44\\
 \gamma & 5.05653199 & 0.25129495\\
-\gamma' & -1.22560336 & 0.25050091\\
+\gamma' & -1.22560336 & 0.25050091\\ \hline
 \end{array}
 ```
 We will not make a second approximation for the sake of brevity. We do however need to calculate $\mu$ for the new times:
