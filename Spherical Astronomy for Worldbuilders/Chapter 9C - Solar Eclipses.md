@@ -442,7 +442,7 @@ p\cos(\gamma) &= \rho_1\cos(\gamma')
 From these we can deduce:
 ```math
 \begin{align}
-p = \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)}\\
+p &= \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)}\\
 \tan(\gamma) &= \rho_1\tan(\gamma')
 \end{align}\tag{9.57}
 ```
