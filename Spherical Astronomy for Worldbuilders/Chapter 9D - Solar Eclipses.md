@@ -73,11 +73,11 @@ Now, if we put $\psi = M - N$, we have, for the time of contacts:
 ```math
 \begin{align}
 \sin(\psi) &= \frac{m_0\sin(M_0 - N)}{p \pm l}\\
-\tau &=  \frac{(p \pm l)\cos(\psi) - m_0\cos(M_0 - N)}{n}\\
-T &= T_0 \pm \tau
+\tau &=  \frac{(p \pm l)\cos(\pm\psi) - m_0\cos(M_0 - N)}{n}\\
+T &= T_0 + \tau
 \end{align} \tag{9.55}
 ```
-Where in the last equation we take the top sign for last contacts and the bottom sign for first contacts. Notice that in the first equation, for interior contacts, if $p - l$ is less than $m_0\sin(M_0 - N)$, then $\sin(\psi)$ exceeds $1$ and therefore no $\psi$ exists: this means that there are no interior contacts and there is always a part of the shadow that misses the Earth.
+The first equation has two solutions: we take $\arcsin(\psi)$ for last contacts and $180\degree - \arcsin(\psi)$ for first contacts. Notice that in the first equation, for interior contacts, if $p - l$ is less than $m_0\sin(M_0 - N)$, then $\sin(\psi)$ exceeds $1$ and therefore no $\psi$ exists: this means that there are no interior contacts and there is always a part of the shadow that misses the Earth.
 
 In these formulae, we have everything we need except $p$. Because $(\xi, \eta)$ must be on the edge of the Earth, $p$ must be very close to $1$ and we can start with $p = 1$ as a first approximation. Once getting the first approximation for $\psi$, we have $M = N + \psi$, but also since at the contacts $(x, y)$ and $(\xi, \eta)$ must be on the same line (see diagram), $M = \gamma$ and thus:
 ```math
@@ -93,7 +93,7 @@ p\cos(\gamma) &= \rho_1\cos(\gamma')
 From these we can deduce:
 ```math
 \begin{align}
-\tan(\gamma') &= \rho_1\tan(\gamma)\\
+\gamma' &= \arctan(\rho_1 \sin(\gamma), \cos(\gamma))\\
 p &= \frac{\sin(\gamma')}{\sin(\gamma)} = \frac{\rho_1\cos(\gamma')}{\cos(\gamma)}
 \end{align}\tag{9.58}
 ```
@@ -133,36 +133,77 @@ n\cos(N) &= 0.27129112 &&\\
 \therefore N &= \arctan(0.51147366, 0.27129112) &&= 1.08311714 \text{ rad}
 \end{alignat}
 ```
-Now, taking $p = 1$ as a first approximation, for $P_1$, equations $9.55$ give:
+Now, taking $p = 1$ as a first approximation, for the exterior contacts, equations $9.55$ give:
 ```math
 \begin{align}
 \sin(\psi) &= \frac{0.38175987 \sin(-0.94118943 - 1.08311714)}{1 + 0.53573027}\\
 &= -0.22345693\\
-\therefore \psi &= -0.22535964\text{ rad}\\
-\tau &=  \frac{(1 + 0.53573027)\cos(-0.22535964) - 0.38175987\cos(-0.94118943 - 1.08311714)}{0.57896820}\\
+\psi_\text{First External} &= \pi - \arcsin(-0.22345693)\\
+&= 3.3669523 \text{ rad}\\
+\tau_\text{First External} &= \frac{-(1 + 0.53573027)\cos(-0.22535964) - 0.38175987\cos(-0.94118943 - 1.08311714)}{0.57896820}\\
+&= -2.29656737h\\
+T_\text{First External} &= 18:00 - 2.29656737h = 15:42:12\\
+\\
+\psi_\text{Last External} &= \arcsin(-0.22345693)\\
+&= -0.22535964\text{ rad}\\
+\tau_\text{Last External} &=  \frac{(1 + 0.53573027)\cos(-0.22535964) - 0.38175987\cos(-0.94118943 - 1.08311714)}{0.57896820}\\
 &= 2.87434701h\\
-T_\text{First External} &= 18:00 - 2.87434701h = 15:07:32\\
 T_\text{Last External} &= 18:00 + 2.87434701h = 20:52:28
 \end{align}
 ```
 Then by equation $9.56$ and $9.58$:
 ```math
-\begin{alignat}{2}
-\gamma &= 1.08311714 + -0.22345693 &&= 0.8577575\\
-\gamma' &= \arctan(0.99670381 \tan(0.8577575)) &&= 0.85612355\\
-p &= \frac{\sin(0.85612355)}{\sin(0.8577575)} &&= 0.99858559
-\end{alignat}
-```
-Rounding the contact times to the nearest minute,
-```math
-\begin{array}{ccc}\hline \text{Element} & 15:08 & 20:52 \\ \hline
-d & 0.12945233 & 7\degree\:27'\:48.33''\\
-x & -1.77450619 & -0.18070657 \
-y & -0.5533137 & 0.29258104 \\
-\mu & 1.57092161 & 93\degree\:39'\:8.07''\\
-i_1 & 0.00466849  & 0.53574486 \\
-l_1 & 0.53544889 & 0.53574486 \\
-x' (\Delta t = \pm 15m) & 0.53571408 & 0.53574486 \\
-y' (\Delta t = \pm 15m) & -0.00904516 & -0.00901454\\ \hline
+\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
+N & 1.08311714 & 1.08311714\\
+\psi & 3.3669523 & -0.22535964\\
+\gamma & 4.45006944 & 0.8577575\\
+\gamma' & -1.83394395 & 0.85612355\\
+p & 0.99977731 & 0.99858559\\ \hline
 \end{array}
 ```
+Rounding the contact times to the nearest minute the Besselian elements are:
+```math
+\begin{array}{ccc}\hline \text{Element} & 15:42 & 20:52 \\ \hline
+d & 0.12959946 & 0.13094043\\
+\mu & 0.9667687 & 2.31976942\\
+\rho_1 & 0.99670330 & 2.31976942\\
+x & -1.48485233 & 1.15791302 \
+y & -0.39946392 & 1.00188386 \\
+i_1 & 0.00466846  & 0.00466819 \\
+l_1 & 0.53552115 & 0.53580193 \\
+x' (\Delta t = \pm 15m) & 0.51119288 & 0.51145248 \\
+y' (\Delta t = \pm 15m) & 0.27151022 & 0.27085576\\ \hline
+\end{array}
+```
+Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
+```math
+\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
+m_0 & 1.53764686 & 1.53118707\\
+M & -1.83360014 & 0.85751540\\
+n & 0.57882291 & 0.57874561\\
+N & 1.08255544 & 1.08376454\\
+\sin(\psi) & -0.22387431 & -0.22385595\\
+\psi & 3.36738053 & -0.22576904\\
+\tau & 0.00617512 & 0.00567428\\
+T & 15:42:35 & 20:52:48\\ \hline
+\end{array}
+```
+Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases.\
+From here:
+```math
+\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
+N & 1.08255544 & 1.08376454\\
+\psi & 3.36738053 & -0.22576904\\
+\gamma \enspace(9.56) & 4.44993597 & 0.8579955\\
+\gamma' \enspace(9.58) & -1.83407792 & 0.85636199\\
+\xi \enspace(9.59)& -0.96554114 & 0.75546398\\
+\eta_1 \enspace(9.59)& -0.26025046 & 0.65519018\\
+\phi_1 \enspace(9.29)& -0.26100683 & 0.70698473\\
+\theta \enspace(9.29)& -1.53586099 &  1.68392198 \\
+\phi \enspace(9.30)& -15\degree\:0'\:9'' & 40\degree\:36'\:8''\\
+\lambda* \enspace(9.30)& 216\degree\:36'\:36'' & 323\degree\:34'\:7''\\ \hline
+\end{array}
+```
+$*$ The value of $\mu$ from the element table above (the Besselian elements after the first approximation) was used.
+
+Thus the eclipse began, globally, at $15:42:35$ at $(-15\degree$ $0'$ $9'', 216\degree$ $36'$ $36'')$, and ended, globally, at $20:52:48$ at $(40\degree$ $36'$ $8'', 323\degree$ $34'$ $7'')$.
