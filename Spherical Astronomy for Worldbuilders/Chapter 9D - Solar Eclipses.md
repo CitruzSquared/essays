@@ -73,11 +73,11 @@ Now, if we put $\psi = M - N$, we have, for the time of contacts:
 ```math
 \begin{align}
 \sin(\psi) &= \frac{m_0\sin(M_0 - N)}{p \pm l}\\
-\tau &=  \frac{(p \pm l)\cos(\pm\psi) - m_0\cos(M_0 - N)}{n}\\
+\tau &=  \frac{(p \pm l)\cos(\psi) - m_0\cos(M_0 - N)}{n}\\
 T &= T_0 + \tau
 \end{align} \tag{9.55}
 ```
-The first equation has two solutions: we take $\arcsin(\psi)$ for last contacts and $180\degree - \arcsin(\psi)$ for first contacts. Notice that in the first equation, for interior contacts, if $p - l$ is less than $m_0\sin(M_0 - N)$, then $\sin(\psi)$ exceeds $1$ and therefore no $\psi$ exists: this means that there are no interior contacts and there is always a part of the shadow that misses the Earth.
+The first equation has two solutions: we take $\psi = \arcsin()$ for last contacts and $\psi = 180\degree - \arcsin()$ for first contacts. Notice that in the first equation, for interior contacts, if $p - l$ is less than $m_0\sin(M_0 - N)$, then $\sin(\psi)$ exceeds $1$ and therefore no $\psi$ exists: this means that there are no interior contacts and there is always a part of the shadow that misses the Earth.
 
 In these formulae, we have everything we need except $p$. Because $(\xi, \eta)$ must be on the edge of the Earth, $p$ must be very close to $1$ and we can start with $p = 1$ as a first approximation. Once getting the first approximation for $\psi$, we have $M = N + \psi$, but also since at the contacts $(x, y)$ and $(\xi, \eta)$ must be on the same line (see diagram), $M = \gamma$ and thus:
 ```math
