@@ -265,7 +265,7 @@ Again, we will not calculate new Besselian elements for these times.
 ```
 Our answers can be arranged in a chart: 
 ```math
-\begin{array}{cccc}\hline \text{Contact} & \text{Time} & \text{Latitude} & \text{E. Longitude}\\ \hline
+\begin{array}{cccc}\hline \text{Contact} & \text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
 \text{First External Contact} & 15:42:27 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
 \text{First Internal Contact}  & 17:44:55 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
 \text{Last Internal Contact}  & 18:49:00 & 74\degree\:15'\:40'' & 15\degree\:19'\:52'' \\
