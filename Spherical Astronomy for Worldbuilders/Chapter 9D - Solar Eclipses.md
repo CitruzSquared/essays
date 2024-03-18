@@ -247,7 +247,7 @@ N & 1.08306354 & 1.08327401\\
 \sin(\psi) & -0.73972339 & -0.74415818\\
 \psi & 3.97425185 & -0.83927375\\
 \tau & -0.00027673 & -0.01235072\\
-T & 17:44:55 & 18:49:00\\
+T & 17:44:55 & 18:49:00\\ \hline
 \end{array}
 ```
 Again, we will not calculate new Besselian elements for these times.
