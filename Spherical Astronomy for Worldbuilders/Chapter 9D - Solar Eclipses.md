@@ -174,8 +174,8 @@ x & -1.48485233 & 1.15791302 \
 y & -0.39946392 & 1.00188386 \\
 i_1 & 0.00466846  & 0.00466819 \\
 l_1 & 0.53552115 & 0.53580193 \\
-x' (\Delta t = \pm 15m) & 0.51119288 & 0.51145248 \\
-y' (\Delta t = \pm 15m) & 0.27151022 & 0.27085576\\ \hline
+x' (t \pm 15m) & 0.51119288 & 0.51145248 \\
+y' (t \pm 15m) & 0.27151022 & 0.27085576\\ \hline
 \end{array}
 ```
 Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
@@ -236,8 +236,8 @@ x & -0.4364434 & 0.11772183 \
 y & 0.15693548 & 0.45082482 \\
 i_1 & 0.00466835  & 0.0046683 \\
 l_1 & 0.53571408 & 0.53577271 \\
-x' (\Delta t = \pm 15m) & 0.51158452 & 0.51156302 \\
-y' (\Delta t = \pm 15m) & 0.27138506 & 0.2712357\\ \hline
+x' (t \pm 15m) & 0.51158452 & 0.51156302 \\
+y' (t \pm 15m) & 0.27138506 & 0.2712357\\ \hline
 \end{array}
 ```
 Now we can continue with the second approximation and the location:
