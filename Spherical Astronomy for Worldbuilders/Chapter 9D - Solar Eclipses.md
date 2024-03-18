@@ -181,14 +181,15 @@ y' (\Delta t = \pm 15m) & 0.27151022 & 0.27085576\\ \hline
 Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-m & 1.53764686 & 1.53118707\\
-M & -1.83360014 & 0.8575154\\
+T_0 & 15:42 & 20:52
+m_0 & 1.53764686 & 1.53118707\\
+M_0 & -1.83360014 & 0.8575154\\
 n & 0.57882291 & 0.57874561\\
 N & 1.08255544 & 1.08376454\\
 \sin(\psi) & -0.22387431 & -0.22385595\\
 \psi & 3.36738053 & -0.22576904\\
 \tau & 0.00416269 & 0.00567428\\
-T & 15:42:27 & 20:52:48\\ \hline
+T & 15:42:15 & 20:52:20\\ \hline
 \end{array}
 ```
 Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases. We will not calculate new Besselian elements for the new times, we will just use the ones after the first approximation.
@@ -242,14 +243,15 @@ y' (\Delta t = \pm 15m) & 0.27138506 & 0.2712357\\ \hline
 Now we can continue with the second approximation and the location:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-m & 0.46380123 & 0.46594147\\
-M & -1.22561432 & 0.25542194\\
+T_0 & 17:45 & 18:50\\
+m_0 & 0.46380123 & 0.46594147\\
+M_0 & -1.22561432 & 0.25542194\\
 n & 0.57911016 & 0.57902118\\
 N & 1.08306354 & 1.08327401\\
 \sin(\psi) & -0.73972339 & -0.74415818\\
 \psi & 3.97425185 & -0.83927375\\
 \tau & -0.00027673 & -0.01235072\\
-T & 17:44:55 & 18:49:00\\ \hline
+T & 17:44:59 & 18:49:15 \\ \hline
 \end{array}
 ```
 Again, we will not calculate new Besselian elements for these times.
@@ -270,10 +272,10 @@ Our answers can be arranged in a chart:
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Contacts of Penumbra}\\
 \begin{array}{cccc}\hline \text{Event} & \text{Contact} &\text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
-\text{First External Contact} & P_1& 15:42:27 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
-\text{First Internal Contact} & P_2& 17:44:55 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
-\text{Last Internal Contact}  & P_3& 18:49:00 & 74\degree\:15'\:40'' & 15\degree\:19'\:52'' \\
-\text{Last External Contact}  & P_4& 20:52:48 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
+\text{First External Contact} & P_1& 15:42:16 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
+\text{First Internal Contact} & P_2& 17:44:59 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
+\text{Last Internal Contact}  & P_3& 18:49:15 & 74\degree\:15'\:40'' & 15\degree\:19'\:52'' \\
+\text{Last External Contact}  & P_4& 20:52:20 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
 \end{array}
 }
 ```
