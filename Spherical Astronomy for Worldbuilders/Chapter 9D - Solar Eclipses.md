@@ -31,7 +31,7 @@ Thus, at the contacts we have:
 ```math
 m = p\pm l 
 ```
-Where the top sign is for external contacts and the bottom is for internal contacts.\
+Where the top sign is for external contacts and the bottom is for internal contacts, and we use the *absolute value* of $l$ (because it is used as a distance here, the umbral shadow must also be written positive here).\
 Therefore, at contacts, we have:
 ```math
 \begin{align}
@@ -266,10 +266,20 @@ Again, we will not calculate new Besselian elements for these times.
 Our answers can be arranged in a chart: 
 ```math
 \begin{array}{cccc}\hline \text{Contact} & \text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
-\text{First External Contact} & 15:42:27 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
-\text{First Internal Contact}  & 17:44:55 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
-\text{Last Internal Contact}  & 18:49:00 & 74\degree\:15'\:40'' & 15\degree\:19'\:52'' \\
-\text{Last External Contact}  & 20:52:48 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
+\text{Penumbral First External Contact} & 15:42:27 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
+\text{Penumbral First Internal Contact}  & 17:44:55 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
+\text{Penumbral Last Internal Contact}  & 18:49:00 & 74\degree\:15'\:40'' & 15\degree\:19'\:52'' \\
+\text{Penumbral Last External Contact}  & 20:52:48 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
+\end{array}
+```
+
+Also, because these will be useful later, a quick first estimation for the times only gives:
+```math
+\begin{array}{cccc}\hline \text{Contact} & \text{Time} \\\hline
+\text{Umbral First External Contact} & 16:39:01\\
+\text{Umbral First Internal Contact}  & 16:41:00\\
+\text{Umbral Last Internal Contact}  & 19:53:40\\
+\text{Umbral Last External Contact}  & 19:55:40\\ \hline
 \end{array}
 ```
 $\blacksquare$
