@@ -179,8 +179,8 @@ y' (\Delta t = \pm 15m) & 0.27151022 & 0.27085576\\ \hline
 Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-m_0 & 1.53764686 & 1.53118707\\
-M_0 & -1.83360014 & 0.8575154\\
+m & 1.53764686 & 1.53118707\\
+M & -1.83360014 & 0.8575154\\
 n & 0.57882291 & 0.57874561\\
 N & 1.08255544 & 1.08376454\\
 \sin(\psi) & -0.22387431 & -0.22385595\\
@@ -240,8 +240,8 @@ y' (\Delta t = \pm 15m) & 0.27138506 & 0.2712357\\ \hline
 Now we can continue with the second approximation and the location:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-m_0 & 0.46380123 & 0.46594147\\
-M_0 & -1.22561432 & 0.25542194\\
+m & 0.46380123 & 0.46594147\\
+M & -1.22561432 & 0.25542194\\
 n & 0.57911016 & 0.57902118\\
 N & 1.08306354 & 1.08327401\\
 \sin(\psi) & -0.73972339 & -0.74415818\\
