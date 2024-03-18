@@ -248,6 +248,11 @@ N & 1.08306354 & 1.08327401\\
 \psi & 3.97425185 & -0.83927375\\
 \tau & -0.00027673 & -0.01235072\\
 T & 17:44:55 & 18:49:00\\
+\end{array}
+```
+Again, we will not calculate new Besselian elements for these times.
+```math
+\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
 \gamma & 5.05731539 & 0.24400026\\
 \gamma' & -1.22481794 & 0.24322743\\
 \xi& -0.94074412 & 0.24083631\\
