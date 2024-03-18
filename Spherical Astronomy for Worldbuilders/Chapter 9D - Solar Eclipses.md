@@ -282,4 +282,5 @@ Also, because these will be useful later, a quick first estimation for the times
 \text{Umbral Last External Contact}  & 19:55:40\\ \hline
 \end{array}
 ```
+Remember to use the absolute value of $l_2$ in the case of total eclipse.\
 $\blacksquare$
