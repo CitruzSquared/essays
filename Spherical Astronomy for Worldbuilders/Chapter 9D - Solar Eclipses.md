@@ -268,7 +268,7 @@ N + \psi = \gamma & 5.05731539 & 0.24400026\\
 Our answers can be arranged in a chart: 
 ```math
 \displaylines{
-\text{Contacts of Penumbra for the Solar Eclipse of April 8, 2024}\\
+\text{Solar Eclipse of April 8, 2024 – Contacts of Penumbra}\\
 \begin{array}{cccc}\hline \text{Event} & \text{Contact} &\text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
 \text{First External Contact} & P_1& 15:42:27 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
 \text{First Internal Contact} & P_2& 17:44:55 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
@@ -280,7 +280,7 @@ Our answers can be arranged in a chart:
 Also, because these will be useful later, a quick first estimation for the times only gives:
 ```math
 \displaylines{
-\text{Contacts of Umbra for the Solar Eclipse of April 8, 2024}\\
+\text{Solar Eclipse of April 8, 2024 – Contacts of Umbra}\\
 \begin{array}{cccc}\hline \text{Event} & \text{Contact} & \text{Time} \\\hline
 \text{First External Contact}& U_1 & 16:39:01\\
 \text{First Internal Contact} & U_2& 16:41:00\\
