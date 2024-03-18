@@ -272,7 +272,7 @@ Our answers can be arranged in a chart:
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Contacts of Penumbra}\\
 \begin{array}{cccc}\hline \text{Event} & \text{Contact} &\text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
-\text{First External Contact} & P_1& 15:42:16 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
+\text{First External Contact} & P_1& 15:42:15 & -15\degree\:0'\:9'' & 216\degree\:36'\:36'' \\
 \text{First Internal Contact} & P_2& 17:44:59 & 19\degree\:42'\:30'' & 181\degree\:9'\:46'' \\
 \text{Last Internal Contact}  & P_3& 18:49:15 & 74\degree\:15'\:40'' & 15\degree\:19'\:52'' \\
 \text{Last External Contact}  & P_4& 20:52:20 & 40\degree\:36'\:8'' & 323\degree\:34'\:7'' \\ \hline
