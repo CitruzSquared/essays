@@ -9,7 +9,9 @@ The times and points at which the shadow cone of the Moon is tangent to the Eart
 3. Last Internal Contact (Internal Egress)
 4. Last External Contact (External Egress)
 
-If the shadow in question is the penumbra, these times are called $P_1$, $P_2$, $P_3$, and $P_4$ respectively, and if the shadow is the umbra, they are called $U_1$, $U_2$, $U_3$, and $U_4$ respectively.
+The point labeled $G$ is called "Greatest Eclipse" and will be discussed later.
+
+If the shadow in question is the penumbra, the contact points are called $P_1$, $P_2$, $P_3$, and $P_4$ respectively, and if the shadow is the umbra, they are called $U_1$, $U_2$, $U_3$, and $U_4$ respectively.
 
 Evidently, $P1$ and $P4$ are the times at which the eclipse begins and ends globally, and $U1$ and $U2$ are the times at which the total (or annular) eclipse begins and ends globally.
 
