@@ -165,7 +165,7 @@ p & 0.99977731 & 0.99858559\\ \hline
 ```
 Rounding the contact times to the nearest minute the Besselian elements are:
 ```math
-\begin{array}{ccc}\hline \text{Element} & 15:42 & 20:52 \\ \hline
+\begin{array}{ccc}\hline \text{Element} & 15:42:00 & 20:52:00 \\ \hline
 d & 0.12959946 & 0.13094043\\
 \mu & 0.9667687 & 2.31976942\\
 \rho_1 & 0.9967033 & 0.99670446\\
@@ -181,7 +181,7 @@ y' (\Delta t = \pm 15m) & 0.27151022 & 0.27085576\\ \hline
 Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-T_0 & 15:42 & 20:52\\
+T_0 & 15:42:00 & 20:52:00 \\
 m_0 & 1.53764686 & 1.53118707\\
 M_0 & -1.83360014 & 0.8575154\\
 n & 0.57882291 & 0.57874561\\
@@ -227,7 +227,7 @@ p & 0.99962314 & 0.99690667\\ \hline
 ```
 Rounding the contact times to the nearest minute the Besselian elements are:
 ```math
-\begin{array}{ccc}\hline \text{Element} & 17:45 & 18:50 \\ \hline
+\begin{array}{ccc}\hline \text{Element} & 17:45:00 & 18:50:00 \\ \hline
 d & 0.13013186 & 0.13041266\\
 \mu & 1.50360469 & 1.78729814\\
 \rho_1 & 0.99670376 & 0.996704\\
@@ -243,7 +243,7 @@ y' (\Delta t = \pm 15m) & 0.27138506 & 0.2712357\\ \hline
 Now we can continue with the second approximation and the location:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-T_0 & 17:45 & 18:50\\
+T_0 & 17:45:00 & 18:50:00 \\
 m_0 & 0.46380123 & 0.46594147\\
 M_0 & -1.22561432 & 0.25542194\\
 n & 0.57911016 & 0.57902118\\
