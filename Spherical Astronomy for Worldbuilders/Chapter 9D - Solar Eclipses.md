@@ -181,7 +181,7 @@ y' (\Delta t = \pm 15m) & 0.27151022 & 0.27085576\\ \hline
 Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-T_0 & 15:42 & 20:52
+T_0 & 15:42 & 20:52\\
 m_0 & 1.53764686 & 1.53118707\\
 M_0 & -1.83360014 & 0.8575154\\
 n & 0.57882291 & 0.57874561\\
