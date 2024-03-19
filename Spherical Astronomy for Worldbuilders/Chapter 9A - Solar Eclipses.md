@@ -312,7 +312,7 @@ Which can also be expressed trigonometrically, which will be useful later:
 \end{align}
 }\tag{9.10}
 ```
-Where $Q$ is the angle $NC_1F$ Notice that $Q$ describes the position angle of the shadow in relation to the observer.
+Where $Q$ is the angle $NC_1F$. Notice that $Q$ describes the position angle of the shadow in relation to the observer.
 
 <br/>
 
