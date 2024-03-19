@@ -308,7 +308,7 @@ c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)
 ```
 Also, $\zeta$ can also be substituted for $\zeta_1$ in either equation $9.50$ or $9.50*$ if wanted.
 
-Notice that if $P' = 0$, then by equation $9.38$, $P = 0$ and therefore the eclipse is *beginning and ending at the same time*. This means that the observer is right at the point where the Moon just barely grazes the Sun, and therefore is on the limit of visibility of eclipse. This will be important later.
+Notice that if $P' = 0$, then by equation $9.38$, $P = 0$ and therefore the eclipse is *neither beginning nor ending* (or beginning and ending at the same time if you prefer). This means that if $P' = 0$ at a certain time and location, the eclipse there is at maximum: at that time the Sun is obscured by the Moon as much as it ever will be at that location. This will be important later.
 
 #### Example 9.4
 <div align="center">
