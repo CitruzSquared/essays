@@ -312,7 +312,7 @@ Which can also be expressed trigonometrically, which will be useful later:
 \end{align}
 }\tag{9.10}
 ```
-Where $Q$ is the angle $NC_1F$. Notice that $Q$ describes the position angle of the shadow in relation to the observer. From these equations we can also see that if $\Delta \cos(Q) > 0$, $y - \eta > 0$ and thus $\eta$ must be less than $y$, i.e. the observer is to the South of the shadow. Similarly, if $\Delta \cos(Q) < 0$, then $y - \eta < 0$ and so the observer must be North of the shadow.
+Where $Q$ is the angle $NC_1F$. Notice that $Q$ describes the position angle of the shadow in relation to the observer, and so we can generalize $Q$ to cover the full range from $0\degree$ to $360\degree$ via equation $9.10$. From these equations we can also see that if $\Delta \cos(Q) > 0$, $y - \eta > 0$ and thus $\eta$ must be less than $y$, i.e. the observer is to the South of the shadow. Similarly, if $\Delta \cos(Q) < 0$, then $y - \eta < 0$ and so the observer must be North of the shadow.
 
 ### The Size of the Shadow
 
