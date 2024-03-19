@@ -294,7 +294,18 @@ Collecting terms as $\sin(Q)$ and $\cos(Q)$, we obtain:
 ```math
 P' = a' + \sin(Q)(c' - (i^2 + 1)\zeta \mu'\cos(d)) + \cos(Q)(-b' + (i^2 + 1)\zeta d') \tag{9.50}
 ```
-Equation $9.50$ is known as the *second fundamental equation of eclipse theory*. Note that the approximations $id' = 0$, $i^2 + 1 = 1$, and $\zeta = \zeta_1$ may be made here without any significant loss of precision (in most reasonable cases).
+Equation $9.50$ is known as the *second fundamental equation of eclipse theory*. Note that the approximations $id' = 0$, $i^2 + 1 = 1$, and $\zeta = \zeta_1$ may be made here without any significant loss of precision (in most reasonable cases), which gives:
+```math
+P' = a' + \sin(Q)(c' - \zeta_1 \mu'\cos(d)) + \cos(Q)(-b' + \zeta_1 d') \tag{9.50*}
+```
+With
+```math
+\begin{align}
+a' &= -l' + \mu' i x\cos(d) \\
+b' &= -y' + \mu' x \sin(d) \tag{9.49*}\\
+c' &= x' + \mu'y\sin(d) + li\mu'\cos(d)
+\end{align}
+```
 
 Notice that if $P' = 0$, then by equation $9.38$, $P = 0$ and therefore the eclipse is *beginning and ending at the same time*. This means that the observer is right at the point where the Moon just barely grazes the Sun, and therefore is on the limit of visibility of eclipse. This will be important later.
 
