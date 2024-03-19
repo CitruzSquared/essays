@@ -296,7 +296,7 @@ P' = a' + \sin(Q)(c' - (i^2 + 1)\zeta \mu'\cos(d)) + \cos(Q)(-b' + (i^2 + 1)\zet
 ```
 Equation $9.50$ is known as the *second fundamental equation of eclipse theory*. Note that the approximations $id' = 0$ and $i^2 + 1 = 1$ may be made here without much loss of precision (in most reasonable cases), which gives:
 ```math
-P' = a' + \sin(Q)(c' - \zeta_1 \mu'\cos(d)) + \cos(Q)(-b' + \zeta_1 d') \tag{9.50*}
+P' = a' + \sin(Q)(c' - \zeta \mu'\cos(d)) + \cos(Q)(-b' + \zeta d') \tag{9.50*}
 ```
 With
 ```math
