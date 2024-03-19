@@ -361,7 +361,25 @@ P' &= -0.000435308 + \sin(90\degree)(0.51976555 - (0.0046683^2 + 1)\cdot0.489843
 &= 0.39213761 > 0
 \end{align}
 ```
-Since $P' > 0$ and $L > 0$ (penumbra), $P > 0$ by equation $9.38$ and therefore the eclipse was ending.\
+Since $P' > 0$ and $L > 0$ (penumbra), $P > 0$ by equation $9.38$ and therefore the eclipse was ending.
+
+For comparison, equation $9.49*$ gives:
+```math
+\begin{align}
+a' &= -0.00006156 + 0.26187054 \cdot0.0046683 \cdot(-0.30856088)\cos(7\degree\:27'\:34.93'')\\
+&= -0.000435580\\
+b' &= -0.27129112 + 0.26187054 \cdot(-0.30856088) \sin(7\degree\:27'\:34.93'')\\
+&= -0.28178168\\
+c' &= 0.51147366 + 0.26187054\cdot0.22479055\sin(7\degree\:27'\:34.93'') + 0.53573027\cdot 0.0046683\cdot0.26187054\cos(7\degree\:27'\:34.93'')\\
+&= 0.51976555
+\end{align}
+```
+And equation $9.50*$ gives:
+```math
+P' &= -0.000435580 + \sin(90\degree)(0.51976555 - 0.48984331\cdot 0.26187054\cos(7\degree\:27'\:34.93''))\\
+& + \cos(90\degree)(-(-0.28178168) + 0.48984331\cdot 0.00025898)\\
+&= 0.39214011 > 0
+```
 $\blacksquare$
 
 ### Contacts
