@@ -284,12 +284,23 @@ Also, because these will be useful later, a quick first estimation for the times
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Contacts of Umbra}\\
 \begin{array}{cccc}\hline \text{Event} & \text{Contact} & \text{Time} \\\hline
-\text{First External Contact}& U_1 & 16:39:01\\
-\text{First Internal Contact} & U_2& 16:41:00\\
+\text{First External Contact}& U_1 & 16:39:00\\
+\text{First Internal Contact} & U_2& 16:40:59\\
 \text{Last Internal Contact} & U_3& 19:53:40\\
 \text{Last External Contact} & U_4& 19:55:40\\ \hline
 \end{array}
 }
 ```
-Remember to use the absolute value of $l_2$ in the case of total eclipse.\
+Remember to use the absolute value of $l_2$ in the case of total eclipse.
+
+Using $l = 0$, we can get the contacts of *central eclipse*:
+```math
+\displaylines{
+\text{Solar Eclipse of April 8, 2024 – Central Contacts}\\
+\begin{array}{cccc}\hline \text{Event} & \text{Contact} & \text{Time} \\\hline
+\text{First Central Contact}& C_1 & 16:40:00\\
+\text{Last Central Contact} & C_2& 19:54:40\\ \hline
+\end{array}
+}
+```
 $\blacksquare$
