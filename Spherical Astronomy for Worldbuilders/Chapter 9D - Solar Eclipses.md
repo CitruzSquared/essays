@@ -153,14 +153,23 @@ T_\text{First External} &= 18:00 - 2.29656737h = 15:42:12\\
 T_\text{Last External} &= 18:00 + 2.87434701h = 20:52:28
 \end{align}
 ```
-Then by equation $9.56$ and $9.58$:
+Then by equation $9.56$ and $9.58$:\
+(For the first external contact and using $\rho_1$ for $18:00$)
 ```math
-\begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-N & 1.08311714 & 1.08311714\\
-\psi & 3.3669523 & -0.22535964\\
-\gamma & 4.45006944 & 0.8577575\\
-\gamma' & -1.83394395 & 0.85612355\\
-p & 0.99977731 & 0.99858559\\ \hline
+\begin{alignat}{2}
+\gamma &= N + \psi = 1.08311714 + 3.3669523 &&= 4.45006944\\
+\gamma' &= \arctan(0.99670381 \sin(4.45006944), \cos(4.45006944)) &&= -1.83394395\\
+p &= \frac{\sin(-1.83394395)}{\sin(4.45006944)} &&= 0.999777311
+\end{alignat}
+```
+Similarly, for the last external contact:
+```math
+\begin{array}{cc}\hline & \text{Last Contact} \\ \hline
+N  & 1.08311714\\
+\psi & -0.22535964\\
+\gamma & 0.8577575\\
+\gamma' & 0.85612355\\
+p & 0.99858559\\ \hline
 \end{array}
 ```
 Rounding the contact times to the nearest minute the Besselian elements are: (For a more accurate calculation, calculate Besselian elements at exactly those times we calculated. We only round here because the ephemeris we are using only gives minute precision.)
