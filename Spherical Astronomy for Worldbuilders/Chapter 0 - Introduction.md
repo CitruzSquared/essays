@@ -78,8 +78,11 @@
       * The Size of the Shadow
    - Part B (Eq. $9.16$ to $9.34$, Ex. $9.3$)
       * The Outline of the Shadow on the Surface of the Earth
-   - Part C (Eq. $9.35$ to $9.50$, Ex. $9.5$)
+   - Part C (Eq. $9.35$ to $9.50$, Ex. $9.4$)
      * Beginning / Ending Condition
+   - Part D (Eq. $9.51$ to $ $, Ex. $9.5$ to $9.6$)
+     * Contacts
+     * Rising / Setting Limits
 10. **Lunar Eclipses**
 11. **Transits**
 12. **Lunar Occultations**
