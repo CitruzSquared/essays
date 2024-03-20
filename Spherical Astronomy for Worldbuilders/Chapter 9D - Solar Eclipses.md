@@ -217,8 +217,8 @@ N & 1.08255544 & 1.08376454\\
 \lambda \enspace(9.30)& 216\degree\:36'\:36'' & 323\degree\:34'\:7''\\ \hline
 \end{array}
 ```
-
-For the internal contacts, again taking $T_0 = 18:00$ and $p=1$ as a first approximation:
+Now for the internal contacts, where we use $p - l$ in equation $9.55$.\
+Again taking $T_0 = 18:00$ and $p=1$ as a first approximation:
 ```math
 \begin{array}{ccc}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
 m_0 & 0.38175987 & 0.38175987\\
