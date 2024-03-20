@@ -84,7 +84,7 @@
      * Contacts
      * Rising / Setting Limits
 10. **Lunar Eclipses**
-11. **Transits**
+11. **Solar Transits**
 12. **Lunar Occultations**
 
 ## Useful Mathematics
