@@ -1,4 +1,4 @@
-### Elements for the Solar Eclipse of $\text{April 8, 2024}$.
+### Elements for the Solar Eclipse of April 8, 2024
 All angles are given in radians and all distances are given in Earth equatorial radii. All values are rounded to eight decimal digits, then trailing zeros are dropped.
 #### Besselian Elements
 ```math
