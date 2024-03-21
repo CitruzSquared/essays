@@ -128,9 +128,9 @@ $a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c
 ### A Note on Interpolation
 If one were to interpolate between the times given in the tables, a linear interpolation is enough:
 ```math
-f(t) = \frac{f(t_2) - f(t_1))}{t_2 - t_1} t
+f(t) = \frac{f(t_1) - f(t_2))}{t_1 - t_2} t + f(t_1)
 ```
-Where $t_2$ and $t_1$ are the times of two adjacent entries given by the table. In this specific case, $t_2 - t_1$ is always $0.25h$ since the tables are given for every $0.25h$. However, one might notice that one cannot simply interpolate both the derivative of a function and the function itself linearly: if the derivative is linear then the function must be quadratic. However, because Besselian elements are so linear in nature (for most reasonable cases), linearly interpolating both the element and its derivative is excusable. However, if mathematical rigor is desired, when two points $(t_1, y_1)$ and $(t_2, y_2)$ and the derivatives at those points $f'(t_1) = d_1$ and $f'(t_2) = d_2$ are given: a cubic interpolation is consistent:
+Where $t_2$ and $t_1$ are the times of two adjacent entries given by the table with $t_2 > t_1$. In this specific case, $t_2 - t_1$ is always $0.25h$ since the tables are given for every $0.25h$. However, one might notice that one cannot simply interpolate both the derivative of a function and the function itself linearly: if the derivative is linear then the function must be quadratic. However, because Besselian elements are so linear in nature (for most reasonable cases), linearly interpolating both the element and its derivative is excusable. However, if mathematical rigor is desired, when two points $(t_1, y_1)$ and $(t_2, y_2)$ and the derivatives at those points $f'(t_1) = d_1$ and $f'(t_2) = d_2$ are given: a cubic interpolation is consistent:
 ```math
 f(t) = at^3 + bt^2 + ct + d
 ```
