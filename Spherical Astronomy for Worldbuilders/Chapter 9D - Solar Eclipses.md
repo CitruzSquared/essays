@@ -462,3 +462,9 @@ In the same manner the following table is computed:
 \end{array}
 }
 ```
+$\blacksquare$
+
+Note that computing the rising and setting limits for the umbra (and therefore determining where on the Earth totality or annularity begins or ends at sunrise or sunset) is also possible. (This involves calculating the umbral contacts $U_1$, $U_2$, $U_3$, and $U_4$.) While theoretically possible, the area of totality on the horizon is so small on the Earth that it is of almost no importance. However, if in a worldbuilding scenario the Moon appeared larger in the sky and therefore the umbral shadow larger, this may be of significance and worth calculating. The method of calculation is identical to that of examples $9.5$ and $9.6$, simply change all the penumbral variables to umbral ones. Therefore, we will not be calculating the rising and setting limits of the umbra here.
+
+### Curve of Maximum on the Horizon
+(Continued in Part E...)
