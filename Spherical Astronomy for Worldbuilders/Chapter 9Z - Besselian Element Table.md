@@ -123,4 +123,4 @@ For practical calculation purposes, $\rho_1$ and $\rho_2$ may be regarded as con
 21:00 &  &  &  \\ \hline
 \end{array}
 ```
-$a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c_2'$ are calculated with $l_2$.
+$a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c_2'$ are calculated with $l_2$. Equation $9.49$ was used.
