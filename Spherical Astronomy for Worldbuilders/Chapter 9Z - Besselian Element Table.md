@@ -56,7 +56,7 @@ All angles are given in radians and all distances are given in Earth equatorial 
 21:00  &  &  &  &  &  &  \\ \hline
 \end{array}
 ```
-$i$ can be regarded as a constant and their average value (or their value at some time near the middle of the eclipse) may be taken for the whole eclipse. \
+$i_1$ and $i_2$ can be regarded as constant and their average value (or their value at some time near the middle of the eclipse) may be taken for the whole eclipse. \
 The derivatives at $15:30$ and $21:00$ were calculated with the adjacent entry and $\Delta t = 0.25h$.
 #### Geodetic Elements
 ```math
