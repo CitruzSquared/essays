@@ -313,3 +313,7 @@ Using $l = 0$, we can get the contacts of *central eclipse*:
 }
 ```
 $\blacksquare$
+
+Now that we know that this eclipse began globally at $15:42$ and ended at $20:52$, we can calculate the Besselian elements and tabulate them. If one is writing a program to do this, tabulation is unnecessary, simply start at the beginning time, calculate the elements and the coordinates of the location of the shadow of the Moon at that time, then increment the time by a preselected $\Delta t$ (the smaller the better).
+
+The Besselian elements for this eclipse, calculated at $15$ minute intervals using methods detailed previously, can be found in Chapter $9Z$.
