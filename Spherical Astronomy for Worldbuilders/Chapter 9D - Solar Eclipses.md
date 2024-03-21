@@ -403,6 +403,8 @@ These points we just calculated are these two points (marked red) on this map:
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/cb85358d-a578-45f0-ad8a-c871c2391b5d"> <br/>
 </p>
 
+The fact that they are both for sunrise is to be expected since $16:00$ is between $P_1$ and $P_2$ and therefore falls in the sunrise lobe.
+
 To determine whether the eclipse is beginning or ending at these points, we have (for $16:00$):
 ```math
 \begin{align}
