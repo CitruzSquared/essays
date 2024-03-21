@@ -56,7 +56,8 @@ All angles are given in radians and all distances are given in Earth equatorial 
 21:00  &  &  &  &  &  &  \\ \hline
 \end{array}
 ```
-$i$ can be regarded as a constant. The derivatives at $15:30$ and $21:00$ were calculated with the adjacent entry and $\Delta t = 0.25h$.
+$i$ can be regarded as a constant and their average value (or their value at some time near the middle of the eclipse) may be taken for the whole eclipse. \
+The derivatives at $15:30$ and $21:00$ were calculated with the adjacent entry and $\Delta t = 0.25h$.
 #### Geodetic Elements
 ```math
 \begin{array}{|c|c|c|c|c|} \hline T & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
@@ -85,7 +86,7 @@ $i$ can be regarded as a constant. The derivatives at $15:30$ and $21:00$ were c
 21:00  & 0.99670449 & 0.13141033 & 0.99994291 & 0.13054062 \\ \hline
 \end{array}
 ```
-
+For practical calculation purposes, $\rho_1$ and $\rho_2$ may be regarded as constant and their average value (or their value at some time near the middle of the eclipse) may be taken for the whole eclipse.
 #### Auxiliary Elements
 ```math
 \begin{array}{|c|c|c|c|c|c|c|} \hline T & a_1' & b_1' & c_1' & a_2' & b_2' & c_2' \\ \hline
