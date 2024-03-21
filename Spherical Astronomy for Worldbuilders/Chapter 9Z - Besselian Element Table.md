@@ -56,7 +56,7 @@ All angles are given in radians and all distances are given in Earth equatorial 
 21:00  &  &  &  &  &  &  \\ \hline
 \end{array}
 ```
-$i_1$ and $i_2$ can be regarded as constant and their average value (or their value at some time near the middle of the eclipse) may be taken for the whole eclipse. \
+$di/dt$ can be regarded as $0$.
 Derivatives were calculated as:
 ```math
 f'(T) = \frac{f(T + 0.25h) - f(T - 0.25h)}{0.5h}
