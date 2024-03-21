@@ -56,7 +56,7 @@ All angles are given in radians and all distances are given in Earth equatorial 
 21:00  &  &  &  &  &  &  \\ \hline
 \end{array}
 ```
-$di/dt$ can be regarded as $0$.
+$di/dt$ can be regarded as $0$.\
 Derivatives were calculated as:
 ```math
 f'(T) = \frac{f(T + 0.25h) - f(T - 0.25h)}{0.5h}
