@@ -114,3 +114,4 @@ $i$ can be regarded as a constant. The derivatives at $15:30$ and $21:00$ were c
 21:00 &  &  &  \\ \hline
 \end{array}
 ```
+$a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c_2'$ are calculated with $l_2$.
