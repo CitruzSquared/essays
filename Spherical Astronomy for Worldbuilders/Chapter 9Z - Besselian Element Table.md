@@ -137,7 +137,7 @@ Where $t_2$ and $t_1$ are the times of two adjacent entries given by the table w
 ```math
 f(t) = at^3 + bt^2 + ct + d
 ```
-with
+Where
 ```math
 \begin{align}
 a &= \frac{1}{\left(t_{1}-t_{2}\right)^{2}}\left(-\frac{2y_{1}}{t_{1}-t_{2}}+\frac{2y_{2}}{t_{1}-t_{2}}+d_{1}+d_{2}\right)\\
