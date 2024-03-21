@@ -422,7 +422,7 @@ x - p\sin(\gamma) = l\sin(Q) \enspace(9.60) & -0.33634517 & -0.48884153 \\
 y - p\cos(\gamma) = l\cos(Q) \enspace(9.60) & -0.41676403 & 0.21875621 \\
 Q & -2.46257385 & -1.15002398 \\
 P' \enspace(9.63) & - 0.56278455 & - 0.32986385\\
- & \text{Beginning} & \text{Beginning}\\ \hline
+P' < 0 \text{ and } l > 0 & \text{Beginning} & \text{Beginning}\\ \hline
 \end{array}
 ```
 Note that here, we could have gotten a more accurate value for $Q$ by calculating a more accurate value for $p$ using the value of $\gamma'$ we calculated earlier, but this is wholly unnecessary when only the algebraic sign of $P'$ is necessary.
