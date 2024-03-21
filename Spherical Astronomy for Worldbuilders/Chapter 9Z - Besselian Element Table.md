@@ -63,8 +63,10 @@ f'(T) = \frac{f(T + 0.25h) - f(T - 0.25h)}{0.5h}
 ```
 However, the derivatives at $15:30$ and $21:00$ were calculated as:
 ```math
-f'(T) = \frac{f(T \pm 0.25h) - f(T)}{0.25h}
+f'(T) = \frac{f(T + 0.25h) - f(T)}{0.25h}
+f'(T) = \frac{f(T) - f(T - 0.25h)}{0.25h}
 ```
+Using the first equation for $15:30$ and the second for $21:00$.
 #### Geodetic Elements
 ```math
 \begin{array}{|c|c|c|c|c|} \hline T & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
