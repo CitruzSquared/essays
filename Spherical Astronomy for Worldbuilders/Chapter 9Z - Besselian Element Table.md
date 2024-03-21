@@ -126,6 +126,8 @@ For practical calculation purposes, $\rho_1$ and $\rho_2$ may be regarded as con
 ```
 $a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c_2'$ are calculated with $l_2$. The latter are hardly ever used if at all. Equation $9.49$ was used.
 
+Note that it is perfectly fine to interpolate the Besselian elements, their derivatives, and the geodetic elements for times not shown in the tables, it is best practice to recalculate these auxiliary elements for the intermediate times using those interpolated elements, instead of interpolating the auxiliary elements directly.
+
 ### A Note on Interpolation
 If one were to interpolate between the times given in the tables, a linear interpolation is enough:
 ```math
