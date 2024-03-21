@@ -129,7 +129,7 @@ $a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c
 Note that it is perfectly fine to interpolate the Besselian elements, their derivatives, and the geodetic elements for times not in the tables, it is best practice to recalculate these auxiliary elements for the intermediate times using those interpolated elements, instead of interpolating the auxiliary elements directly.
 
 ### A Note on Interpolation
-If one were to interpolate between the times given in the tables, a linear interpolation is enough:
+If one were to interpolate between the times given in the tables, a linear interpolation is enough in reasonable cases:
 ```math
 f(t) = \frac{f(t_2) - f(t_1))}{t_2 - t_1} (t - t_1) + f(t_1)
 ```
