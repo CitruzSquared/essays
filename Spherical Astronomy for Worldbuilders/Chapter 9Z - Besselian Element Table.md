@@ -130,7 +130,7 @@ If one were to interpolate between the times given in the tables, a linear inter
 ```math
 f(x) = \frac{f(x_2) - f(x_1))}{x_2 - x_1} \cdot (x - x_1)
 ```
-Where $b$ and $a$ are the times of two adjacent entries given by the table, with $x_2 > x_1$. Therefore in this specific case $x_2 - x_1$ is always $0.25h$ since the tables are given for every $0.25h$. However, one might notice that one cannot simply interpolate both the derivative of a function and the function itself linearly: if the derivative is linear then the function must be quadratic. In this case, because Besselian elements are so linear in nature, linearly interpolating both the element and its derivative is excusable. However, if mathematical rigor is desired, when two points $(x_1, y_1)$ and $(x_2, y_2)$ and the derivatives at those points $f'(x_1) = d_1$ and $f'(x_2) = d_2$ are given: a cubic interpolation is consistent:
+Where $x_2$ and $x_1$ are the times of two adjacent entries given by the table, with $x_2 > x_1$. Therefore in this specific case $x_2 - x_1$ is always $0.25h$ since the tables are given for every $0.25h$. However, one might notice that one cannot simply interpolate both the derivative of a function and the function itself linearly: if the derivative is linear then the function must be quadratic. In this case, because Besselian elements are so linear in nature, linearly interpolating both the element and its derivative is excusable. However, if mathematical rigor is desired, when two points $(x_1, y_1)$ and $(x_2, y_2)$ and the derivatives at those points $f'(x_1) = d_1$ and $f'(x_2) = d_2$ are given: a cubic interpolation is consistent:
 ```math
 f(x) = ax^3 + bx^2 + cx + d
 ```
