@@ -383,7 +383,7 @@ Now we substitute this value of $p$ into equation $9.61$:
 ```math
 \begin{array}{r|c|c} \sin(\psi/2) & 0.16591397 & -2.13865659 \\
 \psi & 0.33336951 & -0.33276149 \\
-\gamma & -1.4718964 &  -2.1380274 \\
+M + \psi = \gamma & -1.4718964 &  -2.1380274 \\
 \gamma' & -1.47157142 & -2.13952479 
 \end{array}
 ```
