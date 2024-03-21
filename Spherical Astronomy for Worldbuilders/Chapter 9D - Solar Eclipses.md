@@ -458,7 +458,7 @@ In the same manner the following table is computed:
 20:00 & 16\degree\:46' & 332\degree\:22' & \text{Begins} & \text{at} & \text{Sunset} && 75\degree\:20' & 0\degree\:14' & \text{Ends} & \text{at} & \text{Sunset} \\
 20:15 & 18\degree\:1' & 328\degree\:47' & \text{Ends} & \text{at} & \text{Sunset} && 70\degree\:6' & 347\degree\:39' & \text{Ends} & \text{at} & \text{Sunset} \\
 20:30 & 21\degree\:34' & 325\degree\:34' & \text{Ends} & \text{at} & \text{Sunset} && 63\degree\:19' & 337\degree\:46' & \text{Ends} & \text{at} & \text{Sunset} \\
-20:45 & 28\degree\:49' & 330\degree\:0' & \text{Ends} & \text{at} & \text{Sunset} && 53\degree\:23' & 329\degree\:3' & \text{Ends} & \text{at} & \text{Sunset} \\
+20:45 & 28\degree\:49' & 323\degree\:0' & \text{Ends} & \text{at} & \text{Sunset} && 53\degree\:23' & 329\degree\:3' & \text{Ends} & \text{at} & \text{Sunset} \\
 20:52:20 & 40\degree\:36' & 323\degree\:34' & \text{Ends} & \text{at} & \text{Sunset} && & & & & \\ \hline
 \end{array}
 }
