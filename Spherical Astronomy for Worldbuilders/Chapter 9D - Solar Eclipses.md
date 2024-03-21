@@ -426,3 +426,39 @@ P' < 0 \text{ and } l > 0 & \text{Beginning} & \text{Beginning}\\ \hline
 \end{array}
 ```
 Note that here, we could have gotten a more accurate value for $Q$ by calculating a more accurate value for $p$ using the value of $\gamma'$ we calculated earlier, but this is wholly unnecessary when only the algebraic sign of $P'$ is necessary.
+
+In the same manner the results in the following table are found:
+```math
+\displaylines{
+\text{Solar Eclipse of April 8, 2024 – Rising and Setting Limits – Sunrise Lobe}\\
+\begin{array}{|c|c|c|ccc|c|c|c|ccc|}\hline \text{Time} & \text{Latitude} & \text{Longitude} & & & & & \text{Latitude} & \text{Longitude} & & & \\ \hline
+15:42:15 & -15\degree\:0' & 216\degree\:37' & \text{Begins} & \text{at} & \text{Sunrise} && & & & &\\
+15:45 & -7\degree\:6' & 214\degree\:47' & \text{Begins} & \text{at} & \text{Sunrise} && -22\degree\:23' & 216\degree\:56' & \text{Begins} & \text{at} & \text{Sunrise} \\
+16:00 & 5\degree\:39' & 209\degree\:22' & \text{Begins} & \text{at} & \text{Sunrise} && -32\degree\:22' & 214\degree\:51' & \text{Begins} & \text{at} & \text{Sunrise} \\
+16:15 & 13\degree\:26' & 204\degree\:34' & \text{Begins} & \text{at} & \text{Sunrise} && -36\degree\:46' & 211\degree\:57' & \text{Begins} & \text{at} & \text{Sunrise} \\
+16:30 & 19\degree\:36' & 199\degree\:56' & \text{Begins} & \text{at} & \text{Sunrise} && -38\degree\:41' & 208\degree\:36' & \text{Begins} & \text{at} & \text{Sunrise} \\
+16:45 & 24\degree\:45' & 195\degree\:24' & \text{Begins} & \text{at} & \text{Sunrise} && -38\degree\:24' & 204\degree\:48' & \text{Ends} & \text{at} & \text{Sunrise} \\
+17:00 & 29\degree\:1' & 190\degree\:57' & \text{Begins} & \text{at} & \text{Sunrise} && -35\degree\:29' & 200\degree\:27' & \text{Ends} & \text{at} & \text{Sunrise} \\
+17:15 & 32\degree\:15' & 186\degree\:37' & \text{Begins} & \text{at} & \text{Sunrise} && -28\degree\:45' & 195\degree\:28' & \text{Ends} & \text{at} & \text{Sunrise} \\
+17:30 & 33\degree\:29' & 182\degree\:38' & \text{Ends} & \text{at} & \text{Sunrise} && -15\degree\:34' & 189\degree\:41' & \text{Ends} & \text{at} & \text{Sunrise} \\
+17:44:59 & 19\degree\:43' & 181\degree\:10' & \text{Ends} & \text{at} & \text{Sunrise} && & & & & \\ \hline
+\end{array}
+}
+```
+```math
+\displaylines{
+\text{Solar Eclipse of April 8, 2024 – Rising and Setting Limits – Sunset Lobe}\\
+\begin{array}{|c|c|c|ccc|c|c|c|ccc|}\hline \text{Time} & \text{Latitude} & \text{Longitude} & & & & & \text{Latitude} & \text{Longitude} & & & \\ \hline
+18:49:15 & 74\degree\:16' & 15\degree\:20' & \text{Begins} & \text{at} & \text{Sunset} && & & & &\\
+19:00 & 46\degree\:5' & 352\degree\:56' & \text{Begins} & \text{at} & \text{Sunset} && 82\degree\:30' & 69\degree\:48' & \text{Begins} & \text{at} & \text{Sunset} \\
+19:15 & 30\degree\:7' & 345\degree\:43' & \text{Begins} & \text{at} & \text{Sunset} && 82\degree\:28' & 64\degree\:46' & \text{Ends} & \text{at} & \text{Sunset} \\
+19:30 & 21\degree\:48' & 340\degree\:36' & \text{Begins} & \text{at} & \text{Sunset} && 81\degree\:39' & 41\degree\:11' & \text{Ends} & \text{at} & \text{Sunset} \\
+19:45 & 17\degree\:50' & 336\degree\:16' & \text{Begins} & \text{at} & \text{Sunset} && 79\degree\:15' & 17\degree\:39' & \text{Ends} & \text{at} & \text{Sunset} \\
+20:00 & 16\degree\:46' & 332\degree\:22' & \text{Begins} & \text{at} & \text{Sunset} && 75\degree\:20' & 0\degree\:14' & \text{Ends} & \text{at} & \text{Sunset} \\
+20:15 & 18\degree\:1' & 328\degree\:47' & \text{Ends} & \text{at} & \text{Sunset} && 70\degree\:6' & 347\degree\:39' & \text{Ends} & \text{at} & \text{Sunset} \\
+20:30 & 21\degree\:34' & 325\degree\:34' & \text{Ends} & \text{at} & \text{Sunset} && 63\degree\:19' & 337\degree\:46' & \text{Ends} & \text{at} & \text{Sunset} \\
+20:45 & 28\degree\:49' & 330\degree\:0' & \text{Ends} & \text{at} & \text{Sunset} && 53\degree\:23' & 329\degree\:3' & \text{Ends} & \text{at} & \text{Sunset} \\
+20:52:20 & 40\degree\:36' & 323\degree\:34' & \text{Ends} & \text{at} & \text{Sunrise} && & & & & \\ \hline
+\end{array}
+}
+```
