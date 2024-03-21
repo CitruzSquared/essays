@@ -57,7 +57,14 @@ All angles are given in radians and all distances are given in Earth equatorial 
 \end{array}
 ```
 $i_1$ and $i_2$ can be regarded as constant and their average value (or their value at some time near the middle of the eclipse) may be taken for the whole eclipse. \
-The derivatives at $15:30$ and $21:00$ were calculated with the adjacent entry and $\Delta t = 0.25h$.
+Derivatives are calculated as:
+```math
+f'(T) = \frac{f(T + 0.25h) - f(T - 0.25h)}{0.5h}
+```
+However, the derivatives at $15:30$ and $21:00$ were calculated as:
+```math
+f'(T) = \frac{f(T \pm 0.25h) - f(T)}{0.25h}
+```
 #### Geodetic Elements
 ```math
 \begin{array}{|c|c|c|c|c|} \hline T & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
