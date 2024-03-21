@@ -232,7 +232,7 @@ N + \psi = \gamma & 4.44993597 & 0.8579955 & 5.05731539 & 0.24400026\\
 \lambda \enspace(9.30)& 216\degree\:36'\:36'' & 323\degree\:34'\:7'' & 181\degree\:9'\:46'' & 15\degree\:19'\:52''\\ \hline
 \end{array}
 ```
-Our answers can be arranged in a chart: 
+Our answers can be arranged in a table: 
 ```math
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Contacts of Penumbra}\\
