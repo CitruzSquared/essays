@@ -427,7 +427,7 @@ P' < 0 \text{ and } l > 0 & \text{Beginning} & \text{Beginning}\\ \hline
 ```
 Note that here, we could have gotten a more accurate value for $Q$ by calculating a more accurate value for $p$ using the value of $\gamma'$ we calculated earlier, but this is wholly unnecessary when only the algebraic sign of $P'$ is necessary.
 
-In the same manner the results in the following table are found:
+In the same manner the following table is computed:
 ```math
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Rising and Setting Limits – Sunrise Lobe}\\
