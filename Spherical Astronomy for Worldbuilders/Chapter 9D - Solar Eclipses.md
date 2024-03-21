@@ -180,8 +180,8 @@ N & 1.08311714 & 1.08311714\\
 \sin(\psi) & -0.7391599 & -0.7391599\\
 \psi & 3.97341485 & -0.83182219\\
 \tau & -0.25120821 & 0.82898786\\
-T & 17:44:56 & 18:49:44\\
-\gamma & 5.05653199 & 0.25129495\\
+T_0 + \tau = T & 17:44:56 & 18:49:44\\
+N + \psi = \gamma & 5.05653199 & 0.25129495\\
 \gamma' & -1.22560336 & 0.25050091\\
 p & 0.99962314 & 0.99690667\\ \hline
 \end{array}
@@ -213,7 +213,7 @@ N & 1.08255544 & 1.08376454 & 1.08306354 & 1.08327401\\
 \sin(\psi) & -0.22387431 & -0.22385595 & -0.73972339 & -0.74415818\\
 \psi & 3.36738053 & -0.22576904  & 3.97425185 & -0.83927375\\
 \tau & 0.00416269 & 0.00567428 & -0.00027673 & -0.01235072\\
-T & 15:42:15 & 20:52:20 & 17:44:59 & 18:49:15
+T_0 + \tau = T & 15:42:15 & 20:52:20 & 17:44:59 & 18:49:15
 \end{array}
 ```
 Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases. We will not calculate new Besselian elements for the new times, we will just use the ones after the first approximation.
@@ -221,10 +221,10 @@ From here:
 ```math
 \begin{array}{r|c|c}N & 1.08255544 & 1.08376454 & 1.08306354 & 1.08327401\\
 \psi & 3.36738053 & -0.22576904 & 3.97425185 & -0.83927375\\
-\gamma \enspace(9.56) & 4.44993597 & 0.8579955 & 5.05731539 & 0.24400026\\
+N + \psi = \gamma & 4.44993597 & 0.8579955 & 5.05731539 & 0.24400026\\
 \gamma' \enspace(9.58) & -1.83407792 & 0.85636199 & -1.22481794 & 0.24322743\\
-\xi \enspace(9.59)& -0.96554114 & 0.75546398 & -0.94074412 & 0.24083631\\
-\eta_1 \enspace(9.59)& -0.26025046 & 0.65519018 & 0.33911725 & 0.97056575\\
+\sin(\gamma') = \xi& -0.96554114 & 0.75546398 & -0.94074412 & 0.24083631\\
+\cos(\gamma') = \eta_1& -0.26025046 & 0.65519018 & 0.33911725 & 0.97056575\\
 \phi_1 \enspace(9.29)& -0.26100683 & 0.70698473 & 0.34291188 & 1.29522234\\
 \theta \enspace(9.29)& -1.53586099 &  1.68392198 & -1.61769396 &  2.05487427  \\
 \phi \enspace(9.30)& -15\degree\:0'\:9'' & 40\degree\:36'\:8'' & 19\degree\:42'\:30'' & 74\degree\:15'\:40''\\
@@ -389,8 +389,8 @@ Now we substitute this value of $p$ into equation $9.61$:
 ```
 And now with this sufficiently accurate value of $\gamma'$ we can get the longitude and latitude of the point with equations $9.59$, $9.29$, and $9.30$:
 ```math
-\begin{array}{r|c|c} \xi & -0.99508125 & -0.84258646 \\
-\eta_1 & 0.09906216 & -0.53856111 \\
+\begin{array}{r|c|c} \sin(\gamma') = \xi & -0.99508125 & -0.84258646 \\
+\cos(\gamma') = \eta_1 & 0.09906216 & -0.53856111 \\
 \phi_1 & 0.0983835 &  -0.56333528 \\
 \theta & -1.58371166 & -1.48805765 \\
  & \text{Sunrise} & \text{Sunrise}\\
@@ -416,10 +416,11 @@ Thus:
 \begin{array}{r|c|c}\hline  & \psi > 0 & \psi < 0 \\ \hline
 p\sin(\gamma) & -0.99508123 & -0.84258487 \\
 p\cos(\gamma) & 0.09873559 & -0.53678465 \\ 
-x - p\sin(\gamma) = l\sin(Q) (9.60) & -0.33634517 & -0.48884153 \\
-y - p\cos(\gamma) = l\cos(Q) (9.60) & -0.41676403 & 0.21875621 \\
+x - p\sin(\gamma) = l\sin(Q) \enspace(9.60) & -0.33634517 & -0.48884153 \\
+y - p\cos(\gamma) = l\cos(Q) \enspace(9.60) & -0.41676403 & 0.21875621 \\
 Q & -2.46257385 & -1.15002398 \\
-P' (9.63) & - 0.56278455 & - 0.32986385\\
+P' \enspace(9.63) & - 0.56278455 & - 0.32986385\\
  & \text{Beginning} & \text{Beginning}\\ \hline
 \end{array}
 ```
+Note that here, we could have gotten a more accurate value for $Q$ by calculating a more accurate value for $p$ using the value of $\gamma'$ we calculated earlier, but this is wholly unnecessary when only the algebraic sign of $P'$ is necessary.
