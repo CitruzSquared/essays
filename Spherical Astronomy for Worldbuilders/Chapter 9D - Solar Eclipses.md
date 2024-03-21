@@ -454,13 +454,13 @@ b_1' &= -0.31653541\\
 c_1' &= 0.50114349\\
 \end{align}
 ```
-Now, by equation $9.60$:
+Thus:
 ```math
 \begin{array}{r|c|c}\hline  & \psi > 0 & \psi < 0 \\ \hline
 p\sin(\gamma) & -0.99508123 & -0.84258487 \\
 p\cos(\gamma) & 0.09873559 & -0.53678465 \\ 
-x - p\sin(\gamma) = l\sin(Q) & -0.33634517 & -0.48884153 \\
-y - p\cos(\gamma) = l\cos(Q) & -0.41676403 & 0.21875621 \\
+x - p\sin(\gamma) = l\sin(Q) (9.60) & -0.33634517 & -0.48884153 \\
+y - p\cos(\gamma) = l\cos(Q) (9.60) & -0.41676403 & 0.21875621 \\
 Q & -2.46257385 & -1.15002398 \\
 P' (9.63) & - 0.56278455 & - 0.32986385\\
  & \text{Beginning} & \text{Beginning}\\ \hline
