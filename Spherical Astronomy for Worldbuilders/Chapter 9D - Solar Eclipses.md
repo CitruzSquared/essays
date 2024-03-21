@@ -433,7 +433,7 @@ Now we substitute this value of $p$ into equation $9.61$:
 And now with this sufficiently accurate value of $\gamma'$ we can get the longitude and latitude of the point with equations $9.59$, $9.29$, and $9.30$:
 ```math
 \begin{array}{r|c|c} \xi & -0.99508125 & -0.84258646 \\
-\eta & 0.09906216 & -0.53856111 \\
+\eta_1 & 0.09906216 & -0.53856111 \\
 \phi_1 & 0.0983835 &  -0.56333528 \\
 \theta & -1.58371166 & -1.48805765 \\
  & \text{Sunrise} & \text{Sunrise}\\
