@@ -28,7 +28,7 @@ All angles are given in radians and all distances are given in Earth equatorial 
 21:00  & 0.13097477 & 2.35468505 & 1.22605493 & 1.03800983 & 0.00466818 & 0.00464493 & 0.53580017 & -0.00895951 \\ \hline
 \end{array}
 ```
-Data was taken from the [JPL Horizons System](https://ssd.jpl.nasa.gov/horizons/).
+Right ascension, declination, and distance data were taken from the [JPL Horizons System](https://ssd.jpl.nasa.gov/horizons/).
 #### Derivatives of Besselian Elements
 ```math
 \begin{array}{|c|c|c|c|c|c|c|}\hline T & d' & \mu' & x' & y' & l_1' & l_2' \\ \hline
