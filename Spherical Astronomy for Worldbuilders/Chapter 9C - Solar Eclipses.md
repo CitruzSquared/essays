@@ -292,11 +292,11 @@ P' = c'\sin(Q) - b'\cos(Q) - \zeta (i^2 + 1)\mu'\cos(d)\sin(Q) + \zeta (i^2 + 1)
 ```
 Collecting terms as $\sin(Q)$ and $\cos(Q)$, we obtain:
 ```math
-P' = a' + \sin(Q)(c' - (i^2 + 1)\zeta \mu'\cos(d)) + \cos(Q)(-b' + (i^2 + 1)\zeta d') \tag{9.50}
+P' = a' + (c' - (i^2 + 1)\zeta \mu'\cos(d))\sin(Q) + (-b' + (i^2 + 1)\zeta d')\cos(Q) \tag{9.50}
 ```
 Equation $9.50$ is known as the *second fundamental equation of eclipse theory*. Note that the approximations $id' = 0$ and $i^2 + 1 = 1$ may be made here without much loss of precision (in most reasonable cases), which gives:
 ```math
-P' = a' + \sin(Q)(c' - \zeta \mu'\cos(d)) + \cos(Q)(-b' + \zeta d') \tag{9.50*}
+P' = a' + (c' - \zeta \mu'\cos(d))\sin(Q) + (-b' + \zeta d')\cos(Q) \tag{9.50*}
 ```
 With
 ```math
@@ -356,8 +356,8 @@ c' &= 0.51147366 + 0.26187054\cdot0.22479055\sin(7\degree\:27'\:34.93'') + 0.535
 Then we find $P'$ by equation $9.50$:
 ```math
 \begin{align}
-P' &= -0.000435308 + \sin(90\degree)(0.51976555 - (0.0046683^2 + 1)\cdot0.48984331\cdot 0.26187054\cos(7\degree\:27'\:34.93''))\\
-& + \cos(90\degree)(-(-0.28178103) + (0.0046683^2 + 1)\cdot0.48984331\cdot 0.00025898)\\
+P' &= -0.000435308 + (0.51976555 - (0.0046683^2 + 1)\cdot0.48984331\cdot 0.26187054\cos(7\degree\:27'\:34.93''))\sin(90\degree)\\
+& + (-(-0.28178103) + (0.0046683^2 + 1)\cdot0.48984331\cdot 0.00025898)\cos(90\degree)\\
 &= 0.39213761 > 0
 \end{align}
 ```
@@ -377,7 +377,7 @@ c' &= 0.51147366 + 0.26187054\cdot0.22479055\sin(7\degree\:27'\:34.93'') + 0.535
 And equation $9.50*$ gives:
 ```math
 \begin{align}
-P' &= -0.000435580 + \sin(90\degree)(0.51976555 - 0.48984331\cdot 0.26187054\cos(7\degree\:27'\:34.93'')) + \cos(90\degree)(-(-0.28178168) + 0.48984331\cdot 0.00025898)\\
+P' &= -0.000435580 + (0.51976555 - 0.48984331\cdot 0.26187054\cos(7\degree\:27'\:34.93''))\sin(90\degree) + (-(-0.28178168) + 0.48984331\cdot 0.00025898)\cos(90\degree)\\
 &= 0.39214011 > 0
 \end{align}
 ```
