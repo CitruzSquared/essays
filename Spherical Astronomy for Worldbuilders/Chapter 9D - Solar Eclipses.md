@@ -198,14 +198,13 @@ N & 1.08255544 & 1.08376454\\
 \sin(\psi) & -0.22387431 & -0.22385595\\
 \psi & 3.36738053 & -0.22576904\\
 \tau & 0.00416269 & 0.00567428\\
-T & 15:42:15 & 20:52:20\\ \hline
+T & 15:42:15 & 20:52:20
 \end{array}
 ```
 Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases. We will not calculate new Besselian elements for the new times, we will just use the ones after the first approximation.
 From here:
 ```math
-\begin{array}{r|c|c}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-N & 1.08255544 & 1.08376454\\
+\begin{array}{r|c|c}N & 1.08255544 & 1.08376454\\
 \psi & 3.36738053 & -0.22576904\\
 \gamma \enspace(9.56) & 4.44993597 & 0.8579955\\
 \gamma' \enspace(9.58) & -1.83407792 & 0.85636199\\
@@ -260,13 +259,12 @@ N & 1.08306354 & 1.08327401\\
 \sin(\psi) & -0.73972339 & -0.74415818\\
 \psi & 3.97425185 & -0.83927375\\
 \tau & -0.00027673 & -0.01235072\\
-T & 17:44:59 & 18:49:15 \\ \hline
+T & 17:44:59 & 18:49:15
 \end{array}
 ```
 Again, we will not calculate new Besselian elements for these times.
 ```math
-\begin{array}{r|c|c}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-N + \psi = \gamma & 5.05731539 & 0.24400026\\
+\begin{array}{r|c|c}N + \psi = \gamma & 5.05731539 & 0.24400026\\
 \gamma' & -1.22481794 & 0.24322743\\
 \xi& -0.94074412 & 0.24083631\\
 \eta_1& 0.33911725 & 0.97056575\\
@@ -417,7 +415,7 @@ Now, we can find $\gamma$ with equation $9.62$, then $\gamma'$ and then a better
 \begin{array}{r|c|c}\hline  & \psi > 0 & \psi < 0 \\ \hline
 M + \psi = \gamma & -1.47187523 & -2.13865659 \\
 \gamma' & -1.47155018 & -2.14015486 \\
-p & 0.99996769 &  0.99904305 \\
+p & 0.99996769 &  0.99904305 
 \end{array}
 ```
 Now we substitute this value of $p$ into equation $9.61$:
@@ -425,7 +423,7 @@ Now we substitute this value of $p$ into equation $9.61$:
 \begin{array}{r|c|c} \sin(\psi/2) & 0.16591397 & -2.13865659 \\
 \psi & 0.33336951 & -0.33276149 \\
 \gamma & -1.4718964 &  -2.1380274 \\
-\gamma' & -1.47157142 & -2.13952479 \\
+\gamma' & -1.47157142 & -2.13952479 
 \end{array}
 ```
 And now with this sufficiently accurate value of $\gamma'$ we can get the longitude and latitude of the point:
@@ -436,10 +434,10 @@ And now with this sufficiently accurate value of $\gamma'$ we can get the longit
 \theta & -1.58371166 & -1.48805765 \\
 \text{Sun} & \text{Sunrise} & \text{Sunrise}\\
 \phi & 5\degree\:39'\:21'' &  -32\degree\:21'\:49'' \\
-\lambda & 209\degree\:22'\:1'' & 214\degree\:50'\:51''\\
+\lambda & 209\degree\:22'\:1'' & 214\degree\:50'\:51''\\ \hline
 \end{array}
 ```
 These points we just calculated are these two points on this map:
 <p align="center">
-  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/0089ba24-1325-4711-aac1-58ea93bfccd9"> <br/>
+  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/cb85358d-a578-45f0-ad8a-c871c2391b5d"> <br/>
 </p>
