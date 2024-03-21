@@ -317,3 +317,50 @@ $\blacksquare$
 Now that we know that this eclipse began globally at $15:42$ and ended at $20:52$, we can calculate the Besselian elements for the entire eclipse and tabulate them. If desired, the elements for the times in between the tabulated values can be found via simple interpolation. If one is writing a program to predict eclipses however, tabulation and interpolation is unnecessary, simply start at the beginning time, calculate the elements and the coordinates of the location of the shadow of the Moon at that time (especially the special locations to be discussed hereafter), then increment the time by a preselected $\Delta t$ (the smaller the better).
 
 The Besselian elements for this eclipse, calculated at $15$ minute intervals using methods detailed previously, can be found in Chapter $\text{9Z}$.
+
+### Rising / Setting Limits
+In the last section we discussed how at the moment of contact at the location of contact, the shadow cone is tangent to the Earth and therefore the eclipse in those locations would be on the horizon. In particular, the contacts are:
+1. First External Contact
+   - The first place on the Earth at which the eclipse begins at sunrise.
+2. First Internal Contact
+   - The last place on the Earth at which the eclipse ends at sunrise.
+3. Last Internal Contact
+   - The first place on the Earth at which the eclipse begins at sunset.
+4. Last External Contact
+   - The last place on the Earth at which the eclipse ends at sunset.
+
+Between the contacts, there are a whole set of points where the eclipse either begins or ends exactly at sunrise or sunset: returning to equation $9.52$, we can write equation $9.18$ as:
+```math
+\begin{align}
+(l - i\zeta)\sin(Q) &= m \sin(M) - p\sin(\gamma)\\
+(l - i\zeta)\cos(Q) &= m \cos(M) - p\cos(\gamma)
+\end{align}
+```
+From the fact that $\zeta_1 = 0$ when the eclipse is on the horizon, we can write $\zeta = \zeta_1 = 0$ and therefore:
+```math
+\begin{align}
+l\sin(Q) &= m \sin(M) - p\sin(\gamma)\\
+l\cos(Q) &= m \cos(M) - p\cos(\gamma)
+\end{align}\tag{9.60}
+```
+If we add the squares of both equations, we get:
+```math
+\begin{align}
+l^2 &= m^2 - 2mp \sin(M)\sin(\gamma) - 2mp\cos(M)\cos(\gamma) + p^2\\
+l^2 &= m^2 + p^2 - 2mp\cos(M - \gamma)\\
+l^2 - m^2 - p^2 &= -2mp\cos(M - \gamma)\\
+l^2 - m^2 - p^2 + 2mp &= -2mp\cos(M - \gamma) + 2mp\\
+\frac{l^2 - (m - p)^2}{2mp} &= 1 - \cos(M - \gamma)\\
+\frac{l^2 - (m - p)^2}{2mp} &= 2\sin^2((M - \gamma)/2)\\
+\frac{(l - m + p)(l + m - p)}{4mp} &= \sin^2((M - \gamma)/2)\\
+\end{align}
+```
+If we now set $\psi = M - \gamma$, we have:
+```math
+\sin(\psi/2) = \pm\sqrt{\frac{(l - m + p)(l + m - p)}{4mp}} \tag{9.61}
+```
+Where $\psi/2$ can always be taken as less than $90\degree$. Once we have $\psi$, we can get $\gamma$ by:
+```math
+\gamma = M + \psi \tag{9.62}
+```
+And then carry on with equations $9.58$ and $9.59$ to get the latitude and longitude of the place. Now, because of the double sign on equation $9.61$, we can see that there are two points where the eclipse is beginning or ending on the horizon at any moment in time between the internal and external contacts. Determining whether the Sun is rising or setting at the point calculated can be done by comparing $\theta$, the hour angle of the eclipse. Remembering that the hour angle is measured such that West is positive, if the hour angle $\theta$ is less than $180\degree$, the eclipse is happening at sunset. If the hour angle is more than $180\degree$, the eclipse is happening at sunrise. Determining if the eclipse is beginning or ending can be done just like example $9.4$.
