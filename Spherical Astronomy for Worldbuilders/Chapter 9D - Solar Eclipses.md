@@ -157,69 +157,22 @@ Then by equation $9.56$ and $9.58$:\
 (For the first external contact and using $\rho_1$ for $18:00$)
 ```math
 \begin{alignat}{2}
-\gamma &= N + \psi = 1.08311714 + 3.3669523 &&= 4.45006944\\
+\gamma &=  1.08311714 + 3.3669523 &&= 4.45006944\\
 \gamma' &= \arctan(0.99670381 \sin(4.45006944), \cos(4.45006944)) &&= -1.83394395\\
 p &= \frac{\sin(-1.83394395)}{\sin(4.45006944)} &&= 0.999777311
 \end{alignat}
 ```
 Similarly, for the last external contact:
 ```math
-\begin{array}{r|c}\hline & \text{Last Contact} \\ \hline
-N  & 1.08311714\\
-\psi & -0.22535964\\
-\gamma & 0.8577575\\
-\gamma' & 0.85612355\\
-p & 0.99858559\\ \hline
-\end{array}
+\begin{alignat}{2}
+\gamma &= 1.08311714 + (-0.22535964) &&= 0.8577575\\
+\gamma' &= \arctan(0.99670381 \sin(0.8577575), \cos(0.8577575)) &&= 0.85612355\\
+p &= \frac{\sin(0.85612355)}{\sin(0.85612355)} &&= 0.99858559
+\end{alignat}
 ```
-Rounding the contact times to the nearest minute the Besselian elements are: (For a more accurate calculation, calculate Besselian elements at exactly those times we calculated. We only round here because the ephemeris we are using only gives minute precision.)
+Repeating this computation but using $p - l$ in equation $9.55$ gives the times for internal contact:
 ```math
-\begin{array}{c|cc}\hline \text{Element} & 15:42:00 & 20:52:00 \\ \hline
-d & 0.12959946 & 0.13094043\\
-\mu & 0.9667687 & 2.31976942\\
-\rho_1 & 0.9967033 & 0.99670446\\
-d_1 & 0.13003055 & 0.13137588\\
-x & -1.48485233 & 1.15791302 \
-y & -0.39946392 & 1.00188386 \\
-i_1 & 0.00466846  & 0.00466819 \\
-l_1 & 0.53552115 & 0.53580193 \\
-x' (t \pm 0.25h) & 0.51119288 & 0.51145248 \\
-y' (t \pm 0.25h) & 0.27151022 & 0.27085576\\ \hline
-\end{array}
-```
-Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
-```math
-\begin{array}{r|c|c}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-T_0 & 15:42:00 & 20:52:00 \\
-m_0 & 1.53764686 & 1.53118707\\
-M_0 & -1.83360014 & 0.8575154\\
-n & 0.57882291 & 0.57874561\\
-N & 1.08255544 & 1.08376454\\
-\sin(\psi) & -0.22387431 & -0.22385595\\
-\psi & 3.36738053 & -0.22576904\\
-\tau & 0.00416269 & 0.00567428\\
-T & 15:42:15 & 20:52:20
-\end{array}
-```
-Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases. We will not calculate new Besselian elements for the new times, we will just use the ones after the first approximation.
-From here:
-```math
-\begin{array}{r|c|c}N & 1.08255544 & 1.08376454\\
-\psi & 3.36738053 & -0.22576904\\
-\gamma \enspace(9.56) & 4.44993597 & 0.8579955\\
-\gamma' \enspace(9.58) & -1.83407792 & 0.85636199\\
-\xi \enspace(9.59)& -0.96554114 & 0.75546398\\
-\eta_1 \enspace(9.59)& -0.26025046 & 0.65519018\\
-\phi_1 \enspace(9.29)& -0.26100683 & 0.70698473\\
-\theta \enspace(9.29)& -1.53586099 &  1.68392198 \\
-\phi \enspace(9.30)& -15\degree\:0'\:9'' & 40\degree\:36'\:8''\\
-\lambda \enspace(9.30)& 216\degree\:36'\:36'' & 323\degree\:34'\:7''\\ \hline
-\end{array}
-```
-Now for the internal contacts, where we use $p - l$ in equation $9.55$.\
-Again taking $T_0 = 18:00$ and $p=1$ as a first approximation:
-```math
-\begin{array}{r|c|c}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
+\begin{array}{r|c|c}\hline  & P_2 & P_3 \\ \hline
 m_0 & 0.38175987 & 0.38175987\\
 M_0 & -0.94118943 & -0.94118943\\
 n & 0.57896820 & 0.57896820\\
@@ -233,45 +186,49 @@ T & 17:44:56 & 18:49:44\\
 p & 0.99962314 & 0.99690667\\ \hline
 \end{array}
 ```
-Rounding the contact times to the nearest minute the Besselian elements are:
+
+Rounding the contact times to the nearest minute the Besselian elements are: (For a more accurate calculation, calculate Besselian elements at exactly those times we calculated. We only round here because the ephemeris we are using only gives minute precision.)
 ```math
-\begin{array}{c|cc}\hline \text{Element} & 17:45:00 & 18:50:00 \\ \hline
-d & 0.13013186 & 0.13041266\\
-\mu & 1.50360469 & 1.78729814\\
-\rho_1 & 0.99670376 & 0.996704\\
-d_1 & 0.13056468 & 0.13084639\\
-x & -0.4364434 & 0.11772183 \
-y & 0.15693548 & 0.45082482 \\
-i_1 & 0.00466835  & 0.0046683 \\
-l_1 & 0.53571408 & 0.53577271 \\
-x' (t \pm 0.25h) & 0.51158452 & 0.51156302 \\
-y' (t \pm 0.25h) & 0.27138506 & 0.2712357\\ \hline
+\begin{array}{c|cc|cc}\hline \text{Element} & 15:42:00 & 20:52:00 & 17:45:00 & 18:50:00 \\ \hline
+d & 0.12959946 & 0.13094043 & 0.13013186 & 0.13041266\\
+\mu & 0.9667687 & 2.31976942 & 1.50360469 & 1.78729814\\
+\rho_1 & 0.9967033 & 0.99670446 & 0.99670376 & 0.996704\\
+d_1 & 0.13003055 & 0.13137588 & 0.13056468 & 0.13084639\\
+x & -1.48485233 & 1.15791302 & -0.4364434 & 0.11772183 \\
+y & -0.39946392 & 1.00188386 & 0.15693548 & 0.45082482  \\
+i_1 & 0.00466846  & 0.00466819 & 0.00466835 & 0.0046683 \\
+l_1 & 0.53552115 & 0.53580193 & 0.53571408 & 0.53577271  \\
+x' (t \pm 0.25h) & 0.51119288 & 0.51145248 & 0.51158452 & 0.51156302 \\
+y' (t \pm 0.25h) & 0.27151022 & 0.27085576 & 0.27138506 & 0.2712357\\ \hline
 \end{array}
 ```
-Now we can continue with the second approximation and the location:
+Now we are ready for a second approximation using the new elements at each time and the new values of $p$:
 ```math
-\begin{array}{r|c|c}\hline  & \text{First Contact} & \text{Last Contact} \\ \hline
-T_0 & 17:45:00 & 18:50:00 \\
-m_0 & 0.46380123 & 0.46594147\\
-M_0 & -1.22561432 & 0.25542194\\
-n & 0.57911016 & 0.57902118\\
-N & 1.08306354 & 1.08327401\\
-\sin(\psi) & -0.73972339 & -0.74415818\\
-\psi & 3.97425185 & -0.83927375\\
-\tau & -0.00027673 & -0.01235072\\
-T & 17:44:59 & 18:49:15
+\begin{array}{r|c|c|c|c}\hline  & P_1 & P_4 & P_2 & P_3\\ \hline
+T_0 & 15:42:00 & 20:52:00 & 17:45:00 & 18:50:00 \\
+m_0 & 1.53764686 & 1.53118707 & 0.46380123 & 0.46594147\\
+M_0 & -1.83360014 & 0.8575154 & -1.22561432 & 0.25542194\\
+n & 0.57882291 & 0.57874561 & 0.57911016 & 0.57902118\\
+N & 1.08255544 & 1.08376454 & 1.08306354 & 1.08327401\\
+\sin(\psi) & -0.22387431 & -0.22385595 & -0.73972339 & -0.74415818\\
+\psi & 3.36738053 & -0.22576904  & 3.97425185 & -0.83927375\\
+\tau & 0.00416269 & 0.00567428 & -0.00027673 & -0.01235072\\
+T & 15:42:15 & 20:52:20 & 17:44:59 & 18:49:15
 \end{array}
 ```
-Again, we will not calculate new Besselian elements for these times.
+Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases. We will not calculate new Besselian elements for the new times, we will just use the ones after the first approximation.
+From here:
 ```math
-\begin{array}{r|c|c}N + \psi = \gamma & 5.05731539 & 0.24400026\\
-\gamma' & -1.22481794 & 0.24322743\\
-\xi& -0.94074412 & 0.24083631\\
-\eta_1& 0.33911725 & 0.97056575\\
-\phi_1 & 0.34291188 & 1.29522234\\
-\theta & -1.61769396 &  2.05487427 \\
-\phi & 19\degree\:42'\:30'' & 74\degree\:15'\:40''\\
-\lambda & 181\degree\:9'\:46'' & 15\degree\:19'\:52''\\ \hline
+\begin{array}{r|c|c}N & 1.08255544 & 1.08376454 & 1.08306354 & 1.08327401\\
+\psi & 3.36738053 & -0.22576904 & 3.97425185 & -0.83927375\\
+\gamma \enspace(9.56) & 4.44993597 & 0.8579955 & 5.05731539 & 0.24400026\\
+\gamma' \enspace(9.58) & -1.83407792 & 0.85636199 & -1.22481794 & 0.24322743\\
+\xi \enspace(9.59)& -0.96554114 & 0.75546398 & -0.94074412 & 0.24083631\\
+\eta_1 \enspace(9.59)& -0.26025046 & 0.65519018 & 0.33911725 & 0.97056575\\
+\phi_1 \enspace(9.29)& -0.26100683 & 0.70698473 & 0.34291188 & 1.29522234\\
+\theta \enspace(9.29)& -1.53586099 &  1.68392198 & -1.61769396 &  2.05487427  \\
+\phi \enspace(9.30)& -15\degree\:0'\:9'' & 40\degree\:36'\:8'' & 19\degree\:42'\:30'' & 74\degree\:15'\:40''\\
+\lambda \enspace(9.30)& 216\degree\:36'\:36'' & 323\degree\:34'\:7'' & 181\degree\:9'\:46'' & 15\degree\:19'\:52''\\ \hline
 \end{array}
 ```
 Our answers can be arranged in a chart: 
