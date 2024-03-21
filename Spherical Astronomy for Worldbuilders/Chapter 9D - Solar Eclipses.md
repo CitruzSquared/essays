@@ -361,7 +361,11 @@ Where $\psi/2$ can always be taken as less than $90\degree$. Once we have $\psi$
 ```math
 \gamma = M + \psi \tag{9.62}
 ```
-And then carry on with equations $9.58$ and $9.59$ to get the latitude and longitude of the place. Now, because of the double sign on equation $9.61$, we can see that there are two points where the eclipse is beginning or ending on the horizon at any moment in time between the internal and external contacts. Determining whether the Sun is rising or setting at the point calculated can be done by comparing $\theta$, the hour angle of the eclipse. Remembering that the hour angle is measured such that West is positive, if the hour angle $\theta$ is less than $180\degree$, the eclipse is happening at sunset. If the hour angle is more than $180\degree$ (or between $-180\degree$ and $0\degree$), the eclipse is happening at sunrise. Determining if the eclipse is beginning or ending can be done just like example $9.4$.
+And then carry on with equations $9.58$ and $9.59$ to get the latitude and longitude of the place. Now, because of the double sign on equation $9.61$, we can see that there are two points where the eclipse is beginning or ending on the horizon at any moment in time between the internal and external contacts. Determining whether the Sun is rising or setting at the point calculated can be done by comparing $\theta$, the hour angle of the eclipse. Remembering that the hour angle is measured such that West is positive, if the hour angle $\theta$ is less than $180\degree$, the eclipse is happening at sunset. If the hour angle is more than $180\degree$ (or between $-180\degree$ and $0\degree$), the eclipse is happening at sunrise. Determining if the eclipse is beginning or ending can be done just like example $9.4$, but since we have $\zeta = 0$, equation $9.50$ simplifies to:
+```math
+P' = a' + c'\sin(Q) - b'\cos(Q) \tag{9.63}
+```
+Where we have $Q$ by equation $9.60$.
 
 Because the points at which the eclipse is in progress during sunrise or sunset can only exist between external and internal contact, if there are no internal contacts during an eclipse (as is frequently so), then there will always be points where the eclipse is in progress at the horizon and therefore the lines of beginning/ending at sunrise/sunset extend throughout the whole eclipse. If internal contacts exist, the points where the eclipse begins/ends at sunrise and the points at which the eclipse begins/ends at sunset form two distinct areas on the globe. 
 
@@ -432,7 +436,7 @@ And now with this sufficiently accurate value of $\gamma'$ we can get the longit
 \eta & 0.09906216 & -0.53856111 \\
 \phi_1 & 0.0983835 &  -0.56333528 \\
 \theta & -1.58371166 & -1.48805765 \\
-\text{Sun} & \text{Sunrise} & \text{Sunrise}\\
+ & \text{Sunrise} & \text{Sunrise}\\
 \phi & 5\degree\:39'\:21'' &  -32\degree\:21'\:49'' \\
 \lambda & 209\degree\:22'\:1'' & 214\degree\:50'\:51''\\ \hline
 \end{array}
@@ -441,3 +445,23 @@ These points we just calculated are these two points on this map:
 <p align="center">
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/cb85358d-a578-45f0-ad8a-c871c2391b5d"> <br/>
 </p>
+
+To determine whether the eclipse is beginning or ending, we have (for $16:00$):
+```math
+\begin{align}
+a_1' = -0.00172705\\
+b_1' = -0.31653541\\
+c_1' = 0.50114349\\
+\end{align}
+```
+Now, by equation $9.60$:
+```math
+\begin{array}{r|c|c}\hline p\sin(\gamma) & -0.99508123 & -0.84258487 \\
+p\cos(\gamma) & 0.09873559 & -0.53678465 \\ 
+x - p\sin(\gamma) = l\sin(Q) & -0.33634517 & -0.48884153 \\
+y - p\cos(\gamma) = l\cos(Q) & -0.41676403 & 0.21875621 \\
+Q & -2.46257385 & -1.15002398 \\
+P' (9.63) & - 0.56278455 & - 0.32986385\\
+ & \text{Beginning} & \text{Beginning}\\
+\end{array}
+```
