@@ -128,21 +128,21 @@ $a_1'$, $b_1'$, and $c_1'$ are calculated with $l_1$, and $a_2'$, $b_2'$, and $c
 ### A Note on Interpolation
 If one were to interpolate between the times given in the tables, a linear interpolation is enough:
 ```math
-f(x) = \frac{f(x_2) - f(x_1))}{x_2 - x_1} \cdot (x - x_1)
+f(t) = \frac{f(t_2) - f(t_1))}{t_2 - t_1} \cdot (t - t_1)
 ```
-Where $x_2$ and $x_1$ are the times of two adjacent entries given by the table, with $x_2 > x_1$. Therefore in this specific case $x_2 - x_1$ is always $0.25h$ since the tables are given for every $0.25h$. However, one might notice that one cannot simply interpolate both the derivative of a function and the function itself linearly: if the derivative is linear then the function must be quadratic. In this case, because Besselian elements are so linear in nature, linearly interpolating both the element and its derivative is excusable. However, if mathematical rigor is desired, when two points $(x_1, y_1)$ and $(x_2, y_2)$ and the derivatives at those points $f'(x_1) = d_1$ and $f'(x_2) = d_2$ are given: a cubic interpolation is consistent:
+Where $t_2$ and $t_1$ are the times of two adjacent entries given by the table, with $t_2 > t_1$. Therefore in this specific case $t_2 - t_1$ is always $0.25h$ since the tables are given for every $0.25h$. However, one might notice that one cannot simply interpolate both the derivative of a function and the function itself linearly: if the derivative is linear then the function must be quadratic. In this case, because Besselian elements are so linear in nature, linearly interpolating both the element and its derivative is etcusable. However, if mathematical rigor is desired, when two points $(t_1, y_1)$ and $(t_2, y_2)$ and the derivatives at those points $f'(t_1) = d_1$ and $f'(t_2) = d_2$ are given: a cubic interpolation is consistent:
 ```math
-f(x) = ax^3 + bx^2 + cx + d
+f(t) = at^3 + bt^2 + ct + d
 ```
 with
 ```math
 \begin{align}
-a &= \frac{1}{\left(x_{1}-x_{2}\right)^{2}}\left(-\frac{2y_{1}}{x_{1}-x_{2}}+\frac{2y_{2}}{x_{1}-x_{2}}+d_{1}+d_{2}\right)\\
+a &= \frac{1}{\left(t_{1}-t_{2}\right)^{2}}\left(-\frac{2y_{1}}{t_{1}-t_{2}}+\frac{2y_{2}}{t_{1}-t_{2}}+d_{1}+d_{2}\right)\\
 
-b &= \frac{1}{\left(x_{1}-x_{2}\right)^{2}}\left(\frac{3\left(x_{1}+x_{2}\right)y_{1}}{x_{1}-x_{2}}-\frac{3\left(x_{1}+x_{2}\right)y_{2}}{x_{1}-x_{2}}-\left(x_{1}+2x_{2}\right)d_{1}-\left(2x_{1}+x_{2}\right)d_{2}\right)\\
+b &= \frac{1}{\left(t_{1}-t_{2}\right)^{2}}\left(\frac{3\left(t_{1}+t_{2}\right)y_{1}}{t_{1}-t_{2}}-\frac{3\left(t_{1}+t_{2}\right)y_{2}}{t_{1}-t_{2}}-\left(t_{1}+2t_{2}\right)d_{1}-\left(2t_{1}+t_{2}\right)d_{2}\right)\\
 
-c &= \frac{1}{\left(x_{1}-x_{2}\right)^{2}}\left(-\frac{6x_{1}x_{2}y_{1}}{x_{1}-x_{2}}+\frac{6x_{1}x_{2}y_{2}}{x_{1}-x_{2}}+\left(x_{2}^{2}+2x_{1}x_{2}\right)d_{1}+\left(x_{1}^{2}+2x_{2}x_{1}\right)d_{2}\right)\\
+c &= \frac{1}{\left(t_{1}-t_{2}\right)^{2}}\left(-\frac{6t_{1}t_{2}y_{1}}{t_{1}-t_{2}}+\frac{6t_{1}t_{2}y_{2}}{t_{1}-t_{2}}+\left(t_{2}^{2}+2t_{1}t_{2}\right)d_{1}+\left(t_{1}^{2}+2t_{2}t_{1}\right)d_{2}\right)\\
 
-d &= \frac{1}{\left(x_1-x_2\right)^2}\left(\frac{\left(3x_1x_2^2-x_2^3\right)y_1}{x_1-x_2}+\frac{\left(x_1^3-3x_1^2x_2\right)y_2}{x_1-x_2}+\left(-x_1 x_2^2\right)d_{1}+\left(-x_1^2 x_2\right)d_2\right)
+d &= \frac{1}{\left(t_1-t_2\right)^2}\left(\frac{\left(3t_1t_2^2-t_2^3\right)y_1}{t_1-t_2}+\frac{\left(t_1^3-3t_1^2t_2\right)y_2}{t_1-t_2}+\left(-t_1 t_2^2\right)d_{1}+\left(-t_1^2 t_2\right)d_2\right)
 \end{align}
 ```
