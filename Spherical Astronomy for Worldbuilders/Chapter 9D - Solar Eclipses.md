@@ -441,7 +441,7 @@ And now with this sufficiently accurate value of $\gamma'$ we can get the longit
 \lambda & 209\degree\:22'\:1'' & 214\degree\:50'\:51''\\ \hline
 \end{array}
 ```
-These points we just calculated are these two points on this map:
+These points we just calculated are these two points (marked red) on this map:
 <p align="center">
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/cb85358d-a578-45f0-ad8a-c871c2391b5d"> <br/>
 </p>
