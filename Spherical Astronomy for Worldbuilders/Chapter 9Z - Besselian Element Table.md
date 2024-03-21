@@ -56,7 +56,7 @@ All angles are given in radians and all distances are given in Earth equatorial 
 21:00  &  &  &  &  &  &  \\ \hline
 \end{array}
 ```
-
+$i$ can be regarded as a constant. The derivatives at $15:30$ and $21:00$ were taken with $\Delta t = 0.25h$.
 #### Geodetic Elements
 ```math
 \begin{array}{|c|c|c|c|c|} \hline T & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
