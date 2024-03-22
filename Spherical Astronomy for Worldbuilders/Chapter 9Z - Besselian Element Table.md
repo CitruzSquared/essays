@@ -67,6 +67,12 @@ However, the derivatives at the first and last entries were calculated as:
 f'(t) = \frac{f(t + 0.25h) - f(t)}{0.25h} \enspace\enspace\enspace f'(t) = \frac{f(t) - f(t - 0.25h)}{0.25h}
 ```
 Using the first equation for $15:30$ and the second for $21:00$.
+
+A more sophisticated method is possible:
+```math
+f'(t) = \frac{-f(t + 0.5h) + 8f(t + 0.25h) - 8f(t - 0.25h) + f(t + 0.5h)}{3h}
+```
+But was not used. See [finite difference coefficients](https://en.wikipedia.org/wiki/Finite_difference_coefficient) for more.
 #### Geodetic Elements
 ```math
 \begin{array}{|c|c|c|c|c|} \hline t & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
