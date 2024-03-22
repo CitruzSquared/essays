@@ -426,7 +426,7 @@ P' \enspace(9.63) & - 0.56278455 & - 0.32986385\\
 P' < 0 \text{ and } l > 0 & \text{Beginning} & \text{Beginning}\\ \hline
 \end{array}
 ```
-Note that here, we could have gotten a more accurate value for $Q$ by calculating a more accurate value for $p$ using the value of $\gamma'$ we calculated earlier, but this is wholly unnecessary when only the algebraic sign of $P'$ is necessary (In fact, the fact that we did not do this correction is why $p\sin(\gamma)$ very slightly differs from the value of $\xi$ we found earlier).
+Note that here, we could have gotten a more accurate value for $Q$ by calculating a more accurate value for $p$ using the value of $\gamma'$ we calculated earlier, but this is wholly unnecessary when only the algebraic sign of $P'$ is necessary. (In fact, the fact that we did not do this correction is why $p\sin(\gamma)$ very slightly differs from the value of $\xi$ we found earlier.)
 
 In the same manner the following table is computed:
 ```math
