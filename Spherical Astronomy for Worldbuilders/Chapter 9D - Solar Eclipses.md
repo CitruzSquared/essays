@@ -344,7 +344,7 @@ Because we have internal contacts in this eclipse, the rising / setting limits w
 - The sunrise lobe between $P_1$ and $P_2$
 - The sunset lobe between $P_3$ and $P_4$
 
-I will give the calculation of the limiting points for $T = 16:00$ in full.\
+I will give the calculation of the limiting points for the time $16:00$ in full.\
 For this time, we have:
 ```math
 \begin{align}
