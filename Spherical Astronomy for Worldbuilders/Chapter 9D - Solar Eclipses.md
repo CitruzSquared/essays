@@ -220,8 +220,8 @@ T_0 + \tau = T & 15:42:15 & 20:52:20 & 17:44:59 & 18:49:15
 Evidently, the first approximation is correct to a few seconds: the first approximation is good enough for most reasonable cases. We will not calculate new Besselian elements for the new times, we will just use the ones after the first approximation.
 From here:
 ```math
-\begin{array}{r|c|c}N & 1.08255544 & 1.08376454 & 1.08306354 & 1.08327401\\
-\psi & 3.36738053 & -0.22576904 & 3.97425185 & -0.83927375\\
+\begin{array}{r|c|c}\text{(For reference) } N & 1.08255544 & 1.08376454 & 1.08306354 & 1.08327401\\
+\text{(For reference) } \psi & 3.36738053 & -0.22576904 & 3.97425185 & -0.83927375\\
 N + \psi = \gamma & 4.44993597 & 0.8579955 & 5.05731539 & 0.24400026\\
 \gamma' \enspace(9.58) & -1.83407792 & 0.85636199 & -1.22481794 & 0.24322743\\
 \sin(\gamma') = \xi& -0.96554114 & 0.75546398 & -0.94074412 & 0.24083631\\
