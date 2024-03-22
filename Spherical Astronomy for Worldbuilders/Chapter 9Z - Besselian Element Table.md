@@ -2,7 +2,7 @@
 All angles are given in radians and all distances are given in Earth equatorial radii. All values are rounded to eight decimal digits, then trailing zeros are dropped.
 #### Besselian Elements
 ```math
-\begin{array}{|c|c|c|c|c|c|c|c|c|}\hline T & d & \mu & x & y & i_1 & i_2 & l_1 & l_2 \\ \hline
+\begin{array}{|c|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_1 & i_2 & l_1 & l_2 \\ \hline
 15:30  & 0.12954747 & 0.91439489 & -1.58705613 & -0.4537738 & 0.00466847 & 0.00464522 & 0.53549659 & -0.00926157 \\
 15:45  & 0.12961246 & 0.97986288 & -1.45925222 & -0.38588218 & 0.00466846 & 0.00464521 & 0.53552714 & -0.00923118 \\
 16:00  & 0.12967744 & 1.04533016 & -1.3314264 & -0.31802844 & 0.00466845 & 0.0046452 & 0.53555609 & -0.00920237 \\
@@ -31,7 +31,7 @@ All angles are given in radians and all distances are given in Earth equatorial 
 Right ascension, declination, and distance data were taken from the [JPL Horizons System](https://ssd.jpl.nasa.gov/horizons/).
 #### Derivatives of Besselian Elements
 ```math
-\begin{array}{|c|c|c|c|c|c|c|}\hline T & d' & \mu' & x' & y' & l_1' & l_2' \\ \hline
+\begin{array}{|c|c|c|c|c|c|c|}\hline t & d' & \mu' & x' & y' & l_1' & l_2' \\ \hline
 15:30  & 0.00025996 & 0.26187196 & 0.51121564 & 0.27156648 & 0.0001222  & 0.00012156 \\
 15:45  & 0.00025994 & 0.26187054 & 0.51125946 & 0.27149072 & 0.000119 & 0.0001184 \\
 16:00  & 0.00025994 & 0.26187054 & 0.51126384 & 0.27144916 & 0.00011262 & 0.00011206 \\
@@ -60,16 +60,16 @@ Right ascension, declination, and distance data were taken from the [JPL Horizon
 $di/dt$ can be regarded as $0$.\
 Derivatives were calculated as:
 ```math
-f'(T) = \frac{f(T + 0.25h) - f(T - 0.25h)}{0.5h}
+f'(t) = \frac{f(t + 0.25h) - f(t - 0.25h)}{0.5h}
 ```
 However, the derivatives at the first and last entries were calculated as:
 ```math
-f'(T) = \frac{f(T + 0.25h) - f(T)}{0.25h} \enspace\enspace\enspace f'(T) = \frac{f(T) - f(T - 0.25h)}{0.25h}
+f'(t) = \frac{f(t + 0.25h) - f(t)}{0.25h} \enspace\enspace\enspace f'(t) = \frac{f(t) - f(t - 0.25h)}{0.25h}
 ```
 Using the first equation for $15:30$ and the second for $21:00$.
 #### Geodetic Elements
 ```math
-\begin{array}{|c|c|c|c|c|} \hline T & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
+\begin{array}{|c|c|c|c|c|} \hline t & \rho_1 & d_1 & \rho_2 & d_2 \\ \hline
 15:30  & 0.99670325 & 0.1299784 & 0.99994414 & 0.12911795 \\
 15:45  & 0.99670331 & 0.13004359 & 0.99994408 & 0.12918272 \\
 16:00  & 0.99670336 & 0.13010879 & 0.99994403 & 0.1292475 \\
@@ -98,7 +98,7 @@ Using the first equation for $15:30$ and the second for $21:00$.
 For practical calculation purposes, $\rho_1$ and $\rho_2$ may be regarded as constant and their average values (or their values at some time near the middle of the eclipse) may be taken for the whole eclipse.
 #### Auxiliary Elements
 ```math
-\begin{array}{|c|c|c|c|c|c|c|} \hline T & a_1' & b_1' & c_1' & a_2' & b_2' & c_2' \\ \hline
+\begin{array}{|c|c|c|c|c|c|c|} \hline t & a_1' & b_1' & c_1' & a_2' & b_2' & c_2' \\ \hline
 15:30 & -0.00204673 & -0.325256   &  0.49651364 & -0.00203651 & -0.32525666 &  0.49585328\\
 15:45 & -0.00188849 & -0.32088099 &  0.49884782 & -0.00187907 & -0.32088165 &  0.49818747\\
 16:00 & -0.00172705 & -0.31653541 &  0.50114349 & -0.00171845 & -0.31653607 &  0.50048315\\
