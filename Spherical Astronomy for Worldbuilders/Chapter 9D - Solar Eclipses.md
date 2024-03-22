@@ -411,7 +411,7 @@ To determine whether the eclipse is beginning or ending at these points, we have
 \begin{align}
 a_1' &= -0.00172705\\
 b_1' &= -0.31653541\\
-c_1' &= 0.50114349\\
+c_1' &= 0.50114349
 \end{align}
 ```
 Thus:
