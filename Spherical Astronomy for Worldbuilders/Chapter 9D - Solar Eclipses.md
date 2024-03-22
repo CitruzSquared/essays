@@ -187,7 +187,7 @@ p & 0.99962314 & 0.99690667\\ \hline
 \end{array}
 ```
 
-Rounding the contact times to the nearest minute the Besselian elements are: (For a more accurate calculation, calculate Besselian elements at exactly those times we calculated. We only round here because the ephemeris we are using only gives minute precision.)
+Rounding the contact times to the nearest minute the Besselian elements are (using the method of example $9.2$): (For a more accurate calculation, calculate Besselian elements at exactly those times we calculated. We only round here because the ephemeris we are using only gives minute precision.)
 ```math
 \begin{array}{c|cc|cc}\hline \text{Element} & 15:42:00 & 20:52:00 & 17:45:00 & 18:50:00 \\ \hline
 d & 0.12959946 & 0.13094043 & 0.13013186 & 0.13041266\\
