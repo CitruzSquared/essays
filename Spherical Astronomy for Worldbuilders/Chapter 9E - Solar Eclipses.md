@@ -54,6 +54,7 @@ Now, if we put $\psi = \gamma - E$, we have:
 \Delta &= m\cos(M - E) - p\cos(\psi)
 \end{align} \tag{9.67}
 ```
+Where $\Delta$ must be positive as it is a distance.
 Then, we have:
 ```math
 \gamma = E + \psi \tag{9.68}
@@ -62,7 +63,7 @@ From where we can carry on with equations $9.58$ and $9.59$ to get the longitude
 
 Evidently, $\sin(\psi) = m\sin(M - E)/p$ cannot be greater than $1$ or less than $-1$. Here, the approximation $p = 1$ can be made and we can say that in order for points on this curve to exist, $m\sin(M - E)$ must be less than $1$ and greater than $-1$.
 
-Also, the first equation in $9.67$ produces two values for $\psi$. the value of $\psi$ that produces $|\Delta| > |l|$ must be discarded.
+Also, the first equation in $9.67$ produces two values for $\psi$. the value of $\psi$ that produces $\Delta > l$ must be discarded.
 #### Example 9.6
 <div align="center">
 <table>
@@ -118,25 +119,37 @@ m\sin(M - E) = \sin(\psi) & -0.87325361 & 0.87162496\\
 \psi_2 \rightarrow \Delta_2 & 0.87333703 & 0.10043927
 \end{array}
 ```
-Considering $l_1 = 0.53563338$ at this time, $\Delta_2$ for $E_1$ and $\Delta_1$ for $E_2$ fail the test. Thus, the true values of $\Delta$ are $-0.10119491$ and $0.10043927$.
-
-We now find $\gamma$ by equation $9.68$ and proceed as we did in earlier examples. We use the values of $\psi$ that passed the test.
+Considering $l_1 = 0.53563338$ at this time, $\psi_2$ for $E_2$ is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $E_2$.
 ```math
-\begin{array}{r|c|c} 
-E + \psi = \gamma & -1.59823666 & 0.87162496\\
-\rho_1 & 0.99670449 & 0.99670449\\
-\gamma' & -1.59832734 & \\
-p & 0.99999751 & \\
-m\sin(M - E)/p = \sin(\psi) & -0.87325579 & \\
-\psi & -1.06184464 & \\
-E + \psi = \gamma & -1.59824113 & \\
-\gamma' & -1.59833183 & \\
-\sin(\gamma') = \xi & -0.99962092 & \\
-\cos(\gamma') = \eta_1 & -0.02730201 & \\
-\phi_1 & -0.02730201 & \\
-\theta & -1.5672176 & \\
- & \text{Sunrise}& \\
-\phi & -1\degree\:34'\:10''  & \\
-\lambda & 199\degree\:3'\:32'' & \\ \hline
+\begin{array}{r|c} \hline
+\gamma = E + \psi & 4.68408253 \\
+\rho_1 & 0.99670449 \\
+\gamma' & -1.59919632\\
+p & 0.99999735 \\
+m\sin(M - E)/p = \sin(\psi) & 0.87162727 \\
+\pi - \arcsin(\sin(\psi)) = \psi & 2.08308025 \\
+\gamma = E + \psi & 4.68407781\\
+\gamma' & -1.59920106\\
+\sin(\gamma') = \xi & -0.99959661 \\
+\cos(\gamma') = \eta_1 & -0.02753202 \\
+\phi_1 & -0.02816386 \\
+\theta & -1.56710457 \\
+ & \text{Sunrise} \\
+\phi & -1\degree\:37'\:9'' \\
+\lambda & 199\degree\:3'\:56'' \\ \hline
+\end{array}
+```
+When computing the whole curve in $15$ minute intervals, we find that only between times $16:45$ and $20:00$ have $m\sin(M - E) < 1$. 
+Thus the following table is computed only for those times:
+```math
+\begin{array}{|c|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude} & \text{Obscuration} \\ \hline
+16:45 & -1\degree\:37' & 199\degree\:4' & \\
+17:00 & 12\degree\:34' & 193\degree\:26' & \\
+17:15 & 23\degree\:50' & 188\degree\:2' & \\
+17:30 & 33\degree\:45' & 182\degree\:35' & \\ \hline
+19:15 & 79\degree\:44' & 27\degree\:46' & \\
+19:30 & 70\degree\:41' & 359\degree\:36' & \\
+19:45 & 58\degree\:21' & 346\degree\:9' & \\
+20:00 & 38\degree\:26' & 336\degree\:5' & \\ \hline
 \end{array}
 ```
