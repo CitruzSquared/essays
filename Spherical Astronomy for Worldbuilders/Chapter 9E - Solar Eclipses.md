@@ -116,7 +116,7 @@ m\sin(M - E) = \sin(\psi) & -0.87325361 & 0.87162496\\
 \psi_1 & -1.06184017 & 1.05850769\\
 \pi - \psi_1 = \psi_2 & 4.20343283 & 2.08308496\\
 \psi_1 \rightarrow \Delta_1 & -0.10119491 & -0.87990746 \\
-\psi_2 \rightarrow \Delta_2 & 0.87333703 & 0.10043927
+\psi_2 \rightarrow \Delta_2 & 0.87333703 & 0.10043927 \\ \hline
 \end{array}
 ```
 Considering $l_1 = 0.53563338$ at this time, $\psi_2$ for $E_2$ is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $E_2$.
