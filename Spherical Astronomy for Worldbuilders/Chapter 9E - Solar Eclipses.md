@@ -150,6 +150,6 @@ Thus the following table is computed only for those times:
 19:15 & 79\degree\:44' & 27\degree\:46' & \\
 19:30 & 70\degree\:41' & 359\degree\:36' & \\
 19:45 & 58\degree\:21' & 346\degree\:9' & \\
-20:00 & 10\degree\:50' & 331\degree\:32' & \\ \hline
+20:00 & 38\degree\:20' & 336\degree\:3' & \\ \hline
 \end{array}
 ```
