@@ -343,9 +343,9 @@ From which we continue with equations $9.29$ and $9.30$.
 
 To find the times and locations at which the curve of centrality starts and ends, we can repeat the method of finding contacts in example $9.5$ while setting $l = 0$. This makes the double sign in equation $9.55$ obsolete and therefore there are only two contacts of the center with the Earth (if they even exist).
 
-To find the duration of totality or annularity along the line (denoted $T_c$), we use the fact that time is distance divided by speed and that time must be positive. Thus:
+To find the duration of totality or annularity along the central curve, we use the fact that time is distance divided by speed and that time must be positive. Thus:
 ```math
-T_c = \left|\frac{2L_2}{v}\right| = \left|\frac{2(l_2 - i_2\zeta)}{v}\right| \tag{9.74}
+\text{Duration} = \left|\frac{2L_2}{v}\right| = \left|\frac{2(l_2 - i_2\zeta)}{v}\right| \tag{9.74}
 ```
 Where $v$ is simply the speed at which the place of observation is moving with respect to the shadow, or:
 ```math
@@ -459,11 +459,11 @@ v^2 &= (0.51147366 - 0.23223457)^2 + (0.27129112 - (-0.0107298))^2 &&= 0.1575102
 ```
 Then equation $9.74$ gives the central duration:
 ```math
-T_c = \left|\frac{2(-0.01038565 - 0.0046451 \cdot 0.92383294)}{0.39687563}\right| = 0.07396245h
+\text{Duration} = \left|\frac{2(-0.01038565 - 0.0046451 \cdot 0.92383294)}{0.39687563}\right| = 0.07396245h
 ```
 The result is in hours because all our derivatives are in units of hours. When converted to minutes and seconds, $T_c$ is:
 ```math
-T_c = 4m\:26.3s
+\text{Duration} = 4m\:26.3s
 ```
 When calculating the duration of central eclipse for the central contact points, one might run into the issue of the interpolated values giving impossible values for $\zeta_1$. Simply use $\zeta_1 = 0$ for those points, as this is the theoretically correct value. (These points correspond to the points that experience maximum centrality on the horizon, so $\zeta_1 = 0$.)
 
