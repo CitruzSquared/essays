@@ -238,7 +238,7 @@ Setting this to $0$ and solving for $\tau$ gives:
 ```
 And then $T$ is given by $T = T_0 + \tau$.
 
-Successive uses of equation $9.70$ refine our estimation for the time of greatest eclipse. The value of $m$ at this point, i.e. the minimum value of $m$, is called the *gamma* of the eclipse, and is usually denoted $\gamma$, but to avoid confusion with the other $\gamma$ we have been using, we will denote the gamma of the eclipse by $\Gamma$.
+Successive uses of equation $9.70$ refine our estimation for the time of greatest eclipse. The value of $m$ at this point, i.e. the minimum value of $m$, is called the *gamma* of the eclipse.
 
 The location of greatest eclipse on the surface of the Earth can have two distinct cases. If central contacts exist (to be discussed in the next section), the point of greatest eclipse lies on the curve of centrality (to be discussed in the next section) at the time of greatest eclipse. If central contacts do not exist, the point of greatest eclipse lies on the curve of maximum eclipse on the horizon, at the time of greatest eclipse.
 #### Example 9.8
@@ -285,7 +285,11 @@ Now, equation $9.70$ gives:
 T &= 18:17:20 + 0.00015538h = 18:17:21
 \end{align}
 ```
-
+The gamma is given by the $m$ at this time. Since the second approximation makes such a little difference, we will just use the $x$ and $y$ for the interpolated times above:
+```math
+\text{Gamma } = \sqrt{(-0.16080953)^2 + 0.30312923^2} = 0.34314288
+```
+$\blacksquare$
 ### Curve of Centrality
 
 When the shadow of the Moon passes over the Earth, the line the center of the shadow makes on the Earth is called the *curve of centrality* or *central curve*. Therefore the points on this curve have distance $0$ from the center of the shadow. Thus, equation $9.10$ become the extremely simple:
