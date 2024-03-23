@@ -122,7 +122,7 @@ We are not going to do a second approximation. Now we have to find the points on
 
 We find our extreme points (using the method of example $9.6$, but the sign of $\epsilon$ to be used is already known):
 ```math
-\begin{array}{c|c|c|c}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
+\begin{array}{cccc}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
 \text{Sunrise Southern Extreme} & 16:32:38 & -38\degree\:48'\:13'' & 207\degree\:58'\:0'' \\
 \text{Sunrise Northern Extreme} & 17:29:30 & 33\degree\:29'\:55'' & 182\degree\:45'\:29'' \\
 \text{Sunset Northern Extreme} & 19:05:23 & 82\degree\:31'\:16'' & 72\degree\:8'\:45'' \\
