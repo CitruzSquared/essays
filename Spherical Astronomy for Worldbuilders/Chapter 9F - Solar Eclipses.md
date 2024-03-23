@@ -67,4 +67,4 @@ Recall from example $9.7$ when we computed the extremes of the curve of maximum 
 \text{Sunset Southern Extreme} & 20:02:15 & 16\degree\:49'\:18'' & 331\degree\:48'\:27'' \\ \hline
 \end{array}
 ```
-These are also the extremes of the limits of partiality.
+These are also the extremes of the limits of partiality. Thus the northern limit of partiality extends from $17:29:30$ to $19:05:23$, and the southern limit extends from $16:32:38$ to $20:02:15$.
