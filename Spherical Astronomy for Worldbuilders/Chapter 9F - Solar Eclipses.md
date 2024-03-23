@@ -39,7 +39,7 @@ We need to find $\zeta$ to find $C$ and $B$. In order to do this, we first assum
 ```
 From which equation $9.27$ gives a second approximation of $\zeta$:
 ```math
-\zeta = -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_1\cos(d_1-d_2)
+\zeta = -\rho_2\eta_1\sin(d_1-d_2) + \rho_2\zeta_1\cos(d_1-d_2) \tag{9.27}
 ```
 Repeatedly applying equations $9.28$ and $9.27$ until convergence, we can now use the final value in equation $9.77$ and $9.78$ for the accurate value of $Q$. Once $Q$ has been found, apply equation $9.28$ once more, from which equation $9.29$ and $9.30$ give the latitude and longitude of the place.
 
