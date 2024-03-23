@@ -433,7 +433,7 @@ The result is in hours because all our derivatives are in units of hours. When c
 ```math
 T_c = 4m\:12s
 ```
-When calculating the duration of central eclipse for the central contact points, one might run into the issue of the interpolated values giving impossible values for $\zeta_1$. Simply use $\zeta_1 = 0$ for those points, as this is the theoretically correct value. (These points correspond to the points that experience maximum centrality on the horizon, so $\zeta_1 = 1$.)
+When calculating the duration of central eclipse for the central contact points, one might run into the issue of the interpolated values giving impossible values for $\zeta_1$. Simply use $\zeta_1 = 0$ for those points, as this is the theoretically correct value. (These points correspond to the points that experience maximum centrality on the horizon, so $\zeta_1 = 0$.)
 
 In this manner the following table is computed:
 ```math
