@@ -4,7 +4,7 @@ While some places experience the beginning or end of the eclipse exactly at sunr
 ```math
 P' = 0\tag{9.64}
 ```
-Expanding out $P'$ for eclipse on the horizon ($\zeta = 0$), we have:
+Expanding out $P'$ for eclipse on the horizon ($\zeta \approx \zeta_1 = 0$), we have:
 ```math
 a' + c'\sin(Q) -b'\cos(Q) = 0 \tag{9.65}
 ```
@@ -157,7 +157,7 @@ Q_2 &= 2\arctan\left(\frac{-\sqrt{-(-0.0012427)^2+(-0.30358228)^2+(0.50818381)^2
 &= 2.60099756
 \end{align}
 ```
-We find $\psi$ and $\Delta$ with equation $9.67$, first approximating $p = 1$:
+We find $\psi$ and $\Delta$ with equation $9.67$ for each value of $Q$, first approximating $p = 1$:
 ```math
 \begin{alignat}{2}
 \sin(\psi)_1 &= (0.95478937\sin(-1.69092252 - (-0.53639649)))/1 &&= -0.87325361 \\
@@ -211,4 +211,79 @@ In the same manner the following table is computed:
 20:02:15 & 16\degree\:49'& 331\degree\:48' \\ \hline
 \end{array}
 }
+```
+
+### Curve of Centrality
+
+When the shadow of the Moon passes over the Earth, the line the center of the shadow makes on the Earth is called the *curve of centrality* or *central curve*. Therefore the points on this curve have distance $0$ from the center of the shadow. Thus, equation $9.10$ become the extremely simple:
+```math
+\begin{align}
+\xi &= x\\
+\eta &= y
+\end{align}
+```
+Therefore, we have (by equation $9.23$ and $9.24$):
+```math
+\begin{align}
+\xi &= x\\
+\eta_1 &= \frac{y}{\rho_1}\\
+\zeta_1 &= 1 - \xi^2 - \eta_1^2
+\end{align} \tag{9.70}
+```
+From which we continue with equations $9.29$ and $9.30$.
+
+To find the times and locations at which the curve of centrality starts and ends, we can repeat the method of finding contacts in example $9.5$ while setting $l = 0$. This makes the double sign in equation $9.55$ obsolete and therefore there are only two contacts of the center with the Earth (if they even exist).
+
+To find the duration of totality or annularity along the line (denoted $T_c$), we use the fact that time is distance divided by speed. Thus:
+```math
+T_c = \frac{2L_2}{v} = \frac{2(l_2 - i_2\zeta)}{v} \tag{9.71}
+```
+Where $v$ is simply the speed at which the place of observation is moving with respect to the shadow, or:
+```math
+v^2 = (x' - \xi')^2 + (y' - \eta')^2 \tag{9.72}
+```
+With $\xi'$ and $\eta'$ being calculated by equation $9.40$:
+```math
+\begin{align}
+\xi' &= \mu' (-\eta\sin(d) + \zeta\cos(d))\\
+\eta' &= \mu' \xi \sin(d) - d'\zeta
+\end{align}
+```
+But since we have $\xi = x$ and $\eta = y$ on the central curve, we can write:
+```math
+\begin{align}
+\xi' &= \mu' (-y\sin(d) + \zeta\cos(d))\\
+\eta' &= \mu' x \sin(d) - d'\zeta
+\end{align} \tag{9.73}
+```
+#### Example 9.8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the curve of centrality of the solar eclipse of $\text{April 8, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+First we have to determine the central contacts. We repeat the method of example $9.5$ but set $l = 0$ in equation $9.55$. Taking $T_0 = 18:00$ and $p = 1$ as a first approximation, we find:
+```math
+\begin{array}{r|c|c} \hline & \text{First Contact} & \text{Last Contact} \\ \hline
+\tau & -1.33343325 & 1.91121289 \\
+T & 16:41:00 & 19:54:40 \\
+p & 0.99993787 & 0.99817491 \\ \hline
+\end{array}
+```
+We now linearly interpolate for the elements for these times (again, calculating their true values would be even better):
+```math
+\begin{array}{|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2\\ \hline
+16:41:00 & 0.12985038 & 1.21988483 & -0.99057474 & -0.13707257 & 0.00464516 & -0.00913349 \\
+19:54:40 & 0.13067232 & 2.04919533 & 0.629353 & 0.72193509 & 0.004645 & -0.0089596 \\ \hline
+t & \rho_1 & d_1 & d' & \mu' & x' & y' \\ \hline
+16:41:00 & 0.99670351 & 0.13028229 & 0.00025897 & 0.26187053 & 0.5114177 & 0.27144902 \\
+19:54:40 & 0.99670423 & 0.1311069 & 0.00025898 & 0.26187103 & 0.51156487 & 0.27106772 \\ \hline
+\end{array}
 ```
