@@ -219,7 +219,7 @@ The magnitude at this point is given by equation $9.70$ since $\Delta > |l_2| = 
 \begin{align}
 l_1 &= 0.53563338\\
 l_2 &= -0.01048206\\
-\text{Magnitude} = \frac{0.53563338 - 0.10043927}{0.53563338 + (-0.01048206)} = 0.82870231
+\text{Magnitude} &= \frac{0.53563338 - 0.10043927}{0.53563338 + (-0.01048206)} = 0.82870231
 \end{align}
 ```
 Since the extreme points are defined as places where $\Delta = l_1$, the magnitude at these points is always $0$.
