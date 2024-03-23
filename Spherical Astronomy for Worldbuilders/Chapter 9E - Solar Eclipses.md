@@ -212,6 +212,79 @@ In the same manner the following table is computed:
 \end{array}
 }
 ```
+$\blacksquare$
+### Greatest Eclipse
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/91a468a0-a447-411d-a60f-4ee875b5f00d" width="350"/> In this diagram, the point labeled $G$ is called the point of *greatest eclipse*. It is the point at which the distance from the center to the Earth to the center of the shadow, a variable we have been calling $m$, is minimum.
+
+Minimizing $m$ means minimizing $m^2$, and since $m^2 = x^2 + y^2$, the derivative is:
+```math
+\frac{d(m^2)}{dt} = 2xx' + 2yy'
+```
+Which needs to be $0$.\
+Since we can linearly approximate $x$ and $y$ as:
+```math
+\begin{align}
+x &= x_0 + x'\tau\\
+y &= y_0 + y'\tau
+\end{align}
+```
+The derivative of $m^2$ expands to:
+```math
+\frac{d(m^2)}{dt} = 2(x_0x' + x'^2\tau) + 2(y_0y' + y'^2\tau)
+```
+Setting this to $0$ and solving for $\tau$ gives:
+```math
+\tau = -\frac{x_0x' + y_0y'}{x'^2 + y'^2} \tag{9.70}
+```
+And then $T$ is given by $T = T_0 + \tau$.
+
+Successive uses of equation $9.70$ refine our estimation for the time of greatest eclipse. The value of $m$ at this point, i.e. the minimum value of $m$, is called the *gamma* of the eclipse, and is usually denoted $\gamma$, but to avoid confusion with the other $\gamma$ we have been using, we will denote the gamma of the eclipse by $\Gamma$.
+
+The location of greatest eclipse on the surface of the Earth can have two distinct cases. If central contacts exist (to be discussed in the next section), the point of greatest eclipse lies on the curve of centrality (to be discussed in the next section) at the time of greatest eclipse. If central contacts do not exist, the point of greatest eclipse lies on the curve of maximum eclipse on the horizon, at the time of greatest eclipse.
+#### Example 9.8
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the time of greatest eclipse and the gamma of the solar eclipse of $\text{April 8, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We choose $T_0 = 18:00$ as a first approximation. At this time,
+```math
+\begin{align}
+x_0 &= -0.30856088 \\
+y_0 &= 0.22479055 \\
+x' &= 0.51147366 \\
+y' &= 0.27129112
+\end{align}
+```
+Thus, equation $9.70$ gives:
+```math
+\begin{align}
+\tau &= -\frac{(-0.30856088)\cdot0.51147366 + 0.22479055\cdot0.27129112}{0.51147366^2 + 0.27129112^2}\\
+&= 0.28888984h \\
+T &= 18:00 + 0.28888984h = 18:17:20
+\end{align}
+```
+We now linearly interpolate for the elements for this time (again, calculating their true values would be even better):
+```math
+\begin{array}{|c|c|c|c|c|}\hline t & x & y & x' & y'\\ \hline
+18:17:20 & -0.16080953 & 0.30312923 & 0.51154119 & 0.27119988 \\ \hline
+\end{array}
+```
+Now, equation $9.70$ gives:
+```math
+\begin{align}
+\tau &= -\frac{(-0.16080953)\cdot0.51154119 + 0.30312923\cdot0.27119988}{0.51154119^2 + 0.27119988^2}\\
+&= 0.00015538h \\
+T &= 18:17:20 + 0.00015538h = 18:17:21
+\end{align}
+```
 
 ### Curve of Centrality
 
@@ -256,7 +329,7 @@ But since we have $\xi = x$ and $\eta = y$ on the central curve, we can write:
 \eta' &= \mu' x \sin(d) - d'\zeta
 \end{align} \tag{9.73}
 ```
-#### Example 9.8
+#### Example 9.9
 <div align="center">
 <table>
 <tbody>
