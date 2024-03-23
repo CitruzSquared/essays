@@ -390,7 +390,7 @@ equation $9.70$ gives:
 \begin{alignat}{2}
 \xi &= -0.30856088 &&\\
 \eta_1 &= \frac{0.22479055}{0.99670381} &&= 0.22553395\\
-\zeta_1 &= 1 - (-0.30856088)^2 - (0.22553395)^2 &&= 0.85392462
+\zeta_1 &= \sqrt{1 - (-0.30856088)^2 - (0.22553395)^2} &&= 0.85392462
 \end{alignat}
 ```
 Then, equations $9.29$ and $9.30$ give:
@@ -406,7 +406,7 @@ Now to find the central duration. Equation $9.27$ gives $\zeta$:
 ```math
 \begin{align}
 \zeta &= -0.99994358 \cdot 0.22553395 \sin(0.13062939 - 0.12976473) + 0.99994358 \cdot 0.85392462\cos(0.13062939 - 0.12976473) \\
-&= 0.85368112
+&= 0.92408042
 \end{align}
 ```
 Equation $9.73$ gives $\xi'$ and $\eta'$:
@@ -433,26 +433,28 @@ The result is in hours because all our derivatives are in units of hours. When c
 ```math
 T_c = 4m\:12s
 ```
-In the same manner the following table is computed:
+When calculating the duration of central eclipse for the central contact points, one might run into the issue of the interpolated values giving impossible values for $\zeta_1$. Simply use $\zeta_1 = 0$ for those points, as this is the theoretically correct value. (These points correspond to the points that experience maximum centrality on the horizon, so $\zeta_1 = 1$.)
+
+In this manner the following table is computed:
 ```math
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Curves of Centrality}\\
 \begin{array}{|c|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude} & \begin{matrix}\text{Central}\\\text{Duration}\end{matrix}\\ \hline
 16:40:02 & -7\degree\:49' & 201\degree\:8' & 2m\:7s\\
-16:45 & -5\degree\:54' & 205\degree\:1'  & 2m\:17s\\
-17:00 & -0\degree\:14' & 216\degree\:57'  & 2m\:46s\\
-17:15 & 5\degree\:7' & 227\degree\:55'  & 3m\:13s\\
-17:30 & 10\degree\:11' & 236\degree\:54'  & 3m\:38s\\
-17:45 & 15\degree\:1' & 243\degree\:54'  & 3m\:58s\\
-18:00 & 19\degree\:37' & 249\degree\:25'  & 4m\:12s\\
-18:15 & 24\degree\:1' & 254\degree\:9'  & 4m\:18s\\
-18:17:21 & 24\degree\:40' & 254\degree\:51'  & 4m\:18s\\
-18:30 & 28\degree\:13' & 258\degree\:53'  & 4m\:16s\\
-18:45 & 32\degree\:12' & 264\degree\:35'  & 4m\:5s\\
-19:00 & 35\degree\:59' & 272\degree\:41'  & 3m\:46s\\
-19:15 & 39\degree\:32' & 285\degree\:17'  & 3m\:22s\\
-19:30 & 42\degree\:51' & 304\degree\:15'  & 2m\:54s\\
-19:45 & 45\degree\:54' & 327\degree\:0'  & 2m\:24s\\
+16:45 & -4\degree\:20' & 216\degree\:56'  & 2m\:42s\\
+17:00 & 1\degree\:36' & 230\degree\:0'  & 3m\:20s\\
+17:15 & 6\degree\:38' & 237\degree\:11'  & 3m\:46s\\
+17:30 & 11\degree\:18' & 242\degree\:28'  & 4m\:5s\\
+17:45 & 15\degree\:48' & 246\degree\:53'  & 4m\:18s\\
+18:00 & 20\degree\:11' & 250\degree\:55'  & 4m\:26s\\
+18:15 & 24\degree\:29' & 254\degree\:54'  & 4m\:30s\\
+18:17:21 & 25\degree\:9' & 255\degree\:32'  & 4m\:30.2s\\
+18:30 & 28\degree\:46' & 259\degree\:9'  & 4m\:29s\\
+18:45 & 33\degree\:0' & 263\degree\:59'  & 4m\:23s\\
+19:00 & 37\degree\:13' & 269\degree\:50'  & 4m\:12s\\
+19:15 & 41\degree\:21' & 277\degree\:27'  & 3m\:55s\\
+19:30 & 45\degree\:17' & 288\degree\:13'  & 3m\:31s\\
+19:45 & 48\degree\:33' & 306\degree\:3'  & 2m\:56s\\
 19:54:28 & 47\degree\:41' & 339\degree\:41' & 2m\:5s\\ \hline
 \end{array}
 }
