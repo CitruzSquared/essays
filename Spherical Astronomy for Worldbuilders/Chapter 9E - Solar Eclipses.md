@@ -438,7 +438,7 @@ When calculating the duration of central eclipse for the central contact points,
 In this manner the following table is computed:
 ```math
 \displaylines{
-\text{Solar Eclipse of April 8, 2024 – Curves of Centrality}\\
+\text{Solar Eclipse of April 8, 2024 – Curve of Centrality}\\
 \begin{array}{|c|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude} & \begin{matrix}\text{Central}\\\text{Duration}\end{matrix}\\ \hline
 16:40:02 & -7\degree\:49' & 201\degree\:8' & 2m\:7s\\
 16:45 & -4\degree\:20' & 216\degree\:56'  & 2m\:42s\\
