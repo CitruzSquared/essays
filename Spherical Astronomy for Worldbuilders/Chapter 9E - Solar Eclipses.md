@@ -173,7 +173,7 @@ We find $\psi$ and $\Delta$ with equation $9.67$, first approximating $p = 1$:
 \Delta_{22} &= 0.95478937\cos(-1.69092252 - 2.60099756) - 1\cdot\cos(2.08308496) &&= 0.10043927
 \end{alignat}
 ```
-Considering $l_1 = 0.53563338$ at this time, $\psi_22$ ($\psi_2$ for $Q_2$) is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $Q_2$.
+Considering $l_1 = 0.53563338$ at this time, $\psi_{22}$ ($\psi_2$ for $Q_2$) is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_{22}$ and $Q_2$.
 ```math
 \begin{array}{r|c} \hline
 Q_2 + \psi_{22} = \gamma & 4.68408253 \\
