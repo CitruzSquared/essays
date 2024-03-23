@@ -345,8 +345,8 @@ Using $p = 1$ as a first estimate, we can calculate $\epsilon$ via equation $9.6
 \begin{align}
 \sin(\epsilon/2) &= \pm\sqrt{\frac{(0.53555609 - 1.36888215 + 1)(0.53555609 + 1.36888215 - 1)}{4 \cdot 1.36888215}}\\
 &= \pm0.16592441\\
-\therefore \psi_1 &= 2\arcsin(0.16592441) = 0.33339068\\
-\therefore \psi_2 &= 2\arcsin(-0.16592441) = -0.33339068
+\therefore \epsilon_1 &= 2\arcsin(0.16592441) = 0.33339068\\
+\therefore \epsilon_2 &= 2\arcsin(-0.16592441) = -0.33339068
 \end{align}
 ```
 Now, we can find $\gamma$ with equation $9.62$, then $\gamma'$ and then a better approximation for $p$ with equation $9.58$:
