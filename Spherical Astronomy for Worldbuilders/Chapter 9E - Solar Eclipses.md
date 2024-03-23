@@ -197,17 +197,17 @@ In the same manner the following table is computed:
 ```math
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Curves of Maximum Eclipse on the Horizon}\\
-\begin{array}{|c|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude} & \text{Obscuration} \\ \hline
+\begin{array}{|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
 16:32:38 & -38\degree\:48' & 207\degree\:58' \\
-16:45 & -1\degree\:37' & 199\degree\:4' & \\
-17:00 & 12\degree\:34' & 193\degree\:26' & \\
-17:15 & 23\degree\:50' & 188\degree\:2' & \\
+16:45 & -1\degree\:37' & 199\degree\:4'  \\
+17:00 & 12\degree\:34' & 193\degree\:26'  \\
+17:15 & 23\degree\:50' & 188\degree\:2'  \\
 17:29:30 & 33\degree\:30' & 182\degree\:45' \\ \hline
-19:05:23 & 82\degree\:31' & 72\degree\:9' \\
-19:15 & 79\degree\:44' & 27\degree\:46' & \\
-19:30 & 70\degree\:41' & 359\degree\:36' & \\
-19:45 & 58\degree\:21' & 346\degree\:9' & \\
-20:00 & 38\degree\:20' & 336\degree\:3' & \\ 
+19:05:23 & 82\degree\:31' & 72\degree\:9 \\
+19:15 & 79\degree\:44' & 27\degree\:46'  \\
+19:30 & 70\degree\:41' & 359\degree\:36'  \\
+19:45 & 58\degree\:21' & 346\degree\:9'  \\
+20:00 & 38\degree\:20' & 336\degree\:3'  \\ 
 20:02:15 & 16\degree\:49'& 331\degree\:48' \\ \hline
 \end{array}
 }
