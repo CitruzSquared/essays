@@ -74,7 +74,7 @@ This approximation can be refined recursively, by finding the true value of $P'$
 
 Once we have the time when $P' = 0$ on the rising/setting limits, we can simply calculate the place via the method of example $9.6$. These will be the extreme points of the curve of maximum on the horizon.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/20ed01a5-5a81-4e42-9dc2-c3dd54f993dd" width="350"/> To find the degree of obscuration, called the *magnitude* of the eclipse at any of these points, consider this diagram, which is a simplified diagram of an annular eclipse of the Sun (the segment $SS'$) by the Moon (the segment $MM'$). The point of observation $B$ is outside the umbral shadow (region $U'U$), and within the penumbral shadow (region $P'P$), and sees a partial eclipse. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/20ed01a5-5a81-4e42-9dc2-c3dd54f993dd" width="350"/> To find the degree of obscuration, called the *magnitude* of the eclipse, at any of these points, consider this diagram, which is a simplified diagram of an annular eclipse of the Sun (the segment $SS'$) by the Moon (the segment $MM'$). The point of observation $B$ is outside the umbral shadow (region $U'U$), and within the penumbral shadow (region $P'P$), and sees a partial eclipse. 
 
 The known distances are: the radius of the penumbral shadow $OP = OP' = L_1$, the radius of the umbral shadow $OU = OU' = L_2$, and the distance from the center of the shadow to the observer $OB = \Delta$.
 
