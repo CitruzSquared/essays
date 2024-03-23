@@ -44,3 +44,16 @@ From which equation $9.27$ gives a second approximation of $\zeta$:
 Repeatedly applying equations $9.28$ and $9.27$ until convergence, we can now use the final value in equation $9.77$ and $9.78$ for the accurate value of $Q$. Once $Q$ has been found, apply equation $9.28$ once more, from which equation $9.29$ and $9.30$ give the latitude and longitude of the place.
 
 Since there are two values of $Q$, two points can be found. If $(l - i\zeta)\cos(Q)$ for that point is negative, the point belongs to the northern limit. If $(l - i\zeta)\cos(Q)$ is positive, it belongs to the southern limit. The extreme points of these curves are the points where $\zeta = 0$, which we have already found as the northern and southern extremes of the curve of maximum eclipse on the horizon. The northern limit of partiality will connect the two northern extremes of the curve of maximum eclipse on the horizon, and the southern limit will connect the two southern extremes.
+
+#### Example 9.3
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the limits of partiality of the solar eclipse of $\text{April 8, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
