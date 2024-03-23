@@ -285,7 +285,7 @@ Now, equation $9.70$ gives:
 T &= 18:17:20 + 0.00015538h = 18:17:21
 \end{align}
 ```
-The gamma is given by the $m$ at this time. Since the second approximation makes such a little difference, we will just use the $x$ and $y$ for the interpolated times above:
+The gamma is given by the $m = \sqrt{x^2 + y^2}$ at this time. Since the second approximation makes such a little difference, we will just use the $x$ and $y$ for the interpolated times above:
 ```math
 \text{Gamma } = \sqrt{(-0.16080953)^2 + 0.30312923^2} = 0.34314288
 ```
