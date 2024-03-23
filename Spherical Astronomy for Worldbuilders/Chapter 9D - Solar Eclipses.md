@@ -244,30 +244,6 @@ Our answers can be arranged in a table:
 \end{array}
 }
 ```
-Also, because these will be useful later, a quick first estimation for the times only gives:
-```math
-\displaylines{
-\text{Solar Eclipse of April 8, 2024 – Contacts of Umbra}\\
-\begin{array}{cccc}\hline \text{Event} & \text{Contact} & \text{Time} \\\hline
-\text{First External Contact}& U_1 & 16:39:00\\
-\text{First Internal Contact} & U_2& 16:40:59\\
-\text{Last Internal Contact} & U_3& 19:53:40\\
-\text{Last External Contact} & U_4& 19:55:40\\ \hline
-\end{array}
-}
-```
-Remember to use the absolute value of $l_2$ in the case of total eclipse.
-
-Using $l = 0$, we can get the contacts of *central eclipse*:
-```math
-\displaylines{
-\text{Solar Eclipse of April 8, 2024 – Central Contacts}\\
-\begin{array}{cccc}\hline \text{Event} & \text{Contact} & \text{Time} \\\hline
-\text{First Central Contact}& C_1 & 16:40:00\\
-\text{Last Central Contact} & C_2& 19:54:40\\ \hline
-\end{array}
-}
-```
 $\blacksquare$
 
 Only now that we know that this eclipse began globally at $15:42$ and ended at $20:52$, can we calculate the Besselian elements for the entire eclipse and tabulate them. The elements for the times in between the tabulated values can then be found via simple interpolation. If one is writing a program to predict eclipses however, tabulation and interpolation is unnecessary, simply start at the beginning time, calculate the elements and the coordinates of the location of the shadow of the Moon at that time (especially the special locations to be discussed hereafter), then increment the time by a preselected $\Delta t$ (the smaller the better).
