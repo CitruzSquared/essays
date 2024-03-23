@@ -462,5 +462,5 @@ In this manner the following table is computed:
 In theory, the point of greatest eclipse will experience the longest central eclipse. In practice however, because of the various mountains and valleys on the Moon, the point of greatest duration might differ from the point of greatest eclipse by a few degrees in coordinates. This is entirely too difficult to calculate, and because the duration difference will only be of a tiny fraction of a second, we will not go into the calculation of that here.\
 $\blacksquare$
 
-### Northern and Southern Limits of Partiality
+### Limits of Partiality
 (Continued in Part F...)
