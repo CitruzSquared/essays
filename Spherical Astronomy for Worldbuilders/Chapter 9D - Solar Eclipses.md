@@ -311,13 +311,13 @@ l^2 - m^2 - p^2 + 2mp &= -2mp\cos(M - \gamma) + 2mp\\
 \frac{(l - m + p)(l + m - p)}{4mp} &= \sin^2((M - \gamma)/2)\\
 \end{align}
 ```
-If we now set $\psi = M - \gamma$, we have:
+If we now set $\epsilon = M - \gamma$, we have:
 ```math
-\sin(\psi/2) = \pm\sqrt{\frac{(l - m + p)(l + m - p)}{4mp}} \tag{9.61}
+\sin(\epsilon/2) = \pm\sqrt{\frac{(l - m + p)(l + m - p)}{4mp}} \tag{9.61}
 ```
-Where $\psi/2$ can always be taken as less than $90\degree$. Once we have $\psi$, we can get $\gamma$ by:
+Where $\epsilon/2$ can always be taken as less than $90\degree$. Once we have $\epsilon$, we can get $\gamma$ by:
 ```math
-\gamma = M + \psi \tag{9.62}
+\gamma = M + \epsilon \tag{9.62}
 ```
 And then carry on with equations $9.58$ and $9.59$ to get the latitude and longitude of the place. Now, because of the double sign on equation $9.61$, we can see that there are two points where the eclipse is beginning or ending on the horizon at any moment in time between the internal and external contacts. Determining whether the Sun is rising or setting at the point calculated can be done by comparing $\theta$, the hour angle of the eclipse. Remembering that the hour angle is measured such that West is positive, if the hour angle $\theta$ is less than $180\degree$, the eclipse is happening at sunset. If the hour angle is more than $180\degree$ (or between $-180\degree$ and $0\degree$), the eclipse is happening at sunrise. Determining if the eclipse is beginning or ending can be done just like example $9.4$, but since we have $\zeta = 0$, equation $9.50$ simplifies to:
 ```math
@@ -363,10 +363,10 @@ m &= 1.36888215 \\
 M &= -1.80526591
 \end{align}
 ```
-Using $p = 1$ as a first estimate, we can calculate $\psi$ via equation $9.61$:
+Using $p = 1$ as a first estimate, we can calculate $\epsilon$ via equation $9.61$:
 ```math
 \begin{align}
-\sin(\psi/2) &= \pm\sqrt{\frac{(0.53555609 - 1.36888215 + 1)(0.53555609 + 1.36888215 - 1)}{4 \cdot 1.36888215}}\\
+\sin(\epsilon/2) &= \pm\sqrt{\frac{(0.53555609 - 1.36888215 + 1)(0.53555609 + 1.36888215 - 1)}{4 \cdot 1.36888215}}\\
 &= \pm0.16592441\\
 \therefore \psi_1 &= 2\arcsin(0.16592441) = 0.33339068\\
 \therefore \psi_2 &= 2\arcsin(-0.16592441) = -0.33339068
@@ -374,17 +374,17 @@ Using $p = 1$ as a first estimate, we can calculate $\psi$ via equation $9.61$:
 ```
 Now, we can find $\gamma$ with equation $9.62$, then $\gamma'$ and then a better approximation for $p$ with equation $9.58$:
 ```math
-\begin{array}{r|c|c}\hline  & \psi > 0 & \psi < 0 \\ \hline
-M + \psi = \gamma & -1.47187523 & -2.13865659 \\
+\begin{array}{r|c|c}\hline  & \epsilon > 0 & \epsilon < 0 \\ \hline
+M + \epsilon = \gamma & -1.47187523 & -2.13865659 \\
 \gamma' & -1.47155018 & -2.14015486 \\
 p & 0.99996769 &  0.99904305 
 \end{array}
 ```
 Now we substitute this value of $p$ into equation $9.61$:
 ```math
-\begin{array}{r|c|c} \sin(\psi/2) & 0.16591397 & -2.13865659 \\
-\psi & 0.33336951 & -0.33276149 \\
-M + \psi = \gamma & -1.4718964 &  -2.1380274 \\
+\begin{array}{r|c|c} \sin(\epsilon/2) & 0.16591397 & -2.13865659 \\
+\epsilon & 0.33336951 & -0.33276149 \\
+M + \epsilon = \gamma & -1.4718964 &  -2.1380274 \\
 \gamma' & -1.47157142 & -2.13952479 
 \end{array}
 ```
@@ -416,7 +416,7 @@ c_1' &= 0.50114349
 ```
 Thus:
 ```math
-\begin{array}{r|c|c}\hline  & \psi > 0 & \psi < 0 \\ \hline
+\begin{array}{r|c|c}\hline  & \epsilon > 0 & \epsilon < 0 \\ \hline
 p\sin(\gamma) & -0.99508123 & -0.84258487 \\
 p\cos(\gamma) & 0.09873559 & -0.53678465 \\ 
 x - p\sin(\gamma) = l\sin(Q) \enspace(9.60) & -0.33634517 & -0.48884153 \\
