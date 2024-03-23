@@ -461,7 +461,7 @@ Then equation $9.74$ gives the central duration:
 ```math
 \text{Duration} = \left|\frac{2(-0.01038565 - 0.0046451 \cdot 0.92383294)}{0.39687563}\right| = 0.07396245h
 ```
-The result is in hours because all our derivatives are in units of hours. When converted to minutes and seconds, $T_c$ is:
+The result is in hours because all our derivatives are in units of hours. When converted to minutes and seconds, the duration is:
 ```math
 \text{Duration} = 4m\:26.3s
 ```
