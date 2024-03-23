@@ -160,12 +160,13 @@ Q_2 &= 2\arctan\left(\frac{-\sqrt{-(-0.0012427)^2+(-0.30358228)^2+(0.50818381)^2
 We find $\psi$ and $\Delta$ with equation $9.67$, first approximating $p = 1$:
 ```math
 \begin{alignat}{2}
-\sin(\psi)_1 &= \frac{0.95478937\sin(-1.69092252 - (-0.53639649))} &&= -0.87325361 \\
+\sin(\psi)_1 &= (0.95478937\sin(-1.69092252 - (-0.53639649)))/1 &&= -0.87325361 \\
 \psi_{11} &= \arcsin(-0.87325361) &&= -1.06184017\\
 \Delta_{11} &= 0.95478937\cos(-1.69092252 - (-0.53639649)) - 1\cdot\cos(-1.06184017) &&= -0.10119491\\
 \psi_{12} &= \pi - \arcsin(-0.87325361) &&= 4.20343283\\
 \Delta_{12} &= 0.95478937\cos(-1.69092252 - (-0.53639649)) - 1\cdot\cos(4.20343283) &&= 0.87333703\\
-\sin(\psi)_2 &= \frac{0.95478937\sin(-1.69092252 - 2.60099756)} &&= 0.87162496 \\
+\\
+\sin(\psi)_2 &= (0.95478937\sin(-1.69092252 - 2.60099756))/1 &&= 0.87162496 \\
 \psi_{21} &= \arcsin(0.87162496) &&= 1.05850769\\
 \Delta_{21} &= 0.95478937\cos(-1.69092252 - 2.60099756) - 1\cdot\cos(1.05850769) &&= -0.87990746\\
 \psi_{22} &= \pi - \arcsin(0.87162496) &&= 2.08308496\\
@@ -175,13 +176,13 @@ We find $\psi$ and $\Delta$ with equation $9.67$, first approximating $p = 1$:
 Considering $l_1 = 0.53563338$ at this time, $\psi_22$ ($\psi_2$ for $Q_2$) is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $Q_2$.
 ```math
 \begin{array}{r|c} \hline
-\gamma = Q + \psi & 4.68408253 \\
+\gamma = Q_2 + \psi_{22} & 4.68408253 \\
 \rho_1 & 0.99670449 \\
 \gamma' & -1.59919632\\
 p & 0.99999735 \\
-m\sin(M - Q)/p = \sin(\psi) & 0.87162727 \\
-\pi - \arcsin(\sin(\psi)) = \psi & 2.08308025 \\
-\gamma = Q + \psi & 4.68407781\\
+m\sin(M - Q_2)/p = \sin(\psi)_2 & 0.87162727 \\
+\pi - \arcsin(\sin(\psi))_2 = \psi_{22} & 2.08308025 \\
+\gamma = Q_2 + \psi_{22} & 4.68407781\\
 \gamma' & -1.59920106\\
 \sin(\gamma') = \xi & -0.99959661 \\
 \cos(\gamma') = \eta_1 & -0.02753202 \\
