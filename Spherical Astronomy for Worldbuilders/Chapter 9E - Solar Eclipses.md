@@ -349,18 +349,67 @@ Determine the curve of centrality of the solar eclipse of $\text{April 8, } 2024
 First we have to determine the central contacts. We repeat the method of example $9.5$ but set $l = 0$ in equation $9.55$. Taking $T_0 = 18:00$ and $p = 1$ as a first approximation, we find:
 ```math
 \begin{array}{r|c|c} \hline & \text{First Contact} & \text{Last Contact} \\ \hline
-\tau & -1.33343325 & 1.91121289 \\
+\tau & -1.33343322 & 1.91121291 \\
 T & 16:41:00 & 19:54:40 \\
 p & 0.99993787 & 0.99817491 \\ \hline
 \end{array}
 ```
 We now linearly interpolate for the elements for these times (again, calculating their true values would be even better):
 ```math
-\begin{array}{|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2\\ \hline
-16:41:00 & 0.12985038 & 1.21988483 & -0.99057474 & -0.13707257 & 0.00464516 & -0.00913349 \\
-19:54:40 & 0.13067232 & 2.04919533 & 0.629353 & 0.72193509 & 0.004645 & -0.0089596 \\ \hline
-t & \rho_1 & d_1 & d' & \mu' & x' & y' \\ \hline
-16:41:00 & 0.99670351 & 0.13028229 & 0.00025897 & 0.26187053 & 0.5114177 & 0.27144902 \\
-19:54:40 & 0.99670423 & 0.1311069 & 0.00025898 & 0.26187103 & 0.51156487 & 0.27106772 \\ \hline
+\begin{array}{|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2 & \rho_1\\ \hline
+16:40:00 & 0.12985038 & 1.21988483 & -0.99057474 & -0.13707257 & 0.00464516 & -0.00913349 & 0.99670351 \\
+19:54:40 & 0.13069238 & 2.06956364 & 0.66914899 & 0.74302244 & 0.00464499 & -0.00895854 & 0.99670424 \\ \hline
+t & & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
+16:41:00 & 0.13028229 & 0.99994388 & 0.12941987 & 0.00025897 & 0.26187053 & 0.5114177 & 0.27144902 \\
+19:54:40 & 0.13112703 & 0.99994315 & 0.13025915 & 0.00025898 & 0.26187148 & 0.51157069 & 0.27105629\\ \hline
 \end{array}
+```
+Now repeating the calculations for the contacts, we obtain:
+```math
+\begin{array}{r|c|c} \hline & \text{First Contact} & \text{Last Contact} \\ \hline
+T_0 & 16:40:00 & 19:54:40 \\
+\tau & 0.00052253 & -0.00321216 \\
+T & 16:40:02 & 19:54:28 \\
+\gamma' & -1.70807333 & 0.73085298 \\
+\phi & -7\degree\:49'\:27'' & 47\degree\:40'\:46'' \\
+\lambda & 201\degree\:8'\:2'' & 339\degree\:41'\:25'' \\ \hline
+\end{array}
+```
+Now that we know the curve of centrality extends from $16:40:02$ to $19:54:28$, we can compute the curve. I will give the calculation for the point at time $18:00$ in full.
+
+At this time, the elements are:
+```math
+\begin{array}{|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2 & \rho_1\\ \hline
+18:00 &  0.13019636 & 1.56907269 & -0.30856088 & 0.22479055 & 0.0046451 & -0.00902906 & 0.99670381\\ \hline
+t  & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
+18:00 & 0.13062939 & 0.99994358 & 0.12976473  & 0.00025898 & 0.26187054 & 0.51147366 & 0.27129112 \\ \hline
+\end{array}
+```
+equation $9.70$ gives:
+```math
+\begin{alignat}{2}
+\xi &= -0.30856088 &&\\
+\eta_1 &= \frac{0.22479055}{0.99670381} &&= 0.22553395\\
+\zeta_1 &= 1 - (-0.30856088)^2 - (0.22553395)^2 &&= 0.85392462
+\end{alignat}
+```
+Then, equations $9.29$ and $9.30$ give:
+```math
+\begin{align}
+\phi_1 &= 0.34143872\\
+\theta &= -0.36100439\\
+\phi &= 19\degree\:37'\:26''\\
+\lambda &= 249\degree\:24'\:53''\\
+\end{align}
+```
+Now to find the central duration. Equation $9.27$ gives $\zeta$:
+```math
+
+```
+Equation $9.73$ gives:
+```math
+\begin{align}
+\xi' &= 0.26187054 (-y\sin(d) + \zeta\cos(d))\\
+\eta' &= 0.26187054 \cdot (-0.30856088) \sin(d) - d'\zeta
+\end{align}
 ```
