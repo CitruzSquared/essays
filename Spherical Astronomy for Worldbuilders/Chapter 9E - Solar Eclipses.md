@@ -157,17 +157,22 @@ Q_2 &= 2\arctan\left(\frac{-\sqrt{-(-0.0012427)^2+(-0.30358228)^2+(0.50818381)^2
 &= 2.60099756
 \end{align}
 ```
-We find $\psi$ and $\Delta$ with equation $9.67$:
+We find $\psi$ and $\Delta$ with equation $9.67$, first approximating $p = 1$:
 ```math
-\begin{array}{r|c|c} \hline & Q_1 & Q_2 \\ \hline
-m\sin(M - Q) = \sin(\psi) & -0.87325361 & 0.87162496\\
-\psi_1 & -1.06184017 & 1.05850769\\
-\pi - \psi_1 = \psi_2 & 4.20343283 & 2.08308496\\
-\psi_1 \rightarrow \Delta_1 & -0.10119491 & -0.87990746 \\
-\psi_2 \rightarrow \Delta_2 & 0.87333703 & 0.10043927 \\ \hline
-\end{array}
+\begin{alignat}{2}
+\sin(\psi)_1 &= \frac{0.95478937\sin(-1.69092252 - (-0.53639649))} &&= -0.87325361 \\
+\psi_{11} &= \arcsin(-0.87325361) &&= -1.06184017\\
+\Delta_{11} &= 0.95478937\cos(-1.69092252 - (-0.53639649)) - 1\cdot\cos(-1.06184017) &&= -0.10119491\\
+\psi_{12} &= \pi - \arcsin(-0.87325361) &&= 4.20343283\\
+\Delta_{12} &= 0.95478937\cos(-1.69092252 - (-0.53639649)) - 1\cdot\cos(4.20343283) &&= 0.87333703\\
+\sin(\psi)_2 &= \frac{0.95478937\sin(-1.69092252 - 2.60099756)} &&= 0.87162496 \\
+\psi_{21} &= \arcsin(0.87162496) &&= 1.05850769\\
+\Delta_{21} &= 0.95478937\cos(-1.69092252 - 2.60099756) - 1\cdot\cos(1.05850769) &&= -0.87990746\\
+\psi_{22} &= \pi - \arcsin(0.87162496) &&= 2.08308496\\
+\Delta_{22} &= 0.95478937\cos(-1.69092252 - 2.60099756) - 1\cdot\cos(2.08308496) &&= 0.10043927
+\end{alignat}
 ```
-Considering $l_1 = 0.53563338$ at this time, $\psi_2$ for $Q_2$ is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $Q_2$.
+Considering $l_1 = 0.53563338$ at this time, $\psi_22$ ($\psi_2$ for $Q_2$) is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $Q_2$.
 ```math
 \begin{array}{r|c} \hline
 \gamma = Q + \psi & 4.68408253 \\
