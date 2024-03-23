@@ -214,7 +214,7 @@ Q_2 + \psi_{22} = \gamma & 4.68407781\\
 \lambda & 199\degree\:3'\:56'' \\ \hline
 \end{array}
 ```
-The magnitude at this point is given by equation $9.70$ since $\Delta > |l_2| = 0.01048206$ and therefore the eclipse only partial:
+The magnitude at this point is given by equation $9.70$ since $\Delta = 0.10043927 > |l_2| = 0.01048206$ and therefore the eclipse only partial:
 ```math
 \begin{align}
 l_1 &= 0.53563338\\
