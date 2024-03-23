@@ -174,7 +174,7 @@ In order to solve equation $9.28$, let $\beta$ and $\gamma$ be defined such that
 \displaylines{
 \begin{align}
 \sin(\beta)\sin(\gamma) &= x - l\sin(Q)\\
-\sin(\beta)\cos(\gamma) &= \frac{y - l\cos(Q)}{\rho_1}\\
+\sin(\beta)\cos(\gamma) &= \frac{y - l\cos(Q)}{\rho_1}
 \end{align}
 }\tag{9.31}
 ```
