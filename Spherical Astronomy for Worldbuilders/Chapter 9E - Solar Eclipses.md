@@ -269,7 +269,7 @@ Setting this to $0$ and solving for $\tau$ gives:
 ```
 And then $T$ is given by $T = T_0 + \tau$.
 
-Successive uses of equation $9.70$ refine our estimation for the time of greatest eclipse. The value of $m$ at this point, i.e. the minimum value of $m$, is called the *gamma* of the eclipse.
+Successive uses of equation $9.72$ refine our estimation for the time of greatest eclipse. The value of $m$ at this point, i.e. the minimum value of $m$, is called the *gamma* of the eclipse.
 
 The location of greatest eclipse on the surface of the Earth can have two distinct cases. If central contacts exist (to be discussed in the next section), the point of greatest eclipse lies on the curve of centrality (to be discussed in the next section) at the time of greatest eclipse. If central contacts do not exist, the point of greatest eclipse lies on the curve of maximum eclipse on the horizon, at the time of greatest eclipse.
 #### Example 9.8
@@ -316,6 +316,7 @@ Now, equation $9.72$ gives:
 T &= 18:17:20 + 0.00015538h = 18:17:21
 \end{align}
 ```
+We will not make a third approximation.\
 The gamma is given by the $m = \sqrt{x^2 + y^2}$ at this time. Since the second approximation makes such a small difference, we will just use the $x$ and $y$ for $18:70:20$, listed in the table above:
 ```math
 \text{Gamma } = \sqrt{(-0.16080953)^2 + 0.30312923^2} = 0.34314288
