@@ -45,7 +45,7 @@ Repeatedly applying equations $9.28$ and $9.27$ until convergence, we can now us
 
 Since there are two values of $Q$, two points can be found. If $(l - i\zeta)\cos(Q)$ for that point is negative, the point belongs to the northern limit. If $(l - i\zeta)\cos(Q)$ is positive, it belongs to the southern limit. The extreme points of these curves are the points where $\zeta = 0$, which we have already found as the northern and southern extremes of the curve of maximum eclipse on the horizon. The northern limit of partiality will connect the two northern extremes of the curve of maximum eclipse on the horizon, and the southern limit will connect the two southern extremes.
 
-#### Example 9.3
+#### Example 9.10
 <div align="center">
 <table>
 <tbody>
@@ -57,3 +57,14 @@ Determine the limits of partiality of the solar eclipse of $\text{April 8, } 202
 </tbody>
 </table>
 </div>
+
+Remember in example $9.7$ when we computed the extremes of the curve of maximum eclipse on the horizon:
+```math
+\begin{array}{cccc}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
+\text{Sunrise Southern Extreme} & 16:32:38 & -38\degree\:48'\:13'' & 207\degree\:58'\:0'' \\
+\text{Sunrise Northern Extreme} & 17:29:30 & 33\degree\:29'\:55'' & 182\degree\:45'\:29'' \\
+\text{Sunset Northern Extreme} & 19:05:23 & 82\degree\:31'\:16'' & 72\degree\:8'\:45'' \\
+\text{Sunset Southern Extreme} & 20:02:15 & 16\degree\:49'\:18'' & 331\degree\:48'\:27'' \\ \hline
+\end{array}
+```
+These are also the extremes of the limits of partiality.
