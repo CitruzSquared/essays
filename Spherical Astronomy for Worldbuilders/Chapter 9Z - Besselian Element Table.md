@@ -1,5 +1,5 @@
 ### Table of Elements for the Solar Eclipse of April 8, 2024
-All angles are given in radians and all distances are given in Earth equatorial radii. All values are rounded to eight decimal digits, then trailing zeros are dropped.
+Elements are calculated by the method of example $9.2$. All angles are given in radians and all distances are given in Earth equatorial radii. All values are rounded to eight decimal digits, then trailing zeros are dropped.
 #### Besselian Elements
 ```math
 \begin{array}{|c|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_1 & i_2 & l_1 & l_2 \\ \hline
