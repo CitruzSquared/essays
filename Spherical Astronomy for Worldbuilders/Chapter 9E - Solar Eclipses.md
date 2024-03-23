@@ -492,7 +492,7 @@ In this manner the following table is computed:
 ```
 In theory, the point of greatest eclipse will experience the longest central eclipse in the case of total eclipse. In practice however, because of the various mountains and valleys on the Moon, the point of greatest duration might differ from the point of greatest eclipse by a few degrees in coordinates. This is entirely too difficult to calculate, and because the duration difference will only be of a tiny fraction of a second, we will not go into the calculation of that here.
 
-For annular eclipses, the point of greatest duration may be on the central line near the sunrise or sunset lobes.
+For annular eclipses, the point of greatest duration may be on the central line near the sunrise or sunset lobes, instead of at greatest eclipse.\
 $\blacksquare$
 
 ### Limits of Partiality
