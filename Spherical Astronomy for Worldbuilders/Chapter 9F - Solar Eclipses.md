@@ -16,5 +16,5 @@ In this equation, if we set:
 \begin{align}
 C &= c' - (i^2 + 1)\zeta \mu' \cos(d) \\
 B &= b' - (i^2 + 1)\zeta d'
-\end{align} \tag{9.72}
+\end{align} \tag{9.77}
 ```
