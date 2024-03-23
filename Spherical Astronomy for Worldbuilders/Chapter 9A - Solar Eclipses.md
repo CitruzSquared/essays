@@ -458,9 +458,9 @@ f_2 &= \arcsin\left(\frac{696\:000 - 1737.4}{149\:463\:030}\right) &&= 16.72222'
 i_1 &= \tan(16.80592'') &&= 0.0046683\\
 i_2 &= \tan(16.72222'') &&= 0.0046451\\
 c_1 &= 359\:772.487 + \frac{1737.4}{\sin(16.80592'')} &&= 731\:942.688 \text{ km}\\
-c_2 &= 359\:772.487 - \frac{1737.4}{\sin(16.80592'')} &&= -12\:397.713 \text{ km}\\
+c_2 &= 359\:772.487 - \frac{1737.4}{\sin(16.72222'')} &&= -14\:260.536 \text{ km}\\
 l_1 &= 0.0046683 \cdot 719\:445.246 &&= 3416.961\text{ km}\\
-l_2 &= 0.0046451 \cdot -12\:397.713 &&= -57.589\text{ km}
+l_2 &= 0.0046451 \cdot -14\:260.536 &&= -66.242\text{ km}
 \end{alignat}
 ```
 Expressing distances in terms of Earth equatorial radii ($R_E = 6378.137\text{ km}$) as is customary, the Besselian elements of this eclipse at $18:00$ are:
@@ -473,7 +473,7 @@ y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
 i_2 &= 0.0046451\\
 l_1 &= 0.53573027 \:R_E\\
-l_2 &= -0.00902906 \:R_E
+l_2 &= -0.01038573 \:R_E
 \end{align}
 ```
 The quantity $i$ will stay roughly constant for the whole eclipse for most reasonable cases. For the other derivatives, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:
