@@ -189,6 +189,8 @@ The umbral region is marked by regions $C$ and $D$. An observer in region $C$ ca
 
 On our Earth, our Moon is just at the perfect distance where the orbital eccentricity allows the Moon to be both close enough and far enough to create all three partial, total, and annular solar eclipses (and sometimes a total eclipse becomes annular halfway through or vice versa, this is known as a *hybrid solar eclipse*). This is not true for the vast majority of planets: Mars with its two small moons only experiences annular and partial solar eclipses.
 
+Total, annular, and hybrid eclipses are collectively called *central eclipses*.
+
 <p align="center">
   <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/8d22bfd0-acef-48a7-9fea-894b6a7043b5"> <br/>
   Left: Partial Solar Eclipse. Center: Total Solar Eclipse. Right: Annular Solar Eclipse.
