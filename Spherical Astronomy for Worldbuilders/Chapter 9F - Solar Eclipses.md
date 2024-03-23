@@ -18,3 +18,14 @@ C &= c' - (i^2 + 1)\zeta \mu' \cos(d) \\
 B &= b' - (i^2 + 1)\zeta d'
 \end{align} \tag{9.77}
 ```
+Then, we have for $P'$:
+```math
+P' = a' + C\sin(Q) - B\cos(Q)
+```
+Which is of the same form as equation $9.65$, and thus the solutions are:
+```math
+\begin{align}
+Q_1 &= 2\arctan\left(\frac{\sqrt{-a'^2+B^2+C^2}-C}{a' + B}\right)\\
+Q_2 &= 2\arctan\left(\frac{-\sqrt{-a'^2+B^2+C^2}-C}{a' + B}\right)
+\end{align}\tag{9.78}
+```
