@@ -74,6 +74,27 @@ This approximation can be refined recursively, by finding the true value of $P'$
 
 Once we have the time when $P' = 0$ on the rising/setting limits, we can simply calculate the place via the method of example $9.6$. These will be the extreme points of the curve of maximum on the horizon.
 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/20ed01a5-5a81-4e42-9dc2-c3dd54f993dd" width="350"/> To find the degree of obscuration, called the *magnitude* of the eclipse at any of these points, consider this diagram, which is a simplified diagram of an annular eclipse of the Sun (the segment $SS'$) by the Moon (the segment $MM'$). The point of observation $B$ is outside the umbral shadow (region $U'U$), and within the penumbral shadow (region $P'P$), and sees a partial eclipse. 
+
+The known distances are: the radius of the penumbral shadow $OP = OP' = L_1$, the radius of the umbral shadow $OU = OU' = L_2$, and the distance from the center of the shadow to the observer $OB = \Delta$.
+
+The magnitude is given by the amount of the Sun's diameter covered by the Moon. Therefore it is given by $S'B'/S'S$. By simple geometry, $S'B'$ corresponds to the segment $PB$ on the ground (consider the triangles $S'B'M$ and $MBP$), and $S'S$ corresponds to the segment $PU'$ (consider the triangles $S'SM$ and $MPU$). Thus, $S'B'/S'S = PB/PU'$, which is given by:
+```math
+\text{Magnitude} = \frac{S'B'}{S'S} = \frac{L_1 - \Delta}{L_1 + L_2} \tag{9.70}
+```
+
+When the eclipse is central however, as seen from $E$, the magnitude is $D'D/S'S = (S'D - S'D')/S'S$. These lengths projected onto the ground give:
+```math
+\begin{align}
+\text{Magnitude} &= \frac{D'D}{S'S} = \frac{S'D - S'D'}{S'S}\\
+&= \frac{PE - UE}{PU'} = \frac{PU}{PU'}\\
+&= \frac{L_1 - L_2}{L_1 + L_2} \tag{9.71}
+\end{align}
+```
+Equation $9.71$ works even for total eclipses, in which case the magnitude is greater than $1$ because $L_2$ is negative.
+
+In the problem of the points of maximum eclipse on the horizon, since $\zeta = 0$, equation $9.15$ gives $L = l$ and therefore $L_1$ and $L_2$ may be subtituted for $l_1$ and $l_2$.
+
 #### Example 9.7
 <div align="center">
 <table>
@@ -193,22 +214,32 @@ Q_2 + \psi_{22} = \gamma & 4.68407781\\
 \lambda & 199\degree\:3'\:56'' \\ \hline
 \end{array}
 ```
-In the same manner the following table is computed:
+The magnitude at this point is given by equation $9.70$ since $\Delta > |l_2| = 0.01048206$ and therefore the eclipse only partial:
+```math
+\begin{align}
+l_1 &= 0.53563338\\
+l_2 &= -0.01048206\\
+\text{Magnitude} = \frac{0.53563338 - 0.10043927}{0.53563338 + (-0.01048206)} = 0.82870231
+\end{align}
+```
+Since the extreme points are defined as places where $\Delta = l_1$, the magnitude at these points is always $0$.
+
+In this manner the following table is computed:
 ```math
 \displaylines{
 \text{Solar Eclipse of April 8, 2024 – Curves of Maximum Eclipse on the Horizon}\\
-\begin{array}{|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude}\\ \hline
-16:32:38 & -38\degree\:48' & 207\degree\:58' \\
-16:45 & -1\degree\:37' & 199\degree\:4'  \\
-17:00 & 12\degree\:34' & 193\degree\:26'  \\
-17:15 & 23\degree\:50' & 188\degree\:2'  \\
-17:29:30 & 33\degree\:30' & 182\degree\:45' \\ \hline
-19:05:23 & 82\degree\:31' & 72\degree\:9 \\
-19:15 & 79\degree\:44' & 27\degree\:46'  \\
-19:30 & 70\degree\:41' & 359\degree\:36'  \\
-19:45 & 58\degree\:21' & 346\degree\:9'  \\
-20:00 & 38\degree\:20' & 336\degree\:3'  \\ 
-20:02:15 & 16\degree\:49'& 331\degree\:48' \\ \hline
+\begin{array}{|c|c|c|} \hline \text{Time} & \text{Latitude} & \text{Longitude} & \text{Magnitude}\\ \hline
+16:32:38 & -38\degree\:48' & 207\degree\:58' & 0\%\\
+16:45 & -1\degree\:37' & 199\degree\:4' & 83\% \\
+17:00 & 12\degree\:34' & 193\degree\:26' & 43\%\\
+17:15 & 23\degree\:50' & 188\degree\:2' & 17\% \\
+17:29:30 & 33\degree\:30' & 182\degree\:45' & 0\% \\ \hline
+19:05:23 & 82\degree\:31' & 72\degree\:9 & 0\% \\
+19:15 & 79\degree\:44' & 27\degree\:46' & 11\% \\
+19:30 & 70\degree\:41' & 359\degree\:36'& 34\% \\
+19:45 & 58\degree\:21' & 346\degree\:9' & 68\% \\
+20:00 & 38\degree\:20' & 336\degree\:3' & 73\% \\ 
+20:02:15 & 16\degree\:49'& 331\degree\:48' & 0\% \\ \hline
 \end{array}
 }
 ```
@@ -234,7 +265,7 @@ The derivative of $m^2$ expands to:
 ```
 Setting this to $0$ and solving for $\tau$ gives:
 ```math
-\tau = -\frac{x_0x' + y_0y'}{x'^2 + y'^2} \tag{9.70}
+\tau = -\frac{x_0x' + y_0y'}{x'^2 + y'^2} \tag{9.72}
 ```
 And then $T$ is given by $T = T_0 + \tau$.
 
@@ -263,7 +294,7 @@ x' &= 0.51147366 \\
 y' &= 0.27129112
 \end{align}
 ```
-Thus, equation $9.70$ gives:
+Thus, equation $9.72$ gives:
 ```math
 \begin{align}
 \tau &= -\frac{(-0.30856088)\cdot0.51147366 + 0.22479055\cdot0.27129112}{0.51147366^2 + 0.27129112^2}\\
@@ -277,7 +308,7 @@ We now linearly interpolate for the elements for this time (again, calculating t
 18:17:20 & -0.16080953 & 0.30312923 & 0.51154119 & 0.27119988 \\ \hline
 \end{array}
 ```
-Now, equation $9.70$ gives:
+Now, equation $9.72$ gives:
 ```math
 \begin{align}
 \tau &= -\frac{(-0.16080953)\cdot0.51154119 + 0.30312923\cdot0.27119988}{0.51154119^2 + 0.27119988^2}\\
@@ -305,7 +336,7 @@ Therefore, we have (by equation $9.23$ and $9.24$):
 \xi &= x\\
 \eta_1 &= \frac{y}{\rho_1}\\
 \zeta_1 &= 1 - \xi^2 - \eta_1^2
-\end{align} \tag{9.70}
+\end{align} \tag{9.73}
 ```
 From which we continue with equations $9.29$ and $9.30$.
 
@@ -313,11 +344,11 @@ To find the times and locations at which the curve of centrality starts and ends
 
 To find the duration of totality or annularity along the line (denoted $T_c$), we use the fact that time is distance divided by speed and that time must be positive. Thus:
 ```math
-T_c = \left|\frac{2L_2}{v}\right| = \left|\frac{2(l_2 - i_2\zeta)}{v}\right| \tag{9.71}
+T_c = \left|\frac{2L_2}{v}\right| = \left|\frac{2(l_2 - i_2\zeta)}{v}\right| \tag{9.74}
 ```
 Where $v$ is simply the speed at which the place of observation is moving with respect to the shadow, or:
 ```math
-v^2 = (x' - \xi')^2 + (y' - \eta')^2 \tag{9.72}
+v^2 = (x' - \xi')^2 + (y' - \eta')^2 \tag{9.75}
 ```
 With $\xi'$ and $\eta'$ being calculated by equation $9.40$:
 ```math
@@ -331,7 +362,7 @@ But since we have $\xi = x$ and $\eta = y$ on the central curve, we can write:
 \begin{align}
 \xi' &= \mu' (-y\sin(d) + \zeta\cos(d))\\
 \eta' &= \mu' x \sin(d) - d'\zeta
-\end{align} \tag{9.73}
+\end{align} \tag{9.76}
 ```
 #### Example 9.9
 <div align="center">
@@ -385,7 +416,7 @@ t & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
 18:00 & 0.13062939 & 0.99994358 & 0.12976473  & 0.00025898 & 0.26187054 & 0.51147366 & 0.27129112 \\ \hline
 \end{array}
 ```
-equation $9.70$ gives:
+equation $9.73$ gives:
 ```math
 \begin{alignat}{2}
 \xi &= -0.30856088 &&\\
@@ -409,7 +440,7 @@ Now to find the central duration. Equation $9.27$ gives $\zeta$:
 &= 0.92408042
 \end{align}
 ```
-Equation $9.73$ gives $\xi'$ and $\eta'$:
+Equation $9.76$ gives $\xi'$ and $\eta'$:
 ```math
 \begin{align}
 \xi' &= 0.26187054 (-0.22479055\sin(0.13019636) + 0.85368112\cos(0.13019636))\\
@@ -418,14 +449,14 @@ Equation $9.73$ gives $\xi'$ and $\eta'$:
 &= -0.01071163
 \end{align}
 ```
-Now, equation $9.72$ gives $v$:
+Now, equation $9.75$ gives $v$:
 ```math
 \begin{alignat}{2}
 v^2 &= (0.51147366 - 0.21401936)^2 + (0.27129112 - (-0.01071163))^2 &&= 0.16800461 \\
 \therefore v &= \sqrt{0.16800461} &&= 0.40988365
 \end{alignat}
 ```
-Then equation $9.71$ gives the central duration:
+Then equation $9.74$ gives the central duration:
 ```math
 T_c = \left|\frac{2(-0.01038565 - 0.0046451 \cdot 0.85368112)}{0.40988365}\right| = 0.07002516h
 ```
