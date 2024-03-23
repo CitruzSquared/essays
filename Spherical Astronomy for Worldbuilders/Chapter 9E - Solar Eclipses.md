@@ -421,48 +421,48 @@ equation $9.73$ gives:
 \begin{alignat}{2}
 \xi &= -0.30856088 &&\\
 \eta_1 &= \frac{0.22479055}{0.99670381} &&= 0.22553395\\
-\zeta_1 &= \sqrt{1 - (-0.30856088)^2 - (0.22553395)^2} &&= 0.85392462
+\zeta_1 &= \sqrt{1 - (-0.30856088)^2 - (0.22553395)^2} &&= 0.92408042
 \end{alignat}
 ```
 Then, equations $9.29$ and $9.30$ give:
 ```math
 \begin{align}
-\phi_1 &= 0.34143872\\
-\theta &= -0.36100439\\
-\phi &= 19\degree\:37'\:26''\\
-\lambda &= 249\degree\:24'\:53''\\
+\phi_1 &= 0.35115385 \\
+\theta &= -0.33483579\\
+\phi &= 20\degree\:10'\:51''\\
+\lambda &= 250\degree\:54'\:51''\\
 \end{align}
 ```
 Now to find the central duration. Equation $9.27$ gives $\zeta$:
 ```math
 \begin{align}
-\zeta &= -0.99994358 \cdot 0.22553395 \sin(0.13062939 - 0.12976473) + 0.99994358 \cdot 0.85392462\cos(0.13062939 - 0.12976473) \\
-&= 0.92408042
+\zeta &= -0.99994358 \cdot 0.22553395 \sin(0.13062939 - 0.12976473) + 0.99994358 \cdot 0.92408042\cos(0.13062939 - 0.12976473) \\
+&= 0.92383294
 \end{align}
 ```
 Equation $9.76$ gives $\xi'$ and $\eta'$:
 ```math
 \begin{align}
-\xi' &= 0.26187054 (-0.22479055\sin(0.13019636) + 0.85368112\cos(0.13019636))\\
-&= 0.21401936\\
-\eta' &= 0.26187054 \cdot (-0.30856088) \sin(0.13019636) - 0.00025898\cdot0.85368112\\
-&= -0.01071163
+\xi' &= 0.26187054 (-0.22479055\sin(0.13019636) + 0.92383294\cos(0.13019636))\\
+&= 0.23223457 \\
+\eta' &= 0.26187054 \cdot (-0.30856088) \sin(0.13019636) - 0.00025898\cdot0.92383294\\
+&= -0.0107298
 \end{align}
 ```
 Now, equation $9.75$ gives $v$:
 ```math
 \begin{alignat}{2}
-v^2 &= (0.51147366 - 0.21401936)^2 + (0.27129112 - (-0.01071163))^2 &&= 0.16800461 \\
-\therefore v &= \sqrt{0.16800461} &&= 0.40988365
+v^2 &= (0.51147366 - 0.23223457)^2 + (0.27129112 - (-0.0107298))^2 &&= 0.15751026 \\
+\therefore v &= \sqrt{0.15751026} &&= 0.39687563
 \end{alignat}
 ```
 Then equation $9.74$ gives the central duration:
 ```math
-T_c = \left|\frac{2(-0.01038565 - 0.0046451 \cdot 0.85368112)}{0.40988365}\right| = 0.07002516h
+T_c = \left|\frac{2(-0.01038565 - 0.0046451 \cdot 0.92383294)}{0.39687563}\right| = 0.07396245h
 ```
 The result is in hours because all our derivatives are in units of hours. When converted to minutes and seconds, $T_c$ is:
 ```math
-T_c = 4m\:12s
+T_c = 4m\:26.3s
 ```
 When calculating the duration of central eclipse for the central contact points, one might run into the issue of the interpolated values giving impossible values for $\zeta_1$. Simply use $\zeta_1 = 0$ for those points, as this is the theoretically correct value. (These points correspond to the points that experience maximum centrality on the horizon, so $\zeta_1 = 0$.)
 
