@@ -176,13 +176,13 @@ We find $\psi$ and $\Delta$ with equation $9.67$, first approximating $p = 1$:
 Considering $l_1 = 0.53563338$ at this time, $\psi_22$ ($\psi_2$ for $Q_2$) is the only $\psi$ value that produces a positive $\Delta$ value that is less than $l$. Thus, we continue with $\psi_2$ and $Q_2$.
 ```math
 \begin{array}{r|c} \hline
-\gamma = Q_2 + \psi_{22} & 4.68408253 \\
+Q_2 + \psi_{22} = \gamma & 4.68408253 \\
 \rho_1 & 0.99670449 \\
 \gamma' & -1.59919632\\
 p & 0.99999735 \\
 m\sin(M - Q_2)/p = \sin(\psi)_2 & 0.87162727 \\
 \pi - \arcsin(\sin(\psi))_2 = \psi_{22} & 2.08308025 \\
-\gamma = Q_2 + \psi_{22} & 4.68407781\\
+Q_2 + \psi_{22} = \gamma & 4.68407781\\
 \gamma' & -1.59920106\\
 \sin(\gamma') = \xi & -0.99959661 \\
 \cos(\gamma') = \eta_1 & -0.02753202 \\
