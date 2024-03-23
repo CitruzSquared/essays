@@ -462,3 +462,4 @@ In this manner the following table is computed:
 $\blacksquare$
 
 ### Northern and Southern Limits of Partiality
+(Continued in Part F...)
