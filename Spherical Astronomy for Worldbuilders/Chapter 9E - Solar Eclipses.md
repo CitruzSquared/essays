@@ -109,8 +109,7 @@ t_{03} &= \frac{19.25 \cdot (-0.05823664) - 19.0 \cdot 0.10380897}{-0.05823664 -
 t_{04} &= \frac{20.25 \cdot (-0.0227394) - 20.0 \cdot 0.12931085}{-0.0227394 - 0.12931085} &&= 20:02:15\\
 \end{alignat}
 ```
-We are not going to do a second approximation. Now we have to find the points on the rising and setting curve at these times.\
-Using linearly interpolated values from the elements table in Chapter $\text{9Z}$:
+We are not going to do a second approximation. Now we have to find the points on the rising and setting curve at these times. Using linearly interpolated values from the elements table in Chapter $\text{9Z}$:
 ```math
 \begin{array}{|c|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & l_1 & \rho_1 & d_1 \\ \hline
 16:32:38 & 0.12981883 & 1.18785924 & -1.05311448 & -0.17027728 & 0.53561349 & 0.99670349 & 0.13025064 \\
