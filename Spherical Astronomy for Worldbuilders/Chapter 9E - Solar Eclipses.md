@@ -132,7 +132,7 @@ We find our extreme points (using the method of example $9.6$, but the sign of $
 ```
 Whether the point is northern or southern is determined by the value of $\cos(Q)$ (see equation $9.10$). The $Q$ for these points was found in the same way as example $9.6$: equation $9.60$. If $\cos(Q)$ is positive, the point is northern. If $\cos(Q)$ is negative, the point is southern. If no internal contacts exist, there will only be two extremes, one per lobe, (as the sunrise and sunset lobes are connected, the curve of maximum eclipse on the horizon will extend throughout the whole eclipse), and both will be northern or both will be southern.
 
-Now we know the curve of maximum eclipse on the horizon extends only from $16:32:38$ to $17:29:30$ for the sunrise lobe, and from $19:05:23$ to $20:02:15$ in the sunset lobe. The points in between are calculated via the method outlined in this chapter: I will give the calculation for the point at time $16:45$ in full.
+Now we know the curve of maximum eclipse on the horizon extends only from $16:32:38$ to $17:29:30$ for the sunrise lobe, and from $19:05:23$ to $20:02:15$ in the sunset lobe. The points in between are calculated via the method detailed above in this section: I will give the calculation for the point at time $16:45$ in full.
 
 At this time, we have:
 ```math
@@ -158,13 +158,6 @@ Q_2 &= 2\arctan\left(\frac{-\sqrt{-(-0.0012427)^2+(-0.30358228)^2+(0.50818381)^2
 &= 2.60099756
 \end{align}
 ```
-Now, we verify if $m\sin(M - Q) < 1$:
-```math
-\begin{array}{r|c|c}\hline  & Q_1 & Q_2 \\ \hline
-m\sin(M - Q) & -0.87325361 & 0.87162496
-\end{array}
-```
-Both values of $Q$ pass the test. We can now continue.\
 We find $\psi$ and $\Delta$ with equation $9.67$:
 ```math
 \begin{array}{r|c|c} 
