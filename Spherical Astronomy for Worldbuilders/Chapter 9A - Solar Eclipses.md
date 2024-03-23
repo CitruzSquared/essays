@@ -473,7 +473,7 @@ y &= 0.22479055 \:R_E\\
 i_1 &= 0.0046683\\
 i_2 &= 0.0046451\\
 l_1 &= 0.53573027 \:R_E\\
-l_2 &= -0.01038573 \:R_E
+l_2 &= -0.01038565 \:R_E
 \end{align}
 ```
 The quantity $i$ will stay roughly constant for the whole eclipse for most reasonable cases. For the other derivatives, we take a time step of $\pm 15$ minutes (thus $\Delta t = 0.5h$), and find:
@@ -484,7 +484,7 @@ x & -0.4364434 \:R_E & -0.18070657 \:R_E\\
 y & 0.15693548 \:R_E & 0.29258104 \:R_E\\
 \mu & 86\degree\:9'\:0.73'' & 93\degree\:39'\:8.07''\\
 l_1 & 0.53571408 \:R_E & 0.53574486 \:R_E\\
-l_2 & -0.00904516 \:R_E & -0.00901454 \:R_E\\ \hline
+l_2 & -0.01040175 \:R_E & -0.01037113 \:R_E\\ \hline
 \end{array}
 ```
 Therefore:
@@ -495,7 +495,7 @@ x' &= \frac{-0.18070657 - (-0.4364434)}{0.5h} &&= 0.51147366 \: R_E/h\\
 y' &= \frac{0.29258104 - 0.15693548}{0.5h} &&= 0.27129112 \:R_E/h\\
 \mu' &= \frac{93\degree\:39'\:8.07'' - 86\degree\:9'\:0.73''}{0.5h} \cdot\frac{\pi\text{ rad}}{180\degree} &&= 0.26187054 \text{ rad}/h\\
 l_1' &= \frac{0.53574486 - 0.53571408}{0.5h} &&= 0.00006156 \: R_E/h\\
-l_2' &= \frac{-0.00901454 - (-0.00904516)}{0.5h} &&= 0.00006124 \:R_E/h\\
+l_2' &= \frac{-0.01037113 - (-0.01040175)}{0.5h} &&= 0.00006124 \:R_E/h\\
 \end{alignat}
 ```
 $\blacksquare$
