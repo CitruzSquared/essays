@@ -58,7 +58,7 @@ Determine the limits of partiality of the solar eclipse of $\text{April 8, } 202
 </table>
 </div>
 
-Remember in example $9.7$ when we computed the extremes of the curve of maximum eclipse on the horizon:
+Recall from example $9.7$ when we computed the extremes of the curve of maximum eclipse on the horizon:
 ```math
 \begin{array}{cccc}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
 \text{Sunrise Southern Extreme} & 16:32:38 & -38\degree\:48'\:13'' & 207\degree\:58'\:0'' \\
