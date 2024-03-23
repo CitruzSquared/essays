@@ -311,9 +311,9 @@ From which we continue with equations $9.29$ and $9.30$.
 
 To find the times and locations at which the curve of centrality starts and ends, we can repeat the method of finding contacts in example $9.5$ while setting $l = 0$. This makes the double sign in equation $9.55$ obsolete and therefore there are only two contacts of the center with the Earth (if they even exist).
 
-To find the duration of totality or annularity along the line (denoted $T_c$), we use the fact that time is distance divided by speed. Thus:
+To find the duration of totality or annularity along the line (denoted $T_c$), we use the fact that time is distance divided by speed and that time must be positive. Thus:
 ```math
-T_c = \frac{2L_2}{v} = \frac{2(l_2 - i_2\zeta)}{v} \tag{9.71}
+T_c = \left|\frac{2L_2}{v}\right| = \left|\frac{2(l_2 - i_2\zeta)}{v}\right| \tag{9.71}
 ```
 Where $v$ is simply the speed at which the place of observation is moving with respect to the shadow, or:
 ```math
@@ -359,7 +359,7 @@ We now linearly interpolate for the elements for these times (again, calculating
 \begin{array}{|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2 & \rho_1\\ \hline
 16:40:00 & 0.12985038 & 1.21988483 & -0.99057474 & -0.13707257 & 0.00464516 & -0.00913349 & 0.99670351 \\
 19:54:40 & 0.13069238 & 2.06956364 & 0.66914899 & 0.74302244 & 0.00464499 & -0.00895854 & 0.99670424 \\ \hline
-t & & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
+t & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
 16:41:00 & 0.13028229 & 0.99994388 & 0.12941987 & 0.00025897 & 0.26187053 & 0.5114177 & 0.27144902 \\
 19:54:40 & 0.13112703 & 0.99994315 & 0.13025915 & 0.00025898 & 0.26187148 & 0.51157069 & 0.27105629\\ \hline
 \end{array}
@@ -381,7 +381,7 @@ At this time, the elements are:
 ```math
 \begin{array}{|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2 & \rho_1\\ \hline
 18:00 &  0.13019636 & 1.56907269 & -0.30856088 & 0.22479055 & 0.0046451 & -0.00902906 & 0.99670381\\ \hline
-t  & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
+t & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
 18:00 & 0.13062939 & 0.99994358 & 0.12976473  & 0.00025898 & 0.26187054 & 0.51147366 & 0.27129112 \\ \hline
 \end{array}
 ```
@@ -404,12 +404,32 @@ Then, equations $9.29$ and $9.30$ give:
 ```
 Now to find the central duration. Equation $9.27$ gives $\zeta$:
 ```math
-
+\begin{align}
+\zeta &= -0.99994358 \cdot 0.22553395 \sin(0.13062939 - 0.12976473) + 0.99994358 \cdot 0.85392462\cos(0.13062939 - 0.12976473) \\
+&= 0.85368112
+\end{align}
 ```
-Equation $9.73$ gives:
+Equation $9.73$ gives $\xi'$ and $\eta'$:
 ```math
 \begin{align}
-\xi' &= 0.26187054 (-y\sin(d) + \zeta\cos(d))\\
-\eta' &= 0.26187054 \cdot (-0.30856088) \sin(d) - d'\zeta
+\xi' &= 0.26187054 (-0.22479055\sin(0.13019636) + 0.85368112\cos(0.13019636))\\
+&= 0.21401936\\
+\eta' &= 0.26187054 \cdot (-0.30856088) \sin(0.13019636) - 0.00025898\cdot0.85368112\\
+&= -0.01071163
 \end{align}
+```
+Now, equation $9.72$ gives $v$:
+```math
+\begin{alignat}{2}
+v^2 &= (0.51147366 - 0.21401936)^2 + (0.27129112 - (-0.01071163))^2 &&= 0.16800461 \\
+\therefore v &= \sqrt{0.16800461} &&= 0.40988365
+\end{alignat}
+```
+Then equation $9.71$ gives the central duration:
+```math
+T_c = \left|\frac{2(-0.00902906 - 0.0046451 \cdot 0.85368112)}{0.40988365}\right| = 0.06340577h
+```
+The result is in hours because all our derivatives are in units of hours. When converted to minutes and seconds, $T_c$ is:
+```math
+T_c = 3m\:48s
 ```
