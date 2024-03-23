@@ -122,7 +122,7 @@ We are not going to do a second approximation. Now we have to find the points on
 
 We find our extreme points (using the method of example $9.6$, but the sign of $\epsilon$ to be used is already known):
 ```math
-\begin{array}{|c|c|c|c|c|c|c|c|c|}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
+\begin{array}{c|c|c|c}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
 \text{Sunrise Southern Extreme} & 16:32:38 & -38\degree\:48'\:13'' & 207\degree\:58'\:0'' \\
 \text{Sunrise Northern Extreme} & 17:29:30 & 33\degree\:29'\:55'' & 182\degree\:45'\:29'' \\
 \text{Sunset Northern Extreme} & 19:05:23 & 82\degree\:31'\:16'' & 72\degree\:8'\:45'' \\
@@ -159,7 +159,7 @@ Q_2 &= 2\arctan\left(\frac{-\sqrt{-(-0.0012427)^2+(-0.30358228)^2+(0.50818381)^2
 ```
 We find $\psi$ and $\Delta$ with equation $9.67$:
 ```math
-\begin{array}{r|c|c} 
+\begin{array}{r|c|c} \hline & Q_1 & Q_2 \\ \hline
 m\sin(M - Q) = \sin(\psi) & -0.87325361 & 0.87162496\\
 \psi_1 & -1.06184017 & 1.05850769\\
 \pi - \psi_1 = \psi_2 & 4.20343283 & 2.08308496\\
