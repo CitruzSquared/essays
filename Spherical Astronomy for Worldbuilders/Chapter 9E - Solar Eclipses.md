@@ -121,7 +121,7 @@ We must first find the extreme points on the curve of maximum eclipse on the hor
 20:15 & > 0 & 0.12931085 \\ \hline
 \end{array}
 ```
-Now, using decimal hours (e.g. $16:30 = 16.5$) as our values of $t$, we can find the approximate places $P'$ flips sign for each of these intervals using equation $9.69$:
+Now, using decimal hours (e.g. $16:30 = 16.5$) as our values of $t$, we can find the approximate times $P'$ flips sign for each of these intervals using equation $9.69$:
 ```math
 \begin{alignat}{2}
 t_{01} &= \frac{16.75 \cdot (-0.02759005) - 16.5 \cdot 0.12821353}{-0.02759005 - 0.12821353} &&= 16:32:38\\
