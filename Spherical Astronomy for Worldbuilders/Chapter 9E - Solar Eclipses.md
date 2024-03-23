@@ -245,7 +245,7 @@ In this manner the following table is computed:
 ```
 $\blacksquare$
 ### Greatest Eclipse
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/91a468a0-a447-411d-a60f-4ee875b5f00d" width="350"/> In this diagram, the point labeled $G$ is called the point of *greatest eclipse*. It is the point at which the distance from the center to the Earth to the center of the shadow, a variable we have been calling $m$, is minimum.
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/91a468a0-a447-411d-a60f-4ee875b5f00d" width="350"/> In this diagram of the path of the Moon's shadow across the Earth, the point labeled $G$ is called the point of *greatest eclipse*. It is the point at which the distance from the center to the Earth to the center of the shadow, a variable we have been calling $m$, is minimum.
 
 Minimizing $m$ means minimizing $m^2$, and since $m^2 = x^2 + y^2$, the derivative is:
 ```math
