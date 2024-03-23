@@ -500,6 +500,7 @@ l_1' &= \frac{0.53574486 - 0.53571408}{0.5h} &&= 0.00006156 \: R_E/h\\
 l_2' &= \frac{-0.01037113 - (-0.01040175)}{0.5h} &&= 0.00006124 \:R_E/h\\
 \end{alignat}
 ```
+Taking a smaller time step for the derivative is better, but since we will be taking time steps of $15$ minutes in later examples, we use $15$ minutes here.\
 $\blacksquare$
 
 ### The Outline of the Shadow on the Surface of the Earth
