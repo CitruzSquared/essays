@@ -29,11 +29,11 @@ Q_1 &= 2\arctan\left(\frac{\sqrt{-a'^2+B^2+C^2}-C}{a' + B}\right)\\
 Q_2 &= 2\arctan\left(\frac{-\sqrt{-a'^2+B^2+C^2}-C}{a' + B}\right)
 \end{align}\tag{9.78}
 ```
-We need to find $\zeta$ to find $C$ and $B$. In order to do this, we first assume $\zeta = 0$ and find two values of $Q$ by equation $9.77$ and $9.78$. Then, equation $9.28$ gives:
+We need to find $\zeta$ to find $C$ and $B$. In order to do this, we first assume $\zeta = 0$ and find two values of $Q$ by equation $9.77$ and $9.78$. Then, equation $9.28*$ gives:
 ```math
 \begin{align}
-\xi &= x - (l - i\zeta_1)\sin(Q)\\
-\eta_1 &= (y - (l - i\zeta_1)\cos(Q))/ \rho_1\tag{9.28}\\
+\xi &= x - (l - i\zeta)\sin(Q)\\
+\eta_1 &= (y - (l - i\zeta)\cos(Q))/ \rho_1\tag{9.28*}\\
 \zeta_1^2 &= 1 - \xi^2 - \eta_1^1
 \end{align}
 ```
@@ -67,4 +67,103 @@ Recall from example $9.7$ when we computed the extremes of the curve of maximum 
 \text{Sunset Southern Extreme} & 20:02:15 & 16\degree\:49'\:18'' & 331\degree\:48'\:27'' \\ \hline
 \end{array}
 ```
-These are also the extremes of the limits of partiality. Thus the northern limit of partiality extends from $17:29:30$ to $19:05:23$, and the southern limit extends from $16:32:38$ to $20:02:15$.
+These are also the extremes of the limits of partiality. Thus the northern limit of partiality extends from $17:29:30$ to $19:05:23$, and the southern limit extends from $16:32:38$ to $20:02:15$. I will give the solution for the time $18:00$ in full.
+
+For this time, we have:
+```math
+a'_1 = -0.00043531 \enspace\enspace\enspace b'_1 = -0.28178103 \enspace\enspace\enspace c'_1 =  0.51976556
+```
+and:
+```math
+i_1 = 0.00466835
+```
+
+We first assume $\zeta = 0$. We calculate $B$ and $C$ by equation $9.77$:
+```math
+\begin{alignat}{2}
+B &= -0.28178103 - (0.00466835^2 + 1) \cdot 0 \cdot 0.00025898 &&= -0.28178103\\
+C &= 0.51976556 - (0.00466835^2 + 1) \cdot 0 \cdot 0.26187054 \cos(0.13019636) &&= 0.51976556
+\end{alignat}
+```
+Now, equation $9.78$ gives the first approximate values of $Q$:
+```math
+\begin{align}
+Q_1 &= 2\arctan\left(\frac{\sqrt{-(-0.00043531)^2+(-0.28178103)^2+0.51976556^2}-0.51976556}{-0.00043531 + (-0.28178103)}\right)\\
+&= -0.49604542\\
+Q_2 &= 2\arctan\left(\frac{-\sqrt{-(-0.00043531)^2+(-0.28178103)^2+0.51976556^2}-0.51976556}{-0.00043531 + (-0.28178103)}\right)\\
+&= 2.64407467
+\end{align}
+```
+Using $Q_1$ in equation $9.28*$ gives:
+```math
+\begin{align}
+\xi &= -0.30856088 - (0.53573027 - 0.00466835 \cdot 0)\sin(-0.49604542)\\
+&= -0.05357934 \\
+\eta_1 &= (0.22479055 - (0.53573027 - 0.00466835 \cdot 0)\cos(-0.49604542))/ 0.99670381\\
+&= -0.24718378  \\
+\zeta_1 &= \sqrt{1 - (-0.05357934)^2 - (-0.24718378 )^2} \\
+&= 0.96748614
+\end{align}
+```
+Which then put into $9.27$ gives:
+```math
+\begin{align}
+\zeta &= -0.99994358 \cdot -0.24718378 \sin(0.13062939 - 0.12976473) + 0.99994358 \cdot 0.96748614 \cos(0.13062939 - 0.12976473)\\
+&= 0.96764491
+\end{align}
+```
+This value substituted into equation $9.77$ gives:
+```math
+\begin{alignat}{2}
+B &= -0.28178103 - (0.00466835^2 + 1) \cdot 0.96764491 \cdot 0.00025898 &&= -0.28203162\\
+C &= 0.51976556 - (0.00466835^2 + 1) \cdot 0.96764491 \cdot 0.26187054 \cos(0.13019636) &&= 0.26850704
+\end{alignat}
+```
+Now, equation $9.78$ gives the second approximate values of $Q$:
+```math
+\begin{align}
+Q_1 &= 2\arctan\left(\frac{\sqrt{-(-0.00043531)^2+(-0.28203162)^2+0.26850704^2}-0.26850704}{-0.00043531 + (-0.28203162)}\right)\\
+&= -0.80884143\\
+\end{align}
+```
+Which in $9.28*$ gives:
+```math
+\begin{align}
+\xi &= 0.07576525 \\
+\eta_1 &= -0.14239483  \\
+\zeta_1 &= 0.98690594
+\end{align}
+```
+Which in $9.27$ gives a second approximate value of $\zeta$:
+```math
+\zeta = 0.98697301
+```
+The table of repetitions is given here:
+```math
+\begin{array}{ccc} \hline \text{Repetition} & \zeta \enspace (Q_1) & \zeta \enspace (Q_2) \\ \hline
+1 & 0.96764491 & 0.44051669\\
+2 & 0.98697301 & 0.42532847\\
+3 & 0.98723346 & 0.42587744\\
+4 & 0.98723688 & 0.4258576\\
+5 & 0.98723692 & 0.42585832\\
+6 & 0.98723692 & 0.42585829\\
+7 & 0.98723692 & 0.42585829\\ \hline
+\end{array}
+```
+Now that $\zeta$ has converged, we can continue:
+```math
+\begin{array}{r|c|c} \hline & \zeta \enspace (Q_1) & \zeta \enspace (Q_2) \\ \hline
+B & -0.28203669 & -0.28189132\\
+C & 0.26341978 & 0.40918726\\
+Q & -0.81838782 & 2.53747552 \\
+(l - i\zeta)\cos(Q) & 0.36296793 > 0& -0.43927193 < 0\\
+ & \text{Southern} & \text{Northern} \\
+\xi & 0.07918173 & -0.61174551\\
+\eta_1 & -0.13863435 & 0.6662586   \\
+\zeta_1 & 0.98717312 & 0.42645857\\
+\phi_1 & -0.00886593 & 0.79824443 \\
+\theta & 0.07926783 & -1.06848099\\
+\phi & -0\degree\:30'\:35'' & 45\degree\:49'\:56''\\
+\lambda & 274\degree\:38'\:26'' & 208\degree\:52'\:46''\\ \hline
+\end{array}
+```
