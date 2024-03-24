@@ -75,7 +75,7 @@ a'_1 = -0.00043531 \enspace\enspace\enspace b'_1 = -0.28178103 \enspace\enspace\
 ```
 and:
 ```math
-i_1 = 0.00466835
+x = -0.30856088 \enspace\enspace\enspace y = 0.22479055 \enspace\enspace\enspace i_1 =  0.00466835  \enspace\enspace\enspace l_1 = 0.53573027 
 ```
 
 We first assume $\zeta = 0$. We calculate $B$ and $C$ by equation $9.77$:
