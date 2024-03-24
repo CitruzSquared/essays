@@ -210,7 +210,7 @@ While this more rigorous method is recommended, and even necessary for worldbuil
 
 The extreme points lie on the rising / setting limits, and the extreme points lie on those limits at some time in between the external and internal contacts. Also, the time between the external and internal umbral contacts is so small, that the time between the extreme points at each lobe, which is even smaller, is absolutely tiny, to the point where they occur almost at the same instant (less than a minute apart for the case of the $\text{April, 8, }2024$ eclipse). In addition, the area covered by these rising / setting limits is also very small. We can therefore say that the points on the rising / setting limits at the time midway between the contacts are close enough to the true extreme points. The time midway between the umbral contacts is well approximated by the time of contact of the center of the shadow, which we have already calculated in example $9.9$. Thus, the points on the rising / setting limits at the time of central contact can be used as the extreme points of the limits of centrality.
 
-#### Example 9.10
+#### Example 9.11
 <div align="center">
 <table>
 <tbody>
@@ -223,4 +223,48 @@ Determine the limits of totality of the solar eclipse of $\text{April 8, } 2024$
 </table>
 </div>
 
-We use the approximation for the extreme points. The times of central contact are $16:40:02$ and $19:54:28$.
+We use the approximation for the extreme points. The times of central contact are $16:40:02$ and $19:54:28$. Using the elements at these times (interpolated in example $9.9$, slightly off but should still be sufficiently accurate enough):
+```math
+\begin{array}{|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2 & \rho_1\\ \hline
+16:41:00 & 0.12985038 & 1.21988483 & -0.99057474 & -0.13707257 & 0.00464516 & -0.01049008 & 0.99670351 \\
+19:54:40 & 0.13069238 & 2.06956364 & 0.66914899 & 0.74302244 & 0.00464499 & -0.01031513 & 0.99670424 \\ \hline
+t & d_1 & \rho_2 & d_2 & d' & \mu' & x' & y' \\ \hline
+16:41:00 & 0.13028229 & 0.99994388 & 0.12941987 & 0.00025897 & 0.26187053 & 0.5114177 & 0.27144902 \\
+19:54:40 & 0.13112703 & 0.99994315 & 0.13025915 & 0.00025898 & 0.26187148 & 0.51157069 & 0.27105629\\ \hline
+\end{array}
+```
+we find, via the method of example $9.5$ but swapping out $l_1$ for $l_2$:
+```math
+\begin{array}{cccc}\hline \text{Point} & \text{Time} & \text{Latitude} & \text{Longitude} \\ \hline
+\text{Sunrise Northern Extreme} & 16:40:00 & -7\degree\:15'\:47'' & 201\degree\:3'\:33'' \\
+\text{Sunrise Southern Extreme} & 16:40:00 & -8\degree\:27'\:45'' & 201\degree\:13'\:8'' \\
+\text{Sunset Northern Extreme} & 19:54:40 & 48\degree\:12'\:38'' & 339\degree\:52'\:46'' \\
+\text{Sunset Southern Extreme} & 19:54:40 & 47\degree\:4'\:2'' & 339\degree\:32'\:42'' \\ \hline
+\end{array}
+```
+Which should be sufficiently accurate.
+
+Now, we find the limits just like in example $9.10$, simply swapping out the penumbral variables for umbral ones, and obtain the table below.
+```math
+\displaylines{
+\text{Solar Eclipse of April 8, 2024 – Limits of Total Eclipse}\\
+\begin{array}{|c|c|c|c|c|c|} \hline \text{Time} & \begin{matrix} \text{Northern} \\ \text{Latitude} \end{matrix} & \begin{matrix} \text{Northern} \\ \text{Longitude} \end{matrix} & & \begin{matrix} \text{Southern} \\ \text{Latitude} \end{matrix} & \begin{matrix} \text{Southern} \\ \text{Longitude} \end{matrix} \\ \hline
+16:41:00 & -7\degree\:16' & 201\degree\:4' & & -8\degree\:28' & 201\degree\:13'\\
+16:45 & -3\degree\:55' & 215\degree\:45' & & -4\degree\:45' & 218\degree\:5'\\
+17:00 & 2\degree\:6' & 229\degree\:7' & & 1\degree\:6' & 230\degree\:50'\\
+17:15 & 7\degree\:9' & 236\degree\:23' & & 6\degree\:6' & 237\degree\:59'\\
+17:30 & 11\degree\:51' & 241\degree\:41' & & 10\degree\:46' & 243\degree\:15'\\
+17:45 & 16\degree\:22' & 246\degree\:7' & & 15\degree\:15' & 247\degree\:39'\\
+18:00 & 20\degree\:46' & 250\degree\:10' & & 19\degree\:36' & 251\degree\:40'\\
+18:15 & 25\degree\:6' & 254\degree\:10' & & 23\degree\:43' & 255\degree\:37'\\
+18:30 & 29\degree\:24' & 258\degree\:27' & & 28\degree\:7' & 259\degree\:50'\\
+18:45 & 33\degree\:41' & 263\degree\:21' & & 32\degree\:19' & 264\degree\:37'\\
+19:00 & 37\degree\:57' & 269\degree\:18' & & 36\degree\:29' & 270\degree\:23'\\
+19:15 & 42\degree\:8' & 277\degree\:5' & & 40\degree\:34' & 277\degree\:51'\\
+19:30 & 46\degree\:7' & 288\degree\:8' & & 44\degree\:29' & 288\degree\:19'\\
+19:45 & 49\degree\:21' & 306\degree\:39' & & 47\degree\:45' & 305\degree\:31'\\
+19:54:40 & 48\degree\:13' & 339\degree\:53' & & 47\degree\:4' & 339\degree\:33'\\ \hline
+\end{array}
+}
+```
+$\blacksquare$
