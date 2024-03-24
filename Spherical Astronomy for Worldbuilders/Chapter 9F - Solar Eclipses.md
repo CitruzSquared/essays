@@ -296,7 +296,7 @@ Thus, if we take time steps of for example $1$ second, not only do we have more 
 Therefore, the method of calculation of solar eclipse phenomena when taking small time steps is as follows:
 1. Find the specific New Moon that produces a solar eclipse.
 2. Calculate the Besselian elements at the time of New Moon.
-3. Using this, calculate the first and last external penumbral contacts. This is necessary because we need an estimate of when the whole eclipse begins and ends.
+3. Using this, calculate the first and last external penumbral contacts. This is necessary because we need the boundary times of the whole eclipse.
 4. Now, beginning from the first external penumbral contact, calculate the elements at that time and calculate all the curves via methods detailed in this chapter, simply ignoring impossible solutions.
 5. Increment by a small time step until the last external penumbral contact is reached.
 
