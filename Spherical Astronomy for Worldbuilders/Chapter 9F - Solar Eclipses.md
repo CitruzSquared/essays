@@ -242,7 +242,7 @@ we find, via the method of example $9.5$ but swapping out $l_1$ for $l_2$:
 \text{Sunset Southern Extreme} & 19:54:40 & 47\degree\:4'\:2'' & 339\degree\:32'\:42'' \\ \hline
 \end{array}
 ```
-Which should be sufficiently accurate.
+Which are sufficiently accurate. For a more accurate computation, the rigorous method, the one we followed for the penumbra, must be used.
 
 Now, we find the limits just like in example $9.10$, simply swapping out the penumbral variables for umbral ones, and obtain the table below.
 ```math
