@@ -279,5 +279,8 @@ The points we have computed in examples $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ 
 </p>
 
 ```math
-\text{Greatest Eclipse at 18:17 UTC} \enspace\enspace\enspace\enspace \text{Gamma } = 0.3431
+\displaylines{
+\text{Greatest Eclipse at 18:17 UTC} \enspace\enspace\enspace\enspace \text{Gamma } = 0.3431\\
+\text{Duration at Greatest Eclipse 4m 30.2s}
+}
 ```
