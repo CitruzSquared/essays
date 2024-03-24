@@ -153,6 +153,7 @@ The table of repetitions is given here:
 Now that $\zeta$ has converged, we can continue:
 ```math
 \begin{array}{r|c|c} \hline & \zeta \enspace (Q_1) & \zeta \enspace (Q_2) \\ \hline
+\zeta & 0.98723692 & 0.42585829\\
 B & -0.28203669 & -0.28189132\\
 C & 0.26341978 & 0.40918726\\
 Q & -0.81838782 & 2.53747552 \\
@@ -167,3 +168,31 @@ Q & -0.81838782 & 2.53747552 \\
 \lambda & 274\degree\:38'\:26'' & 208\degree\:52'\:46''\\ \hline
 \end{array}
 ```
+In this manner the following table is computed:
+```math
+\displaylines{
+\text{Solar Eclipse of April 8, 2024 – Limits of Partial Eclipse}\\
+\begin{array}{|c|c|c|c|c|c|} \hline \text{Time} & \begin{matrix} \text{Northern} \\ \text{Latitude} \end{matrix} & \begin{matrix} \text{Northern} \\ \text{Longitude} \end{matrix} & & \begin{matrix} \text{Southern} \\ \text{Latitude} \end{matrix} & \begin{matrix} \text{Southern} \\ \text{Longitude} \end{matrix} \\ \hline
+16:32:38 & & & & -38\degree\:48' &  207\degree\:58'\\
+16:45 & & & & -25\degree\:56' &  247\degree\:3'\\
+17:00 & & & & -18\degree\:59' &  256\degree\:43'\\
+17:15 & & & & -13\degree\:23' &  262\degree\:49'\\
+17:29:30 & 33\degree\:30' & 182\degree\:45' & & (1) & (1)\\
+17:30 & (2) & (2) & & -8\degree\:36' &  267\degree\:23'\\
+17:45 & 39\degree\:58' &  201\degree\:43' & & -4\degree\:19' &  271\degree\:12'\\
+18:00 & 45\degree\:50 &  208\degree\:53' & & -0\degree\:31' &  274\degree\:38'\\
+18:15 & 52\degree\:9' &  214\degree\:10' & & 2\degree\:55' &  277\degree\:57'\\
+18:30 & 59\degree\:14' &  218\degree\:53' & & 6\degree\:2' &  281\degree\:19'\\
+18:45 & 68\degree\:7' &  223\degree\:53' & & 8\degree\:52' &  284\degree\:56'\\
+19:00 & 81\degree\:32' &  230\degree\:2' & & 11\degree\:28' &  288\degree\:59'\\
+19:05:23 & 82\degree\:31' & 72\degree\:9' & & (1) & (1)\\
+19:15 & & & & 13\degree\:48' &  293\degree\:46'\\
+19:30 & & & & 15\degree\:51' &  299\degree\:50'\\
+19:45 & & & & 17\degree\:26' &  308\degree\:19'\\
+20:00 & & & & (2) & (2) \\
+20:02:15 & & & & 16\degree\:49' &  331\degree\:48'\\ \hline
+\end{array}
+}
+```
+$^1$ These points were not computed for the sake of brevity.\
+$^2$ While these points should exist, our numbers produce impossible results. This is due to the fact that these points are very close to the edges of the curve and our derivatives are not good enough (recall that we took $15$ minute time steps for the derivatives). With a smaller time step, this problem should disappear.
