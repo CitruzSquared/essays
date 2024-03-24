@@ -299,6 +299,6 @@ Therefore, the method of calculation of solar eclipse phenomena when taking smal
 2. Calculate the Besselian elements at the time of New Moon.
 3. Using this, calculate the first and last external penumbral contacts. This is necessary because we need the boundary times of the whole eclipse.
 4. Now, beginning from the first external penumbral contact, calculate the elements at that time and calculate all the curves via methods detailed previously in this chapter, simply ignoring impossible solutions.
-5. Increment by a small time step until the last external penumbral contact is reached.
+5. Increment by a small time step, recalculate the elements, and calculate new points until the last external penumbral contact is reached.
 
 ### Local Predictions
