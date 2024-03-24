@@ -210,8 +210,6 @@ While this more rigorous method is recommended, and even necessary for worldbuil
 
 The extreme points lie on the rising / setting limits, and the extreme points lie on those limits at some time in between the external and internal contacts. Also, the time between the external and internal umbral contacts is so small, that the time between the extreme points at each lobe, which is even smaller, is absolutely tiny, to the point where they occur almost at the same instant (less than a minute apart for the case of the $\text{April, 8, }2024$ eclipse). In addition, the area covered by these rising / setting limits is also very small. We can therefore say that the points on the rising / setting limits at the time midway between the contacts are close enough to the true extreme points. The time midway between the umbral contacts is well approximated by the time of contact of the center of the shadow, which we have already calculated in example $9.9$. Thus, the points on the rising / setting limits at the time of central contact can be used as the extreme points of the limits of centrality.
 
-The above approximation is very imprecise and only works for cases where the umbral shadow is very small. The more rigorous solution, which is not very difficult to do when being done automatically with a program (the small step size is a nonissue with a computer), is recommended for general purposes.
-
 #### Example 9.10
 <div align="center">
 <table>
