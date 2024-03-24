@@ -294,7 +294,7 @@ If we take small enough time steps, the calculation of all the extreme points of
 Thus, if we take time steps of for example $1$ second, not only do we have more accurate derivatives, we also, if we simply ignore times that give impossible solutions for points, automatically have the times of the various contacts and extreme points of curves accurate to the nearest second as those points are the first and last times that give possible solutions. The time of greatest eclipse can also be found to the nearest second by simply computing $m = \sqrt{x^2 + y^2}$ at each time and seeing when it is at minimum.
 
 Therefore, the method of calculation of solar eclipse phenomena when taking small time steps is as follows:
-1. Find the specific New Moon that produces a solar eclipse.
+1. Find a specific New Moon that produces a solar eclipse.
 2. Calculate the Besselian elements at the time of New Moon.
 3. Using this, calculate the first and last external penumbral contacts. This is necessary because we need the boundary times of the whole eclipse.
 4. Now, beginning from the first external penumbral contact, calculate the elements at that time and calculate all the curves via methods detailed in this chapter, simply ignoring impossible solutions.
