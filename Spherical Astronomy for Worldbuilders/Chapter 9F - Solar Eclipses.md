@@ -278,4 +278,6 @@ The points we have computed in examples $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ 
   <img width="500" src="https://github.com/CitruzSquared/essays/assets/23460281/5c0f1022-9ec2-426b-a51e-20b86a9004aa"> <br/>
 </p>
 
-
+```math
+\text{Greatest Eclipse at 18:17} \enspace\enspace\enspace\enspace \text{Gamma } = 0.3431
+```
