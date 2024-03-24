@@ -269,7 +269,7 @@ Now, we find the limits just like in example $9.10$, simply swapping out the pen
 ```
 $\blacksquare$
 
-The points we have computed in examples $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ can be plotted on a map and curves can be drawn through them:
+The points we have computed in examples $9.5$, $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ can be plotted on a map and curves can be drawn through them:
 ```math
 \begin{array}{c} \\ \hline
 \text{The Total Solar Eclipse of April 8, 2024} \\ \hline
