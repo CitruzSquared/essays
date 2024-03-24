@@ -195,4 +195,5 @@ In this manner the following table is computed:
 }
 ```
 $^1$ These points were not computed for the sake of brevity.\
-$^2$ While these points should exist, our numbers produce impossible results. This is due to the fact that these points are very close to the edges of the curve and our derivatives are not good enough (recall that we took $15$ minute time steps for the derivatives). With a smaller time step, and thus more accurate derivatives, this problem should disappear.
+$^2$ While these points should exist, our numbers produce impossible results. This is due to the fact that these points are very close to the edges of the curve and our derivatives are not good enough (recall that we took $15$ minute time steps for the derivatives). With a smaller time step, and thus more accurate derivatives, this problem should disappear.\
+$\blacksquare$
