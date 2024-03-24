@@ -270,11 +270,10 @@ Now, we find the limits just like in example $9.10$, simply swapping out the pen
 $\blacksquare$
 
 The points we have computed in examples $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ can be plotted on a map and curves can be drawn through them:
-
-<br/>
-
 ```math
-\text{Total Solar Eclipse of April 8, 2024}
+\begin{array}{c} \\ \hline
+\text{The Total Solar Eclipse of April 8, 2024} \\ \hline
+\end{array}
 ```
 
 <p align="center">
@@ -282,8 +281,8 @@ The points we have computed in examples $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ 
 </p>
 
 ```math
-\displaylines{
+\begin{array}{c} \hline
 \text{Greatest Eclipse at 18:17 UTC} \enspace\enspace\enspace\enspace \text{Gamma } = 0.3431\\
-\text{Duration at Greatest Eclipse } = \text{ 4m 30.2s}
-}
+\text{Duration of Totality at Greatest Eclipse } = \text{ 4m 30.2s} \\ \hline
+\end{array}
 ```
