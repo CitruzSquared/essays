@@ -286,3 +286,5 @@ The points we have computed in examples $9.6$, $9.7$, $9.9$, $9.10$, and $9.11$ 
 \text{Duration of Totality at Greatest Eclipse } = \text{ 4m 30.2s} \\ \hline
 \end{array}
 ```
+
+### A Note on Time Steps
