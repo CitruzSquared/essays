@@ -199,3 +199,4 @@ $^2$ While these points should exist, our numbers produce impossible results. Th
 $\blacksquare$
 
 ### Limits of Centrality
+The limits of centrality are obtained exactly like the limits of partiality: simply replace the penumbral variables $i_1$, $l_1$, $a_1'$, $b_1'$, $c_1'$ with the umbral variables $i_2$, $l_2$, $a_2'$, $b_2'$, $c_2'$.
