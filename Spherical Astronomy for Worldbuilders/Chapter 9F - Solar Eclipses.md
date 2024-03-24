@@ -288,3 +288,16 @@ The points we have computed in examples $9.5$, $9.6$, $9.7$, $9.9$, $9.10$, and 
 ```
 
 ### A Note on Time Steps
+
+If we take small enough time steps, the calculation of all the extreme points of the various curves is rendered unnecessary. For example, in example $9.6$, the extreme points of the rising / setting limits are simply the first and last points that produce possible values of $\epsilon$. In example $9.7$ and $9.10$, the extreme points of the curves of maximum eclipse on the horizon and the curves of the limits of partial eclipse are determined by the first and last points $m\sin(M - Q)/p$ produce possible values of $\psi$, and the first and last points $\Delta$ is less than $|l|$. In example $9.9$, the central contacts are the first and last points that produce real values of $\zeta_1$. 
+
+Thus, if we take time steps of for example $1$ second, not only do we have more accurate derivatives, we also, if we simply ignore times that give impossible solutions for points, automatically have the times of the various contacts and extreme points of curves accurate to the nearest second. The time of greatest eclipse can also be found to the nearest second by simply computing $m = \sqrt{x^2 + y^2}$ at each time and seeing when it is at minimum.
+
+Therefore, the method of calculation of solar eclipse phenomena when taking small time steps is as follows:
+1. Find the specific New Moon that produces a solar eclipse.
+2. Calculate the Besselian elements at the time of New Moon.
+3. Using this, calculate the first and last external penumbral contacts. This is necessary because we need an estimate of when the whole eclipse begins and ends.
+4. Now, beginning from the first external penumbral contact, calculate the elements at that time and calculate all the curves via methods detailed in this chapter, simply ignoring impossible solutions.
+5. Increment by a small time step until the last external penumbral contact is reached.
+
+### Local Predictions
