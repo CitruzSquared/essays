@@ -223,7 +223,7 @@ Determine the limits of totality of the solar eclipse of $\text{April 8, } 2024$
 </table>
 </div>
 
-We use the approximation for the extreme points. The times of central contact are $16:40:02$ and $19:54:28$. Using the elements at these times (interpolated in example $9.9$, slightly off but should still be sufficiently accurate):
+We use the approximation for the extreme points. The times of central contact are $16:40:02$ and $19:54:28$. Using the elements at these times (interpolated in example $9.9$, not exactly at the contact times but should still be sufficiently accurate):
 ```math
 \begin{array}{|c|c|c|c|c|c|c|c|}\hline t & d & \mu & x & y & i_2 & l_2 & \rho_1\\ \hline
 16:41:00 & 0.12985038 & 1.21988483 & -0.99057474 & -0.13707257 & 0.00464516 & -0.01049008 & 0.99670351 \\
