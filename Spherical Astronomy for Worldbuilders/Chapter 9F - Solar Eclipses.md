@@ -302,3 +302,16 @@ Therefore, the method of calculation of solar eclipse phenomena when taking smal
 5. Increment by a small time step, recalculate the elements, and calculate new points until the last external penumbral contact is reached.
 
 ### Local Predictions
+For local predictions, i.e. predictions for a given place, three things are of note:
+1. The time of partial eclipse beginning and ending.
+2. The time of central (total/annular) eclipse beginning and ending.
+3. The maximum magnitude.
+
+The first two can be obtained via successive approximation, using methods similar to example $9.5$: 
+1. Calculate $\xi$, $\eta$, $\xi'$, and $\eta'$ at $T_0$ using equations $9.6$ and $9.40$.
+2. Approximate $(x - \xi)$ and $(y - \eta)$ as linear, and estimate for the times when $\Delta = L$.
+3. Repeat the approximations until a satisfactory answer is reached.
+
+The third can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$
+
+However, when taking small time steps, simply keeping track of $\Delta$, $L$, and $P'$ give the times of contact and maximum magnitude naturally.
