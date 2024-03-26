@@ -312,6 +312,6 @@ The first two can be obtained via successive approximation, using methods simila
 2. Approximate $(x - \xi)$ and $(y - \eta)$ as linear, and estimate for the times when $\Delta^2 = L^2$.
 3. Repeat the approximations until a satisfactory answer is reached.
 
-The third can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$
+The third can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$.
 
 However, when taking small time steps, simply keeping track of $\Delta$, $L$, and $P'$ give the times of contact and maximum magnitude naturally.
