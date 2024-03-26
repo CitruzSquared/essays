@@ -80,9 +80,20 @@
       * The Outline of the Shadow on the Surface of the Earth
    - Part C (Eq. $9.35$ to $9.50$, Ex. $9.4$)
      * Beginning / Ending Condition
-   - Part D (Eq. $9.51$ to $ $, Ex. $9.5$ to $9.6$)
+   - Part D (Eq. $9.51$ to $9.63$, Ex. $9.5$ to $9.6$)
      * Contacts
      * Rising / Setting Limits
+   - Part E (Eq. $9.64$ to $9.76$, Ex. $9.7$ to $9.9$)
+     * Curve of Maximum Eclipse on the Horizon
+     * Greatest Eclipse
+     * Curve of Centrality
+   - Part F (Eq. $9.77$ to $9.78$, Ex $9.10$ to $9.11$)
+     * Limits of Partiality
+     * Limits of Centrality
+     * A Note on Time Steps
+     * Local Predictions
+   - Part Z
+     * Besselian Element Table
 10. **Lunar Eclipses**
 11. **Solar Transits**
 12. **Lunar Occultations**
