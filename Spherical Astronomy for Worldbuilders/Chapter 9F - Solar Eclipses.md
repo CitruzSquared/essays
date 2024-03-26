@@ -309,7 +309,7 @@ For local predictions, i.e. predictions for a given place, three things are of n
 
 The first two can be obtained via successive approximation, using methods similar to example $9.5$: 
 1. Calculate $\xi$, $\eta$, $\xi'$, and $\eta'$ at $T_0$ using equations $9.6$ and $9.40$.
-2. Approximate $(x - \xi)$ and $(y - \eta)$ as linear, and estimate for the times when $\Delta = L$.
+2. Approximate $(x - \xi)$ and $(y - \eta)$ as linear, and estimate for the times when $\Delta^2 = L^2$.
 3. Repeat the approximations until a satisfactory answer is reached.
 
 The third can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$
