@@ -244,7 +244,7 @@ Our answers can be arranged in a table:
 \end{array}
 }
 ```
-We could make a third and more accurate approximation, but for the sake of brevity I will stop at two.\
+We could make a third and more accurate approximation, but for the sake of brevity I will stop at two. For another method of calculation of the internal contacts, see chapter $\text{9F}$, in the section *A Note on Time Steps*.\
 $\blacksquare$
 
 Only now that we know that this eclipse began globally at $15:42$ and ended at $20:52$, can we calculate the Besselian elements for the entire eclipse and tabulate them. The elements for the times in between the tabulated values can then be found via simple interpolation. If one is writing a program to predict eclipses however, tabulation and interpolation is unnecessary, simply start at the beginning time, calculate the elements and the coordinates of the location of the shadow of the Moon at that time (especially the special locations to be discussed hereafter), then increment the time by a preselected $\Delta t$ (the smaller the better).
