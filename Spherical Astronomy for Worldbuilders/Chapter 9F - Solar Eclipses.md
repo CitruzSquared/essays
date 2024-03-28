@@ -306,12 +306,13 @@ For local predictions, i.e. predictions for a given place, three things are of n
 1. The time of partial eclipse beginning and ending.
 2. The time of central (total/annular) eclipse beginning and ending.
 3. The maximum magnitude.
+4. The duration of centrality.
 
 The first two can be obtained via successive approximation, using methods similar to example $9.5$: 
 1. Calculate $\xi$, $\eta$, $\xi'$, and $\eta'$ at $T_0$ using equations $9.6$ and $9.40$.
-2. Approximate $(x - \xi)$ and $(y - \eta)$ as linear, and estimate for the times when $\Delta^2 = L^2$.
+2. Approximate $(x - \xi)$ and $(y - \eta)$ as linear, and estimate for the times when $\Delta^2 - L^2 = 0$.
 3. Repeat the approximations until a satisfactory answer is reached.
 
-The third can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$.
+The maximum magnitude can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$.
 
-However, when taking small time steps, simply keeping track of $\Delta$, $L$, and $P'$ give the times of contact and maximum magnitude naturally.
+However, when taking small time steps, simply keeping track of $\Delta$, $L$, and $P'$ give the times of contact and maximum magnitude naturally.  The duration of centrality is simply the difference between the two umbral contacts.
