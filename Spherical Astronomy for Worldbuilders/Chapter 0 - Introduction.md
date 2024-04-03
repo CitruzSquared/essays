@@ -92,6 +92,7 @@
      * Limits of Centrality
      * A Note on Time Steps
      * Local Predictions
+     * Transits and Occultations
    - Part Z
      * Besselian Element Table
 10. **Lunar Eclipses**
