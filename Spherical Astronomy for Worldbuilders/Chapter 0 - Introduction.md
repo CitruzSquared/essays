@@ -96,8 +96,6 @@
    - Part Z
      * Besselian Element Table
 10. **Lunar Eclipses**
-11. **Solar Transits**
-12. **Lunar Occultations**
 
 ## Useful Mathematics
 
