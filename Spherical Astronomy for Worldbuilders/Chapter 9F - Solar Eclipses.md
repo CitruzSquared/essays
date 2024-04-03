@@ -316,3 +316,8 @@ The first two can be obtained via successive approximation, using methods simila
 The maximum magnitude can be also calculated via successive approximation by approximating for the time when $P' = 0$ and calculating the magnitude by equation $9.71$.
 
 However, when taking small time steps, simply keeping track of $\Delta$, $L$, and $P'$ give the times of contact and maximum magnitude naturally.  The duration of centrality is simply the difference between the two umbral contacts.
+
+### Transits and Occultations
+Transits of inner planets across the Sun or occultations of stars and planets by the Moon can be modeled as solar eclipses. For transits, simply replace the Moon with the planet. For lunar occultations, simply replace the Sun with the star or planet.
+
+For lunar occultations of stars, because stars are infinitely far away and have zero parallax, star rays can be modeled as parallel and therefore $f = 0$, and so $i = 0$, and so $l = L = \text{Radius of the Moon}$, and the coordinates $z$ and $\zeta$ will not need to be used. We also have to keep in mind the position of the Sun as it is generally useless to predict lunar occultations of stars during daylight.
