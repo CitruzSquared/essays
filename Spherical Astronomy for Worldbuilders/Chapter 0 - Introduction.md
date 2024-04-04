@@ -96,6 +96,7 @@
    - Part Z
      * Besselian Element Table
 10. **Lunar Eclipses**
+11. **Eclipse Cycles**
 
 ## Useful Mathematics
 
