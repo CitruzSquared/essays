@@ -38,9 +38,9 @@ Which, using equation $9.1$, becomes:
 ```
 Where $\beta$ is the ecliptic latitude of the Moon at the moment of opposition.
 
-The above is the case for total lunar eclipse. For penumbral lunar eclipses, the radius of the Earth's shadow can be expressed as $\pi + s' + \pi'$ and thus the condition for eclipse is:
+The above is the case for total lunar eclipse. For penumbral lunar eclipses, the apparent radius of the Earth's shadow can be expressed as $\pi + s' + \pi'$ and thus the condition for eclipse is:
 ```math
-\beta <  \tag{10.2}
+\beta < (\pi + s' + \pi' + s)\sec(I') \tag{10.2}
 ```
 
 #### Example 10.1
@@ -62,3 +62,18 @@ We can find via the method of example $4.4$, but by solving for when the elongat
 ```
 Thus a partial eclipse of the Moon would occur.\
 $\blacksquare$
+
+### Computations
+A lunar eclipse can be modeled as an eclipse of the Sun by the Earth from the Moon's perspective. Thus, we can calculate the Besselian elements just like solar eclipses, except we use the Moon as the reference.
+
+The direction of the axis of the shadow, given by the quantities $G$, $a$, and $d$, are now simply the direction of the Sun from the Earth, and $a$ and $d$ are just the geocentric right ascension and declination of the Sun.
+
+Using these, the Besselian elements can be calculated (with distances being in units of the radius of the Moon), and the times of contact can be calculated in exactly the same way as example $9.5$. If we model the Moon as a sphere (which for all intents and purposes, is accurate), the need for successive approximations of $p$ become unnecessary and $p = 1$ for all cases. Calculating the exact latitude and longitude of contact is largely unnecessary, and only the times are needed.
+
+Once the times of contact are found, anywhere on the Earth that can see the Moon at these times, which can be found by the method of example $6.6$, using the parallax corrected sunrise equation (equation $8.5$) for more accuracy.
+
+The degree of obscuration of the Moon can be calculated as:
+```math
+\text{Magnitude} = \frac{l - m}{2k}
+```
+Where $l$ is the radius of the shadow of the Earth, using $l_1$ for penumbral magnitude and $l_2$ for umbral magnitude, $m$ is $\sqrt{x^2 + y^2}$, and $k$ is the radius of the Moon.
