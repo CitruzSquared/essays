@@ -43,5 +43,17 @@ The above is the case for total lunar eclipse. For penumbral lunar eclipses, the
 \beta < (\pi + s' + \pi' + s)\sec(I') \tag{10.2}
 ```
 
+#### Example 10.1
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine if the full Moon of $\text{November, } 2021$ will result in a lunar eclipse.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
 
-
+We can find via the method of example $4.4$, but by solving for when the elongation is $180\degree$ (or the time when elongation $-$ $180\degree = 0$) the new Moon occured on $\text{November 19, } 2021$ at $08:57$. We now do similar calculations as example $9.1$.
