@@ -40,7 +40,7 @@ Where $\beta$ is the ecliptic latitude of the Moon at the moment of opposition.
 
 The above is the case for total lunar eclipse. For penumbral lunar eclipses, the radius of the Earth's shadow can be expressed as $\pi + s' + \pi'$ and thus the condition for eclipse is:
 ```math
-\beta < (\pi + s' + \pi' + s)\sec(I') \tag{10.2}
+\beta <  \tag{10.2}
 ```
 
 #### Example 10.1
@@ -56,4 +56,9 @@ Determine if the full Moon of $\text{November, } 2021$ will result in a lunar ec
 </table>
 </div>
 
-We can find via the method of example $4.4$, but by solving for when the elongation is $180\degree$ (or the time when elongation $-$ $180\degree = 0$) the new Moon occured on $\text{November 19, } 2021$ at $08:57$. We now do similar calculations as example $9.1$.
+We can find via the method of example $4.4$, but by solving for when the elongation is $180\degree$ (or the time when elongation $-$ $180\degree = 0$) the new Moon occured on $\text{November 19, } 2021$ at $08:57$. We now do similar calculations as example $9.1$, and find that:
+```math
+(\pi + s' + \pi' + s)\sec(I') < \beta < (\pi - s' + \pi' + s)\sec(I') 
+```
+Thus a partial eclipse of the Moon would occur.\
+$\blacksquare$
