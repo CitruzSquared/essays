@@ -72,7 +72,7 @@
 9. **Solar Eclipses**
     - Part A (Eq. $9.1$ to $9.15$, Ex. $9.1$ to $9.2$)
       * Condition for Eclipse
-      * Partial Total, and Annular Eclipses
+      * Partial Total, and Annular Solar Eclipses
       * Direction of the Shadow
       * Position of the Shadow and the Observer
       * The Size of the Shadow
