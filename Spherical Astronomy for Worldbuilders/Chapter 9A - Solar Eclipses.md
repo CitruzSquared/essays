@@ -177,7 +177,7 @@ Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar ecl
 There is a shorter way of doing this: we can precalculate the minimum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is less than this minimum value, a solar eclipse must surely occur. We can also precalculate the maximum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is greater than this maximum value, a solar eclipse will surely not occur. If it is in between these two values, the full calculation is required.\
 $\blacksquare$
 
-### Partial, Total, and Annular Eclipses
+### Partial, Total, and Annular Solar Eclipses
 
 <p align="center">
   <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/1d634c03-a53b-4d23-90ab-56df30abf0fc"> <br/>
