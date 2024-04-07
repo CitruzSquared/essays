@@ -1,6 +1,18 @@
 ## 10. Lunar Eclipses
 Lunar eclipses happen when the Earth casts a shadow on the Moon. As it is a phenomenon that really changes the appearance of the Moon, anywhere on the Earth that can see the Moon during a lunar eclipse will see it, unlike solar eclipses. This makes the discussion of lunar eclipses much simpler than the discussion of solar eclipses.
 
+### Penumbral, Partial, and Total Lunar Eclipses
+The Earth has two shadows: the penumbra and umbra. Depending on which parts of the shadow the Moon passes through, the eclipse can be categorized in four ways:
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/edf30659-ca55-4ea9-af22-675bb076c4fa" width="250"/> In this diagram, the penumbra of the Earth is the lightly shaded region (the larger shaded circle) and the umbra is the heavily shaded region (the smaller shaded circle). Depending on the position of the Moon, ($1$, $2$, $3$, or $4$), the eclipse can be categorized as:
+
+1. Partial Penumbral Eclipse
+2. Partial Eclipse
+3. Total Eclipse
+4. Total Penumbral Eclipse
+
+However, because penumbral eclipses are hardly noticeable, both $1$ and $4$ are simply collectively referred to as "penumbral eclipses", and the distinction between partial and total penumbral eclipse is usually not made.
+
 ### Conditions for Eclipse
 A lunar eclipse can only happen when the Moon is on the opposite side of the Earth from the Sun, i.e. they only happen during full moons. We can say that the shadow of the Earth is a circlular disk projected at the distance of the Moon.
 
@@ -31,5 +43,5 @@ The above is the case for total lunar eclipse. For penumbral lunar eclipses, the
 \beta < (\pi + s' + \pi' + s)\sec(I') \tag{10.2}
 ```
 
-### Penumbral, Partial, and Total Lunar Eclipses
+
 
