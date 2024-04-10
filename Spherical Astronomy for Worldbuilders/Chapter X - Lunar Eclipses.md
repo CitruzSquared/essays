@@ -14,7 +14,7 @@ The Earth has two shadows: the penumbra and umbra. Depending on which parts of t
 However, because penumbral eclipses are hardly noticeable, both $1$ and $4$ are simply collectively referred to as "penumbral eclipses", and the distinction between partial and total penumbral eclipse is usually not made.
 
 ### Conditions for Eclipse
-While a lunar eclipse can be modeled as a solar eclipse from the Moon, it is easier to simply consider the angular separation between the Moon and the shadow of the Earth to compute a lunar eclipse. For all intents and purposes, we can say that the shadow of the Earth is a circlular disk projected at the distance of the Moon.
+While a lunar eclipse can be modeled as a solar eclipse from the Moon, it is easier to simply consider the angular separation between the Moon and the shadow of the Earth to compute a lunar eclipse. For all intents and purposes, we can say that the shadow of the Earth is a circlular disk located at the antipode of the Sun, projected at the distance of the Moon, and thus the right ascension and declination of the center of the shadow are simply $\alpha_{\text{Sun}} + 180\degree$ and $-\delta_{\text{Sun}}$ respectively.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/9424197a-c38e-4198-9931-df3ae6f1a58b" width="175"/> In this diagram, if $S$ is the center of the Sun and $E$ is the center of the Earth, and $LM$ is the radius of the Earth's shadow at the distance of the Moon, then the apparent radius of the shadow of the Earth is $LEM$.
 
@@ -36,7 +36,7 @@ f_1 &= \pi + s' + \pi'\\
 f_2 &= \pi - s' + \pi'
 \end{align} \tag{10.1}
 ```
-And thus:
+And thus, if we put $s$ as the apparent radius of the Moon,
 ```math
 \begin{align}
 \text{For Partial Penumbral Eclipse: }\Sigma &< f_1 + s \\
@@ -45,7 +45,7 @@ And thus:
 \text{For Total Eclipse: } \Sigma &< f_2 - s \\
 \end{align} \tag{10.2}
 ```
-Where $s$ is the apparent radius of the Moon and $\Sigma$ is given by equation $9.1$.
+Where $\Sigma$ is given by equation $9.1$.
 
 #### Example 10.1
 <div align="center">
