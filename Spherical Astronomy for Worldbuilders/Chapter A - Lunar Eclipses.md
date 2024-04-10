@@ -27,7 +27,7 @@ LEM &= BLE - LVE\\
 \end{align}
 ```
 Where $\pi$ is the equatorial horizontal parallax of the Moon, $s'$ is the apparent radius of the Sun, and $\pi'$ is the equatorial horizontal parallax of the Sun.\
-The above is the case for total lunar eclipse. For penumbral lunar eclipses, the apparent radius of the Earth's penumbra can be expressed as $\pi + s' + \pi'$.
+The above is the case for total lunar eclipse. For penumbral lunar eclipses, the apparent radius of the Earth's penumbra is given as $\pi + s' + \pi'$.
 
 Now putting the least angular separation between the Moon and the shadow of the Earth as $\Sigma$, and the angular size of the Earth's penumbra as $f_1$ and the angular size of the umbra as $f_2$, we have:
 ```math
