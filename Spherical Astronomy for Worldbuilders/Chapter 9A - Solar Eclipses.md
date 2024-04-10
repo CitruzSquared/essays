@@ -128,9 +128,9 @@ We can find via the method of example $4.4$ that the new Moon occured on $\text{
 Also:
 ```math
 \begin{align}
-\text{Earth's equatorial Radius } &=6378.137 \text{ km}\\
-\text{Moon's Radius } &= 1737.4 \text{ km}\\
-\text{Sun's Radius } &= 696\:000 \text{ km}\\
+\text{Earth's equatorial radius } &=6378.137 \text{ km}\\
+\text{Moon's radius } &= 1737.4 \text{ km}\\
+\text{Sun's radius } &= 696\:000 \text{ km}\\
 I &= 5.14\degree
 \end{align}
 ```
