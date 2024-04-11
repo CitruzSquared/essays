@@ -201,7 +201,7 @@ Determine the length of some eclipse cycles.
 
 An eclipse is followed by an eclipse of the same type (solar or lunar) only in units of synodic months. Therefore, we need to find the number of synodic months that would result in the nodes also being in a similar place. This ensures $\beta$ is similar and thus the two eclipses being very similar. i.e, we need to find a multiple of synodic months that is also a multiple of draconic months.
 
-For example, we see that twelve synodic months is $12\cdot29.5306/27.2122 = 13.0224$ draconic months, and the error from a whole number is $0.0224$ draconic months. Additionally, twelve synodic months is $12\cdot29.5306/346.6201 = 1.0224$ eclipse years. The error from a whole number is $0.0224$ eclipse years, and therefore the $\Delta\xi$ during this eclipse cycle is $0.0224 \cdot 360\degree = 8.064\degree$.\
+For example, we see that twelve synodic months is $12\cdot29.5306/27.2122 = 13.0224$ draconic months, and the error from a whole number is $0.0224$ draconic months. Additionally, twelve synodic months is $12\cdot29.5306/346.6201 = 1.0224$ eclipse years. The error from a whole number is $0.0224$ eclipse years, and therefore the $\Delta\xi$ during this eclipse cycle is $0.0224 \cdot 360\degree = 8.064\degree$.
 
 A list of periods with absolute errors less than $0.01$ draconic months are listed here, computed via trial and error:
 ```math
