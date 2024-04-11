@@ -229,7 +229,8 @@ This is exemplified by this series of three solar eclipses, separated by one Sar
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/7b65d51c-c22f-46aa-a1ab-8fd53728e8a8"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/303ca1c4-020b-4de7-bff8-e29321cc0abd"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/5739cb4d-5ffb-4a82-a521-bfe90a0c6fca"> <br/>
-   Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by about $120\degree$ in longitude. <br/> A chain of eclipses separated by a Saros each is called a <i>Saros series</i>. The above shows three members in the solar Saros series number $139$.
+   Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by about $120\degree$ in longitude. <br/> A chain of eclipses separated by a Saros each is called a <i>Saros series</i>. The above shows three members in the solar Saros series number $139$. <br/>
+   There are many Saros series active at the same time at any given time.
 </p>
 
 $\blacksquare$
