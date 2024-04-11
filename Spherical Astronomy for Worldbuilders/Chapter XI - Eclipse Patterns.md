@@ -172,13 +172,17 @@ Assume that at the beginning of the year, the Sun passed through a lunar node an
 However, 12.5 months is $12.5 \cdot 29.53 = 369.13$ days, which is longer than a year, meaning there is no way for the eighth eclipse to fit in one year. Therefore the maximum number of eclipses that could occur is seven.
 
 This is exemplified by the extraordinary year of $1982$:
-- The total lunar eclipse of $\text{January 9, } 1982$.
-- The partial solar eclipse of $\text{January 25, } 1982$.
-- The partial solar eclipse of $\text{June 21, } 1982$.
-- The total lunar eclipse of $\text{July 6, } 1982$.
-- The partial solar eclipse of $\text{July 20, } 1982$.
-- The partial solar eclipse of $\text{December 15, } 1982$.
-- The total lunar eclipse of $\text{December 30, } 1982$.
+```math
+\begin{array}{ccc} \hline \text{Date} & & \text{Eclipse} \\ \hline
+\text{January 9, } 1982 & & \text{Total Lunar Eclipse} \\
+\text{January 25, } 1982 & & \text{Partial Solar Eclipse} \\
+\text{June 21, } 1982 & & \text{Partial Solar Eclipse} \\
+\text{July 6, } 1982 & & \text{Total Lunar Eclipse} \\
+\text{July 20, } 1982 & & \text{Partial Solar Eclipse} \\
+\text{December 15, } 1982 & & \text{Partial Solar Eclipse} \\
+\text{December 30, } 1982 & & \text{Total Lunar Eclipse} \\ \hline
+\end{array}
+```
 
 $\blacksquare$
 ### Eclipse Cycles and the Saros
