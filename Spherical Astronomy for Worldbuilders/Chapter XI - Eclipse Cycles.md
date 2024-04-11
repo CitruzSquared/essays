@@ -255,5 +255,13 @@ In addition, since there are about $69$ members in a Saros series, every Saros s
 ```math
 69\cdot223\cdot29.5306\cdot\frac{1}{365.25} = 1244\text{ yr}
 ```
-(In reality, Saros series take about $1200$ to $1500$ years from start to finish.)\
+(In reality, Saros series take about $1200$ to $1500$ years from start to finish.)
+
+An example of a full solar Saros series (Saros $139$) is shown below:
+
+<p align="center">
+  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/d71c3bce-4f25-4675-9fdb-b7627b4b584c"> <br/>
+   Solar Saros $139$ has $71$ members, $7$ partial eclipses followed by $55$ central eclipses followed by $9$ partial eclipses.
+</p>
+
 $\blacksquare$
