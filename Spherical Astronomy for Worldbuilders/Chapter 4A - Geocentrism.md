@@ -301,7 +301,7 @@ A Lunar Ephemeris can be found [here](https://astropixels.com/ephemeris/moon/moo
 We first set $a = \text{ January 1, } 2024$ as the first new Moon of 2024 could not have been before this date.\
 The elongation on this date was $-124.0\degree$. (We would have to calculate the elongation in a fictional setting as an ephemeris would not be available.) Therefore we need the elongation at time $b$ to be positive.
 
-We set $b$ to be $a + 0.5\text{ Synodic Period}$, because then, the elongation would be $\approx -124.0\degree + 180\degree$, which is a positive number.\
+We set $b$ to be $a + 0.5\text{ Synodic Period}$, because then, the elongation would be $\approx -124.0\degree + 180\degree$, which is a positive number. (Half of the synodic period of the Moon is called a "fortnight".)\
 Note that if we subtracted $0.5\text{ Synodic Period}$ instead, the elongation would be $\approx -124.0\degree - 180\degree = -304\degree = 56\degree$, which is also a positive number, but this does not work as $f(t)$ (the elongation at time $t$) is not continuous in this region. (There is a jump from $-180\degree$ to $180\degree$).
 
 Now we calculate $b$ to be $\text{ January 16, } 2024$, and the elongations at $a$ and $b$ were:
