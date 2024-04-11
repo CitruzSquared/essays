@@ -306,7 +306,7 @@ A visibility map can be drawn by determining at which points the Moon is visible
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Make a first approximation of the contact times of the lunar eclipse of $\text{September 18, } 2024$ for the time $03:00$.
+Make a first approximation of the contact times of the lunar eclipse of $\text{September 18, } 2024$.
 <img width="2000" height="0">
 </td>
 </tbody>
