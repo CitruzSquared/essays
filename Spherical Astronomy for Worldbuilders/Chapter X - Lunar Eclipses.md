@@ -415,7 +415,7 @@ We will take $T_0 = 03:00$. Equations $10.8$ give:
 \therefore T &= 03:00 -0.24309017h = 02:45:25
 \end{align}
 ```
-The location of greatest eclipse on the Earth is not easily definable, but it is generally given as the sublunar point at the time of greatest eclipse (see examples $6.10$ and $8.5$).
+The location of greatest eclipse on the Earth is not easily definable, but it is generally given as the sublunar point at the time of greatest eclipse (see examples $6.10$ and $8.5$).\
 $\blacksquare$
 
 #### Example 10.5
