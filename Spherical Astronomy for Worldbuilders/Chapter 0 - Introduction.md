@@ -95,7 +95,13 @@
      * Transits and Occultations
    - Part Z
      * Besselian Element Table
-10. **Lunar Eclipses**
+10. **Lunar Eclipses** (Eq. $10.1$ to $10.9$, Ex $10.1$ to $10.5$)
+    - Penumbral, Partial, and Total Lunar Eclipses
+    - Conditions for Eclipse
+    - Besselian Elements
+    - Contacts
+    - Greatest Eclipse, Gamma, and Magnitude
+    - A Note on Time Steps
 11. **Eclipse Cycles**
 
 ## Useful Mathematics
