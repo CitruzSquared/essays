@@ -173,7 +173,7 @@ Ecliptic longitude $167\degree$ $48'$ $32.97''$ is in between $150\degree$ and $
 ```
 $\blacksquare$
 
-The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. Thus:
+The above coordinate systems are *geocentric* in nature, and these are the coordinates an ephemeris lists. However, in order to calculate the ephemeris, we must know the real locations of the planets, and since planets orbit the Sun, we need another set ocoordinates, the *Heliocentric Ecliptic Coordinates*. These are the same as the Ecliptic corodinates, the $x$-axis points towards Aries, and the $xy$-plane is the Earth's orbital plane (the Ecliptic), but it is centered on the Sun. Thus, the Earth in this frame is on the antipode of the Sun in the geocentric frame:
 ```math
 \displaylines{
 \begin{align}
