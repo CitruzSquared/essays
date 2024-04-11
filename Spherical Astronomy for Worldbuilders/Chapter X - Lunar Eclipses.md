@@ -14,7 +14,7 @@ The Earth has two shadows: the penumbra and umbra. Depending on which parts of t
 However, because penumbral eclipses are hardly noticeable, both $1$ and $4$ are simply collectively referred to as "penumbral eclipses", and the distinction between partial and total penumbral eclipse is usually not made.
 
 ### Conditions for Eclipse
-While a lunar eclipse can be modeled as a solar eclipse from the Moon, it is easier to simply consider the angular separation between the Moon and the shadow of the Earth to compute a lunar eclipse. For all intents and purposes, we can say that the shadow of the Earth is a circlular disk located at the antipode of the Sun, projected at the distance of the Moon, and thus the right ascension and declination of the center of the shadow are simply $\alpha_{\text{Sun}} + 180\degree$ and $-\delta_{\text{Sun}}$ respectively.
+While a lunar eclipse can be modeled as a solar eclipse from the Moon, it is easier to simply consider the angular separation between the Moon and the shadow of the Earth to compute a lunar eclipse. For all intents and purposes, we can say that the shadow of the Earth is a circlular disk located at the antipode of the Sun, projected at the distance of the Moon, and thus the right ascension and declination of the center of the shadow are simply $\alpha_{\text{Sun}} + 12^h$ and $-\delta_{\text{Sun}}$ respectively.
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/9424197a-c38e-4198-9931-df3ae6f1a58b" width="175"/> In this diagram, if $S$ is the center of the Sun and $E$ is the center of the Earth, and $LM$ is the radius of the Earth's shadow at the distance of the Moon, then the apparent radius of the shadow of the Earth is $LEM$.
 
@@ -158,7 +158,7 @@ v, u, w &= \text{The normalized geocentric equatorial cartesian coordinates of t
 Then the direction of the shadow is simply given by the opposite direction to the Sun: $a = \alpha + 180\degree$, and $d = -\delta$. The coordinate transformation to the fundamental plane is identical to equation $9.5$:
 ```math
 \displaylines{
-a = \alpha + 180\degree \enspace\enspace\text{and}\enspace\enspace d = -\delta\\ \\
+a = \alpha + 12^h \enspace\enspace\text{and}\enspace\enspace d = -\delta\\ \\
 R = \begin{bmatrix}
 -\sin(a) & \cos(a) & 0\\
 -\cos(a) \sin(d) & -\sin(a) \sin(d) & \cos(d) \tag{10.4}\\
@@ -174,7 +174,7 @@ x\\y\\z
 v\\ u \tag{10.5}\\ w
 \end{bmatrix}
 ```
-We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances as in chapter $9$. If we express angles in radians, angular distances correspond to arc lengths on the sphere.
+We use the normalized coordinates of the Moon because we are dealing with angular distances on the celestial sphere and not true distances. When the angles are expressed in radians, angular distance corresponds to arc length.
 
 And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$, where all angles ($a$, $d$, $s$, $f$, $L$) are expressed in radians.
 
@@ -184,9 +184,73 @@ And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Determine the Besselian elements for the lunar eclipse of $\text{September 18, } 2024$ for the time $02:30$.
+Determine the Besselian elements for the lunar eclipse of $\text{September 18, } 2024$ for the time $03:00$.
 <img width="2000" height="0">
 </td>
 </tbody>
 </table>
 </div>
+
+Let $r, \alpha, \delta$ be the equatorial spherical coordinates of the Moon and $r', \alpha', \delta'$ be the equatorial spherical coordinates of the Sun. From an ephemeris, we find that on $\text{September 18, } 2024$ at $03:00$:
+```math
+\begin{align}
+r &= 357\:469.796\text{ km}\\
+\alpha &= 6.21947715\\
+\delta &= -0.0462551\\
+r' &= 150\:314\:543.493 \text{ km}\\
+\alpha' &= 3.06722563 \\
+\delta' &= 0.03220181
+\end{align}
+```
+Where all angles are in radians. Thus, by equation $10.4$:
+```math
+\begin{align}
+a &= 3.06722563 + \pi = 6.20881828 \\
+d &= -0.03220181
+\end{align}
+```
+And the rotation matrix is:
+```math
+R = \begin{bmatrix}
+0.0742985 &  0.99723605 & 0\\
+0.03210726 & -0.00239213 & 0.99948157\\
+0.99671905 & -0.07425998 & -0.03219624
+\end{bmatrix}
+```
+The normalized cartesian coordinates of the Moon are:
+```math
+(v, u, w) = (0.99690392, -0.06359697, -0.04623861)
+```
+And thus the Moon's coordinates in the fundamental frame is (by equation $10.5$):
+```math
+(x, y, z) = (0.01064727, -0.01405466, 0.99984454)
+```
+Where the units are radians because arc length $=$ angle if the angle is expressed in radians. (The radius is omitted because we assume the celestial sphere to have radius $1$.)
+
+Since we need the derivatives $x'$ and $y'$ as well, we do the same calculations for the times $02:45$ and $03:15$ and obtain:
+```math
+\begin{align}
+x_{02:45} &= 0.00837454\\
+y_{02:45} &= -0.01530998\\
+x_{03:15} &= 0.01291948\\
+y_{03:15} &= -0.01279948\\
+\end{align}
+```
+And therefore:
+```math
+\begin{alignat}{2}
+x' &= \frac{0.01291948 - 0.00837454}{0.5h} &&= 0.00908988 \: \text{rad}/h\\
+y' &= \frac{-0.01279948 - (-0.01530998)}{0.5h} &&= 0.005021 \: \text{rad}/h\\
+\end{alignat}
+```
+The remaining Besselian elements $s$ and $L$ are obtained in the same fashion as example $10.1$:
+```math
+\begin{align}
+s &= 0.00486029\: \text{rad}\\
+L_1 &= 0.02737643\: \text{rad}\\
+L_2 &= 0.01765585\: \text{rad}\\
+L_3 &= 0.01811581\: \text{rad}\\
+L_4 &= 0.00839523\: \text{rad}
+\end{align}
+```
+$\blacksquare$
