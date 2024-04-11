@@ -36,7 +36,7 @@ f_1 &= \pi + s' + \pi'\\
 f_2 &= \pi - s' + \pi'
 \end{align} \tag{10.1}
 ```
-And if we define:
+And if we define these variables, putting $s$ as the apparent radius of the Moon:
 ```math
 \begin{align}
 L_1 = f_1 + s\\
@@ -45,7 +45,7 @@ L_3 = f_2 + s\\
 L_4 = f_2 - s
 \end{align} \tag{10.2}
 ```
-We have, if we put $s$ as the apparent radius of the Moon,
+We have:
 ```math
 \begin{align}
 \text{Condition for Partial Penumbral Eclipse: }\Sigma &< L_1\\
