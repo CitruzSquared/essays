@@ -22,9 +22,7 @@ The duration of time that the Sun is near enough to a lunar node for these condi
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Using the average values of $s$, $s'$, $\pi$, $\pi'$, and $I'$, Determine if: <br/>
-1. Two solar eclipses can occur one month apart. <br/>
-2. A central solar eclipse can occur a fortnight after a total lunar eclipse.
+Using the average values of $s$, $s'$, $\pi$, $\pi'$, and $I'$, Determine if two solar eclipses can occur one month apart. 
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -70,7 +68,7 @@ Using all these values, we have for the conditions:
 ```
 Where only the absolute value of $\beta$ matters.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/8cd33362-d85e-4282-995b-f62452cfa751" width="250"/> To answer the first question, consider this diagram, showing the region near the lunar node $N$, where $S$ and $M$ are the positions of the Sun and Moon respectively at the moment of conjunction. The distance $SM$ is $\beta$. It is evident that:
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/8cd33362-d85e-4282-995b-f62452cfa751" width="250"/> Consider this diagram, showing the region near the lunar node $N$, where $S$ and $M$ are the positions of the Sun and Moon respectively at the moment of conjunction. The distance $SM$ is $\beta$. It is evident that:
 ```math
 SN = \beta \cot(I) \tag{11.1}
 ```
@@ -83,5 +81,3 @@ If we do the same analysis with central solar eclipses, we have maximum $\beta =
 If we consider the length of time $16.71\text{ dy} + 10.655\text{ dy} = 27.365\text{ dy}$, we see that this too is shorter than a synodic month, and therefore a central solar eclipse and a partial solar eclipse cannot occur one month apart.
 
 Therefore we have that in order for two solar eclipses to occur one month apart, they must both be partial.
-
-To answer the second question, 
