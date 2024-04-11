@@ -254,3 +254,56 @@ L_4 &= 0.00839523\: \text{rad}
 \end{align}
 ```
 $\blacksquare$
+
+### Contacts
+We follow the same reasoning as in chapter $9$. At the contacts, we have $x^2 + y^2 = L^2$ (since $x^2 + y^2$ is the square of the distance between the center of the Moon and the center of the shadow), so if we assume $x$ and $y$ to change linearly, we have:
+```math
+\begin{align}
+x &= x_0 + x'\tau\\
+y &= y_0 + y'\tau
+\end{align}
+```
+And so if we put:
+```math
+\begin{align}
+m_0\sin(M_0) &= x_0\\
+m_0\cos(M_0) &= y_0\\
+n\sin(N) &= x'\\
+n\cos(N) &= y'
+\end{align} \tag{10.6}
+```
+We have:
+```math
+\begin{align}
+L\sin(M) &= m_0\sin(M_0) + \tau n\sin(N) \\
+L\cos(M) &= m_0\cos(M_0) + \tau n\cos(N) 
+\end{align}
+```
+If we subtract $N$ from all angles in the above equation, we get:
+```math
+\begin{align}
+L\sin(M - N) &= m_0\sin(M_0 - N)\\
+L\cos(M - N) &= m_0\cos(M_0 - N) + \tau n
+\end{align}
+```
+Now, if we put $\psi = M - N$, we have, for the time of contacts:
+```math
+\begin{align}
+\sin(\psi) &= \frac{m_0\sin(M_0 - N)}{L}\\
+\tau &=  \frac{L\cos(\psi) - m_0\cos(M_0 - N)}{n}\\
+T &= T_0 + \tau
+\end{align} \tag{10.7}
+```
+The first equation has two solutions: we take $\psi = \arcsin()$ for last contacts and $\psi = 180\degree - \arcsin()$ for first contacts.
+#### Example 10.2
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Make a first approximation of the contact times of the lunar eclipse of $\text{September 18, } 2024$ for the time $03:00$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
