@@ -181,7 +181,7 @@ This is exemplified by the extraordinary year of $1982$:
 - The total lunar eclipse of $\text{December 30, } 1982$.
 
 $\blacksquare$
-### Eclipse Cycles
+### Eclipse Cycles and the Saros
 Because the path of an eclipse is determined by the location and motion of the Moon, if the Moon somehow ended up in the exact same position again after a particular eclipse, it would cause an eclipse with identical path shape and characteristics. While a perfect match does not exist, an approximate repetition periods exist, called *eclipse cycles*. 
 
 #### Example 11.5
