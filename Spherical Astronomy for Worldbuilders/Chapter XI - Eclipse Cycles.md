@@ -160,14 +160,14 @@ Determine the maximum number of eclipses that can occur in one year.
 Because the solar eclipse season ($33.42\text{ dy}$) is longer than a synodic month, there could be two solar eclipses in one month. In between the two solar eclipses, there would be a lunar eclipse, for a total of three eclipses at maximum per eclipse season. (Similarly, there could also be two lunar eclipses and one solar eclipse in the middle).
 
 Assume that at the beginning of the year, the Sun passed through a lunar node and a solar eclipse ocurred. A fortnight later a lunar eclipse would occur. Half an eclipse year later, the Sun would be at the opposite lunar node, and another eclipse season would start, with a maximum of three eclipses. Because an eclipse year is shorter than a year, The Sun would begin another eclipse season before the end of the year, which could produce three more eclipses, for a total of eight. However, we must count the eclipses carefully. Because an eclipse year is $346.61/29.53 = 11.74$ months long, half an eclipse year is $5.78$ months long, which rounds up to $6$ months (remember, eclipses only occur at new or full moon, meaning they can only occur separated by units of $0.5$ months), and in this scenario we would have:
-1. Eclipse at month 0
-2. Eclipse at month 0.5
-3. Eclipse at month 5.5
-4. Eclipse at month 6
-5. Eclipse at month 6.5
-6. Eclipse at month 11.5
-7. Eclipse at month 12
-8. Eclipse at month 12.5 (!)
+1. Eclipse at month $0$
+2. Eclipse at month $0.5$
+3. Eclipse at month $5.5$
+4. Eclipse at month $6$
+5. Eclipse at month $6.5$
+6. Eclipse at month $11.5$
+7. Eclipse at month $12$
+8. Eclipse at month $12.5$ (!)
    
 However, 12.5 months is $12.5 \cdot 29.53 = 369.13$ days, which is longer than a year, meaning there is no way for the eighth eclipse to fit in one year. Therefore the maximum number of eclipses that could occur is seven.
 
