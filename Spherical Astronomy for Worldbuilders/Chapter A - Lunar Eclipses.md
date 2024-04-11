@@ -176,4 +176,4 @@ v\\ u \tag{10.5}\\ w
 ```
 We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances.
 
-And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $f_1$, $f_2$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$.
+And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$.
