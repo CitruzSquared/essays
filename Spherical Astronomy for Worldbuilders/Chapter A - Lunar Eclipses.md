@@ -176,7 +176,7 @@ v\\ u \tag{10.5}\\ w
 ```
 We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances as in chapter $9$. If we express angles in radians, angular distances correspond to arc lengths on the sphere.
 
-And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$, where all angles are expressed in radians.
+And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$, where all angles ($a$, $d$, $s$, $f$, $L$) are expressed in radians.
 
 #### Example 10.2
 <div align="center">
