@@ -386,7 +386,7 @@ Setting this to $0$ and solving for $\tau$ gives:
 ```math
 \tau = -\frac{x_0x' + y_0y'}{x'^2 + y'^2} \tag{10.8}
 ```
-And then $T$ is given by $T = T_0 + \tau$. The gamma of the eclipse is given by the value of $m$ at this time.
+And then $T$ is given by $T = T_0 + \tau$. The gamma of the eclipse is defined by the true (not angular) distance from the center of the Moon to the axis of the shadow at the moment of greatest eclipse, and is given by multiplying $m$ at the moment of greatest eclipse by the distance to the Moon (in units of Earth equatorial radii).
 
 The magnitude of the eclipse at any time is given by:
 ```math
