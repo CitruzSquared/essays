@@ -177,3 +177,16 @@ v\\ u \tag{10.5}\\ w
 We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances.
 
 And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$.
+
+#### Example 10.2
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the Besselian elements for the lunar eclipse of $\text{September 18, } 2024$ for the time $02:30$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
