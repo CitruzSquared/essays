@@ -303,8 +303,8 @@ Therefore, the method of calculation of solar eclipse phenomena when taking smal
 
 ### Local Predictions
 For local predictions, i.e. predictions for a given place, three things are of note:
-1. The time of partial eclipse beginning and ending (a.k.a. the contact times of the eclipse).
-2. The time of central (total/annular) eclipse beginning and ending.
+1. The time of partial eclipse beginning and ending (a.k.a. the contact times of the penumbra).
+2. The time of central (total/annular) eclipse beginning and ending (a.k.a. the contact times of the umbra).
 3. The maximum magnitude.
 4. The duration of centrality.
 
