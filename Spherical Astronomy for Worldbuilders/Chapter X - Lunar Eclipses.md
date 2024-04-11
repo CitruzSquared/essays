@@ -298,6 +298,8 @@ T &= T_0 + \tau
 The first equation has two solutions: we take $\psi = \arcsin()$ for last contacts and $\psi = 180\degree - \arcsin()$ for first contacts.
 
 The first and last external contacts with the penumbra ($L = L_1$) are called $P_1$ and $P_4$, the first and last internal contacts with the penumbra ($L = L_2$) are called $P_2$ and $P_3$, the first and last external contacts with the umbra ($L = L_3$) are called $U_1$ and $U_4$, and the first and last internal contacts with the umbra ($L = L_4$) are called $U_2$ and $U_3$.
+
+A visibility map can be drawn by determining at which points the Moon is visible at the contact times (i.e. determining for which points the Moon is above the horizon). This can be done by the method of example $6.6$, but using the parallax corrected sunrise equation (equation $8.5$).
 #### Example 10.3
 <div align="center">
 <table>
@@ -413,6 +415,7 @@ We will take $T_0 = 03:00$. Equations $10.8$ give:
 \therefore T &= 03:00 -0.24309017h = 02:45:25
 \end{align}
 ```
+The location of greatest eclipse on the Earth is generally given as the sublunar point at the time of greatest eclipse (see examples $6.10$ and $8.5$).
 $\blacksquare$
 
 #### Example 10.5
