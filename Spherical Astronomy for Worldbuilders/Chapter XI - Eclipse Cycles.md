@@ -220,7 +220,7 @@ One can see that the eclipse cycle with a period of $223$ synodic months has an 
 
 A Saros is special because it is not only a whole number of synodic and draconic months but also a near whole number of anomalistic months (about $238.992$ anomalistic months, see example $3.4$), meaning the Moon will also be at a similar distance from the Earth after one saros. This means that eclipses separated by one saros will have not only similar path shape but also similar characteristics and durations as well.
 
-This is exemplified by this series of three solar eclipses, separated by one saros each:
+This is exemplified by this series of three solar eclipses, separated by one Saros each:
 <p align="center">
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/7b65d51c-c22f-46aa-a1ab-8fd53728e8a8"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/303ca1c4-020b-4de7-bff8-e29321cc0abd"> 
