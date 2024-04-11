@@ -56,6 +56,7 @@ We have, if we put $s$ as the apparent radius of the Moon,
 ```
 Where $\Sigma$ is given by equation $9.1$.
 
+Note: due to atmospheric refraction $f_1$ and $f_2$ usually appear bigger than it truly is. They appear bigger by a factor of about $1.02$ for our Earth, but for simplicity I will ignore this effect here.
 #### Example 10.1
 <div align="center">
 <table>
@@ -357,5 +358,10 @@ T &= 03:00:00 + 0.22529084h = 03:13:31
 \end{align}
 ```
 Thus partiality lasted for $03:13:31 - 02:17:19 = 56m$.
-Because this eclipse is partial, we do not have contacts with $L_4$ ($U_2$ and $U_3$). Contacts with $L_2$ ($P_2$ and $P_3$) are of little astronomical importance.\
+Because this eclipse is partial, we do not have contacts with $L_4$ ($U_2$ and $U_3$). Contacts with $L_2$ ($P_2$ and $P_3$) are of little astronomical importance.
+
+Further approximations (just like the contact time calculations of chapter $9$) are necessary for more accurate values.
+
 $\blacksquare$.
+
+### Greatest Eclipse, Gamma, and Magnitude
