@@ -29,7 +29,7 @@ LEM &= BLE - LVE\\
 Where $\pi$ is the equatorial horizontal parallax of the Moon, $s'$ is the apparent radius of the Sun, and $\pi'$ is the equatorial horizontal parallax of the Sun.\
 The above is the case for total lunar eclipse. For penumbral lunar eclipses, the apparent radius of the Earth's penumbra is given as $\pi + s' + \pi'$.
 
-Now putting the least angular separation between the Moon and the shadow of the Earth as $\Sigma$, and the angular size of the Earth's penumbra as $f_1$ and the angular size of the umbra as $f_2$, we have:
+Now putting the least angular separation between the Moon and the shadow of the Earth as $\Sigma$, and the angular radius of the Earth's penumbra as $f_1$ and the angular radius of the umbra as $f_2$, we have:
 ```math
 \begin{align}
 f_1 &= \pi + s' + \pi'\\
@@ -62,7 +62,80 @@ Determine if the full Moon of $\text{September, } 2024$ will result in a lunar e
 
 We can find the time of opposition via the method of example $4.4$, but by solving for when the elongation is $180\degree$. We redefine the elongation to be expressed in the range of $[0\degree, 360\degree)$ to resolve the problem of the discontinuity, then subtract $180\degree$ from the elongation then use the method of bisection to solve for when this new value of elongation $-$ $180\degree$ is $0\degree$.
 
-We find that the time of opposition was $\text{September 18, } 2024$, at $02:34$.
+We find that the time of opposition was $\text{September 18, } 2024$, at $02:36$. At this time:
+```math
+\begin{align}
+\lambda_\text{Moon} &=355\degree\:20'\:41.65''\\
+\lambda_\text{Sun} &=175\degree\:20'\:41.65''\\
+\beta_\text{Moon} &= -1\degree\:0'\:15.19''\\
+\Delta_\text{Moon} &= 357\:484.36 \text{ km}\\
+\Delta_\text{Sun} &= 150\:315\:226.07\text{ km}
+\end{align}
+```
+Also:
+```math
+\begin{align}
+\text{Earth's equatorial radius } &=6378.137 \text{ km}\\
+\text{Moon's radius } &= 1737.4 \text{ km}\\
+\text{Sun's radius } &= 696\:000 \text{ km}\\
+I &= 5.14\degree
+\end{align}
+```
+Thus by equations $4.1$ and $8.6$:
+```math
+\begin{alignat}{2}
+s &= \arcsin\left(\frac{1737.4}{357\:484.36}\right) &&= 16'\:42.5''\\
+s' &= \arcsin\left(\frac{696\:000}{150\:315\:226.07}\right) &&= 15'\:55.07''\\
+\pi &= \arcsin\left(\frac{6378.137}{357\:484.36}\right) &&= 1\degree\:1'\:20.32''\\
+\pi' &= \arcsin\left(\frac{6378.137}{150\:315\:226.07}\right) &&= 8.75''
+\end{alignat}
+```
+Therefore, by equation $10.1$ and $10.2$:
+```math
+\begin{alignat}{2}
+f_1 &= 1\degree\:1'\:20.32'' + 15'\:55.07'' + 8.75'' &&= 1\degree\:17'\:24.13''\\
+f_2 &= 1\degree\:1'\:20.32'' - 15'\:55.07'' + 8.75'' &&= 0\degree\:45'\:34''
+\end{alignat}
+```
+```math
+\begin{alignat}{2}
+f_1 + s &= 1\degree\:17'\:24.13'' + 16'\:42.5'' &&= 1\degree\:34'\:6.6''\\
+f_1 - s &= 1\degree\:17'\:24.13'' - 16'\:42.5'' &&= 1\degree\:0'\:41.67''\\
+f_2 + s &= 0\degree\:45'\:34'' + 16'\:42.5'' &&= 1\degree\:2'\:16.47''\\
+f_2 - s &= 0\degree\:45'\:34'' - 16'\:42.5'' &&= 0\degree\:28'\:51.54''
+\end{alignat} \tag{i}
+```
+To find $\Sigma$, we need $q$ (equations $9.1$ and $9.2$), and therefore we need $\sigma$ and $\mu$, the derivatives of longitudes of the Sun and Moon. We take one hour as the time step.\
+At $03:36$:
+```math
+\begin{align}
+\lambda_{\text{Moon}} &=355\degree\:58'\:39.95''\\
+\lambda_{\text{Sun}} &=175\degree\:22'\:54.53''
+\end{align}
+```
+Therefore:
+```math
+\begin{align}
+\mu &= \frac{355\degree\:58'\:39.95'' - 355\degree\:20'\:41.65''}{1h} = 37.97'/h\\
+\sigma &= \frac{175\degree\:22'\:54.53'' - 175\degree\:20'\:41.65''}{1h} = 2.21'/h
+\end{align}
+```
+Therefore, by equation $9.2$:
+```math
+\begin{align}
+q &= \frac{37.97}{2.21} = 17.181\\
+\therefore I' &= \arctan\left(\frac{17.181}{17.181 - 1} \tan(5.14\degree)\right) = 5.456\degree
+\end{align}
+```
+Therefore, by equation $9.1$, $\Sigma$ is:
+```math
+\Sigma = -1\degree\:0'\:15.19'' \cos(5.456\degree) = -59'\:58.81''
+```
+But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing to the values obtained in $(i)$, we can see that:
+```math
+\Sigma < f_2 + s
+```
+And therefore a partial eclipse of the Moon will occur.\
 $\blacksquare$
 
 ### Computations
