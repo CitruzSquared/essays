@@ -56,7 +56,7 @@ We have:
 ```
 Where $\Sigma$ is given by equation $9.1$.
 
-Note: due to atmospheric refraction $f_1$ and $f_2$ usually appear bigger than they truly are. They appear bigger by a factor of about $1.02$ for our Earth, but for simplicity I will ignore this effect here.
+Note: due to atmospheric effects, $f_1$ and $f_2$ usually appear bigger than they truly are. They appear bigger by a factor of about $1.02$ for our Earth, but for simplicity I will ignore this effect here.
 #### Example 10.1
 <div align="center">
 <table>
