@@ -437,11 +437,11 @@ m = \sqrt{0.01064727^2 + (-0.01405466)^2} = 0.01763229
 ```
 Using $L = L_1 = 0.02737643$, the penumbral magnitude is (by equation $10.9$):
 ```math
-\text{Magnitude } = \frac{0.02737643 - 0.01763229}{2 \cdot 0.00486029} = 1.002
+\text{Penumbral Magnitude } = \frac{0.02737643 - 0.01763229}{2 \cdot 0.00486029} = 1.002
 ```
 Using $L = L_3 = 0.01811581$, the umbral magnitude is (by equation $10.9$):
 ```math
-\text{Magnitude } = \frac{0.01811581 - 0.01763229}{2 \cdot 0.00486029} = 0.0497
+\text{Umbral Magnitude } = \frac{0.01811581 - 0.01763229}{2 \cdot 0.00486029} = 0.0497
 ```
 $\blacksquare$
 
