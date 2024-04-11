@@ -71,8 +71,8 @@
 ### 3. Syzygy
 9. **Solar Eclipses**
     - Part A (Eq. $9.1$ to $9.15$, Ex. $9.1$ to $9.2$)
-      * Condition for Eclipse
       * Partial Total, and Annular Solar Eclipses
+      * Condition for Eclipse
       * Direction of the Shadow
       * Position of the Shadow and the Observer
       * The Size of the Shadow
