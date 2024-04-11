@@ -131,7 +131,7 @@ Therefore, by equation $9.1$, $\Sigma$ is:
 ```math
 \Sigma = -1\degree\:0'\:15.19'' \cos(5.456\degree) = -59'\:58.81''
 ```
-But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing to the values obtained in $(i)$, we can see that:
+But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing to the values obtained in $(\text{i})$, we can see that:
 ```math
 f_2 - s < \Sigma < f_2 + s
 ```
