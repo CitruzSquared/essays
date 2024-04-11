@@ -177,7 +177,7 @@ v\\ u \tag{10.5}\\ w
 ```
 We use the normalized coordinates of the Moon because we are dealing with angular distances on the celestial sphere and not true distances. When the angles are expressed in radians, angular distance corresponds to arc length.
 
-And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$, where all angles ($a$, $d$, $s$, $f$, $L$) are expressed in radians.
+And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$, all expressed in radians.
 
 #### Example 10.2
 <div align="center">
@@ -226,7 +226,7 @@ And thus the Moon's coordinates in the fundamental frame is (by equation $10.5$)
 ```math
 (x, y, z) = (0.01064727, -0.01405466, 0.99984454)
 ```
-Where the units are radians because arc length $=$ angle if the angle is expressed in radians. (The radius is omitted because we assume the celestial sphere to have radius $1$.)
+The units are radians because arc length $=$ angle if the angle is expressed in radians. (The radius is omitted because we assume the celestial sphere to have radius $1$.)
 
 Since we need the derivatives $x'$ and $y'$ as well, we do the same calculations for the times $02:45$ and $03:15$ and obtain:
 ```math
