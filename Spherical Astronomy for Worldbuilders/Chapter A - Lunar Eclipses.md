@@ -36,14 +36,23 @@ f_1 &= \pi + s' + \pi'\\
 f_2 &= \pi - s' + \pi'
 \end{align} \tag{10.1}
 ```
-And thus, if we put $s$ as the apparent radius of the Moon,
+And if we define:
 ```math
 \begin{align}
-\text{For Partial Penumbral Eclipse: }\Sigma &< f_1 + s = L_1\\
-\text{For Total Penumbral Eclipse: } \Sigma &< f_1 - s = L_2\\
-\text{For Partial Eclipse: } \Sigma &< f_2 + s = L_3\\
-\text{For Total Eclipse: } \Sigma &< f_2 - s = L_4\\
+L_1 = f_1 + s\\
+L_2 = f_1 - s\\
+L_3 = f_2 + s\\
+L_4 = f_2 - s
 \end{align} \tag{10.2}
+```
+We have, if we put $s$ as the apparent radius of the Moon,
+```math
+\begin{align}
+\text{Condition for Partial Penumbral Eclipse: }\Sigma &< L_1\\
+\text{Condition for Total Penumbral Eclipse: } \Sigma &< L_2\\
+\text{Condition for Partial Eclipse: } \Sigma &< L_3\\
+\text{Condition for Total Eclipse: } \Sigma &< L_4\\
+\end{align} \tag{10.3}
 ```
 Where $\Sigma$ is given by equation $9.1$.
 
@@ -103,7 +112,7 @@ L_1 &= 1\degree\:17'\:24.13'' + 16'\:42.5'' &&= 1\degree\:34'\:6.6''\\
 L_2 &= 1\degree\:17'\:24.13'' - 16'\:42.5'' &&= 1\degree\:0'\:41.67''\\
 L_3 &= 0\degree\:45'\:34'' + 16'\:42.5'' &&= 1\degree\:2'\:16.47''\\
 L_4 &= 0\degree\:45'\:34'' - 16'\:42.5'' &&= 0\degree\:28'\:51.54''
-\end{alignat} \tag{i}
+\end{alignat} 
 ```
 To find $\Sigma$, we need $q$ (equations $9.1$ and $9.2$), and therefore we need $\sigma$ and $\mu$, the derivatives of longitudes of the Sun and Moon. We take one hour as the time step.\
 At $03:36$:
@@ -131,11 +140,11 @@ Therefore, by equation $9.1$, $\Sigma$ is:
 ```math
 \Sigma = -1\degree\:0'\:15.19'' \cos(5.456\degree) = -59'\:58.81''
 ```
-But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing to the values obtained in $(\text{i})$, we can see that:
+But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing the value of $\Sigma$ to the values of $L$, we can see that:
 ```math
 L_4 < \Sigma < L_3
 ```
-And therefore a partial eclipse of the Moon will occur.\
+And therefore, by equation $10.3$, a partial eclipse of the Moon will occur.\
 $\blacksquare$
 
 ### Besselian Elements
@@ -152,7 +161,7 @@ Then the direction of the shadow is simply given by the opposite direction to th
 a = \alpha + 180\degree \enspace\enspace\text{and}\enspace\enspace d = -\delta\\ \\
 R = \begin{bmatrix}
 -\sin(a) & \cos(a) & 0\\
--\cos(a) \sin(d) & -\sin(a) \sin(d) & \cos(d) \tag{10.3}\\
+-\cos(a) \sin(d) & -\sin(a) \sin(d) & \cos(d) \tag{10.4}\\
 \cos(a) \cos(d) & \sin(a) \cos(d) & \sin(d)
 \end{bmatrix}
 }
@@ -162,12 +171,9 @@ And then the Moon's coordinates in the fundamental frame is given by:
 \begin{bmatrix}
 x\\y\\z
 \end{bmatrix} = R \begin{bmatrix}
-v\\ u \tag{10.4}\\ w
+v\\ u \tag{10.5}\\ w
 \end{bmatrix}
 ```
 We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances.
 
-We now define $m$ as in chapter $9$:
-```math
-m = \sqrt{x^2 + y^2} \tag{10.6}
-```
+And thus we have the Besselian elements for lunar eclipses: $x$, $y$, $x'$, $y'$, $f_1$, $f_2$, $s$, $L_1$, $L_2$, $L_3$, and $L_4$.
