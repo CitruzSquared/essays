@@ -141,7 +141,7 @@ In one fortnight, $\xi$ will change by
 ```math
 \Delta \xi = \frac{360\degree}{346.61\text{ dy}} \cdot \frac{29.53\text{dy}}{2} = 15.34\degree
 ```
-From the conditions, we know that for a total lunar eclipse to occur, $\beta$ must be at maximum $0.429\degree$, and therefore $\xi$ must be at maximum $0.429\degree\cot(5.14\degree) = 4.77\degree$. Similarly, $\xi$ must be at maximum $10.51\degree$ for a central solar eclipse. If we assume a total lunar eclipse occurred when the Sun was $4.77\degree$ to the west of the node, after one fortnight the Sun would be at $-4.77\degree + 15.34\degree = 10.57\degree$ east of the node, slightly too far for a central solar eclipse to occur. However, with slightly different values of maximum $\beta$ (remember, these numbers do not stay constant), it could well be possible.
-
+From the conditions, we know that for a total lunar eclipse to occur, $\beta$ must be at maximum $0.429\degree$, and therefore $\xi$ must be at maximum $0.429\degree\cot(5.14\degree) = 4.77\degree$. Similarly, $\xi$ must be at maximum $10.51\degree$ for a central solar eclipse. If we assume a total lunar eclipse occurred when the Sun was $4.77\degree$ to the west of the node, after one fortnight the Sun would be at $-4.77\degree + 15.34\degree = 10.57\degree$ east of the node, slightly too far for a central solar eclipse to occur. However, with slightly different values of maximum $\beta$ (remember, these numbers do not stay constant), it could well be possible.\
 $\blacksquare$
 
+### The Saros
