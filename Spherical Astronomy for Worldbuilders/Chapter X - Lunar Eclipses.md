@@ -298,7 +298,7 @@ T &= T_0 + \tau
 The first equation has two solutions: we take $\psi = \arcsin()$ for last contacts and $\psi = 180\degree - \arcsin()$ for first contacts.
 
 The first and last external contacts with the penumbra ($L = L_1$) are called $P_1$ and $P_4$, the first and last internal contacts with the penumbra ($L = L_2$) are called $P_2$ and $P_3$, the first and last external contacts with the umbra ($L = L_3$) are called $U_1$ and $U_4$, and the first and last internal contacts with the umbra ($L = L_4$) are called $U_2$ and $U_3$.
-#### Example 10.2
+#### Example 10.3
 <div align="center">
 <table>
 <tbody>
@@ -329,12 +329,12 @@ Now, for $L_1 = 0.02737643$ $\text{rad}$, equations $10.7$ give:
 \begin{align}
 \sin(\psi) &= \frac{0.01763229\sin(2.49326968 - 1.06613342)}{0.02737643}\\
 &= 0.6374337\\
-\therefore \psi_{P_1} &= \pi - \arcsin(0.6374337) = 2.45042966\\
+\therefore \psi_{P1} &= \pi - \arcsin(0.6374337) = 2.45042966\\
 \tau &=  \frac{0.02737643\cos(2.45042966) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
 &= -2.2743698\\
 T &= 03:00:00 -2.2743698h = 00:43:32\\
 \\
-\therefore \psi_{P_4} &= \arcsin(0.6374337) = 0.69116299\\
+\therefore \psi_{P4} &= \arcsin(0.6374337) = 0.69116299\\
 \tau &=  \frac{0.02737643\cos(0.69116299) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
 &= 1.78818948\\
 T &= 03:00:00 + 1.78818948h = 04:47:17
@@ -346,22 +346,98 @@ For the beginning and end of partial eclipse, we use $L = L_3 = 0.01811581$ and 
 \begin{align}
 \sin(\psi) &= \frac{0.01763229\sin(2.49326968 - 1.06613342)}{0.01811581}\\
 &= 0.96328317\\
-\therefore \psi_{U_1} &= \pi - \arcsin(0.96328317) = 1.84261887\\
+\therefore \psi_{U1} &= \pi - \arcsin(0.96328317) = 1.84261887\\
 \tau &=  \frac{0.01811581\cos(1.84261887) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
 &= -0.71147116\\
 T &= 03:00:00 -0.71147116h = 02:17:19\\
 \\
-\therefore \psi_{U_4} &= \arcsin(0.96328317) = 1.29897378\\
+\therefore \psi_{U4} &= \arcsin(0.96328317) = 1.29897378\\
 \tau &=  \frac{0.01811581\cos(1.29897378) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
 &= 0.22529084\\
 T &= 03:00:00 + 0.22529084h = 03:13:31
 \end{align}
 ```
 Thus partiality lasted for $03:13:31 - 02:17:19 = 56m$.
-Because this eclipse is partial, we do not have contacts with $L_4$ (the $U_2$ and $U_3$ contacts). Contacts with $L_2$ (the $P_2$ and $P_3$ contacts) are of little astronomical importance.
+Because this eclipse is partial, we do not have contacts with $L_4$ (the $U_2$ and $U_3$ contacts). Contacts with $L_2$ (the $P_2$ and $P_3$ contacts) are of little scientific importance.
 
 Further approximations (just like the contact time calculations of chapter $9$) are necessary for more accurate values.
 
-$\blacksquare$.
+$\blacksquare$
 
 ### Greatest Eclipse, Gamma, and Magnitude
+The time of greatest eclipse is obtained exactly like in chapter $9$. We must minimize $m = x^2 + y^2$ and thus find the zero of the derivative
+```math
+\frac{d(m^2)}{dt} = 2xx' + 2yy'
+```
+Since we can linearly approximate $x$ and $y$ as:
+```math
+\begin{align}
+x &= x_0 + x'\tau\\
+y &= y_0 + y'\tau
+\end{align}
+```
+The derivative of $x^2 + y^2$ expands to:
+```math
+\frac{d(m^2)}{dt} = 2(x_0x' + x'^2\tau) + 2(y_0y' + y'^2\tau)
+```
+Setting this to $0$ and solving for $\tau$ gives:
+```math
+\tau = -\frac{x_0x' + y_0y'}{x'^2 + y'^2} \tag{10.8}
+```
+And then $T$ is given by $T = T_0 + \tau$. The gamma of the eclipse is given by the value of $m$ at this time.
+
+The magnitude of the eclipse at any time is given by:
+```math
+\text{Magnitude } = \frac{L - m}{2s} \tag{10.9}
+```
+Where $L$ can be $L_1$, in which case the magnitude is known as the *penumbral magnitude*, or it can be $L_3$, in which case the magnitude is known as the *umbral magnitude*.
+
+#### Example 10.4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Make a first approximation of the time of greatest eclipse of the lunar eclipse of $\text{September 18, } 2024$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We will take $T_0 = 03:00$. Equations $10.8$ give:
+```math
+\begin{align}
+\tau &= -\frac{0.01064727 \cdot 0.00908988 + (-0.01405466) \cdot 0.005021}{0.00908988^2 + 0.005021^2} \\
+&= -0.24309017\\
+\therefore T &= 03:00 -0.24309017h = 02:45:25
+\end{align}
+```
+$\blacksquare$
+
+#### Example 10.5
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the penumbral and umbral magnitudes of the lunar eclipse of $\text{September 18, } 2024$ at time $03:00$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+At $03:00$, $m$ is:
+```math
+m = \sqrt{0.01064727^2 + (-0.01405466)^2} = 0.01763229
+```
+Using $L = L_1 = 0.02737643$, the penumbral magnitude is (by equation $10.9$):
+```math
+\text{Magnitude } = \frac{0.02737643 - 0.01763229}{2 \cdot 0.00486029} = 1.002
+```
+Using $L = L_3 = 0.01811581$, the umbral magnitude is (by equation $10.9$):
+```math
+\text{Magnitude } = \frac{0.01811581 - 0.01763229}{2 \cdot 0.00486029} = 0.0497
+```
+$\blacksquare$
