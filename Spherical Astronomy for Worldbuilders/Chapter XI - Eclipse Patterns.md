@@ -232,6 +232,8 @@ This is exemplified by this series of three solar eclipses, separated by one Sar
    Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by about $120\degree$ in longitude. <br/> A chain of eclipses separated by a Saros each is called a <i>Saros series</i>. The above shows three members in the solar Saros series number $139$.
 </p>
 
+$\blacksquare$
+
 #### Example 11.6
 <div align="center">
 <table>
