@@ -225,5 +225,35 @@ This is exemplified by this series of three solar eclipses, separated by one sar
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/7b65d51c-c22f-46aa-a1ab-8fd53728e8a8"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/303ca1c4-020b-4de7-bff8-e29321cc0abd"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/5739cb4d-5ffb-4a82-a521-bfe90a0c6fca"> <br/>
-   Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by $120\degree$ in longitude.
+   Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by about $120\degree$ in longitude. <br/> A chain of eclipses separated by a Saros each is called a <i>Saros series</i>. The above shows solar Saros series number $139$.
 </p>
+
+#### Example 11.6
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the length and number of members in a solar Saros series.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+We determined in example $11.1$ that for a solar eclipse, the maximum $\xi$ is $16.476\degree$ and for a central solar eclipse, the maximum $\xi$ is $10.506\degree$. Because each Saros period has a $\Delta\xi$ of $-0.4758\degree$, the number of members is:
+```math
+\text{Num. Members } = \frac{2\cdot 16.476}{|-0.4758|} = 69
+```
+And of these, 
+```math
+\text{Num. Central Members } = \frac{2\cdot 10.506}{|-0.4758|} = 44
+```
+are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $44$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $72$ members, and the number of partial and central eclipses in each vary significantly.)
+
+In addition, since there are about $69$ members in a Saros series, every Saros series lasts about
+```math
+69\cdot223\cdot29.5306\cdot\frac{1}{365.25} = 1244\text{ yr}
+```
+(In reality, Saros series take about $1200$ to $1500$ years from start to finish.)\
+$\blacksquare$
