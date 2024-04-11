@@ -135,7 +135,7 @@ But, being a distance, $\Sigma$ must be positive, so we take the absolute value.
 ```math
 f_2 - s < \Sigma < f_2 + s
 ```
-And therefore a partial eclipse of the Moon will occur.\
+And therefore a partial (umbral) eclipse of the Moon will occur.\
 $\blacksquare$
 
 ### Computations
