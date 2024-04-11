@@ -435,11 +435,11 @@ At $03:00$, $m$ is:
 ```math
 m = \sqrt{0.01064727^2 + (-0.01405466)^2} = 0.01763229
 ```
-Using $L = L_1 = 0.02737643$, the penumbral magnitude is (by equation $10.9$):
+Using $L = L_1 = 0.02737643$ in equation $10.9$, the penumbral magnitude is:
 ```math
 \text{Penumbral Magnitude } = \frac{0.02737643 - 0.01763229}{2 \cdot 0.00486029} = 1.0024
 ```
-Using $L = L_3 = 0.01811581$, the umbral magnitude is (by equation $10.9$):
+Using $L = L_3 = 0.01811581$ in equation $10.9$, the umbral magnitude is:
 ```math
 \text{Umbral Magnitude } = \frac{0.01811581 - 0.01763229}{2 \cdot 0.00486029} = 0.0497
 ```
