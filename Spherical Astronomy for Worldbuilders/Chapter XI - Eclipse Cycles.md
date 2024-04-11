@@ -261,7 +261,7 @@ An example of a full solar Saros series (Saros $139$) is shown below:
 
 <p align="center">
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/d71c3bce-4f25-4675-9fdb-b7627b4b584c"> <br/>
-   Solar Saros $139$ has $71$ members, $7$ partial eclipses followed by $55$ central eclipses followed by $9$ partial eclipses.
+   Solar Saros $139$ has $71$ members, $7$ partial eclipses followed by $55$ central eclipses followed by $9$ partial eclipses, and lasts $1262$ years.
 </p>
 
 $\blacksquare$
