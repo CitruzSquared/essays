@@ -96,11 +96,11 @@ The eclipse season lengths are tabulated here for convenience.
 $\blacksquare$
 
 ### Eclipse Years and Draconic Months
-Because the lunar nodes precess (see chapter $3$), it does not take the Sun and Moon one orbital period each to return to a node after leaving it. The time it takes for the Sun to return to the same node is known as an *eclipse year*, and the time it takes for the Moon to return to the same node is known as a *draconic month*. They are both calculable as:
+Because the lunar nodes precess (see chapter $3$ for more detail), it does not take the Sun and Moon one orbital period each to return to a node after leaving it. The time it takes for the Sun to return to the same node is known as an *eclipse year*, and the time it takes for the Moon to return to the same node is known as a *draconic month*. They are both calculable as:
 ```math
-T = \frac{O T_{\dot\Omega}}{T_{\dot\Omega} + O}\tag{11.2}
+T = \frac{O T_{\dot\Omega}}{T_{\dot\Omega} \pm O}\tag{11.2}
 ```
-Where $O$ is the orbital period of the Moon or the Sun, and $T_{\dot\Omega}$ is the nodal precession period of the Moon's orbit.
+Where $O$ is the orbital period of the Moon or the Sun, and $T_{\dot\Omega}$ is the nodal precession period of the Moon's orbit. The top sign is to be used if the node regresses, and the bottom sign if the node advances.
 #### Example 11.2
 <div align="center">
 <table>
@@ -114,7 +114,7 @@ Using $T_{\dot\Omega} = 6793\text{dy}$, Determine the length of the eclipse year
 </table>
 </div>
 
-We use equation $11.2$.
+Because the nodes regress for our Moon, we use the top sign in equation $11.2$.
 ```math
 \begin{alignat}{2}
 EY &= \frac{365.25 \cdot 6793}{6793 + 365.25} &&= 346.61\text{ dy}\\
@@ -144,4 +144,41 @@ In one fortnight, $\xi$ will change by
 From the conditions, we know that for a total lunar eclipse to occur, $\beta$ must be at maximum $0.429\degree$, and therefore $\xi$ must be at maximum $0.429\degree\cot(5.14\degree) = 4.77\degree$. Similarly, $\xi$ must be at maximum $10.51\degree$ for a central solar eclipse. If we assume a total lunar eclipse occurred when the Sun was $4.77\degree$ to the west of the node, after one fortnight the Sun would be at $-4.77\degree + 15.34\degree = 10.57\degree$ east of the node, slightly too far for a central solar eclipse to occur. However, with slightly different values of maximum $\beta$ (remember, these numbers do not stay constant), it could well be possible.\
 $\blacksquare$
 
+#### Example 11.4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the maximum number of eclipses that can occur in one year.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Because the solar eclipse season ($33.42\text{ dy}$) is longer than a synodic month, there could be two solar eclipses in one month. In between the two solar eclipses, there would be a lunar eclipse, for a total of three eclipses at maximum per eclipse season. (Similarly, there could also be two lunar eclipses and one solar eclipse in the middle).
+
+Assume that at the beginning of the year, the Sun passed through a lunar node and a solar eclipse ocurred. A fortnight later a lunar eclipse would occur. Half an eclipse year later, the Sun would be at the opposite lunar node, and another eclipse season would start, with a maximum of three eclipses. Because an eclipse year is shorter than a year, The Sun would begin another eclipse season before the end of the year, which could produce three more eclipses, for a total of eight. However, we must count the eclipses carefully. Because an eclipse year is $346.61/29.53 = 11.74$ months long, half an eclipse year is $5.78$ months long, which rounds up to $6$ months (remember, eclipses only occur at new or full moon, meaning they can only occur separated by units of 0.5 months), and in this scenario we would have:
+1. Eclipse at month 0
+2. Eclipse at month 0.5
+3. Eclipse at month 5.5
+4. Eclipse at month 6
+5. Eclipse at month 6.5
+6. Eclipse at month 11.5
+7. Eclipse at month 12
+8. Eclipse at month 12.5 (!)
+   
+However, 12.5 months is $12.5 \cdot 29.53 = 369.13$ days, which is longer than a year, meaning there is no way for the eighth eclipse to fit in one year. Therefore the maximum number of eclipses that could occur is seven.
+
+This is exemplified by the extraordinary year of $1982$:
+- The total lunar eclipse of $\text{January 9, } 1982$.
+- The partial solar eclipse of $\text{January 25, } 1982$.
+- The partial solar eclipse of $\text{June 21, } 1982$.
+- The total lunar eclipse of $\text{July 6, } 1982$.
+- The partial solar eclipse of $\text{July 20, } 1982$.
+- The partial solar eclipse of $\text{December 15, } 1982$.
+- The total lunar eclipse of $\text{December 30, } 1982$.
+
+$\blacksquare$
 ### The Saros
