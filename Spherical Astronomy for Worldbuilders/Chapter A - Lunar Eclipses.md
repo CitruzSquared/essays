@@ -7,8 +7,8 @@ The Earth has two shadows: the penumbra and umbra. Depending on which parts of t
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/edf30659-ca55-4ea9-af22-675bb076c4fa" width="250"/> In this diagram, the penumbra of the Earth is the lightly shaded region (the larger shaded circle) and the umbra is the heavily shaded region (the smaller shaded circle). Depending on the position of the Moon, ($1$, $2$, $3$, or $4$), the eclipse can be categorized as:
 
 1. Partial Penumbral Eclipse
-2. Partial Eclipse
-3. Total Eclipse
+2. Partial (Umbral) Eclipse
+3. Total (Umbral) Eclipse
 4. Total Penumbral Eclipse
 
 However, because penumbral eclipses are hardly noticeable, both $1$ and $4$ are simply collectively referred to as "penumbral eclipses", and the distinction between partial and total penumbral eclipse is usually not made.
