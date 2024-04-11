@@ -125,6 +125,7 @@ This is the condition for solar eclipse in general. Following the same logic, a 
 ```math
 \beta < |s - s' + \pi - \pi'|\sec(I') \tag{9.3-ii}
 ```
+This means that if $(s - s' + \pi - \pi')\sec(I') < \beta < (s + s' + \pi - \pi')\sec(I')$, a solar eclipse will occur, but it will be partial everywhere on the Earth.
 #### Example 9.1
 <div align="center">
 <table>
