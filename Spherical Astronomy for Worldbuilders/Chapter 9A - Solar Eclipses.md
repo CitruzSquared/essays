@@ -22,6 +22,25 @@ While rarer phenomena exist such as the [transit of other planets' moons across 
 ## IX. Solar Eclipses
 This chapter will go into detail about solar eclipses, and end with a brief explanation on transits of inner planets across the Sun and lunar occultations of planets and stars.
 
+### Partial, Total, and Annular Solar Eclipses
+
+<p align="center">
+  <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/1d634c03-a53b-4d23-90ab-56df30abf0fc"> <br/>
+</p>
+
+Any object illuminated by a non-point source casts two shadows: *penumbral* and *umbral*. In the diagram above, the penumbral shadow cast by the Moon ($M$) is shown by regions $A$ and $B$. An observer in these regions sees the Moon slightly offset from the Sun ($S$) and so only sees a part of the Sun covered by the Moon. This is known as a *partial solar eclipse* (see leftmost figure below).
+
+The umbral region is marked by regions $C$ and $D$. An observer in region $C$ cannot see the Sun at all since it is completely blocked by the Moon. This is known as a *total solar eclipse* (usually, the corona (the outer atmosphere) of the Sun is still visible; see middle figure below). In region $D$, the Moon still coveres the center of the Sun but does not appear large enough to cover all of it. Therefore the Sun looks like a glowing ring around the Moon, and therefore this is known as an *annular solar eclipse* (see rightmost figure below).
+
+On our Earth, our Moon is just at the perfect distance where the orbital eccentricity allows the Moon to be both close enough and far enough to create all three partial, total, and annular solar eclipses (and sometimes a total eclipse becomes annular halfway through or vice versa, this is known as a *hybrid solar eclipse*). This is not true for the vast majority of planets: Mars with its two small moons only experiences annular and partial solar eclipses.
+
+Total, annular, and hybrid eclipses are collectively called *central eclipses*.
+
+<p align="center">
+  <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/8d22bfd0-acef-48a7-9fea-894b6a7043b5"> <br/>
+  Left: Partial Solar Eclipse. Center: Total Solar Eclipse. Right: Annular Solar Eclipse.
+</p>
+
 ### Condition for Eclipse
 A solar eclipse can only happen if the Moon and the Sun are in the sky in the same position, i.e. only when they are in conjunction, a.k.a. new Moon. Not all new moons result in a solar eclipse however, due to the inclination of the Moon's orbit to the Ecliptic.
 
@@ -100,9 +119,12 @@ We have in the case of eclipse:
 ```
 or:
 ```math
-\beta < (s + s' + \pi - \pi')\sec(I') \tag{9.3}
+\beta < (s + s' + \pi - \pi')\sec(I') \tag{9.3-i}
 ```
-This is the condition for solar eclipse.
+This is the condition for solar eclipse in general. Following the same logic, a central eclipse will occur if:
+```math
+\beta < |s - s' + \pi - \pi'|\sec(I') \tag{9.3-ii}
+```
 #### Example 9.1
 <div align="center">
 <table>
@@ -172,29 +194,17 @@ Therefore:
 &=1\degree\:33'\:47.73''
 \end{align}
 ```
-Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar eclipse will occur.
+Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a solar eclipse will occur. Also:
+```math
+\begin{align}
+(s - s' + \pi - \pi')\sec(I') &= (16'\:35.99'' - 15'\:58.2'' + 1\degree\:0'\:56.55'' - 8.78'')\sec(5.486\degree) \\
+&=1\degree\:1'\:42.52''
+\end{align}
+```
+Which is greater than $\beta_\text{Moon}$ at conjunction. Therefore, a central eclipse will occur. 
 
-There is a shorter way of doing this: we can precalculate the minimum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is less than this minimum value, a solar eclipse must surely occur. We can also precalculate the maximum possible value of $(s + s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is greater than this maximum value, a solar eclipse will surely not occur. If it is in between these two values, the full calculation is required.\
+There is a shorter way of doing this: we can precalculate the minimum possible value of $(s \pm s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is less than this minimum value, a solar eclipse must surely occur. We can also precalculate the maximum possible value of $(s \pm s' + \pi - \pi')\sec(I')$, and if $\beta_\text{Moon}$ at conjunction is greater than this maximum value, a solar eclipse will surely not occur. If it is in between these two values, the full calculation is required.\
 $\blacksquare$
-
-### Partial, Total, and Annular Solar Eclipses
-
-<p align="center">
-  <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/1d634c03-a53b-4d23-90ab-56df30abf0fc"> <br/>
-</p>
-
-Any object illuminated by a non-point source casts two shadows: *penumbral* and *umbral*. In the diagram above, the penumbral shadow cast by the Moon ($M$) is shown by regions $A$ and $B$. An observer in these regions sees the Moon slightly offset from the Sun ($S$) and so only sees a part of the Sun covered by the Moon. This is known as a *partial solar eclipse* (see leftmost figure below).
-
-The umbral region is marked by regions $C$ and $D$. An observer in region $C$ cannot see the Sun at all since it is completely blocked by the Moon. This is known as a *total solar eclipse* (usually, the corona (the outer atmosphere) of the Sun is still visible; see middle figure below). In region $D$, the Moon still coveres the center of the Sun but does not appear large enough to cover all of it. Therefore the Sun looks like a glowing ring around the Moon, and therefore this is known as an *annular solar eclipse* (see rightmost figure below).
-
-On our Earth, our Moon is just at the perfect distance where the orbital eccentricity allows the Moon to be both close enough and far enough to create all three partial, total, and annular solar eclipses (and sometimes a total eclipse becomes annular halfway through or vice versa, this is known as a *hybrid solar eclipse*). This is not true for the vast majority of planets: Mars with its two small moons only experiences annular and partial solar eclipses.
-
-Total, annular, and hybrid eclipses are collectively called *central eclipses*.
-
-<p align="center">
-  <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/8d22bfd0-acef-48a7-9fea-894b6a7043b5"> <br/>
-  Left: Partial Solar Eclipse. Center: Total Solar Eclipse. Right: Annular Solar Eclipse.
-</p>
 
 ### Direction of the Shadow
 The shadow of the Moon points in the direction of the Moon from the Sun. Thus, if we say that:
