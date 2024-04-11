@@ -235,6 +235,7 @@ This is exemplified by this series of three solar eclipses, separated by one Sar
 
 $\blacksquare$
 
+Despite the error for Saros cycles being very small, it still exists and therefore Saros series die out eventually.
 #### Example 11.6
 <div align="center">
 <table>
