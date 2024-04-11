@@ -138,4 +138,31 @@ f_2 - s < \Sigma < f_2 + s
 And therefore a partial eclipse of the Moon will occur.\
 $\blacksquare$
 
-### Computations
+### Besselian Elements
+If we have that:
+```math
+\begin{align}
+v, u, w &= \text{The normalized geocentric equatorial cartesian coordinates of the Moon}\\
+\alpha, \delta &= \text{The geocentric equatorial spherical coordinates of the Sun}
+\end{align}
+```
+Then the direction of the shadow is simply given by the opposite direction to the Sun: $a = \alpha + 180\degree$, and $d = -\delta$. The coordinate transformation to the fundamental plane is identical to equation $9.5$:
+```math
+\displaylines{
+a = \alpha + 180\degree \enspace\enspace\text{and}\enspace\enspace d = -\delta\\ \\
+R = \begin{bmatrix}
+-\sin(a) & \cos(a) & 0\\
+-\cos(a) \sin(d) & -\sin(a) \sin(d) & \cos(d) \tag{10.3}\\
+\cos(a) \cos(d) & \sin(a) \cos(d) & \sin(d)
+\end{bmatrix}
+}
+```
+And then the Moon's coordinates in the fundamental frame is given by:
+```math
+\begin{bmatrix}
+x\\y\\z
+\end{bmatrix} = R \begin{bmatrix}
+v\\ u \tag{10.4}\\ w
+\end{bmatrix}
+```
+We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances.
