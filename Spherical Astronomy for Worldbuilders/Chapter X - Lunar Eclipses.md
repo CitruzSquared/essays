@@ -230,10 +230,10 @@ Where the units are radians because arc length $=$ angle if the angle is express
 Since we need the derivatives $x'$ and $y'$ as well, we do the same calculations for the times $02:45$ and $03:15$ and obtain:
 ```math
 \begin{align}
-x_{02:45} &= 0.00837454\\
-y_{02:45} &= -0.01530998\\
-x_{03:15} &= 0.01291948\\
-y_{03:15} &= -0.01279948\\
+x_{02:45} &= 0.00837454\: \text{rad}\\
+y_{02:45} &= -0.01530998\: \text{rad}\\
+x_{03:15} &= 0.01291948\: \text{rad}\\
+y_{03:15} &= -0.01279948\: \text{rad}\\
 \end{align}
 ```
 And therefore:
