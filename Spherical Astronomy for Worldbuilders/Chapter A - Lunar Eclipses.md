@@ -39,10 +39,10 @@ f_2 &= \pi - s' + \pi'
 And thus, if we put $s$ as the apparent radius of the Moon,
 ```math
 \begin{align}
-\text{For Partial Penumbral Eclipse: }\Sigma &< f_1 + s \\
-\text{For Total Penumbral Eclipse: } \Sigma &< f_1 - s \\
-\text{For Partial Eclipse: } \Sigma &< f_2 + s \\
-\text{For Total Eclipse: } \Sigma &< f_2 - s \\
+\text{For Partial Penumbral Eclipse: }\Sigma &< f_1 + s = L_1\\
+\text{For Total Penumbral Eclipse: } \Sigma &< f_1 - s = L_2\\
+\text{For Partial Eclipse: } \Sigma &< f_2 + s = L_3\\
+\text{For Total Eclipse: } \Sigma &< f_2 - s = L_4\\
 \end{align} \tag{10.2}
 ```
 Where $\Sigma$ is given by equation $9.1$.
@@ -99,10 +99,10 @@ f_2 &= 1\degree\:1'\:20.32'' - 15'\:55.07'' + 8.75'' &&= 0\degree\:45'\:34''
 ```
 ```math
 \begin{alignat}{2}
-f_1 + s &= 1\degree\:17'\:24.13'' + 16'\:42.5'' &&= 1\degree\:34'\:6.6''\\
-f_1 - s &= 1\degree\:17'\:24.13'' - 16'\:42.5'' &&= 1\degree\:0'\:41.67''\\
-f_2 + s &= 0\degree\:45'\:34'' + 16'\:42.5'' &&= 1\degree\:2'\:16.47''\\
-f_2 - s &= 0\degree\:45'\:34'' - 16'\:42.5'' &&= 0\degree\:28'\:51.54''
+L_1 &= 1\degree\:17'\:24.13'' + 16'\:42.5'' &&= 1\degree\:34'\:6.6''\\
+L_2 &= 1\degree\:17'\:24.13'' - 16'\:42.5'' &&= 1\degree\:0'\:41.67''\\
+L_3 &= 0\degree\:45'\:34'' + 16'\:42.5'' &&= 1\degree\:2'\:16.47''\\
+L_4 &= 0\degree\:45'\:34'' - 16'\:42.5'' &&= 0\degree\:28'\:51.54''
 \end{alignat} \tag{i}
 ```
 To find $\Sigma$, we need $q$ (equations $9.1$ and $9.2$), and therefore we need $\sigma$ and $\mu$, the derivatives of longitudes of the Sun and Moon. We take one hour as the time step.\
@@ -133,7 +133,7 @@ Therefore, by equation $9.1$, $\Sigma$ is:
 ```
 But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing to the values obtained in $(\text{i})$, we can see that:
 ```math
-f_2 - s < \Sigma < f_2 + s
+L_4 < \Sigma < L_3
 ```
 And therefore a partial eclipse of the Moon will occur.\
 $\blacksquare$
@@ -166,3 +166,8 @@ v\\ u \tag{10.4}\\ w
 \end{bmatrix}
 ```
 We use the normalized (i.e. magnitude of vector $=$ $0$) coordinates of the Moon because we are dealing with angular distances in the celestial sphere, not true distances.
+
+We now define $m$ as in chapter $9$:
+```math
+m = \sqrt{x^2 + y^2} \tag{10.6}
+```
