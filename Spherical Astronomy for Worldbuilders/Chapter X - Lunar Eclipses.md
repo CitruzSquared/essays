@@ -257,7 +257,7 @@ L_4 &= 0.00839523\: \text{rad}
 $\blacksquare$
 
 ### Contacts
-We follow the same reasoning as in chapter $9$. At the contacts, we have $x^2 + y^2 = L^2$ (since $x^2 + y^2$ is the square of the distance between the center of the Moon and the center of the shadow), so if we assume $x$ and $y$ to change linearly, we have:
+We follow the same reasoning as in chapter $9$. Defining $m$ as $m = \sqrt{x^2 + y^2}$, at the contacts, we have $m^2 = x^2 + y^2 = L^2$ (since $x^2 + y^2$ is the square of the distance between the center of the Moon and the center of the shadow), so if we assume $x$ and $y$ to change linearly, we have:
 ```math
 \begin{align}
 x &= x_0 + x'\tau\\
