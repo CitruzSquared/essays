@@ -367,7 +367,7 @@ Further approximations (just like the contact time calculations of chapter $9$) 
 $\blacksquare$
 
 ### Greatest Eclipse, Gamma, and Magnitude
-The time of greatest eclipse is obtained exactly like in chapter $9$. We must minimize $m = x^2 + y^2$ and thus find the zero of the derivative
+The time of greatest eclipse is obtained exactly like in chapter $9$. We must minimize $m^2 = x^2 + y^2$ and thus find the zero of the derivative
 ```math
 \frac{d(m^2)}{dt} = 2xx' + 2yy'
 ```
