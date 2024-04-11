@@ -441,3 +441,6 @@ Using $L = L_3 = 0.01811581$, the umbral magnitude is (by equation $10.9$):
 \text{Magnitude } = \frac{0.01811581 - 0.01763229}{2 \cdot 0.00486029} = 0.0497
 ```
 $\blacksquare$
+
+### A Note on Time Steps
+The same trick of small time steps for solar eclipses also works for lunar eclipses.
