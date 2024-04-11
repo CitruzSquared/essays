@@ -306,7 +306,7 @@ For local predictions, i.e. predictions for a given place, three things are of n
 1. The time of partial eclipse beginning and ending (a.k.a. the contact times of the penumbra).
 2. The time of central (total/annular) eclipse beginning and ending (a.k.a. the contact times of the umbra).
 3. The maximum magnitude.
-4. The duration of centrality.
+4. The duration of totality or annularity.
 
 The first two can be obtained via successive approximation, using methods similar to example $9.5$: 
 1. Calculate $\xi$, $\eta$, $\xi'$, and $\eta'$ at $T_0$ using equations $9.6$ and $9.40$.
