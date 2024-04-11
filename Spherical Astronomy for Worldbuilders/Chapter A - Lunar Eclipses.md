@@ -133,7 +133,7 @@ Therefore, by equation $9.1$, $\Sigma$ is:
 ```
 But, being a distance, $\Sigma$ must be positive, so we take the absolute value. Comparing to the values obtained in $(i)$, we can see that:
 ```math
-\Sigma < f_2 + s
+f_2 - s < \Sigma < f_2 + s
 ```
 And therefore a partial eclipse of the Moon will occur.\
 $\blacksquare$
