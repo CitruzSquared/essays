@@ -295,6 +295,8 @@ T &= T_0 + \tau
 \end{align} \tag{10.7}
 ```
 The first equation has two solutions: we take $\psi = \arcsin()$ for last contacts and $\psi = 180\degree - \arcsin()$ for first contacts.
+
+The first and last external contacts with the penumbra ($L = L_1$) are called $P_1$ and $P_4$, the first and last internal contacts with the penumbra ($L = L_2$) are called $P_2$ and $P_3$, the first and last external contacts with the umbra ($L = L_3$) are called $U_1$ and $U_4$, and the first and last internal contacts with the umbra ($L = L_4$) are called $U_2$ and $U_3$.
 #### Example 10.2
 <div align="center">
 <table>
@@ -307,3 +309,53 @@ Make a first approximation of the contact times of the lunar eclipse of $\text{S
 </tbody>
 </table>
 </div>
+
+We will take $T_0 = 03:00$. Equations $10.6$ give:
+```math
+\begin{alignat}{2}
+m_0\sin(M_0) &= 0.01064727 &&\\
+m_0\cos(M_0) &= -0.01405466 &&\\
+\therefore m_0 &= \sqrt{0.01064727^2 + (-0.01405466)^2} &&= 0.01763229\\
+\therefore M_0 &= \arctan(0.01064727, -0.01405466) &&= 2.49326968 \text{ rad}\\
+n\sin(N) &= 0.00908988 &&\\
+n\cos(N) &= 0.005021 &&\\
+\therefore n &= \sqrt{0.00908988^2 + 0.005021} &&= 0.01038443\\
+\therefore N &= \arctan(0.00908988, 0.005021) &&= 1.06613342 \text{ rad}
+\end{alignat}
+```
+Now, for $L_1 = 0.02737643$ $\text{rad}$, equations $10.7$ give:
+```math
+\begin{align}
+\sin(\psi) &= \frac{0.01763229\sin(2.49326968 - 1.06613342)}{0.02737643}\\
+&= 0.6374337\\
+\therefore \psi_{P_1} &= \pi - \arcsin(0.6374337) = 2.45042966\\
+\tau &=  \frac{0.02737643\cos(2.45042966) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
+&= -2.2743698\\
+T &= 03:00:00 -2.2743698h = 00:43:32\\
+\\
+\therefore \psi_{P_4} &= \arcsin(0.6374337) = 0.69116299\\
+\tau &=  \frac{0.02737643\cos(0.69116299) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
+&= 1.78818948\\
+T &= 03:00:00 + 1.78818948h = 04:47:17
+\end{align}
+```
+These are the times of beginning and end of the entire eclipse. Thus the whole eclipse lasts for $04:47:17 - 00:43:32 = 4h$ $3m$. \
+For the beginning and end of partial eclipse, we use $L = L_3 = 0.01811581$ and obtain:
+```math
+\begin{align}
+\sin(\psi) &= \frac{0.01763229\sin(2.49326968 - 1.06613342)}{0.01811581}\\
+&= 0.96328317\\
+\therefore \psi_{P_1} &= \pi - \arcsin(0.6374337) = 1.84261887\\
+\tau &=  \frac{0.01811581\cos(1.84261887) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
+&= -0.71147116\\
+T &= 03:00:00 -0.71147116h = 02:17:19\\
+\\
+\therefore \psi_{P_4} &= \arcsin(0.96328317) = 1.29897378\\
+\tau &=  \frac{0.01811581\cos(1.29897378) - 0.01763229\cos(2.49326968 - 1.06613342)}{0.01038443}\\
+&= 0.22529084\\
+T &= 03:00:00 + 0.22529084h = 03:13:31
+\end{align}
+```
+Thus partiality lasted for $03:13:31 - 02:17:19 = 56m$.
+Because this eclipse is partial, we do not have contacts with $L_4$ ($U_2$ and $U_3$). Contacts with $L_2$ ($P_2$ and $P_3$) are of little astronomical importance.\
+$\blacksquare$.
