@@ -238,7 +238,7 @@ By comparison, the eclipse cycle of $47$ synodic months is called an *octon*:
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/2ca16c70-5e56-4b3c-a544-43709eea0ce1"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/303ca1c4-020b-4de7-bff8-e29321cc0abd"> 
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/9856333c-2186-48b6-a268-1ae975d785fd"> <br/>
-   Because octon series have a much larger error and $\Delta\xi$, the paths of the eclipses separated by an octon only vaguely resemble each other. <br/> Also, because an octon is not a near multiple of the anomalistic month, the distance to the Moon is not similar between eclipses in an octon series, and therefore can have different characteristics (annular – total – annular in this example).
+   Because octon series have a much larger error and $\Delta\xi$, the paths of the eclipses separated by an octon only vaguely resemble each other. <br/> Also, because an octon is not a near multiple of the anomalistic month, the distance to the Moon is not similar between eclipses in an octon series, and therefore can have drastically different durations and characteristics (annular – total – annular in this example).
 </p>
 
 $\blacksquare$
