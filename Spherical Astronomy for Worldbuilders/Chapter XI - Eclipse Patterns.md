@@ -279,6 +279,12 @@ An example of a full solar Saros series (Solar Saros $139$) is shown below:
    Solar Saros $139$ has $71$ members, $7$ partial eclipses followed by $55$ central eclipses followed by $9$ partial eclipses, and lasts for $1262$ years.
 </p>
 
+By comparison, the octon series from the previous example is shown below:
+<p align="center">
+  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/ff5f2ba1-65ae-4ded-b8f2-6a1c34e0e3af"> <br/>
+   Octon series are not given identifying numbers. This particular series only has $21$ members and only lasts $66$ years.
+</p>
+
 And for completion, an example of a full lunar Saros series (Lunar Saros $118$) is shown below:
 <p align="center">
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/2c6256f9-85b6-4634-b151-1bd2ecd80e90"> <br/>
