@@ -271,7 +271,7 @@ In addition, since there are about $69$ members in a Saros series, every Saros s
 ```math
 69\cdot223\text{ mo }\cdot29.5306 \frac{\text{ dy }}{\text{ mo }}\cdot\frac{1\text{ yr}}{365.25\text{ dy}} = 1244\text{ yr}
 ```
-(In reality, Saros series take about $1250$ to $1550$ years from start to finish.)
+(In reality, Saros series take about $1300$ years from start to finish.)
 
 An example of a full solar Saros series (Solar Saros $139$) is shown below:
 <p align="center">
