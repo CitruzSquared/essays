@@ -281,7 +281,7 @@ An example of a full solar Saros series (Solar Saros $139$) is shown below:
 
 And for completion, an example of a full lunar Saros series (Lunar Saros $118$) is shown below:
 <p align="center">
-  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/b875c6bf-cd40-4303-90ef-14f85dd0d3de"> <br/>
+  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/2c6256f9-85b6-4634-b151-1bd2ecd80e90"> <br/>
    Lunar Saros $139$ has $73$ members, $9$ penumbral eclipses followed by $7$ partial eclipses followed by $28$ total eclipses followed by $8$ partial eclipses followed by $21$ penumbral eclipses, and lasts for $1298$ years.
 </p>
 
