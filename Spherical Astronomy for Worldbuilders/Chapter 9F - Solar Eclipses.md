@@ -210,7 +210,7 @@ While this more rigorous method is recommended, and even necessary for worldbuil
 
 The extreme points lie on the rising / setting limits, and the extreme points lie on those limits at some time in between the external and internal contacts. Also, the time between the external and internal umbral contacts is so small, that the time between the extreme points at each lobe, which is even smaller, is absolutely tiny, to the point where they occur almost at the same instant (less than a minute apart for the case of the $\text{April, 8, }2024$ eclipse). In addition, the area covered by these rising / setting limits is also very small. We can therefore say that the points on the rising / setting limits at the time midway between the contacts are close enough to the true extreme points. The time midway between the umbral contacts is well approximated by the time of contact of the center of the shadow, which we have already calculated in example $9.9$. Thus, the points on the rising / setting limits at the time of central contact can be used as the extreme points of the limits of centrality.
 
-Very rarely, a total or annular eclipse will occur without the center of the shadow landing on the Earth (as an example, see the [solar eclipse of April, 2043](https://en.wikipedia.org/wiki/Solar_eclipse_of_April_9,_2043)). In this case, the more rigorous method is needed.
+Very rarely (or more commonly when the umbra is very large), a total or annular eclipse will occur without the center of the shadow landing on the Earth (as an example, see the [solar eclipse of April, 2043](https://en.wikipedia.org/wiki/Solar_eclipse_of_April_9,_2043)). In this case, the more rigorous method is needed.
 
 #### Example 9.11
 <div align="center">
