@@ -86,7 +86,7 @@ The eclipse season lengths are tabulated here for convenience.
 ```math
 \begin{array}{cccc} \hline \text{Eclipse Type} & & & \text{Eclipse Season Length} \\ \hline
 \text{Partial Solar} & & & 33.42\text{ dy}\\
-\text{Central Solar} & & & 22.31\text{ dy}\\ 
+\text{Central Solar} & & & 21.31\text{ dy}\\ 
 \text{Partial Penumbral Lunar} & & & 33.51\text{ dy}\\
 \text{Total Penumbral Lunar} & & & 21.78\text{ dy}\\
 \text{Partial Lunar} & & & 21.42\text{ dy}\\
