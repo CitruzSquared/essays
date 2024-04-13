@@ -90,7 +90,7 @@ The eclipse season lengths are tabulated here for convenience.
 \text{Partial Penumbral Lunar} & & & 33.51\text{ dy}\\
 \text{Total Penumbral Lunar} & & & 21.78\text{ dy}\\
 \text{Partial Lunar} & & & 21.42\text{ dy}\\
-\text{Total Lunar} & & & 9.67\text{ dy}\\ \hline
+\text{Total Lunar} & & & 9.68\text{ dy}\\ \hline
 \end{array}
 ```
 $\blacksquare$
