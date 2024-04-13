@@ -80,6 +80,8 @@ If we do the same analysis with central solar eclipses, we have maximum $\beta =
 
 If we consider the length of time $16.71\text{ dy} + 10.655\text{ dy} = 27.365\text{ dy}$, we see that this too is shorter than a synodic month, and therefore a central solar eclipse and a partial solar eclipse cannot occur one month apart.
 
+If the eclipse season is very close to being one synodic month, a more precise approach is required because the nodal precession of the Moon's orbit cannot be ignored. The more precise method is shown in example $11.3$.
+
 Therefore we have that in order for two solar eclipses to occur one month apart, they must both be partial. This is exemplified by the partial solar eclipses of $\text{July 13, } 2018$ and $\text{August 11, } 2018$.
 
 The eclipse season lengths are tabulated here for convenience.
