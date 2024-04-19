@@ -50,7 +50,7 @@ To transform from the first set of coordinates to the second set of coordinates,
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & \cos(i) & -\sin(i) \\
-0 & \sin(i) & cos(i)
+0 & \sin(i) & \cos(i)
 \end{bmatrix}
 \begin{bmatrix}
 \cos(0)\cos(\omega_0) \\
