@@ -90,6 +90,7 @@
    - Part F (Eq. $9.77$ to $9.78$, Ex $9.10$ to $9.11$)
      * Limits of Partiality
      * Limits of Centrality
+     * Eclipse Maps
      * A Note on Time Steps
      * Local Predictions
      * Transits and Occultations
