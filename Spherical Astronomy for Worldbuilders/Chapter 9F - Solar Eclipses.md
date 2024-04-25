@@ -271,6 +271,7 @@ Now, we find the limits just like in example $9.10$, simply swapping out the pen
 ```
 $\blacksquare$
 
+### Eclipse Maps
 The points we have computed in examples $9.5$ through $9.11$ can be plotted on a map and curves can be drawn through them:
 ```math
 \begin{array}{c} \\ \hline
