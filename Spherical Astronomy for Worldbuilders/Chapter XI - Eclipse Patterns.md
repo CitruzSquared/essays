@@ -209,7 +209,7 @@ An eclipse is followed by an eclipse of the same type (solar or lunar) only in u
 
 For example, $47$ synodic months is $47 \cdot 29.53059 = 1387.93773$ days, which is $1387.93773/346.62008 = 4.004205$ eclipse years, which has an error of $0.0042$ eclipse years off from a perfect multiple. This corresponds to a $\Delta \xi$ of $0.0042 \cdot 360\degree = 1.512\degree$. This means that every cycle, the distance of the Sun from a node changes only by $1.512\degree$, meaning favorable conditions for an eclipse are reproduced.
 
-A list of periods with absolute $\Delta \xi$ less than $3\degree$ are listed here, computed via trial and error:
+A list of periods with absolute $\Delta \xi$ less than $2\degree$ are listed here, computed via trial and error:
 ```math
 \begin{array}{cccc} \hline \text{Syn. Months}& \text{Eclipse Years} & \text{Years} & \Delta\xi\\ \hline
 47 & 4.0042 & 3.8 & 1.5137\degree\\
@@ -233,6 +233,22 @@ This is exemplified by this series of three solar eclipses, separated by one Sar
    Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by about $120\degree$ in longitude. <br/> A chain of eclipses separated by a Saros each is called a <i>Saros series</i>. The above shows three members in the solar Saros series number $139$. <br/>
    There are many Saros series active at the same time at any given time.
 </p>
+
+For comparison, a cycle called an *Utting Cycle* exists, with an even smaller $\Delta \xi$ than a Saros:
+```math
+\begin{array}{cccc} \hline \text{Syn. Months} & \text{Eclipse Years} &  \text{Anom. Months}& \text{Years} & \Delta\xi\\ \hline
+3803 & 323.9998 & 4075.7274 & 307.47 & -0.0749\degree \\ \hline
+\end{array}
+```
+However, because it is not a near multiple of an anomalistic month, and because it is not as close of a multiple of a year, the characteristics and paths of the eclipses separated by an Utting Cycle each are not similar.
+
+<p align="center">
+  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/c21614a7-790e-4616-9104-a2fcf5ad08d2"> 
+  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/303ca1c4-020b-4de7-bff8-e29321cc0abd"> 
+  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/d44b4480-3153-4e4a-b6b7-c54d7d2f13cf"> <br/>
+</p>  
+
+However, because two Utting cycles are $307.47 \cdot 2 = 614.94$ years, which is a near multiple of a year, every two Utting cycles there will be an eclipse with a similar shaped path. (However, because the anomalistic month still does not match, the duration and type of eclipse will not match.)
 
 $\blacksquare$
 
