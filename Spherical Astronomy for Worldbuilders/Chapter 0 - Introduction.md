@@ -106,7 +106,7 @@
 11. **Eclipse Patterns** (Eq. $11.1$ to $11.2$, Ex $11.1$ to $11.6$)
     - Eclipse Seasons
     - Eclipse Years and Draconic Months
-    - Eclipse Cycles and the Saros
+    - Periodicity of Eclipses and the Saros
 
 ## Useful Mathematics
 
