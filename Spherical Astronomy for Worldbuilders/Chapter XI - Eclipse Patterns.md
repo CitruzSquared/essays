@@ -295,3 +295,8 @@ And for completion, an example of a full lunar Saros series (Lunar Saros $118$) 
 </p>
 
 $\blacksquare$
+
+The factors that influence the characteristics of eclipse cycles can be summarized as follows:
+1. Small $\Delta \xi$ : Many members and longevity of series.
+2. Multiple of anomalistic month: Members have similar type and duration.
+3. Multiple of solar year: Members have similar shaped paths. (However, this is not enough, $235$ synodic months is almost exactly $19$ solar years ($18.9998$ to be exact), a cycle known as the *Metonic Cycle*, but does not result in eclipses with a similar path due to its extremely large $\Delta \xi$ error iof $7.5683 \degree$.)
