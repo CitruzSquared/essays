@@ -187,8 +187,8 @@ This is exemplified by the extraordinary year of $1982$:
 ```
 
 $\blacksquare$
-### Eclipse Cycles and the Saros
-Because the path of an eclipse is determined by the location and motion of the Moon, if the Moon somehow ended up in the exact same position again after a particular eclipse, it would cause an eclipse with identical path shape and characteristics. While a perfect match does not exist, an approximate repetition periods exist, called *eclipse cycles*. 
+### Periodicity of Eclipses and the Saros
+Because eclipses occur when the Moon and Sun are at nodes, if we can determine a length of time where the Sun and Moon will end up at a node again after an eclipse occurs, we can determine that an eclipse will also occur on that date. These lengths of time are known as *eclipse cycles*.
 
 #### Example 11.5
 <div align="center">
@@ -197,7 +197,7 @@ Because the path of an eclipse is determined by the location and motion of the M
 <td align="center">
 <img width="2000" height="0"><br>
 Using the more accurate values of: <br/>
-$\text{Synodic Month } = 29.5306\text{ dy}$, $\text{Draconic Month } = 27.2122\text{ dy}$, and $\text{Eclipse Year } = 346.6201\text{ dy}$, <br/>
+$\text{Synodic Month } = 29.53059\text{ dy}$ and $\text{Eclipse Year } = 346.62008\text{ dy}$, <br/>
 Determine the length of some eclipse cycles.
 <img width="2000" height="0">
 </td>
@@ -205,26 +205,25 @@ Determine the length of some eclipse cycles.
 </table>
 </div>
 
-An eclipse is followed by an eclipse of the same type (solar or lunar) only in units of synodic months. Therefore, we need to find the number of synodic months that would result in the nodes also being in a similar place. This ensures $\beta$ is similar and thus the two eclipses being very similar. i.e, we need to find a multiple of synodic months that is also a multiple of draconic months.
+An eclipse is followed by an eclipse of the same type (solar or lunar) only in units of synodic months. Therefore, we need to find the number of synodic months that would result in the Sun being at a node. This ensures the parameter $\xi$ is close enough for an eclipse to occur. Thus, we search for multiples of synodic months that are also multiples of eclipse years.
 
-For example, we see that twelve synodic months is $12\cdot29.5306/27.2122 = 13.0224$ draconic months, and the error from a whole number is $0.0224$ draconic months. Additionally, twelve synodic months is $12\cdot29.5306/346.6201 = 1.0224$ eclipse years. The error from a whole number is $0.0224$ eclipse years, and therefore the $\Delta\xi$ during this eclipse cycle is $0.0224 \cdot 360\degree = 8.064\degree$.
+For example, $47$ synodic months is $47 \cdot 29.53059 = 1387.93773$ days, which is $1387.93773/346.62008 = 4.004205$ eclipse years, which has an error of $0.0042$ eclipse years off from a perfect multiple. This corresponds to a $\Delta \xi$ of $0.0042 \cdot 360\degree = 1.512\degree$. This means that every cycle, the distance of the Sun from a node changes only by $1.512\degree$, meaning favorable conditions for an eclipse are reproduced.
 
-A list of periods with absolute errors less than $0.01$ draconic months are listed here, computed via trial and error:
+A list of periods with absolute $\Delta \xi$ less than $3\degree$ are listed here, computed via trial and error:
 ```math
-\begin{array}{ccc} \hline \text{Syn. Months}& \text{Dra. Months} & \text{Error} & \text{Eclipse Years} & \Delta\xi\\ \hline
-47 & 51.0043 & 0.0043 & 4.0042 & 1.5141\degree\\
-94 & 102.0085 & 0.0085 & 8.0084 & 3.0281\degree\\
-129 & 139.9904 & -0.0096 & 10.9903 & -3.5039\degree\\
-176 & 190.9947 & -0.0053 & 14.9945 & -1.9899\degree\\
-223 & 241.9989 & -0.0011 & 18.9987 & -0.4758\degree\\
-270 & 293.0032 & 0.0032 & 23.0029 & 1.0383\degree\\
-317 & 344.0075 & 0.0075 & 27.0071 & 2.5524\degree\\
-399 & 432.9936 & -0.0064 & 33.9932 & -2.4656\degree\\ \hline
+\begin{array}{cccc} \hline \text{Syn. Months}& \text{Eclipse Years} & \text{Years} & \Delta\xi\\ \hline
+47 & 4.0042 & 3.8 & 1.5137\degree\\
+176 & 14.9945 & 14.23 & -1.9914\degree\\
+223 & 18.9987 & 18.03 & -0.4777\degree\\
+270 & 23.0029 & 21.83 & 1.036\degree\\
+446 & 37.9973 & 36.06 & -0.9554\degree\\
+493 & 42.0016 & 39.86 & 0.5583\degree\\
+669 & 56.996 & 54.09 & -1.4331\degree\\ \hline
 \end{array}
 ```
-One can see that the eclipse cycle with a period of $223$ synodic months has an error and $\Delta\xi$ exceptionally lower than the rest. This cycle is known as a *Saros* (plural *"Saroi"*) and is the standard eclipse cycle used today.
+One can see that the eclipse cycle with a period of $223$ synodic months has a $\Delta\xi$ lower than the rest. This cycle is known as a *Saros* (plural *"Saroi"*) and is the standard eclipse cycle used today.
 
-A Saros is special because it is not only a whole number of synodic and draconic months but also a near whole number of anomalistic months (about $238.992$ anomalistic months, see example $3.4$), meaning the Moon will also be at a similar distance from the Earth after one saros. This means that eclipses separated by one saros will have not only similar path shape but also similar characteristics and durations as well.
+A Saros is special not only because it has a very small $\Delta\xi$ value per cycle, but because it is also an almost exact multiple of the anomalistic month (see chapter $3$ for more details; one Saros is $238.992$ anomalistic months), meaning the Moon is also at almost the same distance from the Earth after one Saros. Favorable conditions for the same kind of eclipse (total or annular) eclipse are reproduced. In addition, a Saros is also a near multiple of the solar year, having only $0.03$ years (or eleven days) of error per cycle. This means that the Earth is also nearly at the same point in its orbit after one Saros, so the axis of the Earth is tilted in the same way. This means that eclipses separated by one Saros will not only be of similar type and duration, but also trace similar paths on the ground.
 
 This is exemplified by this series of three solar eclipses, separated by one Saros each:
 <p align="center">
@@ -233,14 +232,6 @@ This is exemplified by this series of three solar eclipses, separated by one Sar
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/5739cb4d-5ffb-4a82-a521-bfe90a0c6fca"> <br/>
    Because a Saros is $223$ months $=$ $6585.324$ days, the Earth rotates by $0.324$ of a full turn (about $120\degree$) between each eclipse in a Saros. This causes eclipses separated by one saros to occur in places separated by about $120\degree$ in longitude. <br/> A chain of eclipses separated by a Saros each is called a <i>Saros series</i>. The above shows three members in the solar Saros series number $139$. <br/>
    There are many Saros series active at the same time at any given time.
-</p>
-
-By comparison, the eclipse cycle of $47$ synodic months is called an *octon*:
-<p align="center">
-  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/2ca16c70-5e56-4b3c-a544-43709eea0ce1"> 
-  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/303ca1c4-020b-4de7-bff8-e29321cc0abd"> 
-  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/9856333c-2186-48b6-a268-1ae975d785fd"> <br/>
-   Because octon series have a much larger error and $\Delta\xi$, the paths of the eclipses separated by an octon only vaguely resemble each other. <br/> Also, because an octon is not a near multiple of the anomalistic month, the distance to the Moon is not similar between eclipses in an octon series, and therefore can have drastically different durations and characteristics (annular – total – annular in this example).
 </p>
 
 $\blacksquare$
@@ -279,12 +270,6 @@ An example of a full solar Saros series (Solar Saros $139$) is shown below:
 <p align="center">
   <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/d71c3bce-4f25-4675-9fdb-b7627b4b584c"> <br/>
    Solar Saros $139$ has $71$ members, $7$ partial eclipses followed by $55$ central eclipses followed by $9$ partial eclipses, and lasts for $1262$ years.
-</p>
-
-For comparison, the octon series from the previous example is shown below:
-<p align="center">
-  <img width="300" src="https://github.com/CitruzSquared/essays/assets/23460281/ff5f2ba1-65ae-4ded-b8f2-6a1c34e0e3af"> <br/>
-   Octon series are not given identifying numbers. This particular series only has $21$ members and only lasts $66$ years.
 </p>
 
 And for completion, an example of a full lunar Saros series (Lunar Saros $118$) is shown below:
