@@ -207,7 +207,7 @@ Determine the length of some eclipse cycles.
 
 An eclipse is followed by an eclipse of the same type (solar or lunar) only in units of synodic months. Therefore, we need to find the number of synodic months that would result in the Sun being at a node. This ensures the parameter $\xi$ is close enough for an eclipse to occur. Thus, we search for multiples of synodic months that are also multiples of eclipse years.
 
-For example, $47$ synodic months is $47 \cdot 29.53059 = 1387.93773$ days, which is $1387.93773/346.62008 = 4.004205$ eclipse years, which has an error of $0.0042$ eclipse years off from a perfect multiple. This corresponds to a $\Delta \xi$ of $0.0042 \cdot 360\degree = 1.512\degree$. This means that every cycle, the distance of the Sun from a node changes only by $1.512\degree$, meaning favorable conditions for an eclipse are reproduced.
+For example, $47$ synodic months is $47 \cdot 29.53059 = 1387.93773$ days, which is $1387.93773/346.62008 = 4.0042$ eclipse years, which has an error of $0.0042$ eclipse years off from a perfect multiple. This corresponds to a $\Delta \xi$ of $0.0042 \cdot 360\degree = 1.512\degree$. This means that every cycle, the distance of the Sun from a node changes only by $1.512\degree$, meaning favorable conditions for an eclipse are reproduced.
 
 A list of periods with absolute $\Delta \xi$ less than $2\degree$ are listed here, computed via trial and error:
 ```math
