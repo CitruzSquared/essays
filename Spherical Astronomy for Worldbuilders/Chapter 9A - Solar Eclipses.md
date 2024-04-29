@@ -20,7 +20,7 @@ An in particular, these phenomena are of special interest:
 While rarer phenomena exist such as the [transit of other planets' moons across nebulae](https://en.wikipedia.org/wiki/Crab_Nebula#Transits_by_Solar_System_bodies) or the [occultation of planets by other planets](https://www.bogan.ca/astro/occultations/1737occl.htm), This section of the guide will detail the prediction and calculation of those four phenomena listed above.
 
 ## IX. Solar Eclipses
-This chapter will go into detail about solar eclipses, and end with a brief explanation on transits of inner planets across the Sun and lunar occultations of planets and stars.
+This chapter will go into detail about solar eclipses, and end with a brief explanation on transits of inner planets across the Sun and lunar occultations of planets and stars. We follow Chauvenet (1891) and Seidelmann & Urban (1992).
 
 ### Partial, Total, and Annular Solar Eclipses
 
