@@ -28,7 +28,7 @@ This chapter will go into detail about solar eclipses, and end with a brief expl
   <img width="600" src="https://github.com/CitruzSquared/essays/assets/23460281/1d634c03-a53b-4d23-90ab-56df30abf0fc"> <br/>
 </p>
 
-Any object illuminated by a non-point source casts two shadows: *penumbral* and *umbral*. In the diagram above, the penumbral shadow cast by the Moon ($M$) is shown by regions $A$ and $B$. An observer in these regions sees the Moon slightly offset from the Sun ($S$) and so only sees a part of the Sun covered by the Moon. This is known as a *partial solar eclipse* (see leftmost figure below).
+Any object illuminated by a non-point source casts two shadows: the *penumbra* and the *umbra*. In the diagram above, the penumbral shadow cast by the Moon ($M$) is shown by regions $A$ and $B$. An observer in these regions sees the Moon slightly offset from the Sun ($S$) and so only sees a part of the Sun covered by the Moon. This is known as a *partial solar eclipse* (see leftmost figure below).
 
 The umbral region is marked by regions $C$ and $D$. An observer in region $C$ cannot see the Sun at all since it is completely blocked by the Moon. This is known as a *total solar eclipse* (usually, the corona (the outer atmosphere) of the Sun is still visible; see middle figure below). In region $D$, the Moon still coveres the center of the Sun but does not appear large enough to cover all of it. Therefore the Sun looks like a glowing ring around the Moon, and therefore this is known as an *annular solar eclipse* (see rightmost figure below).
 
