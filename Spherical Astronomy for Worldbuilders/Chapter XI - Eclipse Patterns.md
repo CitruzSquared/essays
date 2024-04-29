@@ -274,13 +274,13 @@ And of these,
 ```math
 \text{Num. Central Members } = \frac{2\cdot 10.506}{|-0.4777|} + 2 = 46
 ```
-are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $45$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $72$ members, and the number of partial and central eclipses in each vary significantly.)
+are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $45$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $70$ to $73$ members, and the number of partial and central eclipses in each vary significantly.)
 
 In addition, since there are about $69$ members in a Saros series, every Saros series lasts about
 ```math
 (71 - 1)\cdot223\text{ mo }\cdot29.53059 \frac{\text{ dy }}{\text{ mo }}\cdot\frac{1\text{ yr}}{365.25\text{ dy}} = 1262\text{ years}
 ```
-In reality, Saros series take about $1300$ years from start to finish.
+In reality, Saros series take about $1250$ to $1300$ years from start to finish.
 
 An example of a full solar Saros series (Solar Saros $139$) is shown below:
 <p align="center">
