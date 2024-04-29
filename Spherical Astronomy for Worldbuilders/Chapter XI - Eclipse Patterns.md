@@ -266,21 +266,21 @@ Determine the length and number of members in a solar Saros series.
 </table>
 </div>
 
-We determined in example $11.1$ that for a solar eclipse, the maximum $\xi$ is $16.476\degree$ and for a central solar eclipse, the maximum $\xi$ is $10.506\degree$. Because each Saros period has a $\Delta\xi$ of $-0.4758\degree$, the number of members is:
+We determined in example $11.1$ that for a solar eclipse, the maximum $\xi$ is $16.476\degree$ and for a central solar eclipse, the maximum $\xi$ is $10.506\degree$. Because each Saros period has a $\Delta\xi$ of $-0.4777\degree$, the number of members is:
 ```math
-\text{Num. Members } = \frac{2\cdot 16.476}{|-0.4758|} = 69
+\text{Num. Members } = \frac{2\cdot 16.476}{|-0.4777|} + 1 = 70
 ```
 And of these, 
 ```math
-\text{Num. Central Members } = \frac{2\cdot 10.506}{|-0.4758|} = 44
+\text{Num. Central Members } = \frac{2\cdot 10.506}{|-0.4777|} + 1 = 45
 ```
-are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $44$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $72$ members, and the number of partial and central eclipses in each vary significantly.)
+are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $45$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $72$ members, and the number of partial and central eclipses in each vary significantly.)
 
 In addition, since there are about $69$ members in a Saros series, every Saros series lasts about
 ```math
-(69 - 1)\cdot223\text{ mo }\cdot29.5306 \frac{\text{ dy }}{\text{ mo }}\cdot\frac{1\text{ yr}}{365.25\text{ dy}} = 1226\text{ yr}
+(70 - 1)\cdot223\text{ mo }\cdot29.53059 \frac{\text{ dy }}{\text{ mo }}\cdot\frac{1\text{ yr}}{365.25\text{ dy}} = 1244\text{ yr}
 ```
-(In reality, Saros series take about $1300$ years from start to finish.)
+In reality, Saros series take about $1300$ years from start to finish.
 
 An example of a full solar Saros series (Solar Saros $139$) is shown below:
 <p align="center">
