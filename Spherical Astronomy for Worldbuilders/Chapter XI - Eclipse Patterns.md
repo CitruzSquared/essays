@@ -278,7 +278,7 @@ are central eclipses. This means that on average, we should expect solar saros s
 
 In addition, since there are about $69$ members in a Saros series, every Saros series lasts about
 ```math
-(70 - 1)\cdot223\text{ mo }\cdot29.53059 \frac{\text{ dy }}{\text{ mo }}\cdot\frac{1\text{ yr}}{365.25\text{ dy}} = 1244\text{ yr}
+(70 - 1)\cdot223\text{ mo }\cdot29.53059 \frac{\text{ dy }}{\text{ mo }}\cdot\frac{1\text{ yr}}{365.25\text{ dy}} = 1244\text{ years}
 ```
 In reality, Saros series take about $1300$ years from start to finish.
 
