@@ -274,7 +274,7 @@ And of these,
 ```math
 \text{Num. Central Members } = \frac{2\cdot 10.506}{|-0.4777|} + 2 = 46
 ```
-are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $45$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $70$ to $73$ members, and the number of partial and central eclipses in each vary significantly.)
+are central eclipses. This means that on average, we should expect solar saros series to consist of $12$ (or $13$) partial eclipses followed by $45$ central eclipses followed by $13$ (or $12$) partial eclipses. This is a crude approximation however, as it ignores the variation in all variables, and every saros series is quite different from each other. (In reality, most Saros series have about $70$ to $73$ members, and the number of partial and central eclipses in each vary significantly, ranging from $39$ to $59$, with $43$ being most common.)
 
 In addition, since there are about $69$ members in a Saros series, every Saros series lasts about
 ```math
