@@ -252,7 +252,7 @@ However, because two Utting cycles are $307.47 \cdot 2 = 614.94$ years, which is
 
 $\blacksquare$
 
-Despite the error for Saros cycles being very small, it still exists and therefore Saros series die out eventually.
+Despite the $\Delta\xi$ error for Saros cycles being very small, it still exists and therefore Saros series die out eventually.
 #### Example 11.6
 <div align="center">
 <table>
