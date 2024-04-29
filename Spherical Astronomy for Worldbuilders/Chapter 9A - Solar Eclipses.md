@@ -17,10 +17,10 @@ An in particular, these phenomena are of special interest:
 4. [Lunar Occultations](https://en.wikipedia.org/wiki/Occultation)
    - When the Moon passes in front of a star or a planet, covering it from view.
 
-While rarer phenomena exist such as the [transit of other planets' moons across nebulae](https://en.wikipedia.org/wiki/Crab_Nebula#Transits_by_Solar_System_bodies) or the [occultation of planets by other planets](https://www.bogan.ca/astro/occultations/1737occl.htm), This section of the guide will detail the prediction and calculation of those four phenomena listed above.
+While rarer phenomena exist such as the [transit of other planets' moons across nebulae](https://en.wikipedia.org/wiki/Crab_Nebula#Transits_by_Solar_System_bodies) or the [occultation of planets by other planets](https://www.bogan.ca/astro/occultations/1737occl.htm), This section of the guide will detail the prediction and calculation of those four phenomena listed above. We follow Chauvenet (1891), Seidelmann & Urban (1992), and Green (1985).
 
 ## IX. Solar Eclipses
-This chapter will go into detail about solar eclipses, and end with a brief explanation on transits of inner planets across the Sun and lunar occultations of planets and stars. We follow Chauvenet (1891) and Seidelmann & Urban (1992).
+This chapter will go into detail about solar eclipses, and end with a brief explanation on transits of inner planets across the Sun and lunar occultations of planets and stars.
 
 ### Partial, Total, and Annular Solar Eclipses
 
