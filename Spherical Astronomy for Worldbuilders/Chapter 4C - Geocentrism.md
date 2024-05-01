@@ -25,7 +25,39 @@ Now, say the true position of the sub-Earth point is $E$. If we say that the ecl
 \begin{align}
 P_0E &= 90\degree - b\\
 KE &= 90\degree + \beta\\
-KP_0E &= 90\degree - L' + \Omega - l\\
+KP_0E &= 90\degree - (L' - \Omega) - l = 90\degree - L' + \Omega - l\\
 P_0KE &= \lambda + 180\degree - (\Omega + 90\degree) = 90\degree - (\Omega - \lambda)\\
+P_0K &= I
 \end{align} \tag{4.32}
 ```
+Now, consider the spherical triangle $P_0KE$. Applying the [spherical law of cosines](https://en.wikipedia.org/wiki/Spherical_law_of_cosines) to this triangle and using the results of equations $4.32$ gives:
+```math
+\begin{align}
+\cos(90\degree - b) &= \cos(I)\cos(90\degree + \beta) + \sin(I)\sin(90\degree + \beta)\cos(90\degree - (\Omega - \lambda))\\
+\therefore \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda)
+\end{align} \tag{4.33-i}
+```
+Using the [first analogue formulae for the spherical law of cosines](https://proofwiki.org/wiki/Analogue_Formula_for_Spherical_Law_of_Cosines) to this triangle with $a = P_0E$ and $B = KP_0E$ gives:
+```math
+\begin{align}
+\sin(90\degree - b)\cos(90\degree - L' + \Omega - l) &= \cos(90\degree + \beta)\sin(I) - \sin(90\degree + \beta)\cos(I)\cos(90\degree - (\Omega - \lambda))\\
+\therefore \cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)
+\end{align} \tag{4.33-ii}
+```
+Using the [spherical law of sines](https://proofwiki.org/wiki/Spherical_Law_of_Sines) to this triangle gives:
+```math
+\begin{align}
+\frac{\sin(90\degree - b)}{\sin(90\degree - (\Omega - \lambda))} &= \frac{\sin(90\degree + \beta)}{\sin(90\degree - L' + \Omega - l)}\\
+\therefore \sin(90\degree - b)\sin(90\degree - L' + \Omega - l) &= \sin(90\degree + \beta)\sin(90\degree - (\Omega - \lambda))\\
+\therefore \cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda)
+\end{align} \tag{4.33-iii}
+```
+To sum up:
+```math
+\begin{align}
+\sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda)\\
+\cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)\\
+\cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda)\\
+\end{align} \tag{4.33}
+```
+These equations fully determine $l$ and $b$.
