@@ -55,7 +55,7 @@ R_3 =
 0 & 0 & 1
 \end{bmatrix}
 ```
-Now the $x$-axis points towards the periaetas.
+Now the $x$-axis points towards the periapsis.
 
 The full rotation matrix is given by multiplying all these steps together:
 ```math
