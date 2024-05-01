@@ -101,3 +101,43 @@ Therefore,
 ```math
 c = \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.36}
 ```
+
+#### Example 4.9
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Given that on $\text{July 22, } 2024$, the mean longitude of the Moon was $310\degree$ $29'$, the ecliptic coordinates of the Moon were $\lambda = 307\degree$ $21'$ and $\beta = -4\degree$ $27'$, and the longitude of the ascending node of the orbit of the Moon was $8\degree$ $47'$, find the libration angles $l$, $b$, $c$. <br/>
+  Use $I = 1.54\degree$ and $\varepsilon = 23.44\degree$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Equation $4.34$ gives:
+```math
+\begin{align}
+\sin(b) &= -\cos(1.54\degree)\sin(-4\degree\:27') + \sin(1.54\degree)\cos(-4\degree\:27')\sin(8\degree\:47' - 307\degree\:21')\\
+&= 0.101093\\
+\therefore b &= \arcsin(0.101093) = 5\degree\:48'\\
+\\
+\cos(b)\sin(L' - \Omega + l) &= -\sin(-4\degree\:27')\sin(1.54\degree) - \cos(-4\degree\:27')\cos(1.54\degree)\sin(8\degree\:47' - 307\degree\:21')\\
+&= -0.873212\\
+\cos(b)\cos(L' - \Omega + l) &= \cos(-4\degree\:27')\cos(8\degree\:47' - 307\degree\:21')\\
+&= 0.476739\\
+\therefore L' - \Omega + l &= \arctan(-0.873212, 0.476739) = 298\degree\:38'\\
+\therefore l &= 298\degree\:38' + 8\degree\:47' - 310\degree\:29' = -3\degree\:4'
+\end{align}
+```
+For $c$, equations $4.35$ give:
+```math
+\begin{align}
+PEK &= \text{arccot}(\sin(-4\degree\:27')\tan(307\degree\:21') - \cos(-4\degree\:27')\cot(23.44\degree)\sec(307\degree\:21'))\\
+&= -15\degree\:10'\\
+KEP_0 &= \text{arccot}(\sin(-4\degree\:27')\tan(8\degree\:47' - 307\degree\:21') + \cos(-4\degree\:27')\cot(1.54\degree)\sec(8\degree\:47' - 307\degree\:21'))\\
+&= 44'
+\end{align}
+```
+Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$.
