@@ -57,7 +57,7 @@ To sum up:
 \begin{align}
 \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda)\\
 \cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)\\
-\cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda)\\
+\cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda)
 \end{align} \tag{4.33}
 ```
 These equations fully determine $l$ and $b$ and thus fully describe the geocentric optical libration of the Moon.
