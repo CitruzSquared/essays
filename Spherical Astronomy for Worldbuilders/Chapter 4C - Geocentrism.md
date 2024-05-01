@@ -95,5 +95,5 @@ Next, in the triangle $KEP_0$, since point $P_0$ has ecliptic longitude $\Omega 
 ```
 Therefore,
 ```math
-c &= \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.35}
+c = \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.35}
 ```
