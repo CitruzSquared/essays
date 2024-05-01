@@ -7,9 +7,13 @@ The center of the lunar disk as seen from the Earth is evidently the sub-Earth p
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/8d98a4a1-4c9c-4026-8afc-e384801c62bb" width="450"/> This diagram depicts the Moon. $K$ is the ecliptic pole, i.e. the point with ecliptic latitude of $90\degree$. $P_0$ is the rotational North pole of the Moon, i.e. the point of the axis of the Moon. Thus the angle of the arc $P_0K$ is the axial tilt of the Moon with regard to the ecliptic, which we denote $I$. $P_0$ is not a fixed point on the surface of the Moon however, unlike the true north pole of the Earth, due to the fact that the lunar orbit precesses. This precession of the lunar north pole is in such a way that the ascending node of the lunar equator with respect to the ecliptic, i.e. the point $Q$, is also the descnding node of the orbit of the  Moon with respect to the ecliptic. Therefore, if we say that the longitude of the ascending node of the orbit of the Moon is $\Omega$, the ecliptic longitude of the point $Q$ ($AQ$, where $A$ is the location of Aries) is $\Omega + 180\degree$. Because of the way the Moon's axis is tilted, it also follows that the angle $KP_0Q = 90\degree$ and the ecliptic longitude of $P_0$ is $\Omega + 90\degree$.
 
-Let us assume that the Moon orbits perfectly uniformly along a circle around the Earth with zero inclination from the ecliptic and calculate this fictional Moon's ecliptic longitude. This is known as the Moon's mean longitude and we will denote it $L'$. Then, the mean longitude of the Earth from the Moon is $L' + 180\degree$. We will denote the point with this longitude $E_0$. Therefore, the arc $QE_0$ is $180\degree + L' - (180\degree + \Omega) = L' - \Omega$. Now, let us define a point called the *mean center of the lunar disk*, which we will denote $M$, that lies on the lunar equator with the same separation from $Q$ as $E_0$ is from $Q$. In other words:
+Let us assume that the Moon orbits perfectly uniformly along a circle around the Earth with zero inclination from the ecliptic and calculate this fictional Moon's ecliptic longitude. This is known as the Moon's mean longitude, denoted by $L'$, and is given by:
 ```math
-MQ = L' - \Omega \tag{4.30}
+L = \Omega + \omega + M \tag{4.30}
+```
+Where $\omega$ is the argument of periapsis and $M$ is the mean anomaly. Then, the mean longitude of the Earth from the Moon is $L' + 180\degree$. We will denote the point with this longitude $E_0$. Therefore, the arc $QE_0$ is $180\degree + L' - (180\degree + \Omega) = L' - \Omega$. Now, let us define a point called the *mean center of the lunar disk*, which we will denote $M$, that lies on the lunar equator with the same separation from $Q$ as $E_0$ is from $Q$. In other words:
+```math
+MQ = L' - \Omega \tag{4.31}
 ```
 $M$ is a fixed point on the lunar surface, and we define the prime merdian of the Moon as the great circle $P_0M$.
 
@@ -18,7 +22,7 @@ Now we can define the *selenographic* longitude and latitude $(l_X, b_X)$ of any
 \begin{align}
 l_X &= MP_0X\\
 b_X &= 90\degree - P_0X
-\end{align} \tag{4.31}
+\end{align} \tag{4.32}
 ```
 Now, say the true position of the sub-Earth point is $E$. If we say that the ecliptic coordinates of the Moon are $(\lambda, \beta)$, the ecliptic longitude and latitude of $E$ is $(\lambda + 180\degree, -\beta)$. Let us say that the selenographic coordinates of the point $E$ is $(l, b)$. Now, using all the quantities we have found so far, we can find that:
 ```math
@@ -28,14 +32,14 @@ KE &= 90\degree + \beta\\
 KP_0E &= 90\degree - (L' - \Omega) - l = 90\degree - L' + \Omega - l\\
 P_0KE &= \lambda + 180\degree - (\Omega + 90\degree) = 90\degree - (\Omega - \lambda)\\
 P_0K &= I
-\end{align} \tag{4.32}
+\end{align} \tag{4.33}
 ```
 Now, consider the spherical triangle $P_0KE$. Applying the [spherical law of cosines](https://en.wikipedia.org/wiki/Spherical_law_of_cosines) to this triangle and using the results of equations $4.32$ gives:
 ```math
 \begin{align}
 \cos(P_0E) &= \sin(P_0K)\cos(KE) + \sin(P_0K)\sin(KE)\cos(P_0KE)\\
 \therefore \cos(90\degree - b) &= \cos(I)\cos(90\degree + \beta) + \sin(I)\sin(90\degree + \beta)\cos(90\degree - (\Omega - \lambda))\\
-\therefore \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda) \tag{4.33-i}
+\therefore \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda) \tag{4.34-i}
 \end{align}
 ```
 Using the [first analogue formula for the spherical law of cosines](https://proofwiki.org/wiki/Analogue_Formula_for_Spherical_Law_of_Cosines) to this triangle with $a = P_0E$ and $B = KP_0E$ gives:
@@ -43,7 +47,7 @@ Using the [first analogue formula for the spherical law of cosines](https://proo
 \begin{align}
 \sin(P_0E)\cos(KP_0E) &= \cos(KE)\sin(P_0K) - \sin(KE)\cos(P_0K)\cos(P_0KE)\\
 \therefore \sin(90\degree - b)\cos(90\degree - L' + \Omega - l) &= \cos(90\degree + \beta)\sin(I) - \sin(90\degree + \beta)\cos(I)\cos(90\degree - (\Omega - \lambda))\\
-\therefore \cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)  \tag{4.33-ii}
+\therefore \cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)  \tag{4.34-ii}
 \end{align}
 ```
 Using the [spherical law of sines](https://proofwiki.org/wiki/Spherical_Law_of_Sines) to this triangle gives:
@@ -52,7 +56,7 @@ Using the [spherical law of sines](https://proofwiki.org/wiki/Spherical_Law_of_S
 \frac{\sin(P_0E)}{\sin(P_0KE)} &= \frac{\sin(KE)}{\sin(KP_0E)}\\
 \therefore\frac{\sin(90\degree - b)}{\sin(90\degree - (\Omega - \lambda))} &= \frac{\sin(90\degree + \beta)}{\sin(90\degree - L' + \Omega - l)}\\
 \therefore \sin(90\degree - b)\sin(90\degree - L' + \Omega - l) &= \sin(90\degree + \beta)\sin(90\degree - (\Omega - \lambda))\\
-\therefore \cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda) \tag{4.33-iii}
+\therefore \cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda) \tag{4.34-iii}
 \end{align} 
 ```
 To sum up:
@@ -61,7 +65,7 @@ To sum up:
 \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda)\\
 \cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)\\
 \cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda)
-\end{align} \tag{4.33}
+\end{align} \tag{4.34}
 ```
 These equations fully determine $l$ and $b$ and thus fully describe the geocentric optical libration of the Moon.
 
@@ -78,7 +82,7 @@ First let's find $PEK$. In the triangle $PEK$, we can use the [four parts formul
 \therefore \sin(\beta)\sin(\lambda) &= \cos(\beta)\cot(\varepsilon) + \cos(\lambda)\cot(PEK)\\
 \therefore \cot(PEK) &= \frac{\sin(\beta)\sin(\lambda) - \cos(\beta)\cot(\varepsilon)}{\cos(\lambda)}\\
 &= \sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)\\
-\therefore PEK &= \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) \tag{4.34-i}
+\therefore PEK &= \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) \tag{4.35-i}
 \end{align} 
 ```
 Next, in the triangle $KEP_0$, since point $P_0$ has ecliptic longitude $\Omega + 90\degree$, $EKP_0 = \lambda + 180\degree - (\Omega + 90\degree) = \lambda - \Omega + 90\degree$. Now we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP_0$ to write:
@@ -90,10 +94,10 @@ Next, in the triangle $KEP_0$, since point $P_0$ has ecliptic longitude $\Omega 
 \therefore \cot(KEP_0) &= \frac{\sin(\beta)\sin(\lambda - \Omega) - \cos(\beta)\cot(I)}{-\cos(\lambda - \Omega)}\\
 &= -\sin(\beta)\tan(\lambda - \Omega) + \cos(\beta)\cot(I)\sec(\lambda - \Omega)\\
 &= \sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)\\
-\therefore KEP_0 &= \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.34-ii}
+\therefore KEP_0 &= \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.35-ii}
 \end{align} 
 ```
 Therefore,
 ```math
-c = \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.35}
+c = \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.36}
 ```
