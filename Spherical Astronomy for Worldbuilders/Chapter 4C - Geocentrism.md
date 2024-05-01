@@ -38,7 +38,7 @@ Now, consider the spherical triangle $P_0KE$. Applying the [spherical law of cos
 \therefore \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda) \tag{4.33-i}
 \end{align}
 ```
-Using the [first analogue formulae for the spherical law of cosines](https://proofwiki.org/wiki/Analogue_Formula_for_Spherical_Law_of_Cosines) to this triangle with $a = P_0E$ and $B = KP_0E$ gives:
+Using the [first analogue formula for the spherical law of cosines](https://proofwiki.org/wiki/Analogue_Formula_for_Spherical_Law_of_Cosines) to this triangle with $a = P_0E$ and $B = KP_0E$ gives:
 ```math
 \begin{align}
 \sin(P_0E)\cos(KP_0E) &= \cos(KE)\sin(P_0K) - \sin(KE)\cos(P_0K)\cos(P_0KE)\\
