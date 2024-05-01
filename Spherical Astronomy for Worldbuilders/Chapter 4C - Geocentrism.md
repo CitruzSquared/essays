@@ -144,7 +144,7 @@ Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. Drawn, this looks like:
 
 <p align="center">
   <img width="450" src="https://github.com/CitruzSquared/essays/assets/23460281/737c1e95-f375-4891-a349-8c72863b3b2f"> <br/>
-  The lunar axis is tilted from celestial North by $c$. <br/> The center of the disk of the Moon, $E$, is at selenographic coordinates $(l, b)$.
+  The lunar axis is tilted from celestial North by $c = -14\degree$ $10'$ (negative means clockwise). <br/> The center of the disk of the Moon, $E$, is at selenographic coordinates $(l, b) = (-3\degree$ $4',$ $5\degree$ $48'$).
 </p>
 
 $\blacksquare$.
