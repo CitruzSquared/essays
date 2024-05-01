@@ -140,4 +140,11 @@ KEP_0 &= \text{arccot}(\sin(-4\degree\:27')\tan(8\degree\:47' - 307\degree\:21')
 &= 44'
 \end{align}
 ```
-Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$.
+Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. Drawn, this looks like:
+
+<p align="center">
+  <img width="350" src="https://github.com/CitruzSquared/essays/assets/23460281/2d8cb0d5-12bc-4def-9f21-11167619e34d"> <br/>
+  The lunar axis is tilted from celestial North by $c$. The center of the disk of the Moon, $E$, is at selenographic coordinates $(l, b)$.
+</p>
+
+$\blacksquare$.
