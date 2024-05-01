@@ -42,6 +42,8 @@
    - Part B (Eq. $4.10$ to $4.29$, Ex. $4.5$ to $4.8$)
      * Brightness
      * Apparent Retrograde Motion
+   - Part C (Eq. $4.30$ to $4.35$, Ex. $4.9$)
+     * Lunar Libration
 5. **Time** (Eq. $5.1$ to $5.4$, Ex. $5.1$ to $5.3$)
    - Sidereal and Solar time
    - Converting between Times
