@@ -9,7 +9,7 @@ The center of the lunar disk as seen from the Earth is evidently the sub-Earth p
 
 Let us assume that the Moon orbits perfectly uniformly along a circle around the Earth with zero inclination from the ecliptic and calculate this fictional Moon's ecliptic longitude. This is known as the Moon's mean longitude, denoted by $L'$, and is given by:
 ```math
-L = \Omega + \omega + M \tag{4.30}
+L' = \Omega + \omega + M \tag{4.30}
 ```
 Where $\omega$ is the argument of periapsis and $M$ is the mean anomaly. Then, the mean longitude of the Earth from the Moon is $L' + 180\degree$. We will denote the point with this longitude $E_0$. Therefore, the arc $QE_0$ is $180\degree + L' - (180\degree + \Omega) = L' - \Omega$. Now, let us define a point called the *mean center of the lunar disk*, which we will denote $M$, that lies on the lunar equator with the same separation from $Q$ as $E_0$ is from $Q$. In other words:
 ```math
