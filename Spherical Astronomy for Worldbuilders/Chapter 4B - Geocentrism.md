@@ -438,3 +438,6 @@ An example is the Jupiter - Saturn triple conjunction of $1980$ ~ $1981$:
 \text{3}^{\text{rd}} \text{ Conjunction : } & \text{July 24, } 1981 \\ 
 \end{align}
 ```
+### Lunar Libration
+
+(Continued in Part C...)
