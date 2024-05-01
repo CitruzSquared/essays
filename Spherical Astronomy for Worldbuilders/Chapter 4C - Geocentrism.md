@@ -67,7 +67,7 @@ These equations fully determine $l$ and $b$ and thus fully describe the geocentr
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/06f33473-be13-4289-a60b-0dfe00e8ce70" width="450"/> Another angle of interest however, is the position angle of the axis of rotation of the Moon, i.e. the angle $PEP_0$, where $P$ is the celestial north pole. This angle shows how tilted the selenographic north pole of the Moon looks from the Earth's perspective, and is denoted $c$.
 
-First, note that we can separate this angle into two and write $c = PEK + KEP_0$. Also, note that the angle between the ecliptic pole and the celestial pole is the axial tilt of the Earth, so $KP = \varepsilon$. Furthermore, note that angle $EKP$ is the ecliptic longitude of the celestial north pole minus the ecliptic longitude of the point $E$, i.e. $EKP = 90\degree - \lambda + 180\degree = 270\degree - \lambda$.
+First, note that we can separate this angle into two and write $c = PEK + KEP_0$. Also, note that the angle between the ecliptic pole and the celestial pole is the axial tilt of the Earth, so $KP = \varepsilon$. Furthermore, note that angle $EKP$ is the ecliptic longitude of the celestial north pole minus the ecliptic longitude of the point $E$, i.e. $90\degree - (\lambda + 180\degree) = -90\degree - \lambda = 270\degree - \lambda$.
 
 First let's find $PEK$. In the triangle $PEK$, we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP$ to write:
 
@@ -81,14 +81,19 @@ First let's find $PEK$. In the triangle $PEK$, we can use the [four parts formul
 \therefore PEK &= \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) \tag{4.34-i}
 \end{align} 
 ```
-Next, in the triangle $KEP_0$, since point $P_0$ has ecliptic longitude $\Omega + 90\degree$, $EKP_0 = \Omega + 90\degree - (\lambda + 180\degree) = \Omega - \lambda - 90\degree$. Now we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP_0$ to write:
+Next, in the triangle $KEP_0$, since point $P_0$ has ecliptic longitude $\Omega + 90\degree$, $EKP_0 = \lambda + 180\degree - (\Omega + 90\degree) = \lambda - \Omega + 90\degree$. Now we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP_0$ to write:
 ```math
 \begin{align}
 \cos(KE)\cos(EKP_0) &= \sin(KE)\cot(KP_0) - \sin(EKP_0)\cot(KEP_0)\\
-\therefore \cos(90\degree + \beta)\cos(\Omega - \lambda - 90\degree) &= \sin(90\degree + \beta)\cot(I) - \sin(\Omega - \lambda - 90\degree)\cot(KEP_0)\\
-\therefore -\sin(\beta)\sin(\Omega - \lambda) &= \cos(\beta)\cot(I) + \cos(\Omega - \lambda)\cot(KEP_0)\\
-\therefore \cot(KEP_0) &= \frac{-\sin(\beta)\sin(\Omega - \lambda) - \cos(\beta)\cot(I)}{\cos(\Omega - \lambda)}\\
-&= -\sin(\beta)\tan(\Omega - \lambda) - \cos(\beta)\cot(I)\sec(\Omega - \lambda)\\
-\therefore KEP_0 &= \text{arccot}(-\sin(\beta)\tan(\Omega - \lambda) - \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.34-ii}
+\therefore \cos(90\degree + \beta)\cos(\lambda - \Omega + 90\degree) &= \sin(90\degree + \beta)\cot(I) - \sin(\lambda - \Omega + 90\degree)\cot(KEP_0)\\
+\therefore \sin(\beta)\sin(\lambda - \Omega) &= \cos(\beta)\cot(I) - \cos(\lambda - \Omega)\cot(KEP_0)\\
+\therefore \cot(KEP_0) &= \frac{\sin(\beta)\sin(\lambda - \Omega) - \cos(\beta)\cot(I)}{-\cos(\lambda - \Omega)}\\
+&= -\sin(\beta)\tan(\lambda - \Omega) + \cos(\beta)\cot(I)\sec(\lambda - \Omega)\\
+&= \sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)\\
+\therefore KEP_0 &= \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.34-ii}
 \end{align} 
+```
+Therefore,
+```math
+c &= \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.35}
 ```
