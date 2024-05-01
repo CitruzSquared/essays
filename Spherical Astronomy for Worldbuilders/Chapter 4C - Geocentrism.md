@@ -61,3 +61,5 @@ To sum up:
 \end{align} \tag{4.33}
 ```
 These equations fully determine $l$ and $b$ and thus fully describe the geocentric optical libration of the Moon.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/06f33473-be13-4289-a60b-0dfe00e8ce70" width="450"/>
