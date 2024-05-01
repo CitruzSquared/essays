@@ -33,21 +33,24 @@ P_0K &= I
 Now, consider the spherical triangle $P_0KE$. Applying the [spherical law of cosines](https://en.wikipedia.org/wiki/Spherical_law_of_cosines) to this triangle and using the results of equations $4.32$ gives:
 ```math
 \begin{align}
-\cos(90\degree - b) &= \cos(I)\cos(90\degree + \beta) + \sin(I)\sin(90\degree + \beta)\cos(90\degree - (\Omega - \lambda))\\
+\cos(P_0E) &= \sin(P_0K)\cos(KE) + \sin(P_0K)\sin(KE)\cos(P_0KE)\\
+\therefore \cos(90\degree - b) &= \cos(I)\cos(90\degree + \beta) + \sin(I)\sin(90\degree + \beta)\cos(90\degree - (\Omega - \lambda))\\
 \therefore \sin(b) &= -\cos(I)\sin(\beta) + \sin(I)\cos(\beta)\sin(\Omega - \lambda) \tag{4.33-i}
 \end{align}
 ```
 Using the [first analogue formulae for the spherical law of cosines](https://proofwiki.org/wiki/Analogue_Formula_for_Spherical_Law_of_Cosines) to this triangle with $a = P_0E$ and $B = KP_0E$ gives:
 ```math
 \begin{align}
-\sin(90\degree - b)\cos(90\degree - L' + \Omega - l) &= \cos(90\degree + \beta)\sin(I) - \sin(90\degree + \beta)\cos(I)\cos(90\degree - (\Omega - \lambda))\\
+\sin(P_0E)\cos(KP_0E) &= \cos(KE)\sin(P_0K) - \sin(KE)\cos(P_0K)\cos(P_0KE)\\
+\therefore \sin(90\degree - b)\cos(90\degree - L' + \Omega - l) &= \cos(90\degree + \beta)\sin(I) - \sin(90\degree + \beta)\cos(I)\cos(90\degree - (\Omega - \lambda))\\
 \therefore \cos(b)\sin(L' - \Omega + l) &= -\sin(\beta)\sin(I) - \cos(\beta)\cos(I)\sin(\Omega - \lambda)  \tag{4.33-ii}
 \end{align}
 ```
 Using the [spherical law of sines](https://proofwiki.org/wiki/Spherical_Law_of_Sines) to this triangle gives:
 ```math
 \begin{align}
-\frac{\sin(90\degree - b)}{\sin(90\degree - (\Omega - \lambda))} &= \frac{\sin(90\degree + \beta)}{\sin(90\degree - L' + \Omega - l)}\\
+\frac{\sin(P_0E)}{\sin(P_0KE)} &= \frac{\sin(KE)}{\sin(KP_0E)}\\
+\therefore\frac{\sin(90\degree - b)}{\sin(90\degree - (\Omega - \lambda))} &= \frac{\sin(90\degree + \beta)}{\sin(90\degree - L' + \Omega - l)}\\
 \therefore \sin(90\degree - b)\sin(90\degree - L' + \Omega - l) &= \sin(90\degree + \beta)\sin(90\degree - (\Omega - \lambda))\\
 \therefore \cos(b)\cos(L' - \Omega + l) &= \cos(\beta)\cos(\Omega - \lambda) \tag{4.33-iii}
 \end{align} 
@@ -62,4 +65,30 @@ To sum up:
 ```
 These equations fully determine $l$ and $b$ and thus fully describe the geocentric optical libration of the Moon.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/06f33473-be13-4289-a60b-0dfe00e8ce70" width="450"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/06f33473-be13-4289-a60b-0dfe00e8ce70" width="450"/> Another angle of interest however, is the position angle of the axis of rotation of the Moon, i.e. the angle $PEP_0$, where $P$ is the celestial north pole. This angle shows how tilted the selenographic north pole of the Moon looks from the Earth's perspective, and is denoted $c$.
+
+First, note that we can separate this angle into two and write $c = PEK + KEP_0$. Also, note that the angle between the ecliptic pole and the celestial pole is the axial tilt of the Earth, so $KP = \varepsilon$. Furthermore, note that angle $EKP$ is the ecliptic longitude of the celestial north pole minus the ecliptic longitude of the point $E$, i.e. $EKP = 90\degree - \lambda + 180\degree = 270\degree - \lambda$.
+
+First let's find $PEK$. In the triangle $PEK$, we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP$ to write:
+
+```math
+\begin{align}
+\cos(KE)\cos(EKP) &= \sin(KE)\cot(KP) - \sin(EKP)\cot(PEK)\\
+\therefore \cos(90\degree + \beta)\cos(270\degree - \lambda) &= \sin(90\degree + \beta)\cot(\varepsilon) - \sin(270\degree - \lambda)\cot(PEK)\\
+\therefore \sin(\beta)\sin(\lambda) &= \cos(\beta)\cot(\varepsilon) + \cos(\lambda)\cot(PEK)\\
+\therefore \cot(PEK) &= \frac{\sin(\beta)\sin(\lambda) - \cos(\beta)\cot(\varepsilon)}{\cos(\lambda)}\\
+&= \sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)\\
+\therefore PEK &= \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) \tag{4.34-i}
+\end{align} 
+```
+Next, in the triangle $KEP_0$, since point $P_0$ has ecliptic longitude $\Omega + 90\degree$, $EKP_0 = \Omega + 90\degree - (\lambda + 180\degree) = \Omega - \lambda - 90\degree$. Now we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP_0$ to write:
+```math
+\begin{align}
+\cos(KE)\cos(EKP_0) &= \sin(KE)\cot(KP_0) - \sin(EKP_0)\cot(KEP_0)\\
+\therefore \cos(90\degree + \beta)\cos(\Omega - \lambda - 90\degree) &= \sin(90\degree + \beta)\cot(I) - \sin(\Omega - \lambda - 90\degree)\cot(KEP_0)\\
+\therefore -\sin(\beta)\sin(\Omega - \lambda) &= \cos(\beta)\cot(I) + \cos(\Omega - \lambda)\cot(KEP_0)\\
+\therefore \cot(KEP_0) &= \frac{-\sin(\beta)\sin(\Omega - \lambda) - \cos(\beta)\cot(I)}{\cos(\Omega - \lambda)}\\
+&= -\sin(\beta)\tan(\Omega - \lambda) - \cos(\beta)\cot(I)\sec(\Omega - \lambda)\\
+\therefore KEP_0 &= \text{arccot}(-\sin(\beta)\tan(\Omega - \lambda) - \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.34-ii}
+\end{align} 
+```
