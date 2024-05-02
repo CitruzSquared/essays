@@ -146,8 +146,8 @@ Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. Drawn, this looks like:
   <img width="450" src="https://github.com/CitruzSquared/essays/assets/23460281/737c1e95-f375-4891-a349-8c72863b3b2f"> <br/>
   The lunar axis is tilted from celestial North by $c = -14\degree$ $6'$ (negative means clockwise). <br/> The center of the disk of the Moon, $E$, is at selenographic coordinates $(l, b) = (-3\degree$ $4',$ $5\degree$ $48'$). <br/>
   <br/>
-  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/ed871407-0299-4483-906c-4817ddc81fa3"> 
-  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/618bb356-f8ca-4527-b88e-47f56aa38b3b"> <br/>
+  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/4c4e5759-e0dd-4662-b12c-a6d59cf8f1ef"> 
+  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/0dda0325-ee82-4834-b8a5-6b84dacd5d36"> <br/>
   Left: simulated view of what the Moon would the calculated libration angles. <br/>
   Right: simulated view of the Moon from NASA (<a href="https://www.youtube.com/watch?v=dyDIogWH9uE">Source</a>; $l$, $b$, $c = -3\degree$ $24'$, $5\degree$ $48'$, $-14\degree$ $22'$).
 </p>
