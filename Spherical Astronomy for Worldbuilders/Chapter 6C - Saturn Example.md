@@ -1,7 +1,7 @@
 ### Saturn in the Sky
 We figured out how Venus looked in examples $4.1$ and $6.11$. Let's do something more detailed: Let's figure out how Saturn looked in the sky on $\text{January 1, } 2024$ at $19:00$ from London, UK ($\phi = +51\degree, l = 0\degree$).
 
-**NOTE:** This section is a bit incorrect and the methods used here may not be universally applicable. I will fix it sometime.
+**NOTE:** This whole section is a bit incorrect and the methods used here may not be universally applicable. I will fix it sometime.
 
 #### 1. Data Collection
 To figure out what Saturn looked like from the Earth, we must first know how Saturn looks in general:
