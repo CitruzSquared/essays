@@ -109,7 +109,7 @@ Together with the apparent size and the phase, the libration angles $l$, $b$, an
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that, for the Moon, on $\text{July 22, } 2024$, at time $00:00$, the mean longitude was $L' = 310\degree$ $29'$, the ecliptic coordinates were $\lambda = 307\degree$ $21'$ and $\beta = -4\degree$ $27'$, and the longitude of the ascending node was $\Omega = 8\degree$ $47'$, find the libration angles $l$, $b$, and $c$. <br/>
+Given that, for the Moon, on $\text{July 22, } 2024$ at time $00:00$, the mean longitude was $L' = 310\degree$ $29'$, the ecliptic coordinates were $\lambda = 307\degree$ $21'$ and $\beta = -4\degree$ $27'$, and the longitude of the ascending node was $\Omega = 8\degree$ $47'$, find the libration angles $l$, $b$, and $c$. <br/>
   Use $I = 1.54\degree$ and $\varepsilon = 23.44\degree$.
 <img width="2000" height="0">
 </td>
