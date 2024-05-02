@@ -101,6 +101,7 @@ Therefore,
 ```math
 c = \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\lambda)) + \text{arccot}(\sin(\beta)\tan(\Omega - \lambda) + \cos(\beta)\cot(I)\sec(\Omega - \lambda)) \tag{4.36}
 ```
+Together with the apparent size and the phase, the libration angles $l$, $b$, and $c$ fully describe the look of the Moon from the Earth.
 
 #### Example 4.9
 <div align="center">
