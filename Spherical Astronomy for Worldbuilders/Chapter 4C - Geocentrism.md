@@ -150,7 +150,7 @@ Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. Drawn, this looks like:
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/0dda0325-ee82-4834-b8a5-6b84dacd5d36"> <br/>
   Left: simulated view of the Moon with the calculated libration angles. <br/>
   Right: simulated view of the Moon from NASA (<a href="https://www.youtube.com/watch?v=dyDIogWH9uE">Source</a>; $l$, $b$, $c = -3\degree$ $24'$, $5\degree$ $48'$, $-14\degree$ $22'$). <br/>
-  The error is due to differing ephemeris data.
+  North is at the top and East is to the left. The error is due to differing ephemeris data.
 </p>
 
 $\blacksquare$.
