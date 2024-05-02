@@ -177,8 +177,8 @@ S &= \frac{1}{2}r^2 \theta \\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
 \cos(\alpha) &= \cos(-\alpha) = -\cos(\alpha + 180\degree) = -\cos(180\degree - \alpha)\\
 \tan(\alpha) &= -\tan(-\alpha) = \tan(\alpha + 180\degree) = -\tan(180\degree - \alpha)\\
-\sin(\alpha) &= \cos(90\degree - \alpha) \\
-\cos(\alpha) &= \sin(90\degree - \alpha) \\
+\sin(\alpha) &= \cos(90\degree - \alpha) = -\cos(90\degree + \alpha) = \cos(\alpha - 90\degree)\\
+\cos(\alpha) &= \sin(90\degree - \alpha) = \sin(90\degree + \alpha) = -\sin(\alpha - 90\degree)\\
 \csc(\alpha) &= \frac{1}{\sin(\alpha)}\\
 \sec(\alpha) &= \frac{1}{\cos(\alpha)}\\
 \cot(\alpha) &= \frac{1}{\tan(\alpha)}\\
