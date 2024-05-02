@@ -71,7 +71,7 @@ These equations fully determine $l$ and $b$ and thus fully describe the geocentr
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/06f33473-be13-4289-a60b-0dfe00e8ce70" width="450"/> Another angle of interest however, is the position angle of the axis of rotation of the Moon, i.e. the angle $PEP_0$, where $P$ is the celestial north pole. This angle shows how tilted the selenographic north pole of the Moon looks from the Earth's perspective, and is denoted $c$.
 
-First, note that we can separate this angle into two and write $c = PEK + KEP_0$. Also, note that the angle between the ecliptic pole and the celestial pole is the axial tilt of the Earth, so $KP = \varepsilon$. Furthermore, note that angle $EKP$ is the ecliptic longitude of the celestial north pole minus the ecliptic longitude of the point $E$, i.e. $90\degree - (\lambda + 180\degree) = -90\degree - \lambda = 270\degree - \lambda$.
+First, note that we can separate this angle into two and write $c = PEK + KEP_0$. Also, note that the angle between the ecliptic pole and the celestial pole is the axial tilt of the Earth, so $KP = \varepsilon$. Furthermore, note that angle $EKP$ is the ecliptic longitude of the celestial north pole minus the ecliptic longitude of the point $E$, i.e. $EKP = 90\degree - (\lambda + 180\degree) = -90\degree - \lambda = 270\degree - \lambda$.
 
 First let's find $PEK$. In the triangle $PEK$, we can use the [four parts formula](https://proofwiki.org/wiki/Four-Parts_Formula) with $a = KE$ and $C = EKP$ to write:
 
