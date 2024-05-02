@@ -153,7 +153,7 @@ Drawn, this looks like:
   Left: simulated view of the Moon with the calculated libration angles. <br/>
   Right: simulated view of the Moon from NASA (<a href="https://www.youtube.com/watch?v=dyDIogWH9uE">Source</a>; $l$, $b$, $c = -3\degree$ $25'$, $5\degree$ $49'$, $-14\degree$ $22'$). <br/>
   The error is due to differing ephemeris data. <br/>
-  Note that the right side limb of the NASA image is dark because the Moon was at $99.4$% phase. <br/> The left image does not take this into account.
+  Note that the extreme right side of the NASA image is dark because the Moon was at $99.4$% phase. <br/> The left image does not take this into account.
 </p>
 
 $\blacksquare$
