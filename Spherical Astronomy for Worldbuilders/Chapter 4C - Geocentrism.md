@@ -155,4 +155,4 @@ Drawn, this looks like:
   North is at the top and East is to the left. The error is due to differing ephemeris data.
 </p>
 
-$\blacksquare$.
+$\blacksquare$
