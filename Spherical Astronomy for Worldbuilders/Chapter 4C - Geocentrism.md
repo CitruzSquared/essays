@@ -108,7 +108,7 @@ c = \text{arccot}(\sin(\beta)\tan(\lambda) - \cos(\beta)\cot(\varepsilon)\sec(\l
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Given that on $\text{July 22, } 2024$, the mean longitude of the Moon was $310\degree$ $29'$, the ecliptic coordinates of the Moon were $\lambda = 307\degree$ $21'$ and $\beta = -4\degree$ $27'$, and the longitude of the ascending node of the orbit of the Moon was $8\degree$ $47'$, find the libration angles $l$, $b$, $c$. <br/>
+Given that on $\text{July 22, } 2024$, the mean longitude of the Moon was $310\degree$ $29'$, the ecliptic coordinates of the Moon were $\lambda = 307\degree$ $21'$ and $\beta = -4\degree$ $27'$, and the longitude of the ascending node of the orbit of the Moon was $8\degree$ $47'$, find the libration angles $l$, $b$, and $c$. <br/>
   Use $I = 1.54\degree$ and $\varepsilon = 23.44\degree$.
 <img width="2000" height="0">
 </td>
