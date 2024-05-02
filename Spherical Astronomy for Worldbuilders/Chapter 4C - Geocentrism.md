@@ -140,7 +140,8 @@ KEP_0 &= \text{arccot}(\sin(-4\degree\:27')\tan(8\degree\:47' - 307\degree\:21')
 &= 44'
 \end{align}
 ```
-Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. Drawn, this looks like:
+Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. \
+Drawn, this looks like:
 
 <p align="center">
   <img width="450" src="https://github.com/CitruzSquared/essays/assets/23460281/737c1e95-f375-4891-a349-8c72863b3b2f"> <br/>
