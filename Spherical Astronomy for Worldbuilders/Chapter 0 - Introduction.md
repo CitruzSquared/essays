@@ -132,8 +132,8 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 ```math
 \begin{align}
 \\
-\frac{\sin(A)}{a} &= \frac{\sin(B)}{b} = \frac{\sin(C)}{c}\\
 c^2 &= a^2 + b^2 - 2ac\cos(C)\\
+\frac{\sin(A)}{a} &= \frac{\sin(B)}{b} = \frac{\sin(C)}{c}\\
 S &= \frac{1}{2}ab\sin(C)\\
 A + B + C &= 180\degree \\
 \end{align}
