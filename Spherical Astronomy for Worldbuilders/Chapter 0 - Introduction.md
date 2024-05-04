@@ -159,7 +159,7 @@ S &= \frac{1}{2}r^2 \theta \\
 ```math
 \begin{align}
 \\
-A + B + C & >= 180\degree\\
+A + B + C &\geq 180\degree\\
 \cos(a) &= \cos(b)\cos(c) + \sin(b)\sin(c)\cos(A) \\
 \cos(A) &= -\cos(B)\cos(C) + \sin(B)\sin(C)\cos(a) \\
 \sin(a)\cos(B) &= \cos(b)\sin(c) - \sin(b)\cos(c)\cos(A) \\
