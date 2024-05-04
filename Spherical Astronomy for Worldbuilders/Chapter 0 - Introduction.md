@@ -154,6 +154,22 @@ S &= \frac{1}{2}r^2 \theta \\
 \end{align}
 ```
 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2d384219-b162-4b88-a5e3-4def24e6bc2f" width="250"/>
+
+```math
+\begin{align}
+\\
+\\
+\cos(a) &= \cos(b)\cos(c) + \sin(b)\sin(c)\cos(A) \\
+\cos(A) &= -\cos(B)\cos(C) + \sin(B)\sin(C)\cos(a) \\
+\sin(a)\cos(B) &= \cos(b)\sin(c) - \sin(b)\cos(c)\cos(A) \\
+\sin(a)\cos(B) &= \cos(b)\sin(c) - \sin(b)\cos(c)\cos(A) \\
+\frac{\sin(a)}{\sin(A)} &= \frac{\sin(b)}{\sin(B)} = \frac{\sin(c)}{\sin(C)}\\
+\cos(a)\cos(C) &= \sin(a)\cot(b) - \sin(C)\cot(B)
+\end{align}
+```
+<br/>
+
 ### Trigonometry
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/d0fd51e1-67d1-44fd-8777-89537e5ecbf6" width="250"/>
 
@@ -200,6 +216,7 @@ Two Argument Arctangent:
 \text{undefined} &\text{ if } x = 0 \text{ and } y = 0
 \end{cases}
 ```
+
 ### Calculus
 ```math
 \begin{align}
