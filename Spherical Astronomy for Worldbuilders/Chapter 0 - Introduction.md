@@ -169,6 +169,7 @@ S &= \frac{1}{2}r^2 \theta \\
 \end{align}
 ```
 <br/>
+<br/>
 
 ### Trigonometry
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/d0fd51e1-67d1-44fd-8777-89537e5ecbf6" width="250"/>
