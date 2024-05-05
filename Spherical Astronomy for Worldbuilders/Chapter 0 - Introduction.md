@@ -159,6 +159,7 @@ S &= \frac{1}{2}r^2 \theta \\
 ```math
 \begin{align}
 \\
+\\
 A + B + C &\geq 180\degree\\
 \cos(a) &= \cos(b)\cos(c) + \sin(b)\sin(c)\cos(A) \\
 \cos(A) &= -\cos(B)\cos(C) + \sin(B)\sin(C)\cos(a) \\
@@ -170,7 +171,7 @@ A + B + C &\geq 180\degree\\
 \end{align}
 ```
 
-<br/>
+</br>
 
 ### Trigonometry
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/d0fd51e1-67d1-44fd-8777-89537e5ecbf6" width="250"/>
