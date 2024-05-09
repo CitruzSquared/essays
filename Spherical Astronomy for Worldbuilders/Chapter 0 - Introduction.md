@@ -208,7 +208,7 @@ A + B + C &\geq 180\degree\\
 \cot^2(\alpha) + 1 &= \csc^2(\alpha)
 \end{align}
 ```
-Two Argument Arctangent:
+**Two Argument Arctangent:**
 ```math
 \arctan(y, x) = \begin{cases}
 \arctan(y/x) &\text{ if } x > 0 \\
@@ -343,7 +343,7 @@ a_3 & a_6 & a_9
 \end{bmatrix}
 \end{align}
 ```
-Coordinate Transformation Rotation Matrices:\
+**Coordinate Transformation Rotation Matrices:**\
 $R_x$ denotes a rotation about the $x$-axis by $\theta$, similar for $R_y$ and $R_z$.
 ```math
 \textbf{v}_{\text{New Coordinate Frame}} = R_n R_{n-1}\cdots R_2 R_1\textbf{v}_{\text{Old Coordinate Frame}}
