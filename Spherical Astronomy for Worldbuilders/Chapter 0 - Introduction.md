@@ -126,53 +126,6 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \end{align}
 ```
 
-### Geometry
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/669a9787-9f70-4c9e-89d5-e7f390f5bdbc" width="250"/>
-
-```math
-\begin{align}
-\\
-A + B + C &= 180\degree \\
-a^2 &= b^2 + c^2 - 2bc\cos(A)\\
-\frac{a}{\sin(A)} &= \frac{b}{\sin(B)} = \frac{c}{\sin(C)}\\
-S &= \frac{1}{2}ab\sin(C)\\
-\end{align}
-```
-<br/>
-
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e5e14475-0c35-41fb-affc-e0c08afefc50" width="250"/>
-
-```math
-\begin{align}
-(\theta \text{ in} &\text{ radians})\\
-C &= r\theta\\
-S &= \frac{1}{2}r^2 \theta \\
-\\
-2\pi\text{ rad} &= 360\degree = 1\text{ rev} = 24^h\\
-1\degree &= 60' = 3600''\\
-1^h &= 60^m = 3600^s
-\end{align}
-```
-
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2d384219-b162-4b88-a5e3-4def24e6bc2f" width="250"/>
-
-```math
-\begin{align}
-\\
-\\
-A + B + C &\geq 180\degree\\
-\cos(a) &= \cos(b)\cos(c) + \sin(b)\sin(c)\cos(A) \\
-\cos(A) &= -\cos(B)\cos(C) + \sin(B)\sin(C)\cos(a) \\
-\sin(a)\cos(B) &= \cos(b)\sin(c) - \sin(b)\cos(c)\cos(A) \\
-\sin(A)\cos(b) &= \cos(B)\sin(C) - \sin(B)\cos(C)\cos(a) \\
-\frac{\sin(a)}{\sin(A)} &= \frac{\sin(b)}{\sin(B)} = \frac{\sin(c)}{\sin(C)}\\
-\cos(a)\cos(C) &= \sin(a)\cot(b) - \sin(C)\cot(B) \\
-\cos(A)\cos(c) &= \sin(A)\cot(B) - \sin(c)\cot(b)
-\end{align}
-```
-
-</br>
-
 ### Trigonometry
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/d0fd51e1-67d1-44fd-8777-89537e5ecbf6" width="250"/>
 
@@ -219,6 +172,53 @@ A + B + C &\geq 180\degree\\
 \text{undefined} &\text{ if } x = 0 \text{ and } y = 0
 \end{cases}
 ```
+
+### Geometry
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/669a9787-9f70-4c9e-89d5-e7f390f5bdbc" width="250"/>
+
+```math
+\begin{align}
+\\
+A + B + C &= 180\degree \\
+a^2 &= b^2 + c^2 - 2bc\cos(A)\\
+\frac{a}{\sin(A)} &= \frac{b}{\sin(B)} = \frac{c}{\sin(C)}\\
+S &= \frac{1}{2}ab\sin(C)\\
+\end{align}
+```
+<br/>
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/e5e14475-0c35-41fb-affc-e0c08afefc50" width="250"/>
+
+```math
+\begin{align}
+(\theta \text{ in} &\text{ radians})\\
+C &= r\theta\\
+S &= \frac{1}{2}r^2 \theta \\
+\\
+2\pi\text{ rad} &= 360\degree = 1\text{ rev} = 24^h\\
+1\degree &= 60' = 3600''\\
+1^h &= 60^m = 3600^s
+\end{align}
+```
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2d384219-b162-4b88-a5e3-4def24e6bc2f" width="250"/>
+
+```math
+\begin{align}
+\\
+\\
+A + B + C &\geq 180\degree\\
+\cos(a) &= \cos(b)\cos(c) + \sin(b)\sin(c)\cos(A) \\
+\cos(A) &= -\cos(B)\cos(C) + \sin(B)\sin(C)\cos(a) \\
+\sin(a)\cos(B) &= \cos(b)\sin(c) - \sin(b)\cos(c)\cos(A) \\
+\sin(A)\cos(b) &= \cos(B)\sin(C) - \sin(B)\cos(C)\cos(a) \\
+\frac{\sin(a)}{\sin(A)} &= \frac{\sin(b)}{\sin(B)} = \frac{\sin(c)}{\sin(C)}\\
+\cos(a)\cos(C) &= \sin(a)\cot(b) - \sin(C)\cot(B) \\
+\cos(A)\cos(c) &= \sin(A)\cot(B) - \sin(c)\cot(b)
+\end{align}
+```
+
+<br/>
 
 ### Calculus
 ```math
