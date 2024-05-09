@@ -245,6 +245,24 @@ A + B + C &\geq 180\degree\\
 &= f(b) - f(a)
 \end{align}
 ```
+
+### 3D Coordinates
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/94cceab5-f476-40ff-a7fa-393ea8eb08f1" width="250"/>
+
+$O$ is the origin. Lines $OX$, $OY$, and $OZ$ are the $x$, $y$, and $z$ axes respectively and are all perpendicular to each other. \
+Planes $OXY$, $OXZ$, and $OYZ$ are the $xy$, $xz$, and $yz$ planes respectively and are all perpendicular to each other. \
+$F$ is the orthogonal projection of $P$ onto the $xy$-plane. \
+$I$ and $J$ are the orthogonal projections of $F$ onto the $x$ and $y$ axes respectively.
+
+The coordinates of $P$ can be expressed in *cartesian* (or *rectangular*) coordinates as:
+```math
+x = IF \enspace\enspace y = JF \enspace\enspace z = FP
+```
+or in spherical coordinates as:
+```math
+\rho = OP \enspace\enspace \theta = XOF \enspace\enspace \phi = FOP
+```
+
 ### Vectors
 $\textbf{e}_1$, $\textbf{e}_2$, and $\textbf{e}_3$ are the unit cartesian basis vectors of $\mathbb{R}^3$.\
 $\theta$ is the angle between $\textbf{v}$ and $\textbf{u}$.\
@@ -275,6 +293,7 @@ v_2u_3-v_3u_2 \\ v_3u_1-v_1u_3 \\ v_1u_2-v_2u_1
 (\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{u}\cdot\textbf{w})\textbf{v}
 \end{align}
 ```
+
 ### Matrices
 ```math
 \begin{align}
