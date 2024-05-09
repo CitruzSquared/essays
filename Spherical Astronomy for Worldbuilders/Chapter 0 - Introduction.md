@@ -195,7 +195,7 @@ S &= \frac{1}{2}ab\sin(C)\\
 C &= r\theta\\
 S &= \frac{1}{2}r^2 \theta \\
 \\
-2\pi\text{ rad} &= 360\degree = 1\text{ rev} = 24^h\\
+1\text{ rev} &= 2\pi\text{ rad} = 360\degree = 24^h\\
 1\degree &= 60' = 3600''\\
 1^h &= 60^m = 3600^s
 \end{align}
