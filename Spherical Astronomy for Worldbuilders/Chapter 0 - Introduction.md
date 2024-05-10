@@ -258,7 +258,7 @@ The coordinates of $P$ can be expressed in *cartesian* (or *rectangular*) coordi
 ```math
 x = IF \enspace\enspace y = JF \enspace\enspace z = FP
 ```
-or in spherical coordinates as:
+or in *spherical* coordinates as:
 ```math
 \rho = OP \enspace\enspace \theta = XOF \enspace\enspace \phi = FOP
 ```
