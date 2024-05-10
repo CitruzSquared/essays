@@ -259,7 +259,7 @@ $I$ and $J$ are the orthogonal projections of $F$ onto the $x$ and $y$ axes resp
 
 The coordinates of $P$ can be expressed in *cartesian* (or *rectangular*) coordinates as:
 ```math
-x = IF \enspace\enspace y = JF \enspace\enspace z = FP
+x = JF \enspace\enspace y = IF \enspace\enspace z = FP
 ```
 or in *spherical* coordinates as:
 ```math
