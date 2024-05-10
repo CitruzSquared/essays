@@ -262,6 +262,12 @@ or in *spherical* coordinates as:
 ```math
 \rho = OP \enspace\enspace \theta = XOF \enspace\enspace \phi = FOP
 ```
+The position vector $\textbf{r}$ is given as:
+```math
+\textbf{r} = \begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}
+```
 
 ### Vectors
 $\textbf{e}_1$, $\textbf{e}_2$, and $\textbf{e}_3$ are the unit cartesian basis vectors of $\mathbb{R}^3$.\
@@ -273,6 +279,7 @@ $\textbf{0}$ is the zero vector.
 v_1 \\ v_2 \\ v_3
 \end{bmatrix} = v_1\textbf{e}_1 + v_2\textbf{e}_2 + v_3\textbf{e}_3 \\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
+\hat{\textbf{v}} &= \frac{\textbf{v}}{|\textbf{v}|}\\
 a\textbf{v} + b\textbf{u} &= \begin{bmatrix}
 av_1 + bu_1 \\ av_1 + bu_2 \\ av_3 + bu_3
 \end{bmatrix}\\
@@ -293,7 +300,13 @@ v_2u_3-v_3u_2 \\ v_3u_1-v_1u_3 \\ v_1u_2-v_2u_1
 (\textbf{v}\times\textbf{u})\times\textbf{w} &= (\textbf{v}\cdot\textbf{w})\textbf{u}-(\textbf{u}\cdot\textbf{w})\textbf{v}
 \end{align}
 ```
-
+**Orthogonal Projections of Vectors onto other Vectors:**
+```math
+\begin{align}
+\text{proj}_\textbf{v} \textbf{u} &= (\hat{\textbf{v}}\cdot\textbf{u})\textbf{v} = \frac{\textbf{v}\cdot\textbf{u}}{\textbf{v}\cdot\textbf{v}}\textbf{v} = \frac{\textbf{v}\textbf{v}^T}{\textbf{v}\cdot\textbf{v}}\textbf{u}\\
+\text{oproj}_\textbf{v} \textbf{u} &= \textbf{u} - \text{proj}_\textbf{v} \textbf{u}
+\end{align}
+```
 ### Matrices
 ```math
 \begin{align}
@@ -359,6 +372,24 @@ a_7 & a_8 & a_9
 a_1 & a_4 & a_7 \\
 a_2 & a_5 & a_8 \\
 a_3 & a_6 & a_9
+\end{bmatrix}\\
+\begin{bmatrix}
+a_1 \\ a_2 \\ a_3 
+\end{bmatrix}^T
+&=
+\begin{bmatrix}
+a_1 & a_2 & a_3 
+\end{bmatrix}
+\end{align}
+```
+Let $\textbf{a}$ and $\textbf{b}$ be two vectors in $\mathbb{R}^3$.
+```math
+\begin{align}
+\textbf{a}^T \textbf{b} &= \textbf{a} \cdot \textbf{b}\\
+\textbf{a} \textbf{b}^T &= \begin{bmatrix}
+a_1b_1 & a_1b_2 & a_1b_3 \\
+a_2b_1 & a_2b_2 & a_2b_3 \\
+a_3b_1 & a_3b_2 & a_3b_3
 \end{bmatrix}
 \end{align}
 ```
