@@ -383,7 +383,8 @@ a_1 \\ a_2 \\ a_3
 \begin{bmatrix}
 a_1 & a_2 & a_3 
 \end{bmatrix}\\
-\left(A^T\right)^T &= A
+\left(A^T\right)^T &= A\\
+(AB)^T &= B^TA^T
 \end{align}
 ```
 Let $\textbf{a}$ and $\textbf{b}$ be two vectors in $\mathbb{R}^3$.
