@@ -300,10 +300,18 @@ v_2u_3-v_3u_2 \\ v_3u_1-v_1u_3 \\ v_1u_2-v_2u_1
 \end{align}
 ```
 **Orthogonal Projections of Vectors onto other Vectors:**
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/454bfcf5-b628-406b-b2b9-0a0fc3a83502" width="250"/>
+
 ```math
 \begin{align}
+\\
+\\
 \text{proj}_\textbf{v} \textbf{u} &= (\hat{\textbf{v}}\cdot\textbf{u})\textbf{v} = \frac{\textbf{v}\cdot\textbf{u}}{\textbf{v}\cdot\textbf{v}}\textbf{v} = \frac{\textbf{v}\textbf{v}^T}{\textbf{v}\cdot\textbf{v}}\textbf{u}\\
-\text{oproj}_\textbf{v} \textbf{u} &= \textbf{u} - \text{proj}_\textbf{v} \textbf{u}
+\text{oproj}_\textbf{v} \textbf{u} &= \textbf{u} - \text{proj}_\textbf{v} \textbf{u}\\
+\textbf{v} \cdot \text{proj}_\textbf{v} \textbf{u} &= \textbf{v}\cdot\textbf{u}\\
+\textbf{v} \cdot \text{oproj}_\textbf{v} \textbf{u} &= 0\\
+\\
 \end{align}
 ```
 ### Matrices
@@ -326,7 +334,6 @@ ca_1 + db_1 & ca_2 + db_2 & ca_3 + db_3 \\
 ca_4 + db_4 & ca_5 + db_5 & ca_6 + db_6 \\
 ca_7 + db_7 & ca_8 + db_8 & ca_9 + db_9
 \end{bmatrix}\\
-\\
 \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 a_4 & a_5 & a_6 \\
@@ -341,7 +348,6 @@ a_1b_1 + a_2b_2 + a_3b_3 \\
 a_4b_1 + a_5b_2 + a_6b_3 \\
 a_7b_1 + a_8b_2 + a_9b_3
 \end{bmatrix}\\
-\\
 \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 a_4 & a_5 & a_6 \\
@@ -358,9 +364,7 @@ a_1b_1 + a_2b_4 + a_3b_7 & a_1b_2 + a_2b_5 + a_3b_8 & a_1b_3 + a_2b_6 + a_3b_9 \
 a_4b_1 + a_5b_4 + a_6b_7 & a_4b_2 + a_5b_5 + a_6b_8 & a_4b_3 + a_5b_6 + a_6b_9 \\
 a_7b_1 + a_8b_4 + a_9b_7 & a_7b_2 + a_8b_5 + a_9b_8 & a_7b_3 + a_8b_6 + a_9b_9
 \end{bmatrix}\\
-\\
 AB &\neq BA\\
-\\
 \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 a_4 & a_5 & a_6 \\
@@ -378,7 +382,8 @@ a_1 \\ a_2 \\ a_3
 &=
 \begin{bmatrix}
 a_1 & a_2 & a_3 
-\end{bmatrix}
+\end{bmatrix}\\
+\left(A^T\right)^T &= A
 \end{align}
 ```
 Let $\textbf{a}$ and $\textbf{b}$ be two vectors in $\mathbb{R}^3$.
