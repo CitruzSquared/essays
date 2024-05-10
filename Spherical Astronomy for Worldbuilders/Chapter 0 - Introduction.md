@@ -293,7 +293,7 @@ av_1 + bu_1 \\ av_1 + bu_2 \\ av_3 + bu_3
 \textbf{v}\times\textbf{u} &= \begin{bmatrix}
 v_2u_3-v_3u_2 \\ v_3u_1-v_1u_3 \\ v_1u_2-v_2u_1
 \end{bmatrix}\\
-&= -\textbf{u}\times\textbf{v}\\
+&= -(\textbf{u}\times\textbf{v})\\
 |\textbf{v}\times\textbf{u}| &= |\textbf{v}||\textbf{u}|\sin(\theta)\\
 \textbf{v}\times\textbf{v} &= \textbf{0}\\
 \textbf{v}\cdot(\textbf{v}\times\textbf{u}) &= 0 = \textbf{u}\cdot(\textbf{v}\times\textbf{u}) \\
