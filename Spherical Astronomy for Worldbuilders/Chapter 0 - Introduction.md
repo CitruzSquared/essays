@@ -208,10 +208,9 @@ S &= \frac{1}{2}r^2 \theta \\
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/2d384219-b162-4b88-a5e3-4def24e6bc2f" width="250"/>
 
+$A$, $B$, $C$ are points on a sphere with center $O$. Let the angles $BAC$, $ABC$, and $BCA$ be denoted $A$, $B$, and $C$ respectively, and the angles $BOC$, $COA$, and $AOB$ be denoted $a$, $b$, and $c$ respectively.
 ```math
 \begin{align}
-\\
-\\
 A + B + C &\geq 180\degree\\
 \cos(a) &= \cos(b)\cos(c) + \sin(b)\sin(c)\cos(A) \\
 \cos(A) &= -\cos(B)\cos(C) + \sin(B)\sin(C)\cos(a) \\
