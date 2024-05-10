@@ -275,14 +275,14 @@ x \\ y \\ z
 ```
 
 ### Vectors
-$\textbf{e}_1$, $\textbf{e}_2$, and $\textbf{e}_3$ are the unit cartesian basis vectors of $\mathbb{R}^3$.\
+$\textbf{e}_x$, $\textbf{e}_y$, and $\textbf{e}_z$ are the unit cartesian basis vectors of $\mathbb{R}^3$.\
 $\theta$ is the angle between $\textbf{v}$ and $\textbf{u}$.\
 $\textbf{0}$ is the zero vector.
 ```math
 \begin{align}
 \textbf{v} &= \begin{bmatrix}
 v_1 \\ v_2 \\ v_3
-\end{bmatrix} = v_1\textbf{e}_1 + v_2\textbf{e}_2 + v_3\textbf{e}_3 \\
+\end{bmatrix} = v_1\textbf{e}_x + v_2\textbf{e}_y + v_3\textbf{e}_z \\
 |\textbf{v}| &= \sqrt{v_1^2 + v_2^2 + v_3^3} \\
 \hat{\textbf{v}} &= \frac{\textbf{v}}{|\textbf{v}|}\\
 a\textbf{v} + b\textbf{u} &= \begin{bmatrix}
