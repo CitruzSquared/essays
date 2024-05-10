@@ -146,15 +146,15 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \begin{align}
 \text{trig}(\alpha + n\cdot 360\degree) &= \text{trig}(\alpha)\enspace\{n \in \mathbb{Z}\}\\
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
+\csc(\alpha) &= \frac{1}{\sin(\alpha)}\\
+\sec(\alpha) &= \frac{1}{\cos(\alpha)}\\
+\cot(\alpha) &= \frac{1}{\tan(\alpha)}\\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
 \cos(\alpha) &= \cos(-\alpha) = -\cos(\alpha + 180\degree) = -\cos(180\degree - \alpha)\\
 \tan(\alpha) &= -\tan(-\alpha) = \tan(\alpha + 180\degree) = -\tan(180\degree - \alpha)\\
 \sin(\alpha) &= \cos(90\degree - \alpha) = -\cos(90\degree + \alpha) = \cos(\alpha - 90\degree)\\
 \cos(\alpha) &= \sin(90\degree - \alpha) = \sin(90\degree + \alpha) = -\sin(\alpha - 90\degree)\\
-\tan(\alpha) &= cot(90\degree - \alpha) = \cot(90\degree  + \alpha) = -\cot(\alpha - 90\degree)\\
-\csc(\alpha) &= \frac{1}{\sin(\alpha)}\\
-\sec(\alpha) &= \frac{1}{\cos(\alpha)}\\
-\cot(\alpha) &= \frac{1}{\tan(\alpha)}\\
+\tan(\alpha) &= \cot(90\degree - \alpha) = \cot(90\degree  + \alpha) = -\cot(\alpha - 90\degree)\\
 \sin(\alpha\pm\beta) &= \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta) \\
 \cos(\alpha\pm\beta) &= \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta) \\
 \sin^2(\alpha) + \cos^2(\alpha) &= 1 \\
