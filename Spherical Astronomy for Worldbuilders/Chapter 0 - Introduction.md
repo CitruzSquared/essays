@@ -312,7 +312,7 @@ v_2u_3-v_3u_2 \\ v_3u_1-v_1u_3 \\ v_1u_2-v_2u_1
 \begin{align}
 \\
 \\
-\text{proj}_\textbf{v} \textbf{u} &= (\hat{\textbf{v}}\cdot\textbf{u})\textbf{v} = \frac{\textbf{v}\cdot\textbf{u}}{\textbf{v}\cdot\textbf{v}}\textbf{v} = \frac{\textbf{v}\textbf{v}^T}{\textbf{v}\cdot\textbf{v}}\textbf{u}\\
+\text{proj}_\textbf{v} \textbf{u} &= (\textbf{v}\cdot\textbf{u})\hat{\textbf{v}} = \frac{\textbf{v}\cdot\textbf{u}}{\textbf{v}\cdot\textbf{v}}\textbf{v} = \frac{\textbf{v}\textbf{v}^T}{\textbf{v}\cdot\textbf{v}}\textbf{u}\\
 \text{oproj}_\textbf{v} \textbf{u} &= \textbf{u} - \text{proj}_\textbf{v} \textbf{u}\\
 \textbf{v} \cdot \text{proj}_\textbf{v} \textbf{u} &= \textbf{v}\cdot\textbf{u}\\
 \textbf{v} \cdot \text{oproj}_\textbf{v} \textbf{u} &= 0\\
