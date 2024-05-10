@@ -155,11 +155,15 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \sin(\alpha) &= \cos(90\degree - \alpha) = -\cos(90\degree + \alpha) = \cos(\alpha - 90\degree)\\
 \cos(\alpha) &= \sin(90\degree - \alpha) = \sin(90\degree + \alpha) = -\sin(\alpha - 90\degree)\\
 \tan(\alpha) &= \cot(90\degree - \alpha) = \cot(90\degree  + \alpha) = -\cot(\alpha - 90\degree)\\
-\sin(\alpha\pm\beta) &= \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta) \\
-\cos(\alpha\pm\beta) &= \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta) \\
 \sin^2(\alpha) + \cos^2(\alpha) &= 1 \\
 \tan^2(\alpha) + 1 &= \sec^2(\alpha) \\
-\cot^2(\alpha) + 1 &= \csc^2(\alpha)
+\cot^2(\alpha) + 1 &= \csc^2(\alpha) \\
+\sin(\alpha\pm\beta) &= \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta) \\
+\cos(\alpha\pm\beta) &= \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta) \\
+\sin(2\alpha) &= 2\sin(\alpha)\cos(\alpha) \\
+\cos(2\alpha) &= \cos^2(\alpha) - \sin^2(\alpha) = 2\cos^2(\alpha) - 1 = 1 - 2\sin^2(\alpha) \\
+\sin^2(\alpha) &= \frac{1}{2}(1 - \cos(2\alpha)) \\
+\cos^2(\alpha) &= \frac{1}{2}(1 + \cos(2\alpha))
 \end{align}
 ```
 **Two Argument Arctangent:**
