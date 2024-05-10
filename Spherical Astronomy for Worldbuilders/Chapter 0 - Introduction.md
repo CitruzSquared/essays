@@ -364,7 +364,6 @@ a_1b_1 + a_2b_4 + a_3b_7 & a_1b_2 + a_2b_5 + a_3b_8 & a_1b_3 + a_2b_6 + a_3b_9 \
 a_4b_1 + a_5b_4 + a_6b_7 & a_4b_2 + a_5b_5 + a_6b_8 & a_4b_3 + a_5b_6 + a_6b_9 \\
 a_7b_1 + a_8b_4 + a_9b_7 & a_7b_2 + a_8b_5 + a_9b_8 & a_7b_3 + a_8b_6 + a_9b_9
 \end{bmatrix}\\
-AB &\neq BA\\
 \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 a_4 & a_5 & a_6 \\
@@ -383,6 +382,7 @@ a_1 \\ a_2 \\ a_3
 \begin{bmatrix}
 a_1 & a_2 & a_3 
 \end{bmatrix}\\
+AB &\neq BA\\
 \left(A^T\right)^T &= A\\
 (AB)^T &= B^TA^T
 \end{align}
