@@ -25,12 +25,16 @@ Now, let us say that the distance of the observer from the shadow axis at the mo
 In the above equation, we know $x$, $y$, and $E$, but we do not know $\Delta$.\
 Putting 
 ```math
-\begin{align}
-m\sin(M) &= x\\
-m\cos(M) &= y\\
-p\sin(\gamma) &= \xi\\
-p\cos(\gamma) &= \eta
-\end{align}
+\displaylines{
+\begin{cases}
+m\sin(M) = x\\
+m\cos(M) = y
+\end{cases}
+\enspace\enspace\enspace\enspace
+\begin{cases}
+p\sin(\gamma) = \xi\\
+p\cos(\gamma) = \eta
+\end{cases} }
 ```
 as before, the above conditions become:
 ```math
