@@ -65,13 +65,17 @@ Now, equations $9.7$ become:
 ```
 Let
 ```math
-\begin{align}
-\rho_1 \sin(d_1) &= \sin(d)\\
-\rho_1 \cos(d_1) &= \cos(d)\sqrt{1 - e^2}\\
-\tag{9.21}\\
-\rho_2 \sin(d_2) &= \sin(d)\sqrt{1 - e^2}\\
-\rho_2 \cos(d_2) &= \cos(d)\\
-\end{align}
+\displaylines{
+\begin{cases}
+\rho_1 \sin(d_1) = \sin(d) \\
+\rho_1 \cos(d_1) = \cos(d)\sqrt{1 - e^2}
+\end{cases}
+\enspace\enspace\enspace\enspace
+\begin{cases}
+\rho_2 \sin(d_2) = \sin(d)\sqrt{1 - e^2}\\
+\rho_2 \cos(d_2) = \cos(d)
+\end{cases}
+}\tag{9.21}
 ```
 Since $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$, they can be calculated along with the Besselian elements. Note that the subscripts do not mean penumbra and umbra here: they are just there to distinguish the variables.\
 Now, equations $9.20$ become:
