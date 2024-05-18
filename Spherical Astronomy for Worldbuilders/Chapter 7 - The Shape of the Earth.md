@@ -75,6 +75,28 @@ From the equation of the ellipse and its derivative, substituting $1 - e^2$ for 
 ```
 we find:
 ```math
+\displaylines{
+y = x(1 - e^2) \tan(\phi)\\
+\therefore x^2 + x^2(1 - e^2)\tan^2(\phi) = a^2\\
+\therefore x^2 \left(1 + (1 - e^2)\cdot\frac{\sin^2(\phi)}{\cos^2(\phi)}\right) = a^2\\
+\begin{align}
+\therefore x^2 &= \frac{a^2}{1 + (1 - e^2)\cdot\frac{\sin^2(\phi)}{\cos^2(\phi)}}\\
+&= \frac{a^2\cos^2(\phi)}{\cos^2(\phi) + (1 - e^2)\sin^2(\phi)}\\
+&= \frac{a^2\cos^2(\phi)}{\cos^2(\phi) + \sin^2(\phi) - e^2\sin^2(\phi)}\\
+&= \frac{a^2\cos^2(\phi)}{1 - e^2\sin^2(\phi)}\\
+\therefore x &= \frac{a \cos(\phi)}{\sqrt{1 - e^2\sin^2(\phi)}}
+\end{align}
+}
+```
+And now solving for $y$:
+```math
+\begin{align}
+y &= \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\cdot(1 - e^2)\cdot\frac{\sin(\phi)}{\cos(\phi)}\\
+&= \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\end{align}
+```
+Thus:
+```math
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 \:\:\:\text{and}\:\:\:
 y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
