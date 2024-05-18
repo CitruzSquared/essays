@@ -21,12 +21,16 @@ Also, notice that because the shadow cone is tangent to the Earth, at the locati
 ```
 On the fundamental plane, let's define $m$, $M$, $p$, and $\gamma$ such that:
 ```math
-\begin{align}
-m\sin(M) &= x\\
-m\cos(M) &= y\\
-p\sin(\gamma) &= \xi\\
-p\cos(\gamma) &= \eta
-\end{align} \tag{9.52}
+\displaylines{
+\begin{cases}
+m\sin(M) = x\\
+m\cos(M) = y
+\end{cases}
+\enspace\enspace\enspace\enspace
+\begin{cases}
+p\sin(\gamma) = \xi\\
+p\cos(\gamma) = \eta
+\end{cases} }\tag{9.52}
 ```
 Then, the distance from the center of the Earth to $(x, y)$ is $m$ and the distance to $(\xi, \eta)$ is $p$.\
 Thus, at the contacts we have:
@@ -50,12 +54,16 @@ y &= y_0 + y'\tau
 ```
 If we now put:
 ```math
-\begin{align}
-m_0\sin(M_0) &= x_0\\
-m_0\cos(M_0) &= y_0\\
-n\sin(N) &= x'\\
-n\cos(N) &= y'
-\end{align} \tag{9.54}
+\displaylines{
+\begin{cases}
+m_0\sin(M_0) = x_0\\
+m_0\cos(M_0) = y_0
+\end{cases}
+\enspace\enspace\enspace\enspace
+\begin{cases}
+n\sin(N) = x'\\
+n\cos(N) = y'
+\end{cases} } \tag{9.54}
 ```
 Then equations $9.53$ become:
 ```math
