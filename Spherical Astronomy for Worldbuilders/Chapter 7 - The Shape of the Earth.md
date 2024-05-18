@@ -110,7 +110,7 @@ But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
 \end{align}
 } \tag{7.6}
 ```
-With the addition of an auxiliary $\psi$ defined via $\sin(\psi) &= e\sin(\phi)$, these equations can be simplified:
+With the addition of an auxiliary $\psi$ defined via $\sin(\psi) = e\sin(\phi)$, these equations can be simplified:
 ```math
 \begin{align}
 \sin(\psi) &= e\sin(\phi)\\
