@@ -148,7 +148,7 @@ ax^2 + bx + c = 0 &\implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
 \tan(\alpha) &= \frac{\sin(\alpha)}{\cos(\alpha)} \\
 \csc(\alpha) &= \frac{1}{\sin(\alpha)}\\
 \sec(\alpha) &= \frac{1}{\cos(\alpha)}\\
-\cot(\alpha) &= \frac{1}{\tan(\alpha)}\\
+\cot(\alpha) &= \frac{1}{\tan(\alpha)}= \frac{\cos(\alpha)}{\sin(\alpha)} \\
 \sin(\alpha) &= -\sin(-\alpha) = -\sin(\alpha + 180\degree) = \sin(180\degree - \alpha) \\
 &= \cos(90\degree - \alpha) = -\cos(90\degree + \alpha) = \cos(\alpha - 90\degree)\\
 \cos(\alpha) &= \cos(-\alpha) = -\cos(\alpha + 180\degree) = -\cos(180\degree - \alpha)\\
