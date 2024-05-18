@@ -90,7 +90,8 @@ y = x(1 - e^2) \tan(\phi)\\
 And now solving for $y$:
 ```math
 \begin{align}
-y &= \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\cdot(1 - e^2)\cdot\frac{\sin(\phi)}{\cos(\phi)}\\
+y &= x(1 - e^2) \tan(\phi)\\
+&= \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\cdot(1 - e^2)\cdot\frac{\sin(\phi)}{\cos(\phi)}\\
 &= \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 \end{align}
 ```
