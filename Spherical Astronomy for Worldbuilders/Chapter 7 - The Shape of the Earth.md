@@ -81,7 +81,6 @@ y = x(1 - e^2) \tan(\phi)\\
 \therefore x^2 \left(1 + (1 - e^2)\cdot\frac{\sin^2(\phi)}{\cos^2(\phi)}\right) = a^2\\
 \begin{align}
 \therefore x^2 &= \frac{a^2}{1 + (1 - e^2)\cdot\frac{\sin^2(\phi)}{\cos^2(\phi)}}\\
-&= \frac{a^2\cos^2(\phi)}{\cos^2(\phi) + (1 - e^2)\sin^2(\phi)}\\
 &= \frac{a^2\cos^2(\phi)}{\cos^2(\phi) + \sin^2(\phi) - e^2\sin^2(\phi)}\\
 &= \frac{a^2\cos^2(\phi)}{1 - e^2\sin^2(\phi)}\\
 \therefore x &= \frac{a \cos(\phi)}{\sqrt{1 - e^2\sin^2(\phi)}}
