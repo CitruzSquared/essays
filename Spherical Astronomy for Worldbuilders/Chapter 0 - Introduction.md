@@ -44,6 +44,7 @@
      * Apparent Retrograde Motion
    - Part C (Eq. $4.30$ to $4.36$, Ex. $4.9$)
      * Lunar Libration
+     * Tip on Drawing Spheres
 5. **Time** (Eq. $5.1$ to $5.4$, Ex. $5.1$ to $5.3$)
    - Sidereal and Solar time
    - Converting between Times
