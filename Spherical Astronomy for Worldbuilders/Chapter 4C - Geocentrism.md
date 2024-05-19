@@ -169,4 +169,4 @@ When drawing a sphere with the center of the disk at coordinates $(l, b)$, follo
 
 Because the two ellipses intersect at $4$ points, and only one of them is the true location of the zero point $M$, care must be taken to determine the correct intersection point.
 
-If $b$ is positive, the north pole will be visible (as in this case). if $b$ is negative, the north pole will be hidden behind the planet.
+If $b$ is positive, the north pole will be visible (as in this case). if $b$ is negative, the north pole will be hidden behind the sphere.
