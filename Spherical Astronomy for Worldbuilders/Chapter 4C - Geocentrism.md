@@ -162,7 +162,7 @@ When drawing a sphere with the center of the disk at coordinates $(l, b)$, follo
 
 <p align="center">
   <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/3fda3f0c-16db-4bee-baf9-35e557ac0a08"> <br/>
-  This diagram shows a sphere centered at $l = 30\degree$ and $b = 30\degree$. <br/>
+  This diagram shows a sphere centered at $l = -30\degree$ and $b = 30\degree$. <br/>
   $E$ is the center of the disk, and $P$ is the north pole.  <br/>
   Let the radius of the white circle be $r$. <br/>
   The red ellipse, the equatorial circle, has semi-minor axis $EA = r\sin(b)$. <br/>
