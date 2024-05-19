@@ -142,7 +142,7 @@ KEP_0 &= \text{arccot}(\sin(-4\degree\:27')\tan(8\degree\:47' - 307\degree\:21')
 \end{align}
 ```
 Thus $c = -15\degree$ $10' + 44' = -14\degree$ $6'$. \
-Drawn, this looks like:
+Drawn, this looks like (see next section for guide on how to draw):
 <p align="center">
   <img width="425" src="https://github.com/CitruzSquared/essays/assets/23460281/6bdd62ac-0320-48e5-9bf8-3ed22c610bf0"> <br/>
   The lunar axis is tilted from celestial North by $c = -14\degree$ $6'$ (negative means to the West). <br/> The center of the disk of the Moon, $E$, is at selenographic coordinates $(l, b) = (-3\degree$ $4',$ $5\degree$ $48'$). <br/> North is at the top and East is to the left. <br/> 
