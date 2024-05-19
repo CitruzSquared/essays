@@ -167,6 +167,6 @@ When drawing a sphere with the center of the disk at coordinates $(l, b)$, follo
 - The green ellipse, the meridional circle, has semi-minor axis $EB = r\cos(b)\sin(l)$, and is tilted by $TEB = -\arctan(\sin(b)\tan(l))$ (negative $=$ clockwise).
 - To account for the position angle of the axis (the libration angle $c$), tilt this whole diagram by $c$ (negative $=$ clockwise).
 
-Because the two ellipses intersect at $4$ points, and only one of them is the true location of the zero point $M$, care must be taken to determine the correct intersection point.
+Because the two ellipses intersect at four points, and only one of them is the true location of the zero point $M$, care must be taken to determine the correct intersection point.
 
 If $b$ is positive, the north pole will be visible (as in this case). if $b$ is negative, the north pole will be hidden behind the sphere.
