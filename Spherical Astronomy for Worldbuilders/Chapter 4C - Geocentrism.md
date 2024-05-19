@@ -160,13 +160,9 @@ $\blacksquare$
 ### Tip on Drawing Spheres
 When drawing a sphere with the center of the disk at coordinates $(l, b)$, follow this guide.
 
-<p align="center">
-  <img width="400" src="https://github.com/CitruzSquared/essays/assets/23460281/3fda3f0c-16db-4bee-baf9-35e557ac0a08"> <br/>
-  This diagram shows a sphere centered at $l = -30\degree$ and $b = 30\degree$. <br/>
-  $E$ is the center of the disk, and $P$ is the north pole.  <br/>
-  Let the radius of the white circle be $r$. <br/>
-  The red ellipse, the equatorial circle, has semi-minor axis $EA = r\sin(b)$. <br/>
-  The green ellipse, the meridional circle, has semi-minor axis $EB = r\cos(b)\sin(l)$, <br/> 
-  and is tilted by $TEB = -\arctan(\sin(b)\tan(l))$ (negative $=$ clockwise). <br/>
-  To account for the position angle of the axis (the libration angle $c$), tilt this whole diagram by $c$ (negative $=$ clockwise).
-</p>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/3fda3f0c-16db-4bee-baf9-35e557ac0a08" width="400"/> This diagram shows a sphere centered at $l = -30\degree$ and $b = 30\degree$. $E$ is the center of the disk, and $P$ is the north pole. 
+
+- Let the radius of the white circle be $r$.
+- The red ellipse, the equatorial circle, has semi-minor axis $EA = r\sin(b)$.
+- The green ellipse, the meridional circle, has semi-minor axis $EB = r\cos(b)\sin(l)$, and is tilted by $TEB = -\arctan(\sin(b)\tan(l))$ (negative $=$ clockwise).
+- To account for the position angle of the axis (the libration angle $c$), tilt this whole diagram by $c$ (negative $=$ clockwise).
