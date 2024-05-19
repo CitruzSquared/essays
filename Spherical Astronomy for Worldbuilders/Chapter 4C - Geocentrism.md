@@ -160,9 +160,13 @@ $\blacksquare$
 ### Tip on Drawing Spheres
 When drawing a sphere with the center of the disk at coordinates $(l, b)$, follow this guide.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/3fda3f0c-16db-4bee-baf9-35e557ac0a08" width="400"/> This diagram shows a sphere centered at $l = -30\degree$ and $b = 30\degree$. $E$ is the center of the disk, and $P$ is the north pole. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/a6dbdbf6-3991-4faf-88f5-6ed91f799b6f" width="400"/> This diagram shows a sphere centered at $l = -30\degree$ and $b = 30\degree$. $E$ is the center of the disk, and $P$ is the north pole. 
 
 - Let the radius of the white circle be $r$.
 - The red ellipse, the equatorial circle, has semi-minor axis $EA = r\sin(b)$.
 - The green ellipse, the meridional circle, has semi-minor axis $EB = r\cos(b)\sin(l)$, and is tilted by $TEB = -\arctan(\sin(b)\tan(l))$ (negative $=$ clockwise).
 - To account for the position angle of the axis (the libration angle $c$), tilt this whole diagram by $c$ (negative $=$ clockwise).
+
+Because the two ellipses intersect at $4$ points, and only one of them is the true location of $M$, care must be taken to determine the correct intersection point.
+
+If $b$ is positive, the north pole will be visible (as in this case). if $b$ is negative, the north pole will be hidden behind the planet.
