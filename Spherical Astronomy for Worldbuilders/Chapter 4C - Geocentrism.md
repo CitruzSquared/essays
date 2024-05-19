@@ -147,7 +147,7 @@ Drawn, this looks like (see next section for guide on how to draw):
   <img width="425" src="https://github.com/CitruzSquared/essays/assets/23460281/6bdd62ac-0320-48e5-9bf8-3ed22c610bf0"> <br/>
   The lunar axis is tilted from celestial North by $c = -14\degree$ $6'$ (negative means to the West). <br/> The center of the disk of the Moon, $E$, is at selenographic coordinates $(l, b) = (-3\degree$ $4',$ $5\degree$ $48'$). <br/> North is at the top and East is to the left. <br/> 
   <br/>
-  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/a73b96fd-b686-4bec-9e48-61634236c86d">      
+  <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/42fdbe22-55dd-4f62-b9d9-b41a82d2ad2d">      
   <img width="250" src="https://github.com/CitruzSquared/essays/assets/23460281/0dda0325-ee82-4834-b8a5-6b84dacd5d36"> <br/>
   Left: simulated view of the Moon with the calculated libration angles. <br/>
   Right: simulated view of the Moon from NASA (<a href="https://www.youtube.com/watch?v=dyDIogWH9uE">Source</a>; $l$, $b$, $c = -3\degree$ $25'$, $5\degree$ $49'$, $-14\degree$ $22'$). <br/>
