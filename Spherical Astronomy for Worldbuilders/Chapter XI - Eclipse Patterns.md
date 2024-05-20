@@ -32,14 +32,14 @@ Using the average values of $s$, $s'$, $\pi$, $\pi'$, and $I'$, Determine if two
 Using:
 ```math
 \begin{align}
-\text{Distance to the Moon } = 384\:399 \text{ km}\\
-\text{Distance to the Sun } = 149\:598\:023 \text{ km}\\
-\text{Radius of the Moon } = 1737.4 \text{ km}\\
-\text{Radius of the Sun } = 696\:000 \text{ km}\\
-\text{Equatorial Radius of the Earth } = 6378.137 \text{ km}\\
-\text{Orbital Period of the Moon } = 27.32 \text{ dy}\\
-\text{Orbital Period of the Earth } = 365.25 \text{ dy}\\
-\text{Lunar Orbital Inclination } = 5.14\degree\\
+\text{Distance to the Moon } &= 384\:399 \text{ km}\\
+\text{Distance to the Sun } &= 149\:598\:023 \text{ km}\\
+\text{Radius of the Moon } &= 1737.4 \text{ km}\\
+\text{Radius of the Sun } &= 696\:000 \text{ km}\\
+\text{Equatorial Radius of the Earth } &= 6378.137 \text{ km}\\
+\text{Orbital Period of the Moon } &= 27.32 \text{ dy}\\
+\text{Orbital Period of the Earth } &= 365.25 \text{ dy}\\
+\text{Lunar Orbital Inclination } &= 5.14\degree\\
 \end{align}
 ```
 We have:
