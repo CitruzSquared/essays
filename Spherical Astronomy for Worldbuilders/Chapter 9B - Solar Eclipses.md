@@ -261,15 +261,11 @@ e = 0.081819
 ```
 Since $\rho_1$, $d_1$, $\rho_2$, and $d_2$ do not depend on $Q$, We first find $\rho_1$, $d_1$, $\rho_2$, and $d_2$ by equation $9.21$:
 ```math
-\begin{alignat}{2}
-\rho_1 \sin(d_1) &= \sin(7\degree\:27'\:34.93'') &&= 0.12982884\\
-\rho_1 \cos(d_1) &= \cos(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.98821200\\
-\therefore \rho_1 &= \sqrt{0.12982884^2 + 0.98821200^2} &&= 0.99670381\\
-\therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25''\\
-\rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
-\rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
-\therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
-\therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
+\begin{alignat}{4}
+\rho_1 \sin(d_1) &= \sin(7\degree\:27'\:34.93'') &&= 0.12982884 &\enspace\enspace\enspace \rho_2 \sin(d_2) &= \sin(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.12939355\\
+\rho_1 \cos(d_1) &= \cos(7\degree\:27'\:34.93'')\sqrt{1 - 0.081819^2} &&= 0.98821200 &\enspace\enspace\enspace \rho_2 \cos(d_2) &= \cos(7\degree\:27'\:34.93'') &&= 0.99153642\\
+\therefore \rho_1 &= \sqrt{0.12982884^2 + 0.98821200^2} &&= 0.99670381 &\enspace\enspace\enspace \therefore \rho_2 &= \sqrt{0.12939355^2 + 0.99153642^2} &&= 0.99994358\\
+\therefore d_1 &= \arctan(0.12982884, 0.98821200) &&= 7\degree\:29'\:4.25'' &\enspace\enspace\enspace \therefore d_2 &= \arctan(0.12939355, 0.99153642) &&= 7\degree\:26'\:5.89''
 \end{alignat}
 ```
 Note that $\rho_2$ and $d_2$ are only needed for the optional correction step.
