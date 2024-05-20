@@ -44,16 +44,13 @@ Using:
 ```
 We have:
 ```math
-\begin{align}
-s &= 0.259\degree\\
-s' &= 0.267\degree\\
-\pi &= 0.951\degree\\
-\pi' &= 0.00244\degree\\
-\sigma &= 0.0411\degree/h\\
-\mu &= 0.549\degree/h\\
-q &= 13.358\\
-I' &= 5.553\degree\\
-\end{align}
+\begin{alignat}{2}
+s &= 0.259\degree & \enspace\enspace\enspace s' &= 0.267\degree\\
+\pi &= 0.951\degree & \enspace\enspace\enspace \pi' &= 0.00244\degree\\
+
+\mu &= 0.549\degree/h & \enspace\enspace\enspace \sigma &= 0.0411\degree/h\\
+q &= 13.358 & \enspace\enspace\enspace I' &= 5.553\degree\\
+\end{alignat}
 ```
 Using all these values, we have for the conditions:
 ```math
