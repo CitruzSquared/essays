@@ -125,7 +125,7 @@ We can deduce from equation $7.7$ by using the angle addition formulae
 &= a \cos^2(\phi) \sec(\psi) + a(1 - e^2) \sin^2(\phi) \sec(\psi)\\
 &= a \sec(\psi) (\cos^2(\phi) + \sin^2(\phi) - e^2 \sin^2(\phi))\\
 &= a \sec(\psi) (1 - e^2\sin^2(\phi)) \\
-&= a \sec(\psi) (1 - sin^2(\psi)) \\
+&= a \sec(\psi) (1 - \sin^2(\psi)) \\
 &= a \sec(\psi) \cos^2(\psi) \\
 &= a \cos(\psi)
 \end{align}
