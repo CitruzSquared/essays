@@ -133,7 +133,7 @@ We can deduce from equation $7.7$ by using the angle addition formulae
 and
 ```math
 \begin{align}
-\rho \sin(\phi - \phi') &= \rho\sin(\phi)\cos(phi') - \rho\cos(\phi)\sin(\phi') \\
+\rho \sin(\phi - \phi') &= \rho\sin(\phi)\cos(\phi') - \rho\cos(\phi)\sin(\phi') \\
 &= a \cos(\phi)\sec(\psi)\sin(\phi) - a (1 - e^2) \sin(\phi)\sec(\psi)\cos(phi) \\
 &= a \cos(\phi)\sin(\phi)\sec(\psi) (1 - (1 - e^2)) \\
 &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
