@@ -120,12 +120,31 @@ With the addition of an auxiliary $\psi$ defined via $\sin(\psi) = e\sin(\phi)$,
 ```
 We can deduce from equation $7.7$ by using the angle addition formulae
 ```math
-\displaylines{
+\begin{align}
+\rho \cos(\phi - \phi') &= \rho\cos(\phi)\cos(phi') + \rho\sin(\phi)\sin(\phi')\\
+&= a \cos^2(\phi) \sec(\psi) + a(1 - e^2) \sin^2(\phi) \sec(\psi)\\
+&= a \sec(\psi) (\cos^2(\phi) + \sin^2(\phi) - e^2 \sin^2(\phi))\\
+&= a \sec(\psi) (1 - e^2\sin^2(\phi)) \\
+&= a \sec(\psi) (1 - sin^2(\psi)) \\
+&= a \sec(\psi) \cos^2(\psi) \\
+&= a \cos(\psi)
+\end{align}
+```
+and
+```math
+\begin{align}
+\rho \sin(\phi - \phi') &= \rho\sin(\phi)\cos(phi') - \rho\cos(\phi)\sin(\phi') \\
+&= a \cos(\phi)\sec(\psi)\sin(\phi) - a (1 - e^2) \sin(\phi)\sec(\psi)\cos(phi) \\
+&= a \cos(\phi)\sin(\phi)\sec(\psi) (1 - (1 - e^2)) \\
+&= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
+\end{align}
+```
+Thus:
+```math
 \begin{align}
 \rho \cos(\phi - \phi') &= a \cos(\psi)\\
 \rho \sin(\phi - \phi') &= a e^2 \cos(\phi)\sin(\phi)\sec(\psi)
-\end{align}
-}\tag{7.8}
+\end{align}\tag{7.8}
 ```
 By multiplying the 2nd line of equation $7.7$ with the 1st line of equation $7.8$, we obtain:
 ```math
