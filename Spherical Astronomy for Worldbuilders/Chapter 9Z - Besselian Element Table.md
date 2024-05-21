@@ -152,6 +152,6 @@ b &= \frac{1}{\left(t_{1}-t_{2}\right)^{2}}\left(\frac{3\left(t_{1}+t_{2}\right)
 
 c &= \frac{1}{\left(t_{1}-t_{2}\right)^{2}}\left(-\frac{6t_{1}t_{2}y_{1}}{t_{1}-t_{2}}+\frac{6t_{1}t_{2}y_{2}}{t_{1}-t_{2}}+\left(t_{2}^{2}+2t_{1}t_{2}\right)d_{1}+\left(t_{1}^{2}+2t_{2}t_{1}\right)d_{2}\right)\\
 
-d &= \frac{1}{\left(t_1-t_2\right)^2}\left(\frac{\left(3t_1t_2^2-t_2^3\right)y_1}{t_1-t_2}+\frac{\left(t_1^3-3t_1^2t_2\right)y_2}{t_1-t_2}+\left(-t_1 t_2^2\right)d_{1}+\left(-t_1^2 t_2\right)d_2\right)
+d &= \frac{1}{\left(t_1-t_2\right)^2}\left(\frac{\left(3t_1t_2^2-t_2^3\right)y_1}{t_1-t_2}+\frac{\left(t_1^3-3t_1^2t_2\right)y_2}{t_1-t_2}-t_1 t_2^2d_{1}-t_1^2 t_2d_2\right)
 \end{align}
 ```
