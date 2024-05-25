@@ -289,6 +289,7 @@ And therefore we have:
 ```math
 \begin{align}
 R &= \frac{(1 + \frac{b^4x^2}{a^4y^2})^{3/2}}{\frac{b^4}{a^2y^3}}\\
+&= \frac{(a^4 y^2 + b^4x^2)^{3/2}}{a^6y^3 \cdot \frac{b^4}{a^2y^3}} \\
 &= \frac{(a^4y^2 + b^4x^2)^{3/2}}{a^4b^4}
 \end{align}
 ```
