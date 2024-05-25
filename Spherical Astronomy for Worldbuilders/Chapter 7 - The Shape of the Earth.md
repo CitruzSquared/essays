@@ -50,7 +50,7 @@ Therefore:
 ```
 It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, i.e. $\phi - \phi'$, called the *reduction in latitude*, is equal to the angle $CPO$ in the diagram.
 
-### Radius of the Earth
+### The Radius of the Earth
 
 Let us now also calculate the specific radius at latitude $\phi$, i.e. the length $PC$, labeled $\rho$ in the diagram.\
 From the equation of the ellipse:
