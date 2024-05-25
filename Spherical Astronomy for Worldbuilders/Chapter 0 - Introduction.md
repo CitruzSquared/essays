@@ -254,7 +254,7 @@ A + B + C &\geq 180\degree\\
 
 $O$ is the origin. Lines $OX$, $OY$, and $OZ$ are the $x$, $y$, and $z$ axes respectively and are all perpendicular to each other. \
 Planes $OXY$, $OXZ$, and $OYZ$ are the $xy$, $xz$, and $yz$ planes respectively and are all perpendicular to each other. \
-$H$, $I$, $J$ are the orthogonal projection of $P$ onto the $xy$, $xz$, and $yz$ planes respectively. \
+$H$, $I$, $J$ are the orthogonal projection of $P$ onto the $xy$, $xz$, and $yz$ planes respectively.
 
 The coordinates of $P$ can be expressed in *cartesian* (or *rectangular*) coordinates as:
 ```math
