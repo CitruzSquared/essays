@@ -250,7 +250,7 @@ A + B + C &\geq 180\degree\\
 ```
 
 ### 3D Coordinates
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/fdc01e75-9c44-44d3-94a8-b986558fbb0c" width="250"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/7b2cabe4-bcbf-4dcc-814b-d0bab52b3a54" width="250"/>
 
 $O$ is the origin. Lines $OX$, $OY$, and $OZ$ are the $x$, $y$, and $z$ axes respectively and are all perpendicular to each other. \
 Planes $OXY$, $OXZ$, and $OYZ$ are the $xy$, $xz$, and $yz$ planes respectively and are all perpendicular to each other. \
