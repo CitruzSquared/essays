@@ -272,7 +272,7 @@ x \\ y \\ z
 ```
 
 ### Vectors
-$\textbf{e}_x$, $\textbf{e}_y$, and $\textbf{e}_z$ are the unit cartesian basis vectors of $\mathbb{R}^3$.\
+$\textbf{e}_x$, $\textbf{e}_y$, and $\textbf{e}_z$ are the unit (right-handed) cartesian basis vectors of $\mathbb{R}^3$.\
 $\theta$ is the angle between $\textbf{v}$ and $\textbf{u}$.\
 $\textbf{0}$ is the zero vector.
 ```math
