@@ -112,11 +112,18 @@ Now we substitute $r\cos(\theta)$ and $r\sin(\theta)$ for $x$ and $y$:
 ```
 Which gives the following quadratic equation in $r$:
 ```math
-\frac{1 - e^2 \cos^2(\theta)}{1 - e^2} r^2 + 2ae\cos(\theta) r - a^2(1 - e^2) = 0.
+\frac{1 - e^2 \cos^2(\theta)}{1 - e^2} r^2 + 2ae\cos(\theta) r - a^2(1 - e^2) = 0
 ```
 Finally, solving for $r$ gives us
 ```math
-r = \frac{a(1 - e^2)}{1 + e\cos(\theta)}.\tag{2.7}
+\begin{align}
+r &= \frac{-2ae\cos(\theta) + \sqrt{4a^2e^2\cos^2(\theta) + 4a^2(1 - e^2 \cos^2(\theta))}}{2\frac{1 - e^2 \cos^2(\theta)}{1 - e^2}}\\
+&= \frac{1 - e^2(-2ae\cos(\theta) + \sqrt{4a^2e^2\cos^2(\theta) + 4a^2 - 4 a^2 e^2 \cos^2(\theta)})}{2 - 2e^2 \cos^2(\theta)}\\
+&= \frac{1 - e^2(-2a e\cos(\theta) + 2a)}{2 - 2e^2 \cos^2(\theta)}\\
+&= \frac{a(1 - e^2)(-e\cos(\theta) + 1)}{1 - e^2 \cos^2(\theta)}\\
+&= \frac{a(1 - e^2)(1 - e\cos(\theta))}{1 - e^2 \cos^2(\theta)}\\
+&= \frac{a(1 - e^2)}{1 + e\cos(\theta)}\tag{2.7}
+\end{align}
 ```
 
 #### Proof of Kepler's First Law
