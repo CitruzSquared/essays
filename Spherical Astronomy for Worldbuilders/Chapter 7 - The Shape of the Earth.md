@@ -211,7 +211,7 @@ or, by $7.8$:
 ```math
 CO = \frac{a e^2 \cos(\phi)\sin(\phi)\sec(\psi)}{\cos(\phi)} = a e^2 \sin(\phi)\sec(\psi) \tag{7.12}
 ```
-Now we can properly account for altitude. To find the distance from the center of the earth to a point $P'$ which is at a perpendicular altitude $h$ above $P$, we first find the normal distance to the axis $N$ and the center – intersection distance $CO$. Then, we add the altitude $h$ to $N$, and then use the law of cosines to find the new geocentric distance $D$ of the point $P'$.
+Now we can properly account for altitude above sea level. To find the distance from the center of the earth to a point $P'$ which is at a perpendicular altitude $h$ above $P$, we first find the normal distance to the axis $N$ and the center – intersection distance $CO$. Then, we add the altitude $h$ to $N$, and then use the law of cosines to find the new geocentric distance $D$ of the point $P'$.
 
 This all can be summarized as:
 ```math
