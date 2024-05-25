@@ -314,7 +314,7 @@ R &= \frac{\left(a^4\frac{(1 - e^2)^2 a^2 \sin^2(\phi)}{1-e^2\sin^2(\phi)} + b^4
 ```
 Locally therefore, the Earth can be approximated as a sphere with radius $R$. We can now calculate the altitude angle of the horizon at height $h$ above sea level.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$. The altitude angle of point $T$, $TPH$, is therefore given by:
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$. The altitude angle of point $T$, $HPT$, is therefore given by:
 ```math
 HPT = -(90\degree - CPT)
 ```
