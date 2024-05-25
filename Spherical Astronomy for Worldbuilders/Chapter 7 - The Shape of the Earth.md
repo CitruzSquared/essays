@@ -51,7 +51,7 @@ Implicitly differentiating equation $7.3$ we obtain:
 ```
 Therefore:
 ```math
-\tan(\phi') = \frac{b^2}{a^2} \cdot \tan(\phi).\tag{7.4}
+\tan(\phi') = \frac{b^2}{a^2} \cdot \tan(\phi) \tag{7.4}
 ```
 It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, i.e. $\phi - \phi'$, called the *reduction in latitude*, is equal to the angle $CPO$ in the diagram.
 
