@@ -11,7 +11,7 @@ q &= \rho \cos(\phi')\sin(\Theta_L)\tag{8.1} \\
 s &= \rho \sin(\phi')
 \end{align}
 ```
-Because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian coordinates $(x', y', z')$ by:
+Where $\rho$ is the distance to the geocenter, $\phi'$ is the geocentric latitude, and $\Theta_L$ is the local sidereal time, because $\Theta_L$ is the right ascension of the local meridian. Then, given that the true cartesian coordinates of a celestial body is $(x, y, z)$, we can calculate its apparent cartesian coordinates $(x', y', z')$ by:
 ```math
 (x', y', z') = (x - p, y - q, z - s) \tag{8.2}
 ```
