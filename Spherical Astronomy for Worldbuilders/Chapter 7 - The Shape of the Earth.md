@@ -272,7 +272,12 @@ And so for the Earth, which is an ellipse, we have from the equation of an ellip
 ```math
 \begin{align}
 y' &= \frac{dy}{dx} = -\frac{b^2x}{a^2y}\\
-y'' &= \frac{d^2y}{dx^2} = -\frac{b^4}{a^2y^3}
+y'' &= \frac{d^2y}{dx^2} = -\frac{b^2}{a^2 y} + \frac{b^2 x}{a^2 y^2}\frac{dy}{dx} \\
+&= -\frac{b^2}{a^2 y} - \frac{b^2 x}{a^2 y^2}\frac{b^2x}{a^2y} \\
+&= -\frac{b^2 a^2 y^2 - b^4 x^2}{a^4 y^3} \\
+&= -\frac{b^2 a^2 y^2 - b^4 a^2 (1 - y^2/b^2)}{a^4 y^3} \\
+&= -\frac{b^2 a^2 y^2 - b^4 a^2 - y^2 a^2 b^2}{a^4 y^3} \\
+&= -\frac{b^4}{a^2y^3}
 \end{align}
 ```
 And therefore we have:
