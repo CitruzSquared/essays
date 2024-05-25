@@ -383,6 +383,11 @@ $\blacksquare$
 
 Note that the sunrise equation calculates when the center of the Sun (or any other object) is at the horizon. Because things have an apparent angular size in the sky, this means that the sunrise equation calculates at what hour angle exactly half of the object is visible. To calculate the precise time of first or last visibility, this angular size must be taken into account by calculating when the object's altitude would be 1 apparent radius (see chapter $4$) below the horizon (instead of the altitude being precisely $0\degree$), which we did not do here.
 
+The equation can also be written to solve for the hour angle of an object at any altitude $a$:
+```math
+\cos(h) = \frac{\sin(a)-\sin(\phi)\sin(\delta)}{\cos(\phi)\cos(\delta)} \tag{6.5*}
+```
+
 Furthermore, objects near the horizon have their positions significantly altered by [atmospheric refraction](https://en.wikipedia.org/wiki/Atmospheric_refraction) (upto about $30'$ for our Earth), which depends on the density and composition of the atmosphere and the specific weather conditions of the time and location. However, this is far too complicated to go into any detail here, especially since existing formulae only apply to the Earth's atmosphere and in a worldbuilding setting they won't be accurate, so we will be assuming an airless environment in our calculations.
 
 ### The Terminator
