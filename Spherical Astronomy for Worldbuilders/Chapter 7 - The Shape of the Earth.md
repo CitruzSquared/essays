@@ -318,6 +318,7 @@ Thus:
 ```math
 HPT = -\left(90\degree - \arcsin\left(\frac{R}{R + h}\right)\right) = -\arccos\left(\frac{R}{R + h}\right) \tag{7.16}
 ```
+This approximation works best when both the eccentricity of the ellipsoid and the altitude of the observer are low.
 
 #### Example 7.3
 <div align="center">
