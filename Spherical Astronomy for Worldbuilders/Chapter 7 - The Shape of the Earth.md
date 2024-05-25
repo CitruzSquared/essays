@@ -24,7 +24,7 @@ e^2 = 1 - (1 - f)^2
 ### Latitude
 How do we define latitude on a spheroid?
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/1b3d589b-28e2-4723-8f49-4938366bd700" width="350"/> In the diagram, where the Earth is depicted as an ellipse, we can see two ways to define the latitude of the point $P$. The *geocentric* latitude is given by the angle $PCE$, and the *geodetic* or *geographical* latitude given by the angle $POH$, where the line $OP$ is perpendicular to the tangent at $P$, $PT$, and $OH$ is parallel to $CE$.
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/effa9c9a-6e15-446d-9c2c-43457717cccd" width="350"/> In the diagram, where the Earth is depicted as an ellipse, we can see two ways to define the latitude of the point $P$. The *geocentric* latitude is given by the angle $PCE$, and the *geodetic* or *geographical* latitude given by the angle $POH$, where the line $OP$ is perpendicular to the tangent at $P$, $PT$, and $OH$ is parallel to $CE$.
 
 When one refers to latitude, usually one is referring to the *geodetic* (*geographical*) latitude ($\phi$). This definition is used as this definition of latitude makes sure that a perpendicular change in the observer's elevation does not change the observer's latitude. This is the value of latitude we used in chapter $6$.
 
@@ -50,6 +50,8 @@ Therefore:
 ```
 It can be further proven with simple geometry that the difference between $\phi$ and $\phi'$, i.e. $\phi - \phi'$, called the *reduction in latitude*, is equal to the angle $CPO$ in the diagram.
 
+### Radius of the Earth
+
 Let us now also calculate the specific radius at latitude $\phi$, i.e. the length $PC$, labeled $\rho$ in the diagram.\
 From the equation of the ellipse:
 ```math
@@ -60,10 +62,9 @@ we substitute $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, and obtain:
 \begin{align}
 1 &= \frac{(\rho \cos(\phi'))^2}{a^2} + \frac{(\rho \sin(\phi'))^2}{b^2}\\
 a^2 b^2 &= \rho^2 (b^2 \cos^2(\phi') + a^2 \sin^2(\phi')) \\
-\therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{7.5}\\
+\therefore \rho &= \frac{ab}{\sqrt{b^2 \cos^2(\phi') + a^2 \sin^2(\phi')}}\tag{7.5}
 \end{align}
 ```
-Note that the exact distance to the center of the Earth also depend on the elevation of the observer (and no, it is not as simple as adding the elevation to $\rho$) but we will ignore this for simplicity, especially since any realistic elevation does not compare to the radius of the Earth. 
 
 An alternate formula for $\rho$ is given as follows:\
 From the equation of the ellipse and its derivative, substituting $1 - e^2$ for $b^2/a^2$,
@@ -182,3 +183,31 @@ Then by equation $7.5$:
 ```
 The reader can verify that equation $7.9$ gives the same answer.\
 $\blacksquare$
+
+### The Normal
+The normal line is the line $PO$, and is the true vertical line at point $P$.\
+The distance $PO$, which we denote $N$, is given as follows. From the figure above, it is evident that:
+```math
+CQ = N\cos(\phi) = \rho\cos(\phi')
+```
+and therefore,
+```math
+N = \frac{\rho\cos(\phi')}{\cos(\phi)} = \frac{\frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}}{\cos(\phi)} = \frac{a}{\sqrt{1 - e^2 \sin^2(\phi)}}
+\tag{7.10}
+```
+or, by using the same auxiliary $\sin(\psi) = e\sin(\phi)$,
+```math
+N = a \sec(\psi)
+```
+Let us now find the distance between the center and the intersection point of the normal line and the axis, i.e. the distance $CO$. From the triangle $CMO$, we can see:
+```math
+\rho\sin(\phi - \phi') = CO \sin(90\degree - \phi)
+```
+and therefore:
+```math
+CO = \frac{\rho\sin(\phi - \phi')}{\cos(\phi)} \tag{7.11}
+```
+or, by $7.8$:
+```math
+CO = \frac{a e^2 \cos(\phi)\sin(\phi)\sec(\psi)}{\cos(\phi)} = a e^2 \sin(\phi)\sec(\psi) \tag{7.12}
+```
