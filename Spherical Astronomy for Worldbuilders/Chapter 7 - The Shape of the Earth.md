@@ -42,7 +42,12 @@ And from the triangle $PCQ$ we can deduce:
 ```
 Implicitly differentiating equation $7.3$ we obtain:
 ```math
-\frac{y}{x} = -\frac{b^2}{a^2} \frac{d x}{d y}
+\begin{align}
+\frac{2x}{a^2} + \frac{2y}{b^2}\frac{dy}{dx} &= 0\\
+\therefore \frac{2x}{a^2} = -\frac{2y}{b^2}\frac{dy}{dx}\\
+\therefore \frac{a^2}{x} = -\frac{b^2}{y}\frac{dx}{dy}\\
+\therefore \frac{y}{x} &= -\frac{b^2}{a^2} \frac{d x}{d y}
+\end{align}
 ```
 Therefore:
 ```math
