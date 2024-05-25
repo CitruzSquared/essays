@@ -250,20 +250,19 @@ A + B + C &\geq 180\degree\\
 ```
 
 ### 3D Coordinates
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/94cceab5-f476-40ff-a7fa-393ea8eb08f1" width="250"/>
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/fdc01e75-9c44-44d3-94a8-b986558fbb0c" width="250"/>
 
 $O$ is the origin. Lines $OX$, $OY$, and $OZ$ are the $x$, $y$, and $z$ axes respectively and are all perpendicular to each other. \
 Planes $OXY$, $OXZ$, and $OYZ$ are the $xy$, $xz$, and $yz$ planes respectively and are all perpendicular to each other. \
-$F$ is the orthogonal projection of $P$ onto the $xy$-plane. \
-$I$ and $J$ are the orthogonal projections of $F$ onto the $x$ and $y$ axes respectively.
+$H$, $I$, $J$ are the orthogonal projection of $P$ onto the $xy$, $xz$, and $yz$ planes respectively. \
 
 The coordinates of $P$ can be expressed in *cartesian* (or *rectangular*) coordinates as:
 ```math
-x = JF \enspace\enspace y = IF \enspace\enspace z = FP
+x = IP \enspace\enspace y = JP \enspace\enspace z = HP
 ```
 or in *spherical* coordinates as:
 ```math
-\rho = OP \enspace\enspace \theta = XOF \enspace\enspace \phi = FOP
+\rho = OP \enspace\enspace \theta = XOH \enspace\enspace \phi = HOP
 ```
 The position vector $\textbf{r}$ is given as:
 ```math
