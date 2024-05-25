@@ -290,14 +290,14 @@ And therefore we have:
 \begin{align}
 R &= \frac{(1 + \frac{b^4x^2}{a^4y^2})^{3/2}}{\frac{b^4}{a^2y^3}}\\
 &= \frac{(a^4 y^2 + b^4x^2)^{3/2}}{a^6y^3 \cdot \frac{b^4}{a^2y^3}} \\
-&= \frac{(a^4y^2 + b^4x^2)^{3/2}}{a^4b^4}
+&= \frac{(a^4y^2 + b^4x^2)^{3/2}}{a^4b^4}  \tag{7.14}
 \end{align}
 ```
 When we substitute
 ```math
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 \:\:\:\:\:\text{and}\:\:\:\:\:
-y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}} \tag{7.14}
+y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 ```
 as well as $b^2 = a^2 (1 - e^2)$ into equation $7.14$, we obtain:
 ```math
