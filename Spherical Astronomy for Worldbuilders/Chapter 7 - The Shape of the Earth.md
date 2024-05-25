@@ -297,7 +297,7 @@ When we substitute
 ```math
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 \:\:\:\:\:\text{and}\:\:\:\:\:
-y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}} \tag{7.14}
 ```
 as well as $b^2 = a^2 (1 - e^2)$ into equation $7.14$, we obtain:
 ```math
