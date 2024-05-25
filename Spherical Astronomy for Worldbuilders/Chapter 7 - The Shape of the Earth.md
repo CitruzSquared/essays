@@ -302,7 +302,7 @@ y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 as well as $b^2 = a^2 (1 - e^2)$ into equation $7.14$, we obtain:
 ```math
 \begin{align}
-R &= \frac{\left(a^4\frac{(1 - e^2)^2 a^2 \sin^2(\phi)}{1-e^2\sin^2(\phi)} + b^4\frac{a^2 \cos^2(\phi)}{1-e^2\sin^2(\phi)}\right)^{3/2}}{a^4b^4}\\
+R &= \frac{\left(a^4\left(\frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\right)^2 + b^4\left(\frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\right)^2\right)^{3/2}}{a^4b^4}\\
 &= \frac{\left(\frac{a^4(1 - e^2)^2 a^2 \sin^2(\phi) + b^4 a^2 \cos^2(\phi)}{1-e^2\sin^2(\phi)}\right)^{3/2}}{a^4b^4}\\
 &= \frac{(a^4(1 - e^2)^2 a^2 \sin^2(\phi) + b^4 a^2 \cos^2(\phi))^{3/2}}{a^4b^4 (1-e^2\sin^2(\phi))^{3/2}}\\
 &= \frac{(b^4 a^2 \sin^2(\phi) + b^4 a^2 \cos^2(\phi))^{3/2}}{a^4b^4 (1-e^2\sin^2(\phi))^{3/2}}\\
