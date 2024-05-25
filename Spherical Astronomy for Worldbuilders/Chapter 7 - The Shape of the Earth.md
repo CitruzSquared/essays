@@ -104,7 +104,7 @@ y &= x(1 - e^2) \tan(\phi)\\
 Thus:
 ```math
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-\:\:\:\text{and}\:\:\:
+\:\:\:\:\:\text{and}\:\:\:\:\:
 y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 ```
 But, $x = \rho \cos(\phi')$ and $y = \rho \sin(\phi')$, so:
@@ -295,7 +295,7 @@ R &= \frac{(1 + \frac{b^4x^2}{a^4y^2})^{3/2}}{\frac{b^4}{a^2y^3}}\\
 When we substitute
 ```math
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-\:\:\:\text{and}\:\:\:
+\:\:\:\:\:\text{and}\:\:\:\:\:
 y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 ```
 as well as $b^2 = a^2 (1 - e^2)$ into equation $7.14$, we obtain:
