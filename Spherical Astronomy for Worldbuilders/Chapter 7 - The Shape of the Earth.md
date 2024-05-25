@@ -211,7 +211,44 @@ or, by $7.8$:
 ```math
 CO = \frac{a e^2 \cos(\phi)\sin(\phi)\sec(\psi)}{\cos(\phi)} = a e^2 \sin(\phi)\sec(\psi) \tag{7.12}
 ```
-Now we can properly account for altitude. To find the distance from the center of the earth to a point $P'$ which is at a perpendicular altitude $h$ above $P$, we first find the normal distance to the axis $N$ and the center – intersection distance $CO$. Then, we add the altitude $h$ to $N$, and then use the law of cosines to find the new geocentric distance of the point $P'$ by:
+Now we can properly account for altitude. To find the distance from the center of the earth to a point $P'$ which is at a perpendicular altitude $h$ above $P$, we first find the normal distance to the axis $N$ and the center – intersection distance $CO$. Then, we add the altitude $h$ to $N$, and then use the law of cosines to find the new geocentric distance $D$ of the point $P'$ by:
 ```math
-\rho^2 = (N + h)^2 + CO^2 - 2 \cdot (N + h) \cdot CO \cdot \sin(\phi) \tag{7.13}
+D^2 = (N + h)^2 + CO^2 - 2 \cdot (N + h) \cdot CO \cdot \sin(\phi) \tag{7.13}
 ```
+
+#### Example 7.2
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Find the distance to the geocenter from a point with geographic latitude $35\degree$ and altitude $100\text{ km}$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+From the last example, we know that:
+```math
+\begin{align}
+\phi' &= 34\degree\:49'\:9.79''\\
+\rho &= 6371.141\:\text{km}
+\end{align}
+```
+Then, by equation $7.10$:
+```math
+N = \frac{6371.141\cos(34\degree\:49'\:9.79'')}{\cos(35\degree)} = 6385.172 \text{ km}
+```
+And by equation $7.11$:
+```math
+CO = \frac{6371.141 \sin(35\degree - 34\degree\:49'\:9.79'')}{\cos(35\degree)} = 24.518 \text{ km}
+```
+And now by equation $7.13$:
+```math
+\begin{align}
+D^2 = (6385.172 + 100)^2 + 24.518^2 - 2 \cdot (6385.172 + 100) \cdot 24.518 \cdot \sin(35\degree) = 41\:875\:656 \text{ km}^2
+\therefore D = 6471.140 \text{ km}
+\end{align}
+```
+$\blacksquare$
