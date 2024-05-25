@@ -247,8 +247,8 @@ CO = \frac{6371.141 \sin(35\degree - 34\degree\:49'\:9.79'')}{\cos(35\degree)} =
 And now by equation $7.13$:
 ```math
 \begin{align}
-D^2 = (6385.172 + 100)^2 + 24.518^2 - 2 \cdot (6385.172 + 100) \cdot 24.518 \cdot \sin(35\degree) = 41\:875\:656 \text{ km}^2
-\therefore D = 6471.140 \text{ km}
+D^2 &= (6385.172 + 100)^2 + 24.518^2 - 2 \cdot (6385.172 + 100) \cdot 24.518 \cdot \sin(35\degree) = 41\:875\:656 \text{ km}^2\\
+\therefore D &= 6471.140 \text{ km}
 \end{align}
 ```
 $\blacksquare$
