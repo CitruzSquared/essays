@@ -308,7 +308,7 @@ Locally therefore, the Earth can be approximated as a sphere with radius $R$. We
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$. The altitude angle of point $T$, $TPH$, is therefore given by:
 ```math
-HPT = 90\degree - CPT
+HPT = -(90\degree - CPT)
 ```
 Where $CPT$ is given by:
 ```math
@@ -316,7 +316,7 @@ CPT = \arcsin\left(\frac{R}{R + h}\right)
 ```
 Thus:
 ```math
-HPT = 90\degree - \arcsin\left(\frac{R}{R + h}\right) = \arccos\left(\frac{R}{R + h}\right) \tag{7.16}
+HPT = -\left(90\degree - \arcsin\left(\frac{R}{R + h}\right)\right) = -\arccos\left(\frac{R}{R + h}\right) \tag{7.16}
 ```
 
 #### Example 7.3
@@ -339,6 +339,6 @@ R = \frac{6378.137 (1 - 0.081819^2)}{(1-0.081819^2\sin^2(35\degree))^{3/2}} = 63
 ```
 Therefore the altitude angle of the horizon is (by equation $7.16$):
 ```math
-HPT = \arccos\left(\frac{6356.427}{6356.427 + 100}\right) = 10\degree\:5'\:50''
+HPT = -\arccos\left(\frac{6356.427}{6356.427 + 100}\right) = -10\degree\:5'\:50''
 ```
 $\blacksquare$
