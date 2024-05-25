@@ -222,14 +222,14 @@ D^2 = (N + h)^2 + CO^2 - 2 \cdot (N + h) \cdot CO \cdot \sin(\phi) \tag{7.13}
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the distance to the geocenter from a point with geographic latitude $35\degree$ and altitude $100\text{ km}$.
+Find the geocentric distance and latitude of a point with geographic latitude $35\degree$ and altitude $100\text{ km}$.
 <img width="2000" height="0">
 </td>
 </tbody>
 </table>
 </div>
 
-From the last example, we know that:
+From the last example, we know that for $\phi = 35\degree$:
 ```math
 \begin{align}
 \phi' &= 34\degree\:49'\:9.79''\\
@@ -249,6 +249,14 @@ And now by equation $7.13$:
 \begin{align}
 D^2 &= (6385.172 + 100)^2 + 24.518^2 - 2 \cdot (6385.172 + 100) \cdot 24.518 \cdot \sin(35\degree) = 41\:875\:656 \text{ km}^2\\
 \therefore D &= 6471.140 \text{ km}
+\end{align}
+```
+Now, by equation $7.10$:
+```math
+\begin{align}
+6385.172 + 100 &= \frac{6471.140\cos(\phi')}{\cos(35\degree)}\\
+\therefore \phi' &= \arccos\left(\frac{6485.172\cos(35\degree)}{6471.140}\right)\\
+&= 34\degree\:49'\:19.82''
 \end{align}
 ```
 $\blacksquare$
