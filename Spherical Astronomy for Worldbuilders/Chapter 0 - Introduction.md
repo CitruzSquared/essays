@@ -62,11 +62,12 @@
      * Lighting Direction
    - Part C
      * Saturn in the Sky
-7. **The Shape of the Earth** (Eq. $7.1$ to $7.13$, Ex. $7.1$ to $7.2$)
+7. **The Shape of the Earth** (Eq. $7.1$ to $7.16$, Ex. $7.1$ to $7.3$)
    - The Ellipsoid
    - Latitude
    - The Radius of the Earth
    - The Normal
+   - The Curvature of the Earth
 8. **Parallax** (Eq. $8.1$ to $8.11$, Ex. $8.1$ to $8.5$)
    - Apparent Equatorial Coordinates
    - Apparent Horizontal Coordinates
