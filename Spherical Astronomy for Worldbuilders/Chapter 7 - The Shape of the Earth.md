@@ -292,10 +292,8 @@ When we substitute
 x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
 \:\:\:\text{and}\:\:\:
 y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
-\:\:\:\text{and}\:\:\:
-b^2 = a^2 (1 - e^2)
 ```
-into equation $7.14$, we obtain:
+as well as $b^2 = a^2 (1 - e^2)$ into equation $7.14$, we obtain:
 ```math
 \begin{align}
 R &= \frac{\left(a^4\frac{(1 - e^2)^2 a^2 \sin^2(\phi)}{1-e^2\sin^2(\phi)} + b^4\frac{a^2 \cos^2(\phi)}{1-e^2\sin^2(\phi)}\right)^{3/2}}{a^4b^4}\\
