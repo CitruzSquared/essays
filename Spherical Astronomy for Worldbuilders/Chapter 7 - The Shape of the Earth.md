@@ -262,3 +262,83 @@ Now, by equation $7.10$:
 \end{align}
 ```
 $\blacksquare$
+
+### The Curvature of the Earth
+In addition, the radius of curvature $R$ of a curve is given as:
+```math
+R = \left|\frac{(1 + y'^2)^{3/2}}{y''}\right|
+```
+And so for the Earth, which is an ellipse, we have from the equation of an ellipse:
+```math
+\begin{align}
+y' &= \frac{dy}{dx} = -\frac{b^2x}{a^2y}\\
+y'' &= \frac{d^2y}{dx^2} = -\frac{b^4}{a^2y^3}
+\end{align}
+```
+And therefore we have:
+```math
+\begin{align}
+R &= \frac{(1 + \frac{b^4x^2}{a^4y^2})^{3/2}}{\frac{b^4}{a^2y^3}}\\
+&= \frac{(a^4y^2 + b^4x^2)^{3/2}}{a^4b^4}
+\end{align}
+```
+When we substitute
+```math
+x = \frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\:\:\:\text{and}\:\:\:
+y = \frac{(1 - e^2) a \sin(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}
+\:\:\:\text{and}\:\:\:
+b^2 = a^2 (1 - e^2)
+```
+into equation $7.14$, we obtain:
+```math
+\begin{align}
+R &= \frac{\left(a^4\frac{(1 - e^2)^2 a^2 \sin^2(\phi)}{1-e^2\sin^2(\phi)} + b^4\frac{a^2 \cos^2(\phi)}{1-e^2\sin^2(\phi)}\right)^{3/2}}{a^4b^4}\\
+&= \frac{\left(\frac{a^4(1 - e^2)^2 a^2 \sin^2(\phi) + b^4 a^2 \cos^2(\phi)}{1-e^2\sin^2(\phi)}\right)^{3/2}}{a^4b^4}\\
+&= \frac{(a^4(1 - e^2)^2 a^2 \sin^2(\phi) + b^4 a^2 \cos^2(\phi))^{3/2}}{a^4b^4 (1-e^2\sin^2(\phi))^{3/2}}\\
+&= \frac{(b^4 a^2 \sin^2(\phi) + b^4 a^2 \cos^2(\phi))^{3/2}}{a^4b^4 (1-e^2\sin^2(\phi))^{3/2}}\\
+&= \frac{b^6 a^3 (\sin^2(\phi) + \cos^2(\phi))^{3/2}}{a^4b^4 (1-e^2\sin^2(\phi))^{3/2}}\\
+&= \frac{b^6 a^3}{a^4b^4 (1-e^2\sin^2(\phi))^{3/2}}\\
+&= \frac{b^2}{a (1-e^2\sin^2(\phi))^{3/2}}\\
+&= \frac{a^2 (1 - e^2)}{a (1-e^2\sin^2(\phi))^{3/2}}\\
+&= \frac{a (1 - e^2)}{(1-e^2\sin^2(\phi))^{3/2}} \tag{7.15}
+\end{align}
+```
+Locally therefore, the Earth can be approximated as a sphere with radius $R$. We can now calculate the altitude angle of the horizon at height $h$ above sea level.
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$. The altitude angle of point $T$, $TPH$, is therefore given by:
+```math
+HPT = 90\degree - CPT
+```
+Where $CPT$ is given by:
+```math
+CPT = \arcsin\left(\frac{R}{R + h}\right)
+```
+Thus:
+```math
+HPT = 90\degree - \arcsin\left(\frac{R}{R + h}\right) = \arccos\left(\frac{R}{R + h}\right) \tag{7.16}
+```
+
+#### Example 7.3
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Find the altitude angle of the horizon of a viewer point with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
+Use $a = 6378.137\text{ km}$ and $e = 0.081819$.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+By equation $7.15$, the radius of curvature of the Earth at this latitude is:
+```math
+R = \frac{6378.137 (1 - 0.081819^2)}{(1-0.081819^2\sin^2(35\degree))^{3/2}} = 6356.427 \text{ km}
+```
+Therefore the altitude angle of the horizon is (by equation $7.16$):
+```math
+HPT = \arccos\left(\frac{6356.427}{6356.427 + 100}\right) = 10\degree\:5'\:50''
+```
+$\blacksquare$
