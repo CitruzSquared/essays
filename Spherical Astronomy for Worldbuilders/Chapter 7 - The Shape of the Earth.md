@@ -352,4 +352,5 @@ Therefore the altitude angle of the horizon is (by equation $7.16$):
 ```math
 \text{Altitude of True Horizon } = -\arccos\left(\frac{6356.427}{6356.427 + 100}\right) = -10\degree\:5'\:50''
 ```
+Thus, for example, sunrise will occur at point $P$ when the Sun's altitude rises above $-10\degree$ $5'$ $50''$.
 $\blacksquare$
