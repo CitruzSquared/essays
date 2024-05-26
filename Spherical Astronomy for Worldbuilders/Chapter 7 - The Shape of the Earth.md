@@ -313,9 +313,9 @@ R &= \frac{\left(a^4\left(\frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\right)^2
 &= \frac{a (1 - e^2)}{(1-e^2\sin^2(\phi))^{3/2}} \tag{7.15}
 \end{align}
 ```
-Locally therefore, the Earth can be approximated as a sphere with radius $R$. We can now calculate the altitude angle of the horizon at height $h$ above sea level.
+Locally therefore, the Earth can be approximated as a sphere with radius $R$. We can now calculate the altitude angle of the apparent horizon at height $h$ above sea level.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$. The altitude angle of point $T$, $HPT$, is therefore given by:
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. The apparent horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$, which is called the true horizon. The altitude angle of point $T$, $HPT$, is therefore given by:
 ```math
 HPT = -(90\degree - CPT)
 ```
@@ -335,7 +335,7 @@ This approximation works best when the eccentricity of the ellipsoid and the alt
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the altitude angle of the horizon of a viewer point with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
+Find the altitude angle of the apparent horizon of a viewer point with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
 Use $a = 6378.137\text{ km}$ and $e = 0.081819$.
 <img width="2000" height="0">
 </td>
