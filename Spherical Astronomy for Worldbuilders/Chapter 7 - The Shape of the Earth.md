@@ -315,7 +315,7 @@ R &= \frac{\left(a^4\left(\frac{a \cos(\phi)}{\sqrt{1-e^2\sin^2(\phi)}}\right)^2
 ```
 Locally therefore, the Earth can be approximated as a sphere with radius $R$. We can now calculate the altitude angle of the *true* horizon at height $h$ above sea level.
 
-<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. Note that the center of the approximating sphere $C$ is the *center of curvature* and not the true center of the Earth. The center of curvature lies on the normal line $OP$ at a distance $R$ from $P$. 
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. Note that the center of the approximating sphere $C$ is the *center of curvature* and not the true center of the Earth. The center of curvature lies on the normal line $OP$ at a distance $R+h$ from $P$. 
 
 The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$, which is called the *astronomical* or *geometric* horizon. The altitude angle of point $T$, $HPT$, is therefore given by:
 ```math
