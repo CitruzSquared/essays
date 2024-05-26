@@ -349,6 +349,6 @@ R = \frac{6378.137 (1 - 0.081819^2)}{(1-0.081819^2\sin^2(35\degree))^{3/2}} = 63
 ```
 Therefore the altitude angle of the horizon is (by equation $7.16$):
 ```math
-HPT = -\arccos\left(\frac{6356.427}{6356.427 + 100}\right) = -10\degree\:5'\:50''
+\text{Altitude of Apparent Horizon } = -\arccos\left(\frac{6356.427}{6356.427 + 100}\right) = -10\degree\:5'\:50''
 ```
 $\blacksquare$
