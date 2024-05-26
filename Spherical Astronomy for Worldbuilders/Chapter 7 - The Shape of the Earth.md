@@ -204,7 +204,7 @@ or, by using the same auxiliary $\sin(\psi) = e\sin(\phi)$,
 ```math
 N = a \sec(\psi)
 ```
-Let us now find the distance between the center and the intersection point of the normal line and the axis, i.e. the distance $CO$. From the triangle $CMO$, we can see:
+Let us now find the distance between the center and the intersection point of the normal line and the axis, i.e. the distance $CO$. From the triangle $PMO$ and $CMO$, we can see:
 ```math
 \rho\sin(\phi - \phi') = CO \sin(90\degree - \phi)
 ```
