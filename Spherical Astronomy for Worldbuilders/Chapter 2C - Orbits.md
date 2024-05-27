@@ -349,4 +349,5 @@ Comparing this to the true value of
 ```
 We can see we were very close considering we ignored all perturbation.\
 Using this method, we can compute an ephemeris for any planet we want in our Solar System.\
+Keep in mind that for the Moon, because it orbits the Earth, equation $2.26$ gives the geocentric coordinates directly.
 $\blacksquare$
