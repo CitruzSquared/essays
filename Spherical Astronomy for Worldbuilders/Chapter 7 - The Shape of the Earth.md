@@ -336,7 +336,7 @@ This approximation works best when the eccentricity of the ellipsoid and the alt
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the altitude angle of the true horizon of an observer with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
+Find the altitude angle of the true horizon for an observer with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
 Use $a = 6378.137\text{ km}$ and $e = 0.081819$.
 <img width="2000" height="0">
 </td>
