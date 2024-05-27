@@ -288,7 +288,7 @@ x_{\text{Earth}} \\ y_{\text{Earth}} \\ z_{\text{Earth}}
 \end{bmatrix}
 \:[\text{Gm}]
 ```
-Thus, by equation $2.27$:
+Therefore, using this new result and the result of example $2.5$, by equation $2.27$:
 ```math
  \begin{bmatrix}
 \xi_{\text{Mars}} \\ \eta_{\text{Mars}} \\ \zeta_{\text{Mars}}
