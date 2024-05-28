@@ -398,7 +398,7 @@ By equation $7.19$, at $80$ kilometers away, a building must be at least
 ```math
 z = 6356.427 \sec\left(\frac{80}{6356.427} - \arccos\left(\frac{6356.427}{6356.427 + 0.005}\right)\right) - 6356.427 = 0.408 \text{ km} = 408 \text{ m}
 ```
-tall. Therefore the top $92$ meters of a a building $500$ meters tall would be visible.\
+tall. Therefore the top $92$ meters of a building $500$ meters tall would be visible.\
 $\blacksquare$
 
 Note that this calculation of visible distance is not entirely accurate due to atmospheric effects. For example, Chicago is visible from across Lake Michigan due to the refraction of light by the air even though the curvature of the Earth would obscure it.
