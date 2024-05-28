@@ -401,4 +401,29 @@ z = 6356.427 \sec\left(\frac{80}{6356.427} - \arccos\left(\frac{6356.427}{6356.4
 tall. Therefore the top $92$ meters of a building $500$ meters tall would be visible.\
 $\blacksquare$
 
+By rearranging equation $7.19$, we can obtain:
+```math
+L = R\arccos\left(\frac{R}{R + z}\right) + R\arccos\left(\frac{R}{R + h}\right) \tag{7.20}
+```
+Which gives the maximum distance away an object of height $z$ above sea level would be visible to an observer at height $h$ above sea level.
+
+#### Example 7.5
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+Determine the maximum distance that a building $500$ meters tall and located at latitude $35\degree$ could be visible from an observer $5$ meters above sea level.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+Equation $7.20$ gives:
+```math
+L = 6356.427\arccos\left(\frac{6356.427}{6356.427 + 0.5}\right) + 6356.427\arccos\left(\frac{6356.427}{6356.427 + 0.005}\right) = 87.7 \text{ km}
+```
+$\blacksquare$
+
 Note that this calculation of visible distance is not entirely accurate due to atmospheric effects. For example, Chicago is visible from across Lake Michigan due to the refraction of light by the air even though the curvature of the Earth would obscure it.
