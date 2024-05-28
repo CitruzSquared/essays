@@ -386,7 +386,7 @@ As with the previous example, the radius of curvature approximation works best w
 <td align="center">
 <img width="2000" height="0"><br>
 For an observer at latitude $35\degree$ and $5$ meters above sea level, <br/>
-determine if a building $80 \text{ km}$ away and $500$ meters tall would be visible.
+determine if a building $80 \text{ km}$ away and $500$ meters tall ($500 \text{ m}$ above sea level) would be visible.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -414,7 +414,7 @@ Which gives the maximum distance away an object of height $z$ above sea level wo
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Determine the maximum distance a building $500$ meters tall and located at latitude $35\degree$ would be visible to observers standing $5$ meters above sea level.
+Determine the maximum distance a building $500$ meters tall ($500 \text{ m}$ above sea level) and located at latitude $35\degree$ would be visible to observers standing $5$ meters above sea level.
 <img width="2000" height="0">
 </td>
 </tbody>
