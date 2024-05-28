@@ -316,7 +316,7 @@ Locally therefore, the Earth can be approximated as a sphere with radius $R$. We
 
 <img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/709c76b6-0a8c-4d6f-b527-01b79d915f17" width="350"/> In this diagram, the Earth has been approximated as a sphere with radius $R$. Note that the center of the approximating sphere $C$ is the *center of curvature* and not the true center of the Earth. The center of curvature lies on the normal line $OP$ at a distance $R+h$ from $P$. 
 
-The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$, which is called the *astronomical* or *geometric* horizon. The altitude angle of point $T$, $HPT$, is therefore given by:
+The true horizon of an observer at the point $P$, which is at a height $h$ above the Earth, is given by $PT$ and not $PH$, which is called the *astronomical* or *geometric* horizon. The altitude angle of point $T$, $HPT$, called the *dip of the horizon* is therefore given by:
 ```math
 HPT = -(90\degree - CPT)
 ```
@@ -336,7 +336,7 @@ This approximation works best when the eccentricity of the ellipsoid and the alt
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Find the altitude angle of the true horizon for an observer with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
+Find the dip of the true horizon for an observer with geographic latitude $35\degree$ and altitude $100\text{ km}$. <br/>
 Use $a = 6378.137\text{ km}$ and $e = 0.081819$.
 <img width="2000" height="0">
 </td>
@@ -348,9 +348,53 @@ By equation $7.15$, the radius of curvature of the Earth at this latitude is:
 ```math
 R = \frac{6378.137 (1 - 0.081819^2)}{(1-0.081819^2\sin^2(35\degree))^{3/2}} = 6356.427 \text{ km}
 ```
-Therefore the altitude angle of the horizon is (by equation $7.16$):
+Therefore the dip angle of the horizon is (by equation $7.16$):
 ```math
-\text{Altitude of True Horizon } = -\arccos\left(\frac{6356.427}{6356.427 + 100}\right) = -10\degree\:5'\:50''
+\text{Dip of True Horizon } = -\arccos\left(\frac{6356.427}{6356.427 + 100}\right) = -10\degree\:5'\:50''
 ```
 Thus, for example, sunrise will occur at point $P$ when the Sun's altitude rises above $-10\degree$ $5'$ $50''$. \
+$\blacksquare$
+
+<img align="left" src="https://github.com/CitruzSquared/essays/assets/23460281/025d902d-4cf7-489b-9e0a-2d60450a95ca" width="350"/> Due to the curvature of the Earth, objects on the Earth farther away from an observer will become invisible below the horizon to that observer.
+
+For an observer at an altitude $AP = h$ above the surface of the Earth where the radius of curvature is $R$, for a point to be visible from a distance $AB = L$ away, it must be at least at altitude $BQ = z$ above the surface.
+
+To calculate this distance, first we must find how far beyond $B$ is from the horizon $T$. Evidently, the angle $ACB$ is given (in radians) by:
+```math
+ACB = \frac{L}{R} \tag{7.17}
+```
+and the angle $ACT$ is given by:
+```math
+ACT = \arccos\left(\frac{R}{R + h}\right) \tag{7.18}
+```
+<br/>
+
+Thus the angle $TCB$ is given by:
+```math
+TCB = ACB - ACT = \frac{L}{R} - \arccos\left(\frac{R}{R + h}\right)
+```
+Because $\cos(TCB) = R / (R + z)$, $z = R \sec(TCB) - R$ and therefore:
+```math
+z = R \sec\left(\frac{L}{R} - \arccos\left(\frac{R}{R + h}\right)\right) - R \tag{7.19}
+```
+#### Example 7.4
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+For an observer at latitude $35\degree$ and $5$ meters above sea level, <br/>
+determine if a building $80 \text{ km}$ away and $500 \text{ m}$ tall is visible.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+
+In the last example we found that the radius of curvature for this latitude is $6356.427 \text{ km}$.\
+By equation $7.19$, at $80$ kilometers away, a building must be at least
+```math
+z = 6356.427 \sec\left(\frac{80}{6356.427} - \arccos\left(\frac{6356.427}{6356.427 + 0.005}\right)\right) - 6356.427 = 0.408 \text{ km} = 408 \text{ m}
+```
+tall. Therefore a building $500 \text{ m}$ tall would be visible.\
 $\blacksquare$
