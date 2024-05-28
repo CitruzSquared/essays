@@ -394,7 +394,7 @@ determine if a building $80 \text{ km}$ away and $500$ meters tall would be visi
 </div>
 
 In the last example we found that the radius of curvature for this latitude is $6356.427 \text{ km}$.\
-By equation $7.19$, at $80$ kilometers away, a building must be at least
+By equation $7.19$, for a building to be visible from $80$ kilometers away, it must be at least
 ```math
 z = 6356.427 \sec\left(\frac{80}{6356.427} - \arccos\left(\frac{6356.427}{6356.427 + 0.005}\right)\right) - 6356.427 = 0.408 \text{ km} = 408 \text{ m}
 ```
