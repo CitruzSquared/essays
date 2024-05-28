@@ -398,3 +398,5 @@ z = 6356.427 \sec\left(\frac{80}{6356.427} - \arccos\left(\frac{6356.427}{6356.4
 ```
 tall. Therefore the top $92$ meters of a a building $500$ meters tall would be visible.\
 $\blacksquare$
+
+Note that this calculation of visible distance is not entirely accurate due to atmospheric effects. For example, Chicago is visible from across Lake Michigan due to the refraction of light by the air even though the curvature of the Earth would obscure it.
