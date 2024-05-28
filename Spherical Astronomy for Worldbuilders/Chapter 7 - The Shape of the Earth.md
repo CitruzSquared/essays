@@ -384,7 +384,7 @@ z = R \sec\left(\frac{L}{R} - \arccos\left(\frac{R}{R + h}\right)\right) - R \ta
 <td align="center">
 <img width="2000" height="0"><br>
 For an observer at latitude $35\degree$ and $5$ meters above sea level, <br/>
-determine if a building $80 \text{ km}$ away and $500 \text{ m}$ tall is visible.
+determine if a building $80 \text{ km}$ away and $500$ meters tall would be visible.
 <img width="2000" height="0">
 </td>
 </tbody>
