@@ -62,7 +62,7 @@
      * Lighting Direction
    - Part C
      * Saturn in the Sky
-7. **The Shape of the Earth** (Eq. $7.1$ to $7.16$, Ex. $7.1$ to $7.3$)
+7. **The Shape of the Earth** (Eq. $7.1$ to $7.19$, Ex. $7.1$ to $7.4$)
    - The Ellipsoid
    - Latitude
    - The Radius of the Earth
