@@ -377,6 +377,8 @@ Because $\cos(TCB) = R / (R + z)$, $z = R \sec(TCB) - R$ and therefore:
 ```math
 z = R \sec\left(\frac{L}{R} - \arccos\left(\frac{R}{R + h}\right)\right) - R \tag{7.19}
 ```
+As with the previous example, the radius of curvature approximation works best when distances are small in comparison to the radius of the Earth.
+
 #### Example 7.4
 <div align="center">
 <table>
