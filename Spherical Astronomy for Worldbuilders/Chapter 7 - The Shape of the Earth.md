@@ -396,5 +396,5 @@ By equation $7.19$, at $80$ kilometers away, a building must be at least
 ```math
 z = 6356.427 \sec\left(\frac{80}{6356.427} - \arccos\left(\frac{6356.427}{6356.427 + 0.005}\right)\right) - 6356.427 = 0.408 \text{ km} = 408 \text{ m}
 ```
-tall. Therefore a building $500 \text{ m}$ tall would be visible.\
+tall. Therefore the top $92$ meters of a a building $500$ meters tall would be visible.\
 $\blacksquare$
