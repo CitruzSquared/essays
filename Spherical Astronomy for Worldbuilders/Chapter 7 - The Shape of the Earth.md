@@ -414,7 +414,7 @@ Which gives the maximum distance away an object of height $z$ above sea level wo
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-Determine the maximum distance that a building $500$ meters tall and located at latitude $35\degree$ could be visible from an observer $5$ meters above sea level.
+Determine the maximum distance a building $500$ meters tall and located at latitude $35\degree$ would be visible to observers standing $5$ meters above sea level.
 <img width="2000" height="0">
 </td>
 </tbody>
