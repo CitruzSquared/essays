@@ -1,4 +1,4 @@
-(Continued from Part B...)
+(Continued from Part B...) 
 ### Beginning / Ending Condition
 We have found the locations on the edge of the shadow but not if the eclipse is about to begin or about to end in those places. If at time $t$ a point is on the edge of the shadow, then whether the point is inside or outside the shadow at the next instant time $t + dt$ will determine if the eclipse was beginning or ending at that place. This can be expressed in terms of equation $9.16$: the eclipse is beginning or ending depending on $\Delta$ is becoming greater or less than $L$ at time $t + dt$. We can express this as the derivative of the function $\Delta^2 - L^2$: *if the derivative is positive then the distance is increasing and the eclipse is ending. If the derivative is negative then the distance is decreasing and the eclipse is beginning.*
 
